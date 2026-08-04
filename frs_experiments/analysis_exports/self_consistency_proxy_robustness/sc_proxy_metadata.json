@@ -1,0 +1,26 @@
+{
+  "confidence_definition": "Per-trace vote share: conf_sc(t) = (# j with normalize(pred[j])==normalize(pred[t])) / k, where k=len(pred) on that JSONL line (typically 16).",
+  "normalization": {
+    "rule": "str(s).strip(); empty string after strip remains empty; agreement is exact on this normalized string.",
+    "case_folding": "not applied (conservative)."
+  },
+  "join_keys": "(idx, trace_idx) between JSONL-derived rows and judged_samples",
+  "judge_checkpoint_glob": "reasoning_confidence_bins_results/judging_checkpoints/judged_<Model>__<Dataset>.json",
+  "jsonl_discovery": "build_downstream_parquets.discover_jsonl_groups; per-pair path from judge metadata when present",
+  "top_pool_frac": 0.5,
+  "n_bins": 5,
+  "frs_k10_definition": "Mean reasoning_score (0-100) over judged (idx,trace_idx) in bin_id==0 after ranking all traces by conf_sc descending, keeping top 50% by count, 5 equal-count bins.",
+  "k10_only_additional_cumulative": true,
+  "caveats": [
+    "Judged traces are a fixed subset from the original logit-based run; SC re-ranking changes which of them fall in bin0 \u2014 not Table 2 reproduction.",
+    "Exact-string match after strip only; no LaTeX equivalence.",
+    "Empty preds participate in agreement as empty string.",
+    "Self-consistency is problem-coupled across traces (unlike per-trace logits)."
+  ],
+  "missing_pairs": [],
+  "n_benchmark_rows": 54,
+  "outputs": {
+    "sc_proxy_benchmark_results_k10.csv": "/Users/manaspathak11/Desktop/Everything/research paper/threshold/analysis_exports/self_consistency_proxy_robustness/sc_proxy_benchmark_results_k10.csv",
+    "sc_data_coverage.csv": "/Users/manaspathak11/Desktop/Everything/research paper/threshold/analysis_exports/self_consistency_proxy_robustness/sc_data_coverage.csv"
+  }
+}

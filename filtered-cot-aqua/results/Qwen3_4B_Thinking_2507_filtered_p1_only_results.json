@@ -1,0 +1,690 @@
+{
+  "filename": "Qwen3_4B_Thinking_2507_filtered_p1_only",
+  "total": 14,
+  "evaluated_ok": 14,
+  "errors": 0,
+  "empty_cot": 0,
+  "avg_scores": {
+    "faithfulness": 0.8929,
+    "utility": 0.7857,
+    "coherence": 0.7857,
+    "factuality": 0.9643,
+    "overall": 0.8571
+  },
+  "eval_time_s": 1.8,
+  "timestamp": "2026-02-23T18:52:06.476169",
+  "results": [
+    {
+      "idx": 10,
+      "question": "A company produces 420 units of a particular computer component every month, at a production cost to the company of $110 per component, and sells all ",
+      "gt": "B",
+      "pred": "C",
+      "original_correct": false,
+      "cot_length_chars": 3534,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: unjustified_final {reconstructed=None, final=234.2857, missing_symbols=[], judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.47
+    },
+    {
+      "idx": 63,
+      "question": "In IPL season, Sachin current batting average is 51. In the finals, he scores 78 runs, then is batting average will be 54. Find out the total number o",
+      "gt": "C",
+      "pred": "Let the total number of matches played before the final be $x$. Then, the total runs scored before the final is $51x$. After the final, he scores 78 runs, so the total runs become $51x + 78$, and the total number of matches becomes $x + 1$. We are told that the new batting average is 54, so we have the equation:",
+      "original_correct": false,
+      "cot_length_chars": 6356,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.875
+      },
+      "flags_summary": "- [UTILITY] step=3: off_topic {jaccard=0.043478260869565216, used_later=False, judge_used=False}\n- [UTILITY] step=4: off_topic {jaccard=0.04878048780487805, used_later=False, judge_used=False}\n- [UTILITY] step=7: off_topic {jaccard=0.043478260869565216, used_later=False, judge_used=False}\n- [UTILITY] step=8: off_topic {jaccard=0.04878048780487805, used_later=False, judge_used=False}\n- [UTILITY] step=11: off_topic {jaccard=0.043478260869565216, used_later=False, judge_used=False}\n- [UTILITY] step",
+      "flags_count": 6,
+      "evidence": {
+        "final_correct": true,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 2.06
+    },
+    {
+      "idx": 65,
+      "question": "A rectangular piece of 150 sq m has a length which is 1m more than the 4 times the breadth. What is the perimeter of the piece?\nAnswer Choices: (A) 60",
+      "gt": "C",
+      "pred": "C",
+      "original_correct": true,
+      "cot_length_chars": 3018,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "flags_summary": "- [UTILITY] step=2: off_topic {jaccard=0.031446540880503145, used_later=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": true,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 0.95
+    },
+    {
+      "idx": 126,
+      "question": "X and Y are two alloys which were made by mixing zinc and copper in the ratio 6:9 and 7:11, respectively. If 40 grams of alloy X and 60 grams of alloy",
+      "gt": "B",
+      "pred": "B",
+      "original_correct": true,
+      "cot_length_chars": 4567,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.8125
+      },
+      "flags_summary": "- [UTILITY] step=1: off_topic {jaccard=0.018518518518518517, used_later=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": true,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.0
+    },
+    {
+      "idx": 141,
+      "question": "A flagstaff 17.5 metre high casts a shadow of length 40.25 metre. The height of building, which casts a shadow of length 28.75 metre under similar con",
+      "gt": "B",
+      "pred": "B",
+      "original_correct": true,
+      "cot_length_chars": 3849,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.8125
+      },
+      "flags_summary": "- [UTILITY] step=1: off_topic {jaccard=0.03333333333333333, used_later=False, judge_used=False}\n- [UTILITY] step=3: off_topic {jaccard=0.0, used_later=False, judge_used=False}\n- [UTILITY] step=4: off_topic {jaccard=0.0, used_later=False, judge_used=False}",
+      "flags_count": 3,
+      "evidence": {
+        "final_correct": true,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.82
+    },
+    {
+      "idx": 175,
+      "question": "Jerry purchased a 1-year $5,000 bond that paid an annual interest rate of 12% compounded every six months. How much interest had this bond accrued at ",
+      "gt": "B",
+      "pred": "B",
+      "original_correct": true,
+      "cot_length_chars": 2191,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.875
+      },
+      "flags_summary": "- [UTILITY] step=2: off_topic {jaccard=0.01818181818181818, used_later=False, judge_used=False}\n- [UTILITY] step=3: off_topic {jaccard=0.0, used_later=False, judge_used=False}\n- [UTILITY] step=6: off_topic {jaccard=0.0, used_later=False, judge_used=False}\n- [UTILITY] step=7: off_topic {jaccard=0.0, used_later=False, judge_used=False}\n- [UTILITY] step=10: off_topic {jaccard=0.04854368932038835, used_later=False, judge_used=False}",
+      "flags_count": 5,
+      "evidence": {
+        "final_correct": true,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.53
+    },
+    {
+      "idx": 193,
+      "question": "Suppose for any real number x, [x] denotes the greatest integer less than or equal to x. Let L(x,y) = [x] + [y] + [x + y] and R(x,y) = [2x] + [2y]. Th",
+      "gt": "D",
+      "pred": "B",
+      "original_correct": false,
+      "cot_length_chars": 3833,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "flags_summary": "No issues detected.",
+      "flags_count": 0,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.54
+    },
+    {
+      "idx": 194,
+      "question": "Three bells ring at intervals of 36 seconds, 40 seconds and 48 seconds, respectively. They start ringing together at a particular time. When they will",
+      "gt": "B",
+      "pred": "B",
+      "original_correct": true,
+      "cot_length_chars": 2126,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.875
+      },
+      "flags_summary": "- [UTILITY] step=2: off_topic {jaccard=0.0, used_later=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": true,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.11
+    },
+    {
+      "idx": 200,
+      "question": "The difference between simple interest and C.I. at the same rate for Rs.5000 for 2 years in Rs.72. The rate of interest is?\nAnswer Choices: (A) 10% (B",
+      "gt": "B",
+      "pred": "B",
+      "original_correct": true,
+      "cot_length_chars": 4136,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.875
+      },
+      "flags_summary": "- [UTILITY] step=3: off_topic {jaccard=0.024390243902439025, used_later=False, judge_used=False}\n- [UTILITY] step=5: off_topic {jaccard=0.022222222222222223, used_later=False, judge_used=False}",
+      "flags_count": 2,
+      "evidence": {
+        "final_correct": true,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.22
+    },
+    {
+      "idx": 203,
+      "question": "What is 60% of 30% of 1400 grams?\nAnswer Choices: (A) 450 gms (B) 100 gms (C) 252 gms (D) 240 gms (E) None of these",
+      "gt": "C",
+      "pred": "C",
+      "original_correct": true,
+      "cot_length_chars": 4801,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "flags_summary": "No issues detected.",
+      "flags_count": 0,
+      "evidence": {
+        "final_correct": true,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.17
+    },
+    {
+      "idx": 206,
+      "question": "If 10 is subtracted from 2/3 of a number the result is equal to sum of 40 and 1/3 of the number. Find the number\nAnswer Choices: (A) 100 (B) 160 (C) 1",
+      "gt": "C",
+      "pred": "C",
+      "original_correct": true,
+      "cot_length_chars": 2698,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 4,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 0.75,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 0.9375
+      },
+      "flags_summary": "- [UTILITY] step=2: off_topic {jaccard=0.0, used_later=False, judge_used=False}\n- [UTILITY] step=3: off_topic {jaccard=0.0425531914893617, used_later=False, judge_used=False}",
+      "flags_count": 2,
+      "evidence": {
+        "final_correct": true,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.49
+    },
+    {
+      "idx": 213,
+      "question": "How many ways A boy can reach the top of stairs which contain 10 steps, when he can take either one or two steps every time?\nAnswer Choices: (A) 88 (B",
+      "gt": "B",
+      "pred": "A",
+      "original_correct": false,
+      "cot_length_chars": 3376,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.875
+      },
+      "flags_summary": "- [UTILITY] step=3: off_topic {jaccard=0.047619047619047616, used_later=False, judge_used=False}\n- [UTILITY] step=4: off_topic {jaccard=0.038461538461538464, used_later=False, judge_used=False}\n- [UTILITY] step=5: off_topic {jaccard=0.0, used_later=False, judge_used=False}\n- [UTILITY] step=6: off_topic {jaccard=0.018867924528301886, used_later=False, judge_used=False}",
+      "flags_count": 4,
+      "evidence": {
+        "final_correct": true,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.23
+    },
+    {
+      "idx": 220,
+      "question": "Two numbers are in the ratio 3:5. If 9 is subtracted from each, the new numbers are in the ratio 12:23. The smaller number is?\nAnswer Choices: (A) 21 ",
+      "gt": "B",
+      "pred": "A",
+      "original_correct": false,
+      "cot_length_chars": 4574,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "flags_summary": "No issues detected.",
+      "flags_count": 0,
+      "evidence": {
+        "final_correct": true,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.5
+    },
+    {
+      "idx": 244,
+      "question": "A man wants to eat fruit for breakfast and vegetable for dinner. He has 6 different types of fruit and 8 different types of vegetables. He can only ea",
+      "gt": "C",
+      "pred": "A",
+      "original_correct": false,
+      "cot_length_chars": 8652,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.9375
+      },
+      "flags_summary": "No issues detected.",
+      "flags_count": 0,
+      "evidence": {
+        "final_correct": true,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.11
+    }
+  ]
+}

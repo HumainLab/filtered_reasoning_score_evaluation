@@ -1,0 +1,26 @@
+# Core FRS pipeline: confidence filtering, LLM judging, and scoring.
+# This is all you need to run frs_pipeline.py and reproduce FRS numbers
+# from existing generation outputs. Generation itself needs
+# evaluation/requirements.txt (torch/vllm) as well.
+
+# Judge API access. openai is used directly; portkey-ai only if you route
+# judge calls through a Portkey gateway (see PORTKEY_MODEL_PREFIX in README).
+openai>=1.0
+portkey-ai>=2.0
+
+# Numerics and analysis
+numpy>=1.21
+pandas>=1.3
+scipy>=1.7
+scikit-learn>=1.0
+
+# Figures
+matplotlib>=3.5
+seaborn>=0.12
+
+# Parquet I/O for the downstream-validation experiments
+# (frs_experiments/build_downstream_parquets.py, downstream_validation.py)
+pyarrow>=8.0
+
+# Excel export used by a few analysis/reporting scripts
+openpyxl>=3.1

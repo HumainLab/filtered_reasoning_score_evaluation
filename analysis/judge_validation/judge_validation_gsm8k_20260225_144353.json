@@ -1,0 +1,1251 @@
+{
+  "timestamp": "2026-02-25T14:43:53.508827",
+  "config": {
+    "dataset": "gsm8k",
+    "samples_per_model": 5,
+    "seed": 42,
+    "judge_model": "gpt-4o",
+    "baseline_model": "gpt-4o-mini"
+  },
+  "total_api_calls": 45,
+  "elapsed_s": 0.3,
+  "pooled_agreement": {
+    "faithfulness": {
+      "n": 45,
+      "mean_4o_mini": 3.956,
+      "mean_4o": 3.956,
+      "mean_abs_diff": 0.0,
+      "exact_match_rate": 1.0,
+      "within_1_rate": 1.0,
+      "pearson_r": 1.0
+    },
+    "utility": {
+      "n": 45,
+      "mean_4o_mini": 4.222,
+      "mean_4o": 4.222,
+      "mean_abs_diff": 0.0,
+      "exact_match_rate": 1.0,
+      "within_1_rate": 1.0,
+      "pearson_r": 1.0
+    },
+    "coherence": {
+      "n": 45,
+      "mean_4o_mini": 4.333,
+      "mean_4o": 4.333,
+      "mean_abs_diff": 0.0,
+      "exact_match_rate": 1.0,
+      "within_1_rate": 1.0,
+      "pearson_r": 1.0
+    },
+    "factuality": {
+      "n": 45,
+      "mean_4o_mini": 4.244,
+      "mean_4o": 4.244,
+      "mean_abs_diff": 0.0,
+      "exact_match_rate": 1.0,
+      "within_1_rate": 1.0,
+      "pearson_r": 1.0
+    },
+    "overall": {
+      "n": 180,
+      "mean_abs_diff": 0.0,
+      "exact_match_rate": 1.0,
+      "within_1_rate": 1.0,
+      "pearson_r": 1.0
+    }
+  },
+  "rank_agreement": {
+    "rank_mini": [
+      "Phi-4",
+      "DS-R1-7B",
+      "Qwen2.5-Math-7B",
+      "Phi-4-Reasoning",
+      "LLaMA-3.1-8B",
+      "Qwen3-4B",
+      "Qwen2.5-7B",
+      "DS-R1-1.5B",
+      "Gemma-7B"
+    ],
+    "rank_4o": [
+      "Phi-4",
+      "DS-R1-7B",
+      "Qwen2.5-Math-7B",
+      "Phi-4-Reasoning",
+      "LLaMA-3.1-8B",
+      "Qwen3-4B",
+      "Qwen2.5-7B",
+      "DS-R1-1.5B",
+      "Gemma-7B"
+    ],
+    "spearman_rho": 1.0,
+    "rank_changes": {
+      "DS-R1-1.5B": 0,
+      "DS-R1-7B": 0,
+      "Gemma-7B": 0,
+      "LLaMA-3.1-8B": 0,
+      "Phi-4": 0,
+      "Phi-4-Reasoning": 0,
+      "Qwen2.5-7B": 0,
+      "Qwen2.5-Math-7B": 0,
+      "Qwen3-4B": 0
+    }
+  },
+  "per_model": {
+    "DS-R1-1.5B": {
+      "model_dir": "DeepSeek-R1-Distill-Qwen-1.5B",
+      "n_samples": 5,
+      "agreement": {
+        "faithfulness": {
+          "n": 5,
+          "mean_4o_mini": 3.6,
+          "mean_4o": 3.6,
+          "mean_abs_diff": 0.0,
+          "exact_match_rate": 1.0,
+          "within_1_rate": 1.0,
+          "pearson_r": 1.0
+        },
+        "utility": {
+          "n": 5,
+          "mean_4o_mini": 4.2,
+          "mean_4o": 4.2,
+          "mean_abs_diff": 0.0,
+          "exact_match_rate": 1.0,
+          "within_1_rate": 1.0,
+          "pearson_r": 1.0
+        },
+        "coherence": {
+          "n": 5,
+          "mean_4o_mini": 3.8,
+          "mean_4o": 3.8,
+          "mean_abs_diff": 0.0,
+          "exact_match_rate": 1.0,
+          "within_1_rate": 1.0,
+          "pearson_r": 1.0
+        },
+        "factuality": {
+          "n": 5,
+          "mean_4o_mini": 4.2,
+          "mean_4o": 4.2,
+          "mean_abs_diff": 0.0,
+          "exact_match_rate": 1.0,
+          "within_1_rate": 1.0,
+          "pearson_r": 1.0
+        },
+        "overall": {
+          "n": 20,
+          "mean_abs_diff": 0.0,
+          "exact_match_rate": 1.0,
+          "within_1_rate": 1.0,
+          "pearson_r": 1.0
+        }
+      },
+      "sample_pairs": [
+        {
+          "idx": 1309,
+          "mini": {
+            "faithfulness": 3,
+            "utility": 4,
+            "coherence": 3,
+            "factuality": 4
+          },
+          "gpt4o": {
+            "faithfulness": 3,
+            "utility": 4,
+            "coherence": 3,
+            "factuality": 4
+          }
+        },
+        {
+          "idx": 228,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 4,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 4,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 51,
+          "mini": {
+            "faithfulness": 2,
+            "utility": 3,
+            "coherence": 3,
+            "factuality": 3
+          },
+          "gpt4o": {
+            "faithfulness": 2,
+            "utility": 3,
+            "coherence": 3,
+            "factuality": 3
+          }
+        },
+        {
+          "idx": 563,
+          "mini": {
+            "faithfulness": 3,
+            "utility": 4,
+            "coherence": 4,
+            "factuality": 4
+          },
+          "gpt4o": {
+            "faithfulness": 3,
+            "utility": 4,
+            "coherence": 4,
+            "factuality": 4
+          }
+        },
+        {
+          "idx": 501,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        }
+      ]
+    },
+    "DS-R1-7B": {
+      "model_dir": "DeepSeek-R1-Distill-Qwen-7B",
+      "n_samples": 5,
+      "agreement": {
+        "faithfulness": {
+          "n": 5,
+          "mean_4o_mini": 4.4,
+          "mean_4o": 4.4,
+          "mean_abs_diff": 0.0,
+          "exact_match_rate": 1.0,
+          "within_1_rate": 1.0,
+          "pearson_r": 1.0
+        },
+        "utility": {
+          "n": 5,
+          "mean_4o_mini": 4.6,
+          "mean_4o": 4.6,
+          "mean_abs_diff": 0.0,
+          "exact_match_rate": 1.0,
+          "within_1_rate": 1.0,
+          "pearson_r": 1.0
+        },
+        "coherence": {
+          "n": 5,
+          "mean_4o_mini": 4.8,
+          "mean_4o": 4.8,
+          "mean_abs_diff": 0.0,
+          "exact_match_rate": 1.0,
+          "within_1_rate": 1.0,
+          "pearson_r": 1.0
+        },
+        "factuality": {
+          "n": 5,
+          "mean_4o_mini": 4.6,
+          "mean_4o": 4.6,
+          "mean_abs_diff": 0.0,
+          "exact_match_rate": 1.0,
+          "within_1_rate": 1.0,
+          "pearson_r": 1.0
+        },
+        "overall": {
+          "n": 20,
+          "mean_abs_diff": 0.0,
+          "exact_match_rate": 1.0,
+          "within_1_rate": 1.0,
+          "pearson_r": 1.0
+        }
+      },
+      "sample_pairs": [
+        {
+          "idx": 1309,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 228,
+          "mini": {
+            "faithfulness": 2,
+            "utility": 3,
+            "coherence": 4,
+            "factuality": 3
+          },
+          "gpt4o": {
+            "faithfulness": 2,
+            "utility": 3,
+            "coherence": 4,
+            "factuality": 3
+          }
+        },
+        {
+          "idx": 51,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 563,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 501,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        }
+      ]
+    },
+    "LLaMA-3.1-8B": {
+      "model_dir": "Llama-3.1-8B-Instruct",
+      "n_samples": 5,
+      "agreement": {
+        "faithfulness": {
+          "n": 5,
+          "mean_4o_mini": 4.0,
+          "mean_4o": 4.0,
+          "mean_abs_diff": 0.0,
+          "exact_match_rate": 1.0,
+          "within_1_rate": 1.0,
+          "pearson_r": 1.0
+        },
+        "utility": {
+          "n": 5,
+          "mean_4o_mini": 4.4,
+          "mean_4o": 4.4,
+          "mean_abs_diff": 0.0,
+          "exact_match_rate": 1.0,
+          "within_1_rate": 1.0,
+          "pearson_r": 1.0
+        },
+        "coherence": {
+          "n": 5,
+          "mean_4o_mini": 4.4,
+          "mean_4o": 4.4,
+          "mean_abs_diff": 0.0,
+          "exact_match_rate": 1.0,
+          "within_1_rate": 1.0,
+          "pearson_r": 1.0
+        },
+        "factuality": {
+          "n": 5,
+          "mean_4o_mini": 4.2,
+          "mean_4o": 4.2,
+          "mean_abs_diff": 0.0,
+          "exact_match_rate": 1.0,
+          "within_1_rate": 1.0,
+          "pearson_r": 1.0
+        },
+        "overall": {
+          "n": 20,
+          "mean_abs_diff": 0.0,
+          "exact_match_rate": 1.0,
+          "within_1_rate": 1.0,
+          "pearson_r": 1.0
+        }
+      },
+      "sample_pairs": [
+        {
+          "idx": 1309,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 228,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 51,
+          "mini": {
+            "faithfulness": 2,
+            "utility": 3,
+            "coherence": 4,
+            "factuality": 2
+          },
+          "gpt4o": {
+            "faithfulness": 2,
+            "utility": 3,
+            "coherence": 4,
+            "factuality": 2
+          }
+        },
+        {
+          "idx": 563,
+          "mini": {
+            "faithfulness": 3,
+            "utility": 4,
+            "coherence": 3,
+            "factuality": 4
+          },
+          "gpt4o": {
+            "faithfulness": 3,
+            "utility": 4,
+            "coherence": 3,
+            "factuality": 4
+          }
+        },
+        {
+          "idx": 501,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        }
+      ]
+    },
+    "Qwen2.5-7B": {
+      "model_dir": "Qwen2.5-7B-Instruct",
+      "n_samples": 5,
+      "agreement": {
+        "faithfulness": {
+          "n": 5,
+          "mean_4o_mini": 3.8,
+          "mean_4o": 3.8,
+          "mean_abs_diff": 0.0,
+          "exact_match_rate": 1.0,
+          "within_1_rate": 1.0,
+          "pearson_r": 1.0
+        },
+        "utility": {
+          "n": 5,
+          "mean_4o_mini": 4.2,
+          "mean_4o": 4.2,
+          "mean_abs_diff": 0.0,
+          "exact_match_rate": 1.0,
+          "within_1_rate": 1.0,
+          "pearson_r": 1.0
+        },
+        "coherence": {
+          "n": 5,
+          "mean_4o_mini": 4.4,
+          "mean_4o": 4.4,
+          "mean_abs_diff": 0.0,
+          "exact_match_rate": 1.0,
+          "within_1_rate": 1.0,
+          "pearson_r": 1.0
+        },
+        "factuality": {
+          "n": 5,
+          "mean_4o_mini": 4.2,
+          "mean_4o": 4.2,
+          "mean_abs_diff": 0.0,
+          "exact_match_rate": 1.0,
+          "within_1_rate": 1.0,
+          "pearson_r": 1.0
+        },
+        "overall": {
+          "n": 20,
+          "mean_abs_diff": 0.0,
+          "exact_match_rate": 1.0,
+          "within_1_rate": 1.0,
+          "pearson_r": 1.0
+        }
+      },
+      "sample_pairs": [
+        {
+          "idx": 1309,
+          "mini": {
+            "faithfulness": 1,
+            "utility": 2,
+            "coherence": 3,
+            "factuality": 2
+          },
+          "gpt4o": {
+            "faithfulness": 1,
+            "utility": 2,
+            "coherence": 3,
+            "factuality": 2
+          }
+        },
+        {
+          "idx": 228,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 51,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 563,
+          "mini": {
+            "faithfulness": 3,
+            "utility": 4,
+            "coherence": 4,
+            "factuality": 4
+          },
+          "gpt4o": {
+            "faithfulness": 3,
+            "utility": 4,
+            "coherence": 4,
+            "factuality": 4
+          }
+        },
+        {
+          "idx": 501,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        }
+      ]
+    },
+    "Qwen2.5-Math-7B": {
+      "model_dir": "Qwen2.5-Math-7B",
+      "n_samples": 5,
+      "agreement": {
+        "faithfulness": {
+          "n": 5,
+          "mean_4o_mini": 4.4,
+          "mean_4o": 4.4,
+          "mean_abs_diff": 0.0,
+          "exact_match_rate": 1.0,
+          "within_1_rate": 1.0,
+          "pearson_r": 1.0
+        },
+        "utility": {
+          "n": 5,
+          "mean_4o_mini": 4.6,
+          "mean_4o": 4.6,
+          "mean_abs_diff": 0.0,
+          "exact_match_rate": 1.0,
+          "within_1_rate": 1.0,
+          "pearson_r": 1.0
+        },
+        "coherence": {
+          "n": 5,
+          "mean_4o_mini": 4.8,
+          "mean_4o": 4.8,
+          "mean_abs_diff": 0.0,
+          "exact_match_rate": 1.0,
+          "within_1_rate": 1.0,
+          "pearson_r": 1.0
+        },
+        "factuality": {
+          "n": 5,
+          "mean_4o_mini": 4.6,
+          "mean_4o": 4.6,
+          "mean_abs_diff": 0.0,
+          "exact_match_rate": 1.0,
+          "within_1_rate": 1.0,
+          "pearson_r": 1.0
+        },
+        "overall": {
+          "n": 20,
+          "mean_abs_diff": 0.0,
+          "exact_match_rate": 1.0,
+          "within_1_rate": 1.0,
+          "pearson_r": 1.0
+        }
+      },
+      "sample_pairs": [
+        {
+          "idx": 1309,
+          "mini": {
+            "faithfulness": 2,
+            "utility": 3,
+            "coherence": 4,
+            "factuality": 3
+          },
+          "gpt4o": {
+            "faithfulness": 2,
+            "utility": 3,
+            "coherence": 4,
+            "factuality": 3
+          }
+        },
+        {
+          "idx": 228,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 51,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 563,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 501,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        }
+      ]
+    },
+    "Gemma-7B": {
+      "model_dir": "gemma-7b",
+      "n_samples": 5,
+      "agreement": {
+        "faithfulness": {
+          "n": 5,
+          "mean_4o_mini": 2.2,
+          "mean_4o": 2.2,
+          "mean_abs_diff": 0.0,
+          "exact_match_rate": 1.0,
+          "within_1_rate": 1.0,
+          "pearson_r": 1.0
+        },
+        "utility": {
+          "n": 5,
+          "mean_4o_mini": 2.6,
+          "mean_4o": 2.6,
+          "mean_abs_diff": 0.0,
+          "exact_match_rate": 1.0,
+          "within_1_rate": 1.0,
+          "pearson_r": 1.0
+        },
+        "coherence": {
+          "n": 5,
+          "mean_4o_mini": 3.0,
+          "mean_4o": 3.0,
+          "mean_abs_diff": 0.0,
+          "exact_match_rate": 1.0,
+          "within_1_rate": 1.0,
+          "pearson_r": 1.0
+        },
+        "factuality": {
+          "n": 5,
+          "mean_4o_mini": 2.4,
+          "mean_4o": 2.4,
+          "mean_abs_diff": 0.0,
+          "exact_match_rate": 1.0,
+          "within_1_rate": 1.0,
+          "pearson_r": 1.0
+        },
+        "overall": {
+          "n": 20,
+          "mean_abs_diff": 0.0,
+          "exact_match_rate": 1.0,
+          "within_1_rate": 1.0,
+          "pearson_r": 1.0
+        }
+      },
+      "sample_pairs": [
+        {
+          "idx": 1309,
+          "mini": {
+            "faithfulness": 1,
+            "utility": 1,
+            "coherence": 1,
+            "factuality": 1
+          },
+          "gpt4o": {
+            "faithfulness": 1,
+            "utility": 1,
+            "coherence": 1,
+            "factuality": 1
+          }
+        },
+        {
+          "idx": 228,
+          "mini": {
+            "faithfulness": 2,
+            "utility": 3,
+            "coherence": 3,
+            "factuality": 3
+          },
+          "gpt4o": {
+            "faithfulness": 2,
+            "utility": 3,
+            "coherence": 3,
+            "factuality": 3
+          }
+        },
+        {
+          "idx": 51,
+          "mini": {
+            "faithfulness": 2,
+            "utility": 2,
+            "coherence": 3,
+            "factuality": 2
+          },
+          "gpt4o": {
+            "faithfulness": 2,
+            "utility": 2,
+            "coherence": 3,
+            "factuality": 2
+          }
+        },
+        {
+          "idx": 563,
+          "mini": {
+            "faithfulness": 1,
+            "utility": 2,
+            "coherence": 3,
+            "factuality": 1
+          },
+          "gpt4o": {
+            "faithfulness": 1,
+            "utility": 2,
+            "coherence": 3,
+            "factuality": 1
+          }
+        },
+        {
+          "idx": 501,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        }
+      ]
+    },
+    "Phi-4": {
+      "model_dir": "phi-4",
+      "n_samples": 5,
+      "agreement": {
+        "faithfulness": {
+          "n": 5,
+          "mean_4o_mini": 5.0,
+          "mean_4o": 5.0,
+          "mean_abs_diff": 0.0,
+          "exact_match_rate": 1.0,
+          "within_1_rate": 1.0,
+          "pearson_r": 0.0
+        },
+        "utility": {
+          "n": 5,
+          "mean_4o_mini": 5.0,
+          "mean_4o": 5.0,
+          "mean_abs_diff": 0.0,
+          "exact_match_rate": 1.0,
+          "within_1_rate": 1.0,
+          "pearson_r": 0.0
+        },
+        "coherence": {
+          "n": 5,
+          "mean_4o_mini": 5.0,
+          "mean_4o": 5.0,
+          "mean_abs_diff": 0.0,
+          "exact_match_rate": 1.0,
+          "within_1_rate": 1.0,
+          "pearson_r": 0.0
+        },
+        "factuality": {
+          "n": 5,
+          "mean_4o_mini": 5.0,
+          "mean_4o": 5.0,
+          "mean_abs_diff": 0.0,
+          "exact_match_rate": 1.0,
+          "within_1_rate": 1.0,
+          "pearson_r": 0.0
+        },
+        "overall": {
+          "n": 20,
+          "mean_abs_diff": 0.0,
+          "exact_match_rate": 1.0,
+          "within_1_rate": 1.0,
+          "pearson_r": 0.0
+        }
+      },
+      "sample_pairs": [
+        {
+          "idx": 1309,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 228,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 51,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 563,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 501,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        }
+      ]
+    },
+    "Phi-4-Reasoning": {
+      "model_dir": "Phi-4-reasoning",
+      "n_samples": 5,
+      "agreement": {
+        "faithfulness": {
+          "n": 5,
+          "mean_4o_mini": 4.2,
+          "mean_4o": 4.2,
+          "mean_abs_diff": 0.0,
+          "exact_match_rate": 1.0,
+          "within_1_rate": 1.0,
+          "pearson_r": 1.0
+        },
+        "utility": {
+          "n": 5,
+          "mean_4o_mini": 4.2,
+          "mean_4o": 4.2,
+          "mean_abs_diff": 0.0,
+          "exact_match_rate": 1.0,
+          "within_1_rate": 1.0,
+          "pearson_r": 1.0
+        },
+        "coherence": {
+          "n": 5,
+          "mean_4o_mini": 4.4,
+          "mean_4o": 4.4,
+          "mean_abs_diff": 0.0,
+          "exact_match_rate": 1.0,
+          "within_1_rate": 1.0,
+          "pearson_r": 1.0
+        },
+        "factuality": {
+          "n": 5,
+          "mean_4o_mini": 4.6,
+          "mean_4o": 4.6,
+          "mean_abs_diff": 0.0,
+          "exact_match_rate": 1.0,
+          "within_1_rate": 1.0,
+          "pearson_r": 1.0
+        },
+        "overall": {
+          "n": 20,
+          "mean_abs_diff": 0.0,
+          "exact_match_rate": 1.0,
+          "within_1_rate": 1.0,
+          "pearson_r": 1.0
+        }
+      },
+      "sample_pairs": [
+        {
+          "idx": 1309,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 228,
+          "mini": {
+            "faithfulness": 2,
+            "utility": 3,
+            "coherence": 4,
+            "factuality": 3
+          },
+          "gpt4o": {
+            "faithfulness": 2,
+            "utility": 3,
+            "coherence": 4,
+            "factuality": 3
+          }
+        },
+        {
+          "idx": 51,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 563,
+          "mini": {
+            "faithfulness": 4,
+            "utility": 3,
+            "coherence": 3,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 4,
+            "utility": 3,
+            "coherence": 3,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 501,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        }
+      ]
+    },
+    "Qwen3-4B": {
+      "model_dir": "Qwen3-4B-Thinking-2507",
+      "n_samples": 5,
+      "agreement": {
+        "faithfulness": {
+          "n": 5,
+          "mean_4o_mini": 4.0,
+          "mean_4o": 4.0,
+          "mean_abs_diff": 0.0,
+          "exact_match_rate": 1.0,
+          "within_1_rate": 1.0,
+          "pearson_r": 1.0
+        },
+        "utility": {
+          "n": 5,
+          "mean_4o_mini": 4.2,
+          "mean_4o": 4.2,
+          "mean_abs_diff": 0.0,
+          "exact_match_rate": 1.0,
+          "within_1_rate": 1.0,
+          "pearson_r": 1.0
+        },
+        "coherence": {
+          "n": 5,
+          "mean_4o_mini": 4.4,
+          "mean_4o": 4.4,
+          "mean_abs_diff": 0.0,
+          "exact_match_rate": 1.0,
+          "within_1_rate": 1.0,
+          "pearson_r": 1.0
+        },
+        "factuality": {
+          "n": 5,
+          "mean_4o_mini": 4.4,
+          "mean_4o": 4.4,
+          "mean_abs_diff": 0.0,
+          "exact_match_rate": 1.0,
+          "within_1_rate": 1.0,
+          "pearson_r": 1.0
+        },
+        "overall": {
+          "n": 20,
+          "mean_abs_diff": 0.0,
+          "exact_match_rate": 1.0,
+          "within_1_rate": 1.0,
+          "pearson_r": 1.0
+        }
+      },
+      "sample_pairs": [
+        {
+          "idx": 1309,
+          "mini": {
+            "faithfulness": 3,
+            "utility": 4,
+            "coherence": 5,
+            "factuality": 4
+          },
+          "gpt4o": {
+            "faithfulness": 3,
+            "utility": 4,
+            "coherence": 5,
+            "factuality": 4
+          }
+        },
+        {
+          "idx": 228,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 51,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 563,
+          "mini": {
+            "faithfulness": 2,
+            "utility": 2,
+            "coherence": 2,
+            "factuality": 3
+          },
+          "gpt4o": {
+            "faithfulness": 2,
+            "utility": 2,
+            "coherence": 2,
+            "factuality": 3
+          }
+        },
+        {
+          "idx": 501,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        }
+      ]
+    }
+  },
+  "model_avgs_mini": {
+    "DS-R1-1.5B": 3.95,
+    "DS-R1-7B": 4.6,
+    "LLaMA-3.1-8B": 4.25,
+    "Qwen2.5-7B": 4.15,
+    "Qwen2.5-Math-7B": 4.6,
+    "Gemma-7B": 2.55,
+    "Phi-4": 5.0,
+    "Phi-4-Reasoning": 4.35,
+    "Qwen3-4B": 4.25
+  },
+  "model_avgs_4o": {
+    "DS-R1-1.5B": 3.95,
+    "DS-R1-7B": 4.6,
+    "LLaMA-3.1-8B": 4.25,
+    "Qwen2.5-7B": 4.15,
+    "Qwen2.5-Math-7B": 4.6,
+    "Gemma-7B": 2.55,
+    "Phi-4": 5.0,
+    "Phi-4-Reasoning": 4.35,
+    "Qwen3-4B": 4.25
+  }
+}

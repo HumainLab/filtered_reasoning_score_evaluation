@@ -1,0 +1,39 @@
+================================================================
+         k=4 vs k=8 DIAGNOSTIC COMPARISON
+         (all numbers read from output files)
+================================================================
+
+                                        k=8             k=4
+                                        ----            ----
+OVERLAP (from k_sensitivity_aggregate.csv):
+  Grand mean recall:                    0.987202           0.982113
+  Regime flip rate:                     0.025926           0.050000
+  Mean FRS shift:                       -0.2729           N/A
+
+BOUNDARY (from boundary_summary.csv):
+  Median k=16 pctile of new entrants:   10.1327%          10.2077%
+  95th pctile of new entrants:          10.2311%          10.3419%
+
+REGIME FLIPS (overlap CSV counts; max |SNR| from regime_flip_detail.csv):
+  Total flips / total trials:           14/540         27/540
+  Max |SNR_k16| among flips:            0.053474           0.075889
+
+RANKING STABILITY (from ranking_stability.csv, ρ only if ≥5 models ranked):
+  Spearman ρ (mean ± std):              0.971667±0.019791     N/A
+  Resamples with computable ranking:    10/10         0/10
+
+PER-MODEL (from per_model_recall.csv):
+  Least stable model (recall):          Phi-4-Reas. (0.983659)  Phi-4 (0.968955)
+  Most stable model (recall):           Phi-4 (0.991665)  Qwen3-4B (0.989654)
+
+================================================================
+CONCLUSIONS:
+  1. New entrants at k=4 are borderline
+     (median pctile < 12%)?              YES
+  2. Regime flips confined to near-zero
+     SNR (max |SNR| < 0.5)?              YES
+  3. Ranking stability estimable
+     (≥5 models rankable)?               NO
+  4. Filtered set stable at k=4?         YES
+  5. FRS rankings stable at k=4?         UNKNOWN
+================================================================

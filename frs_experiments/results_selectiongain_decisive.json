@@ -1,0 +1,657 @@
+{
+  "step0": {
+    "status": "cached \u2014 54-cell means available",
+    "pair_level_path": "/Users/manaspathak11/Desktop/Everything/research paper/threshold/analysis/selection_gain_pair_level.csv",
+    "variable": "mean_selection_gain",
+    "definition": "mean over 50 questions of (RS(top_conf trace) - RS(random trace)), 0-1 scale",
+    "n_pairs": 54,
+    "n_questions_per_pair": 50,
+    "supporting_paths": {
+      "pair_level_54": "/Users/manaspathak11/Desktop/Everything/research paper/threshold/analysis/selection_gain_pair_level.csv",
+      "question_level": "/Users/manaspathak11/Desktop/Everything/research paper/threshold/analysis/selection_gain_question_level.csv",
+      "judge_outputs": "/Users/manaspathak11/Desktop/Everything/research paper/threshold/analysis/selection_gain_judge_outputs.csv",
+      "predictor_panel": "/Users/manaspathak11/Desktop/Everything/research paper/threshold/analysis/selection_gain_predictor_panel_merged.csv",
+      "prior_table14": "/Users/manaspathak11/Desktop/Everything/research paper/threshold/analysis/selection_gain_predictor_results.csv",
+      "frs_predictor_panel": "/Users/manaspathak11/Desktop/Everything/research paper/threshold/analysis/frs_predictor_panel.csv",
+      "trace0": "/Users/manaspathak11/Desktop/Everything/research paper/threshold/analysis_outputs/trace0_k1_judging/per_pair_scores.csv",
+      "frs_pass1": "/Users/manaspathak11/Desktop/Everything/research paper/threshold/global_pass1_frs_analysis/merged_pass1_frs_per_benchmark.csv",
+      "unfiltered": "/Users/manaspathak11/Desktop/Everything/research paper/threshold/analysis_outputs/unfiltered_reasoning/per_pair_scores.csv",
+      "frs_judge_bins": "/Users/manaspathak11/Desktop/Everything/research paper/threshold/reasoning_confidence_bins_results/judging_checkpoints/judged_*.json",
+      "trace0_checkpoints": "/Users/manaspathak11/Desktop/Everything/research paper/threshold/analysis_outputs/trace0_k1_judging/judging_checkpoints/trace0_judged_*.json"
+    },
+    "reconstruction": "Not needed; pair_level pre-aggregated from selection_gain_judge_outputs.csv (5400 rows)."
+  },
+  "experiment1": {
+    "rows": [
+      {
+        "predictor": "FRS (%)",
+        "pearson_r": 0.4906153407558572,
+        "pearson_p": 0.00016568526650135394,
+        "spearman_rho": 0.4009759444931569,
+        "spearman_p": 0.002657512283541367,
+        "n": 54,
+        "predictor_col": "frs_pct"
+      },
+      {
+        "predictor": "high-conf accuracy (%)",
+        "pearson_r": 0.20088798245584163,
+        "pearson_p": 0.1452343869750577,
+        "spearman_rho": 0.1856892346576458,
+        "spearman_p": 0.1788422570889994,
+        "n": 54,
+        "predictor_col": "high_conf_accuracy_pct"
+      },
+      {
+        "predictor": "SNR",
+        "pearson_r": 0.10310194006789858,
+        "pearson_p": 0.45815157649063953,
+        "spearman_rho": 0.12924807035329833,
+        "spearman_p": 0.3516121787434776,
+        "n": 54,
+        "predictor_col": "snr"
+      },
+      {
+        "predictor": "unfiltered reasoning (0-1)",
+        "pearson_r": 0.007786400219891088,
+        "pearson_p": 0.9554373252221715,
+        "spearman_rho": -0.06468951339655848,
+        "spearman_p": 0.6421225959565763,
+        "n": 54,
+        "predictor_col": "unfiltered_reasoning_mean"
+      },
+      {
+        "predictor": "pass@16 (%)",
+        "pearson_r": -0.08237551312818005,
+        "pearson_p": 0.5537316293416433,
+        "spearman_rho": -0.14841501308428218,
+        "spearman_p": 0.28414734255114643,
+        "n": 54,
+        "predictor_col": "pass16_pct"
+      },
+      {
+        "predictor": "pass@1 (%)",
+        "pearson_r": -0.1281452231674484,
+        "pearson_p": 0.3557716156268743,
+        "spearman_rho": -0.14449908519191262,
+        "spearman_p": 0.29718707128868693,
+        "n": 54,
+        "predictor_col": "pass1_pct"
+      },
+      {
+        "predictor": "single-trace (trace-0, 0-1)",
+        "pearson_r": -0.10443586226808668,
+        "pearson_p": 0.45232467450669045,
+        "spearman_rho": -0.11587655593878131,
+        "spearman_p": 0.4040517367293004,
+        "n": 54,
+        "predictor_col": "trace0_reasoning_0_1"
+      },
+      {
+        "predictor": "top-1 conf. single trace (0-1 mean)",
+        "pearson_r": 0.5137493468837558,
+        "pearson_p": 7.091090442215298e-05,
+        "spearman_rho": 0.4394846198874029,
+        "spearman_p": 0.0008844686290298042,
+        "n": 54,
+        "predictor_col": "mean_top_conf_reasoning"
+      }
+    ],
+    "sanity_vs_prior_csv": {
+      "frs": {
+        "recomputed_pearson": 0.4906153407558572,
+        "prior_pearson": 0.4906153407558572
+      },
+      "unfiltered": {
+        "recomputed_pearson": 0.007786400219891088,
+        "prior_pearson": 0.007786400219891
+      }
+    },
+    "top_conf_note": "Predictor (b): `mean_top_conf_reasoning` from pair_level \u2014 mean RS of the top-confidence trace per question (50/50 judged in selection_gain_judge_outputs.csv, selection_type=top_conf)."
+  },
+  "experiment2": [
+    {
+      "comparison": "FRS vs trace0",
+      "label_a": "FRS",
+      "label_b": "trace0",
+      "n_pairs": 54,
+      "pearson_r_a": 0.4906153407558572,
+      "pearson_r_b": -0.10443586226808668,
+      "pearson_r_between_predictors": 0.6700080280517571,
+      "diff_r_point": 0.5950512030239439,
+      "diff_r_bootstrap_mean": 0.5872839168418243,
+      "diff_r_ci_95_lo": 0.3799875072804838,
+      "diff_r_ci_95_hi": 0.8006442293499305,
+      "bootstrap_p_diff_le_0": 0.0,
+      "bootstrap_p_diff_gt_0": 1.0
+    },
+    {
+      "comparison": "FRS vs unfiltered",
+      "label_a": "FRS",
+      "label_b": "unfiltered",
+      "n_pairs": 54,
+      "pearson_r_a": 0.4906153407558572,
+      "pearson_r_b": 0.007786400219891088,
+      "pearson_r_between_predictors": 0.8151412772155914,
+      "diff_r_point": 0.48282894053596614,
+      "diff_r_bootstrap_mean": 0.4816486359990743,
+      "diff_r_ci_95_lo": 0.3256267931603183,
+      "diff_r_ci_95_hi": 0.6577586217704597,
+      "bootstrap_p_diff_le_0": 0.0,
+      "bootstrap_p_diff_gt_0": 1.0
+    }
+  ],
+  "experiment3": [
+    {
+      "threshold_pp": 3.0,
+      "comparison": "FRS vs trace0",
+      "n_close_pairs": 27,
+      "amplification_frs": 7.353333333333333,
+      "amplification_comparator": 5.46111111111111,
+      "amplification_diff_point": 1.892222222222222,
+      "amplification_diff_ci_95": [
+        -0.9070539450341795,
+        5.131655792561113
+      ],
+      "bootstrap_p_frs_amp_le_comparator": 0.0944,
+      "bootstrap_p_frs_amp_gt_comparator": 0.9056
+    },
+    {
+      "threshold_pp": 3.0,
+      "comparison": "FRS vs unfiltered",
+      "n_close_pairs": 27,
+      "amplification_frs": 7.353333333333333,
+      "amplification_comparator": 4.040277777777778,
+      "amplification_diff_point": 3.3130555555555548,
+      "amplification_diff_ci_95": [
+        1.182458343669892,
+        6.0406868151918545
+      ],
+      "bootstrap_p_frs_amp_le_comparator": 0.0012,
+      "bootstrap_p_frs_amp_gt_comparator": 0.9988
+    },
+    {
+      "threshold_pp": 5.0,
+      "comparison": "FRS vs trace0",
+      "n_close_pairs": 34,
+      "amplification_frs": 6.066620402498264,
+      "amplification_comparator": 4.000693962526023,
+      "amplification_diff_point": 2.0659264399722415,
+      "amplification_diff_ci_95": [
+        0.169875151797982,
+        4.14361051681554
+      ],
+      "bootstrap_p_frs_amp_le_comparator": 0.018,
+      "bootstrap_p_frs_amp_gt_comparator": 0.982
+    },
+    {
+      "threshold_pp": 5.0,
+      "comparison": "FRS vs unfiltered",
+      "n_close_pairs": 34,
+      "amplification_frs": 6.066620402498264,
+      "amplification_comparator": 3.3275503122831362,
+      "amplification_diff_point": 2.739070090215128,
+      "amplification_diff_ci_95": [
+        1.2904243922785805,
+        4.553758416017009
+      ],
+      "bootstrap_p_frs_amp_le_comparator": 0.0001,
+      "bootstrap_p_frs_amp_gt_comparator": 0.9999
+    }
+  ],
+  "experiment4": {
+    "per_pair": [
+      {
+        "model": "LLaMA-3.1-8B",
+        "benchmark": "AQuA",
+        "n_trace0": 50,
+        "n_frs_bin": 50,
+        "bootstrap_sd_trace0_mean": 0.043995025627477154,
+        "bootstrap_sd_frs_mean": 0.03902817904173126
+      },
+      {
+        "model": "Qwen2.5-Math",
+        "benchmark": "GSM8K",
+        "n_trace0": 50,
+        "n_frs_bin": 50,
+        "bootstrap_sd_trace0_mean": 0.028985214984648133,
+        "bootstrap_sd_frs_mean": 0.025052514930649878
+      },
+      {
+        "model": "LLaMA-3.1-8B",
+        "benchmark": "GPQA",
+        "n_trace0": 50,
+        "n_frs_bin": 50,
+        "bootstrap_sd_trace0_mean": 0.029670893469885686,
+        "bootstrap_sd_frs_mean": 0.02652068696548436
+      },
+      {
+        "model": "Phi-4-Reas.",
+        "benchmark": "GPQA",
+        "n_trace0": 50,
+        "n_frs_bin": 50,
+        "bootstrap_sd_trace0_mean": 0.027612060663583387,
+        "bootstrap_sd_frs_mean": 0.049634545869522595
+      },
+      {
+        "model": "Qwen3-4B",
+        "benchmark": "SVAMP",
+        "n_trace0": 50,
+        "n_frs_bin": 50,
+        "bootstrap_sd_trace0_mean": 0.03752946870180291,
+        "bootstrap_sd_frs_mean": 0.01934522256788792
+      },
+      {
+        "model": "LLaMA-3.1-8B",
+        "benchmark": "GSM8K",
+        "n_trace0": 50,
+        "n_frs_bin": 50,
+        "bootstrap_sd_trace0_mean": 0.0407414099105339,
+        "bootstrap_sd_frs_mean": 0.03353721630103037
+      },
+      {
+        "model": "Phi-4-Reas.",
+        "benchmark": "AQuA",
+        "n_trace0": 50,
+        "n_frs_bin": 50,
+        "bootstrap_sd_trace0_mean": 0.042851154675283554,
+        "bootstrap_sd_frs_mean": 0.03034719481818226
+      },
+      {
+        "model": "Phi-4",
+        "benchmark": "CSQA",
+        "n_trace0": 50,
+        "n_frs_bin": 50,
+        "bootstrap_sd_trace0_mean": 0.04229269087688392,
+        "bootstrap_sd_frs_mean": 0.038640225337579416
+      },
+      {
+        "model": "Phi-4-Reas.",
+        "benchmark": "CSQA",
+        "n_trace0": 50,
+        "n_frs_bin": 50,
+        "bootstrap_sd_trace0_mean": 0.04146610523338094,
+        "bootstrap_sd_frs_mean": 0.05120892825272419
+      },
+      {
+        "model": "Qwen3-4B",
+        "benchmark": "AQuA",
+        "n_trace0": 50,
+        "n_frs_bin": 50,
+        "bootstrap_sd_trace0_mean": 0.03425895868327738,
+        "bootstrap_sd_frs_mean": 0.03209349352426492
+      },
+      {
+        "model": "Gemma-7B",
+        "benchmark": "GPQA",
+        "n_trace0": 50,
+        "n_frs_bin": 50,
+        "bootstrap_sd_trace0_mean": 0.023171381016834594,
+        "bootstrap_sd_frs_mean": 0.0174679786402943
+      },
+      {
+        "model": "Qwen3-4B",
+        "benchmark": "GPQA",
+        "n_trace0": 50,
+        "n_frs_bin": 50,
+        "bootstrap_sd_trace0_mean": 0.018617495329598173,
+        "bootstrap_sd_frs_mean": 0.021405941401678747
+      },
+      {
+        "model": "Gemma-7B",
+        "benchmark": "AQuA",
+        "n_trace0": 50,
+        "n_frs_bin": 50,
+        "bootstrap_sd_trace0_mean": 0.03797479839273405,
+        "bootstrap_sd_frs_mean": 0.020608952599588854
+      },
+      {
+        "model": "Qwen2.5-Math",
+        "benchmark": "CSQA",
+        "n_trace0": 50,
+        "n_frs_bin": 50,
+        "bootstrap_sd_trace0_mean": 0.03244221494196118,
+        "bootstrap_sd_frs_mean": 0.0338948564551288
+      },
+      {
+        "model": "Qwen3-4B",
+        "benchmark": "CSQA",
+        "n_trace0": 50,
+        "n_frs_bin": 50,
+        "bootstrap_sd_trace0_mean": 0.025506358041465442,
+        "bootstrap_sd_frs_mean": 0.024772676069761634
+      },
+      {
+        "model": "DS-R1-1.5B",
+        "benchmark": "MATH500",
+        "n_trace0": 50,
+        "n_frs_bin": 50,
+        "bootstrap_sd_trace0_mean": 0.046088396034243535,
+        "bootstrap_sd_frs_mean": 0.035740615636808915
+      },
+      {
+        "model": "DS-R1-7B",
+        "benchmark": "CSQA",
+        "n_trace0": 50,
+        "n_frs_bin": 50,
+        "bootstrap_sd_trace0_mean": 0.044637429987343165,
+        "bootstrap_sd_frs_mean": 0.03350853810542317
+      },
+      {
+        "model": "Gemma-7B",
+        "benchmark": "CSQA",
+        "n_trace0": 50,
+        "n_frs_bin": 50,
+        "bootstrap_sd_trace0_mean": 0.035879523180049895,
+        "bootstrap_sd_frs_mean": 0.03119050526621645
+      },
+      {
+        "model": "Phi-4-Reas.",
+        "benchmark": "SVAMP",
+        "n_trace0": 50,
+        "n_frs_bin": 50,
+        "bootstrap_sd_trace0_mean": 0.027973764170782654,
+        "bootstrap_sd_frs_mean": 0.03379730000586243
+      },
+      {
+        "model": "Qwen3-4B",
+        "benchmark": "MATH500",
+        "n_trace0": 50,
+        "n_frs_bin": 50,
+        "bootstrap_sd_trace0_mean": 0.029980432361291207,
+        "bootstrap_sd_frs_mean": 0.02778924548635398
+      },
+      {
+        "model": "Qwen2.5-7B",
+        "benchmark": "GSM8K",
+        "n_trace0": 50,
+        "n_frs_bin": 50,
+        "bootstrap_sd_trace0_mean": 0.03744499038042117,
+        "bootstrap_sd_frs_mean": 0.0224680254295086
+      },
+      {
+        "model": "DS-R1-7B",
+        "benchmark": "SVAMP",
+        "n_trace0": 50,
+        "n_frs_bin": 50,
+        "bootstrap_sd_trace0_mean": 0.029086396808223402,
+        "bootstrap_sd_frs_mean": 0.007143664720020335
+      },
+      {
+        "model": "Qwen2.5-7B",
+        "benchmark": "MATH500",
+        "n_trace0": 50,
+        "n_frs_bin": 50,
+        "bootstrap_sd_trace0_mean": 0.03756476636563457,
+        "bootstrap_sd_frs_mean": 0.026738539609231064
+      },
+      {
+        "model": "Phi-4",
+        "benchmark": "SVAMP",
+        "n_trace0": 50,
+        "n_frs_bin": 50,
+        "bootstrap_sd_trace0_mean": 0.046381495332678796,
+        "bootstrap_sd_frs_mean": 0.0421950706521062
+      },
+      {
+        "model": "Gemma-7B",
+        "benchmark": "SVAMP",
+        "n_trace0": 50,
+        "n_frs_bin": 50,
+        "bootstrap_sd_trace0_mean": 0.03868806592805978,
+        "bootstrap_sd_frs_mean": 0.045760990010686786
+      },
+      {
+        "model": "DS-R1-1.5B",
+        "benchmark": "SVAMP",
+        "n_trace0": 50,
+        "n_frs_bin": 50,
+        "bootstrap_sd_trace0_mean": 0.04201491935946537,
+        "bootstrap_sd_frs_mean": 0.017487455649994113
+      },
+      {
+        "model": "Gemma-7B",
+        "benchmark": "MATH500",
+        "n_trace0": 50,
+        "n_frs_bin": 50,
+        "bootstrap_sd_trace0_mean": 0.030723951896232556,
+        "bootstrap_sd_frs_mean": 0.020149817015222487
+      },
+      {
+        "model": "LLaMA-3.1-8B",
+        "benchmark": "CSQA",
+        "n_trace0": 50,
+        "n_frs_bin": 50,
+        "bootstrap_sd_trace0_mean": 0.04270312968818581,
+        "bootstrap_sd_frs_mean": 0.030032555509370448
+      },
+      {
+        "model": "DS-R1-7B",
+        "benchmark": "GSM8K",
+        "n_trace0": 50,
+        "n_frs_bin": 50,
+        "bootstrap_sd_trace0_mean": 0.031615709604710454,
+        "bootstrap_sd_frs_mean": 0.011273035596974616
+      },
+      {
+        "model": "Qwen2.5-7B",
+        "benchmark": "SVAMP",
+        "n_trace0": 50,
+        "n_frs_bin": 50,
+        "bootstrap_sd_trace0_mean": 0.030212404315890347,
+        "bootstrap_sd_frs_mean": 0.01871004638111724
+      },
+      {
+        "model": "Phi-4-Reas.",
+        "benchmark": "GSM8K",
+        "n_trace0": 50,
+        "n_frs_bin": 50,
+        "bootstrap_sd_trace0_mean": 0.02919455051230386,
+        "bootstrap_sd_frs_mean": 0.026100459054081468
+      },
+      {
+        "model": "DS-R1-1.5B",
+        "benchmark": "GSM8K",
+        "n_trace0": 50,
+        "n_frs_bin": 50,
+        "bootstrap_sd_trace0_mean": 0.037001129774573566,
+        "bootstrap_sd_frs_mean": 0.02235056342976476
+      },
+      {
+        "model": "Phi-4",
+        "benchmark": "MATH500",
+        "n_trace0": 50,
+        "n_frs_bin": 50,
+        "bootstrap_sd_trace0_mean": 0.04564078959688228,
+        "bootstrap_sd_frs_mean": 0.04327600482018667
+      },
+      {
+        "model": "DS-R1-1.5B",
+        "benchmark": "CSQA",
+        "n_trace0": 50,
+        "n_frs_bin": 50,
+        "bootstrap_sd_trace0_mean": 0.041252934047969626,
+        "bootstrap_sd_frs_mean": 0.04299210328163572
+      },
+      {
+        "model": "Gemma-7B",
+        "benchmark": "GSM8K",
+        "n_trace0": 50,
+        "n_frs_bin": 50,
+        "bootstrap_sd_trace0_mean": 0.03775047065671473,
+        "bootstrap_sd_frs_mean": 0.05154893937366151
+      },
+      {
+        "model": "Phi-4",
+        "benchmark": "GSM8K",
+        "n_trace0": 50,
+        "n_frs_bin": 50,
+        "bootstrap_sd_trace0_mean": 0.033874713358268964,
+        "bootstrap_sd_frs_mean": 0.027351084927012832
+      },
+      {
+        "model": "Qwen2.5-7B",
+        "benchmark": "CSQA",
+        "n_trace0": 50,
+        "n_frs_bin": 50,
+        "bootstrap_sd_trace0_mean": 0.03998305709572302,
+        "bootstrap_sd_frs_mean": 0.03513951352791609
+      },
+      {
+        "model": "Qwen2.5-7B",
+        "benchmark": "AQuA",
+        "n_trace0": 50,
+        "n_frs_bin": 50,
+        "bootstrap_sd_trace0_mean": 0.04227807233394638,
+        "bootstrap_sd_frs_mean": 0.02420689293829234
+      },
+      {
+        "model": "LLaMA-3.1-8B",
+        "benchmark": "MATH500",
+        "n_trace0": 50,
+        "n_frs_bin": 50,
+        "bootstrap_sd_trace0_mean": 0.04419321454850946,
+        "bootstrap_sd_frs_mean": 0.043407492421122754
+      },
+      {
+        "model": "LLaMA-3.1-8B",
+        "benchmark": "SVAMP",
+        "n_trace0": 50,
+        "n_frs_bin": 50,
+        "bootstrap_sd_trace0_mean": 0.035532728578453174,
+        "bootstrap_sd_frs_mean": 0.03259035031022733
+      },
+      {
+        "model": "DS-R1-7B",
+        "benchmark": "MATH500",
+        "n_trace0": 50,
+        "n_frs_bin": 50,
+        "bootstrap_sd_trace0_mean": 0.04480725001495729,
+        "bootstrap_sd_frs_mean": 0.020123246693566226
+      },
+      {
+        "model": "Qwen3-4B",
+        "benchmark": "GSM8K",
+        "n_trace0": 50,
+        "n_frs_bin": 50,
+        "bootstrap_sd_trace0_mean": 0.03186390587776832,
+        "bootstrap_sd_frs_mean": 0.022965797042196867
+      },
+      {
+        "model": "Qwen2.5-7B",
+        "benchmark": "GPQA",
+        "n_trace0": 50,
+        "n_frs_bin": 50,
+        "bootstrap_sd_trace0_mean": 0.02307516607607232,
+        "bootstrap_sd_frs_mean": 0.026674406878799264
+      },
+      {
+        "model": "Qwen2.5-Math",
+        "benchmark": "SVAMP",
+        "n_trace0": 50,
+        "n_frs_bin": 50,
+        "bootstrap_sd_trace0_mean": 0.03021862288393161,
+        "bootstrap_sd_frs_mean": 0.04366501320379749
+      },
+      {
+        "model": "Phi-4-Reas.",
+        "benchmark": "MATH500",
+        "n_trace0": 50,
+        "n_frs_bin": 50,
+        "bootstrap_sd_trace0_mean": 0.03808903544586676,
+        "bootstrap_sd_frs_mean": 0.03493846273596207
+      },
+      {
+        "model": "Phi-4",
+        "benchmark": "AQuA",
+        "n_trace0": 50,
+        "n_frs_bin": 50,
+        "bootstrap_sd_trace0_mean": 0.041311848988771514,
+        "bootstrap_sd_frs_mean": 0.03496199104479258
+      },
+      {
+        "model": "DS-R1-7B",
+        "benchmark": "GPQA",
+        "n_trace0": 50,
+        "n_frs_bin": 50,
+        "bootstrap_sd_trace0_mean": 0.024309038834274786,
+        "bootstrap_sd_frs_mean": 0.025066156502933548
+      },
+      {
+        "model": "DS-R1-7B",
+        "benchmark": "AQuA",
+        "n_trace0": 50,
+        "n_frs_bin": 50,
+        "bootstrap_sd_trace0_mean": 0.03738510078328073,
+        "bootstrap_sd_frs_mean": 0.012948901687227784
+      },
+      {
+        "model": "Qwen2.5-Math",
+        "benchmark": "MATH500",
+        "n_trace0": 50,
+        "n_frs_bin": 50,
+        "bootstrap_sd_trace0_mean": 0.035157606651769514,
+        "bootstrap_sd_frs_mean": 0.04139622671806
+      },
+      {
+        "model": "Phi-4",
+        "benchmark": "GPQA",
+        "n_trace0": 50,
+        "n_frs_bin": 50,
+        "bootstrap_sd_trace0_mean": 0.02584401938201867,
+        "bootstrap_sd_frs_mean": 0.034267978717368745
+      },
+      {
+        "model": "Qwen2.5-Math",
+        "benchmark": "AQuA",
+        "n_trace0": 50,
+        "n_frs_bin": 50,
+        "bootstrap_sd_trace0_mean": 0.03707651058303224,
+        "bootstrap_sd_frs_mean": 0.04117534785359544
+      },
+      {
+        "model": "DS-R1-1.5B",
+        "benchmark": "GPQA",
+        "n_trace0": 50,
+        "n_frs_bin": 50,
+        "bootstrap_sd_trace0_mean": 0.02845555068560187,
+        "bootstrap_sd_frs_mean": 0.041476906608565706
+      },
+      {
+        "model": "DS-R1-1.5B",
+        "benchmark": "AQuA",
+        "n_trace0": 50,
+        "n_frs_bin": 50,
+        "bootstrap_sd_trace0_mean": 0.03841207197909757,
+        "bootstrap_sd_frs_mean": 0.025818282792567957
+      },
+      {
+        "model": "Qwen2.5-Math",
+        "benchmark": "GPQA",
+        "n_trace0": 50,
+        "n_frs_bin": 50,
+        "bootstrap_sd_trace0_mean": 0.024256125444339457,
+        "bootstrap_sd_frs_mean": 0.030642132352969313
+      }
+    ],
+    "median_bootstrap_sd_trace0": 0.0370388201788029,
+    "median_bootstrap_sd_frs": 0.030494663585575787,
+    "mean_bootstrap_sd_trace0": 0.03527915037216094,
+    "mean_bootstrap_sd_frs": 0.030604227273457605,
+    "ratio_median_sd_trace0_over_frs": 1.214600058625423,
+    "note": "Bootstrap SD = std of resampled-with-replacement means (10k draws); measures estimator noise."
+  },
+  "provenance": [
+    "/Users/manaspathak11/Desktop/Everything/research paper/threshold/analysis/selection_gain_pair_level.csv",
+    "/Users/manaspathak11/Desktop/Everything/research paper/threshold/analysis/selection_gain_question_level.csv",
+    "/Users/manaspathak11/Desktop/Everything/research paper/threshold/analysis/selection_gain_judge_outputs.csv",
+    "/Users/manaspathak11/Desktop/Everything/research paper/threshold/analysis/selection_gain_predictor_panel_merged.csv",
+    "/Users/manaspathak11/Desktop/Everything/research paper/threshold/analysis/selection_gain_predictor_results.csv",
+    "/Users/manaspathak11/Desktop/Everything/research paper/threshold/analysis/frs_predictor_panel.csv",
+    "/Users/manaspathak11/Desktop/Everything/research paper/threshold/analysis_outputs/trace0_k1_judging/per_pair_scores.csv",
+    "/Users/manaspathak11/Desktop/Everything/research paper/threshold/global_pass1_frs_analysis/merged_pass1_frs_per_benchmark.csv",
+    "/Users/manaspathak11/Desktop/Everything/research paper/threshold/analysis_outputs/unfiltered_reasoning/per_pair_scores.csv",
+    "/Users/manaspathak11/Desktop/Everything/research paper/threshold/reasoning_confidence_bins_results/judging_checkpoints/judged_*.json",
+    "/Users/manaspathak11/Desktop/Everything/research paper/threshold/analysis_outputs/trace0_k1_judging/judging_checkpoints/trace0_judged_*.json"
+  ],
+  "skipped": []
+}

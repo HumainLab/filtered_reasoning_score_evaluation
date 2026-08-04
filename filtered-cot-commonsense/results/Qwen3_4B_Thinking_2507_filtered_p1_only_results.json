@@ -1,0 +1,5634 @@
+{
+  "filename": "Qwen3_4B_Thinking_2507_filtered_p1_only",
+  "total": 117,
+  "evaluated_ok": 117,
+  "errors": 0,
+  "empty_cot": 0,
+  "avg_scores": {
+    "faithfulness": 0.4872,
+    "utility": 0.5256,
+    "coherence": 0.6132,
+    "factuality": 0.9145,
+    "overall": 0.6351
+  },
+  "eval_time_s": 10.4,
+  "timestamp": "2026-02-23T19:07:29.615656",
+  "results": [
+    {
+      "idx": 29,
+      "question": "Question:\nCommitting perjury is a serious what?\n\nChoices:\nA. indictment\nB. crime\nC. violence\nD. lie\nE. go to jail",
+      "gt": "B",
+      "pred": "B",
+      "original_correct": true,
+      "cot_length_chars": 9438,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "flags_summary": "No issues detected.",
+      "flags_count": 0,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 2.24
+    },
+    {
+      "idx": 37,
+      "question": "Question:\nIf you have leftover cake, where would you put it?\n\nChoices:\nA. quandry\nB. refrigerator\nC. oven\nD. night stand\nE. bakery",
+      "gt": "B",
+      "pred": "B",
+      "original_correct": true,
+      "cot_length_chars": 3469,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=2, total_comp_steps=2, shuffle_ok=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.88
+    },
+    {
+      "idx": 52,
+      "question": "Question:\nWhen a person is beginning work, what are they building?\n\nChoices:\nA. time\nB. accomplishing\nC. working\nD. momentum\nE. tiredness",
+      "gt": "D",
+      "pred": "A",
+      "original_correct": false,
+      "cot_length_chars": 4126,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.25,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.5625
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=10, total_comp_steps=10, shuffle_ok=False, judge_used=False}\n- [UTILITY] step=2: off_topic {jaccard=0.04918032786885246, used_later=False, judge_used=False}\n- [UTILITY] step=7: off_topic {jaccard=0.02564102564102564, used_later=False, judge_used=False}\n- [UTILITY] step=8: off_topic {jaccard=0.02857142857142857, used_later=False, judge_used=False}\n- [UTILITY] step=9: off_topic {jaccard=0.03225806451612903, used_later=False, judge_",
+      "flags_count": 6,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.0
+    },
+    {
+      "idx": 55,
+      "question": "Question:\nThe teacher doesn't tolerate noise during a test in their what?\n\nChoices:\nA. movie theatre\nB. bowling alley\nC. factory\nD. store\nE. classroom",
+      "gt": "E",
+      "pred": "E",
+      "original_correct": true,
+      "cot_length_chars": 4286,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.25,
+        "coherence": 0.25,
+        "factuality": 1.0,
+        "overall": 0.5
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=6, total_comp_steps=6, shuffle_ok=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": true,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.23
+    },
+    {
+      "idx": 102,
+      "question": "Question:\nWhen learning about the world and different cultures, what is important if you are committed to eliminating preconceived notions\n\nChoices:\nA",
+      "gt": "D",
+      "pred": "D",
+      "original_correct": true,
+      "cot_length_chars": 3620,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.75
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=2, total_comp_steps=2, shuffle_ok=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.14
+    },
+    {
+      "idx": 109,
+      "question": "Question:\nWhat would encourage someone to continue playing tennis?\n\nChoices:\nA. becoming tired\nB. tennis elbow\nC. exercise\nD. hunger\nE. victory",
+      "gt": "E",
+      "pred": "E",
+      "original_correct": true,
+      "cot_length_chars": 4188,
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.25,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.4375
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=6, total_comp_steps=6, shuffle_ok=False, judge_used=False}\n- [UTILITY] step=5: off_topic {jaccard=0.044444444444444446, used_later=False, judge_used=False}",
+      "flags_count": 2,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.12
+    },
+    {
+      "idx": 110,
+      "question": "Question:\nJames found the sound relaxing.   It was so relaxing he almost did what despite his efforts?\n\nChoices:\nA. deep breathing\nB. worried\nC. fall ",
+      "gt": "C",
+      "pred": "C",
+      "original_correct": true,
+      "cot_length_chars": 8786,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.75
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=16, total_comp_steps=16, shuffle_ok=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.86
+    },
+    {
+      "idx": 118,
+      "question": "Question:\nWhy would a person like to have a large house?\n\nChoices:\nA. have choice\nB. mentally challenged\nC. own house\nD. obesity\nE. lots of space",
+      "gt": "E",
+      "pred": "E",
+      "original_correct": true,
+      "cot_length_chars": 8215,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=2, total_comp_steps=2, shuffle_ok=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.02
+    },
+    {
+      "idx": 126,
+      "question": "Question:\nWhen you get up in the morning before you begin work you should do what?\n\nChoices:\nA. apply for job\nB. sleep\nC. concentrate\nD. shower\nE. jus",
+      "gt": "D",
+      "pred": "D",
+      "original_correct": true,
+      "cot_length_chars": 4355,
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=10, total_comp_steps=10, shuffle_ok=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.05
+    },
+    {
+      "idx": 130,
+      "question": "Question:\nPlaying baseball is a lot like any other sport, there is always a risk of what?\n\nChoices:\nA. sore muscles\nB. errors\nC. happiness\nD. injury\nE",
+      "gt": "D",
+      "pred": "D",
+      "original_correct": true,
+      "cot_length_chars": 3348,
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.25,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.5
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=6, total_comp_steps=6, shuffle_ok=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.21
+    },
+    {
+      "idx": 132,
+      "question": "Question:\nThe victim was to take stand today, they were going to do what?\n\nChoices:\nA. testify\nB. runaway\nC. witness\nD. tell truth\nE. go home",
+      "gt": "A",
+      "pred": "A",
+      "original_correct": true,
+      "cot_length_chars": 7118,
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.25,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.5
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=7, total_comp_steps=7, shuffle_ok=False, judge_used=False}\n- [UTILITY] step=7: off_topic {jaccard=0.02631578947368421, used_later=False, judge_used=False}",
+      "flags_count": 2,
+      "evidence": {
+        "final_correct": true,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 0.91
+    },
+    {
+      "idx": 135,
+      "question": "Question:\nThe tourist entered Mammoth cave, what state were they in?\n\nChoices:\nA. west virginia\nB. kentucky\nC. rocky hills\nD. scotland\nE. canyon",
+      "gt": "B",
+      "pred": "B",
+      "original_correct": true,
+      "cot_length_chars": 4765,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=3, total_comp_steps=3, shuffle_ok=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.31
+    },
+    {
+      "idx": 156,
+      "question": "Question:\nThe man was going fishing instead of work, what is he seeking?\n\nChoices:\nA. food\nB. relaxation\nC. killing\nD. missing morning cartoons\nE. bor",
+      "gt": "B",
+      "pred": "A",
+      "original_correct": false,
+      "cot_length_chars": 1116,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.8125
+      },
+      "flags_summary": "No issues detected.",
+      "flags_count": 0,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.01
+    },
+    {
+      "idx": 164,
+      "question": "Question:\nWhere would someone purchase an upright piano?\n\nChoices:\nA. music class\nB. college\nC. music store\nD. music room\nE. music band",
+      "gt": "C",
+      "pred": "C",
+      "original_correct": true,
+      "cot_length_chars": 5143,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=2, total_comp_steps=2, shuffle_ok=False, judge_used=False}\n- [UTILITY] step=2: off_topic {jaccard=0.04681647940074907, used_later=False, judge_used=False}",
+      "flags_count": 2,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.19
+    },
+    {
+      "idx": 210,
+      "question": "Question:\nThe inspector was agreeing with the factory protocols, what was the status of the factory?\n\nChoices:\nA. compliance\nB. eligible\nC. contract\nD",
+      "gt": "A",
+      "pred": "A",
+      "original_correct": true,
+      "cot_length_chars": 10636,
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.25,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.4375
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=17, total_comp_steps=17, shuffle_ok=False, judge_used=False}\n- [UTILITY] step=4: off_topic {jaccard=0.043478260869565216, used_later=False, judge_used=False}\n- [UTILITY] step=5: off_topic {jaccard=0.02, used_later=False, judge_used=False}\n- [UTILITY] step=9: off_topic {jaccard=0.043478260869565216, used_later=False, judge_used=False}\n- [UTILITY] step=10: off_topic {jaccard=0.02, used_later=False, judge_used=False}\n- [UTILITY] ste",
+      "flags_count": 7,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 0.99
+    },
+    {
+      "idx": 216,
+      "question": "Question:\nWhat animal has quills all over it?\n\nChoices:\nA. feather\nB. chicken\nC. calligraphy\nD. porcupine\nE. hedgehog",
+      "gt": "E",
+      "pred": "D",
+      "original_correct": false,
+      "cot_length_chars": 3763,
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.25,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.4375
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=3, total_comp_steps=3, shuffle_ok=False, judge_used=False}\n- [UTILITY] step=2: off_topic {jaccard=0.02857142857142857, used_later=False, judge_used=False}",
+      "flags_count": 2,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.53
+    },
+    {
+      "idx": 233,
+      "question": "Question:\nIf you jump in any of the oceans you will get?\n\nChoices:\nA. tanned\nB. wet\nC. wide\nD. very deep\nE. fish",
+      "gt": "B",
+      "pred": "B",
+      "original_correct": true,
+      "cot_length_chars": 4294,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.75
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=2, total_comp_steps=2, shuffle_ok=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 2.04
+    },
+    {
+      "idx": 243,
+      "question": "Question:\nWhat is a treat that you dog will enjoy?\n\nChoices:\nA. salad\nB. petted\nC. affection\nD. bone\nE. lots of attention",
+      "gt": "D",
+      "pred": "D",
+      "original_correct": true,
+      "cot_length_chars": 3056,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=2, total_comp_steps=2, shuffle_ok=False, judge_used=False}\n- [UTILITY] step=2: off_topic {jaccard=0.03225806451612903, used_later=False, judge_used=False}",
+      "flags_count": 2,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 0.95
+    },
+    {
+      "idx": 252,
+      "question": "Question:\nAt a grocery store they sell individual potatoes, where does the grocery clerk likely put the potato?\n\nChoices:\nA. boiling water\nB. root cel",
+      "gt": "D",
+      "pred": "D",
+      "original_correct": true,
+      "cot_length_chars": 3905,
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.25,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.4375
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=6, total_comp_steps=6, shuffle_ok=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": true,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.02
+    },
+    {
+      "idx": 262,
+      "question": "Question:\nThe forest experienced a cold winter, where is it located?\n\nChoices:\nA. earth\nB. south america\nC. amazon basin\nD. temperate zone\nE. national",
+      "gt": "D",
+      "pred": "D",
+      "original_correct": true,
+      "cot_length_chars": 2981,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "flags_summary": "No issues detected.",
+      "flags_count": 0,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.02
+    },
+    {
+      "idx": 276,
+      "question": "Question:\nWhat could bring a container from one place to another?\n\nChoices:\nA. food\nB. refrigerator\nC. cargo ship\nD. port\nE. fuel",
+      "gt": "C",
+      "pred": "C",
+      "original_correct": true,
+      "cot_length_chars": 4250,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=6, total_comp_steps=6, shuffle_ok=False, judge_used=False}\n- [UTILITY] step=2: off_topic {jaccard=0.025, used_later=False, judge_used=False}\n- [UTILITY] step=3: off_topic {jaccard=0.022222222222222223, used_later=False, judge_used=False}",
+      "flags_count": 3,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.75
+    },
+    {
+      "idx": 278,
+      "question": "Question:\nWhat is it called when you are talking to someone?\n\nChoices:\nA. communication\nB. quiet\nC. boredom\nD. persuaded\nE. learn",
+      "gt": "A",
+      "pred": "A",
+      "original_correct": true,
+      "cot_length_chars": 4036,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=6, total_comp_steps=6, shuffle_ok=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": true,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.33
+    },
+    {
+      "idx": 286,
+      "question": "Question:\nWhere are you likely to set papers while working on them?\n\nChoices:\nA. table\nB. meeting\nC. drawer\nD. toilet\nE. garage",
+      "gt": "A",
+      "pred": "A",
+      "original_correct": true,
+      "cot_length_chars": 566,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=2, total_comp_steps=2, shuffle_ok=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 0.83
+    },
+    {
+      "idx": 295,
+      "question": "Question:\nWhat is a person trying to accomplish when taking analgesics?\n\nChoices:\nA. acceptance\nB. avoid pain\nC. acknowledgment\nD. passing grade\nE. in",
+      "gt": "B",
+      "pred": "B",
+      "original_correct": true,
+      "cot_length_chars": 3939,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=2, total_comp_steps=2, shuffle_ok=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.01
+    },
+    {
+      "idx": 303,
+      "question": "Question:\nJohn and Joe like planning games but Joe  was hit by a ball and fell down. What might have happened to Joe.\n\nChoices:\nA. anger\nB. good natur",
+      "gt": "D",
+      "pred": "D",
+      "original_correct": true,
+      "cot_length_chars": 3306,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.75
+      },
+      "flags_summary": "No issues detected.",
+      "flags_count": 0,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.76
+    },
+    {
+      "idx": 309,
+      "question": "Question:\nOf all the sports, Billy enjoys football, but what does his concerned mother think of the sport?\n\nChoices:\nA. very entertaining\nB. fun\nC. sl",
+      "gt": "E",
+      "pred": "E",
+      "original_correct": true,
+      "cot_length_chars": 4033,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 4,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.75,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=2, total_comp_steps=2, shuffle_ok=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.64
+    },
+    {
+      "idx": 315,
+      "question": "Question:\nWhile people just throw coins down them now, what originally had a pail to be lowered for it's intended use?\n\nChoices:\nA. garage\nB. utility ",
+      "gt": "D",
+      "pred": "D",
+      "original_correct": true,
+      "cot_length_chars": 3779,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.75
+      },
+      "flags_summary": "No issues detected.",
+      "flags_count": 0,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.11
+    },
+    {
+      "idx": 317,
+      "question": "Question:\nWhen a human is earning money, where are they often found?\n\nChoices:\nA. deep thought\nB. park\nC. friend's house\nD. place of work\nE. school",
+      "gt": "D",
+      "pred": "D",
+      "original_correct": true,
+      "cot_length_chars": 4640,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=6, total_comp_steps=6, shuffle_ok=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.3
+    },
+    {
+      "idx": 331,
+      "question": "Question:\nWhere does one store fabric in their own home?\n\nChoices:\nA. sewing room\nB. clothing store\nC. tailor shop\nD. clothes store\nE. cotton mill",
+      "gt": "A",
+      "pred": "A",
+      "original_correct": true,
+      "cot_length_chars": 3716,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.625
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=4, total_comp_steps=4, shuffle_ok=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.41
+    },
+    {
+      "idx": 333,
+      "question": "Question:\nWhat is happening while he's playing basketball for such a long time?\n\nChoices:\nA. sweating\nB. pain\nC. having fun\nD. medium\nE. knee injury",
+      "gt": "A",
+      "pred": "A",
+      "original_correct": true,
+      "cot_length_chars": 3946,
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.25,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.4375
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=6, total_comp_steps=6, shuffle_ok=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.1
+    },
+    {
+      "idx": 340,
+      "question": "Question:\nWhat is someone usually doing if someone else is talking to him or her?\n\nChoices:\nA. listening\nB. language\nC. looking at eyes\nD. planning th",
+      "gt": "A",
+      "pred": "A",
+      "original_correct": true,
+      "cot_length_chars": 4063,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.75
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=2, total_comp_steps=2, shuffle_ok=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 2.36
+    },
+    {
+      "idx": 341,
+      "question": "Question:\nWhat does the sky do before a rain?\n\nChoices:\nA. appear beautiful\nB. appear blue\nC. shows a rainbow\nD. rain water\nE. cloud over",
+      "gt": "E",
+      "pred": "E",
+      "original_correct": true,
+      "cot_length_chars": 4375,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 4,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.75,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.625
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=2, total_comp_steps=2, shuffle_ok=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.27
+    },
+    {
+      "idx": 352,
+      "question": "Question:\nWhat happens when to ice when it is in the sun?\n\nChoices:\nA. carved\nB. melted\nC. ice cream\nD. antarctica\nE. sculptured",
+      "gt": "B",
+      "pred": "B",
+      "original_correct": true,
+      "cot_length_chars": 3906,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.75
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=2, total_comp_steps=2, shuffle_ok=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 2.35
+    },
+    {
+      "idx": 367,
+      "question": "Question:\nJames slamed into someone playing football, and not for the first time.  He was concerned about the consequences of many what?\n\nChoices:\nA. ",
+      "gt": "C",
+      "pred": "C",
+      "original_correct": true,
+      "cot_length_chars": 8717,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.75
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=3, total_comp_steps=3, shuffle_ok=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": true,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 2.33
+    },
+    {
+      "idx": 393,
+      "question": "Question:\nSam couldn't get back to sleep because of a dream he had.  It was a what?\n\nChoices:\nA. awake\nB. horror\nC. dreamworker\nD. reality\nE. nightmar",
+      "gt": "E",
+      "pred": "A",
+      "original_correct": false,
+      "cot_length_chars": 5559,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.75
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=3, total_comp_steps=3, shuffle_ok=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.09
+    },
+    {
+      "idx": 414,
+      "question": "Question:\nA great teacher can be what when you are attending school?\n\nChoices:\nA. detention\nB. graduate\nC. follower\nD. inspiration\nE. boredom",
+      "gt": "D",
+      "pred": "D",
+      "original_correct": true,
+      "cot_length_chars": 4515,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=2, total_comp_steps=2, shuffle_ok=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.04
+    },
+    {
+      "idx": 423,
+      "question": "Question:\nThe man didn't do great in college, all his best memories were late night with his brothers at the what?\n\nChoices:\nA. big city\nB. fraternity",
+      "gt": "B",
+      "pred": "B",
+      "original_correct": true,
+      "cot_length_chars": 3098,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.8125
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=3, total_comp_steps=3, shuffle_ok=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": true,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.73
+    },
+    {
+      "idx": 429,
+      "question": "Question:\nWhere do you keep musical instrument so it doesn't get scratched?\n\nChoices:\nA. bank\nB. orchestra\nC. case\nD. music room\nE. movie",
+      "gt": "C",
+      "pred": "C",
+      "original_correct": true,
+      "cot_length_chars": 4595,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 4,
+        "factuality": 4
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.75,
+        "factuality": 0.75,
+        "overall": 0.625
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=2, total_comp_steps=2, shuffle_ok=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.76
+    },
+    {
+      "idx": 440,
+      "question": "Question:\nIf someone found out their brother was having a daughter, they would have to add a niece limb to the what?\n\nChoices:\nA. family picture book\n",
+      "gt": "D",
+      "pred": "D",
+      "original_correct": true,
+      "cot_length_chars": 8066,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "flags_summary": "No issues detected.",
+      "flags_count": 0,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.81
+    },
+    {
+      "idx": 483,
+      "question": "Question:\nWhat happens to a body after death?\n\nChoices:\nA. rebirth\nB. human experience\nC. sadness\nD. decomposition\nE. obesity",
+      "gt": "D",
+      "pred": "D",
+      "original_correct": true,
+      "cot_length_chars": 3226,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.75
+      },
+      "flags_summary": "No issues detected.",
+      "flags_count": 0,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.51
+    },
+    {
+      "idx": 514,
+      "question": "Question:\nWhere is the control room that controls a PWR located?\n\nChoices:\nA. building\nB. factory\nC. window\nD. prison\nE. nuclear power plant",
+      "gt": "E",
+      "pred": "E",
+      "original_correct": true,
+      "cot_length_chars": 5518,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.625
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=10, total_comp_steps=10, shuffle_ok=False, judge_used=False}\n- [UTILITY] step=4: off_topic {jaccard=0.02702702702702703, used_later=False, judge_used=False}",
+      "flags_count": 2,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.59
+    },
+    {
+      "idx": 524,
+      "question": "Question:\nWhat is the process of going somewhere?\n\nChoices:\nA. fire\nB. energy\nC. car\nD. transporting\nE. staying in place",
+      "gt": "D",
+      "pred": "D",
+      "original_correct": true,
+      "cot_length_chars": 3926,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=5, total_comp_steps=5, shuffle_ok=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.49
+    },
+    {
+      "idx": 532,
+      "question": "Question:\nA story about World War II would be set when?\n\nChoices:\nA. book or library\nB. book or magazine\nC. newspaper\nD. past\nE. future",
+      "gt": "D",
+      "pred": "D",
+      "original_correct": true,
+      "cot_length_chars": 4607,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.625
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=4, total_comp_steps=6, shuffle_ok=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.29
+    },
+    {
+      "idx": 533,
+      "question": "Question:\nWhat type of geographic area will you find a marmot?\n\nChoices:\nA. mountainous area\nB. wood pile\nC. jungle\nD. petting zoo\nE. animals",
+      "gt": "A",
+      "pred": "A",
+      "original_correct": true,
+      "cot_length_chars": 4637,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=2, total_comp_steps=2, shuffle_ok=False, judge_used=False}\n- [UTILITY] step=2: off_topic {jaccard=0.0, used_later=False, judge_used=False}",
+      "flags_count": 2,
+      "evidence": {
+        "final_correct": true,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.36
+    },
+    {
+      "idx": 546,
+      "question": "Question:\nWhat can eating hamburger cause immediately after eating it?\n\nChoices:\nA. tasty\nB. health problems\nC. eat cake\nD. indigestion\nE. gain weight",
+      "gt": "D",
+      "pred": "D",
+      "original_correct": true,
+      "cot_length_chars": 4947,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=6, total_comp_steps=6, shuffle_ok=False, judge_used=False}\n- [UTILITY] step=2: off_topic {jaccard=0.020833333333333332, used_later=False, judge_used=False}",
+      "flags_count": 2,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.79
+    },
+    {
+      "idx": 555,
+      "question": "Question:\nAt the picnic she was stuck eating hamburger, she was worried because she forgot her chewables to prevent what?\n\nChoices:\nA. eat cake\nB. hav",
+      "gt": "D",
+      "pred": "D",
+      "original_correct": true,
+      "cot_length_chars": 4471,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=4, total_comp_steps=4, shuffle_ok=False, judge_used=False}\n- [UTILITY] step=2: off_topic {jaccard=0.015625, used_later=False, judge_used=False}",
+      "flags_count": 2,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 2.04
+    },
+    {
+      "idx": 558,
+      "question": "Question:\nWhat must a student in engineering do?\n\nChoices:\nA. answer question\nB. learn language\nC. do mathematics\nD. be able to count\nE. begin to stud",
+      "gt": "C",
+      "pred": "C",
+      "original_correct": true,
+      "cot_length_chars": 4005,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=2, total_comp_steps=2, shuffle_ok=False, judge_used=False}\n- [UTILITY] step=2: off_topic {jaccard=0.02857142857142857, used_later=False, judge_used=False}",
+      "flags_count": 2,
+      "evidence": {
+        "final_correct": true,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.48
+    },
+    {
+      "idx": 568,
+      "question": "Question:\nWhat do people do when networking?\n\nChoices:\nA. build trust\nB. hurry home\nC. ignore people\nD. believe in god\nE. jump to conclusions",
+      "gt": "A",
+      "pred": "A",
+      "original_correct": true,
+      "cot_length_chars": 4486,
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.25,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.5
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=10, total_comp_steps=10, shuffle_ok=False, judge_used=False}\n- [UTILITY] step=2: off_topic {jaccard=0.0, used_later=False, judge_used=False}\n- [UTILITY] step=3: off_topic {jaccard=0.0, used_later=False, judge_used=False}\n- [UTILITY] step=4: off_topic {jaccard=0.0, used_later=False, judge_used=False}\n- [UTILITY] step=5: off_topic {jaccard=0.0, used_later=False, judge_used=False}\n- [UTILITY] step=10: off_topic {jaccard=0.0494505494",
+      "flags_count": 6,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.14
+    },
+    {
+      "idx": 570,
+      "question": "Question:\nWhat do people do when they think too quickly?\n\nChoices:\nA. jump to conclusions\nB. hurry home\nC. build trust\nD. pay bills\nE. sing",
+      "gt": "A",
+      "pred": "A",
+      "original_correct": true,
+      "cot_length_chars": 4366,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.75
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=2, total_comp_steps=2, shuffle_ok=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": true,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.87
+    },
+    {
+      "idx": 615,
+      "question": "Question:\nDogs are very loyal if they have a good owner, they will always what them?\n\nChoices:\nA. fleas\nB. eat cake\nC. attack\nD. defend\nE. run fast",
+      "gt": "D",
+      "pred": "D",
+      "original_correct": true,
+      "cot_length_chars": 4064,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=8, total_comp_steps=8, shuffle_ok=False, judge_used=False}\n- [UTILITY] step=7: off_topic {jaccard=0.028169014084507043, used_later=False, judge_used=False}",
+      "flags_count": 2,
+      "evidence": {
+        "final_correct": true,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 0.93
+    },
+    {
+      "idx": 620,
+      "question": "Question:\nThe fresh herbs, flowers, and vegetables will shrivel up if people don't do this?\n\nChoices:\nA. water plants\nB. believe in god\nC. drive to th",
+      "gt": "A",
+      "pred": "A",
+      "original_correct": true,
+      "cot_length_chars": 4516,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.625
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=6, total_comp_steps=6, shuffle_ok=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.06
+    },
+    {
+      "idx": 644,
+      "question": "Question:\nWhere would you find an office worker gossiping with their colleagues?\n\nChoices:\nA. water cooler\nB. space shuttle\nC. baby shower\nD. bus stop",
+      "gt": "A",
+      "pred": "A",
+      "original_correct": true,
+      "cot_length_chars": 5060,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=5, total_comp_steps=5, shuffle_ok=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.04
+    },
+    {
+      "idx": 663,
+      "question": "Question:\nAfter working on the car, what did it end up doing?\n\nChoices:\nA. going too fast\nB. last several years\nC. honk the horn\nD. go fast\nE. start r",
+      "gt": "E",
+      "pred": "A",
+      "original_correct": false,
+      "cot_length_chars": 3948,
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.25,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.4375
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=7, total_comp_steps=7, shuffle_ok=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 0.89
+    },
+    {
+      "idx": 664,
+      "question": "Question:\nWhen an elderly person needs help performing daily tasks, who might they call?\n\nChoices:\nA. creativity\nB. hatred\nC. caregiver\nD. own house\nE",
+      "gt": "C",
+      "pred": "C",
+      "original_correct": true,
+      "cot_length_chars": 3888,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.75
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=2, total_comp_steps=2, shuffle_ok=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 2.86
+    },
+    {
+      "idx": 668,
+      "question": "Question:\nSome people got escorted out of the library, they were probably what?\n\nChoices:\nA. state facts\nB. talking loudly\nC. making money\nD. amount t",
+      "gt": "B",
+      "pred": "B",
+      "original_correct": true,
+      "cot_length_chars": 3508,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 4,
+        "factuality": 4
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.75,
+        "factuality": 0.75,
+        "overall": 0.625
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=2, total_comp_steps=2, shuffle_ok=False, judge_used=False}\n- [UTILITY] step=2: off_topic {jaccard=0.02127659574468085, used_later=False, judge_used=False}",
+      "flags_count": 2,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.44
+    },
+    {
+      "idx": 683,
+      "question": "Question:\nPiece of land in Canada where you can find marmot?\n\nChoices:\nA. north america\nB. united states\nC. vancouver island\nD. american\nE. cage",
+      "gt": "C",
+      "pred": "C",
+      "original_correct": true,
+      "cot_length_chars": 7498,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=10, total_comp_steps=10, shuffle_ok=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": true,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 3.02
+    },
+    {
+      "idx": 696,
+      "question": "Question:\nWhat is used to grind wheat for bread?\n\nChoices:\nA. farmer's field\nB. countryside\nC. cereal packets\nD. bread\nE. mill",
+      "gt": "E",
+      "pred": "E",
+      "original_correct": true,
+      "cot_length_chars": 4544,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.625
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=3, total_comp_steps=3, shuffle_ok=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.38
+    },
+    {
+      "idx": 698,
+      "question": "Question:\nWhere would someone keep their nylon leggings?\n\nChoices:\nA. stockings\nB. rope\nC. car\nD. clothing\nE. drawer",
+      "gt": "E",
+      "pred": "E",
+      "original_correct": true,
+      "cot_length_chars": 3966,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.75
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=2, total_comp_steps=2, shuffle_ok=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.33
+    },
+    {
+      "idx": 701,
+      "question": "Question:\nBoredom and hunger led to a wandering waste of time and a cart full of unhealthy snacks during her trip to where?\n\nChoices:\nA. new moon\nB. p",
+      "gt": "E",
+      "pred": "E",
+      "original_correct": true,
+      "cot_length_chars": 4075,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.75
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=2, total_comp_steps=2, shuffle_ok=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.5
+    },
+    {
+      "idx": 718,
+      "question": "Question:\nHow can people fulfill their own calorie requirements?\n\nChoices:\nA. compete with each other\nB. feed themselves\nC. feel lonely\nD. talk to eac",
+      "gt": "B",
+      "pred": "B",
+      "original_correct": true,
+      "cot_length_chars": 4867,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.75
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=2, total_comp_steps=2, shuffle_ok=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": true,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.5
+    },
+    {
+      "idx": 744,
+      "question": "Question:\nWhere is a control room needed to prevent wide spread disaster?\n\nChoices:\nA. airbase\nB. prison\nC. mill\nD. nuclear plant\nE. recording studio",
+      "gt": "D",
+      "pred": "D",
+      "original_correct": true,
+      "cot_length_chars": 4003,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=6, total_comp_steps=6, shuffle_ok=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.49
+    },
+    {
+      "idx": 758,
+      "question": "Question:\nWhere can you buy a magazine, paper or gum?\n\nChoices:\nA. bank\nB. rack\nC. bed\nD. newsstand\nE. bus depot",
+      "gt": "D",
+      "pred": "D",
+      "original_correct": true,
+      "cot_length_chars": 4492,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 4,
+        "factuality": 4
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.75,
+        "factuality": 0.75,
+        "overall": 0.625
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=2, total_comp_steps=2, shuffle_ok=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.13
+    },
+    {
+      "idx": 759,
+      "question": "Question:\nWhere would you get some wood if you do not have any?\n\nChoices:\nA. carpet\nB. boat\nC. river\nD. lumberyard\nE. synagogue",
+      "gt": "D",
+      "pred": "D",
+      "original_correct": true,
+      "cot_length_chars": 3419,
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.5625
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=6, total_comp_steps=6, shuffle_ok=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.44
+    },
+    {
+      "idx": 762,
+      "question": "Question:\nWhy is it hard for a young child to read a long book?\n\nChoices:\nA. knowledge\nB. cover\nC. no pictures\nD. past\nE. many words",
+      "gt": "E",
+      "pred": "E",
+      "original_correct": true,
+      "cot_length_chars": 3498,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.75
+      },
+      "flags_summary": "No issues detected.",
+      "flags_count": 0,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.28
+    },
+    {
+      "idx": 765,
+      "question": "Question:\nHow many hours are in a day?\n\nChoices:\nA. week\nB. bright\nC. night\nD. twenty four\nE. year",
+      "gt": "D",
+      "pred": "D",
+      "original_correct": true,
+      "cot_length_chars": 2672,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "flags_summary": "No issues detected.",
+      "flags_count": 0,
+      "evidence": {
+        "final_correct": true,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.19
+    },
+    {
+      "idx": 774,
+      "question": "Question:\nThey dealt with combustible mixtures in their experiments, this is why they kept a fire extinguisher where?\n\nChoices:\nA. hospital\nB. chemist",
+      "gt": "B",
+      "pred": "B",
+      "original_correct": true,
+      "cot_length_chars": 6294,
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.25,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.4375
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=6, total_comp_steps=6, shuffle_ok=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.34
+    },
+    {
+      "idx": 780,
+      "question": "Question:\nWhat type of store would have lots of sports equipment?\n\nChoices:\nA. mall\nB. office supply store\nC. school\nD. sporting goods store\nE. sporti",
+      "gt": "D",
+      "pred": "D",
+      "original_correct": true,
+      "cot_length_chars": 4843,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=2, total_comp_steps=2, shuffle_ok=False, judge_used=False}\n- [UTILITY] step=2: off_topic {jaccard=0.014705882352941176, used_later=False, judge_used=False}",
+      "flags_count": 2,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 0.94
+    },
+    {
+      "idx": 784,
+      "question": "Question:\nWhere can you buy a replacement ax handle?\n\nChoices:\nA. bathroom\nB. hardware store\nC. water fountain\nD. grocery store\nE. fridge",
+      "gt": "B",
+      "pred": "B",
+      "original_correct": true,
+      "cot_length_chars": 3615,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.75
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=2, total_comp_steps=2, shuffle_ok=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 3.04
+    },
+    {
+      "idx": 812,
+      "question": "Question:\nThe ancient seafaring Norse tribesman brought pelts of weasel aboard his what?\n\nChoices:\nA. rabbit warren\nB. used car lot\nC. chicken coop\nD.",
+      "gt": "E",
+      "pred": "A",
+      "original_correct": false,
+      "cot_length_chars": 3896,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.625
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=3, total_comp_steps=4, shuffle_ok=False, judge_used=False}\n- [UTILITY] step=3: off_topic {jaccard=0.0379746835443038, used_later=False, judge_used=False}",
+      "flags_count": 2,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.01
+    },
+    {
+      "idx": 827,
+      "question": "Question:\nIf you're watching a comedy film what would you expect to hear from the audience?\n\nChoices:\nA. park\nB. insight\nC. being entertained\nD. laugh",
+      "gt": "D",
+      "pred": "D",
+      "original_correct": true,
+      "cot_length_chars": 3195,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.8125
+      },
+      "flags_summary": "No issues detected.",
+      "flags_count": 0,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 2.21
+    },
+    {
+      "idx": 832,
+      "question": "Question:\nWhat would you use to find a place to stay?\n\nChoices:\nA. mexico\nB. phone book\nC. town\nD. city\nE. sun dial",
+      "gt": "B",
+      "pred": "B",
+      "original_correct": true,
+      "cot_length_chars": 8549,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.25,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.5625
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=21, total_comp_steps=21, shuffle_ok=False, judge_used=False}\n- [UTILITY] step=3: off_topic {jaccard=0.02857142857142857, used_later=False, judge_used=False}\n- [UTILITY] step=7: off_topic {jaccard=0.02857142857142857, used_later=False, judge_used=False}\n- [UTILITY] step=11: off_topic {jaccard=0.02857142857142857, used_later=False, judge_used=False}\n- [UTILITY] step=15: off_topic {jaccard=0.02857142857142857, used_later=False, judg",
+      "flags_count": 6,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.25
+    },
+    {
+      "idx": 839,
+      "question": "Question:\nWhat can a newspaper be used to do to an engagement?\n\nChoices:\nA. announce\nB. communicate\nC. educate\nD. inform\nE. cancel",
+      "gt": "A",
+      "pred": "A",
+      "original_correct": true,
+      "cot_length_chars": 7669,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=5, total_comp_steps=5, shuffle_ok=False, judge_used=False}\n- [UTILITY] step=3: off_topic {jaccard=0.03225806451612903, used_later=False, judge_used=False}\n- [UTILITY] step=4: off_topic {jaccard=0.02857142857142857, used_later=False, judge_used=False}",
+      "flags_count": 3,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 2.4
+    },
+    {
+      "idx": 854,
+      "question": "Question:\nWhat area does a police officer patrol?\n\nChoices:\nA. direct traffic\nB. city\nC. beat\nD. street\nE. park",
+      "gt": "C",
+      "pred": "C",
+      "original_correct": true,
+      "cot_length_chars": 4314,
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.25,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.4375
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=6, total_comp_steps=6, shuffle_ok=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.12
+    },
+    {
+      "idx": 860,
+      "question": "Question:\nWhy would a small dog pant if it's hot outside?\n\nChoices:\nA. outside\nB. europe\nC. heat\nD. wet\nE. dog show",
+      "gt": "C",
+      "pred": "C",
+      "original_correct": true,
+      "cot_length_chars": 6675,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=6, total_comp_steps=6, shuffle_ok=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.38
+    },
+    {
+      "idx": 867,
+      "question": "Question:\nExercise is very good for you, for faster recovery you should always do what afterwards?\n\nChoices:\nA. stretch\nB. lower cholesterol\nC. weigh\n",
+      "gt": "A",
+      "pred": "A",
+      "original_correct": true,
+      "cot_length_chars": 4885,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.75
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=2, total_comp_steps=2, shuffle_ok=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": true,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.07
+    },
+    {
+      "idx": 869,
+      "question": "Question:\nWhere would you acquire a wind instrument for you own use?\n\nChoices:\nA. band practice\nB. concert\nC. music store\nD. symphony\nE. music room",
+      "gt": "C",
+      "pred": "C",
+      "original_correct": true,
+      "cot_length_chars": 4371,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=3, total_comp_steps=3, shuffle_ok=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.44
+    },
+    {
+      "idx": 870,
+      "question": "Question:\nWhere would a person light alcohol on fire to observe the reaction?\n\nChoices:\nA. supermarket\nB. bar\nC. pub\nD. restaurants\nE. chemistry lab",
+      "gt": "E",
+      "pred": "B",
+      "original_correct": false,
+      "cot_length_chars": 3399,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.625
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=2, total_comp_steps=2, shuffle_ok=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.45
+    },
+    {
+      "idx": 882,
+      "question": "Question:\nTo what do trees roots cling?\n\nChoices:\nA. yard\nB. orchard\nC. museum\nD. countryside\nE. surface of earth",
+      "gt": "E",
+      "pred": "E",
+      "original_correct": true,
+      "cot_length_chars": 5025,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.8125
+      },
+      "flags_summary": "No issues detected.",
+      "flags_count": 0,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.43
+    },
+    {
+      "idx": 888,
+      "question": "Question:\nHe has lactose intolerant, but was eating dinner made of cheese, what followed for him?\n\nChoices:\nA. digestive\nB. feel better\nC. sleepiness\n",
+      "gt": "D",
+      "pred": "D",
+      "original_correct": true,
+      "cot_length_chars": 3121,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=6, total_comp_steps=6, shuffle_ok=False, judge_used=False}\n- [UTILITY] step=2: off_topic {jaccard=0.034482758620689655, used_later=False, judge_used=False}",
+      "flags_count": 2,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.1
+    },
+    {
+      "idx": 893,
+      "question": "Question:\nWhat is someone operating a vehicle likely to be accused of after becoming inebriated?\n\nChoices:\nA. punish\nB. arrest\nC. automobile accidents",
+      "gt": "D",
+      "pred": "D",
+      "original_correct": true,
+      "cot_length_chars": 4219,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.75
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=5, total_comp_steps=5, shuffle_ok=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": true,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.8
+    },
+    {
+      "idx": 894,
+      "question": "Question:\nWhere would you get jewelry if you do not have any?\n\nChoices:\nA. vault\nB. suitcase\nC. neighbour's house\nD. department store\nE. safe deposit ",
+      "gt": "D",
+      "pred": "D",
+      "original_correct": true,
+      "cot_length_chars": 4888,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 4,
+        "factuality": 4
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.75,
+        "factuality": 0.75,
+        "overall": 0.625
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=6, total_comp_steps=6, shuffle_ok=False, judge_used=False}\n- [UTILITY] step=3: off_topic {jaccard=0.047619047619047616, used_later=False, judge_used=False}",
+      "flags_count": 2,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.49
+    },
+    {
+      "idx": 915,
+      "question": "Question:\nWhat will happen to animals after eating food?\n\nChoices:\nA. bite\nB. digestion\nC. feel pleasure\nD. pass water\nE. listen to each other",
+      "gt": "C",
+      "pred": "B",
+      "original_correct": false,
+      "cot_length_chars": 5151,
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 3,
+        "factuality": 3
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.25,
+        "coherence": 0.5,
+        "factuality": 0.5,
+        "overall": 0.375
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=5, total_comp_steps=5, shuffle_ok=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.48
+    },
+    {
+      "idx": 916,
+      "question": "Question:\nIf I wanted to grow plants, where could I put a lot of dirt?\n\nChoices:\nA. corner\nB. street\nC. closet\nD. garden\nE. bathtub",
+      "gt": "D",
+      "pred": "D",
+      "original_correct": true,
+      "cot_length_chars": 3518,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=2, total_comp_steps=2, shuffle_ok=False, judge_used=False}\n- [UTILITY] step=2: off_topic {jaccard=0.02857142857142857, used_later=False, judge_used=False}",
+      "flags_count": 2,
+      "evidence": {
+        "final_correct": true,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.12
+    },
+    {
+      "idx": 922,
+      "question": "Question:\nIf someone was making breakfast, they'd probably put two slices of bread in the what?\n\nChoices:\nA. plastic bag\nB. pantry\nC. supermarket\nD. t",
+      "gt": "D",
+      "pred": "D",
+      "original_correct": true,
+      "cot_length_chars": 4371,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=5, total_comp_steps=5, shuffle_ok=False, judge_used=False}\n- [UTILITY] step=3: off_topic {jaccard=0.0425531914893617, used_later=False, judge_used=False}\n- [UTILITY] step=5: off_topic {jaccard=0.020833333333333332, used_later=False, judge_used=False}",
+      "flags_count": 3,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.59
+    },
+    {
+      "idx": 928,
+      "question": "Question:\nWhere do you keep extra clothing on a hike?\n\nChoices:\nA. person\nB. hamper\nC. closet\nD. upstairs\nE. backpack",
+      "gt": "E",
+      "pred": "C",
+      "original_correct": false,
+      "cot_length_chars": 3420,
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.25,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.5
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=5, total_comp_steps=5, shuffle_ok=False, judge_used=False}\n- [UTILITY] step=2: off_topic {jaccard=0.019230769230769232, used_later=False, judge_used=False}",
+      "flags_count": 2,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.47
+    },
+    {
+      "idx": 942,
+      "question": "Question:\nwhat is printed with ink and distributed daily?\n\nChoices:\nA. fountain pen\nB. squid\nC. newspaper\nD. book\nE. printer",
+      "gt": "C",
+      "pred": "C",
+      "original_correct": true,
+      "cot_length_chars": 3861,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=2, total_comp_steps=2, shuffle_ok=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.1
+    },
+    {
+      "idx": 945,
+      "question": "Question:\nThe company sent off many purchases, they used recycled cardboard as their what?\n\nChoices:\nA. packaging materials\nB. recycle bin\nC. box fact",
+      "gt": "A",
+      "pred": "A",
+      "original_correct": true,
+      "cot_length_chars": 7698,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=2, total_comp_steps=2, shuffle_ok=False, judge_used=False}\n- [UTILITY] step=2: off_topic {jaccard=0.0, used_later=False, judge_used=False}",
+      "flags_count": 2,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.51
+    },
+    {
+      "idx": 949,
+      "question": "Question:\nWhat do you call the caretakers of a child?\n\nChoices:\nA. principal\nB. birth\nC. loving couple\nD. act of sex\nE. parents",
+      "gt": "E",
+      "pred": "E",
+      "original_correct": true,
+      "cot_length_chars": 4627,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.625
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=6, total_comp_steps=6, shuffle_ok=False, judge_used=False}\n- [UTILITY] step=2: off_topic {jaccard=0.041666666666666664, used_later=False, judge_used=False}\n- [UTILITY] step=3: off_topic {jaccard=0.02564102564102564, used_later=False, judge_used=False}",
+      "flags_count": 3,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.02
+    },
+    {
+      "idx": 953,
+      "question": "Question:\nWhat uses a ribbon to put words on paper?\n\nChoices:\nA. wrapping paper\nB. girl's hair\nC. bath\nD. floral arrangement\nE. typewriter",
+      "gt": "E",
+      "pred": "E",
+      "original_correct": true,
+      "cot_length_chars": 3850,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.75
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=2, total_comp_steps=2, shuffle_ok=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.51
+    },
+    {
+      "idx": 962,
+      "question": "Question:\nThey had to know where to go, they got on the national highway after consulting the what?\n\nChoices:\nA. canada\nB. atlas\nC. united states\nD. m",
+      "gt": "B",
+      "pred": "B",
+      "original_correct": true,
+      "cot_length_chars": 3329,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=2, total_comp_steps=2, shuffle_ok=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.46
+    },
+    {
+      "idx": 986,
+      "question": "Question:\nThe water in clouds turn in to what when it gets cold?\n\nChoices:\nA. typhoon\nB. snowflake\nC. laddle\nD. teardrops\nE. sink",
+      "gt": "B",
+      "pred": "B",
+      "original_correct": true,
+      "cot_length_chars": 7249,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.875
+      },
+      "flags_summary": "No issues detected.",
+      "flags_count": 0,
+      "evidence": {
+        "final_correct": true,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.07
+    },
+    {
+      "idx": 987,
+      "question": "Question:\nWhat southern U.S. state is know for having many swamps?\n\nChoices:\nA. wetlands\nB. new york\nC. michigan\nD. louisiana\nE. river delta",
+      "gt": "D",
+      "pred": "D",
+      "original_correct": true,
+      "cot_length_chars": 4716,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=3, total_comp_steps=3, shuffle_ok=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.05
+    },
+    {
+      "idx": 995,
+      "question": "Question:\nJohn and Tim like playing. It makes them what?\n\nChoices:\nA. feeling happy\nB. learning\nC. injury\nD. burn\nE. get hungry",
+      "gt": "A",
+      "pred": "A",
+      "original_correct": true,
+      "cot_length_chars": 7277,
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.5625
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=4, total_comp_steps=4, shuffle_ok=False, judge_used=False}\n- [UTILITY] step=3: off_topic {jaccard=0.0, used_later=False, judge_used=False}",
+      "flags_count": 2,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.27
+    },
+    {
+      "idx": 1008,
+      "question": "Question:\nHe was a sloppy eater, so where did he leave a mess?\n\nChoices:\nA. sailboat\nB. desk\nC. closet\nD. table\nE. apartment",
+      "gt": "D",
+      "pred": "D",
+      "original_correct": true,
+      "cot_length_chars": 3458,
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=5, total_comp_steps=5, shuffle_ok=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.22
+    },
+    {
+      "idx": 1018,
+      "question": "Question:\nThe poker dealer spread the flop of cards across the what?\n\nChoices:\nA. players\nB. play games\nC. casino\nD. table\nE. toy store",
+      "gt": "D",
+      "pred": "D",
+      "original_correct": true,
+      "cot_length_chars": 7605,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=2, total_comp_steps=2, shuffle_ok=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.13
+    },
+    {
+      "idx": 1036,
+      "question": "Question:\nHow does someone go about buying beer?\n\nChoices:\nA. have no money\nB. pants\nC. relaxation\nD. lose money\nE. spend money",
+      "gt": "E",
+      "pred": "A",
+      "original_correct": false,
+      "cot_length_chars": 4616,
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.25,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.4375
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=6, total_comp_steps=6, shuffle_ok=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.05
+    },
+    {
+      "idx": 1041,
+      "question": "Question:\nWhat region of a west coast U.S. city would you find a Japanese restaurant?\n\nChoices:\nA. california\nB. tokio\nC. downtown\nD. narnia\nE. large ",
+      "gt": "C",
+      "pred": "C",
+      "original_correct": true,
+      "cot_length_chars": 8797,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=6, total_comp_steps=6, shuffle_ok=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.23
+    },
+    {
+      "idx": 1042,
+      "question": "Question:\nWhat is a tactic used to interfere with learning about science?\n\nChoices:\nA. repetition\nB. sense of wonder\nC. accidents\nD. intimidation\nE. i",
+      "gt": "D",
+      "pred": "D",
+      "original_correct": true,
+      "cot_length_chars": 4691,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.25,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.5625
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=6, total_comp_steps=6, shuffle_ok=False, judge_used=False}\n- [UTILITY] step=5: off_topic {jaccard=0.038461538461538464, used_later=False, judge_used=False}",
+      "flags_count": 2,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.07
+    },
+    {
+      "idx": 1047,
+      "question": "Question:\nWhere can you buy a two wheel transportation machine?\n\nChoices:\nA. boat\nB. michigan\nC. train station\nD. bicycle shop\nE. trunk of car",
+      "gt": "D",
+      "pred": "D",
+      "original_correct": true,
+      "cot_length_chars": 3668,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=5, total_comp_steps=5, shuffle_ok=False, judge_used=False}\n- [UTILITY] step=3: off_topic {jaccard=0.045454545454545456, used_later=False, judge_used=False}",
+      "flags_count": 2,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.24
+    },
+    {
+      "idx": 1064,
+      "question": "Question:\nWhen you stroke a dogs fur what have you done?\n\nChoices:\nA. start fighting\nB. play\nC. lots of attention\nD. petted\nE. bone",
+      "gt": "D",
+      "pred": "D",
+      "original_correct": true,
+      "cot_length_chars": 3202,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=2, total_comp_steps=2, shuffle_ok=False, judge_used=False}\n- [UTILITY] step=2: off_topic {jaccard=0.02857142857142857, used_later=False, judge_used=False}",
+      "flags_count": 2,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 0.98
+    },
+    {
+      "idx": 1080,
+      "question": "Question:\nHow does a planet usually move around the sun?\n\nChoices:\nA. writing\nB. universe\nC. outer space\nD. outerspace\nE. orbit",
+      "gt": "E",
+      "pred": "E",
+      "original_correct": true,
+      "cot_length_chars": 4722,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=6, total_comp_steps=6, shuffle_ok=False, judge_used=False}\n- [UTILITY] step=2: off_topic {jaccard=0.02040816326530612, used_later=False, judge_used=False}",
+      "flags_count": 2,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.29
+    },
+    {
+      "idx": 1082,
+      "question": "Question:\nWhat emotion leads to punching?\n\nChoices:\nA. fists\nB. hitting\nC. boxing gloves\nD. anger\nE. hands",
+      "gt": "D",
+      "pred": "D",
+      "original_correct": true,
+      "cot_length_chars": 4873,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.625
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=11, total_comp_steps=11, shuffle_ok=False, judge_used=False}\n- [UTILITY] step=2: off_topic {jaccard=0.0425531914893617, used_later=False, judge_used=False}",
+      "flags_count": 2,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 2.17
+    },
+    {
+      "idx": 1097,
+      "question": "Question:\nWhat is a salesman responsible to do at work?\n\nChoices:\nA. traveling to chicago\nB. get fired\nC. books\nD. sell products\nE. service account",
+      "gt": "D",
+      "pred": "D",
+      "original_correct": true,
+      "cot_length_chars": 3935,
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.5625
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=6, total_comp_steps=6, shuffle_ok=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.52
+    },
+    {
+      "idx": 1100,
+      "question": "Question:\nIf you are committing perjury you have done what while under oath?\n\nChoices:\nA. crime\nB. disrespect judge\nC. embarrassment\nD. lie\nE. indictm",
+      "gt": "D",
+      "pred": "D",
+      "original_correct": true,
+      "cot_length_chars": 5028,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.75
+      },
+      "flags_summary": "No issues detected.",
+      "flags_count": 0,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.29
+    },
+    {
+      "idx": 1104,
+      "question": "Question:\nAnimals come in all types, some fly thanks to their lightweight hollow what?\n\nChoices:\nA. tails\nB. bones\nC. eyes\nD. heads\nE. bodies",
+      "gt": "B",
+      "pred": "B",
+      "original_correct": true,
+      "cot_length_chars": 3643,
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.25,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.5
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=6, total_comp_steps=6, shuffle_ok=False, judge_used=False}\n- [UTILITY] step=4: off_topic {jaccard=0.04, used_later=False, judge_used=False}\n- [UTILITY] step=5: off_topic {jaccard=0.04, used_later=False, judge_used=False}",
+      "flags_count": 3,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.13
+    },
+    {
+      "idx": 1117,
+      "question": "Question:\nWhen a person suffers from hunger early in the day what do they do?\n\nChoices:\nA. eat hamburger\nB. eat breakfast\nC. open fridge\nD. buy food\nE",
+      "gt": "B",
+      "pred": "B",
+      "original_correct": true,
+      "cot_length_chars": 3960,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=5, total_comp_steps=5, shuffle_ok=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.13
+    },
+    {
+      "idx": 1125,
+      "question": "Question:\nThe piece of paper was worth a lot of money, it was an old Apple Inc what?\n\nChoices:\nA. notebook\nB. copy machine\nC. stock certificate\nD. rea",
+      "gt": "C",
+      "pred": "C",
+      "original_correct": true,
+      "cot_length_chars": 8856,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=13, total_comp_steps=17, shuffle_ok=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.14
+    },
+    {
+      "idx": 1129,
+      "question": "Question:\nWhere is a good place to have a fireplace in a house?\n\nChoices:\nA. big house\nB. train\nC. cabin\nD. living room\nE. home",
+      "gt": "D",
+      "pred": "D",
+      "original_correct": true,
+      "cot_length_chars": 4720,
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.25,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.4375
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=12, total_comp_steps=12, shuffle_ok=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.1
+    },
+    {
+      "idx": 1144,
+      "question": "Question:\nBob stands in the grass surrounded by trees and nature, where is Bob?\n\nChoices:\nA. rest area\nB. desert\nC. state park\nD. fairgrounds\nE. socce",
+      "gt": "C",
+      "pred": "C",
+      "original_correct": true,
+      "cot_length_chars": 4006,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=5, total_comp_steps=5, shuffle_ok=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": true,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.16
+    },
+    {
+      "idx": 1155,
+      "question": "Question:\nThe potato might be the official vegetable of what?\n\nChoices:\nA. vegans\nB. kitchen cupboard\nC. restaurants\nD. chicken\nE. maryland",
+      "gt": "E",
+      "pred": "E",
+      "original_correct": true,
+      "cot_length_chars": 4172,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=2, total_comp_steps=2, shuffle_ok=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.86
+    },
+    {
+      "idx": 1159,
+      "question": "Question:\nBilly liked driving cars.  He was good at it.  But he was rattled ever since his father experienced what?\n\nChoices:\nA. transportation\nB. pol",
+      "gt": "D",
+      "pred": "D",
+      "original_correct": true,
+      "cot_length_chars": 3741,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=3, total_comp_steps=3, shuffle_ok=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 0.97
+    },
+    {
+      "idx": 1168,
+      "question": "Question:\nThe poor girls needed a light to see, what was the relationship between that light and finishing her homework?\n\nChoices:\nA. darkness\nB. cumb",
+      "gt": "E",
+      "pred": "A",
+      "original_correct": false,
+      "cot_length_chars": 4089,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.625
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=4, total_comp_steps=4, shuffle_ok=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.09
+    },
+    {
+      "idx": 1174,
+      "question": "Question:\nA meteor travels through galaxies which are a part of what?\n\nChoices:\nA. republic of ireland\nB. sky\nC. orbit\nD. universe\nE. school",
+      "gt": "D",
+      "pred": "D",
+      "original_correct": true,
+      "cot_length_chars": 4046,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=5, total_comp_steps=5, shuffle_ok=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.1
+    },
+    {
+      "idx": 1176,
+      "question": "Question:\nShe had an interest in the man, what did she want to do with him?\n\nChoices:\nA. see particular program\nB. see exhibits\nC. see people play gam",
+      "gt": "D",
+      "pred": "D",
+      "original_correct": true,
+      "cot_length_chars": 3885,
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.5625
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=6, total_comp_steps=6, shuffle_ok=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.92
+    },
+    {
+      "idx": 1179,
+      "question": "Question:\nWhere would you sit in a chair while working toward an advanced degree?\n\nChoices:\nA. aeroport\nB. church\nC. furniture store\nD. university\nE. ",
+      "gt": "D",
+      "pred": "D",
+      "original_correct": true,
+      "cot_length_chars": 5195,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=10, total_comp_steps=10, shuffle_ok=False, judge_used=False}\n- [UTILITY] step=7: off_topic {jaccard=0.0, used_later=False, judge_used=False}\n- [UTILITY] step=8: off_topic {jaccard=0.023255813953488372, used_later=False, judge_used=False}",
+      "flags_count": 3,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.05
+    },
+    {
+      "idx": 1190,
+      "question": "Question:\nWhat are our bodies doing after having food?\n\nChoices:\nA. falling down\nB. digesting\nC. gas\nD. weight gain\nE. not hungry",
+      "gt": "B",
+      "pred": "B",
+      "original_correct": true,
+      "cot_length_chars": 7719,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=3, total_comp_steps=3, shuffle_ok=False, judge_used=False}\n- [UTILITY] step=2: off_topic {jaccard=0.03773584905660377, used_later=False, judge_used=False}",
+      "flags_count": 2,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.14
+    },
+    {
+      "idx": 1209,
+      "question": "Question:\nIf I did not have a rosebush, where would I get one?\n\nChoices:\nA. pot\nB. museum\nC. garden center\nD. formal garden\nE. backyard",
+      "gt": "C",
+      "pred": "C",
+      "original_correct": true,
+      "cot_length_chars": 4913,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=10, total_comp_steps=10, shuffle_ok=False, judge_used=False}\n- [UTILITY] step=2: off_topic {jaccard=0.04838709677419355, used_later=False, judge_used=False}\n- [UTILITY] step=8: off_topic {jaccard=0.021739130434782608, used_later=False, judge_used=False}",
+      "flags_count": 3,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 2.53
+    }
+  ]
+}

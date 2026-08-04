@@ -1,0 +1,936 @@
+{
+  "timestamp": "2026-02-25T20:06:05.152601",
+  "config": {
+    "dataset": "gpqa",
+    "samples_per_model": 5,
+    "seed": 42,
+    "judge_model": "gpt-4o",
+    "baseline_model": "gpt-4o-mini"
+  },
+  "total_api_calls": 45,
+  "elapsed_s": 15.4,
+  "pooled_agreement": {
+    "faithfulness": {
+      "n": 0,
+      "error": "insufficient data"
+    },
+    "utility": {
+      "n": 0,
+      "error": "insufficient data"
+    },
+    "coherence": {
+      "n": 0,
+      "error": "insufficient data"
+    },
+    "factuality": {
+      "n": 0,
+      "error": "insufficient data"
+    }
+  },
+  "rank_agreement": {},
+  "per_model": {
+    "DS-R1-1.5B": {
+      "model_dir": "DeepSeek-R1-Distill-Qwen-1.5B",
+      "n_samples": 5,
+      "agreement": {
+        "faithfulness": {
+          "n": 0,
+          "error": "insufficient data"
+        },
+        "utility": {
+          "n": 0,
+          "error": "insufficient data"
+        },
+        "coherence": {
+          "n": 0,
+          "error": "insufficient data"
+        },
+        "factuality": {
+          "n": 0,
+          "error": "insufficient data"
+        }
+      },
+      "sample_pairs": [
+        {
+          "idx": 327,
+          "mini": {
+            "faithfulness": 2,
+            "utility": 2,
+            "coherence": 3,
+            "factuality": 2
+          },
+          "gpt4o": {
+            "faithfulness": null,
+            "utility": null,
+            "coherence": null,
+            "factuality": null
+          }
+        },
+        {
+          "idx": 57,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": null,
+            "utility": null,
+            "coherence": null,
+            "factuality": null
+          }
+        },
+        {
+          "idx": 12,
+          "mini": {
+            "faithfulness": 3,
+            "utility": 3,
+            "coherence": 4,
+            "factuality": 3
+          },
+          "gpt4o": {
+            "faithfulness": null,
+            "utility": null,
+            "coherence": null,
+            "factuality": null
+          }
+        },
+        {
+          "idx": 379,
+          "mini": {
+            "faithfulness": 3,
+            "utility": 3,
+            "coherence": 4,
+            "factuality": 3
+          },
+          "gpt4o": {
+            "faithfulness": null,
+            "utility": null,
+            "coherence": null,
+            "factuality": null
+          }
+        },
+        {
+          "idx": 140,
+          "mini": {
+            "faithfulness": 3,
+            "utility": 3,
+            "coherence": 3,
+            "factuality": 4
+          },
+          "gpt4o": {
+            "faithfulness": null,
+            "utility": null,
+            "coherence": null,
+            "factuality": null
+          }
+        }
+      ]
+    },
+    "DS-R1-7B": {
+      "model_dir": "DeepSeek-R1-Distill-Qwen-7B",
+      "n_samples": 5,
+      "agreement": {
+        "faithfulness": {
+          "n": 0,
+          "error": "insufficient data"
+        },
+        "utility": {
+          "n": 0,
+          "error": "insufficient data"
+        },
+        "coherence": {
+          "n": 0,
+          "error": "insufficient data"
+        },
+        "factuality": {
+          "n": 0,
+          "error": "insufficient data"
+        }
+      },
+      "sample_pairs": [
+        {
+          "idx": 327,
+          "mini": {
+            "faithfulness": 3,
+            "utility": 3,
+            "coherence": 3,
+            "factuality": 4
+          },
+          "gpt4o": {
+            "faithfulness": null,
+            "utility": null,
+            "coherence": null,
+            "factuality": null
+          }
+        },
+        {
+          "idx": 57,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": null,
+            "utility": null,
+            "coherence": null,
+            "factuality": null
+          }
+        },
+        {
+          "idx": 12,
+          "mini": {
+            "faithfulness": 2,
+            "utility": 2,
+            "coherence": 2,
+            "factuality": 2
+          },
+          "gpt4o": {
+            "faithfulness": null,
+            "utility": null,
+            "coherence": null,
+            "factuality": null
+          }
+        },
+        {
+          "idx": 379,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": null,
+            "utility": null,
+            "coherence": null,
+            "factuality": null
+          }
+        },
+        {
+          "idx": 140,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": null,
+            "utility": null,
+            "coherence": null,
+            "factuality": null
+          }
+        }
+      ]
+    },
+    "LLaMA-3.1-8B": {
+      "model_dir": "Llama-3.1-8B-Instruct",
+      "n_samples": 5,
+      "agreement": {
+        "faithfulness": {
+          "n": 0,
+          "error": "insufficient data"
+        },
+        "utility": {
+          "n": 0,
+          "error": "insufficient data"
+        },
+        "coherence": {
+          "n": 0,
+          "error": "insufficient data"
+        },
+        "factuality": {
+          "n": 0,
+          "error": "insufficient data"
+        }
+      },
+      "sample_pairs": [
+        {
+          "idx": 327,
+          "mini": {
+            "faithfulness": 2,
+            "utility": 3,
+            "coherence": 3,
+            "factuality": 2
+          },
+          "gpt4o": {
+            "faithfulness": null,
+            "utility": null,
+            "coherence": null,
+            "factuality": null
+          }
+        },
+        {
+          "idx": 57,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": null,
+            "utility": null,
+            "coherence": null,
+            "factuality": null
+          }
+        },
+        {
+          "idx": 12,
+          "mini": {
+            "faithfulness": 4,
+            "utility": 4,
+            "coherence": 4,
+            "factuality": 4
+          },
+          "gpt4o": {
+            "faithfulness": null,
+            "utility": null,
+            "coherence": null,
+            "factuality": null
+          }
+        },
+        {
+          "idx": 379,
+          "mini": {
+            "faithfulness": 3,
+            "utility": 3,
+            "coherence": 4,
+            "factuality": 3
+          },
+          "gpt4o": {
+            "faithfulness": null,
+            "utility": null,
+            "coherence": null,
+            "factuality": null
+          }
+        },
+        {
+          "idx": 140,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 4,
+            "coherence": 4,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": null,
+            "utility": null,
+            "coherence": null,
+            "factuality": null
+          }
+        }
+      ]
+    },
+    "Qwen2.5-7B": {
+      "model_dir": "Qwen2.5-7B-Instruct",
+      "n_samples": 5,
+      "agreement": {
+        "faithfulness": {
+          "n": 0,
+          "error": "insufficient data"
+        },
+        "utility": {
+          "n": 0,
+          "error": "insufficient data"
+        },
+        "coherence": {
+          "n": 0,
+          "error": "insufficient data"
+        },
+        "factuality": {
+          "n": 0,
+          "error": "insufficient data"
+        }
+      },
+      "sample_pairs": [
+        {
+          "idx": 327,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 4,
+            "coherence": 4,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": null,
+            "utility": null,
+            "coherence": null,
+            "factuality": null
+          }
+        },
+        {
+          "idx": 57,
+          "mini": {
+            "faithfulness": 3,
+            "utility": 4,
+            "coherence": 4,
+            "factuality": 4
+          },
+          "gpt4o": {
+            "faithfulness": null,
+            "utility": null,
+            "coherence": null,
+            "factuality": null
+          }
+        },
+        {
+          "idx": 12,
+          "mini": {
+            "faithfulness": 2,
+            "utility": 3,
+            "coherence": 3,
+            "factuality": 3
+          },
+          "gpt4o": {
+            "faithfulness": null,
+            "utility": null,
+            "coherence": null,
+            "factuality": null
+          }
+        },
+        {
+          "idx": 379,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": null,
+            "utility": null,
+            "coherence": null,
+            "factuality": null
+          }
+        },
+        {
+          "idx": 140,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": null,
+            "utility": null,
+            "coherence": null,
+            "factuality": null
+          }
+        }
+      ]
+    },
+    "Qwen2.5-Math-7B": {
+      "model_dir": "Qwen2.5-Math-7B",
+      "n_samples": 5,
+      "agreement": {
+        "faithfulness": {
+          "n": 0,
+          "error": "insufficient data"
+        },
+        "utility": {
+          "n": 0,
+          "error": "insufficient data"
+        },
+        "coherence": {
+          "n": 0,
+          "error": "insufficient data"
+        },
+        "factuality": {
+          "n": 0,
+          "error": "insufficient data"
+        }
+      },
+      "sample_pairs": [
+        {
+          "idx": 327,
+          "mini": {
+            "faithfulness": 4,
+            "utility": 4,
+            "coherence": 4,
+            "factuality": 4
+          },
+          "gpt4o": {
+            "faithfulness": null,
+            "utility": null,
+            "coherence": null,
+            "factuality": null
+          }
+        },
+        {
+          "idx": 57,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": null,
+            "utility": null,
+            "coherence": null,
+            "factuality": null
+          }
+        },
+        {
+          "idx": 12,
+          "mini": {
+            "faithfulness": 2,
+            "utility": 2,
+            "coherence": 3,
+            "factuality": 2
+          },
+          "gpt4o": {
+            "faithfulness": null,
+            "utility": null,
+            "coherence": null,
+            "factuality": null
+          }
+        },
+        {
+          "idx": 379,
+          "mini": {
+            "faithfulness": 3,
+            "utility": 3,
+            "coherence": 4,
+            "factuality": 3
+          },
+          "gpt4o": {
+            "faithfulness": null,
+            "utility": null,
+            "coherence": null,
+            "factuality": null
+          }
+        },
+        {
+          "idx": 140,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": null,
+            "utility": null,
+            "coherence": null,
+            "factuality": null
+          }
+        }
+      ]
+    },
+    "Gemma-7B": {
+      "model_dir": "gemma-7b",
+      "n_samples": 5,
+      "agreement": {
+        "faithfulness": {
+          "n": 0,
+          "error": "insufficient data"
+        },
+        "utility": {
+          "n": 0,
+          "error": "insufficient data"
+        },
+        "coherence": {
+          "n": 0,
+          "error": "insufficient data"
+        },
+        "factuality": {
+          "n": 0,
+          "error": "insufficient data"
+        }
+      },
+      "sample_pairs": [
+        {
+          "idx": 327,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": null,
+            "utility": null,
+            "coherence": null,
+            "factuality": null
+          }
+        },
+        {
+          "idx": 57,
+          "mini": {
+            "faithfulness": 3,
+            "utility": 2,
+            "coherence": 3,
+            "factuality": 3
+          },
+          "gpt4o": {
+            "faithfulness": null,
+            "utility": null,
+            "coherence": null,
+            "factuality": null
+          }
+        },
+        {
+          "idx": 12,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 4,
+            "coherence": 4,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": null,
+            "utility": null,
+            "coherence": null,
+            "factuality": null
+          }
+        },
+        {
+          "idx": 379,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 4,
+            "coherence": 4,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": null,
+            "utility": null,
+            "coherence": null,
+            "factuality": null
+          }
+        },
+        {
+          "idx": 140,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": null,
+            "utility": null,
+            "coherence": null,
+            "factuality": null
+          }
+        }
+      ]
+    },
+    "Phi-4": {
+      "model_dir": "phi-4",
+      "n_samples": 5,
+      "agreement": {
+        "faithfulness": {
+          "n": 0,
+          "error": "insufficient data"
+        },
+        "utility": {
+          "n": 0,
+          "error": "insufficient data"
+        },
+        "coherence": {
+          "n": 0,
+          "error": "insufficient data"
+        },
+        "factuality": {
+          "n": 0,
+          "error": "insufficient data"
+        }
+      },
+      "sample_pairs": [
+        {
+          "idx": 327,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": null,
+            "utility": null,
+            "coherence": null,
+            "factuality": null
+          }
+        },
+        {
+          "idx": 57,
+          "mini": {
+            "faithfulness": 3,
+            "utility": 2,
+            "coherence": 3,
+            "factuality": 4
+          },
+          "gpt4o": {
+            "faithfulness": null,
+            "utility": null,
+            "coherence": null,
+            "factuality": null
+          }
+        },
+        {
+          "idx": 12,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 4,
+            "coherence": 4,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": null,
+            "utility": null,
+            "coherence": null,
+            "factuality": null
+          }
+        },
+        {
+          "idx": 379,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 4,
+            "coherence": 4,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": null,
+            "utility": null,
+            "coherence": null,
+            "factuality": null
+          }
+        },
+        {
+          "idx": 140,
+          "mini": {
+            "faithfulness": 2,
+            "utility": 2,
+            "coherence": 2,
+            "factuality": 2
+          },
+          "gpt4o": {
+            "faithfulness": null,
+            "utility": null,
+            "coherence": null,
+            "factuality": null
+          }
+        }
+      ]
+    },
+    "Phi-4-Reasoning": {
+      "model_dir": "Phi-4-reasoning",
+      "n_samples": 5,
+      "agreement": {
+        "faithfulness": {
+          "n": 0,
+          "error": "insufficient data"
+        },
+        "utility": {
+          "n": 0,
+          "error": "insufficient data"
+        },
+        "coherence": {
+          "n": 0,
+          "error": "insufficient data"
+        },
+        "factuality": {
+          "n": 0,
+          "error": "insufficient data"
+        }
+      },
+      "sample_pairs": [
+        {
+          "idx": 327,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 4,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": null,
+            "utility": null,
+            "coherence": null,
+            "factuality": null
+          }
+        },
+        {
+          "idx": 57,
+          "mini": {
+            "faithfulness": 3,
+            "utility": 3,
+            "coherence": 3,
+            "factuality": 3
+          },
+          "gpt4o": {
+            "faithfulness": null,
+            "utility": null,
+            "coherence": null,
+            "factuality": null
+          }
+        },
+        {
+          "idx": 12,
+          "mini": {
+            "faithfulness": 2,
+            "utility": 2,
+            "coherence": 2,
+            "factuality": 3
+          },
+          "gpt4o": {
+            "faithfulness": null,
+            "utility": null,
+            "coherence": null,
+            "factuality": null
+          }
+        },
+        {
+          "idx": 379,
+          "mini": {
+            "faithfulness": 4,
+            "utility": 4,
+            "coherence": 4,
+            "factuality": 4
+          },
+          "gpt4o": {
+            "faithfulness": null,
+            "utility": null,
+            "coherence": null,
+            "factuality": null
+          }
+        },
+        {
+          "idx": 140,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": null,
+            "utility": null,
+            "coherence": null,
+            "factuality": null
+          }
+        }
+      ]
+    },
+    "Qwen3-4B": {
+      "model_dir": "Qwen3-4B-Thinking-2507",
+      "n_samples": 5,
+      "agreement": {
+        "faithfulness": {
+          "n": 0,
+          "error": "insufficient data"
+        },
+        "utility": {
+          "n": 0,
+          "error": "insufficient data"
+        },
+        "coherence": {
+          "n": 0,
+          "error": "insufficient data"
+        },
+        "factuality": {
+          "n": 0,
+          "error": "insufficient data"
+        }
+      },
+      "sample_pairs": [
+        {
+          "idx": 327,
+          "mini": {
+            "faithfulness": 3,
+            "utility": 3,
+            "coherence": 2,
+            "factuality": 3
+          },
+          "gpt4o": {
+            "faithfulness": null,
+            "utility": null,
+            "coherence": null,
+            "factuality": null
+          }
+        },
+        {
+          "idx": 57,
+          "mini": {
+            "faithfulness": 3,
+            "utility": 3,
+            "coherence": 2,
+            "factuality": 3
+          },
+          "gpt4o": {
+            "faithfulness": null,
+            "utility": null,
+            "coherence": null,
+            "factuality": null
+          }
+        },
+        {
+          "idx": 12,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": null,
+            "utility": null,
+            "coherence": null,
+            "factuality": null
+          }
+        },
+        {
+          "idx": 379,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": null,
+            "utility": null,
+            "coherence": null,
+            "factuality": null
+          }
+        },
+        {
+          "idx": 140,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": null,
+            "utility": null,
+            "coherence": null,
+            "factuality": null
+          }
+        }
+      ]
+    }
+  },
+  "model_avgs_mini": {
+    "DS-R1-1.5B": 3.4,
+    "DS-R1-7B": 4.05,
+    "LLaMA-3.1-8B": 3.85,
+    "Qwen2.5-7B": 4.2,
+    "Qwen2.5-Math-7B": 3.9,
+    "Gemma-7B": 4.35,
+    "Phi-4": 3.8,
+    "Phi-4-Reasoning": 3.8,
+    "Qwen3-4B": 4.1
+  },
+  "model_avgs_4o": {}
+}

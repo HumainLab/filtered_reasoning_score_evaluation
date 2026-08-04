@@ -1,0 +1,21 @@
+{
+  "n_pairs": 216,
+  "n_obs_long": 432,
+  "formula": "metric_gap_pp ~ acc_gap_pp + acc_gap_pp * is_frs",
+  "cluster": "pair_key",
+  "coef_acc_gap": 0.3622760973381576,
+  "coef_interaction_acc_x_frs": 0.18876491876833068,
+  "interaction_se": 0.03583892457028931,
+  "interaction_p": 1.3864375567277227e-07,
+  "interaction_ci_95": [
+    0.118521917365916,
+    0.25900792017074536
+  ],
+  "r_squared": 0.27314757510788845,
+  "paired_ttest_frs_vs_random_gap": {
+    "t": 6.878421599994247,
+    "p": 6.494292693497856e-11
+  },
+  "mean_frs_gap": 20.63148148148148,
+  "mean_random_gap": 14.541666666666666
+}

@@ -1,0 +1,937 @@
+{
+  "version": "postfiltered_confidence_v1",
+  "cap_per_combo": 9,
+  "stratify": [
+    "correctness",
+    "answer_confidence_tercile_within_combo"
+  ],
+  "datasets": [
+    "aqua",
+    "commonsense_qa",
+    "gpqa",
+    "gsm8k",
+    "math500",
+    "svamp"
+  ],
+  "combos": {
+    "gsm8k::DeepSeek_R1_Distill_Qwen_1.5B_filtered_p1_only": {
+      "dataset": "gsm8k",
+      "jsonl": "/home1/10757/manasp123/reasoning-models-eval/filtered-cot-gsm8k/DeepSeek_R1_Distill_Qwen_1.5B_filtered_p1_only.jsonl",
+      "n_available": 95,
+      "picked_indices": [
+        162,
+        266,
+        284,
+        286,
+        327,
+        470,
+        884,
+        895,
+        1064
+      ],
+      "n_picked": 9
+    },
+    "gsm8k::DeepSeek_R1_Distill_Qwen_7B_filtered_p1_only": {
+      "dataset": "gsm8k",
+      "jsonl": "/home1/10757/manasp123/reasoning-models-eval/filtered-cot-gsm8k/DeepSeek_R1_Distill_Qwen_7B_filtered_p1_only.jsonl",
+      "n_available": 454,
+      "picked_indices": [
+        356,
+        364,
+        465,
+        515,
+        790,
+        824,
+        1174,
+        1280,
+        1309
+      ],
+      "n_picked": 9
+    },
+    "gsm8k::Llama_3.1_8B_Instruct_filtered_p1_only": {
+      "dataset": "gsm8k",
+      "jsonl": "/home1/10757/manasp123/reasoning-models-eval/filtered-cot-gsm8k/Llama_3.1_8B_Instruct_filtered_p1_only.jsonl",
+      "n_available": 808,
+      "picked_indices": [
+        216,
+        368,
+        539,
+        579,
+        682,
+        776,
+        912,
+        1097,
+        1147
+      ],
+      "n_picked": 9
+    },
+    "gsm8k::Phi_4_reasoning_filtered_p1_only": {
+      "dataset": "gsm8k",
+      "jsonl": "/home1/10757/manasp123/reasoning-models-eval/filtered-cot-gsm8k/Phi_4_reasoning_filtered_p1_only.jsonl",
+      "n_available": 591,
+      "picked_indices": [
+        114,
+        232,
+        469,
+        649,
+        793,
+        864,
+        917,
+        923,
+        1079
+      ],
+      "n_picked": 9
+    },
+    "gsm8k::Qwen2.5_7B_Instruct_filtered_p1_only": {
+      "dataset": "gsm8k",
+      "jsonl": "/home1/10757/manasp123/reasoning-models-eval/filtered-cot-gsm8k/Qwen2.5_7B_Instruct_filtered_p1_only.jsonl",
+      "n_available": 647,
+      "picked_indices": [
+        231,
+        245,
+        444,
+        475,
+        723,
+        840,
+        876,
+        937,
+        982
+      ],
+      "n_picked": 9
+    },
+    "gsm8k::Qwen2.5_Math_7B_filtered_p1_only": {
+      "dataset": "gsm8k",
+      "jsonl": "/home1/10757/manasp123/reasoning-models-eval/filtered-cot-gsm8k/Qwen2.5_Math_7B_filtered_p1_only.jsonl",
+      "n_available": 610,
+      "picked_indices": [
+        382,
+        390,
+        455,
+        707,
+        949,
+        1051,
+        1212,
+        1275,
+        1281
+      ],
+      "n_picked": 9
+    },
+    "gsm8k::Qwen3_4B_Thinking_2507_filtered_p1_only": {
+      "dataset": "gsm8k",
+      "jsonl": "/home1/10757/manasp123/reasoning-models-eval/filtered-cot-gsm8k/Qwen3_4B_Thinking_2507_filtered_p1_only.jsonl",
+      "n_available": 229,
+      "picked_indices": [
+        19,
+        155,
+        166,
+        171,
+        306,
+        485,
+        612,
+        937,
+        1248
+      ],
+      "n_picked": 9
+    },
+    "gsm8k::gemma_7b_filtered_p1_only": {
+      "dataset": "gsm8k",
+      "jsonl": "/home1/10757/manasp123/reasoning-models-eval/filtered-cot-gsm8k/gemma_7b_filtered_p1_only.jsonl",
+      "n_available": 1032,
+      "picked_indices": [
+        267,
+        446,
+        513,
+        877,
+        903,
+        908,
+        954,
+        1023,
+        1303
+      ],
+      "n_picked": 9
+    },
+    "gsm8k::phi_4_filtered_p1_only": {
+      "dataset": "gsm8k",
+      "jsonl": "/home1/10757/manasp123/reasoning-models-eval/filtered-cot-gsm8k/phi_4_filtered_p1_only.jsonl",
+      "n_available": 1318,
+      "picked_indices": [
+        16,
+        214,
+        242,
+        359,
+        409,
+        530,
+        603,
+        827,
+        975
+      ],
+      "n_picked": 9
+    },
+    "math500::DeepSeek_R1_Distill_Qwen_1.5B_filtered_p1_only": {
+      "dataset": "math500",
+      "jsonl": "/home1/10757/manasp123/reasoning-models-eval/filtered-cot-math500/DeepSeek_R1_Distill_Qwen_1.5B_filtered_p1_only.jsonl",
+      "n_available": 57,
+      "picked_indices": [
+        145,
+        174,
+        217,
+        292,
+        335,
+        374,
+        416,
+        423,
+        426
+      ],
+      "n_picked": 9
+    },
+    "math500::DeepSeek_R1_Distill_Qwen_7B_filtered_p1_only": {
+      "dataset": "math500",
+      "jsonl": "/home1/10757/manasp123/reasoning-models-eval/filtered-cot-math500/DeepSeek_R1_Distill_Qwen_7B_filtered_p1_only.jsonl",
+      "n_available": 148,
+      "picked_indices": [
+        11,
+        102,
+        172,
+        175,
+        247,
+        346,
+        394,
+        456,
+        496
+      ],
+      "n_picked": 9
+    },
+    "math500::Llama_3.1_8B_Instruct_filtered_p1_only": {
+      "dataset": "math500",
+      "jsonl": "/home1/10757/manasp123/reasoning-models-eval/filtered-cot-math500/Llama_3.1_8B_Instruct_filtered_p1_only.jsonl",
+      "n_available": 210,
+      "picked_indices": [
+        12,
+        85,
+        107,
+        258,
+        289,
+        292,
+        356,
+        438,
+        443
+      ],
+      "n_picked": 9
+    },
+    "math500::Phi_4_reasoning_filtered_p1_only": {
+      "dataset": "math500",
+      "jsonl": "/home1/10757/manasp123/reasoning-models-eval/filtered-cot-math500/Phi_4_reasoning_filtered_p1_only.jsonl",
+      "n_available": 120,
+      "picked_indices": [
+        29,
+        37,
+        84,
+        196,
+        220,
+        291,
+        311,
+        408,
+        419
+      ],
+      "n_picked": 9
+    },
+    "math500::Qwen2.5_7B_Instruct_filtered_p1_only": {
+      "dataset": "math500",
+      "jsonl": "/home1/10757/manasp123/reasoning-models-eval/filtered-cot-math500/Qwen2.5_7B_Instruct_filtered_p1_only.jsonl",
+      "n_available": 303,
+      "picked_indices": [
+        0,
+        92,
+        162,
+        166,
+        174,
+        249,
+        298,
+        299,
+        443
+      ],
+      "n_picked": 9
+    },
+    "math500::Qwen2.5_Math_7B_filtered_p1_only": {
+      "dataset": "math500",
+      "jsonl": "/home1/10757/manasp123/reasoning-models-eval/filtered-cot-math500/Qwen2.5_Math_7B_filtered_p1_only.jsonl",
+      "n_available": 295,
+      "picked_indices": [
+        124,
+        149,
+        151,
+        332,
+        377,
+        390,
+        416,
+        452,
+        490
+      ],
+      "n_picked": 9
+    },
+    "math500::Qwen3_4B_Thinking_2507_filtered_p1_only": {
+      "dataset": "math500",
+      "jsonl": "/home1/10757/manasp123/reasoning-models-eval/filtered-cot-math500/Qwen3_4B_Thinking_2507_filtered_p1_only.jsonl",
+      "n_available": 17,
+      "picked_indices": [
+        3,
+        36,
+        59,
+        60,
+        64,
+        110,
+        292,
+        427,
+        440
+      ],
+      "n_picked": 9
+    },
+    "math500::gemma_7b_filtered_p1_only": {
+      "dataset": "math500",
+      "jsonl": "/home1/10757/manasp123/reasoning-models-eval/filtered-cot-math500/gemma_7b_filtered_p1_only.jsonl",
+      "n_available": 463,
+      "picked_indices": [
+        52,
+        53,
+        96,
+        98,
+        197,
+        345,
+        402,
+        411,
+        429
+      ],
+      "n_picked": 9
+    },
+    "math500::phi_4_filtered_p1_only": {
+      "dataset": "math500",
+      "jsonl": "/home1/10757/manasp123/reasoning-models-eval/filtered-cot-math500/phi_4_filtered_p1_only.jsonl",
+      "n_available": 500,
+      "picked_indices": [
+        19,
+        101,
+        114,
+        136,
+        163,
+        242,
+        336,
+        338,
+        442
+      ],
+      "n_picked": 9
+    },
+    "svamp::DeepSeek_R1_Distill_Qwen_1.5B_filtered_p1_only": {
+      "dataset": "svamp",
+      "jsonl": "/home1/10757/manasp123/reasoning-models-eval/filtered-cot-svamp/DeepSeek_R1_Distill_Qwen_1.5B_filtered_p1_only.jsonl",
+      "n_available": 833,
+      "picked_indices": [
+        104,
+        239,
+        267,
+        281,
+        372,
+        550,
+        702,
+        721,
+        900
+      ],
+      "n_picked": 9
+    },
+    "svamp::DeepSeek_R1_Distill_Qwen_7B_filtered_p1_only": {
+      "dataset": "svamp",
+      "jsonl": "/home1/10757/manasp123/reasoning-models-eval/filtered-cot-svamp/DeepSeek_R1_Distill_Qwen_7B_filtered_p1_only.jsonl",
+      "n_available": 173,
+      "picked_indices": [
+        193,
+        263,
+        322,
+        397,
+        452,
+        631,
+        717,
+        737,
+        762
+      ],
+      "n_picked": 9
+    },
+    "svamp::Llama_3.1_8B_Instruct_filtered_p1_only": {
+      "dataset": "svamp",
+      "jsonl": "/home1/10757/manasp123/reasoning-models-eval/filtered-cot-svamp/Llama_3.1_8B_Instruct_filtered_p1_only.jsonl",
+      "n_available": 649,
+      "picked_indices": [
+        156,
+        366,
+        390,
+        484,
+        632,
+        731,
+        743,
+        854,
+        963
+      ],
+      "n_picked": 9
+    },
+    "svamp::Phi_4_reasoning_filtered_p1_only": {
+      "dataset": "svamp",
+      "jsonl": "/home1/10757/manasp123/reasoning-models-eval/filtered-cot-svamp/Phi_4_reasoning_filtered_p1_only.jsonl",
+      "n_available": 472,
+      "picked_indices": [
+        117,
+        139,
+        287,
+        351,
+        391,
+        485,
+        708,
+        764,
+        973
+      ],
+      "n_picked": 9
+    },
+    "svamp::Qwen2.5_7B_Instruct_filtered_p1_only": {
+      "dataset": "svamp",
+      "jsonl": "/home1/10757/manasp123/reasoning-models-eval/filtered-cot-svamp/Qwen2.5_7B_Instruct_filtered_p1_only.jsonl",
+      "n_available": 911,
+      "picked_indices": [
+        98,
+        258,
+        259,
+        392,
+        482,
+        523,
+        580,
+        962,
+        995
+      ],
+      "n_picked": 9
+    },
+    "svamp::Qwen2.5_Math_7B_filtered_p1_only": {
+      "dataset": "svamp",
+      "jsonl": "/home1/10757/manasp123/reasoning-models-eval/filtered-cot-svamp/Qwen2.5_Math_7B_filtered_p1_only.jsonl",
+      "n_available": 580,
+      "picked_indices": [
+        15,
+        23,
+        46,
+        99,
+        113,
+        243,
+        503,
+        899,
+        909
+      ],
+      "n_picked": 9
+    },
+    "svamp::Qwen3_4B_Thinking_2507_filtered_p1_only": {
+      "dataset": "svamp",
+      "jsonl": "/home1/10757/manasp123/reasoning-models-eval/filtered-cot-svamp/Qwen3_4B_Thinking_2507_filtered_p1_only.jsonl",
+      "n_available": 183,
+      "picked_indices": [
+        151,
+        389,
+        465,
+        660,
+        685,
+        792,
+        811,
+        927,
+        965
+      ],
+      "n_picked": 9
+    },
+    "svamp::gemma_7b_filtered_p1_only": {
+      "dataset": "svamp",
+      "jsonl": "/home1/10757/manasp123/reasoning-models-eval/filtered-cot-svamp/gemma_7b_filtered_p1_only.jsonl",
+      "n_available": 945,
+      "picked_indices": [
+        4,
+        7,
+        214,
+        262,
+        352,
+        362,
+        543,
+        810,
+        903
+      ],
+      "n_picked": 9
+    },
+    "svamp::phi_4_filtered_p1_only": {
+      "dataset": "svamp",
+      "jsonl": "/home1/10757/manasp123/reasoning-models-eval/filtered-cot-svamp/phi_4_filtered_p1_only.jsonl",
+      "n_available": 998,
+      "picked_indices": [
+        52,
+        187,
+        266,
+        333,
+        532,
+        730,
+        800,
+        876,
+        887
+      ],
+      "n_picked": 9
+    },
+    "aqua::DeepSeek_R1_Distill_Qwen_1.5B_filtered_p1_only": {
+      "dataset": "aqua",
+      "jsonl": "/home1/10757/manasp123/reasoning-models-eval/filtered-cot-aqua/DeepSeek_R1_Distill_Qwen_1.5B_filtered_p1_only.jsonl",
+      "n_available": 8,
+      "picked_indices": [
+        1,
+        19,
+        24,
+        80,
+        128,
+        192,
+        206,
+        213
+      ],
+      "n_picked": 8
+    },
+    "aqua::DeepSeek_R1_Distill_Qwen_7B_filtered_p1_only": {
+      "dataset": "aqua",
+      "jsonl": "/home1/10757/manasp123/reasoning-models-eval/filtered-cot-aqua/DeepSeek_R1_Distill_Qwen_7B_filtered_p1_only.jsonl",
+      "n_available": 37,
+      "picked_indices": [
+        50,
+        80,
+        87,
+        91,
+        104,
+        128,
+        163,
+        171,
+        245
+      ],
+      "n_picked": 9
+    },
+    "aqua::Llama_3.1_8B_Instruct_filtered_p1_only": {
+      "dataset": "aqua",
+      "jsonl": "/home1/10757/manasp123/reasoning-models-eval/filtered-cot-aqua/Llama_3.1_8B_Instruct_filtered_p1_only.jsonl",
+      "n_available": 105,
+      "picked_indices": [
+        1,
+        14,
+        63,
+        119,
+        130,
+        145,
+        156,
+        249,
+        250
+      ],
+      "n_picked": 9
+    },
+    "aqua::Phi_4_reasoning_filtered_p1_only": {
+      "dataset": "aqua",
+      "jsonl": "/home1/10757/manasp123/reasoning-models-eval/filtered-cot-aqua/Phi_4_reasoning_filtered_p1_only.jsonl",
+      "n_available": 53,
+      "picked_indices": [
+        4,
+        48,
+        54,
+        81,
+        83,
+        97,
+        137,
+        180,
+        203
+      ],
+      "n_picked": 9
+    },
+    "aqua::Qwen2.5_7B_Instruct_filtered_p1_only": {
+      "dataset": "aqua",
+      "jsonl": "/home1/10757/manasp123/reasoning-models-eval/filtered-cot-aqua/Qwen2.5_7B_Instruct_filtered_p1_only.jsonl",
+      "n_available": 242,
+      "picked_indices": [
+        8,
+        104,
+        108,
+        141,
+        176,
+        182,
+        183,
+        226,
+        227
+      ],
+      "n_picked": 9
+    },
+    "aqua::Qwen2.5_Math_7B_filtered_p1_only": {
+      "dataset": "aqua",
+      "jsonl": "/home1/10757/manasp123/reasoning-models-eval/filtered-cot-aqua/Qwen2.5_Math_7B_filtered_p1_only.jsonl",
+      "n_available": 173,
+      "picked_indices": [
+        8,
+        78,
+        86,
+        96,
+        155,
+        194,
+        208,
+        215,
+        246
+      ],
+      "n_picked": 9
+    },
+    "aqua::Qwen3_4B_Thinking_2507_filtered_p1_only": {
+      "dataset": "aqua",
+      "jsonl": "/home1/10757/manasp123/reasoning-models-eval/filtered-cot-aqua/Qwen3_4B_Thinking_2507_filtered_p1_only.jsonl",
+      "n_available": 14,
+      "picked_indices": [
+        10,
+        65,
+        126,
+        141,
+        175,
+        193,
+        206,
+        220,
+        244
+      ],
+      "n_picked": 9
+    },
+    "aqua::gemma_7b_filtered_p1_only": {
+      "dataset": "aqua",
+      "jsonl": "/home1/10757/manasp123/reasoning-models-eval/filtered-cot-aqua/gemma_7b_filtered_p1_only.jsonl",
+      "n_available": 192,
+      "picked_indices": [
+        22,
+        35,
+        67,
+        68,
+        121,
+        153,
+        178,
+        208,
+        244
+      ],
+      "n_picked": 9
+    },
+    "aqua::phi_4_filtered_p1_only": {
+      "dataset": "aqua",
+      "jsonl": "/home1/10757/manasp123/reasoning-models-eval/filtered-cot-aqua/phi_4_filtered_p1_only.jsonl",
+      "n_available": 254,
+      "picked_indices": [
+        34,
+        75,
+        84,
+        93,
+        139,
+        160,
+        169,
+        212,
+        242
+      ],
+      "n_picked": 9
+    },
+    "gpqa::DeepSeek_R1_Distill_Qwen_1.5B_filtered_p1_only": {
+      "dataset": "gpqa",
+      "jsonl": "/home1/10757/manasp123/reasoning-models-eval/filtered-cot-gpqa/DeepSeek_R1_Distill_Qwen_1.5B_filtered_p1_only.jsonl",
+      "n_available": 278,
+      "picked_indices": [
+        106,
+        118,
+        138,
+        157,
+        227,
+        275,
+        285,
+        291,
+        304
+      ],
+      "n_picked": 9
+    },
+    "gpqa::DeepSeek_R1_Distill_Qwen_7B_filtered_p1_only": {
+      "dataset": "gpqa",
+      "jsonl": "/home1/10757/manasp123/reasoning-models-eval/filtered-cot-gpqa/DeepSeek_R1_Distill_Qwen_7B_filtered_p1_only.jsonl",
+      "n_available": 34,
+      "picked_indices": [
+        120,
+        137,
+        189,
+        235,
+        269,
+        279,
+        362,
+        409,
+        439
+      ],
+      "n_picked": 9
+    },
+    "gpqa::Llama_3.1_8B_Instruct_filtered_p1_only": {
+      "dataset": "gpqa",
+      "jsonl": "/home1/10757/manasp123/reasoning-models-eval/filtered-cot-gpqa/Llama_3.1_8B_Instruct_filtered_p1_only.jsonl",
+      "n_available": 266,
+      "picked_indices": [
+        98,
+        139,
+        181,
+        273,
+        284,
+        320,
+        360,
+        386,
+        396
+      ],
+      "n_picked": 9
+    },
+    "gpqa::Phi_4_reasoning_filtered_p1_only": {
+      "dataset": "gpqa",
+      "jsonl": "/home1/10757/manasp123/reasoning-models-eval/filtered-cot-gpqa/Phi_4_reasoning_filtered_p1_only.jsonl",
+      "n_available": 163,
+      "picked_indices": [
+        1,
+        12,
+        22,
+        43,
+        72,
+        87,
+        97,
+        132,
+        296
+      ],
+      "n_picked": 9
+    },
+    "gpqa::Qwen2.5_7B_Instruct_filtered_p1_only": {
+      "dataset": "gpqa",
+      "jsonl": "/home1/10757/manasp123/reasoning-models-eval/filtered-cot-gpqa/Qwen2.5_7B_Instruct_filtered_p1_only.jsonl",
+      "n_available": 104,
+      "picked_indices": [
+        76,
+        77,
+        99,
+        109,
+        137,
+        285,
+        300,
+        335,
+        399
+      ],
+      "n_picked": 9
+    },
+    "gpqa::Qwen2.5_Math_7B_filtered_p1_only": {
+      "dataset": "gpqa",
+      "jsonl": "/home1/10757/manasp123/reasoning-models-eval/filtered-cot-gpqa/Qwen2.5_Math_7B_filtered_p1_only.jsonl",
+      "n_available": 116,
+      "picked_indices": [
+        18,
+        76,
+        208,
+        220,
+        277,
+        363,
+        395,
+        399,
+        411
+      ],
+      "n_picked": 9
+    },
+    "gpqa::Qwen3_4B_Thinking_2507_filtered_p1_only": {
+      "dataset": "gpqa",
+      "jsonl": "/home1/10757/manasp123/reasoning-models-eval/filtered-cot-gpqa/Qwen3_4B_Thinking_2507_filtered_p1_only.jsonl",
+      "n_available": 23,
+      "picked_indices": [
+        46,
+        80,
+        83,
+        109,
+        153,
+        199,
+        251,
+        344,
+        379
+      ],
+      "n_picked": 9
+    },
+    "gpqa::gemma_7b_filtered_p1_only": {
+      "dataset": "gpqa",
+      "jsonl": "/home1/10757/manasp123/reasoning-models-eval/filtered-cot-gpqa/gemma_7b_filtered_p1_only.jsonl",
+      "n_available": 128,
+      "picked_indices": [
+        47,
+        129,
+        204,
+        207,
+        222,
+        255,
+        327,
+        398,
+        440
+      ],
+      "n_picked": 9
+    },
+    "gpqa::phi_4_filtered_p1_only": {
+      "dataset": "gpqa",
+      "jsonl": "/home1/10757/manasp123/reasoning-models-eval/filtered-cot-gpqa/phi_4_filtered_p1_only.jsonl",
+      "n_available": 205,
+      "picked_indices": [
+        11,
+        85,
+        215,
+        246,
+        255,
+        299,
+        367,
+        385,
+        417
+      ],
+      "n_picked": 9
+    },
+    "commonsense_qa::DeepSeek_R1_Distill_Qwen_1.5B_filtered_p1_only": {
+      "dataset": "commonsense_qa",
+      "jsonl": "/home1/10757/manasp123/reasoning-models-eval/filtered-cot-commonsense/DeepSeek_R1_Distill_Qwen_1.5B_filtered_p1_only.jsonl",
+      "n_available": 139,
+      "picked_indices": [
+        323,
+        449,
+        541,
+        601,
+        629,
+        745,
+        911,
+        956,
+        1064
+      ],
+      "n_picked": 9
+    },
+    "commonsense_qa::DeepSeek_R1_Distill_Qwen_7B_filtered_p1_only": {
+      "dataset": "commonsense_qa",
+      "jsonl": "/home1/10757/manasp123/reasoning-models-eval/filtered-cot-commonsense/DeepSeek_R1_Distill_Qwen_7B_filtered_p1_only.jsonl",
+      "n_available": 43,
+      "picked_indices": [
+        57,
+        192,
+        307,
+        580,
+        654,
+        717,
+        1014,
+        1099,
+        1194
+      ],
+      "n_picked": 9
+    },
+    "commonsense_qa::Llama_3.1_8B_Instruct_filtered_p1_only": {
+      "dataset": "commonsense_qa",
+      "jsonl": "/home1/10757/manasp123/reasoning-models-eval/filtered-cot-commonsense/Llama_3.1_8B_Instruct_filtered_p1_only.jsonl",
+      "n_available": 979,
+      "picked_indices": [
+        93,
+        175,
+        347,
+        407,
+        412,
+        577,
+        660,
+        715,
+        848
+      ],
+      "n_picked": 9
+    },
+    "commonsense_qa::Phi_4_reasoning_filtered_p1_only": {
+      "dataset": "commonsense_qa",
+      "jsonl": "/home1/10757/manasp123/reasoning-models-eval/filtered-cot-commonsense/Phi_4_reasoning_filtered_p1_only.jsonl",
+      "n_available": 686,
+      "picked_indices": [
+        36,
+        289,
+        295,
+        399,
+        494,
+        581,
+        757,
+        872,
+        890
+      ],
+      "n_picked": 9
+    },
+    "commonsense_qa::Qwen2.5_7B_Instruct_filtered_p1_only": {
+      "dataset": "commonsense_qa",
+      "jsonl": "/home1/10757/manasp123/reasoning-models-eval/filtered-cot-commonsense/Qwen2.5_7B_Instruct_filtered_p1_only.jsonl",
+      "n_available": 431,
+      "picked_indices": [
+        20,
+        95,
+        179,
+        552,
+        850,
+        1082,
+        1162,
+        1202,
+        1218
+      ],
+      "n_picked": 9
+    },
+    "commonsense_qa::Qwen2.5_Math_7B_filtered_p1_only": {
+      "dataset": "commonsense_qa",
+      "jsonl": "/home1/10757/manasp123/reasoning-models-eval/filtered-cot-commonsense/Qwen2.5_Math_7B_filtered_p1_only.jsonl",
+      "n_available": 333,
+      "picked_indices": [
+        157,
+        184,
+        371,
+        496,
+        603,
+        729,
+        946,
+        1135,
+        1180
+      ],
+      "n_picked": 9
+    },
+    "commonsense_qa::Qwen3_4B_Thinking_2507_filtered_p1_only": {
+      "dataset": "commonsense_qa",
+      "jsonl": "/home1/10757/manasp123/reasoning-models-eval/filtered-cot-commonsense/Qwen3_4B_Thinking_2507_filtered_p1_only.jsonl",
+      "n_available": 96,
+      "picked_indices": [
+        156,
+        216,
+        333,
+        352,
+        546,
+        812,
+        870,
+        1036,
+        1168
+      ],
+      "n_picked": 9
+    },
+    "commonsense_qa::gemma_7b_filtered_p1_only": {
+      "dataset": "commonsense_qa",
+      "jsonl": "/home1/10757/manasp123/reasoning-models-eval/filtered-cot-commonsense/gemma_7b_filtered_p1_only.jsonl",
+      "n_available": 358,
+      "picked_indices": [
+        79,
+        439,
+        495,
+        614,
+        693,
+        895,
+        942,
+        1105,
+        1154
+      ],
+      "n_picked": 9
+    },
+    "commonsense_qa::phi_4_filtered_p1_only": {
+      "dataset": "commonsense_qa",
+      "jsonl": "/home1/10757/manasp123/reasoning-models-eval/filtered-cot-commonsense/phi_4_filtered_p1_only.jsonl",
+      "n_available": 567,
+      "picked_indices": [
+        9,
+        190,
+        211,
+        302,
+        429,
+        728,
+        752,
+        894,
+        1027
+      ],
+      "n_picked": 9
+    }
+  },
+  "total_picked": 485,
+  "total_combos": 54
+}

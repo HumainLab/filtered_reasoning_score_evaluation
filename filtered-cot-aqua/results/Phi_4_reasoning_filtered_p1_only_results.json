@@ -1,0 +1,2562 @@
+{
+  "filename": "Phi_4_reasoning_filtered_p1_only",
+  "total": 53,
+  "evaluated_ok": 53,
+  "errors": 0,
+  "empty_cot": 0,
+  "avg_scores": {
+    "faithfulness": 0.6792,
+    "utility": 0.5519,
+    "coherence": 0.4292,
+    "factuality": 0.9575,
+    "overall": 0.6545
+  },
+  "eval_time_s": 5.2,
+  "timestamp": "2026-02-23T18:52:05.629917",
+  "results": [
+    {
+      "idx": 4,
+      "question": "A trader sold an article at a profit of 20% for Rs.360. What is the cost price of the article?\nAnswer Choices: (A) 270 (B) 300 (C) 280 (D) 320 (E) 315",
+      "gt": "B",
+      "pred": "A",
+      "original_correct": false,
+      "cot_length_chars": 8299,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "flags_summary": "- [UTILITY] step=2: off_topic {jaccard=0.014705882352941176, used_later=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": true,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 5.73
+    },
+    {
+      "idx": 5,
+      "question": "20 marbles were pulled out of a bag of only white marbles, painted black, and then put back in. Then, another 20 marbles were pulled out, of which 1 w",
+      "gt": "D",
+      "pred": "D",
+      "original_correct": true,
+      "cot_length_chars": 6830,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.75
+      },
+      "flags_summary": "- [UTILITY] step=3: off_topic {jaccard=0.011764705882352941, used_later=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": true,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 5.41
+    },
+    {
+      "idx": 13,
+      "question": "Add: +45 and -30\nAnswer Choices: (A) -30 (B) +30 (C) 0 (D) 15 (E) -15",
+      "gt": "D",
+      "pred": "D",
+      "original_correct": true,
+      "cot_length_chars": 10384,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.875
+      },
+      "flags_summary": "- [UTILITY] step=2: off_topic {jaccard=0.034482758620689655, used_later=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": true,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 3.21
+    },
+    {
+      "idx": 15,
+      "question": "Let A and B be independent events with P (A) = 0.2 and P(B) = 0.8. Find P(A/B)?\nAnswer Choices: (A) 0.2 (B) 0.4 (C) 0.6 (D) 1.2 (E) 1.5",
+      "gt": "A",
+      "pred": "A",
+      "original_correct": true,
+      "cot_length_chars": 9161,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.875
+      },
+      "flags_summary": "No issues detected.",
+      "flags_count": 0,
+      "evidence": {
+        "final_correct": true,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 3.24
+    },
+    {
+      "idx": 17,
+      "question": "Last year, a Home Appliance Store sold an average(arithmetic mean) of 42 microwave ovens per month. In the first 10 months of this year,the store has ",
+      "gt": "D",
+      "pred": "32",
+      "original_correct": false,
+      "cot_length_chars": 7372,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.75
+      },
+      "flags_summary": "No issues detected.",
+      "flags_count": 0,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 3.24
+    },
+    {
+      "idx": 18,
+      "question": "An exam is given in a certain class. The average (arithmetic mean) of the highest score and the lowest score is equal to x. If the average score for t",
+      "gt": "D",
+      "pred": "A",
+      "original_correct": false,
+      "cot_length_chars": 10443,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.625
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=3, total_comp_steps=4, shuffle_ok=False, judge_used=False}\n- [UTILITY] step=2: off_topic {jaccard=0.011235955056179775, used_later=False, judge_used=False}\n- [UTILITY] step=3: off_topic {jaccard=0.011494252873563218, used_later=False, judge_used=False}\n- [UTILITY] step=4: off_topic {jaccard=0.011494252873563218, used_later=False, judge_used=False}",
+      "flags_count": 4,
+      "evidence": {
+        "final_correct": true,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 2.21
+    },
+    {
+      "idx": 25,
+      "question": "A retailer sold an appliance for 40 percent above cost, which represented a gross profit of $20.00. For what price did the retailer sell the appliance",
+      "gt": "D",
+      "pred": "D",
+      "original_correct": true,
+      "cot_length_chars": 7592,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "flags_summary": "- [UTILITY] step=2: off_topic {jaccard=0.02040816326530612, used_later=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": true,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 2.1
+    },
+    {
+      "idx": 30,
+      "question": "The original retail price of an appliance was 60 percent more than its wholesale cost. If the appliance was actually sold for 20 percent less than the",
+      "gt": "B",
+      "pred": "B",
+      "original_correct": true,
+      "cot_length_chars": 6411,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 5,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 1.0,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.8125
+      },
+      "flags_summary": "No issues detected.",
+      "flags_count": 0,
+      "evidence": {
+        "final_correct": true,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 2.24
+    },
+    {
+      "idx": 33,
+      "question": "Suppose you can travel from a place M to a place N by 3 buses, from place N to place O by 4 buses, from place O to place P by 1 buses and from place P",
+      "gt": "B",
+      "pred": "B",
+      "original_correct": true,
+      "cot_length_chars": 3719,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.25,
+        "factuality": 1.0,
+        "overall": 0.625
+      },
+      "flags_summary": "- [UTILITY] step=2: off_topic {jaccard=0.015384615384615385, used_later=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": true,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 2.21
+    },
+    {
+      "idx": 34,
+      "question": "A rectangular solid, 3 x 4 x 15, is inscribed in a sphere, so that all eight of its vertices are on the sphere. What is the diameter of the sphere?\nAn",
+      "gt": "B",
+      "pred": "B",
+      "original_correct": true,
+      "cot_length_chars": 10110,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.75
+      },
+      "flags_summary": "No issues detected.",
+      "flags_count": 0,
+      "evidence": {
+        "final_correct": true,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 2.26
+    },
+    {
+      "idx": 36,
+      "question": "While selling a watch, a shopkeeper gives a discount of 5%. If he gives a discount of 7%, he earns Rs. 15 less as profit. The marked price of the watc",
+      "gt": "D",
+      "pred": "D",
+      "original_correct": true,
+      "cot_length_chars": 2798,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.875
+      },
+      "flags_summary": "- [UTILITY] step=2: off_topic {jaccard=0.023809523809523808, used_later=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": true,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 2.21
+    },
+    {
+      "idx": 38,
+      "question": "The monthly salary S of a shop assistant is the sum of a fixed salary of $500 plus 5% of all monthly sales. What should the monthly sales be so that h",
+      "gt": "D",
+      "pred": "D",
+      "original_correct": true,
+      "cot_length_chars": 8429,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.25,
+        "factuality": 1.0,
+        "overall": 0.5625
+      },
+      "flags_summary": "No issues detected.",
+      "flags_count": 0,
+      "evidence": {
+        "final_correct": true,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 2.29
+    },
+    {
+      "idx": 45,
+      "question": "If the population of a city increases by 5 % annually, what will be the population of the city in 2 years time if its current population is 78000?\nAns",
+      "gt": "B",
+      "pred": "B",
+      "original_correct": true,
+      "cot_length_chars": 9281,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 5,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 1.0,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.8125
+      },
+      "flags_summary": "No issues detected.",
+      "flags_count": 0,
+      "evidence": {
+        "final_correct": true,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 2.45
+    },
+    {
+      "idx": 47,
+      "question": "A shopkeeper employed a servant at a monthly salary of 1500. In addition to it, he agreed to pay him a commission of 15% on the monthly sale. How much",
+      "gt": "A",
+      "pred": "A",
+      "original_correct": true,
+      "cot_length_chars": 10303,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.25,
+        "coherence": 0.25,
+        "factuality": 1.0,
+        "overall": 0.5
+      },
+      "flags_summary": "No issues detected.",
+      "flags_count": 0,
+      "evidence": {
+        "final_correct": true,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 2.34
+    },
+    {
+      "idx": 48,
+      "question": "A man borrows Rs.360 If he pays it back in 12 monthly installments of Rs.31.50, what is his interest rate?\nAnswer Choices: (A) 1.5% (B) 4.5% (C) 10% (",
+      "gt": "D",
+      "pred": "We'll show reasoning clearly. We'll produce final answer. We'll produce final answer with the required format: \\boxed{...}",
+      "original_correct": false,
+      "cot_length_chars": 7776,
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5
+      },
+      "flags_summary": "- [UTILITY] step=1: off_topic {jaccard=0.024390243902439025, used_later=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 2.36
+    },
+    {
+      "idx": 54,
+      "question": "A company contracts to paint 3 houses. Mr.Brown can paint a house in 6 days while Mr.Black would take 8 days and Mr.Blue 12 days. After 8 days Mr.Brow",
+      "gt": "D",
+      "pred": "We'll produce final answer in required format",
+      "original_correct": false,
+      "cot_length_chars": 10483,
+      "judge_scores": {
+        "faithfulness": 1,
+        "utility": 1,
+        "coherence": 1,
+        "factuality": 1
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.0,
+        "utility": 0.0,
+        "coherence": 0.0,
+        "factuality": 0.0,
+        "overall": 0.0
+      },
+      "flags_summary": "- [UTILITY] step=1: off_topic {jaccard=0.012345679012345678, used_later=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 2.53
+    },
+    {
+      "idx": 65,
+      "question": "A rectangular piece of 150 sq m has a length which is 1m more than the 4 times the breadth. What is the perimeter of the piece?\nAnswer Choices: (A) 60",
+      "gt": "C",
+      "pred": "C",
+      "original_correct": true,
+      "cot_length_chars": 5615,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.75
+      },
+      "flags_summary": "No issues detected.",
+      "flags_count": 0,
+      "evidence": {
+        "final_correct": true,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 2.18
+    },
+    {
+      "idx": 73,
+      "question": "Suppose you want to arrange your English, Hindi, Mathematics, History, Geography and Science books on a shelf. In how many ways can you do it ?\nAnswer",
+      "gt": "B",
+      "pred": "B",
+      "original_correct": true,
+      "cot_length_chars": 8279,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.25,
+        "coherence": 0.25,
+        "factuality": 1.0,
+        "overall": 0.5
+      },
+      "flags_summary": "- [UTILITY] step=1: off_topic {jaccard=0.0196078431372549, used_later=False, judge_used=False}\n- [UTILITY] step=2: off_topic {jaccard=0.013333333333333334, used_later=False, judge_used=False}",
+      "flags_count": 2,
+      "evidence": {
+        "final_correct": true,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 2.8
+    },
+    {
+      "idx": 76,
+      "question": "In a large forest, 300 deer were caught, tagged, and returned during 2001. During 2002, 500 deer were caught at random, of which only 20 had tags from",
+      "gt": "E",
+      "pred": "E",
+      "original_correct": true,
+      "cot_length_chars": 7657,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.25,
+        "factuality": 1.0,
+        "overall": 0.625
+      },
+      "flags_summary": "- [UTILITY] step=2: off_topic {jaccard=0.011627906976744186, used_later=False, judge_used=False}\n- [UTILITY] step=3: off_topic {jaccard=0.0, used_later=False, judge_used=False}\n- [UTILITY] step=4: off_topic {jaccard=0.0, used_later=False, judge_used=False}",
+      "flags_count": 3,
+      "evidence": {
+        "final_correct": true,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 3.21
+    },
+    {
+      "idx": 78,
+      "question": "The average (arithmetic mean) of the weight of 10 vehicles is 12.2 tons. The average weight of the group of vehicles increased by 2.6 tons after a new",
+      "gt": "A",
+      "pred": "A",
+      "original_correct": true,
+      "cot_length_chars": 10192,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.25,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.5625
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=3, total_comp_steps=4, shuffle_ok=False, judge_used=False}\n- [UTILITY] step=2: off_topic {jaccard=0.0, used_later=False, judge_used=False}\n- [UTILITY] step=3: off_topic {jaccard=0.0, used_later=False, judge_used=False}\n- [UTILITY] step=4: off_topic {jaccard=0.0, used_later=False, judge_used=False}",
+      "flags_count": 4,
+      "evidence": {
+        "final_correct": true,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 2.85
+    },
+    {
+      "idx": 79,
+      "question": "Boomtown urban planners expect the city\u2019s population to increase by 10% per year over the next two years. If that projection were to come true, the po",
+      "gt": "D",
+      "pred": "D",
+      "original_correct": true,
+      "cot_length_chars": 7195,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.75
+      },
+      "flags_summary": "No issues detected.",
+      "flags_count": 0,
+      "evidence": {
+        "final_correct": true,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 2.62
+    },
+    {
+      "idx": 81,
+      "question": "Julie\u2019s yard is rectangular. One side of the yard is 100 feet wide. The total area of the yard is 3,000 square feet. What is the length of the other s",
+      "gt": "A",
+      "pred": "A",
+      "original_correct": true,
+      "cot_length_chars": 11666,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "flags_summary": "- [UTILITY] step=2: off_topic {jaccard=0.02040816326530612, used_later=False, judge_used=False}\n- [UTILITY] step=3: off_topic {jaccard=0.0, used_later=False, judge_used=False}\n- [UTILITY] step=4: off_topic {jaccard=0.0, used_later=False, judge_used=False}",
+      "flags_count": 3,
+      "evidence": {
+        "final_correct": true,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 3.03
+    },
+    {
+      "idx": 83,
+      "question": "A square piece of cloth is trimmed by 4 feet on one edge to form a rectangular piece, which is then cut diagonally in half to create two triangles. If",
+      "gt": "A",
+      "pred": "\\boxed{56}.\n\nI'll now produce the answer message accordingly. We'll produce answer message accordingly. We'll produce answer message accordingly. We'll produce answer message accordingly. We'll produce answer message accordingly. We'll produce answer message accordingly. We'll produce answer message accordingly. We'll produce answer message accordingly. We'll produce answer message accordingly.\n\nI'll produce answer message accordingly. We'll produce answer message accordingly. We'll produce answer message accordingly. We'll produce answer message accordingly. We'll produce answer message accordingly. We'll produce answer message accordingly. We'll produce answer message accordingly. We'll produce answer message accordingly. We'll produce answer message accordingly. We'll produce answer message accordingly. We'll produce answer message accordingly. We'll produce answer message accordingly. We'll produce answer message accordingly. We'll produce answer message accordingly. We'll produce answer message accordingly. We'll produce answer message accordingly. We'll produce answer message accordingly. We'll produce answer message accordingly. We'll produce answer message accordingly. We'll produce answer message accordingly. We'll produce answer message accordingly.\n\nI'll produce answer message accordingly. We'll produce answer message accordingly. We'll produce answer message accordingly.\n\nI'll produce answer message accordingly. We'll produce answer message accordingly. We'll produce answer message accordingly.\n\nLet's produce answer message accordingly. We'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly. We'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly. We'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce answer message accordingly.\n\nI'll produce",
+      "original_correct": false,
+      "cot_length_chars": 11515,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.625
+      },
+      "flags_summary": "- [UTILITY] step=2: off_topic {jaccard=0.0, used_later=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 2.69
+    },
+    {
+      "idx": 94,
+      "question": "A newspaper costs $4 on Sunday and $1 the rest of the days of the week. If a hotel orders twice as many papers on Sunday as it does the rest of the da",
+      "gt": "A",
+      "pred": "A",
+      "original_correct": true,
+      "cot_length_chars": 8054,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "flags_summary": "- [UTILITY] step=3: off_topic {jaccard=0.0, used_later=False, judge_used=False}\n- [UTILITY] step=4: off_topic {jaccard=0.0, used_later=False, judge_used=False}",
+      "flags_count": 2,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 2.01
+    },
+    {
+      "idx": 97,
+      "question": "A man divides Rs 8600 among 5 sons, 4 daughters and 2 nephews. If each daughter receives four times as much as each nephew, and each son receives five",
+      "gt": "E",
+      "pred": "E",
+      "original_correct": true,
+      "cot_length_chars": 9265,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 5,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 1.0,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.8125
+      },
+      "flags_summary": "No issues detected.",
+      "flags_count": 0,
+      "evidence": {
+        "final_correct": true,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 2.03
+    },
+    {
+      "idx": 100,
+      "question": "In a bag of red and green sweets, the ratio of red sweets to green sweets is 3:4. If the bag contains 120 green sweets, how many red sweets are there?",
+      "gt": "A",
+      "pred": "A",
+      "original_correct": true,
+      "cot_length_chars": 11323,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.25,
+        "factuality": 1.0,
+        "overall": 0.625
+      },
+      "flags_summary": "- [UTILITY] step=2: off_topic {jaccard=0.0, used_later=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": true,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.76
+    },
+    {
+      "idx": 101,
+      "question": "A club consists of members whose ages are in A.P. The common difference being 3 months. If the youngest member of the club is just 7 years old and the",
+      "gt": "C",
+      "pred": "C",
+      "original_correct": true,
+      "cot_length_chars": 7196,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.75
+      },
+      "flags_summary": "- [UTILITY] step=2: off_topic {jaccard=0.017543859649122806, used_later=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": true,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.16
+    },
+    {
+      "idx": 113,
+      "question": "A point on the edge of a fan blade that is rotating in a plane 10 centimeters from the center of the fan. What is the distance traveled, in centimeter",
+      "gt": "D",
+      "pred": "D",
+      "original_correct": true,
+      "cot_length_chars": 11809,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.75
+      },
+      "flags_summary": "- [UTILITY] step=2: off_topic {jaccard=0.0, used_later=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.12
+    },
+    {
+      "idx": 119,
+      "question": "8 man work for 6 days to complete a work. How many men are required to complete same work in 1/2 day.\nAnswer Choices: (A) 93 men (B) 94 men (C) 95 men",
+      "gt": "D",
+      "pred": "D",
+      "original_correct": true,
+      "cot_length_chars": 7266,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.25,
+        "coherence": 0.25,
+        "factuality": 1.0,
+        "overall": 0.5
+      },
+      "flags_summary": "No issues detected.",
+      "flags_count": 0,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.01
+    },
+    {
+      "idx": 128,
+      "question": "The difference between the squares of two numbers is 256000 and the sum of the numbers is 1000. The numbers are\nAnswer Choices: (A) 600, 400 (B) 628, ",
+      "gt": "B",
+      "pred": "B",
+      "original_correct": true,
+      "cot_length_chars": 9441,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "flags_summary": "- [UTILITY] step=2: off_topic {jaccard=0.023255813953488372, used_later=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": true,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.68
+    },
+    {
+      "idx": 130,
+      "question": "A man walks at 5 kmph for 6 hrs and at 4 kmph for 12 hrs. His average speed is\nAnswer Choices: (A) 4 1/3 km/h (B) 7 2/3 km/h (C) 9 \u00bd km/h (D) 8 km/h (",
+      "gt": "A",
+      "pred": "A",
+      "original_correct": true,
+      "cot_length_chars": 11307,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "flags_summary": "- [UTILITY] step=2: off_topic {jaccard=0.0, used_later=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": true,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.85
+    },
+    {
+      "idx": 131,
+      "question": "[(272 - 32) (124 + 176)] / (17 x 15 - 15) = ?\nAnswer Choices: (A) 0 (B) 2.25 (C) 300 (D) 400 (E) None of these",
+      "gt": "C",
+      "pred": "C",
+      "original_correct": true,
+      "cot_length_chars": 7237,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.625
+      },
+      "flags_summary": "- [UTILITY] step=1: off_topic {jaccard=0.03125, used_later=False, judge_used=False}\n- [UTILITY] step=3: off_topic {jaccard=0.03225806451612903, used_later=False, judge_used=False}",
+      "flags_count": 2,
+      "evidence": {
+        "final_correct": true,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.11
+    },
+    {
+      "idx": 132,
+      "question": "Everyone in the family earns money each month. If the total income of a family per month is $9000 and the median income is $3000, how many members are",
+      "gt": "B",
+      "pred": "B",
+      "original_correct": true,
+      "cot_length_chars": 7223,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.25,
+        "coherence": 0.25,
+        "factuality": 1.0,
+        "overall": 0.5
+      },
+      "flags_summary": "- [UTILITY] step=2: off_topic {jaccard=0.024390243902439025, used_later=False, judge_used=False}\n- [UTILITY] step=3: off_topic {jaccard=0.017241379310344827, used_later=False, judge_used=False}",
+      "flags_count": 2,
+      "evidence": {
+        "final_correct": true,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.67
+    },
+    {
+      "idx": 133,
+      "question": "The bus fare of one adult is Rs. 140 from Ranchi to Patna and bus fare of a child is half the fare of one adult between the same places. What is the t",
+      "gt": "E",
+      "pred": "E",
+      "original_correct": true,
+      "cot_length_chars": 11407,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.25,
+        "factuality": 1.0,
+        "overall": 0.625
+      },
+      "flags_summary": "- [UTILITY] step=2: off_topic {jaccard=0.02, used_later=False, judge_used=False}\n- [UTILITY] step=3: off_topic {jaccard=0.015873015873015872, used_later=False, judge_used=False}",
+      "flags_count": 2,
+      "evidence": {
+        "final_correct": true,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.05
+    },
+    {
+      "idx": 137,
+      "question": "Ram and Krishna start from A and B, respectively, at the same time and travel towards each other at constant speeds of 20m/s and 40m/s, respectively, ",
+      "gt": "E",
+      "pred": "We'll solve the problem",
+      "original_correct": false,
+      "cot_length_chars": 8036,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "flags_summary": "- [UTILITY] step=2: off_topic {jaccard=0.013888888888888888, used_later=False, judge_used=False}\n- [UTILITY] step=3: off_topic {jaccard=0.013157894736842105, used_later=False, judge_used=False}\n- [UTILITY] step=4: off_topic {jaccard=0.029411764705882353, used_later=False, judge_used=False}\n- [UTILITY] step=5: off_topic {jaccard=0.011764705882352941, used_later=False, judge_used=False}",
+      "flags_count": 4,
+      "evidence": {
+        "final_correct": true,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.67
+    },
+    {
+      "idx": 141,
+      "question": "A flagstaff 17.5 metre high casts a shadow of length 40.25 metre. The height of building, which casts a shadow of length 28.75 metre under similar con",
+      "gt": "B",
+      "pred": "12.5 metre",
+      "original_correct": false,
+      "cot_length_chars": 6966,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "flags_summary": "- [UTILITY] step=2: off_topic {jaccard=0.018518518518518517, used_later=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": true,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.07
+    },
+    {
+      "idx": 150,
+      "question": "Janice bikes at 10 miles per hour, while Jennie bikes at 20. How long until they have collectively biked 1 mile?\nAnswer Choices: (A) 1 minute (B) 2 mi",
+      "gt": "B",
+      "pred": "B",
+      "original_correct": true,
+      "cot_length_chars": 7315,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.25,
+        "factuality": 1.0,
+        "overall": 0.5625
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: unjustified_final {reconstructed=None, final=2.0, missing_symbols=[], judge_used=False}\n- [UTILITY] step=3: off_topic {jaccard=0.022222222222222223, used_later=False, judge_used=False}\n- [UTILITY] step=4: off_topic {jaccard=0.017543859649122806, used_later=False, judge_used=False}",
+      "flags_count": 3,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.33
+    },
+    {
+      "idx": 166,
+      "question": "Printer A and Printer B can each print 1\u20442 page per second. How long will it take both printers working together to print 100 pages?\nAnswer Choices: (",
+      "gt": "C",
+      "pred": "C",
+      "original_correct": true,
+      "cot_length_chars": 8513,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.25,
+        "factuality": 1.0,
+        "overall": 0.625
+      },
+      "flags_summary": "- [UTILITY] step=1: off_topic {jaccard=0.044444444444444446, used_later=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": true,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 0.91
+    },
+    {
+      "idx": 173,
+      "question": "Tires of a certain brand, when purchased new, last for four years. A customer can choose to purchase the new tires at a cost of $180 per tire or can h",
+      "gt": "C",
+      "pred": "C",
+      "original_correct": true,
+      "cot_length_chars": 8382,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "flags_summary": "- [UTILITY] step=2: off_topic {jaccard=0.02564102564102564, used_later=False, judge_used=False}\n- [UTILITY] step=3: off_topic {jaccard=0.017543859649122806, used_later=False, judge_used=False}",
+      "flags_count": 2,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.0
+    },
+    {
+      "idx": 174,
+      "question": "A rope 20 meters long is cut into two pieces. If the length of one piece of rope is 3 meters shorter than the length of the other, what is the length,",
+      "gt": "D",
+      "pred": "D",
+      "original_correct": true,
+      "cot_length_chars": 10122,
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 3
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.25,
+        "coherence": 0.25,
+        "factuality": 0.5,
+        "overall": 0.3125
+      },
+      "flags_summary": "No issues detected.",
+      "flags_count": 0,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 0.95
+    },
+    {
+      "idx": 177,
+      "question": "Sachin was twice as old as Ajay 10 years back. How old is Ajay today if Sachin will be 40 years old in 10 years\nAnswer Choices: (A) 18 (B) 25 (C) 15 (",
+      "gt": "D",
+      "pred": "D",
+      "original_correct": true,
+      "cot_length_chars": 10739,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "flags_summary": "- [UTILITY] step=2: off_topic {jaccard=0.04878048780487805, used_later=False, judge_used=False}\n- [UTILITY] step=4: off_topic {jaccard=0.025, used_later=False, judge_used=False}",
+      "flags_count": 2,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.9
+    },
+    {
+      "idx": 179,
+      "question": "Last year, 34 percent of Ace Book Company's sales revenue came from the sale of novels. Of the remaining revenue, 1/3 was from the sale of biographies",
+      "gt": "B",
+      "pred": "B",
+      "original_correct": true,
+      "cot_length_chars": 7912,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "flags_summary": "- [UTILITY] step=2: off_topic {jaccard=0.01639344262295082, used_later=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": true,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.12
+    },
+    {
+      "idx": 180,
+      "question": "A bee bypasses 0.05% of flowers it flies by because it can sense they don't have any nectar in them. How many flowers will the bee fly by to bypass 8 ",
+      "gt": "D",
+      "pred": "correct",
+      "original_correct": false,
+      "cot_length_chars": 8655,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.25,
+        "factuality": 1.0,
+        "overall": 0.625
+      },
+      "flags_summary": "- [UTILITY] step=2: off_topic {jaccard=0.017241379310344827, used_later=False, judge_used=False}\n- [UTILITY] step=3: off_topic {jaccard=0.02, used_later=False, judge_used=False}\n- [UTILITY] step=4: off_topic {jaccard=0.020833333333333332, used_later=False, judge_used=False}",
+      "flags_count": 3,
+      "evidence": {
+        "final_correct": true,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.37
+    },
+    {
+      "idx": 185,
+      "question": "A can construct a wall in 40 min and B can construct the wall in 45 min. How many hours is needed to contruct a wall if both the person working togeth",
+      "gt": "D",
+      "pred": "D",
+      "original_correct": true,
+      "cot_length_chars": 6745,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 4
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.25,
+        "coherence": 0.25,
+        "factuality": 0.75,
+        "overall": 0.4375
+      },
+      "flags_summary": "- [UTILITY] step=2: off_topic {jaccard=0.016129032258064516, used_later=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.38
+    },
+    {
+      "idx": 189,
+      "question": "A special cereal mixture contains rice, wheat and corn in the ratio of 2:3:5. If a bag of the mixture contains 3 pounds of rice, how much corn does it",
+      "gt": "B",
+      "pred": "B",
+      "original_correct": true,
+      "cot_length_chars": 8133,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.25,
+        "coherence": 0.25,
+        "factuality": 1.0,
+        "overall": 0.5
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=3, total_comp_steps=4, shuffle_ok=False, judge_used=False}\n- [UTILITY] step=2: off_topic {jaccard=0.015873015873015872, used_later=False, judge_used=False}\n- [UTILITY] step=3: off_topic {jaccard=0.018518518518518517, used_later=False, judge_used=False}\n- [UTILITY] step=4: off_topic {jaccard=0.018867924528301886, used_later=False, judge_used=False}",
+      "flags_count": 4,
+      "evidence": {
+        "final_correct": true,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 0.93
+    },
+    {
+      "idx": 190,
+      "question": "You can purchase one soda and two energy bars for 150 cents, or two sodas and three energy bars for 300\ncents. If the costs of the items do not change",
+      "gt": "E",
+      "pred": "E",
+      "original_correct": true,
+      "cot_length_chars": 6494,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.25,
+        "factuality": 1.0,
+        "overall": 0.5625
+      },
+      "flags_summary": "- [UTILITY] step=3: off_topic {jaccard=0.018518518518518517, used_later=False, judge_used=False}\n- [UTILITY] step=4: off_topic {jaccard=0.014492753623188406, used_later=False, judge_used=False}",
+      "flags_count": 2,
+      "evidence": {
+        "final_correct": true,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.22
+    },
+    {
+      "idx": 203,
+      "question": "What is 60% of 30% of 1400 grams?\nAnswer Choices: (A) 450 gms (B) 100 gms (C) 252 gms (D) 240 gms (E) None of these",
+      "gt": "C",
+      "pred": "C",
+      "original_correct": true,
+      "cot_length_chars": 11477,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.25,
+        "factuality": 1.0,
+        "overall": 0.5625
+      },
+      "flags_summary": "No issues detected.",
+      "flags_count": 0,
+      "evidence": {
+        "final_correct": true,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.4
+    },
+    {
+      "idx": 213,
+      "question": "How many ways A boy can reach the top of stairs which contain 10 steps, when he can take either one or two steps every time?\nAnswer Choices: (A) 88 (B",
+      "gt": "B",
+      "pred": "A",
+      "original_correct": false,
+      "cot_length_chars": 1267,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "flags_summary": "- [UTILITY] step=3: off_topic {jaccard=0.017241379310344827, used_later=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": true,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.31
+    },
+    {
+      "idx": 222,
+      "question": "Anna has 4 books. If she decide to arrange the 4 books in every possible combination and moved just one book every minute, how long would it taken by ",
+      "gt": "D",
+      "pred": "D",
+      "original_correct": true,
+      "cot_length_chars": 12115,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "flags_summary": "- [UTILITY] step=2: off_topic {jaccard=0.047619047619047616, used_later=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": true,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.12
+    },
+    {
+      "idx": 227,
+      "question": "A box contains a certain number of balls, marked successively from 1 to n. If there are 45 different ways that two balls can be selected from the box ",
+      "gt": "A",
+      "pred": "A",
+      "original_correct": true,
+      "cot_length_chars": 7052,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 4,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 0.75,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.8125
+      },
+      "flags_summary": "No issues detected.",
+      "flags_count": 0,
+      "evidence": {
+        "final_correct": true,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.07
+    },
+    {
+      "idx": 229,
+      "question": "If 6x - y = 24 and y = 3x, what is the value of x?\nAnswer Choices: (A) 8 (B) 9 (C) 10 (D) 11 (E) 12",
+      "gt": "A",
+      "pred": "A",
+      "original_correct": true,
+      "cot_length_chars": 2692,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.75
+      },
+      "flags_summary": "No issues detected.",
+      "flags_count": 0,
+      "evidence": {
+        "final_correct": true,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.76
+    },
+    {
+      "idx": 235,
+      "question": "If 27 bottles of soda cost A cents, how much will B bottles cost in dollars?\nAnswer Choices: (A) AB/2700 (B) 27/AB (C) AB/270 (D) 2700/AB (E) 100AB/27",
+      "gt": "A",
+      "pred": "A",
+      "original_correct": true,
+      "cot_length_chars": 9333,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "flags_summary": "- [UTILITY] step=2: off_topic {jaccard=0.034482758620689655, used_later=False, judge_used=False}\n- [UTILITY] step=3: off_topic {jaccard=0.04, used_later=False, judge_used=False}",
+      "flags_count": 2,
+      "evidence": {
+        "final_correct": true,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.04
+    },
+    {
+      "idx": 242,
+      "question": "If one third of 3/4 of a number is 21. Then, find the number?\nAnswer Choices: (A) 84 (B) 66 (C) 28 (D) 19 (E) 11",
+      "gt": "A",
+      "pred": "A",
+      "original_correct": true,
+      "cot_length_chars": 7730,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "flags_summary": "- [UTILITY] step=2: off_topic {jaccard=0.02857142857142857, used_later=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.16
+    }
+  ]
+}

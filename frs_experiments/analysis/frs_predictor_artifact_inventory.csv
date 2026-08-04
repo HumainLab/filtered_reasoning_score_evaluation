@@ -1,0 +1,25 @@
+path,type,contains,role
+global_pass1_frs_analysis/paper_frs_by_benchmark.csv,CSV,"Wide: model; per-benchmark FRS columns (GSM8K MATH SVAMP AQuA GPQA CSQA); FRS_Avg; Acc_Avg",Paper table export; FRS + Acc_Avg (see paper for Acc_Avg definition)
+global_pass1_frs_analysis/paper_pass1_reasoning_by_benchmark.csv,CSV,"model benchmark base_reasoning base_acc snr; long names (DeepSeek-...)",Pass@1 as base_acc; base_reasoning; SNR (not raw pass@16)
+global_pass1_frs_analysis/merged_pass1_frs_per_benchmark.csv,CSV,"model benchmark frs_pct pass1_pct base_reasoning snr",Merged per (model benchmark): FRS + pass@1 + SNR
+global_pass1_frs_analysis/pairwise_pass1_frs_gaps.csv,CSV,Pairwise model gaps for pass1 and FRS,Pairwise analysis inputs
+global_pass1_frs_analysis/pass1_vs_frs_summary.txt,TXT,Correlation summary + file list,Documentation of pairwise |Δpass@1| vs |ΔFRS|
+global_pass1_frs_pairwise_analysis.py,CODE,Loads paper CSVs; pairwise correlations,Reproduces global_pass1_frs_analysis figures/stats
+topk_ablation_results/topk_ablation_results.csv,CSV,"model dataset top_k_pct accuracy n_traces n_total mean_confidence",High-confidence **accuracy** at top 10–100% of traces by token confidence (not judge)
+reasoning_confidence_bins_results/reasoning_by_confidence_bin.csv,CSV,"model dataset bin_label bin_start_pct bin_end_pct total_traces_in_bin sampled_traces mean_reasoning_score ... mean_accuracy_population",Per-bin **sampled** judge reasoning + population accuracy in bin
+reasoning_confidence_bins_results/reasoning_cumulative_topk.csv,CSV,"model dataset topk_pct topk_label judged_samples_used mean_reasoning_score cumulative_accuracy_population",Cumulative top-k% reasoning quality vs population accuracy
+reasoning_confidence_bins_results/judging_checkpoints/judged_<Model>__<Dataset>.json,JSON,"metadata + judged_samples[]: idx trace_idx bin_label confidence correct reasoning_score judge_scores",**Primary FRS judge pool**: ~250 traces/pair; bin_label 0-10..40-50 within top 50% pool
+reasoning_confidence_bins_results/reasoning_sampling_metadata.json,JSON,Run config (top_pool_frac n_bins seeds),Provenance for FRS pipeline
+analysis_outputs/unfiltered_reasoning/per_pair_scores.csv,CSV,"model dataset n_total_traces n_distinct_questions n_sampled_questions n_judged_traces mean_reasoning_score std stderr ...",**Unfiltered** baseline: 100 traces/pair (one per sampled question)
+analysis_outputs/unfiltered_reasoning/judging_checkpoints/unfiltered_judged_<Model>__<Dataset>.json,JSON,"judged_samples keyed by idx:trace OR list; reasoning_score 0-1",Separate judge run; **not** same trace set as FRS bins
+analysis_outputs/unfiltered_reasoning/ranking_comparison_vs_frs.csv,CSV,"model unfiltered_reasoning_avg frs_avg ranks delta_rank",Macro model-level comparison (9 models)
+analysis/run_self_consistency_frs_proxy.py,CODE,SC vote-share → FRS-style bin metrics,Alternative confidence proxy; uses same judge checkpoints
+analysis/run_confidence_proxy_robustness.py,CODE,Multiple proxies → FRS@k10,Robustness; existing judges only
+analysis_exports/self_consistency_k_sensitivity/*.csv,CSV,k8 vs k16 SC FRS ranks correlations,Subsampling robustness; not primary metrics
+sample_count_ablation_results/ablation_frs_variance_table.csv,CSV,"dataset k_sub mean_bootstrap_std_across_models",k-subsample variance of **median-split** style metric; not predictor table
+temp0_analysis_results/analysis1_single_trace_frs.csv,CSV,"model dataset regime gap_t0_k1 gap_t07_k16 gap_preserved",T=0 vs T=0.7 gaps; not standard FRS table
+build_downstream_parquets.py,CODE,Builds parquets from JSONL+judge; expects source_pass16 JSONL,**No parquet outputs found in repo** at audit time
+downstream_validation.py,CODE,Split-half validation on parquets,Requires parquet inputs
+topk_judge_eval.py,CODE,Most/least confident trace judge (needs token probs),**topk_judge_results/** JSON outputs
+correctness_conditioned.py,CODE,Median-split high vs low confidence accuracy,Writes correctness_conditioned_results/ (if run)
+source_pass16_jsonl_by_model*/**/*.jsonl,JSONL,"Per problem: idx score[] code[] pred[] chosen_token_probs_per_path epoch_0",**Raw** trace-level; pass@16 recomputable; not shipped in empty glob

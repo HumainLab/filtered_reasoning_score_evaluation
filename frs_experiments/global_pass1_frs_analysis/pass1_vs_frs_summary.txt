@@ -1,0 +1,56 @@
+GLOBAL PASS@1 vs FRS — PAIRWISE ANALYSIS
+==============================================
+Data: paper tables: paper_frs_by_benchmark.csv + paper_pass1_reasoning_by_benchmark.csv
+
+Per-benchmark table: pass@1 = base_acc (paper); FRS = per-benchmark FRS from paper_frs_by_benchmark.csv.
+Model names in pass@1 CSV were mapped to short names via LONG_TO_SHORT (see script).
+
+Correlations (main, N=216 unordered pairs × benchmarks)
+- Pearson |Δpass@1| vs |ΔFRS|:  r = 0.4579 (p = 1.352e-12)
+- Spearman: ρ = 0.3220 (p = 1.339e-06)
+
+Among |Δpass@1| ≤ 1 pp (N = 8):
+- Median |ΔFRS|: 13.20 pp; max: 33.30 pp
+
+Among |Δpass@1| ≤ 2 pp (N = 15):
+- Median |ΔFRS|: 9.90 pp
+- Max |ΔFRS|: 33.30 pp
+- Share |ΔFRS| ≥ 10: 46.7%
+
+Top examples (smallest |Δpass@1|, then largest |ΔFRS|):
+    model_a      model_b benchmark  abs_pass1_gap  abs_frs_gap
+   DS-R1-7B Qwen2.5-Math   MATH500            0.0         16.5
+      Phi-4   Qwen2.5-7B   MATH500            0.2          1.2
+   DS-R1-7B Qwen2.5-Math     SVAMP            0.3         24.5
+   Gemma-7B Qwen2.5-Math      GPQA            0.5         23.7
+ DS-R1-1.5B LLaMA-3.1-8B      GPQA            0.5          6.1
+   DS-R1-7B   Qwen2.5-7B     GSM8K            0.6         33.3
+      Phi-4   Qwen2.5-7B      AQuA            0.7          1.3
+Phi-4-Reas.   Qwen2.5-7B     SVAMP            1.0          9.9
+   DS-R1-7B        Phi-4     SVAMP            1.2         23.5
+   DS-R1-7B  Phi-4-Reas.      AQuA            1.2         13.6
+
+Technical summary
+-----------------
+Pass@1 (base_acc) and FRS are different measurements on the same models and benchmarks.
+Spearman ρ ≈ 0.32 between |Δpass@1| and |ΔFRS| indicates only moderate alignment of
+**gap magnitudes** across pairs: similar pass@1 differences do not imply similar FRS
+differences. In the near-tie regime (|Δpass@1|≤2 pp), |ΔFRS| remains often large
+(median 9.9 pp; up to 33.3 pp).
+
+Figure caption (candidate)
+--------------------------
+**Near-equal pass@1 can hide large FRS differences.**
+Each point is one unordered model pair within one benchmark (N=216).
+Axes: absolute pass@1 gap and absolute FRS gap (percentage points). Vertical lines at
+|Δpass@1| = 1 and 2 pp; horizontal line at |ΔFRS| = 10 pp.
+
+Files
+-----
+- merged_pass1_frs_per_benchmark.csv
+- pairwise_pass1_frs_gaps.csv
+- pairwise_pass1_frs_gaps_aggregated.csv (FRS_Avg vs Acc_Avg)
+- pairwise_gap_summary*.csv
+- top10_small_pass_gap_large_frs_gap.csv
+- pass1_vs_frs_pairwise_scatter.png / .pdf
+- pass1_bucket_frs_boxplot.png / .pdf

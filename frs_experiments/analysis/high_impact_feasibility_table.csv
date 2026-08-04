@@ -1,0 +1,9 @@
+id,analysis,required_inputs,exists,join,circularity_risk,cost,paper_value,verdict
+A,Held-out question split predictor,"Per-question judge scores; pair-level predictors (FRS, pass@1, ...)",yes: unfiltered judging_checkpoints/*.json keyed by question_idx:trace_idx,"per_pair_scores.checkpoint_path -> aggregate mean reasoning by idx; merge panel on model,benchmark",moderate: same judge; outcome split reduces overlap with aggregate mean,low–medium: 54 JSON files per run,high: addresses out-of-sample generalization of mean reasoning,fully feasible now
+B,Held-out selection-gain (conf vs random trace reasoning),Judge scores for multiple traces per question under selection,only one judged trace per sampled question (100/100 unique idx),n/a,n/a,n/a,high if feasible,not feasible now
+C,Leave-one-dataset-out incremental validity,Panel 54× with outcome + predictors,analysis/frs_predictor_panel.csv,benchmark column,same as baseline OLS,very low,high: reviewer-facing generalization across benchmarks,fully feasible now
+D,Leave-one-model-out incremental validity,Same panel,yes,model column,same as baseline,very low,high,fully feasible now
+E,Pairwise winner prediction (near-ties),"Panel with pass1, pass16, frs, outcome",yes,within benchmark pairs,moderate (judge outcome),very low,medium: interpretable deployment tie-break story,fully feasible now
+F,Alternative confidence proxy (SC vote-share FRS k10),Precomputed SC proxy per model×benchmark,analysis_exports/self_consistency_proxy_robustness/sc_proxy_benchmark_results_k10.csv,"model, benchmark",moderate–high (reasoning in top bin),low,medium: robustness of ranking / incremental validity,fully feasible now
+G,Judge-robustness,Second judge or duplicate scores,run_metadata shows single judge gpt-4o-mini,n/a,n/a,n/a,high if data existed,not feasible now
+H,Regime classification (SNR sign vs generalization),snr + LOCO folds,snr on panel,panel,low–moderate,low,exploratory appendix,partially feasible now

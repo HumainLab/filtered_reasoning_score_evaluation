@@ -1,0 +1,6 @@
+artifact,n_rows,key,contributes
+merged_pass1_frs_per_benchmark.csv,54,"model,benchmark","frs_pct, pass1_pct, snr, base_reasoning"
+per_pair_scores.csv (unfiltered),54,"model,dataset→benchmark","unfiltered_reasoning_mean, jsonl_path"
+topk_ablation top_k_pct==10,54,"model,benchmark",high_conf_accuracy_pct
+reasoning_cumulative_topk topk_pct==10,54,"model,benchmark",cum_top10_mean_reasoning_0_1 (optional control; high circularity)
+canonical panel (inner merged∩unfiltered),54,"model,benchmark",all merged columns pre-pass16

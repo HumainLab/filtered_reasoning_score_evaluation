@@ -1,0 +1,3764 @@
+{
+  "metadata": {
+    "model": "Qwen2.5-7B",
+    "dataset": "SVAMP",
+    "input_file": "./source_pass16_jsonl_by_model/Qwen2.5_7B_Instruct/svamp__test_svamp_-1_seed42_t0.7_s0_e-1_9e43cdce-7f05-4b23-b911-5a4da43d5941_processed/svamp__test_svamp_-1_seed42_t0.7_s0_e-1_9e43cdce-7f05-4b23-b911-5a4da43d5941_processed.jsonl",
+    "n_pooled_traces": 16000,
+    "n_top_pool_kept": 8000,
+    "top_pool_fraction": 0.5,
+    "samples_per_bin_target": 50,
+    "timestamp": "2026-03-25T03:38:52.078462+00:00"
+  },
+  "judged_samples": [
+    {
+      "idx": 411,
+      "trace_idx": 11,
+      "bin_label": "10-20",
+      "confidence": 0.8430134844130185,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 3,
+        "factuality": 2
+      },
+      "reasoning_score": 0.3125,
+      "judge_ok": true
+    },
+    {
+      "idx": 882,
+      "trace_idx": 12,
+      "bin_label": "10-20",
+      "confidence": 0.8483284676769883,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "reasoning_score": 0.6875,
+      "judge_ok": true
+    },
+    {
+      "idx": 232,
+      "trace_idx": 5,
+      "bin_label": "0-10",
+      "confidence": 0.8916650439154543,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "reasoning_score": 0.5,
+      "judge_ok": true
+    },
+    {
+      "idx": 126,
+      "trace_idx": 10,
+      "bin_label": "0-10",
+      "confidence": 0.8769660436991786,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 3,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "reasoning_score": 0.8125,
+      "judge_ok": true
+    },
+    {
+      "idx": 865,
+      "trace_idx": 15,
+      "bin_label": "10-20",
+      "confidence": 0.8667936100910582,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "reasoning_score": 0.625,
+      "judge_ok": true
+    },
+    {
+      "idx": 181,
+      "trace_idx": 10,
+      "bin_label": "10-20",
+      "confidence": 0.8314517153316541,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "reasoning_score": 0.5,
+      "judge_ok": true
+    },
+    {
+      "idx": 845,
+      "trace_idx": 10,
+      "bin_label": "10-20",
+      "confidence": 0.8586894895227147,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "reasoning_score": 0.5,
+      "judge_ok": true
+    },
+    {
+      "idx": 801,
+      "trace_idx": 2,
+      "bin_label": "0-10",
+      "confidence": 0.8997511893092435,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "reasoning_score": 0.625,
+      "judge_ok": true
+    },
+    {
+      "idx": 752,
+      "trace_idx": 0,
+      "bin_label": "10-20",
+      "confidence": 0.8339334435273154,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "reasoning_score": 0.6875,
+      "judge_ok": true
+    },
+    {
+      "idx": 186,
+      "trace_idx": 11,
+      "bin_label": "10-20",
+      "confidence": 0.8241215228638584,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "reasoning_score": 0.5,
+      "judge_ok": true
+    },
+    {
+      "idx": 38,
+      "trace_idx": 3,
+      "bin_label": "0-10",
+      "confidence": 0.8938855545078997,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "reasoning_score": 0.6875,
+      "judge_ok": true
+    },
+    {
+      "idx": 801,
+      "trace_idx": 15,
+      "bin_label": "0-10",
+      "confidence": 0.8800714209935374,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "reasoning_score": 0.5,
+      "judge_ok": true
+    },
+    {
+      "idx": 396,
+      "trace_idx": 6,
+      "bin_label": "0-10",
+      "confidence": 0.8687059107978778,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "reasoning_score": 0.5625,
+      "judge_ok": true
+    },
+    {
+      "idx": 804,
+      "trace_idx": 7,
+      "bin_label": "0-10",
+      "confidence": 0.9262213436552755,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "reasoning_score": 0.6875,
+      "judge_ok": true
+    },
+    {
+      "idx": 281,
+      "trace_idx": 1,
+      "bin_label": "0-10",
+      "confidence": 0.9199803522112521,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "reasoning_score": 0.5,
+      "judge_ok": true
+    },
+    {
+      "idx": 942,
+      "trace_idx": 13,
+      "bin_label": "0-10",
+      "confidence": 0.9302746801398567,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "reasoning_score": 0.5,
+      "judge_ok": true
+    },
+    {
+      "idx": 768,
+      "trace_idx": 15,
+      "bin_label": "0-10",
+      "confidence": 0.8842698142831339,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "reasoning_score": 0.8125,
+      "judge_ok": true
+    },
+    {
+      "idx": 57,
+      "trace_idx": 11,
+      "bin_label": "0-10",
+      "confidence": 0.9047423375365028,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "reasoning_score": 0.5625,
+      "judge_ok": true
+    },
+    {
+      "idx": 795,
+      "trace_idx": 4,
+      "bin_label": "10-20",
+      "confidence": 0.8588006023540314,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 4,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "reasoning_score": 0.6875,
+      "judge_ok": true
+    },
+    {
+      "idx": 841,
+      "trace_idx": 0,
+      "bin_label": "0-10",
+      "confidence": 0.9132672260690117,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "reasoning_score": 0.5625,
+      "judge_ok": true
+    },
+    {
+      "idx": 477,
+      "trace_idx": 13,
+      "bin_label": "10-20",
+      "confidence": 0.8601964044413861,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "reasoning_score": 0.6875,
+      "judge_ok": true
+    },
+    {
+      "idx": 535,
+      "trace_idx": 9,
+      "bin_label": "10-20",
+      "confidence": 0.8611659885780566,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "reasoning_score": 0.5,
+      "judge_ok": true
+    },
+    {
+      "idx": 463,
+      "trace_idx": 9,
+      "bin_label": "0-10",
+      "confidence": 0.8960378702263545,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "reasoning_score": 0.8125,
+      "judge_ok": true
+    },
+    {
+      "idx": 774,
+      "trace_idx": 4,
+      "bin_label": "0-10",
+      "confidence": 0.8930272026680824,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "reasoning_score": 0.875,
+      "judge_ok": true
+    },
+    {
+      "idx": 435,
+      "trace_idx": 7,
+      "bin_label": "10-20",
+      "confidence": 0.8566744028946262,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "reasoning_score": 0.5,
+      "judge_ok": true
+    },
+    {
+      "idx": 366,
+      "trace_idx": 8,
+      "bin_label": "0-10",
+      "confidence": 0.9062879147643617,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "reasoning_score": 0.75,
+      "judge_ok": true
+    },
+    {
+      "idx": 76,
+      "trace_idx": 8,
+      "bin_label": "0-10",
+      "confidence": 0.8702638822560693,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 3,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "reasoning_score": 0.8125,
+      "judge_ok": true
+    },
+    {
+      "idx": 766,
+      "trace_idx": 8,
+      "bin_label": "10-20",
+      "confidence": 0.8238133376406633,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 2
+      },
+      "reasoning_score": 0.4375,
+      "judge_ok": true
+    },
+    {
+      "idx": 194,
+      "trace_idx": 5,
+      "bin_label": "0-10",
+      "confidence": 0.8841509154412501,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 4
+      },
+      "reasoning_score": 0.4375,
+      "judge_ok": true
+    },
+    {
+      "idx": 757,
+      "trace_idx": 3,
+      "bin_label": "10-20",
+      "confidence": 0.8366762260611886,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "reasoning_score": 0.5,
+      "judge_ok": true
+    },
+    {
+      "idx": 545,
+      "trace_idx": 13,
+      "bin_label": "10-20",
+      "confidence": 0.833214288641785,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "reasoning_score": 0.6875,
+      "judge_ok": true
+    },
+    {
+      "idx": 894,
+      "trace_idx": 7,
+      "bin_label": "0-10",
+      "confidence": 0.868925987941944,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "reasoning_score": 0.625,
+      "judge_ok": true
+    },
+    {
+      "idx": 963,
+      "trace_idx": 2,
+      "bin_label": "10-20",
+      "confidence": 0.8224101651853942,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "reasoning_score": 0.5625,
+      "judge_ok": true
+    },
+    {
+      "idx": 40,
+      "trace_idx": 8,
+      "bin_label": "10-20",
+      "confidence": 0.8366271523197624,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "reasoning_score": 0.6875,
+      "judge_ok": true
+    },
+    {
+      "idx": 905,
+      "trace_idx": 12,
+      "bin_label": "0-10",
+      "confidence": 0.8790564124745296,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "reasoning_score": 0.6875,
+      "judge_ok": true
+    },
+    {
+      "idx": 714,
+      "trace_idx": 10,
+      "bin_label": "10-20",
+      "confidence": 0.8248071976006492,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 2
+      },
+      "reasoning_score": 0.25,
+      "judge_ok": true
+    },
+    {
+      "idx": 768,
+      "trace_idx": 8,
+      "bin_label": "0-10",
+      "confidence": 0.8794939646379905,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "reasoning_score": 0.625,
+      "judge_ok": true
+    },
+    {
+      "idx": 800,
+      "trace_idx": 3,
+      "bin_label": "0-10",
+      "confidence": 0.9126869818438925,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "reasoning_score": 0.875,
+      "judge_ok": true
+    },
+    {
+      "idx": 491,
+      "trace_idx": 11,
+      "bin_label": "0-10",
+      "confidence": 0.8752907960724318,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "reasoning_score": 0.6875,
+      "judge_ok": true
+    },
+    {
+      "idx": 565,
+      "trace_idx": 3,
+      "bin_label": "0-10",
+      "confidence": 0.8977153361085108,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "reasoning_score": 0.6875,
+      "judge_ok": true
+    },
+    {
+      "idx": 755,
+      "trace_idx": 14,
+      "bin_label": "0-10",
+      "confidence": 0.8932716495629195,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "reasoning_score": 0.75,
+      "judge_ok": true
+    },
+    {
+      "idx": 720,
+      "trace_idx": 8,
+      "bin_label": "10-20",
+      "confidence": 0.849377388008956,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 3
+      },
+      "reasoning_score": 0.375,
+      "judge_ok": true
+    },
+    {
+      "idx": 583,
+      "trace_idx": 6,
+      "bin_label": "10-20",
+      "confidence": 0.8373265728836761,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "reasoning_score": 0.5,
+      "judge_ok": true
+    },
+    {
+      "idx": 511,
+      "trace_idx": 10,
+      "bin_label": "10-20",
+      "confidence": 0.8519185153743699,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "reasoning_score": 0.6875,
+      "judge_ok": true
+    },
+    {
+      "idx": 719,
+      "trace_idx": 8,
+      "bin_label": "10-20",
+      "confidence": 0.8291294331046217,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "reasoning_score": 0.625,
+      "judge_ok": true
+    },
+    {
+      "idx": 9,
+      "trace_idx": 12,
+      "bin_label": "0-10",
+      "confidence": 0.9182198000160744,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "reasoning_score": 0.5625,
+      "judge_ok": true
+    },
+    {
+      "idx": 118,
+      "trace_idx": 8,
+      "bin_label": "10-20",
+      "confidence": 0.8549986798391176,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "reasoning_score": 0.5,
+      "judge_ok": true
+    },
+    {
+      "idx": 773,
+      "trace_idx": 12,
+      "bin_label": "10-20",
+      "confidence": 0.8413882363004954,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "reasoning_score": 0.6875,
+      "judge_ok": true
+    },
+    {
+      "idx": 159,
+      "trace_idx": 13,
+      "bin_label": "0-10",
+      "confidence": 0.909183067430296,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "reasoning_score": 0.5,
+      "judge_ok": true
+    },
+    {
+      "idx": 564,
+      "trace_idx": 12,
+      "bin_label": "10-20",
+      "confidence": 0.8490927413895066,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "reasoning_score": 0.875,
+      "judge_ok": true
+    },
+    {
+      "idx": 15,
+      "trace_idx": 7,
+      "bin_label": "0-10",
+      "confidence": 0.8740482995028676,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "reasoning_score": 0.5,
+      "judge_ok": true
+    },
+    {
+      "idx": 556,
+      "trace_idx": 14,
+      "bin_label": "10-20",
+      "confidence": 0.8372696669555162,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "reasoning_score": 0.5,
+      "judge_ok": true
+    },
+    {
+      "idx": 995,
+      "trace_idx": 12,
+      "bin_label": "10-20",
+      "confidence": 0.8156995166728189,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 2
+      },
+      "reasoning_score": 0.25,
+      "judge_ok": true
+    },
+    {
+      "idx": 888,
+      "trace_idx": 15,
+      "bin_label": "0-10",
+      "confidence": 0.8972172411464587,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "reasoning_score": 0.6875,
+      "judge_ok": true
+    },
+    {
+      "idx": 420,
+      "trace_idx": 2,
+      "bin_label": "0-10",
+      "confidence": 0.877279908531151,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "reasoning_score": 0.6875,
+      "judge_ok": true
+    },
+    {
+      "idx": 83,
+      "trace_idx": 6,
+      "bin_label": "10-20",
+      "confidence": 0.8341712083586312,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "reasoning_score": 0.6875,
+      "judge_ok": true
+    },
+    {
+      "idx": 816,
+      "trace_idx": 4,
+      "bin_label": "0-10",
+      "confidence": 0.8910509831304846,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true
+    },
+    {
+      "idx": 680,
+      "trace_idx": 6,
+      "bin_label": "10-20",
+      "confidence": 0.8313608589970365,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "reasoning_score": 0.5,
+      "judge_ok": true
+    },
+    {
+      "idx": 389,
+      "trace_idx": 9,
+      "bin_label": "10-20",
+      "confidence": 0.8192733645300097,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "reasoning_score": 0.5,
+      "judge_ok": true
+    },
+    {
+      "idx": 403,
+      "trace_idx": 11,
+      "bin_label": "0-10",
+      "confidence": 0.8859036215050261,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "reasoning_score": 0.6875,
+      "judge_ok": true
+    },
+    {
+      "idx": 911,
+      "trace_idx": 9,
+      "bin_label": "0-10",
+      "confidence": 0.915792800229075,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "reasoning_score": 0.5,
+      "judge_ok": true
+    },
+    {
+      "idx": 597,
+      "trace_idx": 13,
+      "bin_label": "0-10",
+      "confidence": 0.9093791303963613,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "reasoning_score": 0.6875,
+      "judge_ok": true
+    },
+    {
+      "idx": 55,
+      "trace_idx": 9,
+      "bin_label": "0-10",
+      "confidence": 0.9232381111168474,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "reasoning_score": 0.5,
+      "judge_ok": true
+    },
+    {
+      "idx": 488,
+      "trace_idx": 8,
+      "bin_label": "0-10",
+      "confidence": 0.9313748591873495,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "reasoning_score": 0.6875,
+      "judge_ok": true
+    },
+    {
+      "idx": 494,
+      "trace_idx": 4,
+      "bin_label": "0-10",
+      "confidence": 0.8728231951470932,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 4,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "reasoning_score": 0.625,
+      "judge_ok": true
+    },
+    {
+      "idx": 688,
+      "trace_idx": 10,
+      "bin_label": "10-20",
+      "confidence": 0.8460813077131933,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "reasoning_score": 0.5625,
+      "judge_ok": true
+    },
+    {
+      "idx": 538,
+      "trace_idx": 9,
+      "bin_label": "0-10",
+      "confidence": 0.9080272725826944,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "reasoning_score": 0.4375,
+      "judge_ok": true
+    },
+    {
+      "idx": 807,
+      "trace_idx": 8,
+      "bin_label": "10-20",
+      "confidence": 0.8191240006963422,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "reasoning_score": 0.6875,
+      "judge_ok": true
+    },
+    {
+      "idx": 435,
+      "trace_idx": 3,
+      "bin_label": "0-10",
+      "confidence": 0.8835346280424098,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "reasoning_score": 0.6875,
+      "judge_ok": true
+    },
+    {
+      "idx": 430,
+      "trace_idx": 7,
+      "bin_label": "10-20",
+      "confidence": 0.8573680386620695,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "reasoning_score": 0.6875,
+      "judge_ok": true
+    },
+    {
+      "idx": 856,
+      "trace_idx": 0,
+      "bin_label": "0-10",
+      "confidence": 0.9015946262602057,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "reasoning_score": 0.5,
+      "judge_ok": true
+    },
+    {
+      "idx": 693,
+      "trace_idx": 13,
+      "bin_label": "10-20",
+      "confidence": 0.8651620734996351,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "reasoning_score": 0.6875,
+      "judge_ok": true
+    },
+    {
+      "idx": 800,
+      "trace_idx": 2,
+      "bin_label": "0-10",
+      "confidence": 0.9198724690542373,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "reasoning_score": 0.875,
+      "judge_ok": true
+    },
+    {
+      "idx": 765,
+      "trace_idx": 9,
+      "bin_label": "10-20",
+      "confidence": 0.8667180344939809,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "reasoning_score": 0.5,
+      "judge_ok": true
+    },
+    {
+      "idx": 592,
+      "trace_idx": 6,
+      "bin_label": "10-20",
+      "confidence": 0.8635099848925505,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "reasoning_score": 0.5,
+      "judge_ok": true
+    },
+    {
+      "idx": 976,
+      "trace_idx": 13,
+      "bin_label": "0-10",
+      "confidence": 0.9038807466441773,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "reasoning_score": 0.5,
+      "judge_ok": true
+    },
+    {
+      "idx": 410,
+      "trace_idx": 7,
+      "bin_label": "10-20",
+      "confidence": 0.8399716589655551,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true
+    },
+    {
+      "idx": 321,
+      "trace_idx": 6,
+      "bin_label": "10-20",
+      "confidence": 0.817735104608216,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "reasoning_score": 0.5,
+      "judge_ok": true
+    },
+    {
+      "idx": 47,
+      "trace_idx": 0,
+      "bin_label": "0-10",
+      "confidence": 0.9076381956721267,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "reasoning_score": 0.875,
+      "judge_ok": true
+    },
+    {
+      "idx": 40,
+      "trace_idx": 11,
+      "bin_label": "10-20",
+      "confidence": 0.8641504473326085,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "reasoning_score": 0.5,
+      "judge_ok": true
+    },
+    {
+      "idx": 473,
+      "trace_idx": 5,
+      "bin_label": "10-20",
+      "confidence": 0.8348648128718866,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "reasoning_score": 0.75,
+      "judge_ok": true
+    },
+    {
+      "idx": 755,
+      "trace_idx": 13,
+      "bin_label": "0-10",
+      "confidence": 0.8794591240919998,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "reasoning_score": 0.5,
+      "judge_ok": true
+    },
+    {
+      "idx": 704,
+      "trace_idx": 10,
+      "bin_label": "10-20",
+      "confidence": 0.8387114386753941,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "reasoning_score": 0.8125,
+      "judge_ok": true
+    },
+    {
+      "idx": 652,
+      "trace_idx": 15,
+      "bin_label": "10-20",
+      "confidence": 0.8447470093201045,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "reasoning_score": 0.6875,
+      "judge_ok": true
+    },
+    {
+      "idx": 210,
+      "trace_idx": 14,
+      "bin_label": "20-30",
+      "confidence": 0.8009971206120651,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 3
+      },
+      "reasoning_score": 0.375,
+      "judge_ok": true
+    },
+    {
+      "idx": 168,
+      "trace_idx": 15,
+      "bin_label": "20-30",
+      "confidence": 0.8002824482911947,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "reasoning_score": 0.5,
+      "judge_ok": true
+    },
+    {
+      "idx": 102,
+      "trace_idx": 0,
+      "bin_label": "20-30",
+      "confidence": 0.7876687172252844,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "reasoning_score": 0.5,
+      "judge_ok": true
+    },
+    {
+      "idx": 434,
+      "trace_idx": 10,
+      "bin_label": "20-30",
+      "confidence": 0.8083214137375511,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "reasoning_score": 0.4375,
+      "judge_ok": true
+    },
+    {
+      "idx": 893,
+      "trace_idx": 0,
+      "bin_label": "20-30",
+      "confidence": 0.7854485941282511,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true
+    },
+    {
+      "idx": 962,
+      "trace_idx": 3,
+      "bin_label": "20-30",
+      "confidence": 0.8131090248042071,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "reasoning_score": 0.6875,
+      "judge_ok": true
+    },
+    {
+      "idx": 356,
+      "trace_idx": 11,
+      "bin_label": "0-10",
+      "confidence": 0.9035609611038344,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "reasoning_score": 0.5625,
+      "judge_ok": true
+    },
+    {
+      "idx": 476,
+      "trace_idx": 4,
+      "bin_label": "20-30",
+      "confidence": 0.8074361357979976,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "reasoning_score": 0.6875,
+      "judge_ok": true
+    },
+    {
+      "idx": 779,
+      "trace_idx": 3,
+      "bin_label": "20-30",
+      "confidence": 0.8071067573901197,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "reasoning_score": 0.6875,
+      "judge_ok": true
+    },
+    {
+      "idx": 708,
+      "trace_idx": 15,
+      "bin_label": "20-30",
+      "confidence": 0.8154014047281121,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "reasoning_score": 0.6875,
+      "judge_ok": true
+    },
+    {
+      "idx": 622,
+      "trace_idx": 6,
+      "bin_label": "0-10",
+      "confidence": 0.8805552825101187,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "reasoning_score": 0.6875,
+      "judge_ok": true
+    },
+    {
+      "idx": 421,
+      "trace_idx": 14,
+      "bin_label": "20-30",
+      "confidence": 0.8030992551564798,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "reasoning_score": 0.6875,
+      "judge_ok": true
+    },
+    {
+      "idx": 321,
+      "trace_idx": 8,
+      "bin_label": "20-30",
+      "confidence": 0.8012625429451351,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "reasoning_score": 0.5,
+      "judge_ok": true
+    },
+    {
+      "idx": 179,
+      "trace_idx": 5,
+      "bin_label": "10-20",
+      "confidence": 0.8629834676352607,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "reasoning_score": 0.875,
+      "judge_ok": true
+    },
+    {
+      "idx": 301,
+      "trace_idx": 3,
+      "bin_label": "20-30",
+      "confidence": 0.7912937675753008,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "reasoning_score": 0.5,
+      "judge_ok": true
+    },
+    {
+      "idx": 760,
+      "trace_idx": 2,
+      "bin_label": "20-30",
+      "confidence": 0.788257555863591,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 4,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "reasoning_score": 0.8125,
+      "judge_ok": true
+    },
+    {
+      "idx": 932,
+      "trace_idx": 13,
+      "bin_label": "20-30",
+      "confidence": 0.7497263682643024,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "reasoning_score": 0.5,
+      "judge_ok": true
+    },
+    {
+      "idx": 265,
+      "trace_idx": 9,
+      "bin_label": "20-30",
+      "confidence": 0.80091397890169,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "reasoning_score": 0.5,
+      "judge_ok": true
+    },
+    {
+      "idx": 445,
+      "trace_idx": 11,
+      "bin_label": "20-30",
+      "confidence": 0.7778465949555281,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "reasoning_score": 0.6875,
+      "judge_ok": true
+    },
+    {
+      "idx": 627,
+      "trace_idx": 11,
+      "bin_label": "30-40",
+      "confidence": 0.716003759620626,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "reasoning_score": 0.5,
+      "judge_ok": true
+    },
+    {
+      "idx": 25,
+      "trace_idx": 9,
+      "bin_label": "0-10",
+      "confidence": 0.9164333489093641,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "reasoning_score": 0.5,
+      "judge_ok": true
+    },
+    {
+      "idx": 942,
+      "trace_idx": 7,
+      "bin_label": "20-30",
+      "confidence": 0.7818526795378968,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "reasoning_score": 0.6875,
+      "judge_ok": true
+    },
+    {
+      "idx": 974,
+      "trace_idx": 15,
+      "bin_label": "10-20",
+      "confidence": 0.8457441855494457,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "reasoning_score": 0.625,
+      "judge_ok": true
+    },
+    {
+      "idx": 684,
+      "trace_idx": 7,
+      "bin_label": "10-20",
+      "confidence": 0.8208855148385711,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "reasoning_score": 0.5625,
+      "judge_ok": true
+    },
+    {
+      "idx": 890,
+      "trace_idx": 3,
+      "bin_label": "20-30",
+      "confidence": 0.7715138686179729,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "reasoning_score": 0.6875,
+      "judge_ok": true
+    },
+    {
+      "idx": 236,
+      "trace_idx": 13,
+      "bin_label": "20-30",
+      "confidence": 0.7751930772637101,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 2
+      },
+      "reasoning_score": 0.25,
+      "judge_ok": true
+    },
+    {
+      "idx": 476,
+      "trace_idx": 7,
+      "bin_label": "0-10",
+      "confidence": 0.8802068550433518,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "reasoning_score": 0.6875,
+      "judge_ok": true
+    },
+    {
+      "idx": 178,
+      "trace_idx": 1,
+      "bin_label": "20-30",
+      "confidence": 0.7608185814538446,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "reasoning_score": 0.6875,
+      "judge_ok": true
+    },
+    {
+      "idx": 568,
+      "trace_idx": 1,
+      "bin_label": "20-30",
+      "confidence": 0.7616922643449621,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 2,
+        "factuality": 4
+      },
+      "reasoning_score": 0.5,
+      "judge_ok": true
+    },
+    {
+      "idx": 683,
+      "trace_idx": 11,
+      "bin_label": "20-30",
+      "confidence": 0.7664554526963878,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 3,
+        "factuality": 3
+      },
+      "reasoning_score": 0.375,
+      "judge_ok": true
+    },
+    {
+      "idx": 314,
+      "trace_idx": 8,
+      "bin_label": "20-30",
+      "confidence": 0.779131256965629,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 2
+      },
+      "reasoning_score": 0.25,
+      "judge_ok": true
+    },
+    {
+      "idx": 898,
+      "trace_idx": 5,
+      "bin_label": "10-20",
+      "confidence": 0.8398949143668389,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "reasoning_score": 0.6875,
+      "judge_ok": true
+    },
+    {
+      "idx": 230,
+      "trace_idx": 3,
+      "bin_label": "20-30",
+      "confidence": 0.7653462712240472,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "reasoning_score": 0.6875,
+      "judge_ok": true
+    },
+    {
+      "idx": 989,
+      "trace_idx": 13,
+      "bin_label": "20-30",
+      "confidence": 0.7360670905189437,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "reasoning_score": 0.6875,
+      "judge_ok": true
+    },
+    {
+      "idx": 224,
+      "trace_idx": 11,
+      "bin_label": "10-20",
+      "confidence": 0.8568701317050968,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "reasoning_score": 0.6875,
+      "judge_ok": true
+    },
+    {
+      "idx": 422,
+      "trace_idx": 14,
+      "bin_label": "20-30",
+      "confidence": 0.7372742316209301,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "reasoning_score": 0.5,
+      "judge_ok": true
+    },
+    {
+      "idx": 847,
+      "trace_idx": 11,
+      "bin_label": "20-30",
+      "confidence": 0.7411156719236471,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "reasoning_score": 0.6875,
+      "judge_ok": true
+    },
+    {
+      "idx": 879,
+      "trace_idx": 5,
+      "bin_label": "30-40",
+      "confidence": 0.6521831690993557,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 2
+      },
+      "reasoning_score": 0.25,
+      "judge_ok": true
+    },
+    {
+      "idx": 356,
+      "trace_idx": 12,
+      "bin_label": "20-30",
+      "confidence": 0.7423132708985267,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "reasoning_score": 0.5,
+      "judge_ok": true
+    },
+    {
+      "idx": 384,
+      "trace_idx": 15,
+      "bin_label": "20-30",
+      "confidence": 0.7355172816407779,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "reasoning_score": 0.6875,
+      "judge_ok": true
+    },
+    {
+      "idx": 776,
+      "trace_idx": 3,
+      "bin_label": "30-40",
+      "confidence": 0.6526848837118816,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "reasoning_score": 0.5,
+      "judge_ok": true
+    },
+    {
+      "idx": 876,
+      "trace_idx": 15,
+      "bin_label": "0-10",
+      "confidence": 0.8989561090374911,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "reasoning_score": 0.6875,
+      "judge_ok": true
+    },
+    {
+      "idx": 382,
+      "trace_idx": 3,
+      "bin_label": "30-40",
+      "confidence": 0.6509683046814518,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 2
+      },
+      "reasoning_score": 0.25,
+      "judge_ok": true
+    },
+    {
+      "idx": 792,
+      "trace_idx": 8,
+      "bin_label": "0-10",
+      "confidence": 0.9278026018658204,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "reasoning_score": 0.6875,
+      "judge_ok": true
+    },
+    {
+      "idx": 267,
+      "trace_idx": 9,
+      "bin_label": "30-40",
+      "confidence": 0.6667905574394117,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "reasoning_score": 0.5,
+      "judge_ok": true
+    },
+    {
+      "idx": 313,
+      "trace_idx": 4,
+      "bin_label": "10-20",
+      "confidence": 0.8275886885223227,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "reasoning_score": 0.5625,
+      "judge_ok": true
+    },
+    {
+      "idx": 490,
+      "trace_idx": 12,
+      "bin_label": "10-20",
+      "confidence": 0.8669244147624443,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 4
+      },
+      "reasoning_score": 0.4375,
+      "judge_ok": true
+    },
+    {
+      "idx": 924,
+      "trace_idx": 4,
+      "bin_label": "10-20",
+      "confidence": 0.8383263399712829,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "reasoning_score": 0.875,
+      "judge_ok": true
+    },
+    {
+      "idx": 986,
+      "trace_idx": 15,
+      "bin_label": "30-40",
+      "confidence": 0.6937858746783099,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 3,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "reasoning_score": 0.6875,
+      "judge_ok": true
+    },
+    {
+      "idx": 307,
+      "trace_idx": 5,
+      "bin_label": "10-20",
+      "confidence": 0.8454529552799174,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "reasoning_score": 0.5,
+      "judge_ok": true
+    },
+    {
+      "idx": 850,
+      "trace_idx": 2,
+      "bin_label": "0-10",
+      "confidence": 0.939459498914276,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "reasoning_score": 0.6875,
+      "judge_ok": true
+    },
+    {
+      "idx": 35,
+      "trace_idx": 12,
+      "bin_label": "20-30",
+      "confidence": 0.7585498368566604,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 3
+      },
+      "reasoning_score": 0.3125,
+      "judge_ok": true
+    },
+    {
+      "idx": 127,
+      "trace_idx": 11,
+      "bin_label": "20-30",
+      "confidence": 0.7693310562149737,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 2,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "reasoning_score": 0.625,
+      "judge_ok": true
+    },
+    {
+      "idx": 555,
+      "trace_idx": 2,
+      "bin_label": "20-30",
+      "confidence": 0.7662108827291079,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 3
+      },
+      "reasoning_score": 0.3125,
+      "judge_ok": true
+    },
+    {
+      "idx": 241,
+      "trace_idx": 6,
+      "bin_label": "30-40",
+      "confidence": 0.675591350813229,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "reasoning_score": 0.5,
+      "judge_ok": true
+    },
+    {
+      "idx": 211,
+      "trace_idx": 8,
+      "bin_label": "20-30",
+      "confidence": 0.7447334442765239,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "reasoning_score": 0.6875,
+      "judge_ok": true
+    },
+    {
+      "idx": 252,
+      "trace_idx": 9,
+      "bin_label": "30-40",
+      "confidence": 0.6904214069648533,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 3
+      },
+      "reasoning_score": 0.3125,
+      "judge_ok": true
+    },
+    {
+      "idx": 832,
+      "trace_idx": 12,
+      "bin_label": "20-30",
+      "confidence": 0.750530118454082,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true
+    },
+    {
+      "idx": 387,
+      "trace_idx": 2,
+      "bin_label": "20-30",
+      "confidence": 0.741015630857171,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 2
+      },
+      "reasoning_score": 0.25,
+      "judge_ok": true
+    },
+    {
+      "idx": 209,
+      "trace_idx": 10,
+      "bin_label": "20-30",
+      "confidence": 0.7677185154435291,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 2,
+        "factuality": 3
+      },
+      "reasoning_score": 0.4375,
+      "judge_ok": true
+    },
+    {
+      "idx": 92,
+      "trace_idx": 2,
+      "bin_label": "30-40",
+      "confidence": 0.7283928156698539,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "reasoning_score": 0.5625,
+      "judge_ok": true
+    },
+    {
+      "idx": 451,
+      "trace_idx": 7,
+      "bin_label": "30-40",
+      "confidence": 0.7202495765243319,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "reasoning_score": 0.6875,
+      "judge_ok": true
+    },
+    {
+      "idx": 741,
+      "trace_idx": 5,
+      "bin_label": "30-40",
+      "confidence": 0.6431343689537681,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 4,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "reasoning_score": 0.625,
+      "judge_ok": true
+    },
+    {
+      "idx": 280,
+      "trace_idx": 14,
+      "bin_label": "20-30",
+      "confidence": 0.7810145748730096,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "reasoning_score": 0.5,
+      "judge_ok": true
+    },
+    {
+      "idx": 775,
+      "trace_idx": 9,
+      "bin_label": "30-40",
+      "confidence": 0.7126996736865595,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "reasoning_score": 0.5,
+      "judge_ok": true
+    },
+    {
+      "idx": 544,
+      "trace_idx": 8,
+      "bin_label": "20-30",
+      "confidence": 0.8036007541786783,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "reasoning_score": 0.6875,
+      "judge_ok": true
+    },
+    {
+      "idx": 543,
+      "trace_idx": 10,
+      "bin_label": "30-40",
+      "confidence": 0.6544198847388363,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "reasoning_score": 0.6875,
+      "judge_ok": true
+    },
+    {
+      "idx": 864,
+      "trace_idx": 10,
+      "bin_label": "30-40",
+      "confidence": 0.6243535865894152,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "reasoning_score": 0.5,
+      "judge_ok": true
+    },
+    {
+      "idx": 797,
+      "trace_idx": 8,
+      "bin_label": "30-40",
+      "confidence": 0.7102734393664162,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "reasoning_score": 0.4375,
+      "judge_ok": true
+    },
+    {
+      "idx": 15,
+      "trace_idx": 3,
+      "bin_label": "20-30",
+      "confidence": 0.7724299705336244,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "reasoning_score": 0.5625,
+      "judge_ok": true
+    },
+    {
+      "idx": 972,
+      "trace_idx": 1,
+      "bin_label": "30-40",
+      "confidence": 0.6338600983989684,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "reasoning_score": 0.625,
+      "judge_ok": true
+    },
+    {
+      "idx": 857,
+      "trace_idx": 11,
+      "bin_label": "30-40",
+      "confidence": 0.7274587708951085,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "reasoning_score": 0.5625,
+      "judge_ok": true
+    },
+    {
+      "idx": 961,
+      "trace_idx": 10,
+      "bin_label": "30-40",
+      "confidence": 0.7304964422963779,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "reasoning_score": 0.5,
+      "judge_ok": true
+    },
+    {
+      "idx": 401,
+      "trace_idx": 11,
+      "bin_label": "20-30",
+      "confidence": 0.783481498150044,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "reasoning_score": 0.6875,
+      "judge_ok": true
+    },
+    {
+      "idx": 229,
+      "trace_idx": 5,
+      "bin_label": "20-30",
+      "confidence": 0.7896972915800206,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "reasoning_score": 0.5,
+      "judge_ok": true
+    },
+    {
+      "idx": 741,
+      "trace_idx": 7,
+      "bin_label": "30-40",
+      "confidence": 0.6694258769231589,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 4,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "reasoning_score": 0.625,
+      "judge_ok": true
+    },
+    {
+      "idx": 913,
+      "trace_idx": 15,
+      "bin_label": "20-30",
+      "confidence": 0.79847132404768,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "reasoning_score": 0.6875,
+      "judge_ok": true
+    },
+    {
+      "idx": 329,
+      "trace_idx": 4,
+      "bin_label": "30-40",
+      "confidence": 0.6360297752309189,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "reasoning_score": 0.5,
+      "judge_ok": true
+    },
+    {
+      "idx": 905,
+      "trace_idx": 5,
+      "bin_label": "20-30",
+      "confidence": 0.8009759697441875,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "reasoning_score": 0.625,
+      "judge_ok": true
+    },
+    {
+      "idx": 737,
+      "trace_idx": 5,
+      "bin_label": "30-40",
+      "confidence": 0.6490636718560953,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 3,
+        "factuality": 2
+      },
+      "reasoning_score": 0.3125,
+      "judge_ok": true
+    },
+    {
+      "idx": 577,
+      "trace_idx": 15,
+      "bin_label": "20-30",
+      "confidence": 0.7640392949006208,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "reasoning_score": 0.6875,
+      "judge_ok": true
+    },
+    {
+      "idx": 138,
+      "trace_idx": 13,
+      "bin_label": "30-40",
+      "confidence": 0.6219741652231618,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 2
+      },
+      "reasoning_score": 0.25,
+      "judge_ok": true
+    },
+    {
+      "idx": 192,
+      "trace_idx": 10,
+      "bin_label": "30-40",
+      "confidence": 0.7029695915852496,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "reasoning_score": 0.625,
+      "judge_ok": true
+    },
+    {
+      "idx": 441,
+      "trace_idx": 6,
+      "bin_label": "40-50",
+      "confidence": 0.462812661639675,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true
+    },
+    {
+      "idx": 145,
+      "trace_idx": 15,
+      "bin_label": "30-40",
+      "confidence": 0.7305041269066976,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 2,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "reasoning_score": 0.625,
+      "judge_ok": true
+    },
+    {
+      "idx": 508,
+      "trace_idx": 9,
+      "bin_label": "20-30",
+      "confidence": 0.7318406186662454,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 3
+      },
+      "reasoning_score": 0.375,
+      "judge_ok": true
+    },
+    {
+      "idx": 182,
+      "trace_idx": 7,
+      "bin_label": "20-30",
+      "confidence": 0.7603442622917482,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "reasoning_score": 0.5625,
+      "judge_ok": true
+    },
+    {
+      "idx": 370,
+      "trace_idx": 13,
+      "bin_label": "40-50",
+      "confidence": 0.4820742414496131,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true
+    },
+    {
+      "idx": 760,
+      "trace_idx": 12,
+      "bin_label": "30-40",
+      "confidence": 0.5928997870092985,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 2
+      },
+      "reasoning_score": 0.25,
+      "judge_ok": true
+    },
+    {
+      "idx": 133,
+      "trace_idx": 3,
+      "bin_label": "30-40",
+      "confidence": 0.6128830020153929,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 1,
+        "utility": 1,
+        "coherence": 1,
+        "factuality": 1
+      },
+      "reasoning_score": 0.0,
+      "judge_ok": true
+    },
+    {
+      "idx": 943,
+      "trace_idx": 9,
+      "bin_label": "30-40",
+      "confidence": 0.5643998371188361,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "reasoning_score": 0.6875,
+      "judge_ok": true
+    },
+    {
+      "idx": 922,
+      "trace_idx": 5,
+      "bin_label": "40-50",
+      "confidence": 0.5237374501091903,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true
+    },
+    {
+      "idx": 862,
+      "trace_idx": 0,
+      "bin_label": "20-30",
+      "confidence": 0.7582267032755446,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "reasoning_score": 0.5,
+      "judge_ok": true
+    },
+    {
+      "idx": 852,
+      "trace_idx": 5,
+      "bin_label": "40-50",
+      "confidence": 0.47274063962428653,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true
+    },
+    {
+      "idx": 571,
+      "trace_idx": 4,
+      "bin_label": "40-50",
+      "confidence": 0.4665068164947003,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true
+    },
+    {
+      "idx": 332,
+      "trace_idx": 15,
+      "bin_label": "40-50",
+      "confidence": 0.45460716613495444,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true
+    },
+    {
+      "idx": 820,
+      "trace_idx": 11,
+      "bin_label": "30-40",
+      "confidence": 0.725356448901963,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "reasoning_score": 0.6875,
+      "judge_ok": true
+    },
+    {
+      "idx": 631,
+      "trace_idx": 0,
+      "bin_label": "20-30",
+      "confidence": 0.7494156897380222,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "reasoning_score": 0.6875,
+      "judge_ok": true
+    },
+    {
+      "idx": 356,
+      "trace_idx": 3,
+      "bin_label": "40-50",
+      "confidence": 0.41357836109231894,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true
+    },
+    {
+      "idx": 475,
+      "trace_idx": 0,
+      "bin_label": "40-50",
+      "confidence": 0.42020669471510036,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true
+    },
+    {
+      "idx": 948,
+      "trace_idx": 5,
+      "bin_label": "30-40",
+      "confidence": 0.5606154945370934,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 4
+      },
+      "reasoning_score": 0.4375,
+      "judge_ok": true
+    },
+    {
+      "idx": 988,
+      "trace_idx": 0,
+      "bin_label": "30-40",
+      "confidence": 0.579910187386059,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "reasoning_score": 0.5,
+      "judge_ok": true
+    },
+    {
+      "idx": 225,
+      "trace_idx": 9,
+      "bin_label": "40-50",
+      "confidence": 0.4240620858042091,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true
+    },
+    {
+      "idx": 248,
+      "trace_idx": 3,
+      "bin_label": "40-50",
+      "confidence": 0.4201019658230848,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true
+    },
+    {
+      "idx": 483,
+      "trace_idx": 5,
+      "bin_label": "20-30",
+      "confidence": 0.7322538416209713,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "reasoning_score": 0.6875,
+      "judge_ok": true
+    },
+    {
+      "idx": 606,
+      "trace_idx": 6,
+      "bin_label": "40-50",
+      "confidence": 0.4313874711286377,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true
+    },
+    {
+      "idx": 175,
+      "trace_idx": 9,
+      "bin_label": "30-40",
+      "confidence": 0.7146632293964612,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "reasoning_score": 0.6875,
+      "judge_ok": true
+    },
+    {
+      "idx": 849,
+      "trace_idx": 6,
+      "bin_label": "30-40",
+      "confidence": 0.7050715815419978,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 2
+      },
+      "reasoning_score": 0.25,
+      "judge_ok": true
+    },
+    {
+      "idx": 733,
+      "trace_idx": 4,
+      "bin_label": "30-40",
+      "confidence": 0.7253582989129895,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "reasoning_score": 0.6875,
+      "judge_ok": true
+    },
+    {
+      "idx": 836,
+      "trace_idx": 2,
+      "bin_label": "30-40",
+      "confidence": 0.5487537417834203,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "reasoning_score": 0.6875,
+      "judge_ok": true
+    },
+    {
+      "idx": 744,
+      "trace_idx": 14,
+      "bin_label": "30-40",
+      "confidence": 0.7141025471664136,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "reasoning_score": 0.875,
+      "judge_ok": true
+    },
+    {
+      "idx": 594,
+      "trace_idx": 10,
+      "bin_label": "30-40",
+      "confidence": 0.719128837262294,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "reasoning_score": 0.6875,
+      "judge_ok": true
+    },
+    {
+      "idx": 401,
+      "trace_idx": 14,
+      "bin_label": "30-40",
+      "confidence": 0.7053473228857335,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "reasoning_score": 0.6875,
+      "judge_ok": true
+    },
+    {
+      "idx": 328,
+      "trace_idx": 15,
+      "bin_label": "30-40",
+      "confidence": 0.7049375755572563,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "reasoning_score": 0.6875,
+      "judge_ok": true
+    },
+    {
+      "idx": 400,
+      "trace_idx": 13,
+      "bin_label": "40-50",
+      "confidence": 0.504390872631291,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true
+    },
+    {
+      "idx": 749,
+      "trace_idx": 4,
+      "bin_label": "20-30",
+      "confidence": 0.7318540952329661,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 3,
+        "factuality": 2
+      },
+      "reasoning_score": 0.3125,
+      "judge_ok": true
+    },
+    {
+      "idx": 996,
+      "trace_idx": 14,
+      "bin_label": "40-50",
+      "confidence": 0.4384950721322225,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true
+    },
+    {
+      "idx": 951,
+      "trace_idx": 11,
+      "bin_label": "30-40",
+      "confidence": 0.6493710437699352,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "reasoning_score": 0.5,
+      "judge_ok": true
+    },
+    {
+      "idx": 773,
+      "trace_idx": 2,
+      "bin_label": "40-50",
+      "confidence": 0.44035502301966395,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true
+    },
+    {
+      "idx": 758,
+      "trace_idx": 8,
+      "bin_label": "40-50",
+      "confidence": 0.4543606820186217,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true
+    },
+    {
+      "idx": 908,
+      "trace_idx": 13,
+      "bin_label": "30-40",
+      "confidence": 0.6953235758899533,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "reasoning_score": 0.5625,
+      "judge_ok": true
+    },
+    {
+      "idx": 894,
+      "trace_idx": 10,
+      "bin_label": "30-40",
+      "confidence": 0.6484376743077072,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "reasoning_score": 0.6875,
+      "judge_ok": true
+    },
+    {
+      "idx": 334,
+      "trace_idx": 3,
+      "bin_label": "40-50",
+      "confidence": 0.4177628694187884,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true
+    },
+    {
+      "idx": 608,
+      "trace_idx": 14,
+      "bin_label": "40-50",
+      "confidence": 0.4249041137290352,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true
+    },
+    {
+      "idx": 170,
+      "trace_idx": 12,
+      "bin_label": "40-50",
+      "confidence": 0.5288126774894071,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "reasoning_score": 0.6875,
+      "judge_ok": true
+    },
+    {
+      "idx": 559,
+      "trace_idx": 6,
+      "bin_label": "40-50",
+      "confidence": 0.39999699842349556,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true
+    },
+    {
+      "idx": 68,
+      "trace_idx": 14,
+      "bin_label": "40-50",
+      "confidence": 0.43141847862926797,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true
+    },
+    {
+      "idx": 500,
+      "trace_idx": 11,
+      "bin_label": "30-40",
+      "confidence": 0.6089484377877795,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 2
+      },
+      "reasoning_score": 0.25,
+      "judge_ok": true
+    },
+    {
+      "idx": 230,
+      "trace_idx": 8,
+      "bin_label": "40-50",
+      "confidence": 0.46075589469035094,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true
+    },
+    {
+      "idx": 523,
+      "trace_idx": 13,
+      "bin_label": "40-50",
+      "confidence": 0.40325316629871105,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true
+    },
+    {
+      "idx": 260,
+      "trace_idx": 15,
+      "bin_label": "30-40",
+      "confidence": 0.6119831600265668,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 4
+      },
+      "reasoning_score": 0.4375,
+      "judge_ok": true
+    },
+    {
+      "idx": 790,
+      "trace_idx": 2,
+      "bin_label": "40-50",
+      "confidence": 0.4359630309973661,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true
+    },
+    {
+      "idx": 580,
+      "trace_idx": 6,
+      "bin_label": "40-50",
+      "confidence": 0.4498021101218024,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true
+    },
+    {
+      "idx": 295,
+      "trace_idx": 10,
+      "bin_label": "30-40",
+      "confidence": 0.5637130282908973,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "reasoning_score": 0.875,
+      "judge_ok": true
+    },
+    {
+      "idx": 104,
+      "trace_idx": 5,
+      "bin_label": "40-50",
+      "confidence": 0.42934144122712115,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "reasoning_score": 0.5,
+      "judge_ok": true
+    },
+    {
+      "idx": 133,
+      "trace_idx": 10,
+      "bin_label": "30-40",
+      "confidence": 0.593748303225419,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 2
+      },
+      "reasoning_score": 0.25,
+      "judge_ok": true
+    },
+    {
+      "idx": 841,
+      "trace_idx": 13,
+      "bin_label": "40-50",
+      "confidence": 0.40946267815529225,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true
+    },
+    {
+      "idx": 62,
+      "trace_idx": 0,
+      "bin_label": "40-50",
+      "confidence": 0.4339365456818316,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 3,
+        "factuality": 2
+      },
+      "reasoning_score": 0.3125,
+      "judge_ok": true
+    },
+    {
+      "idx": 127,
+      "trace_idx": 13,
+      "bin_label": "30-40",
+      "confidence": 0.5782086397985142,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "reasoning_score": 0.5,
+      "judge_ok": true
+    },
+    {
+      "idx": 830,
+      "trace_idx": 12,
+      "bin_label": "30-40",
+      "confidence": 0.5500841740255527,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 3,
+        "factuality": 2
+      },
+      "reasoning_score": 0.3125,
+      "judge_ok": true
+    },
+    {
+      "idx": 106,
+      "trace_idx": 14,
+      "bin_label": "40-50",
+      "confidence": 0.41109646946032147,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true
+    },
+    {
+      "idx": 394,
+      "trace_idx": 4,
+      "bin_label": "40-50",
+      "confidence": 0.4467174178146266,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true
+    },
+    {
+      "idx": 46,
+      "trace_idx": 9,
+      "bin_label": "40-50",
+      "confidence": 0.5256986868217228,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 1,
+        "utility": 1,
+        "coherence": 1,
+        "factuality": 1
+      },
+      "reasoning_score": 0.0,
+      "judge_ok": true
+    },
+    {
+      "idx": 879,
+      "trace_idx": 0,
+      "bin_label": "40-50",
+      "confidence": 0.39634294756405664,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 3,
+        "coherence": 4,
+        "factuality": 2
+      },
+      "reasoning_score": 0.4375,
+      "judge_ok": true
+    },
+    {
+      "idx": 913,
+      "trace_idx": 13,
+      "bin_label": "40-50",
+      "confidence": 0.49152532203271454,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true
+    },
+    {
+      "idx": 753,
+      "trace_idx": 4,
+      "bin_label": "30-40",
+      "confidence": 0.5463403487140355,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 3
+      },
+      "reasoning_score": 0.375,
+      "judge_ok": true
+    },
+    {
+      "idx": 358,
+      "trace_idx": 2,
+      "bin_label": "40-50",
+      "confidence": 0.3919791589019029,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 2
+      },
+      "reasoning_score": 0.25,
+      "judge_ok": true
+    },
+    {
+      "idx": 193,
+      "trace_idx": 8,
+      "bin_label": "40-50",
+      "confidence": 0.4855117759958089,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true
+    },
+    {
+      "idx": 617,
+      "trace_idx": 3,
+      "bin_label": "40-50",
+      "confidence": 0.49325960482767506,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "reasoning_score": 0.5,
+      "judge_ok": true
+    },
+    {
+      "idx": 388,
+      "trace_idx": 15,
+      "bin_label": "40-50",
+      "confidence": 0.3962818213924098,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true
+    },
+    {
+      "idx": 825,
+      "trace_idx": 1,
+      "bin_label": "40-50",
+      "confidence": 0.39657417968696534,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true
+    },
+    {
+      "idx": 343,
+      "trace_idx": 9,
+      "bin_label": "30-40",
+      "confidence": 0.6104508410323287,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "reasoning_score": 0.5,
+      "judge_ok": true
+    },
+    {
+      "idx": 555,
+      "trace_idx": 13,
+      "bin_label": "40-50",
+      "confidence": 0.397332667783659,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true
+    },
+    {
+      "idx": 125,
+      "trace_idx": 3,
+      "bin_label": "40-50",
+      "confidence": 0.431214612958356,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true
+    },
+    {
+      "idx": 53,
+      "trace_idx": 1,
+      "bin_label": "40-50",
+      "confidence": 0.4259874494579775,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true
+    },
+    {
+      "idx": 437,
+      "trace_idx": 14,
+      "bin_label": "40-50",
+      "confidence": 0.41092126164066217,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 2
+      },
+      "reasoning_score": 0.25,
+      "judge_ok": true
+    },
+    {
+      "idx": 265,
+      "trace_idx": 8,
+      "bin_label": "40-50",
+      "confidence": 0.3996958141087186,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true
+    },
+    {
+      "idx": 438,
+      "trace_idx": 5,
+      "bin_label": "40-50",
+      "confidence": 0.5301655188841667,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true
+    },
+    {
+      "idx": 471,
+      "trace_idx": 0,
+      "bin_label": "30-40",
+      "confidence": 0.5486939868281724,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 2
+      },
+      "reasoning_score": 0.25,
+      "judge_ok": true
+    },
+    {
+      "idx": 707,
+      "trace_idx": 15,
+      "bin_label": "40-50",
+      "confidence": 0.5238410374798246,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true
+    },
+    {
+      "idx": 774,
+      "trace_idx": 9,
+      "bin_label": "40-50",
+      "confidence": 0.5348078586520487,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true
+    },
+    {
+      "idx": 706,
+      "trace_idx": 8,
+      "bin_label": "40-50",
+      "confidence": 0.48714589559238575,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 2
+      },
+      "reasoning_score": 0.25,
+      "judge_ok": true
+    },
+    {
+      "idx": 590,
+      "trace_idx": 10,
+      "bin_label": "40-50",
+      "confidence": 0.46125785012619785,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true
+    },
+    {
+      "idx": 460,
+      "trace_idx": 7,
+      "bin_label": "40-50",
+      "confidence": 0.45228548100316757,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true
+    },
+    {
+      "idx": 676,
+      "trace_idx": 6,
+      "bin_label": "40-50",
+      "confidence": 0.4430580284692002,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true
+    },
+    {
+      "idx": 77,
+      "trace_idx": 5,
+      "bin_label": "40-50",
+      "confidence": 0.4028321867897308,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true
+    }
+  ]
+}

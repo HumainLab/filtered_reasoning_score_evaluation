@@ -1,0 +1,136 @@
+================================================================================
+REASONING SCORE VS ACCURACY CORRELATION ANALYSIS
+Generated: 2026-01-28 23:40:30
+================================================================================
+
+1. SUMMARY STATISTICS
+----------------------------------------
+Total model-dataset combinations: 44
+Accuracy range: 0.4% - 93.5%
+Reasoning range: 57.4% - 99.1%
+Within-model correlation range: -0.112 - 0.813
+
+2. CROSS-MODEL CORRELATION
+----------------------------------------
+Pearson correlation (Reasoning vs Accuracy): 0.4354
+P-value: 3.1340e-03
+Linear regression: Accuracy = 0.976 * Reasoning + -0.291
+R-squared: 0.1896
+
+3. PER-DATASET ANALYSIS
+----------------------------------------
+
+AQUA (7 models):
+  Cross-model correlation: 0.704 (p=0.0774)
+  Model                            Accuracy    Reasoning  Within-Corr
+  ----------------------------------------------------------------
+  Phi-4-reasoning                    84.25%       86.42%       0.328
+  Qwen2.5-Math-7B                    70.12%       84.91%       0.626
+  Qwen2.5-Math-7B                    66.93%       84.69%       0.588
+  phi-4                              58.27%       95.03%       0.248
+  DeepSeek-R1-Distill-Qwen-7B        58.10%       86.91%       0.402
+  Llama-3.1-8B-Instruct              47.52%       67.02%       0.640
+  gemma-7b                           39.29%       57.53%       0.435
+
+COMMONSENSE_QA (7 models):
+  Cross-model correlation: 0.087 (p=0.8532)
+  Model                            Accuracy    Reasoning  Within-Corr
+  ----------------------------------------------------------------
+  Qwen2.5-7B-Instruct                79.93%       90.27%       0.813
+  Llama-3.1-8B-Instruct              75.28%       79.08%       0.624
+  Qwen2.5-Math-7B                    51.07%       77.03%       0.330
+  DeepSeek-R1-Distill-Qwen-1.5B      40.55%       61.96%       0.704
+  DeepSeek-R1-Distill-Qwen-7B        26.87%       78.83%       0.122
+  phi-4                               8.68%       90.80%      -0.006
+  Phi-4-reasoning                     7.57%       76.05%       0.069
+
+GPQA (9 models):
+  Cross-model correlation: -0.724 (p=0.0275)
+  Model                            Accuracy    Reasoning  Within-Corr
+  ----------------------------------------------------------------
+  Llama-3.1-8B-Instruct              49.66%       69.46%       0.195
+  DeepSeek-R1-Distill-Qwen-7B        47.10%       71.53%       0.148
+  Phi-4-reasoning                    43.53%       73.78%       0.130
+  Qwen2.5-Math-7B                    34.23%       69.19%       0.271
+  Qwen2.5-Math-7B                    34.23%       69.09%       0.267
+  DeepSeek-R1-Distill-Qwen-1.5B      32.29%       63.67%       0.194
+  Qwen2.5-7B-Instruct                31.54%       77.31%       0.264
+  gemma-7b                           12.76%       75.82%      -0.096
+  phi-4                               0.45%       90.90%      -0.071
+
+GSM8K (7 models):
+  Cross-model correlation: 0.270 (p=0.5580)
+  Model                            Accuracy    Reasoning  Within-Corr
+  ----------------------------------------------------------------
+  phi-4                              93.48%       99.05%       0.397
+  Qwen2.5-7B-Instruct                87.86%       94.55%       0.748
+  Llama-3.1-8B-Instruct              81.03%       88.26%       0.795
+  DeepSeek-R1-Distill-Qwen-7B        80.06%       93.72%       0.562
+  gemma-7b                           53.49%       72.94%       0.777
+  DeepSeek-R1-Distill-Qwen-1.5B      39.89%       79.13%       0.270
+  Phi-4-reasoning                    10.31%       96.78%      -0.055
+
+MATH500 (7 models):
+  Cross-model correlation: 0.961 (p=0.0006)
+  Model                            Accuracy    Reasoning  Within-Corr
+  ----------------------------------------------------------------
+  DeepSeek-R1-Distill-Qwen-7B        70.34%       89.84%       0.685
+  Qwen2.5-Math-7B                    66.40%       89.85%       0.582
+  Qwen2.5-Math-7B                    65.53%       89.42%       0.562
+  Phi-4-reasoning                    62.40%       92.12%       0.310
+  Qwen2.5-7B-Instruct                54.11%       89.33%       0.490
+  Llama-3.1-8B-Instruct              34.29%       65.46%       0.623
+  gemma-7b                           12.35%       57.42%       0.400
+
+SVAMP (7 models):
+  Cross-model correlation: 0.357 (p=0.4313)
+  Model                            Accuracy    Reasoning  Within-Corr
+  ----------------------------------------------------------------
+  Qwen2.5-7B-Instruct                91.37%       93.21%       0.571
+  Qwen2.5-Math-7B                    76.82%       92.79%       0.444
+  DeepSeek-R1-Distill-Qwen-7B        73.09%       90.20%       0.435
+  Llama-3.1-8B-Instruct              72.00%       86.51%       0.482
+  gemma-7b                           52.09%       74.77%       0.547
+  DeepSeek-R1-Distill-Qwen-1.5B      24.23%       72.56%       0.204
+  Phi-4-reasoning                    12.46%       94.58%      -0.112
+
+4. BOOTSTRAP SAMPLING ANALYSIS
+----------------------------------------
+How many samples needed for stable estimates?
+
+Example: DeepSeek-R1-Distill-Qwen-1.5B on gpqa (N=384)
+Full accuracy: 32.29%, Full reasoning: 63.67%
+
+     N |   Acc Mean |    Acc Std |  Reas Mean |   Reas Std
+------------------------------------------------------------
+    10 |     34.80% |     13.08% |     64.51% |      6.60%
+    25 |     30.68% |      8.58% |     64.21% |      4.31%
+    50 |     31.46% |      6.01% |     63.58% |      3.33%
+   100 |     31.60% |      3.80% |     63.70% |      1.92%
+   200 |     32.62% |      2.51% |     63.58% |      1.26%
+
+5. KEY FINDINGS
+----------------------------------------
+High within-model correlation (>0.7): 5 combos
+  - DeepSeek-R1-Distill-Qwen-1.5B on commonsense_qa: 0.704
+  - Qwen2.5-7B-Instruct on gsm8k: 0.748
+  - Qwen2.5-7B-Instruct on commonsense_qa: 0.813
+  - gemma-7b on gsm8k: 0.777
+  - Llama-3.1-8B-Instruct on gsm8k: 0.795
+
+Low within-model correlation (<0.2): 11 combos
+  - DeepSeek-R1-Distill-Qwen-1.5B on gpqa: 0.194
+  - DeepSeek-R1-Distill-Qwen-7B on gpqa: 0.148
+  - DeepSeek-R1-Distill-Qwen-7B on commonsense_qa: 0.122
+  - gemma-7b on gpqa: -0.096
+  - Llama-3.1-8B-Instruct on gpqa: 0.195
+
+Anomalies (reasoning > 90%, accuracy < 30%): 4 combos
+  - phi-4 on gpqa: 0.4% acc, 90.9% reas
+  - phi-4 on commonsense_qa: 8.7% acc, 90.8% reas
+  - Phi-4-reasoning on gsm8k: 10.3% acc, 96.8% reas
+  - Phi-4-reasoning on svamp: 12.5% acc, 94.6% reas
+
+================================================================================
+END OF REPORT
+================================================================================

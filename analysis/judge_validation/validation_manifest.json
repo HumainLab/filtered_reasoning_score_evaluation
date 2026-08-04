@@ -1,0 +1,1387 @@
+{
+  "seed": 42,
+  "stratified": true,
+  "strata": [
+    "correct_low",
+    "correct_mid",
+    "correct_high",
+    "incorrect_low",
+    "incorrect_mid",
+    "incorrect_high"
+  ],
+  "samples_per_combo": 9,
+  "total_samples": 500,
+  "n_combos": 54,
+  "combos": {
+    "DeepSeek-R1-Distill-Qwen-1.5B::gsm8k": {
+      "model_dir": "DeepSeek-R1-Distill-Qwen-1.5B",
+      "dataset": "gsm8k",
+      "result_path": "/home1/10757/manasp123/reasoning-models-eval/evaluation/exports/cot_analysis/DeepSeek-R1-Distill-Qwen-1.5B/gsm8k/cot_analysis_6b178b1f-5c19-4b3d-ba05-00dbd102ad44_20260130_235211.json",
+      "indices": [
+        58,
+        153,
+        204,
+        209,
+        370,
+        383,
+        812,
+        1115,
+        1123,
+        1233
+      ],
+      "n": 10,
+      "strata_breakdown": {
+        "incorrect_mid": 1,
+        "incorrect_low": 1,
+        "correct_high": 5,
+        "incorrect_high": 1,
+        "correct_mid": 1,
+        "correct_low": 1
+      }
+    },
+    "DeepSeek-R1-Distill-Qwen-1.5B::math500": {
+      "model_dir": "DeepSeek-R1-Distill-Qwen-1.5B",
+      "dataset": "math500",
+      "result_path": "/home1/10757/manasp123/reasoning-models-eval/evaluation/exports/cot_analysis/DeepSeek-R1-Distill-Qwen-1.5B/math500/cot_analysis_ceb824d0-d15d-48d5-9dd4-827c8ca18a0c_20260130_231341.json",
+      "indices": [
+        21,
+        36,
+        39,
+        40,
+        45,
+        102,
+        112,
+        249,
+        296,
+        355
+      ],
+      "n": 10,
+      "strata_breakdown": {
+        "correct_high": 3,
+        "incorrect_mid": 2,
+        "correct_mid": 1,
+        "incorrect_high": 2,
+        "incorrect_low": 1,
+        "correct_low": 1
+      }
+    },
+    "DeepSeek-R1-Distill-Qwen-1.5B::svamp": {
+      "model_dir": "DeepSeek-R1-Distill-Qwen-1.5B",
+      "dataset": "svamp",
+      "result_path": "/home1/10757/manasp123/reasoning-models-eval/evaluation/exports/cot_analysis/DeepSeek-R1-Distill-Qwen-1.5B/svamp/cot_analysis_2d8aa799-7196-421b-b68c-efd703e92b3d_20260130_232951.json",
+      "indices": [
+        278,
+        301,
+        380,
+        614,
+        646,
+        746,
+        747,
+        782,
+        824,
+        960
+      ],
+      "n": 10,
+      "strata_breakdown": {
+        "correct_high": 5,
+        "incorrect_low": 1,
+        "correct_mid": 1,
+        "incorrect_mid": 1,
+        "correct_low": 1,
+        "incorrect_high": 1
+      }
+    },
+    "DeepSeek-R1-Distill-Qwen-1.5B::aqua": {
+      "model_dir": "DeepSeek-R1-Distill-Qwen-1.5B",
+      "dataset": "aqua",
+      "result_path": "/home1/10757/manasp123/reasoning-models-eval/evaluation/exports/cot_analysis/DeepSeek-R1-Distill-Qwen-1.5B/aqua/cot_analysis_864bf582-6c46-406f-9cf0-e27f77645ae2_20260130_230723.json",
+      "indices": [
+        0,
+        45,
+        68,
+        75,
+        107,
+        157,
+        159,
+        175,
+        184,
+        199
+      ],
+      "n": 10,
+      "strata_breakdown": {
+        "incorrect_mid": 3,
+        "correct_high": 2,
+        "correct_low": 1,
+        "incorrect_low": 1,
+        "incorrect_high": 2,
+        "correct_mid": 1
+      }
+    },
+    "DeepSeek-R1-Distill-Qwen-1.5B::gpqa": {
+      "model_dir": "DeepSeek-R1-Distill-Qwen-1.5B",
+      "dataset": "gpqa",
+      "result_path": "/home1/10757/manasp123/reasoning-models-eval/evaluation/exports/cot_analysis/DeepSeek-R1-Distill-Qwen-1.5B/gpqa/cot_analysis_3f016b3d-a017-42c7-9970-3e3d24743074_20260130_231208.json",
+      "indices": [
+        32,
+        82,
+        104,
+        173,
+        207,
+        261,
+        273,
+        308,
+        345,
+        386
+      ],
+      "n": 10,
+      "strata_breakdown": {
+        "incorrect_mid": 2,
+        "incorrect_low": 2,
+        "incorrect_high": 2,
+        "correct_mid": 1,
+        "correct_high": 2,
+        "correct_low": 1
+      }
+    },
+    "DeepSeek-R1-Distill-Qwen-1.5B::commonsense_qa": {
+      "model_dir": "DeepSeek-R1-Distill-Qwen-1.5B",
+      "dataset": "commonsense_qa",
+      "result_path": "/home1/10757/manasp123/reasoning-models-eval/evaluation/exports/cot_analysis/DeepSeek-R1-Distill-Qwen-1.5B/commonsense_qa/cot_analysis_904b0fc3-1f8e-4686-be84-357096c80027_20260130_234637.json",
+      "indices": [
+        140,
+        212,
+        421,
+        625,
+        786,
+        811,
+        1030,
+        1059,
+        1147,
+        1177
+      ],
+      "n": 10,
+      "strata_breakdown": {
+        "incorrect_low": 2,
+        "incorrect_high": 2,
+        "incorrect_mid": 2,
+        "correct_high": 2,
+        "correct_mid": 1,
+        "correct_low": 1
+      }
+    },
+    "DeepSeek-R1-Distill-Qwen-7B::gsm8k": {
+      "model_dir": "DeepSeek-R1-Distill-Qwen-7B",
+      "dataset": "gsm8k",
+      "result_path": "/home1/10757/manasp123/reasoning-models-eval/evaluation/exports/cot_analysis/DeepSeek-R1-Distill-Qwen-7B/gsm8k/cot_analysis_262cbc5b-2767-4bb2-80df-62e65587e9d0_20260131_000412.json",
+      "indices": [
+        37,
+        75,
+        89,
+        160,
+        229,
+        454,
+        532,
+        633,
+        864,
+        989
+      ],
+      "n": 10,
+      "strata_breakdown": {
+        "correct_high": 5,
+        "incorrect_mid": 1,
+        "incorrect_high": 1,
+        "correct_low": 1,
+        "incorrect_low": 1,
+        "correct_mid": 1
+      }
+    },
+    "DeepSeek-R1-Distill-Qwen-7B::math500": {
+      "model_dir": "DeepSeek-R1-Distill-Qwen-7B",
+      "dataset": "math500",
+      "result_path": "/home1/10757/manasp123/reasoning-models-eval/evaluation/exports/cot_analysis/DeepSeek-R1-Distill-Qwen-7B/math500/cot_analysis_60aa51c2-4a04-4896-9d8f-125378457066_20260130_232946.json",
+      "indices": [
+        108,
+        139,
+        148,
+        188,
+        279,
+        330,
+        331,
+        352,
+        381,
+        492
+      ],
+      "n": 10,
+      "strata_breakdown": {
+        "correct_high": 4,
+        "incorrect_high": 2,
+        "incorrect_mid": 1,
+        "incorrect_low": 1,
+        "correct_low": 1,
+        "correct_mid": 1
+      }
+    },
+    "DeepSeek-R1-Distill-Qwen-7B::svamp": {
+      "model_dir": "DeepSeek-R1-Distill-Qwen-7B",
+      "dataset": "svamp",
+      "result_path": "/home1/10757/manasp123/reasoning-models-eval/evaluation/exports/cot_analysis/DeepSeek-R1-Distill-Qwen-7B/svamp/cot_analysis_79673a27-1404-44b9-887f-274d3fda6ffa_20260130_235638.json",
+      "indices": [
+        293,
+        307,
+        395,
+        428,
+        517,
+        522,
+        578,
+        694,
+        735,
+        789
+      ],
+      "n": 10,
+      "strata_breakdown": {
+        "correct_high": 5,
+        "incorrect_low": 1,
+        "incorrect_mid": 1,
+        "correct_mid": 1,
+        "correct_low": 1,
+        "incorrect_high": 1
+      }
+    },
+    "DeepSeek-R1-Distill-Qwen-7B::aqua": {
+      "model_dir": "DeepSeek-R1-Distill-Qwen-7B",
+      "dataset": "aqua",
+      "result_path": "/home1/10757/manasp123/reasoning-models-eval/evaluation/exports/cot_analysis/DeepSeek-R1-Distill-Qwen-7B/aqua/cot_analysis_b57a403b-0b90-4623-96d0-3cacb21c4460_20260130_232700.json",
+      "indices": [
+        32,
+        46,
+        75,
+        94,
+        108,
+        112,
+        113,
+        143,
+        181,
+        208
+      ],
+      "n": 10,
+      "strata_breakdown": {
+        "correct_high": 4,
+        "incorrect_low": 1,
+        "correct_low": 1,
+        "incorrect_high": 2,
+        "incorrect_mid": 1,
+        "correct_mid": 1
+      }
+    },
+    "DeepSeek-R1-Distill-Qwen-7B::gpqa": {
+      "model_dir": "DeepSeek-R1-Distill-Qwen-7B",
+      "dataset": "gpqa",
+      "result_path": "/home1/10757/manasp123/reasoning-models-eval/evaluation/exports/cot_analysis/DeepSeek-R1-Distill-Qwen-7B/gpqa/cot_analysis_e09c015e-587c-4522-bea5-0d426acbaa9f_20260130_235329.json",
+      "indices": [
+        108,
+        167,
+        274,
+        278,
+        292,
+        383,
+        404,
+        415,
+        416,
+        437
+      ],
+      "n": 10,
+      "strata_breakdown": {
+        "correct_high": 2,
+        "correct_mid": 2,
+        "incorrect_mid": 2,
+        "incorrect_low": 1,
+        "incorrect_high": 2,
+        "correct_low": 1
+      }
+    },
+    "DeepSeek-R1-Distill-Qwen-7B::commonsense_qa": {
+      "model_dir": "DeepSeek-R1-Distill-Qwen-7B",
+      "dataset": "commonsense_qa",
+      "result_path": "/home1/10757/manasp123/reasoning-models-eval/evaluation/exports/cot_analysis/DeepSeek-R1-Distill-Qwen-7B/commonsense_qa/cot_analysis_6470bc84-cb73-4e3a-a4a8-e9ede6977d99_20260131_002258.json",
+      "indices": [
+        175,
+        206,
+        481,
+        624,
+        626,
+        681,
+        932,
+        1006,
+        1105,
+        1106
+      ],
+      "n": 10,
+      "strata_breakdown": {
+        "incorrect_mid": 2,
+        "correct_high": 3,
+        "correct_mid": 1,
+        "incorrect_high": 2,
+        "correct_low": 1,
+        "incorrect_low": 1
+      }
+    },
+    "Llama-3.1-8B-Instruct::gsm8k": {
+      "model_dir": "Llama-3.1-8B-Instruct",
+      "dataset": "gsm8k",
+      "result_path": "/home1/10757/manasp123/reasoning-models-eval/evaluation/exports/cot_analysis/Llama-3.1-8B-Instruct/gsm8k/cot_analysis_cd0a7603-1693-4b06-96d8-59f670ec0fa2_20260131_011119.json",
+      "indices": [
+        68,
+        126,
+        244,
+        296,
+        326,
+        524,
+        916,
+        937,
+        1014,
+        1182
+      ],
+      "n": 10,
+      "strata_breakdown": {
+        "correct_high": 5,
+        "incorrect_low": 1,
+        "correct_mid": 1,
+        "incorrect_mid": 1,
+        "incorrect_high": 1,
+        "correct_low": 1
+      }
+    },
+    "Llama-3.1-8B-Instruct::math500": {
+      "model_dir": "Llama-3.1-8B-Instruct",
+      "dataset": "math500",
+      "result_path": "/home1/10757/manasp123/reasoning-models-eval/evaluation/exports/cot_analysis/Llama-3.1-8B-Instruct/math500/cot_analysis_95464980-64f1-4085-b7d4-d75f11f5156c_20260131_005242.json",
+      "indices": [
+        102,
+        108,
+        136,
+        290,
+        297,
+        310,
+        394,
+        418,
+        426,
+        458
+      ],
+      "n": 10,
+      "strata_breakdown": {
+        "correct_high": 2,
+        "incorrect_mid": 3,
+        "incorrect_low": 2,
+        "correct_mid": 1,
+        "incorrect_high": 1,
+        "correct_low": 1
+      }
+    },
+    "Llama-3.1-8B-Instruct::svamp": {
+      "model_dir": "Llama-3.1-8B-Instruct",
+      "dataset": "svamp",
+      "result_path": "/home1/10757/manasp123/reasoning-models-eval/evaluation/exports/cot_analysis/Llama-3.1-8B-Instruct/svamp/cot_analysis_36a56ad2-b598-4bb3-a124-600c953c7804_20260131_010828.json",
+      "indices": [
+        22,
+        148,
+        150,
+        236,
+        450,
+        688,
+        698,
+        807,
+        847
+      ],
+      "n": 9,
+      "strata_breakdown": {
+        "correct_high": 4,
+        "incorrect_low": 1,
+        "correct_mid": 1,
+        "correct_low": 1,
+        "incorrect_mid": 1,
+        "incorrect_high": 1
+      }
+    },
+    "Llama-3.1-8B-Instruct::aqua": {
+      "model_dir": "Llama-3.1-8B-Instruct",
+      "dataset": "aqua",
+      "result_path": "/home1/10757/manasp123/reasoning-models-eval/evaluation/exports/cot_analysis/Llama-3.1-8B-Instruct/aqua/cot_analysis_68f4bfa8-07af-49c8-90af-98d8dc971279_20260131_004937.json",
+      "indices": [
+        10,
+        66,
+        77,
+        96,
+        150,
+        162,
+        182,
+        219,
+        237
+      ],
+      "n": 9,
+      "strata_breakdown": {
+        "correct_low": 1,
+        "correct_high": 2,
+        "incorrect_low": 2,
+        "incorrect_high": 2,
+        "incorrect_mid": 1,
+        "correct_mid": 1
+      }
+    },
+    "Llama-3.1-8B-Instruct::gpqa": {
+      "model_dir": "Llama-3.1-8B-Instruct",
+      "dataset": "gpqa",
+      "result_path": "/home1/10757/manasp123/reasoning-models-eval/evaluation/exports/cot_analysis/Llama-3.1-8B-Instruct/gpqa/cot_analysis_88070f79-25a4-4613-9a00-ddc5acc6b832_20260130_213803.json",
+      "indices": [
+        60,
+        79,
+        89,
+        175,
+        228,
+        332,
+        414,
+        436,
+        440
+      ],
+      "n": 9,
+      "strata_breakdown": {
+        "incorrect_high": 2,
+        "incorrect_mid": 2,
+        "correct_high": 2,
+        "incorrect_low": 1,
+        "correct_mid": 1,
+        "correct_low": 1
+      }
+    },
+    "Llama-3.1-8B-Instruct::commonsense_qa": {
+      "model_dir": "Llama-3.1-8B-Instruct",
+      "dataset": "commonsense_qa",
+      "result_path": "/home1/10757/manasp123/reasoning-models-eval/evaluation/exports/cot_analysis/Llama-3.1-8B-Instruct/commonsense_qa/cot_analysis_2a9f7f29-8c72-4d9b-b578-5f958a6f6b4a_20260204_202750.json",
+      "indices": [
+        6,
+        245,
+        405,
+        658,
+        760,
+        780,
+        831,
+        992,
+        1051
+      ],
+      "n": 9,
+      "strata_breakdown": {
+        "correct_mid": 1,
+        "correct_low": 1,
+        "correct_high": 2,
+        "incorrect_low": 2,
+        "incorrect_mid": 1,
+        "incorrect_high": 2
+      }
+    },
+    "Qwen2.5-7B-Instruct::gsm8k": {
+      "model_dir": "Qwen2.5-7B-Instruct",
+      "dataset": "gsm8k",
+      "result_path": "/home1/10757/manasp123/reasoning-models-eval/evaluation/exports/cot_analysis/Qwen2.5-7B-Instruct/gsm8k/cot_analysis_2ac90ed3-50ae-4b94-9e21-b8e9eadb7334_20260131_002735.json",
+      "indices": [
+        26,
+        77,
+        138,
+        247,
+        314,
+        510,
+        590,
+        1012,
+        1170
+      ],
+      "n": 9,
+      "strata_breakdown": {
+        "correct_high": 4,
+        "incorrect_high": 2,
+        "incorrect_low": 1,
+        "incorrect_mid": 1,
+        "correct_mid": 1
+      }
+    },
+    "Qwen2.5-7B-Instruct::math500": {
+      "model_dir": "Qwen2.5-7B-Instruct",
+      "dataset": "math500",
+      "result_path": "/home1/10757/manasp123/reasoning-models-eval/evaluation/exports/cot_analysis/Qwen2.5-7B-Instruct/math500/cot_analysis_8ed3bd24-96aa-457c-b6b6-9a6cc4b0fa8f_20260130_235712.json",
+      "indices": [
+        39,
+        61,
+        63,
+        166,
+        312,
+        350,
+        403,
+        423,
+        445
+      ],
+      "n": 9,
+      "strata_breakdown": {
+        "correct_high": 2,
+        "incorrect_high": 2,
+        "incorrect_mid": 1,
+        "incorrect_low": 2,
+        "correct_low": 1,
+        "correct_mid": 1
+      }
+    },
+    "Qwen2.5-7B-Instruct::svamp": {
+      "model_dir": "Qwen2.5-7B-Instruct",
+      "dataset": "svamp",
+      "result_path": "/home1/10757/manasp123/reasoning-models-eval/evaluation/exports/cot_analysis/Qwen2.5-7B-Instruct/svamp/cot_analysis_17ea7deb-4a65-40e2-8a9e-bc247344c6e0_20260131_002137.json",
+      "indices": [
+        183,
+        267,
+        498,
+        697,
+        738,
+        871,
+        883,
+        934,
+        967
+      ],
+      "n": 9,
+      "strata_breakdown": {
+        "correct_high": 4,
+        "incorrect_high": 1,
+        "incorrect_low": 1,
+        "correct_low": 1,
+        "incorrect_mid": 1,
+        "correct_mid": 1
+      }
+    },
+    "Qwen2.5-7B-Instruct::aqua": {
+      "model_dir": "Qwen2.5-7B-Instruct",
+      "dataset": "aqua",
+      "result_path": "/home1/10757/manasp123/reasoning-models-eval/evaluation/exports/cot_analysis/Qwen2.5-7B-Instruct/aqua/cot_analysis_0e3d7646-565c-45df-a59b-a024cf75dac2_20260130_235855.json",
+      "indices": [
+        75,
+        117,
+        118,
+        146,
+        153,
+        170,
+        200,
+        232,
+        238
+      ],
+      "n": 9,
+      "strata_breakdown": {
+        "correct_high": 3,
+        "incorrect_low": 1,
+        "incorrect_high": 2,
+        "incorrect_mid": 1,
+        "correct_low": 1,
+        "correct_mid": 1
+      }
+    },
+    "Qwen2.5-7B-Instruct::gpqa": {
+      "model_dir": "Qwen2.5-7B-Instruct",
+      "dataset": "gpqa",
+      "result_path": "/home1/10757/manasp123/reasoning-models-eval/evaluation/exports/cot_analysis/Qwen2.5-7B-Instruct/gpqa/cot_analysis_ace643c1-a425-4790-aa8a-e2f47ed9f876_20260131_000619.json",
+      "indices": [
+        89,
+        103,
+        109,
+        157,
+        169,
+        177,
+        237,
+        296,
+        442
+      ],
+      "n": 9,
+      "strata_breakdown": {
+        "incorrect_high": 2,
+        "correct_high": 2,
+        "incorrect_low": 1,
+        "correct_mid": 1,
+        "incorrect_mid": 2,
+        "correct_low": 1
+      }
+    },
+    "Qwen2.5-7B-Instruct::commonsense_qa": {
+      "model_dir": "Qwen2.5-7B-Instruct",
+      "dataset": "commonsense_qa",
+      "result_path": "/home1/10757/manasp123/reasoning-models-eval/evaluation/exports/cot_analysis/Qwen2.5-7B-Instruct/commonsense_qa/cot_analysis_b46ff63d-b583-43e1-a443-4d06e48507d1_20260131_003926.json",
+      "indices": [
+        4,
+        39,
+        140,
+        185,
+        266,
+        278,
+        398,
+        849,
+        1160
+      ],
+      "n": 9,
+      "strata_breakdown": {
+        "correct_high": 4,
+        "incorrect_high": 1,
+        "incorrect_mid": 1,
+        "correct_mid": 1,
+        "incorrect_low": 1,
+        "correct_low": 1
+      }
+    },
+    "Qwen2.5-Math-7B::gsm8k": {
+      "model_dir": "Qwen2.5-Math-7B",
+      "dataset": "gsm8k",
+      "result_path": "/home1/10757/manasp123/reasoning-models-eval/evaluation/exports/cot_analysis/Qwen2.5-Math-7B/gsm8k/cot_analysis_1f9b4510-82db-42cf-8726-8665784351ed_20260130_235203.json",
+      "indices": [
+        106,
+        203,
+        298,
+        481,
+        515,
+        675,
+        748,
+        793,
+        875
+      ],
+      "n": 9,
+      "strata_breakdown": {
+        "incorrect_mid": 1,
+        "correct_high": 3,
+        "incorrect_low": 1,
+        "incorrect_high": 2,
+        "correct_mid": 1,
+        "correct_low": 1
+      }
+    },
+    "Qwen2.5-Math-7B::math500": {
+      "model_dir": "Qwen2.5-Math-7B",
+      "dataset": "math500",
+      "result_path": "/home1/10757/manasp123/reasoning-models-eval/evaluation/exports/cot_analysis/Qwen2.5-Math-7B/math500/cot_analysis_d33b7b38-15dc-4bc3-80ef-ecb6f6ded691_20260130_231332.json",
+      "indices": [
+        65,
+        67,
+        123,
+        136,
+        364,
+        369,
+        385,
+        400,
+        417
+      ],
+      "n": 9,
+      "strata_breakdown": {
+        "correct_high": 4,
+        "incorrect_mid": 1,
+        "incorrect_low": 1,
+        "incorrect_high": 2,
+        "correct_mid": 1
+      }
+    },
+    "Qwen2.5-Math-7B::svamp": {
+      "model_dir": "Qwen2.5-Math-7B",
+      "dataset": "svamp",
+      "result_path": "/home1/10757/manasp123/reasoning-models-eval/evaluation/exports/cot_analysis/Qwen2.5-Math-7B/svamp/cot_analysis_97927e98-4eb5-48f6-96de-1c7511ce6fa0_20260130_232832.json",
+      "indices": [
+        183,
+        489,
+        666,
+        767,
+        909,
+        911,
+        922,
+        949,
+        989
+      ],
+      "n": 9,
+      "strata_breakdown": {
+        "correct_high": 4,
+        "incorrect_high": 1,
+        "incorrect_mid": 1,
+        "incorrect_low": 1,
+        "correct_mid": 1,
+        "correct_low": 1
+      }
+    },
+    "Qwen2.5-Math-7B::aqua": {
+      "model_dir": "Qwen2.5-Math-7B",
+      "dataset": "aqua",
+      "result_path": "/home1/10757/manasp123/reasoning-models-eval/evaluation/exports/cot_analysis/Qwen2.5-Math-7B/aqua/cot_analysis_ce557235-f9c2-4128-aac3-62c4c1434ea8_20260130_230714.json",
+      "indices": [
+        15,
+        23,
+        42,
+        50,
+        69,
+        113,
+        140,
+        151,
+        178
+      ],
+      "n": 9,
+      "strata_breakdown": {
+        "incorrect_high": 2,
+        "correct_high": 3,
+        "correct_mid": 1,
+        "incorrect_mid": 1,
+        "incorrect_low": 1,
+        "correct_low": 1
+      }
+    },
+    "Qwen2.5-Math-7B::gpqa": {
+      "model_dir": "Qwen2.5-Math-7B",
+      "dataset": "gpqa",
+      "result_path": "/home1/10757/manasp123/reasoning-models-eval/evaluation/exports/cot_analysis/Qwen2.5-Math-7B/gpqa/cot_analysis_3788f988-8f4c-46de-b9b7-7b086ecedcb6_20260130_231832.json",
+      "indices": [
+        72,
+        96,
+        136,
+        188,
+        203,
+        237,
+        346,
+        361,
+        422
+      ],
+      "n": 9,
+      "strata_breakdown": {
+        "incorrect_mid": 3,
+        "incorrect_high": 2,
+        "correct_mid": 1,
+        "correct_high": 1,
+        "correct_low": 1,
+        "incorrect_low": 1
+      }
+    },
+    "Qwen2.5-Math-7B::commonsense_qa": {
+      "model_dir": "Qwen2.5-Math-7B",
+      "dataset": "commonsense_qa",
+      "result_path": "/home1/10757/manasp123/reasoning-models-eval/evaluation/exports/cot_analysis/Qwen2.5-Math-7B/commonsense_qa/cot_analysis_3a747ec0-00fa-47ee-86da-cd088b344fd3_20260130_235545.json",
+      "indices": [
+        38,
+        86,
+        105,
+        210,
+        213,
+        531,
+        555,
+        1080,
+        1104
+      ],
+      "n": 9,
+      "strata_breakdown": {
+        "incorrect_mid": 2,
+        "correct_high": 3,
+        "incorrect_low": 1,
+        "incorrect_high": 1,
+        "correct_mid": 1,
+        "correct_low": 1
+      }
+    },
+    "gemma-7b::gsm8k": {
+      "model_dir": "gemma-7b",
+      "dataset": "gsm8k",
+      "result_path": "/home1/10757/manasp123/reasoning-models-eval/evaluation/exports/cot_analysis/gemma-7b/gsm8k/cot_analysis_2bbd950d-d309-4ddc-b1a6-d587f2344373_20260131_005845.json",
+      "indices": [
+        8,
+        63,
+        377,
+        451,
+        586,
+        735,
+        945,
+        975,
+        1035
+      ],
+      "n": 9,
+      "strata_breakdown": {
+        "incorrect_low": 3,
+        "correct_high": 2,
+        "incorrect_mid": 1,
+        "incorrect_high": 1,
+        "correct_low": 1,
+        "correct_mid": 1
+      }
+    },
+    "gemma-7b::math500": {
+      "model_dir": "gemma-7b",
+      "dataset": "math500",
+      "result_path": "/home1/10757/manasp123/reasoning-models-eval/evaluation/exports/cot_analysis/gemma-7b/math500/cot_analysis_a9dd0454-3183-4f41-9028-0bdd962d8027_20260131_002828.json",
+      "indices": [
+        32,
+        121,
+        214,
+        234,
+        244,
+        356,
+        381,
+        445,
+        452
+      ],
+      "n": 9,
+      "strata_breakdown": {
+        "incorrect_mid": 1,
+        "incorrect_low": 4,
+        "incorrect_high": 1,
+        "correct_high": 1,
+        "correct_mid": 1,
+        "correct_low": 1
+      }
+    },
+    "gemma-7b::svamp": {
+      "model_dir": "gemma-7b",
+      "dataset": "svamp",
+      "result_path": "/home1/10757/manasp123/reasoning-models-eval/evaluation/exports/cot_analysis/gemma-7b/svamp/cot_analysis_32c717e6-17e0-4093-8cc6-9c6dcdfbb773_20260131_005315.json",
+      "indices": [
+        49,
+        83,
+        161,
+        251,
+        381,
+        392,
+        421,
+        962,
+        974
+      ],
+      "n": 9,
+      "strata_breakdown": {
+        "incorrect_low": 3,
+        "correct_high": 2,
+        "incorrect_high": 1,
+        "correct_low": 1,
+        "incorrect_mid": 1,
+        "correct_mid": 1
+      }
+    },
+    "gemma-7b::aqua": {
+      "model_dir": "gemma-7b",
+      "dataset": "aqua",
+      "result_path": "/home1/10757/manasp123/reasoning-models-eval/evaluation/exports/cot_analysis/gemma-7b/aqua/cot_analysis_14f3f444-131a-452b-baa9-a4c91d6078b2_20260131_003159.json",
+      "indices": [
+        3,
+        11,
+        45,
+        73,
+        107,
+        136,
+        215,
+        226,
+        236
+      ],
+      "n": 9,
+      "strata_breakdown": {
+        "correct_low": 1,
+        "correct_high": 1,
+        "correct_mid": 1,
+        "incorrect_low": 3,
+        "incorrect_mid": 2,
+        "incorrect_high": 1
+      }
+    },
+    "gemma-7b::gpqa": {
+      "model_dir": "gemma-7b",
+      "dataset": "gpqa",
+      "result_path": "/home1/10757/manasp123/reasoning-models-eval/evaluation/exports/cot_analysis/gemma-7b/gpqa/cot_analysis_c70826cb-1643-4410-acbb-2debbb68ac34_20260131_004139.json",
+      "indices": [
+        48,
+        53,
+        63,
+        97,
+        160,
+        215,
+        247,
+        359,
+        440
+      ],
+      "n": 9,
+      "strata_breakdown": {
+        "incorrect_high": 3,
+        "incorrect_low": 2,
+        "incorrect_mid": 1,
+        "correct_low": 1,
+        "correct_mid": 1,
+        "correct_high": 1
+      }
+    },
+    "gemma-7b::commonsense_qa": {
+      "model_dir": "gemma-7b",
+      "dataset": "commonsense_qa",
+      "result_path": "/home1/10757/manasp123/reasoning-models-eval/evaluation/exports/cot_analysis/gemma-7b/commonsense_qa/cot_analysis_a20e1d0b-5219-4798-a753-4ce131d3859c_20260131_010914.json",
+      "indices": [
+        68,
+        212,
+        438,
+        562,
+        768,
+        854,
+        1109,
+        1135,
+        1220
+      ],
+      "n": 9,
+      "strata_breakdown": {
+        "incorrect_high": 2,
+        "correct_low": 1,
+        "incorrect_low": 3,
+        "correct_high": 1,
+        "correct_mid": 1,
+        "incorrect_mid": 1
+      }
+    },
+    "phi-4::gsm8k": {
+      "model_dir": "phi-4",
+      "dataset": "gsm8k",
+      "result_path": "/home1/10757/manasp123/reasoning-models-eval/evaluation/exports/cot_analysis/phi-4/gsm8k/cot_analysis_777c2458-bf14-48b6-bf44-bdb0ed5aab24_20260130_220941.json",
+      "indices": [
+        214,
+        336,
+        344,
+        423,
+        534,
+        613,
+        651,
+        987,
+        990
+      ],
+      "n": 9,
+      "strata_breakdown": {
+        "correct_high": 3,
+        "incorrect_high": 2,
+        "correct_mid": 1,
+        "incorrect_mid": 1,
+        "incorrect_low": 1,
+        "correct_low": 1
+      }
+    },
+    "phi-4::math500": {
+      "model_dir": "phi-4",
+      "dataset": "math500",
+      "result_path": "/home1/10757/manasp123/reasoning-models-eval/evaluation/exports/cot_analysis/phi-4/math500/cot_analysis_97e777ff-af55-4e96-83a6-cc2b8e849988_20260130_213929.json",
+      "indices": [
+        26,
+        69,
+        85,
+        93,
+        110,
+        275,
+        328,
+        352,
+        400
+      ],
+      "n": 9,
+      "strata_breakdown": {
+        "correct_high": 3,
+        "incorrect_high": 2,
+        "incorrect_low": 1,
+        "incorrect_mid": 1,
+        "correct_low": 1,
+        "correct_mid": 1
+      }
+    },
+    "phi-4::svamp": {
+      "model_dir": "phi-4",
+      "dataset": "svamp",
+      "result_path": "/home1/10757/manasp123/reasoning-models-eval/evaluation/exports/cot_analysis/phi-4/svamp/cot_analysis_394bba40-2305-4eb4-a4d4-03a9f60ed51b_20260130_215641.json",
+      "indices": [
+        138,
+        245,
+        278,
+        281,
+        447,
+        540,
+        703,
+        895,
+        983
+      ],
+      "n": 9,
+      "strata_breakdown": {
+        "incorrect_high": 2,
+        "correct_high": 3,
+        "correct_mid": 1,
+        "incorrect_low": 1,
+        "correct_low": 1,
+        "incorrect_mid": 1
+      }
+    },
+    "phi-4::aqua": {
+      "model_dir": "phi-4",
+      "dataset": "aqua",
+      "result_path": "/home1/10757/manasp123/reasoning-models-eval/evaluation/exports/cot_analysis/phi-4/aqua/cot_analysis_8e8a0619-d665-465d-a717-6a58dec19ef9_20260130_213330.json",
+      "indices": [
+        56,
+        65,
+        78,
+        159,
+        172,
+        173,
+        204,
+        205,
+        248
+      ],
+      "n": 9,
+      "strata_breakdown": {
+        "correct_high": 3,
+        "incorrect_high": 2,
+        "incorrect_mid": 1,
+        "incorrect_low": 1,
+        "correct_low": 1,
+        "correct_mid": 1
+      }
+    },
+    "phi-4::gpqa": {
+      "model_dir": "phi-4",
+      "dataset": "gpqa",
+      "result_path": "/home1/10757/manasp123/reasoning-models-eval/evaluation/exports/cot_analysis/phi-4/gpqa/cot_analysis_629966e5-63f1-4279-89f6-8b34ee14cf1d_20260130_214428.json",
+      "indices": [
+        43,
+        82,
+        93,
+        122,
+        217,
+        255,
+        275,
+        302,
+        439
+      ],
+      "n": 9,
+      "strata_breakdown": {
+        "incorrect_high": 3,
+        "incorrect_mid": 1,
+        "correct_low": 1,
+        "correct_high": 2,
+        "incorrect_low": 1,
+        "correct_mid": 1
+      }
+    },
+    "phi-4::commonsense_qa": {
+      "model_dir": "phi-4",
+      "dataset": "commonsense_qa",
+      "result_path": "/home1/10757/manasp123/reasoning-models-eval/evaluation/exports/cot_analysis/phi-4/commonsense_qa/cot_analysis_0cd53655-1a23-400f-bb59-458e13c8c74e_20260130_221754.json",
+      "indices": [
+        60,
+        237,
+        311,
+        398,
+        409,
+        483,
+        747,
+        822,
+        848
+      ],
+      "n": 9,
+      "strata_breakdown": {
+        "incorrect_high": 2,
+        "correct_high": 3,
+        "correct_low": 1,
+        "incorrect_mid": 1,
+        "incorrect_low": 1,
+        "correct_mid": 1
+      }
+    },
+    "Phi-4-reasoning::gsm8k": {
+      "model_dir": "Phi-4-reasoning",
+      "dataset": "gsm8k",
+      "result_path": "/home1/10757/manasp123/reasoning-models-eval/evaluation/exports/cot_analysis/Phi-4-reasoning/gsm8k/cot_analysis_d88753ca-e930-4694-94b9-24d6a996972d_20260130_221803.json",
+      "indices": [
+        96,
+        157,
+        242,
+        556,
+        601,
+        678,
+        746,
+        928,
+        1111
+      ],
+      "n": 9,
+      "strata_breakdown": {
+        "correct_high": 4,
+        "incorrect_low": 1,
+        "incorrect_high": 1,
+        "correct_mid": 1,
+        "incorrect_mid": 1,
+        "correct_low": 1
+      }
+    },
+    "Phi-4-reasoning::math500": {
+      "model_dir": "Phi-4-reasoning",
+      "dataset": "math500",
+      "result_path": "/home1/10757/manasp123/reasoning-models-eval/evaluation/exports/cot_analysis/Phi-4-reasoning/math500/cot_analysis_6bf292dd-2913-4535-a1b0-649ada5ad7e7_20260130_220014.json",
+      "indices": [
+        1,
+        136,
+        168,
+        223,
+        281,
+        303,
+        308,
+        353,
+        468
+      ],
+      "n": 9,
+      "strata_breakdown": {
+        "correct_high": 4,
+        "incorrect_mid": 1,
+        "incorrect_high": 1,
+        "correct_mid": 1,
+        "incorrect_low": 1,
+        "correct_low": 1
+      }
+    },
+    "Phi-4-reasoning::svamp": {
+      "model_dir": "Phi-4-reasoning",
+      "dataset": "svamp",
+      "result_path": "/home1/10757/manasp123/reasoning-models-eval/evaluation/exports/cot_analysis/Phi-4-reasoning/svamp/cot_analysis_ad9f582e-08f3-4098-8e20-aff415f66207_20260130_222206.json",
+      "indices": [
+        39,
+        75,
+        165,
+        253,
+        624,
+        787,
+        805,
+        833,
+        927
+      ],
+      "n": 9,
+      "strata_breakdown": {
+        "correct_high": 4,
+        "correct_mid": 1,
+        "incorrect_low": 1,
+        "incorrect_mid": 1,
+        "incorrect_high": 1,
+        "correct_low": 1
+      }
+    },
+    "Phi-4-reasoning::aqua": {
+      "model_dir": "Phi-4-reasoning",
+      "dataset": "aqua",
+      "result_path": "/home1/10757/manasp123/reasoning-models-eval/evaluation/exports/cot_analysis/Phi-4-reasoning/aqua/cot_analysis_572e7c63-d955-49c0-9167-69386e7d7b8e_20260130_220804.json",
+      "indices": [
+        17,
+        19,
+        55,
+        66,
+        82,
+        135,
+        155,
+        207,
+        237
+      ],
+      "n": 9,
+      "strata_breakdown": {
+        "correct_high": 3,
+        "incorrect_high": 2,
+        "correct_mid": 1,
+        "incorrect_mid": 1,
+        "incorrect_low": 1,
+        "correct_low": 1
+      }
+    },
+    "Phi-4-reasoning::gpqa": {
+      "model_dir": "Phi-4-reasoning",
+      "dataset": "gpqa",
+      "result_path": "/home1/10757/manasp123/reasoning-models-eval/evaluation/exports/cot_analysis/Phi-4-reasoning/gpqa/cot_analysis_18ff24db-0387-4ae8-a794-51485d374c68_20260130_221953.json",
+      "indices": [
+        11,
+        90,
+        193,
+        224,
+        233,
+        295,
+        321,
+        426,
+        438
+      ],
+      "n": 9,
+      "strata_breakdown": {
+        "incorrect_high": 3,
+        "incorrect_mid": 1,
+        "correct_low": 1,
+        "correct_mid": 1,
+        "incorrect_low": 1,
+        "correct_high": 2
+      }
+    },
+    "Phi-4-reasoning::commonsense_qa": {
+      "model_dir": "Phi-4-reasoning",
+      "dataset": "commonsense_qa",
+      "result_path": "/home1/10757/manasp123/reasoning-models-eval/evaluation/exports/cot_analysis/Phi-4-reasoning/commonsense_qa/cot_analysis_1003269b-ddb3-4a65-bd57-add7146a24e0_20260130_223545.json",
+      "indices": [
+        283,
+        461,
+        654,
+        709,
+        824,
+        884,
+        971,
+        1134,
+        1150
+      ],
+      "n": 9,
+      "strata_breakdown": {
+        "correct_high": 4,
+        "correct_low": 1,
+        "incorrect_low": 1,
+        "correct_mid": 1,
+        "incorrect_high": 1,
+        "incorrect_mid": 1
+      }
+    },
+    "Qwen3-4B-Thinking-2507::gsm8k": {
+      "model_dir": "Qwen3-4B-Thinking-2507",
+      "dataset": "gsm8k",
+      "result_path": "/home1/10757/manasp123/reasoning-models-eval/evaluation/exports/cot_analysis/Qwen3-4B-Thinking-2507/gsm8k/cot_analysis_97eb9344-36c7-4ffd-9b86-53e80c697632_20260205_181237.json",
+      "indices": [
+        62,
+        411,
+        493,
+        563,
+        942,
+        992,
+        1055,
+        1193,
+        1286
+      ],
+      "n": 9,
+      "strata_breakdown": {
+        "incorrect_high": 2,
+        "correct_high": 3,
+        "incorrect_mid": 1,
+        "incorrect_low": 1,
+        "correct_mid": 1,
+        "correct_low": 1
+      }
+    },
+    "Qwen3-4B-Thinking-2507::math500": {
+      "model_dir": "Qwen3-4B-Thinking-2507",
+      "dataset": "math500",
+      "result_path": "/home1/10757/manasp123/reasoning-models-eval/evaluation/exports/cot_analysis/Qwen3-4B-Thinking-2507/math500/cot_analysis_360ef525-488c-499c-a4c8-2c3be65ad169_20260205_171058.json",
+      "indices": [
+        9,
+        76,
+        83,
+        151,
+        171,
+        191,
+        228,
+        343,
+        366
+      ],
+      "n": 9,
+      "strata_breakdown": {
+        "correct_high": 4,
+        "incorrect_high": 1,
+        "incorrect_mid": 1,
+        "correct_low": 1,
+        "incorrect_low": 1,
+        "correct_mid": 1
+      }
+    },
+    "Qwen3-4B-Thinking-2507::svamp": {
+      "model_dir": "Qwen3-4B-Thinking-2507",
+      "dataset": "svamp",
+      "result_path": "/home1/10757/manasp123/reasoning-models-eval/evaluation/exports/cot_analysis/Qwen3-4B-Thinking-2507/svamp/cot_analysis_c98e3f4b-eb76-46e9-8321-0e16104e6e9a_20260205_172454.json",
+      "indices": [
+        32,
+        234,
+        307,
+        360,
+        595,
+        639,
+        933,
+        940,
+        953
+      ],
+      "n": 9,
+      "strata_breakdown": {
+        "correct_high": 4,
+        "incorrect_high": 1,
+        "incorrect_mid": 1,
+        "incorrect_low": 1,
+        "correct_low": 1,
+        "correct_mid": 1
+      }
+    },
+    "Qwen3-4B-Thinking-2507::aqua": {
+      "model_dir": "Qwen3-4B-Thinking-2507",
+      "dataset": "aqua",
+      "result_path": "/home1/10757/manasp123/reasoning-models-eval/evaluation/exports/cot_analysis/Qwen3-4B-Thinking-2507/aqua/cot_analysis_d760bbcd-0f13-4ee9-8364-5ba8eba3c186_20260205_153556.json",
+      "indices": [
+        41,
+        44,
+        59,
+        89,
+        90,
+        121,
+        139,
+        162,
+        197
+      ],
+      "n": 9,
+      "strata_breakdown": {
+        "correct_high": 2,
+        "incorrect_high": 3,
+        "correct_mid": 1,
+        "correct_low": 1,
+        "incorrect_low": 1,
+        "incorrect_mid": 1
+      }
+    },
+    "Qwen3-4B-Thinking-2507::gpqa": {
+      "model_dir": "Qwen3-4B-Thinking-2507",
+      "dataset": "gpqa",
+      "result_path": "/home1/10757/manasp123/reasoning-models-eval/evaluation/exports/cot_analysis/Qwen3-4B-Thinking-2507/gpqa/cot_analysis_db637529-f7c1-437d-a459-d21c5953468c_20260205_154413.json",
+      "indices": [
+        6,
+        35,
+        100,
+        148,
+        174,
+        198,
+        318,
+        406,
+        423
+      ],
+      "n": 9,
+      "strata_breakdown": {
+        "incorrect_high": 2,
+        "incorrect_mid": 2,
+        "correct_high": 2,
+        "correct_mid": 1,
+        "correct_low": 1,
+        "incorrect_low": 1
+      }
+    },
+    "Qwen3-4B-Thinking-2507::commonsense_qa": {
+      "model_dir": "Qwen3-4B-Thinking-2507",
+      "dataset": "commonsense_qa",
+      "result_path": "/home1/10757/manasp123/reasoning-models-eval/evaluation/exports/cot_analysis/Qwen3-4B-Thinking-2507/commonsense_qa/cot_analysis_12d51b75-a9eb-470a-9413-434d99711053_20260205_173103.json",
+      "indices": [
+        49,
+        193,
+        548,
+        590,
+        654,
+        925,
+        955,
+        970,
+        1209
+      ],
+      "n": 9,
+      "strata_breakdown": {
+        "correct_high": 2,
+        "incorrect_high": 3,
+        "incorrect_mid": 1,
+        "incorrect_low": 1,
+        "correct_mid": 1,
+        "correct_low": 1
+      }
+    }
+  },
+  "global_strata_counts": {
+    "incorrect_mid": 70,
+    "incorrect_low": 72,
+    "correct_high": 159,
+    "incorrect_high": 92,
+    "correct_mid": 55,
+    "correct_low": 52
+  }
+}

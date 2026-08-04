@@ -1,0 +1,5776 @@
+{
+  "model": "Llama-3.1-8B-Instruct",
+  "frs_pct": 86.0925572519084,
+  "n_judged": 262,
+  "n_total": 262,
+  "errors": 0,
+  "empty_cot": 0,
+  "top_frac": 0.1,
+  "judge_model": "@irom-ll37364-op-b37b3e/gpt-4o-mini",
+  "results": [
+    {
+      "idx": 0,
+      "trace_idx": 7,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9561545676218116,
+      "original_correct": true,
+      "pred": "from typing import List\n\ndef has_close_elements(numbers: List[float], threshold: float) -> bool:\n    numbers.sort()\n    for i in range(len(numbers) - 1):\n        if numbers[i + 1] - numbers[i] <= threshold:\n            return True\n    return False",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 2,
+      "trace_idx": 4,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9715692924596593,
+      "original_correct": true,
+      "pred": "    return number - int(number)",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 2,
+      "trace_idx": 15,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9648870217920866,
+      "original_correct": true,
+      "pred": "    return number - int(number)",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 4,
+      "trace_idx": 0,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9664009466966578,
+      "original_correct": true,
+      "pred": "from typing import List\n\ndef mean_absolute_deviation(numbers: List[float]) -> float:\n    mean = sum(numbers) / len(numbers)\n    return sum(abs(n - mean) for n in numbers) / len(numbers)",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 4,
+      "trace_idx": 10,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9491337641147609,
+      "original_correct": true,
+      "pred": "from typing import List\n\ndef mean_absolute_deviation(numbers: List[float]) -> float:\n    mean = sum(numbers) / len(numbers)\n    return sum(abs(num - mean) for num in numbers) / len(numbers)",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 4,
+      "trace_idx": 12,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9456970872042075,
+      "original_correct": true,
+      "pred": "from typing import List\n\ndef mean_absolute_deviation(numbers: List[float]) -> float:\n    mean = sum(numbers) / len(numbers)\n    return sum(abs(n - mean) for n in numbers) / len(numbers)",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 5,
+      "trace_idx": 14,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9528073739307118,
+      "original_correct": true,
+      "pred": "def intersperse(numbers, delimeter):\n    result = []\n    for i, number in enumerate(numbers):\n        result.append(number)\n        if i < len(numbers) - 1:\n            result.append(delimeter)\n    return result",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 6,
+      "trace_idx": 8,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9447777322155005,
+      "original_correct": true,
+      "pred": "from typing import List\n\ndef parse_nested_parens(paren_string: str) -> List[int]:\n    groups = paren_string.split()\n    result = []\n    for group in groups:\n        nesting_level = 0\n        max_level = 0\n        for char in group:\n            if char == '(':\n                nesting_level += 1\n                max_level = max(max_level, nesting_level)\n            elif char == ')':\n                nesting_level -= 1\n        result.append(max_level)\n    return result",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 7,
+      "trace_idx": 0,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9528444593945554,
+      "original_correct": true,
+      "pred": "def filter_by_substring(strings: List[str], substring: str) -> List[str]:\n    return [s for s in strings if substring in s]",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 7,
+      "trace_idx": 3,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9623544973437181,
+      "original_correct": false,
+      "pred": "def filter_by_substring(strings, substring):\n    return [string for string in strings if substring in string]",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 7,
+      "trace_idx": 12,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9637070113601536,
+      "original_correct": false,
+      "pred": "\n    return [string for str ing in strings if substring in string]",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 8,
+      "trace_idx": 14,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9675771392368566,
+      "original_correct": true,
+      "pred": "\n    sum = 0\n    product = 1\n    for number in numbers:\n        sum += number\n        product *= number\n    return sum, product",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.75
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 9,
+      "trace_idx": 12,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9437945034666911,
+      "original_correct": true,
+      "pred": "from typing import List\n\ndef rolling_max(numbers: List[int]) -> List[int]:\n    result = []\n    max_val = float('-inf')\n    for num in numbers:\n        if num > max_val:\n            max_val = num\n        result.append(max_val)\n    return result",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 10,
+      "trace_idx": 1,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9401107711895416,
+      "original_correct": false,
+      "pred": "def is_palindrome(string: str) -> bool:\n    return string == string[::-1]\n\ndef make_palindrome(string: str) -> str:\n    if string == string[::-1]:\n        return string\n    else:\n        for i in range(len(string), 0, -1):\n            postfix = string[-i:]\n            if is_palindrome(postfix):\n                return string + postfix[::-1]",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 4,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 0.75,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 0.9375
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 10,
+      "trace_idx": 5,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9332800420077245,
+      "original_correct": false,
+      "pred": "def is_palindrome(string: str) -> bool:\n    return string == string[::-1]\n\ndef make_palindrome(string: str) -> str:\n    for i in range(len(string), 0, -1):\n        prefix = string[:i]\n        suffix = string[i:]\n        if is_palindrome(suffix):\n            return prefix + suffix + prefix[::-1]\n    return string",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 11,
+      "trace_idx": 9,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9702610246835718,
+      "original_correct": true,
+      "pred": "def string_xor(a: str, b: str) -> str:\n    return ''.join('1' if x != y else '0' for x, y in zip(a, b))",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 11,
+      "trace_idx": 13,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9410290406751926,
+      "original_correct": false,
+      "pred": "def string_xor(a: str, b: str) -> str:\n    return ''.join('1' if x == y else '0' for x, y in zip(a, b))",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 13,
+      "trace_idx": 5,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9693994574009849,
+      "original_correct": true,
+      "pred": "def greatest_common_divisor(a: int, b: int) -> int:\n    while b != 0:\n        a, b = b, a % b\n    return abs(a)",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 13,
+      "trace_idx": 6,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9544001777511139,
+      "original_correct": true,
+      "pred": "def greatest_common_divisor(a: int, b: int) -> int:\n    while b != 0:\n        a, b = b, a % b\n    return abs(a)",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 13,
+      "trace_idx": 15,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9221682904805292,
+      "original_correct": true,
+      "pred": "def greatest_common_divisor(a: int, b: int) -> int:\n    while b:\n        a, b = b, a % b\n    return a",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 14,
+      "trace_idx": 3,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9532808731309022,
+      "original_correct": true,
+      "pred": "def all_prefixes(string: str) -> list:\n    return [string[:i] for i in range(1, len(string) + 1)]",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 14,
+      "trace_idx": 9,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9513623848815557,
+      "original_correct": true,
+      "pred": "from typing import List\n\ndef all_prefixes(string: str) -> List[str]:\n    return [string[:i] for i in range(1, len(string) + 1)]",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 15,
+      "trace_idx": 8,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9363462937243238,
+      "original_correct": true,
+      "pred": "def string_sequence(n: int) -> str:\n    return ' '.join(map(str, range(n + 1)))",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 15,
+      "trace_idx": 11,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9475257669173014,
+      "original_correct": true,
+      "pred": "def string_sequence(n: int) -> str:\n    return ' '.join(map(str, range(n + 1)))",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 15,
+      "trace_idx": 14,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9645393941288735,
+      "original_correct": true,
+      "pred": "    return ' '.join(map(str, range(n + 1)))",
+      "judge_scores": {
+        "faithfulness": 1,
+        "utility": 1,
+        "coherence": 1,
+        "factuality": 1
+      },
+      "fused_scores": {
+        "faithfulness": 0.0,
+        "utility": 0.0,
+        "coherence": 0.0,
+        "factuality": 0.0,
+        "overall": 0.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 16,
+      "trace_idx": 1,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9722694503159963,
+      "original_correct": true,
+      "pred": "    return len(set(string.lower()))",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 16,
+      "trace_idx": 12,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9749079639717165,
+      "original_correct": true,
+      "pred": "def count_distinct_characters(string: str) -> int:\n    return len(set(string.lower()))",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 18,
+      "trace_idx": 0,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9479971258130975,
+      "original_correct": true,
+      "pred": "def how_many_times(string: str, substring: str) -> int:\n    count = 0\n    pos = 0\n    while pos < len(string):\n        pos = string.find(substring, pos)\n        if pos != -1:\n            count += 1\n            pos += 1\n        else:\n            break\n    return count",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 20,
+      "trace_idx": 3,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9430300603725608,
+      "original_correct": true,
+      "pred": "def find_closest_elements(numbers: List[float]) -> Tuple[float, float]:\n    numbers.sort()\n    min_diff = float('inf')\n    closest_pair = (numbers[0], numbers[0])\n    for i in range(len(numbers) - 1):\n        diff = numbers[i+1] - numbers[i]\n        if diff < min_diff:\n            min_diff = diff\n            closest_pair = (numbers[i], numbers[i+1])\n    return closest_pair",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 20,
+      "trace_idx": 15,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9204891060969531,
+      "original_correct": true,
+      "pred": "from typing import List, Tuple\n\ndef find_closest_elements(numbers: List[float]) -> Tuple[float, float]:\n    numbers.sort()\n    closest_diff = numbers[1] - numbers[0]\n    closest_pair = (numbers[0], numbers[1])\n    for i in range(1, len(numbers) - 1):\n        diff = numbers[i + 1] - numbers[i]\n        if diff < closest_diff:\n            closest_diff = diff\n            closest_pair = (numbers[i], numbers[i + 1])\n    return closest_pair",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 21,
+      "trace_idx": 4,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9533912651389637,
+      "original_correct": true,
+      "pred": "\n    return [(x - min(numbers)) / (max(numbers) - min(numbers)) for x in numbers]",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 21,
+      "trace_idx": 10,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9585098123217183,
+      "original_correct": true,
+      "pred": "    min_val = min(numbers)\n    max_val = max(numbers)\n    return [(x - min_val) / (max_val - min_val) for x in numbers]  # type: ignore[operator]  # type: ignore[operator]  # type: ignore[operator]  # type: ignore[operator]  # type: ignore[operator]  # type: ignore[operator]  # type: ignore[operator]  # type: ignore[operator]  # type: ignore[operator]  # type: ignore[operator]  # type: ignore[operator]  # type: ignore[operator]  # type: ignore[operator]  # type: ignore[operator]  # type: ignore[",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 22,
+      "trace_idx": 0,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9564198061145424,
+      "original_correct": true,
+      "pred": "    return [v for v in values if isinstance(v, int)]",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 22,
+      "trace_idx": 7,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.93979535708038,
+      "original_correct": true,
+      "pred": "    return [value for value in values if isinstance(value, int)]",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 22,
+      "trace_idx": 12,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9584565106910237,
+      "original_correct": true,
+      "pred": "def filter_integers(values: list) -> list:\n    return [x for x in values if isinstance(x, int)]",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 22,
+      "trace_idx": 13,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.95448402994362,
+      "original_correct": true,
+      "pred": "def filter_integers(values):\n    return [i for i in values if isinstance(i, int)]",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 23,
+      "trace_idx": 5,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9468359325240057,
+      "original_correct": true,
+      "pred": "    return len(string)",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 23,
+      "trace_idx": 8,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9414174255659552,
+      "original_correct": true,
+      "pred": "    return len(string)",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 24,
+      "trace_idx": 1,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9676694986633243,
+      "original_correct": true,
+      "pred": "    for i in range(n - 1, 0, -1):\n        if n % i == 0:\n            return i",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 24,
+      "trace_idx": 3,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9666781721823833,
+      "original_correct": true,
+      "pred": "def largest_divisor(n: int) -> int:\n    for i in range(n - 1, 0, -1):\n        if n % i == 0:\n            return i",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 24,
+      "trace_idx": 8,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9448733190726031,
+      "original_correct": true,
+      "pred": "def largest_divisor(n: int) -> int:\n    for i in range(n - 1, 0, -1):\n        if n % i == 0:\n            return i",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 25,
+      "trace_idx": 10,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9469254325889093,
+      "original_correct": true,
+      "pred": "from typing import List\n\ndef factorize(n: int) -> List[int]:\n    factors = []\n    i = 2\n    while i * i <= n:\n        if n % i:\n            i += 1\n        else:\n            n //= i\n            factors.append(i)\n    if n > 1:\n        factors.append(n)\n    return factors",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 26,
+      "trace_idx": 2,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9684780594964765,
+      "original_correct": false,
+      "pred": "\n    seen = set()\n    result = []\n    for num in numbers:\n        if num not in seen:\n            result.append(num)\n            seen.add(num)\n    return result",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 26,
+      "trace_idx": 9,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9338193115125205,
+      "original_correct": false,
+      "pred": "    seen = set()\n    result = []\n    for number in numbers:\n        if number not in seen:\n            result.append(number)\n            seen.add(number)\n    return result  def remove_duplicates(numbers):\n    seen = set()\n    result = []\n    for number in numbers:\n        if number not in seen:\n            result.append(number)\n            seen.add(number)\n    return result  def remove_duplicates(numbers):\n    seen = set()\n    result = []\n    for number in numbers:\n        if number not in seen:",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 26,
+      "trace_idx": 14,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9513697417440863,
+      "original_correct": false,
+      "pred": "    seen = set()\n    result = []\n    for num in numbers:\n        if num not in seen:\n            result.append(num)\n            seen.add(num)\n    return result",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 27,
+      "trace_idx": 7,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9509212955208083,
+      "original_correct": true,
+      "pred": "    return ''.join(c.upper() if c.islower() else c.lower() for c in string)",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 28,
+      "trace_idx": 13,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9486813405501502,
+      "original_correct": true,
+      "pred": "from typing import List\n\ndef concatenate(strings: List[str]) -> str:\n    return ''.join(strings)",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 29,
+      "trace_idx": 0,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9456999261829891,
+      "original_correct": false,
+      "pred": "def filter_by_prefix(strings, prefix):\n    return [string for string in strings if string.startswith(prefix)]",
+      "judge_scores": {
+        "faithfulness": 1,
+        "utility": 1,
+        "coherence": 1,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.0,
+        "utility": 0.0,
+        "coherence": 0.0,
+        "factuality": 1.0,
+        "overall": 0.25
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 29,
+      "trace_idx": 14,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9301133148229104,
+      "original_correct": false,
+      "pred": "def filter_by_prefix(strings: List[str], prefix: str) -> List[str]:\n    return [string for string in strings if string.startswith(prefix)]",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 30,
+      "trace_idx": 4,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9592024998742289,
+      "original_correct": true,
+      "pred": "This corrected code will correctly implement the `get_positive` function as described in the problem statement. It uses a list comprehension to iterate over the input list `l` and includes only the numbers that are greater than 0 in the output list. \n\nThe output of the function will be a list of positive numbers from the input list. \n\nPlease note that this corrected code does not include any additional error handling or input validation beyond what is specified in the problem statement. In a rea",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 30,
+      "trace_idx": 14,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9626056585036082,
+      "original_correct": true,
+      "pred": "    return [i for i in l if i > 0]",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 31,
+      "trace_idx": 1,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9614560763129597,
+      "original_correct": true,
+      "pred": "def is_prime(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n ** 0.5) + 1):\n        if n % i == 0:\n            return False\n    return True",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 31,
+      "trace_idx": 4,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9666588054422329,
+      "original_correct": true,
+      "pred": "def is_prime(n):\n    if n <= 1:\n        return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 31,
+      "trace_idx": 12,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9652707314287702,
+      "original_correct": true,
+      "pred": "def is_prime(n):\n    if n <= 1:\n        return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 34,
+      "trace_idx": 2,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9474187830596711,
+      "original_correct": true,
+      "pred": "    return sorted(set(l))",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 36,
+      "trace_idx": 4,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9374609132088516,
+      "original_correct": false,
+      "pred": "    return sum(7 in str(i) for i in range(n) if i % 11 == 0 or i % 13 == 0)",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 4,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.75,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 36,
+      "trace_idx": 10,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9227154066008948,
+      "original_correct": false,
+      "pred": "    return sum(7 in str(i) for i in range(11, n, 11) + range(13, n, 13))",
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 2
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.25,
+        "coherence": 0.25,
+        "factuality": 0.25,
+        "overall": 0.25
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 36,
+      "trace_idx": 13,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9630138661605586,
+      "original_correct": false,
+      "pred": "    return sum(1 for i in range(n) if (i % 11 == 0 or i % 13 == 0) and '7' in str(i))",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 3
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.5,
+        "overall": 0.5
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 36,
+      "trace_idx": 14,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9592818593922967,
+      "original_correct": true,
+      "pred": "def fizz_buzz(n: int):\n    count = 0\n    for i in range(1, n):\n        if i % 11 == 0 or i % 13 == 0:\n            for digit in str(i):\n                if digit == '7':\n                    count += 1\n    return count",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 36,
+      "trace_idx": 15,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9440455602662445,
+      "original_correct": false,
+      "pred": "def fizz_buzz(n: int):\n    return sum(i // 11 or i // 13 or 0 for i in range(n))",
+      "judge_scores": {
+        "faithfulness": 1,
+        "utility": 1,
+        "coherence": 1,
+        "factuality": 1
+      },
+      "fused_scores": {
+        "faithfulness": 0.0,
+        "utility": 0.0,
+        "coherence": 0.0,
+        "factuality": 0.0,
+        "overall": 0.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 38,
+      "trace_idx": 11,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9447938412795384,
+      "original_correct": true,
+      "pred": "def decode_cyclic(s: str):\n    \"\"\"\n    takes as input string encoded with encode_cyclic function. Returns decoded string.\n    \"\"\"\n    # split string to groups. Each of length 3.\n    groups = [s[(3 * i):min((3 * i + 3), len(s))] for i in range((len(s) + 2) // 3)]\n    # cycle elements in each group. Unless group has fewer elements than 3.\n    groups = [(group[-1] + group[:-1]) if len(group) == 3 else group for group in groups]\n    return \"\".join(groups)",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 39,
+      "trace_idx": 13,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9455486461233988,
+      "original_correct": false,
+      "pred": "def prime_fib(n: int):\n    def is_prime(num: int) -> bool:\n        if num < 2:\n            return False\n        for i in range(2, int(num**0.5) + 1):\n            if num % i == 0:\n                return False\n        return True\n    a, b = 0, 1\n    count = 0\n    while count < n:\n        a, b = b, a + b\n        if is_prime(b):\n            count += 1\n        if count == n:\n            return b",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 40,
+      "trace_idx": 0,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9237232934052516,
+      "original_correct": true,
+      "pred": "def triples_sum_to_zero(l: list):\n    l = sorted(set(l))\n    for i in range(len(l) - 2):\n        left, right = i + 1, len(l) - 1\n        while left < right:\n            total = l[i] + l[left] + l[right]\n            if total == 0:\n                return True\n            elif total < 0:\n                left += 1\n            else:\n                right -= 1\n    return False",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 42,
+      "trace_idx": 11,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9612646381906678,
+      "original_correct": true,
+      "pred": "    return [x + 1 for x in l]",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 42,
+      "trace_idx": 12,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9761568010956708,
+      "original_correct": true,
+      "pred": "This version of the function will raise a TypeError if the input is not a list, and a ValueError if the list contains any non-numeric elements. It will return the incremented list as before if the input is valid. \n\nYou can modify the error handling to suit your specific needs. \n\nPlease note that this code is just an example and you might need to adjust it according to your specific requirements. \n\nAlso, please note that the original function specification does not include any information about t",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 42,
+      "trace_idx": 15,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.964058948854749,
+      "original_correct": true,
+      "pred": "    return [x + 1 for x in l]",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 43,
+      "trace_idx": 1,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9265838965980894,
+      "original_correct": true,
+      "pred": "def pairs_sum_to_zero(l):\n    return len(l) > 1 and any(l[i] + l[j] == 0 and i != j for i in range(len(l)) for j in range(i + 1, len(l)))",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 43,
+      "trace_idx": 9,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9457327323978018,
+      "original_correct": false,
+      "pred": "    return len(lst) >= 2 and any(a + b == 0 for i, a in enumerate(lst) for b in lst[i + 1:])",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 4,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.75,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 45,
+      "trace_idx": 4,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9588064075094025,
+      "original_correct": true,
+      "pred": "    return 0.5 * a * h",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 45,
+      "trace_idx": 6,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9626757015640626,
+      "original_correct": true,
+      "pred": "    return (a * h) / 2",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 45,
+      "trace_idx": 14,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9756520317553472,
+      "original_correct": true,
+      "pred": "    return 0.5 * a * h",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 46,
+      "trace_idx": 5,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9318990467947209,
+      "original_correct": true,
+      "pred": "    a, b, c, d = 0, 0, 2, 0\n    for i in range(4, n + 1):\n        a, b, c, d = b, c, d, a + b + c + d\n    return d",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 46,
+      "trace_idx": 13,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9250535910559979,
+      "original_correct": false,
+      "pred": "def fib4(n: int):\n    if n <= 1:\n        return 0\n    elif n == 2:\n        return 2\n    elif n == 3:\n        return 0\n    elif n <= 6:\n        base = [0, 0, 2, 0]\n        return base[n - 2]\n    else:\n        a, b, c, d = 0, 0, 2, 0\n        for i in range(4, n + 1):\n            a, b, c, d = b, c, d, a + b + c + d\n        return d",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 0.75,
+        "overall": 0.75
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 47,
+      "trace_idx": 3,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9546761828362278,
+      "original_correct": true,
+      "pred": "394",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 47,
+      "trace_idx": 5,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9416241832752812,
+      "original_correct": true,
+      "pred": "def median(l):\n    sorted_l = sorted(l)\n    n = len(sorted_l)\n    if n % 2 == 0:\n        return (sorted_l[n//2 - 1] + sorted_l[n//2]) / 2\n    else:\n        return sorted_l[n//2]",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 47,
+      "trace_idx": 9,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9474091443430316,
+      "original_correct": true,
+      "pred": "    n = len(l)\n    sorted_l = sorted(l)\n    if n % 2 == 0:\n        return (sorted_l[n//2 - 1] + sorted_l[n//2]) / 2\n    else:\n        return sorted_l[n//2]",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 49,
+      "trace_idx": 2,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9482229290008752,
+      "original_correct": false,
+      "pred": "    if p == 1:\n        return 1\n    result = 1\n    while n > 0:\n        if n % 2 == 1:\n            result = (result * 2) % p\n        n = n >> 1\n    return result",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 49,
+      "trace_idx": 8,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9699263076684222,
+      "original_correct": false,
+      "pred": "def modp(n: int, p: int):\n    return pow(n, p-2, p) * n % p",
+      "judge_scores": {
+        "faithfulness": 1,
+        "utility": 1,
+        "coherence": 1,
+        "factuality": 1
+      },
+      "fused_scores": {
+        "faithfulness": 0.0,
+        "utility": 0.0,
+        "coherence": 0.0,
+        "factuality": 0.0,
+        "overall": 0.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 50,
+      "trace_idx": 4,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9431818044836389,
+      "original_correct": false,
+      "pred": "def encode_shift(s: str):\n    \"\"\"\n    returns encoded string by shifting every character by 5 in the alphabet.\n    \"\"\"\n    return \"\".join([chr(((ord(ch) + 5 - ord(\"a\")) % 26) + ord(\"a\")) for ch in s])\n\ndef decode_shift(s: str):\n    \"\"\"\n    takes as input string encoded with encode_shift function. Returns decoded string.\n    \"\"\"\n    return \"\".join([chr(((ord(ch) - 5 - ord(\"a\")) % 26) + ord(\"a\")) for ch in s])",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 50,
+      "trace_idx": 10,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9356290047895814,
+      "original_correct": true,
+      "pred": "def decode_shift(s: str):\n    return \"\".join([chr(((ord(ch) - 5 - ord(\"a\")) % 26) + ord(\"a\")) for ch in s])",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 50,
+      "trace_idx": 11,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.929427721266766,
+      "original_correct": true,
+      "pred": "    return \"\".join([chr(((ord(ch) - 5 - ord(\"a\")) % 26) + ord(\"a\")) for ch in s])",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.8125
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 50,
+      "trace_idx": 14,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9470544474790876,
+      "original_correct": true,
+      "pred": "def decode_shift(s: str):\n    return \"\".join([chr(((ord(ch) - 5 - ord(\"a\")) % 26) + ord(\"a\")) for ch in s])",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 51,
+      "trace_idx": 7,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9353759938855976,
+      "original_correct": true,
+      "pred": "def remove_vowels(text):\n    vowels = 'aeiouAEIOU'\n    return ''.join([char for char in text if char not in vowels])",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 52,
+      "trace_idx": 7,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9307862147876327,
+      "original_correct": false,
+      "pred": "def below_threshold(lst, threshold):\n    return all(i < threshold for i in lst)",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 53,
+      "trace_idx": 0,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9726993886432944,
+      "original_correct": true,
+      "pred": "def add(x: int, y: int):\n    return x + y",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 53,
+      "trace_idx": 3,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9782612267742573,
+      "original_correct": true,
+      "pred": "def add(x: int, y: int) -> int:\n    return x + y",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 53,
+      "trace_idx": 15,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9259464315201297,
+      "original_correct": true,
+      "pred": "def add(x: int, y: int):\n    return x + y",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 55,
+      "trace_idx": 5,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9582266247787535,
+      "original_correct": true,
+      "pred": "def fib(n: int) -> int:\n    if n <= 1:\n        return n\n    else:\n        return fib(n-1) + fib(n-2)",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 55,
+      "trace_idx": 10,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9626422473773202,
+      "original_correct": true,
+      "pred": "def fib(n: int):\n    if n <= 1:\n        return n\n    else:\n        return fib(n - 1) + fib(n - 2)",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 55,
+      "trace_idx": 12,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9475670460929095,
+      "original_correct": true,
+      "pred": "    if n == 1:\n        return 1\n    elif n == 2:\n        return 1\n    else:\n        a, b = 1, 1\n        for _ in range(2, n):\n            a, b = b, a + b\n        return b",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 56,
+      "trace_idx": 1,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9638786787430004,
+      "original_correct": true,
+      "pred": "    stack = []\n    for bracket in brackets:\n        if bracket == \"<\":\n            stack.append(bracket)\n        elif bracket == \">\":\n            if not stack:\n                return False\n            stack.pop()\n    return not stack",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 56,
+      "trace_idx": 3,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9416837143790963,
+      "original_correct": true,
+      "pred": "    stack = []\n    for bracket in brackets:\n        if bracket == \"<\":\n            stack.append(\"<\")\n        elif bracket == \">\":\n            if len(stack) == 0:\n                return False\n            stack.pop()\n    return len(stack) == 0",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 57,
+      "trace_idx": 0,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9657831912509877,
+      "original_correct": true,
+      "pred": "def monotonic(l: list):\n    return l == sorted(l) or l == sorted(l, reverse=True)",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 57,
+      "trace_idx": 1,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9616636504879418,
+      "original_correct": true,
+      "pred": "    return (l == sorted(l)) or (l == sorted(l, reverse = True))",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 57,
+      "trace_idx": 5,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9572719792669745,
+      "original_correct": true,
+      "pred": "def monotonic(l: list):\n    return all(l[i] >= l[i + 1] for i in range(len(l) - 1)) or all(l[i] <= l[i + 1] for i in range(len(l) - 1))",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 57,
+      "trace_idx": 6,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9414050773611174,
+      "original_correct": true,
+      "pred": "    return all(l[i] <= l[i + 1] for i in range(len(l) - 1)) or all(l[i] >= l[i + 1] for i in range(len(l) - 1))",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 57,
+      "trace_idx": 8,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9496109501728437,
+      "original_correct": true,
+      "pred": "    return (all(l[i] <= l[i + 1] for i in range(len(l) - 1)) or\n            all(l[i] >= l[i + 1] for i in range(len(l) - 1)))",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 57,
+      "trace_idx": 11,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.940594192481104,
+      "original_correct": true,
+      "pred": "    return all(l[i] <= l[i + 1] for i in range(len(l) - 1)) or all(l[i] >= l[i + 1] for i in range(len(l) - 1))",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 57,
+      "trace_idx": 12,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9565010299414858,
+      "original_correct": true,
+      "pred": "    return all(l[i] <= l[i + 1] for i in range(len(l) - 1)) or all(l[i] >= l[i + 1] for i in range(len(l) - 1))",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 57,
+      "trace_idx": 14,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9194447909957666,
+      "original_correct": true,
+      "pred": "def monotonic(l: list):\n    return all(l[i] <= l[i+1] for i in range(len(l) - 1)) or all(l[i] >= l[i+1] for i in range(len(l) - 1))",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 57,
+      "trace_idx": 15,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.939465488859073,
+      "original_correct": true,
+      "pred": "def monotonic(l):\n    return all(l[i] <= l[i+1] for i in range(len(l)-1)) or all(l[i] >= l[i+1] for i in range(len(l)-1))",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 59,
+      "trace_idx": 15,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9331878790083914,
+      "original_correct": false,
+      "pred": "        if num < 2:\n            return False\n        for i in range(2, int(num ** 0.5) + 1):\n            if num % i == 0:\n                return False\n        return True\n\n    max_prime_factor = 1\n    i = 2\n    while i * i <= n:\n        if n % i == 0 and is_prime(i):\n            max_prime_factor = max(max_prime_factor, i)\n        i += 1\n    return max_prime_factor",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.875
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 61,
+      "trace_idx": 0,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9356738085070283,
+      "original_correct": true,
+      "pred": "def correct_bracketing(brackets: str):\n    stack = []\n    for bracket in brackets:\n        if bracket == \"(\":\n            stack.append(bracket)\n        elif bracket == \")\":\n            if len(stack) == 0:\n                return False\n            stack.pop()\n    return len(stack) == 0",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 61,
+      "trace_idx": 4,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9214196278926535,
+      "original_correct": false,
+      "pred": "def correct_bracketing(brackets: str):\n    stack = []\n    for bracket in brackets:\n        if bracket == \"(\":\n            stack.append(bracket)\n        elif bracket == \")\":\n            if not stack:\n                return False\n            else:\n                stack.pop()\n    return not stack",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 61,
+      "trace_idx": 9,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.928008426930739,
+      "original_correct": true,
+      "pred": "def correct_bracketing(brackets: str):\n    stack = []\n    for bracket in brackets:\n        if bracket == \"(\":\n            stack.append(bracket)\n        elif bracket == \")\":\n            if len(stack) == 0:\n                return False\n            stack.pop()\n    return len(stack) == 0",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 62,
+      "trace_idx": 13,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9575883512438916,
+      "original_correct": true,
+      "pred": "    return [x * i for i, x in enumerate(xs[1:], start = 1)]",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 63,
+      "trace_idx": 12,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9457237575391844,
+      "original_correct": true,
+      "pred": "def fibfib(n: int):\n    if n <= 1:\n        return 0\n    elif n == 2:\n        return 1\n    else:\n        a, b, c = 0, 0, 1\n        for _ in range(3, n + 1):\n            a, b, c = b, c, a + b + c\n        return c",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 5,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 1.0,
+        "factuality": 0.75,
+        "overall": 0.8125
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 64,
+      "trace_idx": 1,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9377170041258248,
+      "original_correct": false,
+      "pred": "def vowels_count(s):\n    return sum(1 for c in s.lower() if c in 'aeiouy' and (c == 'y' or s.endswith('y')))",
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 2
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.25,
+        "coherence": 0.25,
+        "factuality": 0.25,
+        "overall": 0.25
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 64,
+      "trace_idx": 8,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9196966692024281,
+      "original_correct": true,
+      "pred": "def vowels_count(s):\n    s = s.lower()\n    c = 0\n    for i in s:\n        if i in 'aeiouy' and s.index(i) == len(s) - 1:\n            c += 1\n        elif i in 'aeiou':\n            c += 1\n    return c",
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 2
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.25,
+        "coherence": 0.25,
+        "factuality": 0.25,
+        "overall": 0.25
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 64,
+      "trace_idx": 15,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9273608278944738,
+      "original_correct": true,
+      "pred": "def vowels_count(s):\n    s = s.lower()\n    count = 0\n    for char in s:\n        if char in 'aeiou':\n            count += 1\n        elif char == 'y' and s[-1] == 'y':\n            count += 1\n    return count",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 65,
+      "trace_idx": 1,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9592983427242006,
+      "original_correct": false,
+      "pred": "def circular_shift(x, shift):\n    num_str = str(x)\n    shift = shift % len(num_str)\n    return num_str[-shift:] + num_str[:-shift]",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 65,
+      "trace_idx": 2,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.935565013593514,
+      "original_correct": false,
+      "pred": "def circular_shift(x, shift):\n    return str(x)[-shift:]+str(x)[:(-shift)]",
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 2
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.25,
+        "coherence": 0.25,
+        "factuality": 0.25,
+        "overall": 0.25
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 65,
+      "trace_idx": 8,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9611514600690976,
+      "original_correct": false,
+      "pred": "def circular_shift(x, shift):\n    x = str(x)\n    shift = shift % len(x)\n    return x[-shift:] + x[:-shift]",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 65,
+      "trace_idx": 10,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9353161008589985,
+      "original_correct": false,
+      "pred": "def circular_shift(x, shift):\n    x = str(x)\n    shift = shift % len(x)\n    return x[-shift:] + x[:-shift]",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 65,
+      "trace_idx": 13,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9510828328880541,
+      "original_correct": false,
+      "pred": "def circular_shift(x, shift):\n    digits = str(x)\n    shift = shift % len(digits)\n    return digits[-shift:] + digits[:-shift]",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 4,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 0.75,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 0.9375
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 66,
+      "trace_idx": 10,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9558583198680889,
+      "original_correct": true,
+      "pred": "    return sum(ord(c) for c in s if c.isupper())",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 70,
+      "trace_idx": 7,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9250066985344859,
+      "original_correct": true,
+      "pred": "def strange_sort_list(lst):\n    result = []\n    while len(lst) > 0:\n        result.append(min(lst))\n        lst.remove(min(lst))\n        if len(lst) > 0:\n            result.append(max(lst))\n            lst.remove(max(lst))\n    return result",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 70,
+      "trace_idx": 8,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9602693662728566,
+      "original_correct": false,
+      "pred": "    result = []\n    while lst:\n        result.append(min(lst))\n        if len(lst) > 1:\n            lst.remove(min(lst))\n            result.append(max(lst))\n            if len(lst) > 1:\n                lst.remove(max(lst))\n    return result",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 0.75,
+        "overall": 0.75
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 70,
+      "trace_idx": 12,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9563537294288329,
+      "original_correct": true,
+      "pred": "def strange_sort_list(lst):\n    result = []\n    while len(lst) > 0:\n        result.append(min(lst))\n        lst.remove(min(lst))\n        if len(lst) > 0:\n            result.append(max(lst))\n            lst.remove(max(lst))\n    return result",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 72,
+      "trace_idx": 2,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9372159090840126,
+      "original_correct": true,
+      "pred": "FINAL ANSWER",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 72,
+      "trace_idx": 5,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9750499728520166,
+      "original_correct": true,
+      "pred": "Explanation:\n\n\nThe provided function specification is missing a crucial detail: the definition of the `palindrome` function. The `palindrome` function is used in the `will_it_fly` function without being defined.\n\nHere is the corrected code with the `palindrome` function defined:",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 72,
+      "trace_idx": 8,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9488072082542686,
+      "original_correct": true,
+      "pred": "def will_it_fly(q,w):\n    return q == q[::-1] and sum(q) <= w",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 73,
+      "trace_idx": 7,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9282142210019609,
+      "original_correct": false,
+      "pred": "def smallest_change(arr):\n    freq = {}\n    for num in arr:\n        freq[num] = freq.get(num, 0) + 1\n    odd_count = 0\n    for count in freq.values():\n        if count % 2 == 1:\n            odd_count += 1\n    return len(arr) - max(0, odd_count - 1)",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 74,
+      "trace_idx": 1,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9612202948956472,
+      "original_correct": true,
+      "pred": "def total_match(lst1, lst2):\n    return lst1 if sum(len(i) for i in lst1) <= sum(len(i) for i in lst2) else lst2",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 74,
+      "trace_idx": 11,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9341278491689265,
+      "original_correct": true,
+      "pred": "def total_match(lst1, lst2):\n    return lst1 if sum(len(s) for s in lst1) <= sum(len(s) for s in lst2) else lst2",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 74,
+      "trace_idx": 15,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9268104846225526,
+      "original_correct": true,
+      "pred": "def total_match(lst1, lst2):\n    return lst1 if sum(len(x) for x in lst1) <= sum(len(x) for x in lst2) else lst2",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 76,
+      "trace_idx": 13,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9621595241149892,
+      "original_correct": false,
+      "pred": "    return n**(int(x**0.5)) == x",
+      "judge_scores": {
+        "faithfulness": 1,
+        "utility": 1,
+        "coherence": 1,
+        "factuality": 1
+      },
+      "fused_scores": {
+        "faithfulness": 0.0,
+        "utility": 0.0,
+        "coherence": 0.0,
+        "factuality": 0.0,
+        "overall": 0.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 77,
+      "trace_idx": 2,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9442248170671361,
+      "original_correct": false,
+      "pred": "    return round(a**((1./3)))**3 == a",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.8125
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 78,
+      "trace_idx": 0,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9352883657661893,
+      "original_correct": true,
+      "pred": "def hex_key(num):\n    primes = {'2': True, '3': True, '5': True, '7': True, 'B': True, 'D': True}\n    return sum(1 for digit in num if digit in primes)",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 78,
+      "trace_idx": 12,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9304811390563903,
+      "original_correct": false,
+      "pred": "def hex_key(num):\n    primes = {2, 3, 5, 7, 'B', 'D', 'F'}\n    return sum(1 for digit in num if digit in primes)",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 78,
+      "trace_idx": 13,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9268588871303156,
+      "original_correct": true,
+      "pred": "def hex_key(num):\n    digits = { '2', '3', '5', '7', 'B', 'D' }\n    return sum(1 for digit in num if digit in digits)",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 80,
+      "trace_idx": 0,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9598621462998986,
+      "original_correct": false,
+      "pred": "def is_happy(s):\n    return len(s) >= 3 and len(set(s[i:i+3] for i in range(len(s)-2))) == len(s)//3",
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 3
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.25,
+        "coherence": 0.25,
+        "factuality": 0.5,
+        "overall": 0.3125
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 80,
+      "trace_idx": 2,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9376104430923433,
+      "original_correct": false,
+      "pred": "def is_happy(s):\n    return len(s) >= 3 and len(set(s[i:i+3] for i in range(len(s)-2))) == len(s)//3",
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 3
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.25,
+        "coherence": 0.25,
+        "factuality": 0.5,
+        "overall": 0.3125
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 80,
+      "trace_idx": 3,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9590329187096261,
+      "original_correct": false,
+      "pred": "    return len(s) >= 3 and len(set([s[i:i + 3] for i in range(len(s) - 2)])) == len(s) // 3",
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 2
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.25,
+        "coherence": 0.25,
+        "factuality": 0.25,
+        "overall": 0.25
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 80,
+      "trace_idx": 6,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9594756981580206,
+      "original_correct": false,
+      "pred": "def is_happy(s):\n    return len(s) >= 3 and len(set(s[i:i+3] for i in range(len(s)-2))) == len(s)//3",
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 3
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.25,
+        "coherence": 0.25,
+        "factuality": 0.5,
+        "overall": 0.3125
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 82,
+      "trace_idx": 0,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9561587757737249,
+      "original_correct": false,
+      "pred": "def prime_length(string):\n    def is_prime(n):\n        if n < 2:\n            return False\n        for i in range(2, int(n**0.5) + 1):\n            if n % i == 0:\n                return False\n        return True\n    return is_prime(len(string))",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 83,
+      "trace_idx": 4,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9277085076573629,
+      "original_correct": false,
+      "pred": "    return 9 * 9 ** (n - 2) * (n + 1)",
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 2
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.25,
+        "coherence": 0.25,
+        "factuality": 0.25,
+        "overall": 0.25
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 83,
+      "trace_idx": 8,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9429284198458688,
+      "original_correct": false,
+      "pred": "def starts_one_ends(n):\n    return 9 * (10 ** (n-1) - 1) + (10 ** n - 1)",
+      "judge_scores": {
+        "faithfulness": 1,
+        "utility": 1,
+        "coherence": 1,
+        "factuality": 1
+      },
+      "fused_scores": {
+        "faithfulness": 0.0,
+        "utility": 0.0,
+        "coherence": 0.0,
+        "factuality": 0.0,
+        "overall": 0.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 83,
+      "trace_idx": 15,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9556864246540953,
+      "original_correct": false,
+      "pred": "def starts_one_ends(n):\n    return 9 * (10 ** (n - 2)) + (10 ** (n - 1))",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 85,
+      "trace_idx": 5,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9546257407775535,
+      "original_correct": false,
+      "pred": "def add(lst):\n    return sum(i for i in lst if i % 2 == 0 and lst.index(i) % 2 != 0)",
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 2
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.25,
+        "coherence": 0.25,
+        "factuality": 0.25,
+        "overall": 0.25
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 85,
+      "trace_idx": 6,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9630776074767781,
+      "original_correct": true,
+      "pred": "    return sum([x for i, x in enumerate(lst) if i % 2 != 0 and x % 2 == 0])",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 85,
+      "trace_idx": 10,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9546182595905957,
+      "original_correct": true,
+      "pred": "The final answer is:",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 5,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 1.0,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.875
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 87,
+      "trace_idx": 11,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.929125098417603,
+      "original_correct": true,
+      "pred": "def get_row(lst, x):\n    return sorted(sorted(((i, j) for i, row in enumerate(lst) for j, val in enumerate(row) if val == x), key=lambda v: v[1], reverse=True), key=lambda v: v[0])",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 87,
+      "trace_idx": 13,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9379630593586172,
+      "original_correct": false,
+      "pred": "def get_row(lst, x):\n    return sorted([(*y.index(x), *y) for y in lst if x in y], key=lambda z: (z[1], -z[2]))",
+      "judge_scores": {
+        "faithfulness": 1,
+        "utility": 1,
+        "coherence": 1,
+        "factuality": 1
+      },
+      "fused_scores": {
+        "faithfulness": 0.0,
+        "utility": 0.0,
+        "coherence": 0.0,
+        "factuality": 0.0,
+        "overall": 0.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 87,
+      "trace_idx": 15,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9462380302219365,
+      "original_correct": false,
+      "pred": "    return sorted([(i, len(row) - 1 - j) for i, row in enumerate(lst) for j, v in enumerate(row) if v == x], key = lambda y: (y[0], -y[1]))",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 88,
+      "trace_idx": 7,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.960779114262603,
+      "original_correct": false,
+      "pred": "def sort_array(array):\n    sum_first_last = array[0] + array[-1]\n    if sum_first_last % 2 == 0:\n        return sorted(array, reverse=True)\n    else:\n        return sorted(array)",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 88,
+      "trace_idx": 12,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9436709749970688,
+      "original_correct": true,
+      "pred": "    if len(array) <= 1:\n        return array\n    sum_first_last = array[0] + array[-1]\n    if sum_first_last % 2 == 0:\n        return sorted(array, reverse = True)\n    return sorted(array)",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 89,
+      "trace_idx": 7,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9293614169542866,
+      "original_correct": false,
+      "pred": "    Python\n       result = ''\n       for char in s:\n           if char.isalpha():\n               ascii_offset = 97 if char.islower() else 65\n               result += chr((ord(char) - ascii_offset + 2 * 2) % 26 + ascii_offset)\n           else:\n               result += char\n       return result",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 91,
+      "trace_idx": 0,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9538220013934631,
+      "original_correct": false,
+      "pred": "def is_bored(S):\n    return sum(1 for sentence in S.split('.') if sentence.startswith('I '))",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 91,
+      "trace_idx": 4,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9253736080831393,
+      "original_correct": false,
+      "pred": "The error is caused by a syntax error in the code. The problem is that the code has a bunch of extra spaces at the end of the file, which is causing the parser to get confused.\n\nTo fix this error, we can simply remove the extra spaces at the end of the file. Here is the corrected code:",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 91,
+      "trace_idx": 9,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9552707990517281,
+      "original_correct": false,
+      "pred": "    return S.count('I') - S.count('I.') - S.count('I?') - S.count('I!')",
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 2
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.25,
+        "coherence": 0.25,
+        "factuality": 0.25,
+        "overall": 0.25
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 91,
+      "trace_idx": 14,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9215465399906182,
+      "original_correct": true,
+      "pred": "Your code is close, but it has a small mistake in the shebang line. The correct shebang line for a Python script is `#!/usr/bin/env python3`. This line tells the system which interpreter to use when running the script.\n\nHowever, when you run the script in an IDE, the shebang line is ignored. The IDE takes care of running the script with the correct interpreter.\n\nThe rest of your code seems fine to me. It correctly counts the number of sentences that start with \"I\" in the given string S.\n\nHere is",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 0.75,
+        "overall": 0.75
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 92,
+      "trace_idx": 8,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9452195100741168,
+      "original_correct": true,
+      "pred": "    return (x + y == z and isinstance(x, int) and isinstance(y, int) and isinstance(z, int)) or (y + z == x and isinstance(x, int) and isinstance(y, int) and isinstance(z, int)) or (z + x == y and isinstance(x, int) and isinstance(y, int) and isinstance(z, int))",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 93,
+      "trace_idx": 11,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9283279370618364,
+      "original_correct": false,
+      "pred": "def encode(message):\n    result = ''\n    for char in message:\n        if char.isalpha():\n            if char.isupper():\n                result += chr(ord(char) - 32)\n            else:\n                result += chr(ord(char) + 32)\n            if char.lower() in 'aeiou':\n                if char.lower() == 'a':\n                    result += 'c'\n                elif char.lower() == 'e':\n                    result += 'g'\n                elif char.lower() == 'i':\n                    result += 'k'\n    ",
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 2
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.25,
+        "coherence": 0.25,
+        "factuality": 0.25,
+        "overall": 0.25
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 93,
+      "trace_idx": 15,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9377278457174131,
+      "original_correct": true,
+      "pred": "def encode(message):\n    vowels = 'aeiouAEIOU'\n    message = ''.join([char.swapcase() for char in message])\n    message = ''.join([char if char not in vowels else chr(ord(char) + 2) for char in message])\n    return message",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 95,
+      "trace_idx": 14,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9265304712368797,
+      "original_correct": false,
+      "pred": "This code should compile and run without any issues. \n\nPlease let me know if you have any further questions or if there's anything else I can help you with. \n\nBest regards, \n[Your Name] \n\nNote: If you're still experiencing issues, please provide more information about the error message you're seeing and I'll do my best to help you troubleshoot the problem. \n\nBest regards, \n[Your Name] \n\nNote: I've provided the corrected code above. If you're still experiencing issues, please let me know and I'll",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 96,
+      "trace_idx": 6,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9216530794846605,
+      "original_correct": false,
+      "pred": "def count_up_to(n):\n    def is_prime(num):\n        if num <= 1:\n            return False\n        if num == 2:\n            return True\n        if num % 2 == 0:\n            return False\n        i = 3\n        while i * i <= num:\n            if num % i == 0:\n                return False\n            i += 2\n        return True\n    return [i for i in range(2, n) if is_prime(i)]",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 97,
+      "trace_idx": 1,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9686921186772369,
+      "original_correct": true,
+      "pred": "def multiply(a, b):\n    return (a % 10) * (b % 10)",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 97,
+      "trace_idx": 5,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9304078731858372,
+      "original_correct": true,
+      "pred": "    return (a % 10) * (b % 10)",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 97,
+      "trace_idx": 6,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9636963125848834,
+      "original_correct": true,
+      "pred": "    return (a % 10) * (b % 10)",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 97,
+      "trace_idx": 8,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9771001224122593,
+      "original_correct": true,
+      "pred": "    return (a % 10) * (b % 10)",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 3
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.5,
+        "overall": 0.5
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 97,
+      "trace_idx": 9,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9768194371039102,
+      "original_correct": true,
+      "pred": "    return (a % 10) * (b % 10)",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 0.75,
+        "overall": 0.75
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 97,
+      "trace_idx": 12,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.92691435517777,
+      "original_correct": true,
+      "pred": "    return (a % 10) * (b % 10)",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 97,
+      "trace_idx": 14,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9726781151711071,
+      "original_correct": true,
+      "pred": "def multiply(a, b):\n    return (a % 10) * (b % 10)",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 97,
+      "trace_idx": 15,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9462287330984631,
+      "original_correct": true,
+      "pred": "    return (a % 10) * (b % 10)",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 98,
+      "trace_idx": 3,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9568628528916312,
+      "original_correct": true,
+      "pred": "def count_upper(s):\n    return sum(1 for i, c in enumerate(s) if i % 2 == 0 and c in 'AEIOU')",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 98,
+      "trace_idx": 9,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9561559311882013,
+      "original_correct": true,
+      "pred": "    count = 0\n    for i, c in enumerate(s):\n        if i % 2 == 0 and c in 'AEIOU':\n            count += 1\n    return count",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 98,
+      "trace_idx": 15,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.954630056963547,
+      "original_correct": false,
+      "pred": "def count_upper(s):\n    return sum(1 for i in range(len(s)) if i % 2 == 0 and s[i].lower() in 'aeiou')",
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 3
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.25,
+        "coherence": 0.25,
+        "factuality": 0.5,
+        "overall": 0.3125
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 100,
+      "trace_idx": 3,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9331491617041339,
+      "original_correct": false,
+      "pred": "import math\n\ndef make_a_pile(n):\n    result = []\n    while n > 0:\n        result.append(n)\n        if n % 2 == 0:\n            n += 1\n        else:\n            n += 2\n        n -= 1\n    return result[::-1]",
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 3
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.25,
+        "coherence": 0.25,
+        "factuality": 0.5,
+        "overall": 0.3125
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 100,
+      "trace_idx": 5,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9216122955606241,
+      "original_correct": false,
+      "pred": "    pile = [n]\n    while pile[-1] % 2 == 0:\n        pile.append(pile[-1] + 2)\n    return pile",
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 2
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.25,
+        "coherence": 0.25,
+        "factuality": 0.25,
+        "overall": 0.25
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 100,
+      "trace_idx": 9,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9474848751052922,
+      "original_correct": false,
+      "pred": "I apologize, but it seems there was an error in my previous responses. Here is the corrected code:",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 101,
+      "trace_idx": 5,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.953120917432021,
+      "original_correct": true,
+      "pred": "    return s.replace(\",\", \" \").split()",
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 3,
+        "coherence": 2,
+        "factuality": 3
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.5,
+        "coherence": 0.25,
+        "factuality": 0.5,
+        "overall": 0.375
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 101,
+      "trace_idx": 6,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9365012865304843,
+      "original_correct": true,
+      "pred": "def words_string(s):\n    return s.replace(\",\", \" \").split()",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 101,
+      "trace_idx": 7,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9339378562487746,
+      "original_correct": true,
+      "pred": "    return s.replace(\",\", \" \").split()",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 101,
+      "trace_idx": 8,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9626436564492525,
+      "original_correct": true,
+      "pred": "    return s.replace(\",\", \" \").split()",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 101,
+      "trace_idx": 9,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9727871149774029,
+      "original_correct": true,
+      "pred": "    return s.replace(\",\", \" \").split()",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 101,
+      "trace_idx": 12,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.954568773313799,
+      "original_correct": true,
+      "pred": "    return s.replace(\",\", \" \").split()",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 101,
+      "trace_idx": 13,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9572808999741409,
+      "original_correct": true,
+      "pred": "    return s.replace(\",\", \" \").split()",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 102,
+      "trace_idx": 11,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9235218890171463,
+      "original_correct": true,
+      "pred": "def choose_num(x, y):\n    even_nums = [i for i in range(x, y + 1) if i % 2 == 0]\n    return even_nums[-1] if even_nums else -1",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 104,
+      "trace_idx": 1,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9202864594745119,
+      "original_correct": true,
+      "pred": "def unique_digits(x):\n    return sorted([n for n in x if not any(int(digit) % 2 == 0 for digit in str(n))])",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 104,
+      "trace_idx": 2,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9317646695572769,
+      "original_correct": false,
+      "pred": "    return sorted([y for y in x if all(y % 2 != 0 for y in str(y))])",
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 2
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.25,
+        "coherence": 0.25,
+        "factuality": 0.25,
+        "overall": 0.25
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 104,
+      "trace_idx": 8,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9666876751868929,
+      "original_correct": true,
+      "pred": "This code now defines the function `unique_digits` with the correct syntax, and it will compile without errors. The function will return a sorted list of numbers that have no even digits.",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 104,
+      "trace_idx": 9,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9656269048347589,
+      "original_correct": true,
+      "pred": "    return sorted([num for num in x if not any(int(digit) % 2 == 0 for digit in str(num))])",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 104,
+      "trace_idx": 11,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9587955066078115,
+      "original_correct": true,
+      "pred": "    return sorted([i for i in x if not any(int(digit) % 2 == 0 for digit in str(i))])",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 104,
+      "trace_idx": 12,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9328047079444172,
+      "original_correct": true,
+      "pred": "    return sorted([num for num in x if not any(int(digit) % 2 == 0 for digit in str(num))])",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 106,
+      "trace_idx": 5,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9294684613392511,
+      "original_correct": false,
+      "pred": "def f(n):\n    return [i * (i - 1) // 2 if i % 2 == 0 else sum(range(1, i + 1)) for i in range(1, n + 1)]",
+      "judge_scores": {
+        "faithfulness": 1,
+        "utility": 1,
+        "coherence": 1,
+        "factuality": 1
+      },
+      "fused_scores": {
+        "faithfulness": 0.0,
+        "utility": 0.0,
+        "coherence": 0.0,
+        "factuality": 0.0,
+        "overall": 0.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 108,
+      "trace_idx": 0,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9615753428085245,
+      "original_correct": false,
+      "pred": "def count_nums(arr):\n    return sum(1 for num in arr if sum(int(digit) if digit[0] != '-' else -int(digit) for digit in str(abs(num))) > 0)",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 108,
+      "trace_idx": 1,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9448172417378505,
+      "original_correct": false,
+      "pred": "def count_nums(arr):\n    return sum(1 for num in arr if sum(int(digit) for digit in str(abs(num))) > 0)",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 108,
+      "trace_idx": 2,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9596636540161055,
+      "original_correct": false,
+      "pred": "def count_nums(arr):\n    return sum(1 for num in arr if sum(int(digit) for digit in str(abs(num))) > 0)",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 108,
+      "trace_idx": 3,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9624910361594301,
+      "original_correct": false,
+      "pred": "def count_nums(arr):\n    return sum(1 for x in arr if sum(int(c) for c in str(abs(x))) > 0)",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 108,
+      "trace_idx": 10,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.958911331528665,
+      "original_correct": false,
+      "pred": "def count_nums(arr):\n    return sum(1 for num in arr if num < 0 or sum(int(digit) for digit in str(abs(num))) > 0)",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 110,
+      "trace_idx": 4,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9201357469610392,
+      "original_correct": false,
+      "pred": "def exchange(lst1, lst2):\n    odd = set(i for i in lst1 if i % 2 != 0)\n    return len(odd) == 0 or all(i % 2 == 0 for i in lst1)",
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 3
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.25,
+        "coherence": 0.25,
+        "factuality": 0.5,
+        "overall": 0.3125
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 110,
+      "trace_idx": 10,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.92072339573176,
+      "original_correct": true,
+      "pred": "def exchange(lst1, lst2):\n    even_arr = [x for x in lst2 if x % 2 == 0]\n    odd_arr = [x for x in lst1 if x % 2 != 0]\n    if len(even_arr) >= len(odd_arr):\n        return \"YES\"\n    else:\n        return \"NO\"",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 112,
+      "trace_idx": 1,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9285077225658359,
+      "original_correct": false,
+      "pred": "def reverse_delete(s, c):\n    c = sorted(c)\n    for char in c:\n        while char in s:\n            s = s.replace(char, '', 1)\n    return (s, s == s[::-1])",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 112,
+      "trace_idx": 13,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9226548525934359,
+      "original_correct": true,
+      "pred": "    result = ''.join([x for x in s if x not in c])\n    return result, result == result[::-1]",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 113,
+      "trace_idx": 14,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9384421632584357,
+      "original_correct": false,
+      "pred": "def odd_count(lst):\n    return [\"the number of odd elements {}n the str{}ng {} of the {}nput.\".format(\n        sum(int(digit) % 2 for digit in s), len(s), ''.join(s), len(s)) for s in lst]",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 114,
+      "trace_idx": 2,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9511541240806605,
+      "original_correct": true,
+      "pred": "def minSubArraySum(nums):\n    ans = float('inf')\n    for i in range(len(nums)):\n        cur_sum = 0\n        for j in range(i, len(nums)):\n            cur_sum += nums[j]\n            ans = min(ans, cur_sum)\n    return ans",
+      "judge_scores": {
+        "faithfulness": 1,
+        "utility": 1,
+        "coherence": 1,
+        "factuality": 1
+      },
+      "fused_scores": {
+        "faithfulness": 0.0,
+        "utility": 0.0,
+        "coherence": 0.0,
+        "factuality": 0.0,
+        "overall": 0.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 116,
+      "trace_idx": 3,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9690218454631584,
+      "original_correct": true,
+      "pred": "def sort_array(arr):\n    return sorted(arr, key=lambda x: (bin(x).count('1'), x))",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 116,
+      "trace_idx": 7,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9215097971818896,
+      "original_correct": true,
+      "pred": "    return sorted(arr, key = lambda x: (bin(x).count('1'), x))",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 119,
+      "trace_idx": 8,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9213569668867156,
+      "original_correct": false,
+      "pred": "    s = lst[0] + lst[1]\n    return 'Yes' if s.count('(') == s.count(')') else 'No'",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.8125
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 119,
+      "trace_idx": 10,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9209775142400676,
+      "original_correct": false,
+      "pred": "def match_parens(lst):\n    s1, s2 = lst\n    a, b = 0, 0\n    for c in s1 + s2:\n        if c == '(':\n            a += 1\n        else:\n            b += 1\n    return 'Yes' if a == b else 'No'",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 4,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 0.75,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 0.9375
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 120,
+      "trace_idx": 1,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9398001934504886,
+      "original_correct": false,
+      "pred": "def maximum(arr, k):\n    return sorted(arr, reverse=True)[:k]",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 120,
+      "trace_idx": 4,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9632485679954161,
+      "original_correct": false,
+      "pred": "def maximum(arr, k):\n    return sorted(arr, reverse=True)[:k]",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 120,
+      "trace_idx": 6,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9327171585633803,
+      "original_correct": false,
+      "pred": "def maximum(arr, k):\n    return sorted(arr, reverse=True)[:k]",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 120,
+      "trace_idx": 11,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9603754259012439,
+      "original_correct": false,
+      "pred": "Revised Answer:",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 120,
+      "trace_idx": 12,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9635238938436592,
+      "original_correct": false,
+      "pred": "def maximum(arr, k):\n    return sorted(arr, reverse=True)[:k]",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 121,
+      "trace_idx": 0,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9660989661185547,
+      "original_correct": true,
+      "pred": "def solution(lst):\n    return sum(x for i, x in enumerate(lst) if i % 2 == 0 and x % 2 != 0)",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 121,
+      "trace_idx": 6,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.941141975604454,
+      "original_correct": true,
+      "pred": "    return sum([lst[i] for i in range(len(lst)) if i % 2 == 0 and lst[i] % 2 != 0])",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 121,
+      "trace_idx": 13,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9504915578357371,
+      "original_correct": false,
+      "pred": "    return sum([lst[i] for i in range(1, len(lst), 2) if lst[i] % 2 != 0])",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 0.75,
+        "overall": 0.75
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 122,
+      "trace_idx": 11,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9376686806673216,
+      "original_correct": true,
+      "pred": "The final answer is",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 122,
+      "trace_idx": 14,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9587783325105118,
+      "original_correct": false,
+      "pred": "def add_elements(arr, k):\n    return sum(x for x in arr[:k] if 10 <= abs(x) < 100)",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 122,
+      "trace_idx": 15,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9612388825223266,
+      "original_correct": true,
+      "pred": "    return sum(x for x in arr[:k] if len(str(x)) < 3)",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 126,
+      "trace_idx": 3,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.930740910550339,
+      "original_correct": false,
+      "pred": "def is_sorted(lst):\n    return len(lst) == len(set(lst)) == len(set(lst[i] for i in range(len(lst)-1) if lst[i] >= lst[i+1]))",
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 2
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.25,
+        "coherence": 0.25,
+        "factuality": 0.25,
+        "overall": 0.25
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 127,
+      "trace_idx": 7,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9247609870471878,
+      "original_correct": false,
+      "pred": "    start1, end1 = interval1\n    start2, end2 = interval2\n    start = max(start1, start2)\n    end = min(end1, end2)\n    if start > end:\n        return \"NO\"\n    if end - start in (2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31):\n        return \"YES\"\n    return \"NO\"  def intersection(interval1, interval2):\n    start1, end1 = interval1\n    start2, end2 = interval2\n    start = max(start1, start2)\n    end = min(end1, end2)\n    if start > end:\n        return \"NO\"\n    if end - start in (2, 3, 5, 7, 11, 13, 17,",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 4,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 0.75,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 0.9375
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 131,
+      "trace_idx": 0,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9197614207162766,
+      "original_correct": false,
+      "pred": "    product = 1\n    for digit in str(n):\n        if int(digit) % 2 == 1:\n            product *= int(digit)\n    return product",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.875
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 134,
+      "trace_idx": 3,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9613551639528124,
+      "original_correct": false,
+      "pred": "    return txt and txt[-1].isalpha() and not txt[-1].isalnum()",
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 2
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.25,
+        "coherence": 0.25,
+        "factuality": 0.25,
+        "overall": 0.25
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 134,
+      "trace_idx": 4,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9379784476275491,
+      "original_correct": false,
+      "pred": "def check_if_last_char_is_a_letter(txt):\n    if len(txt) == 0:\n        return False\n    return (txt[-1].isalpha() and txt[-1] not in txt[:-1].split())",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 4,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 0.75,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 0.9375
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 134,
+      "trace_idx": 8,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9540601348372615,
+      "original_correct": false,
+      "pred": "def check_if_last_char_is_a_letter(txt):\n    return txt and txt[-1].isalpha() and txt[-1] not in txt[:-1].split()",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 134,
+      "trace_idx": 12,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9421953614182538,
+      "original_correct": false,
+      "pred": "def check_if_last_char_is_a_letter(txt):\n    return txt and txt[-1].isalpha() and not txt[-1].isalnum() and txt[-2] == ' '",
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 2
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.25,
+        "coherence": 0.25,
+        "factuality": 0.25,
+        "overall": 0.25
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 135,
+      "trace_idx": 2,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9418346475140835,
+      "original_correct": false,
+      "pred": "def can_arrange(arr):\n    for i in range(len(arr)-1):\n        if arr[i] <= arr[i+1]:\n            return i\n    return -1",
+      "judge_scores": {
+        "faithfulness": 1,
+        "utility": 1,
+        "coherence": 1,
+        "factuality": 1
+      },
+      "fused_scores": {
+        "faithfulness": 0.0,
+        "utility": 0.0,
+        "coherence": 0.0,
+        "factuality": 0.0,
+        "overall": 0.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 135,
+      "trace_idx": 8,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9578098824369914,
+      "original_correct": false,
+      "pred": "def can_arrange(arr):\n    for i in range(len(arr) - 1, -1, -1):\n        if arr[i] <= arr[i - 1]:\n            return i\n    return -1",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 135,
+      "trace_idx": 12,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9308822123259088,
+      "original_correct": false,
+      "pred": "    for i in range(len(arr) - 1):\n        if arr[i] <= arr[i + 1]:\n            return i\n    return -1",
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 2
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.25,
+        "coherence": 0.25,
+        "factuality": 0.25,
+        "overall": 0.25
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 135,
+      "trace_idx": 15,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9434835037244923,
+      "original_correct": false,
+      "pred": "def can_arrange(arr):\n    for i in range(len(arr)-1):\n        if arr[i] >= arr[i+1]:\n            return i\n    return -1",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 136,
+      "trace_idx": 2,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9206483264696228,
+      "original_correct": false,
+      "pred": "def largest_smallest_integers(lst):\n    negatives = [x for x in lst if x < 0]\n    positives = [x for x in lst if x > 0]\n    if negatives:\n        return (-min(negatives), None)\n    elif positives:\n        return (None, min(positives))\n    else:\n        return (None, None)",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.8125
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 138,
+      "trace_idx": 5,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.925671914013381,
+      "original_correct": true,
+      "pred": "def is_equal_to_sum_even(n):\n    for i in range(2, n, 2):\n        for j in range(i, n, 2):\n            for k in range(j, n, 2):\n                for l in range(k, n, 2):\n                    if i + j + k + l == n:\n                        return True\n    return False",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.8125
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 139,
+      "trace_idx": 6,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9378570519090853,
+      "original_correct": false,
+      "pred": "import math\n\ndef special_factorial(n):\n    result = 1\n    for i in range(n, 0, -1):\n        result *= math.factorial(i)\n    return result",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 139,
+      "trace_idx": 9,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9663151029616563,
+      "original_correct": false,
+      "pred": "    result = 1\n    for i in range(1, n + 1):\n        result *= math.factorial(i)\n    return result",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 140,
+      "trace_idx": 1,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9515375677441839,
+      "original_correct": false,
+      "pred": "def fix_spaces(text):\n    return text.replace(' ', '_').replace('  ', '-').replace('   ', '-')",
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 2
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.25,
+        "coherence": 0.25,
+        "factuality": 0.25,
+        "overall": 0.25
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 140,
+      "trace_idx": 12,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9625695694510698,
+      "original_correct": false,
+      "pred": "def fix_spaces(text):\n    while \"  \" in text:\n        text = text.replace(\"  \", \"-\")\n    return text.replace(\" \", \"_\")",
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 3
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.25,
+        "coherence": 0.25,
+        "factuality": 0.5,
+        "overall": 0.3125
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 142,
+      "trace_idx": 7,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9210634088788683,
+      "original_correct": false,
+      "pred": "def sum_squares(lst):\n    return sum([i**2 if i%3 == 0 else i**3 if i%4 == 0 and i%3!=0 else i for i in lst])",
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 3,
+        "factuality": 2
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.25,
+        "coherence": 0.5,
+        "factuality": 0.25,
+        "overall": 0.3125
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 142,
+      "trace_idx": 9,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9302820981578525,
+      "original_correct": false,
+      "pred": "def sum_squares(lst):\n    return sum(i**2 if (i%3)==0 else i**3 if (i%4)==0 and (i%3)!=0 else i for i in lst)",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 144,
+      "trace_idx": 9,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9304848187833905,
+      "original_correct": false,
+      "pred": "        n, d = map(int, x.split('/'))\n        return n / d\n    return g(x) * g(n) % 1 == 0",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.8125
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 145,
+      "trace_idx": 5,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9588373701806533,
+      "original_correct": false,
+      "pred": "def order_by_points(nums):\n    return sorted(nums, key=lambda x:(sum(map(int, str(abs(x)))), nums.index(x)))",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 145,
+      "trace_idx": 9,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9313597934457029,
+      "original_correct": false,
+      "pred": "def order_by_points(nums):\n    return sorted([(i, sum(int(digit) for digit in str(abs(i)))) for i in nums], key = lambda x: (x[1], nums.index(x[0])))",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 146,
+      "trace_idx": 8,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9309548411157553,
+      "original_correct": false,
+      "pred": "    count = 0\n    for num in nums:\n        if num > 10 and num % 10 % 10 % 10 % 10 % 10 % 10 % 10 % 10 % 10 % 10 % 10 % 10 % 10 % 10 % 10 % 10 % 10 % 10 % 10 % 10 % 10 % 10 % 10 % 10 % 10 % 10 % 10 % 10 % 10 % 10 % 10 % 10 % 10 % 10 % 10 % 10 % 10 % 10 % 10 % 10 % 10 % 10 % 10 >= 1 and num % 10 % 10 % 10 % 10 % 10 % 10 % 10 % 10 % 10 % 10 % 10 % 10 % 10 % 10 % 10 % 10 % 10 % 10 % 10 % 10 % 10 % 10 % 10 % 10 % 10 % 10 % 10 % 10 % 10 % 10 % 10 % 10 % 10 % 10 % 10 % 10 % 10 % 10 % 10 % 10 % 10 % 10",
+      "judge_scores": {
+        "faithfulness": 1,
+        "utility": 1,
+        "coherence": 1,
+        "factuality": 1
+      },
+      "fused_scores": {
+        "faithfulness": 0.0,
+        "utility": 0.0,
+        "coherence": 0.0,
+        "factuality": 0.0,
+        "overall": 0.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 147,
+      "trace_idx": 10,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9503782506102263,
+      "original_correct": true,
+      "pred": "def get_max_triples(n):\n    a = [i * i - i + 1 for i in range(1, n + 1)]\n    return sum(1 for i in range(n - 2) for j in range(i + 1, n - 1) for k in range(j + 1, n) if (a[i] + a[j] + a[k]) % 3 == 0)",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 148,
+      "trace_idx": 1,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9307939650384915,
+      "original_correct": false,
+      "pred": "    planets = [\"Mercury\", \"Venus\", \"Earth\", \"Mars\", \"Jupiter\", \"Saturn\", \"Uranus\", \"Neptune\"]\n    if planet1 not in planets or planet2 not in planets:\n        return ()\n    idx1 = planets.index(planet1)\n    idx2 = planets.index(planet2)\n    return tuple(sorted([planet for planet in planets if idx1 < planets.index(planet) < idx2]))",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.8125
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 149,
+      "trace_idx": 11,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9274831976528345,
+      "original_correct": false,
+      "pred": "def sorted_list_sum(lst):\n    return sorted(lst, key=lambda x: (len(x), x))",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 4,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 0.75,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 0.9375
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 150,
+      "trace_idx": 0,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9299260461013776,
+      "original_correct": false,
+      "pred": "def x_or_y(n, x, y):\n    def is_prime(num):\n        i = 2\n        while i * i <= num:\n            if num % i == 0:\n                return False\n            i += 1\n        return True\n    return x if is_prime(n) else y",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 150,
+      "trace_idx": 7,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9566647193283494,
+      "original_correct": false,
+      "pred": "    if n > 1:\n        for i in range(2, n):\n            if n % i == 0:\n                return y\n    return x  def x_or_y(n, x, y):\n    if n > 1:\n        for i in range(2, n):\n            if n % i == 0:\n                return y\n    return x  def x_or_y(n, x, y):\n    if n > 1:\n        for i in range(2, n):\n            if n % i == 0:\n                return y\n    return x  def x_or_y(n, x, y):\n    if n > 1:\n        for i in range(2, n):\n            if n % i == 0:\n                return y\n    return ",
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 2
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.25,
+        "coherence": 0.25,
+        "factuality": 0.25,
+        "overall": 0.25
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 151,
+      "trace_idx": 14,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9409632766878284,
+      "original_correct": false,
+      "pred": "def double_the_difference(lst):\n    return sum(x**2 for x in lst if isinstance(x, int) and x % 2 != 0)",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 152,
+      "trace_idx": 11,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9330871771032142,
+      "original_correct": true,
+      "pred": "def compare(game,guess):\n    return [abs(g-gg) if g!=gg else 0 for g,gg in zip(game,guess)]",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 152,
+      "trace_idx": 14,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.951513241859941,
+      "original_correct": true,
+      "pred": "def compare(game, guess):\n    return [abs(a-b) if a!=b else 0 for a,b in zip(game,guess)]",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 153,
+      "trace_idx": 2,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9476607607913579,
+      "original_correct": false,
+      "pred": "def Strongest_Extension(class_name, extensions):\n    strongest = max(extensions, key=lambda ext: sum(1 for c in ext if c.isupper) - sum(1 for c in ext if c.islower))\n    return f\"{class_name}.{strongest}\"",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 154,
+      "trace_idx": 8,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9278038175388398,
+      "original_correct": true,
+      "pred": "def cycpattern_check(a, b):\n    for i in range(len(b)):\n        if b in a or b[::-1] in a:\n            return True\n        b = b[-1] + b[:-1]\n    return False",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 155,
+      "trace_idx": 1,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9630450220101716,
+      "original_correct": true,
+      "pred": "    even = 0\n    odd = 0\n    for digit in str(abs(num)):\n        if int(digit) % 2 == 0:\n            even += 1\n        else:\n            odd += 1\n    return (even, odd)",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 155,
+      "trace_idx": 13,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9222651903527507,
+      "original_correct": true,
+      "pred": "def even_odd_count(num):\n    even = 0\n    odd = 0\n    for d in map(int, str(abs(num))):\n        if d % 2 == 0:\n            even += 1\n        else:\n            odd += 1\n    return (even, odd)",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 156,
+      "trace_idx": 0,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9233190710458381,
+      "original_correct": false,
+      "pred": "def int_to_mini_roman(number):\n    if not isinstance(number, int) or number < 1 or number > 1000:\n        return None\n    roman_numerals = {\n        1: 'i', 4: 'iv', 5: 'v', 9: 'ix', 10: 'x', 40: 'xl', 50: 'l', 90: 'xc',\n        100: 'c', 400: 'cd', 500: 'd', 900: 'cm', 1000: 'm'\n    }\n    result = ''\n    for value, numeral in roman_numerals.items():\n        while number >= value:\n            result += numeral\n            number -= value\n    return result.lower()",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 157,
+      "trace_idx": 2,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9682289206810921,
+      "original_correct": true,
+      "pred": "def right_angle_triangle(a, b, c):\n    return a**2 + b**2 == c**2 or a**2 + c**2 == b**2 or b**2 + c**2 == a**2",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 157,
+      "trace_idx": 3,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9282864326179914,
+      "original_correct": true,
+      "pred": "def right_angle_triangle(a, b, c):\n    return (a**2 + b**2 == c**2) or (a**2 + c**2 == b**2) or (b**2 + c**2 == a**2)",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 157,
+      "trace_idx": 8,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.925157731830128,
+      "original_correct": true,
+      "pred": "def right_angle_triangle(a, b, c):\n    return (a ** 2 + b ** 2 == c ** 2) or (a ** 2 + c ** 2 == b ** 2) or (b ** 2 + c ** 2 == a ** 2)",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 157,
+      "trace_idx": 11,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9689930022710314,
+      "original_correct": true,
+      "pred": "    return a * a + b * b == c * c or a * a + c * c == b * b or b * b + c * c == a * a",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 157,
+      "trace_idx": 12,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9725641489575056,
+      "original_correct": true,
+      "pred": "    return a**2 + b**2 == c**2 or a**2 + c**2 == b**2 or b**2 + c**2 == a**2",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 158,
+      "trace_idx": 0,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9549536226606339,
+      "original_correct": true,
+      "pred": "def find_max(words):\n    max_chars = 0\n    max_word = \"\"\n    for word in words:\n        if len(set(word)) > max_chars:\n            max_chars = len(set(word))\n            max_word = word\n        elif len(set(word)) == max_chars and word < max_word:\n            max_word = word\n    return max_word",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 158,
+      "trace_idx": 6,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.937417099841764,
+      "original_correct": false,
+      "pred": "def find_max(words):\n    return max(words, key=lambda x: (len(set(x)), x))",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 159,
+      "trace_idx": 9,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9497409792077174,
+      "original_correct": false,
+      "pred": "def eat(number, need, remaining):\n    total = number + need\n    if total > remaining:\n        return [remaining, 0]\n    return [total, remaining - total]",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 4,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 0.75,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 0.9375
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 160,
+      "trace_idx": 13,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9458590816058856,
+      "original_correct": true,
+      "pred": "    expression = ''\n    for i in range(len(operator)):\n        expression += str(operand[i]) + operator[i]\n    expression += str(operand[-1])\n    return eval(expression)",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 161,
+      "trace_idx": 6,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.929152989916512,
+      "original_correct": true,
+      "pred": "    result = \"\"\n    for c in s:\n        if c.islower():\n            result += c.upper()\n        elif c.isupper():\n            result += c.lower()\n        else:\n            result += c\n    if not any(c.isalpha() for c in s):\n        return result[::-1]\n    return result",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.8125
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 161,
+      "trace_idx": 8,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9567119140775313,
+      "original_correct": true,
+      "pred": "    s = ''.join(c.swapcase() if c.isalpha() else c for c in s)\n    return s[::-1] if not any(c.isalpha() for c in s) else s",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.8125
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 162,
+      "trace_idx": 2,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9594175577534159,
+      "original_correct": false,
+      "pred": "import hashlib\n\ndef string_to_md5(text):\n    if text == '':\n        return None\n    else:\n        return hashlib.md5(text.encode()).hexdigest()",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 162,
+      "trace_idx": 11,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.965474645435349,
+      "original_correct": false,
+      "pred": "import hashlib\n\ndef string_to_md5(text):\n    if not text:\n        return None\n    return hashlib.md5(text.encode()).hexdigest()",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 163,
+      "trace_idx": 15,
+      "model": "Llama-3.1-8B-Instruct",
+      "confidence": 0.9205893156262913,
+      "original_correct": false,
+      "pred": "    return sorted([i for i in range(a, b + 1) if i % 2 == 0])",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    }
+  ]
+}

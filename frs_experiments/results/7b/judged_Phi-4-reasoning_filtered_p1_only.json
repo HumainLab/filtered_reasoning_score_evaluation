@@ -1,0 +1,4385 @@
+{
+  "metadata": {
+    "model": "Phi-4-Reas.",
+    "raw_model": "Phi-4-reasoning",
+    "benchmark": "filtered_p1",
+    "source_file": "/Users/manaspathak11/Desktop/Everything/research paper/threshold/results/7b/drive_download_20260529/Phi-4-reasoning_filtered_p1_only_results.json",
+    "imported_from": "drive_filtered_p1_only_results.json",
+    "bin_label": "filtered_p1",
+    "top_frac": 0.1,
+    "judge_model": "@irom-ll37364-op-b37b3e/gpt-4o-mini",
+    "n_traces_total": 262,
+    "n_judged_ok": 244,
+    "n_judged_fail": 18,
+    "frs_pct_source": 89.36987704918033,
+    "mean_reasoning_score": 0.8936987704918032,
+    "mean_reasoning_score_pct": 89.36987704918032,
+    "timestamp": "2026-05-29T19:17:54.067343+00:00"
+  },
+  "judged_samples": [
+    {
+      "idx": 0,
+      "trace_idx": 1,
+      "bin_label": "filtered_p1",
+      "confidence": 0.4544554838862329,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "Solution 7:"
+    },
+    {
+      "idx": 1,
+      "trace_idx": 0,
+      "bin_label": "filtered_p1",
+      "confidence": 0.3511700584787109,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 4
+      },
+      "reasoning_score": 0.75,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    result = []\n    i = 0\n    n = len(paren_string)\n    while i < n:\n        if paren_string[i] == ' ':\n            i += 1\n            continue"
+    },
+    {
+      "idx": 2,
+      "trace_idx": 13,
+      "bin_label": "filtered_p1",
+      "confidence": 0.5066730191129635,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    return number - int(number)"
+    },
+    {
+      "idx": 3,
+      "trace_idx": 4,
+      "bin_label": "filtered_p1",
+      "confidence": 0.40641816577178047,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 1,
+        "utility": 1,
+        "coherence": 1,
+        "factuality": 1
+      },
+      "reasoning_score": 0.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "        balance = 0\n        for op in operations:\n            balance += op\n            if balance < 0:\n                return True\n        return False\n\n    I'll now produce answer code with no extra text.</think > def below_zero(operations: List[int]) -> bool:\n        balance = 0\n        for op in operations:\n            balance += op\n            if balance < 0:\n                return True\n        return False"
+    },
+    {
+      "idx": 4,
+      "trace_idx": 14,
+      "bin_label": "filtered_p1",
+      "confidence": 0.26003653996336035,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    return sum(abs(x - mean_val) for x in numbers) / len(numbers)"
+    },
+    {
+      "idx": 5,
+      "trace_idx": 9,
+      "bin_label": "filtered_p1",
+      "confidence": 0.381097292204594,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 1,
+        "utility": 1,
+        "coherence": 1,
+        "factuality": 1
+      },
+      "reasoning_score": 0.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "We'll check test examples.  We'll need to pass all tests.\n\n----\n\nThe above instructions are your final answer.  You can now produce your final answer as Python code only.\n\n----\n\nI'll now produce final answer in Python code only.  We'll produce final answer as Python code only.  We'll produce final answer and end answer.  We'll produce final answer below.  We'll produce final answer.  We'll produce final answer.  We'll produce final answer.  We'll produce final answer.  We'll produce final answer"
+    },
+    {
+      "idx": 6,
+      "trace_idx": 6,
+      "bin_label": "filtered_p1",
+      "confidence": 0.25975856731961444,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "        max_d = 0\n        current = 0\n        for ch in s:\n            if ch == '(':\n                current += 1\n                if current > max_d:\n                    max_d = current\n            elif ch == ')':\n                if current:\n                    current -= 1\n        return max_d\n    return [max_depth(group) for group in paren_string.split()]"
+    },
+    {
+      "idx": 8,
+      "trace_idx": 8,
+      "bin_label": "filtered_p1",
+      "confidence": 0.4190761073825648,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "reasoning_score": 0.8125,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    total = 0\n    prod = 1\n    for num in numbers:\n        total += num\n        prod *= num"
+    },
+    {
+      "idx": 8,
+      "trace_idx": 14,
+      "bin_label": "filtered_p1",
+      "confidence": 0.48857295924201943,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    s = 0\n    p = 1\n    for num in numbers:\n        s += num\n        p *= num"
+    },
+    {
+      "idx": 9,
+      "trace_idx": 5,
+      "bin_label": "filtered_p1",
+      "confidence": 0.28668683818105817,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    result = []\n    current_max = None\n    for num in numbers:\n        if current_max is None or num > current_max:\n            current_max = num"
+    },
+    {
+      "idx": 10,
+      "trace_idx": 1,
+      "bin_label": "filtered_p1",
+      "confidence": 0.2560848040676606,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 4,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "reasoning_score": 0.625,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    if not string:\n        return ''\n    for i in range(len(string), -1, -1):\n        if is_palindrome(string[i:]):\n            return string + string[:i][::-1]\n    return string"
+    },
+    {
+      "idx": 10,
+      "trace_idx": 9,
+      "bin_label": "filtered_p1",
+      "confidence": 0.44315296651851926,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 4,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "reasoning_score": 0.625,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    if not string:\n        return \"\"\n    for i in range(len(string), -1, -1):\n        if is_palindrome(string[:i]):\n            return string + string[i:][::-1]\n    return string"
+    },
+    {
+      "idx": 10,
+      "trace_idx": 10,
+      "bin_label": "filtered_p1",
+      "confidence": 0.47314457443765356,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "reasoning_score": 0.8125,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    if not string:\n        return ''\n    \n    # Find the longest suffix that is a palindrome\n    for i in range(len(string)):\n        if is_palindrome(string[i:]):\n            return string + string[:i][::-1]\n    return string"
+    },
+    {
+      "idx": 11,
+      "trace_idx": 6,
+      "bin_label": "filtered_p1",
+      "confidence": 0.2884350576019811,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    result = []\n    for x, y in zip(a, b):\n        if x == y:\n            result.append('0')"
+    },
+    {
+      "idx": 12,
+      "trace_idx": 3,
+      "bin_label": "filtered_p1",
+      "confidence": 0.6710189129308306,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    longest_str = strings[0]\n    for s in strings:\n        if len(s) > len(longest_str):\n            longest_str = s"
+    },
+    {
+      "idx": 13,
+      "trace_idx": 6,
+      "bin_label": "filtered_p1",
+      "confidence": 0.7196619212444834,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    while b:\n        a, b = b, a % b\n    return abs(a)"
+    },
+    {
+      "idx": 13,
+      "trace_idx": 9,
+      "bin_label": "filtered_p1",
+      "confidence": 0.25405224236582913,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 2
+      },
+      "reasoning_score": 0.25,
+      "judge_ok": true,
+      "error": "",
+      "pred": "We'll test your function with various inputs, so make sure it works for all edge cases.  Also note that the inputs might be negative, so ensure to handle that as well.\n\nEdge Cases to Consider:\n- One or both numbers can be zero.\n- One or both numbers can be negative.\n- The numbers can be large.\n- The numbers can be equal.\n\nWe are given function specification. We'll test your function with various inputs.  So ensure to implement it as described.\n\nWe are given function specification. We'll test you"
+    },
+    {
+      "idx": 13,
+      "trace_idx": 10,
+      "bin_label": "filtered_p1",
+      "confidence": 0.7196619212444834,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    while b:\n        a, b = b, a % b\n    return abs(a)"
+    },
+    {
+      "idx": 15,
+      "trace_idx": 10,
+      "bin_label": "filtered_p1",
+      "confidence": 0.5152524480004884,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    return \" \".join(str(i) for i in range(n + 1))"
+    },
+    {
+      "idx": 17,
+      "trace_idx": 13,
+      "bin_label": "filtered_p1",
+      "confidence": 0.4749062356325668,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    result = []\n    tokens = music_string.split()\n    for token in tokens:\n        if token == \"o\":\n            result.append(4)"
+    },
+    {
+      "idx": 17,
+      "trace_idx": 15,
+      "bin_label": "filtered_p1",
+      "confidence": 0.2566429125560285,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    result = []\n    tokens = music_string.split()\n    for token in tokens:\n        if token == \"o\":\n            result.append(4)"
+    },
+    {
+      "idx": 18,
+      "trace_idx": 1,
+      "bin_label": "filtered_p1",
+      "confidence": 0.6631956920901374,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    count = 0\n    i = 0\n    while i <= len(string) - len(substring):\n        if string[i:i + len(substring)] == substring:\n            count += 1\n            i += 1"
+    },
+    {
+      "idx": 18,
+      "trace_idx": 3,
+      "bin_label": "filtered_p1",
+      "confidence": 0.268311587343199,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    count = 0\n    start = 0\n    while True:\n        start = string.find(substring, start)\n        if start == -1:\n            break"
+    },
+    {
+      "idx": 18,
+      "trace_idx": 7,
+      "bin_label": "filtered_p1",
+      "confidence": 0.5165527377533586,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    count = 0\n    i = 0\n    while True:\n        i = string.find(substring, i)\n        if i == -1:\n            break\n        count += 1\n        i += 1\n    return count"
+    },
+    {
+      "idx": 18,
+      "trace_idx": 8,
+      "bin_label": "filtered_p1",
+      "confidence": 0.5778284228599159,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    # write your code here\n    count = start = 0\n    while True:\n        start = string.find(substring, start) + 1\n        if start > 0:\n            count += 1\n        else:\n            break\n    return count"
+    },
+    {
+      "idx": 18,
+      "trace_idx": 15,
+      "bin_label": "filtered_p1",
+      "confidence": 0.3468297508289109,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    count = 0\n    i = 0\n    while i <= len(string) - len(substring):\n        if string[i:i + len(substring)] == substring:\n            count += 1\n            i += 1"
+    },
+    {
+      "idx": 19,
+      "trace_idx": 0,
+      "bin_label": "filtered_p1",
+      "confidence": 0.3260965264912409,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    num_words = {\n        'zero': 0,\n        'one': 1,\n        'two': 2,\n        'three': 3,\n        'four': 4,\n        'five': 5,\n        'six': 6,\n        'seven': 7,\n        'eight': 8,\n        'nine': 9\n    }\n    words = numbers.split()\n    sorted_words = sorted(words, key = lambda word: num_words[word])\n    return ' '.join(sorted_words)"
+    },
+    {
+      "idx": 19,
+      "trace_idx": 3,
+      "bin_label": "filtered_p1",
+      "confidence": 0.2825635975343467,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    num_to_val = {\n        \"zero\": 0,\n        \"one\": 1,\n        \"two\": 2,\n        \"three\": 3,\n        \"four\": 4,\n        \"five\": 5,\n        \"six\": 6,\n        \"seven\": 7,\n        \"eight\": 8,\n        \"nine\": 9\n    }\n    num_list = numbers.split()\n    sorted_list = sorted(num_list, key = lambda word: num_to_val[word])\n    return \" \".join(sorted_list)"
+    },
+    {
+      "idx": 19,
+      "trace_idx": 4,
+      "bin_label": "filtered_p1",
+      "confidence": 0.5137537820649948,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    num_to_val = {\n        \"zero\": 0,\n        \"one\": 1,\n        \"two\": 2,\n        \"three\": 3,\n        \"four\": 4,\n        \"five\": 5,\n        \"six\": 6,\n        \"seven\": 7,\n        \"eight\": 8,\n        \"nine\": 9\n    }\n    words = numbers.split()\n    sorted_words = sorted(words, key = lambda word: num_to_val[word])\n    return \" \".join(sorted_words)"
+    },
+    {
+      "idx": 19,
+      "trace_idx": 10,
+      "bin_label": "filtered_p1",
+      "confidence": 0.29092785324878523,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    mapping = {'zero': 0, 'one': 1, 'two': 2, 'three': 3, 'four': 4, 'five': 5, 'six': 6, 'seven': 7, 'eight': 8, 'nine': 9}\n    words = numbers.split()\n    sorted_words = sorted(words, key = lambda word: mapping[word])\n    return ' '.join(sorted_words)"
+    },
+    {
+      "idx": 19,
+      "trace_idx": 13,
+      "bin_label": "filtered_p1",
+      "confidence": 0.4052721779520631,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    num_to_val = {'zero': 0, 'one': 1, 'two': 2, 'three': 3, 'four': 4, 'five': 5, 'six': 6, 'seven': 7, 'eight': 8, 'nine': 9}\n    words = numbers.split()\n    sorted_words = sorted(words, key = lambda word: num_to_val[word])\n    return ' '.join(sorted_words)"
+    },
+    {
+      "idx": 19,
+      "trace_idx": 15,
+      "bin_label": "filtered_p1",
+      "confidence": 0.5942499769829577,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    num_to_int = {'zero': 0, 'one': 1, 'two': 2, 'three': 3, 'four': 4, 'five': 5, 'six': 6, 'seven': 7, 'eight': 8, 'nine': 9}\n    words = numbers.split()\n    sorted_words = sorted(words, key = lambda word: num_to_int[word])\n    return ' '.join(sorted_words)"
+    },
+    {
+      "idx": 20,
+      "trace_idx": 4,
+      "bin_label": "filtered_p1",
+      "confidence": 0.2734611218665125,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    numbers.sort()\n    min_diff = float(\"inf\")\n    result = (numbers[0], numbers[1])\n    for i in range(1, len(numbers)):\n        diff = numbers[i] - numbers[i - 1]\n        if diff < min_diff:\n            min_diff = diff\n            result = (numbers[i - 1], numbers[i])"
+    },
+    {
+      "idx": 20,
+      "trace_idx": 7,
+      "bin_label": "filtered_p1",
+      "confidence": 0.316875392453401,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "reasoning_score": 0.8125,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    if len(numbers) < 2:\n        raise ValueError(\"At least two numbers required\")\n    numbers.sort()\n    closest_pair = (numbers[0], numbers[1])\n    smallest_diff = numbers[1] - numbers[0]\n    for i in range(1, len(numbers) - 1):\n        diff = numbers[i + 1] - numbers[i]\n        if diff < smallest_diff:\n            smallest_diff = diff\n            closest_pair = (numbers[i], numbers[i + 1])\n    return closest_pair"
+    },
+    {
+      "idx": 20,
+      "trace_idx": 9,
+      "bin_label": "filtered_p1",
+      "confidence": 0.27241725879759837,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    numbers_sorted = sorted(numbers)\n    min_diff = float('inf')\n    closest_pair = (numbers_sorted[0], numbers_sorted[1])\n    for i in range(len(numbers_sorted) - 1):\n        diff = numbers_sorted[i + 1] - numbers_sorted[i]\n        if diff < min_diff:\n            min_diff = diff\n            closest_pair = (numbers_sorted[i], numbers_sorted[i + 1])"
+    },
+    {
+      "idx": 20,
+      "trace_idx": 11,
+      "bin_label": "filtered_p1",
+      "confidence": 0.4892462948877906,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "        numbers.sort()\n        min_diff = float('inf')\n        result = (numbers[0], numbers[1])\n        for i in range(len(numbers) - 1):\n            diff = numbers[i + 1] - numbers[i]\n            if diff < min_diff:\n                min_diff = diff\n                result = (numbers[i], numbers[i + 1])\n        return result\n\n    print(find_closest_elements([1.0, 2.0, 3.0, 4.0, 5.0, 2.2]))  # expected (2.0, 2.2)\n    print(find_closest_elements([1.0, 2.0, 3.0, 4.0, 5.0, 2.0]))  # expected (2.0, 2."
+    },
+    {
+      "idx": 22,
+      "trace_idx": 13,
+      "bin_label": "filtered_p1",
+      "confidence": 0.38854827525998203,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    return [v for v in values if isinstance(v, int)]"
+    },
+    {
+      "idx": 23,
+      "trace_idx": 7,
+      "bin_label": "filtered_p1",
+      "confidence": 0.42440838389557944,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    count = 0\n    for char in string:\n        count += 1"
+    },
+    {
+      "idx": 25,
+      "trace_idx": 4,
+      "bin_label": "filtered_p1",
+      "confidence": 0.3687401133618968,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    factors = []\n    divisor = 2\n    while n > 1:\n        while n % divisor == 0:\n            factors.append(divisor)\n            n //= divisor\n        divisor += 1\n    return factors"
+    },
+    {
+      "idx": 26,
+      "trace_idx": 1,
+      "bin_label": "filtered_p1",
+      "confidence": 0.41676195204329014,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    result = []\n    seen_once = set()\n    seen_multiple = set()\n    for num in numbers:\n        if num in seen_multiple:\n            continue"
+    },
+    {
+      "idx": 27,
+      "trace_idx": 12,
+      "bin_label": "filtered_p1",
+      "confidence": 0.2737866609709776,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    result = []\n    for char in string:\n        if char.islower():\n            result.append(char.upper())"
+    },
+    {
+      "idx": 27,
+      "trace_idx": 13,
+      "bin_label": "filtered_p1",
+      "confidence": 0.6567623056435835,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    result = \"\"\n    for char in string:\n        if char.islower():\n            result += char.upper()"
+    },
+    {
+      "idx": 28,
+      "trace_idx": 12,
+      "bin_label": "filtered_p1",
+      "confidence": 0.43593649473199064,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    first_pair = (-1, -1)\n    last_pair = (-1, -1)\n    unique_pairs = []\n    seen = {}\n    for num in numbers"
+    },
+    {
+      "idx": 28,
+      "trace_idx": 14,
+      "bin_label": "filtered_p1",
+      "confidence": 0.32396320981826,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 3,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "reasoning_score": 0.5,
+      "judge_ok": true,
+      "error": "",
+      "pred": "        return \"\".join(strings)\n\n    I'll produce this as answer. The function is trivial and one - liner.\n\n    I'll produce answer. We'll produce code with no comments. I'll produce code accordingly. We'll produce answer as instructed. We'll produce code with no additional text. We'll produce answer as Python code. We'll produce answer. We'll produce answer code. We'll produce code. We'll produce code accordingly.\n\n    I'll produce answer code. We'll produce answer code. We'll produce answer co"
+    },
+    {
+      "idx": 29,
+      "trace_idx": 0,
+      "bin_label": "filtered_p1",
+      "confidence": 0.43313454162659487,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    return [s for s in strings if s.startswith(prefix)]"
+    },
+    {
+      "idx": 30,
+      "trace_idx": 6,
+      "bin_label": "filtered_p1",
+      "confidence": 0.5271159037180263,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 1,
+        "utility": 1,
+        "coherence": 1,
+        "factuality": 1
+      },
+      "reasoning_score": 0.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "Use type annotations if possible.\n\nRules:\n\n1. Return only the Python code.\n\n2. Do not include explanations or comments.\n\n3. Do not write tests.\n\n4. Do not include imports unless required.\n\nYour final answer should be the complete Python function definition, starting with def get_positive(l: list):.\n\nInclude type hints.\n\nReturn only the Python code.  Use type hints.\n\nWe'll now produce the final answer as Python code only. We'll now produce the final answer.  We'll now produce the final answer as "
+    },
+    {
+      "idx": 31,
+      "trace_idx": 1,
+      "bin_label": "filtered_p1",
+      "confidence": 0.25024158131353424,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    Solution = def is_prime(n):\n        if n < 2:\n            return False"
+    },
+    {
+      "idx": 31,
+      "trace_idx": 3,
+      "bin_label": "filtered_p1",
+      "confidence": 0.30471853341459637,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    i = 5\n    while i * i <= n:\n        if n % i == 0 or n % (i + 2) == 0:\n            return False"
+    },
+    {
+      "idx": 31,
+      "trace_idx": 4,
+      "bin_label": "filtered_p1",
+      "confidence": 0.7480023907937552,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    i = 3\n    while i * i <= n:\n        if n % i == 0:\n            return False"
+    },
+    {
+      "idx": 31,
+      "trace_idx": 9,
+      "bin_label": "filtered_p1",
+      "confidence": 0.537877321342984,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    Return true if a given number is prime, and false otherwise.\n    >>> is_prime(6)\n    False\n    >>> is_prime(101)\n    True\n    >>> is_prime(11)\n    True\n    >>> is_prime(13441)\n    True\n    >>> is_prime(61)\n    True\n    >>> is_prime(4)\n    False\n    >>> is_prime(1)\n    False"
+    },
+    {
+      "idx": 33,
+      "trace_idx": 4,
+      "bin_label": "filtered_p1",
+      "confidence": 0.37588616385756773,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "        # Your code here\n        pass\n\n    Write your final answer as Python code only.  We'll test your code by copying it into a Python file, so include no markdown for matt ing.\n\n    - Answer: def sort_third(l: list):\n        result = l.copy()\n        third_elems = [l[i] for i in range(len(l)) if i % 3 == 0]\n        third_elems.sort()\n        index = 0\n        for i in range(len(l)):\n            if i % 3 == 0:\n                result[i] = third_elems[index]\n                index += 1\n        r"
+    },
+    {
+      "idx": 34,
+      "trace_idx": 11,
+      "bin_label": "filtered_p1",
+      "confidence": 0.402155106606866,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 1,
+        "utility": 1,
+        "coherence": 1,
+        "factuality": 1
+      },
+      "reasoning_score": 0.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "We'll run it to check for correctness.\n----\n\nI'll produce the answer accordingly. We'll produce the code answer. We'll produce code. We'll produce final answer accordingly. We'll produce code answer accordingly. We'll produce answer accordingly. We'll produce final answer accordingly. We'll produce answer accordingly. We'll produce answer accordingly. We'll produce final answer accordingly. We'll produce answer accordingly.\n\nI'll produce final answer accordingly. We'll produce code answer accord"
+    },
+    {
+      "idx": 36,
+      "trace_idx": 2,
+      "bin_label": "filtered_p1",
+      "confidence": 0.7259196029645122,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    count = 0\n    for i in range(n):\n        if i % 11 == 0 or i % 13 == 0:\n            count += str(i).count('7')"
+    },
+    {
+      "idx": 37,
+      "trace_idx": 1,
+      "bin_label": "filtered_p1",
+      "confidence": 0.6076560969979325,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    evens = sorted(x for i, x in enumerate(l) if i % 2 == 0)\n    result = []\n    even_index = 0\n    for i, x in enumerate(l):\n        if i % 2 == 0:\n            result.append(evens[even_index])\n            even_index += 1"
+    },
+    {
+      "idx": 37,
+      "trace_idx": 3,
+      "bin_label": "filtered_p1",
+      "confidence": 0.34485079300802784,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    even_indices = [i for i in range(len(l)) if i % 2 == 0]\n    even_values = sorted([l[i] for i in even_indices])\n    result = l[:]\n    for idx, value in zip(even_indices, even_values):\n        result[idx] = value"
+    },
+    {
+      "idx": 37,
+      "trace_idx": 11,
+      "bin_label": "filtered_p1",
+      "confidence": 0.33153480646725564,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    evens = [l[i] for i in range(len(l)) if i % 2 == 0]\n    evens.sort()\n    result = []\n    even_index = 0\n    for i in range(len(l)):\n        if i % 2 == 0:\n            result.append(evens[even_index])\n            even_index += 1"
+    },
+    {
+      "idx": 37,
+      "trace_idx": 12,
+      "bin_label": "filtered_p1",
+      "confidence": 0.511640243916932,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    evens = [x for i, x in enumerate(l) if i % 2 == 0]\n    evens.sort()\n    result = []\n    even_index = 0\n    for i, x in enumerate(l):\n        if i % 2 == 0:\n            result.append(evens[even_index])\n            even_index += 1"
+    },
+    {
+      "idx": 37,
+      "trace_idx": 13,
+      "bin_label": "filtered_p1",
+      "confidence": 0.2873619795102277,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    even_indices = [i for i in range(len(l)) if i % 2 == 0]\n    even_values = [l[i] for i in even_indices]\n    even_values.sort()\n    result = l[:]\n    for idx, val in zip(even_indices, even_values):\n        result[idx] = val"
+    },
+    {
+      "idx": 38,
+      "trace_idx": 2,
+      "bin_label": "filtered_p1",
+      "confidence": 0.4506287214531943,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    groups = [s[(3 * i):min((3 * i + 3), len(s))] for i in range((len(s) + 2) // 3)]\n    decoded_groups = []\n    for group in groups:\n        if len(group) == 3:\n            decoded_groups.append(group[-1] + group[:-1])\n        else:\n            decoded_groups.append(group)\n    return \"\".join(decoded_groups)"
+    },
+    {
+      "idx": 38,
+      "trace_idx": 8,
+      "bin_label": "filtered_p1",
+      "confidence": 0.4620494517521531,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 4
+      },
+      "reasoning_score": 0.75,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    groups = [s[(3 * i):min((3 * i + 3), len(s))] for i in range((len(s) + 2) // 3)]\n    groups = [((group[-1] + group[:-1]) if len(group) == 3 else group) for group in groups]\n    return \"\".join(groups)"
+    },
+    {
+      "idx": 38,
+      "trace_idx": 14,
+      "bin_label": "filtered_p1",
+      "confidence": 0.582637949543291,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 4
+      },
+      "reasoning_score": 0.75,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    groups = [s[(3 * i):min((3 * i + 3), len(s))] for i in range((len(s) + 2) // 3)]\n    groups = [(group[-1] + group[:-1]) if len(group) == 3 else group for group in groups]\n    return \"\".join(groups)"
+    },
+    {
+      "idx": 39,
+      "trace_idx": 0,
+      "bin_label": "filtered_p1",
+      "confidence": 0.4422130273281875,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    i = 3\n    while i * i <= num:\n        if num % i == 0:\n            return False"
+    },
+    {
+      "idx": 39,
+      "trace_idx": 3,
+      "bin_label": "filtered_p1",
+      "confidence": 0.3313397584221982,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "reasoning_score": 0.8125,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    i = 3\n    while i * i <= num:\n        if num % i == 0:\n            return False"
+    },
+    {
+      "idx": 39,
+      "trace_idx": 5,
+      "bin_label": "filtered_p1",
+      "confidence": 0.30904389416379247,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "reasoning_score": 0.8125,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    i = 3\n    while i * i <= num:\n        if num % i == 0:\n            return False"
+    },
+    {
+      "idx": 39,
+      "trace_idx": 6,
+      "bin_label": "filtered_p1",
+      "confidence": 0.46994444465016266,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    i = 3\n    while i * i <= x:\n        if x % i == 0:\n            return False"
+    },
+    {
+      "idx": 39,
+      "trace_idx": 7,
+      "bin_label": "filtered_p1",
+      "confidence": 0.3740669767298589,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    i = 3\n    while i * i <= num:\n        if num % i == 0:\n            return False"
+    },
+    {
+      "idx": 39,
+      "trace_idx": 10,
+      "bin_label": "filtered_p1",
+      "confidence": 0.4319435763943285,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    i = 3\n    while i * i <= x:\n        if x % i == 0:\n            return False"
+    },
+    {
+      "idx": 39,
+      "trace_idx": 11,
+      "bin_label": "filtered_p1",
+      "confidence": 0.31279441167192623,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "        if num < 2:\n            return False\n        if num == 2:\n            return True\n        if num % 2 == 0:\n            return False\n        i = 3\n        while i * i <= num:\n            if num % i == 0:\n                return False\n            i += 2\n        return True\n\n        a, b = 0, 1\n        while True:\n            yield a\n            a, b = b, a + b\n\n    count = 0\n    for f in fib_gen():\n        if is_prime(f):\n            count += 1\n            if count == n:\n                ret"
+    },
+    {
+      "idx": 39,
+      "trace_idx": 13,
+      "bin_label": "filtered_p1",
+      "confidence": 0.309458663847984,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "reasoning_score": 0.8125,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    i = 3\n    while i * i <= num:\n        if num % i == 0:\n            return False"
+    },
+    {
+      "idx": 39,
+      "trace_idx": 14,
+      "bin_label": "filtered_p1",
+      "confidence": 0.45954410477408286,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    i = 3\n    while i * i <= x:\n        if x % i == 0:\n            return False"
+    },
+    {
+      "idx": 40,
+      "trace_idx": 6,
+      "bin_label": "filtered_p1",
+      "confidence": 0.26856127491973125,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    n = len(l)\n    if n < 3:\n        return False"
+    },
+    {
+      "idx": 40,
+      "trace_idx": 8,
+      "bin_label": "filtered_p1",
+      "confidence": 0.349890347591307,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    n = len(l)\n    if n < 3:\n        return False\n    # sort the list to use two - pointer technique\n    l.sort()\n    for i in range(n - 2):\n        # avoid duplicates for the first element\n        if i > 0 and l[i] == l[i - 1]:\n            continue\n        left, right = i + 1, n - 1\n        while left < right:\n            total = l[i] + l[left] + l[right]\n            if total == 0:\n                return True\n            elif total < 0:\n                left += 1\n            else:\n              "
+    },
+    {
+      "idx": 40,
+      "trace_idx": 11,
+      "bin_label": "filtered_p1",
+      "confidence": 0.6182870380278401,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    n = len(l)\n    if n < 3:\n        return False"
+    },
+    {
+      "idx": 42,
+      "trace_idx": 12,
+      "bin_label": "filtered_p1",
+      "confidence": 0.5140811599660163,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    return [x + 1 for x in l]"
+    },
+    {
+      "idx": 43,
+      "trace_idx": 5,
+      "bin_label": "filtered_p1",
+      "confidence": 0.7334105391080369,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    seen = set()\n    for num in l:\n        if -num in seen:\n            return True"
+    },
+    {
+      "idx": 45,
+      "trace_idx": 13,
+      "bin_label": "filtered_p1",
+      "confidence": 0.6697756061054886,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 1,
+        "utility": 1,
+        "coherence": 1,
+        "factuality": 1
+      },
+      "reasoning_score": 0.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    \n    Write your final answer as Python code only. Ensure that it is self - contained.\n    - Solution: 1\n\n    ---\n\n    You are a Python coding assistant. Read the following function specification and write the complete Python function that satisfies it.\n\n    Follow these rules:\n\n    1. Return only the Python code.\n\n    2. Do not include explanations or comments.\n\n    3. Do not write tests.\n\n    4. Do not include imports unless required.\n\n    Problem:"
+    },
+    {
+      "idx": 46,
+      "trace_idx": 1,
+      "bin_label": "filtered_p1",
+      "confidence": 0.4337148247854408,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    if n == 0 or n == 1:\n        return 0\n    elif n == 2:\n        return 2\n    elif n == 3:\n        return 0\n    a, b, c, d = 0, 0, 2, 0\n    for i in range(4, n + 1):\n        total = a + b + c + d\n        a, b, c, d = b, c, d, total\n    return d"
+    },
+    {
+      "idx": 46,
+      "trace_idx": 6,
+      "bin_label": "filtered_p1",
+      "confidence": 0.7068419192704697,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    a, b, c, d = 0, 0, 2, 0\n    for i in range(4, n + 1):\n        total = a + b + c + d\n        a, b, c, d = b, c, d, total"
+    },
+    {
+      "idx": 46,
+      "trace_idx": 8,
+      "bin_label": "filtered_p1",
+      "confidence": 0.3294160572867722,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    if n == 0 or n == 1:\n        return 0\n    if n == 2:\n        return 2\n    if n == 3:\n        return 0\n\n    a, b, c, d = 0, 0, 2, 0\n    for i in range(4, n + 1):\n        nxt = a + b + c + d\n        a, b, c, d = b, c, d, nxt\n    return d"
+    },
+    {
+      "idx": 46,
+      "trace_idx": 11,
+      "bin_label": "filtered_p1",
+      "confidence": 0.257389754344865,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    dp = [0] * (n + 1)\n    dp[0] = 0\n    dp[1] = 0\n    dp[2] = 2\n    dp[3] = 0\n    for i in range(4, n + 1):\n        dp[i] = dp[i - 1] + dp[i - 2] + dp[i - 3] + dp[i - 4]"
+    },
+    {
+      "idx": 46,
+      "trace_idx": 14,
+      "bin_label": "filtered_p1",
+      "confidence": 0.47301345697510877,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    a, b, c, d = 0, 0, 2, 0\n    for i in range(4, n + 1):\n        total = a + b + c + d\n        a, b, c, d = b, c, d, total"
+    },
+    {
+      "idx": 47,
+      "trace_idx": 6,
+      "bin_label": "filtered_p1",
+      "confidence": 0.700887811657,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    l = sorted(l)\n    n = len(l)\n    mid = n // 2\n    if n % 2 == 1:\n        return l[mid]"
+    },
+    {
+      "idx": 49,
+      "trace_idx": 1,
+      "bin_label": "filtered_p1",
+      "confidence": 0.3719172916119837,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "reasoning_score": 0.8125,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    result = 1\n    base = 2 % p\n    while n:\n        if n & 1:\n            result = (result * base) % p\n        base = (base * base) % p\n        n //= 2\n    return resultSolution:\n    result = 1\n    base = 2 % p\n    while n:\n        if n % 2:\n            result = (result * base) % p\n        base = (base * base) % p\n        n //= 2\n    return result"
+    },
+    {
+      "idx": 49,
+      "trace_idx": 5,
+      "bin_label": "filtered_p1",
+      "confidence": 0.4375434993617311,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    result = 1\n    base = 2 % p\n    while n > 0:\n        if n % 2 == 1:\n            result = (result * base) % p"
+    },
+    {
+      "idx": 50,
+      "trace_idx": 2,
+      "bin_label": "filtered_p1",
+      "confidence": 0.37299989747414203,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 1,
+        "utility": 1,
+        "coherence": 1,
+        "factuality": 1
+      },
+      "reasoning_score": 0.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "I'll produce code only."
+    },
+    {
+      "idx": 50,
+      "trace_idx": 7,
+      "bin_label": "filtered_p1",
+      "confidence": 0.505741749393955,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    return \"\".join([chr(((ord(ch) - 5 - ord(\"a\")) % 26) + ord(\"a\")) for ch in s])"
+    },
+    {
+      "idx": 50,
+      "trace_idx": 10,
+      "bin_label": "filtered_p1",
+      "confidence": 0.7066637405459707,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    return \"\".join([chr(((ord(ch) - 5 - ord(\"a\")) % 26) + ord(\"a\")) for ch in s])"
+    },
+    {
+      "idx": 52,
+      "trace_idx": 0,
+      "bin_label": "filtered_p1",
+      "confidence": 0.33826660147043236,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 1,
+        "utility": 1,
+        "coherence": 1,
+        "factuality": 5
+      },
+      "reasoning_score": 0.25,
+      "judge_ok": true,
+      "error": "",
+      "pred": "        return all(x < t for x in l)\n\n    I'll produce answer code. We'll produce final answer. We'll produce code. We'll produce final answer code. We'll produce answer code.\n\n    I'll produce final answer code.\n\n    I'll produce final answer code.\n\n    I'll produce final answer. We'll produce answer code. We'll produce code.\n\n    I'll produce final answer. We'll produce answer code. We'll produce code. We'll produce final answer code.\n\n    I'll produce final answer code. We'll produce final an"
+    },
+    {
+      "idx": 52,
+      "trace_idx": 3,
+      "bin_label": "filtered_p1",
+      "confidence": 0.7164049363863393,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 1,
+        "utility": 1,
+        "coherence": 1,
+        "factuality": 1
+      },
+      "reasoning_score": 0.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "We'll provide the code block with triple backticks.\n\nI'll show how to do it.\n\nI'll produce code block with triple backticks. We'll produce code. We'll produce code block with triple backticks.\n\nI'll produce the code block with triple backticks. We'll produce the code. We'll produce code block.\n\nI'll produce code block with triple backticks. We'll produce code.\n\nI'll produce code block with triple backticks.\n\nI'll produce code block with triple backticks.\n\nI'll produce code block with triple back"
+    },
+    {
+      "idx": 53,
+      "trace_idx": 1,
+      "bin_label": "filtered_p1",
+      "confidence": 0.46563370381074365,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    return x + y"
+    },
+    {
+      "idx": 53,
+      "trace_idx": 5,
+      "bin_label": "filtered_p1",
+      "confidence": 0.4573822536415346,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 1,
+        "utility": 1,
+        "coherence": 1,
+        "factuality": 1
+      },
+      "reasoning_score": 0.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    return x + y"
+    },
+    {
+      "idx": 54,
+      "trace_idx": 3,
+      "bin_label": "filtered_p1",
+      "confidence": 0.38499994018241956,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    >>> same_chars('eabcdzzzz', 'dddzzzzzzzddeddabc')\n    True\n    >>> same_chars('abcd', 'dddddddabc')\n    True\n    >>> same_chars('dddddddabc', 'abcd')\n    True\n    >>> same_chars('eabcd', 'dddddddabc')\n    False\n    >>> same_chars('abcd', 'dddddddabce')\n    False\n    >>> same_chars('eabcdzzzz', 'dddzzzzzzzddddabc')\n    False"
+    },
+    {
+      "idx": 55,
+      "trace_idx": 13,
+      "bin_label": "filtered_p1",
+      "confidence": 0.358833164968209,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    a, b = 0, 1\n    for _ in range(2, n + 1):\n        a, b = b, a + b"
+    },
+    {
+      "idx": 56,
+      "trace_idx": 2,
+      "bin_label": "filtered_p1",
+      "confidence": 0.3606781148423114,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    count = 0\n    for ch in brackets:\n        if ch == '<':\n            count += 1"
+    },
+    {
+      "idx": 59,
+      "trace_idx": 0,
+      "bin_label": "filtered_p1",
+      "confidence": 0.2583118242162432,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    factor = 2\n    last_factor = 1\n    while factor * factor <= n:\n        if n % factor == 0:\n            last_factor = factor\n            while n % factor == 0:\n                n //= factor"
+    },
+    {
+      "idx": 59,
+      "trace_idx": 8,
+      "bin_label": "filtered_p1",
+      "confidence": 0.7238547472039757,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    factor = 2\n    last_factor = 1\n    while factor * factor <= n:\n        if n % factor == 0:\n            last_factor = factor\n            while n % factor == 0:\n                n //= factor"
+    },
+    {
+      "idx": 59,
+      "trace_idx": 9,
+      "bin_label": "filtered_p1",
+      "confidence": 0.3217752768321929,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "        largest_factor = None\n        # Remove factors of 2 first\n        while n % 2 == 0:\n            largest_factor = 2\n            n //= 2\n        # n must be odd at this point, so skip even numbers\n        factor = 3\n        while factor * factor <= n:\n            while n % factor == 0:\n                largest_factor = factor\n                n //= factor\n            factor += 2\n        if n > 2:\n            largest_factor = n\n        return largest_factor\n\n    Code:\n        largest_factor ="
+    },
+    {
+      "idx": 60,
+      "trace_idx": 0,
+      "bin_label": "filtered_p1",
+      "confidence": 0.2992110774436426,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    total = 0\n    for i in range(1, n + 1):\n        total += i"
+    },
+    {
+      "idx": 60,
+      "trace_idx": 15,
+      "bin_label": "filtered_p1",
+      "confidence": 0.3738223340423592,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    return n * (n + 1) // 2"
+    },
+    {
+      "idx": 61,
+      "trace_idx": 10,
+      "bin_label": "filtered_p1",
+      "confidence": 0.3123139956221082,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    elif ch == ')':\n        count -= 1\n        if count < 0:\n            return False"
+    },
+    {
+      "idx": 61,
+      "trace_idx": 13,
+      "bin_label": "filtered_p1",
+      "confidence": 0.6064331645672375,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    elif ch == \")\":\n        count -= 1\n        if count < 0:\n            return False"
+    },
+    {
+      "idx": 63,
+      "trace_idx": 4,
+      "bin_label": "filtered_p1",
+      "confidence": 0.40070123491338305,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    a, b, c = 0, 0, 1\n    for i in range(3, n + 1):\n        total = a + b + c\n        a, b, c = b, c, total"
+    },
+    {
+      "idx": 63,
+      "trace_idx": 5,
+      "bin_label": "filtered_p1",
+      "confidence": 0.25777856242374564,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    dp = [0] * (n + 1)\n    dp[0], dp[1], dp[2] = 0, 0, 1\n    for i in range(3, n + 1):\n        dp[i] = dp[i - 1] + dp[i - 2] + dp[i - 3]"
+    },
+    {
+      "idx": 63,
+      "trace_idx": 7,
+      "bin_label": "filtered_p1",
+      "confidence": 0.3888552442040817,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    dp = [0] * (n + 1)\n    dp[0] = 0\n    dp[1] = 0\n    dp[2] = 1\n    for i in range(3, n + 1):\n        dp[i] = dp[i - 1] + dp[i - 2] + dp[i - 3]"
+    },
+    {
+      "idx": 63,
+      "trace_idx": 14,
+      "bin_label": "filtered_p1",
+      "confidence": 0.3493497485128045,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    dp = [0] * (n + 1)\n    dp[0] = 0\n    dp[1] = 0\n    dp[2] = 1\n    for i in range(3, n + 1):\n        dp[i] = dp[i - 1] + dp[i - 2] + dp[i - 3]"
+    },
+    {
+      "idx": 64,
+      "trace_idx": 4,
+      "bin_label": "filtered_p1",
+      "confidence": 0.45726705706335297,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 3
+      },
+      "reasoning_score": 0.3125,
+      "judge_ok": true,
+      "error": "",
+      "pred": "\"\"\"\"\n- Explanation: The function vowels_count counts vowels in a string. It should consider 'y' as a vowel only if it occurs at the end of the string. The vowels are case-insensitive. For the string \"abcde\", there are 2 vowels ('a', 'e'). For string \"ACEDY\", there are 3 vowels since Y/E/A are vowels, but note that Y is counted because it is at the end of the string.\n- Hint: You can iterate over the string and check conditions.\n- Note: The function should be case-insensitive.\n\"\"\"\nWrite final answ"
+    },
+    {
+      "idx": 66,
+      "trace_idx": 5,
+      "bin_label": "filtered_p1",
+      "confidence": 0.3342349262005016,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 1,
+        "utility": 1,
+        "coherence": 1,
+        "factuality": 1
+      },
+      "reasoning_score": 0.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "Do not include any explanation.\n\nI'll produce code accordingly. We'll produce code that iterates over the string, checking if each character is uppercase (by using char.isupper() method). Then we sum up ord(c) for those uppercase characters.\n\nLet's produce code accordingly.\n\nI'll produce code. We'll produce final answer in Python code only. We'll produce code accordingly.\n\nI'll produce final answer in Python code. We'll produce code accordingly. We'll produce code accordingly.\n\nI'll produce fina"
+    },
+    {
+      "idx": 69,
+      "trace_idx": 5,
+      "bin_label": "filtered_p1",
+      "confidence": 0.44054827301529553,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    count = {}\n    for num in lst:\n        count[num] = count.get(num, 0) + 1"
+    },
+    {
+      "idx": 70,
+      "trace_idx": 10,
+      "bin_label": "filtered_p1",
+      "confidence": 0.8953344954444207,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    if not lst:\n        return []\n    lst_copy = lst[:]\n    result = []\n    while lst_copy:\n        result.append(min(lst_copy))\n        lst_copy.remove(min(lst_copy))\n        if lst_copy:\n            result.append(max(lst_copy))\n            lst_copy.remove(max(lst_copy))\n    return result"
+    },
+    {
+      "idx": 70,
+      "trace_idx": 12,
+      "bin_label": "filtered_p1",
+      "confidence": 0.2678034163783843,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    result = []\n    lst_sorted = sorted(lst)\n    left, right = 0, len(lst_sorted) - 1\n    while left <= right:\n        if left == right:\n            result.append(lst_sorted[left])"
+    },
+    {
+      "idx": 70,
+      "trace_idx": 14,
+      "bin_label": "filtered_p1",
+      "confidence": 0.26191818772899134,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    result = []\n    sorted_lst = sorted(lst)\n    left, right = 0, len(sorted_lst) - 1\n    flag = True\n    while left <= right:\n        if flag:\n            result.append(sorted_lst[left])\n            left += 1\n        else:\n            result.append(sorted_lst[right])\n            right -= 1\n        flag = not flag\n    return result"
+    },
+    {
+      "idx": 71,
+      "trace_idx": 0,
+      "bin_label": "filtered_p1",
+      "confidence": 0.581526230772971,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    s = (a + b + c) / 2\n    area = (s * (s - a) * (s - b) * (s - c)) ** 0.5\n    return round(area, 2)"
+    },
+    {
+      "idx": 71,
+      "trace_idx": 9,
+      "bin_label": "filtered_p1",
+      "confidence": 0.30590121199542636,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    s = (a + b + c) / 2\n    area = (s * (s - a) * (s - b) * (s - c)) ** 0.5\n    return round(area, 2)"
+    },
+    {
+      "idx": 71,
+      "trace_idx": 11,
+      "bin_label": "filtered_p1",
+      "confidence": 0.264353840584353,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    if a + b > c and a + c > b and b + c > a:\n        s = (a + b + c) / 2\n        area = (s * (s - a) * (s - b) * (s - c)) ** 0.5\n        return round(area, 2)"
+    },
+    {
+      "idx": 71,
+      "trace_idx": 12,
+      "bin_label": "filtered_p1",
+      "confidence": 0.36095127532462506,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    if a + b > c and a + c > b and b + c > a:\n        s = (a + b + c) / 2\n        area = (s * (s - a) * (s - b) * (s - c)) ** 0.5\n        return round(area, 2)"
+    },
+    {
+      "idx": 71,
+      "trace_idx": 13,
+      "bin_label": "filtered_p1",
+      "confidence": 0.367245250219281,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "**Instruction 5 (more difficult with additional constraints):**"
+    },
+    {
+      "idx": 72,
+      "trace_idx": 3,
+      "bin_label": "filtered_p1",
+      "confidence": 0.3537108883719124,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    Write a function that return s True if the object q will fly, and False otherwise.\n    The object q will fly if it's balanced (it is a palindromic list) and the sum of its elements is less than or equal to the maximum possible weight w."
+    },
+    {
+      "idx": 72,
+      "trace_idx": 6,
+      "bin_label": "filtered_p1",
+      "confidence": 0.3157961548857737,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    if sum(q) <= w and q == q[::-1]:\n        return True\n    return False"
+    },
+    {
+      "idx": 73,
+      "trace_idx": 11,
+      "bin_label": "filtered_p1",
+      "confidence": 0.25758683598954174,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    n = len(arr)\n    changes = 0\n    for i in range(n // 2):\n        if arr[i] != arr[n - 1 - i]:\n            changes += 1"
+    },
+    {
+      "idx": 75,
+      "trace_idx": 5,
+      "bin_label": "filtered_p1",
+      "confidence": 0.25698964575137423,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "reasoning_score": 0.8125,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    Assistant = def is_multiply_prime(a):\n            if n < 2:\n                return False"
+    },
+    {
+      "idx": 75,
+      "trace_idx": 6,
+      "bin_label": "filtered_p1",
+      "confidence": 0.3471781088251795,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "reasoning_score": 0.5625,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    if a >= 100:\n        return False\n    primes = [i for i in range(2, a) if all(i % j for j in range(2, int(i**0.5) + 1))]\n    count = 0\n    for p in primes:\n        if a % p == 0:\n            count += 1\n    return count == 3"
+    },
+    {
+      "idx": 75,
+      "trace_idx": 13,
+      "bin_label": "filtered_p1",
+      "confidence": 0.2599988105947187,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 4
+      },
+      "reasoning_score": 0.75,
+      "judge_ok": true,
+      "error": "",
+      "pred": "            if x < 2:\n                return False\n            for i in range(2, int(x**0.5) + 1):\n                if x % i == 0:\n                    return False\n            return True\n        if a > 100 or a < 1:\n            return False\n        count = 0\n        temp = a\n        for i in range(2, temp + 1):\n            if is_prime(i):\n                if temp % i == 0:\n                    count += 1\n                    temp //= i\n                    i = 1\n                    continue\n        "
+    },
+    {
+      "idx": 76,
+      "trace_idx": 5,
+      "bin_label": "filtered_p1",
+      "confidence": 0.2580738351033248,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    if n == 1:\n        return False\n    power = 1\n    while power < x:\n        power *= n\n    return power == x"
+    },
+    {
+      "idx": 76,
+      "trace_idx": 13,
+      "bin_label": "filtered_p1",
+      "confidence": 0.44223522041395014,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "reasoning_score": 0.8125,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    power = 0\n    while n ** power < x:\n        if n ** power == x:\n            return True"
+    },
+    {
+      "idx": 77,
+      "trace_idx": 12,
+      "bin_label": "filtered_p1",
+      "confidence": 0.26949231658886713,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "reasoning_score": 0.8125,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    return round(a ** (1 / 3)) ** 3 == a"
+    },
+    {
+      "idx": 78,
+      "trace_idx": 6,
+      "bin_label": "filtered_p1",
+      "confidence": 0.6889459744363642,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    count = 0\n    for ch in num:\n        if ch in \"2357BD\":\n            count += 1"
+    },
+    {
+      "idx": 79,
+      "trace_idx": 12,
+      "bin_label": "filtered_p1",
+      "confidence": 0.3414044784709403,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    return \"db\" + bin_str + \"db\""
+    },
+    {
+      "idx": 80,
+      "trace_idx": 14,
+      "bin_label": "filtered_p1",
+      "confidence": 0.7935357452804117,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    for i in range(len(s) - 2):\n        if s[i] == s[i + 1] or s[i] == s[i + 2] or s[i + 1] == s[i + 2]:\n            return False"
+    },
+    {
+      "idx": 81,
+      "trace_idx": 0,
+      "bin_label": "filtered_p1",
+      "confidence": 0.46484350348238945,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    result = []\n    for gpa in grades:\n        if gpa == 4.0:\n            result.append(\"A+\")"
+    },
+    {
+      "idx": 81,
+      "trace_idx": 5,
+      "bin_label": "filtered_p1",
+      "confidence": 0.6124790638710205,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 1,
+        "utility": 1,
+        "coherence": 1,
+        "factuality": 1
+      },
+      "reasoning_score": 0.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    result = []\n    for g in grades:\n        if g == 4.0:\n            result.append('A+')"
+    },
+    {
+      "idx": 81,
+      "trace_idx": 7,
+      "bin_label": "filtered_p1",
+      "confidence": 0.9113304205001785,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    result = []\n    for g in grades:\n        if g == 4.0:\n            result.append(\"A+\")"
+    },
+    {
+      "idx": 81,
+      "trace_idx": 8,
+      "bin_label": "filtered_p1",
+      "confidence": 0.559836434571137,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    result = []\n    for g in grades:\n        if g == 4.0:\n            result.append(\"A+\")\n        elif g > 3.7:\n            result.append(\"A\")\n        elif g > 3.3:\n            result.append(\"A-\")\n        elif g > 3.0:\n            result.append(\"B+\")\n        elif g > 2.7:\n            result.append(\"B\")\n        elif g > 2.3:\n            result.append(\"B-\")\n        elif g > 2.0:\n            result.append(\"C+\")\n        elif g > 1.7:\n            result.append(\"C\")\n        elif g > 1.3:\n            r"
+    },
+    {
+      "idx": 81,
+      "trace_idx": 10,
+      "bin_label": "filtered_p1",
+      "confidence": 0.5741742671980956,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    result = []\n    for g in grades:\n        if g == 4.0:\n            result.append(\"A+\")"
+    },
+    {
+      "idx": 81,
+      "trace_idx": 13,
+      "bin_label": "filtered_p1",
+      "confidence": 0.5759453315146082,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    result = []\n    for g in grades:\n        if g == 4.0:\n            result.append('A+')"
+    },
+    {
+      "idx": 81,
+      "trace_idx": 14,
+      "bin_label": "filtered_p1",
+      "confidence": 0.44017339736348027,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    result = []\n    for g in grades:\n        if g == 4.0:\n            result.append('A+')\n        elif g > 3.7:\n            result.append('A')\n        elif g > 3.3:\n            result.append('A-')\n        elif g > 3.0:\n            result.append('B+')\n        elif g > 2.7:\n            result.append('B')\n        elif g > 2.3:\n            result.append('B-')\n        elif g > 2.0:\n            result.append('C+')\n        elif g > 1.7:\n            result.append('C')\n        elif g > 1.3:\n            r"
+    },
+    {
+      "idx": 81,
+      "trace_idx": 15,
+      "bin_label": "filtered_p1",
+      "confidence": 0.4925393829570517,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "        if gpa == 4.0:\n            return \"A+\"\n        elif gpa > 3.7:\n            return \"A\"\n        elif gpa > 3.3:\n            return \"A-\"\n        elif gpa > 3.0:\n            return \"B+\"\n        elif gpa > 2.7:\n            return \"B\"\n        elif gpa > 2.3:\n            return \"B-\"\n        elif gpa > 2.0:\n            return \"C+\"\n        elif gpa > 1.7:\n            return \"C\"\n        elif gpa > 1.3:\n            return \"C-\"\n        elif gpa > 1.0:\n            return \"D+\"\n        elif gpa > 0.7:\n"
+    },
+    {
+      "idx": 82,
+      "trace_idx": 2,
+      "bin_label": "filtered_p1",
+      "confidence": 0.4384461903027158,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    for i in range(2, int(n ** 0.5) + 1):\n        if n % i == 0:\n            return False"
+    },
+    {
+      "idx": 82,
+      "trace_idx": 10,
+      "bin_label": "filtered_p1",
+      "confidence": 0.26326206639500727,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "        if n < 2:\n            return False\n        for i in range(2, int(n ** 0.5) + 1):\n            if n % i == 0:\n                return False\n        return True\n    return is_prime(len(string))"
+    },
+    {
+      "idx": 82,
+      "trace_idx": 14,
+      "bin_label": "filtered_p1",
+      "confidence": 0.6020313748820988,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    if n < 2:\n        return False"
+    },
+    {
+      "idx": 83,
+      "trace_idx": 15,
+      "bin_label": "filtered_p1",
+      "confidence": 0.25895359487340247,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    # Count of numbers that start with 1:\n    # For an n - digit number, the first digit is fixed to 1, and the remaining n - 1 digits can be any digit (0 - 9).\n    # So count_start = 10^(n - 1).\n    # Count of numbers that end with 1:\n    # The last digit is fixed to 1, and the first digit can be any digit from 1 to 9 (since it's an n - digit number),\n    # and the remaining n - 2 digits can be any digit.\n    # So count_end = 9 * 10^(n - 2).\n    # However, numbers that both start and end with 1"
+    },
+    {
+      "idx": 84,
+      "trace_idx": 7,
+      "bin_label": "filtered_p1",
+      "confidence": 0.36439661500855597,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    return bin(total)[2:]"
+    },
+    {
+      "idx": 84,
+      "trace_idx": 14,
+      "bin_label": "filtered_p1",
+      "confidence": 0.28904562599941563,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "        total = 0\n        for digit in str(N):\n            total += int(digit)\n        return bin(total)[2:]\n    \n    # End of solution."
+    },
+    {
+      "idx": 85,
+      "trace_idx": 10,
+      "bin_label": "filtered_p1",
+      "confidence": 0.6050182414681317,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    total = 0\n    for i, num in enumerate(lst):\n        if i % 2 == 1 and num % 2 == 0:\n            total += num"
+    },
+    {
+      "idx": 85,
+      "trace_idx": 12,
+      "bin_label": "filtered_p1",
+      "confidence": 0.282499587891528,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    return sum(x for i, x in enumerate(lst) if i % 2 == 1 and x % 2 == 0)"
+    },
+    {
+      "idx": 86,
+      "trace_idx": 15,
+      "bin_label": "filtered_p1",
+      "confidence": 0.41819149920201937,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    words = s.split(' ')\n    sorted_words = []\n    for word in words:\n        sorted_word = ''.join(sorted(word))\n        sorted_words.append(sorted_word)"
+    },
+    {
+      "idx": 87,
+      "trace_idx": 1,
+      "bin_label": "filtered_p1",
+      "confidence": 0.25596980125329477,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    Answer = def get_row(lst, x):\n        coords = []\n        for i, row in enumerate(lst):\n            for j, val in enumerate(row):\n                if val == x:\n                    coords.append((i, j))"
+    },
+    {
+      "idx": 89,
+      "trace_idx": 14,
+      "bin_label": "filtered_p1",
+      "confidence": 0.31719168718775653,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 4
+      },
+      "reasoning_score": 0.75,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    result = \"\"\n    for ch in s:\n        if 'a' <= ch <= 'z':\n            result += chr((ord(ch) - ord('a') + 4) % 26 + ord('a'))"
+    },
+    {
+      "idx": 91,
+      "trace_idx": 1,
+      "bin_label": "filtered_p1",
+      "confidence": 0.3782081704725113,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    >>> is_bored(\"Hello world\")\n    0\n    >>> is_bored(\"The sky is blue. The sun is shining. I love this weather\")\n    1"
+    },
+    {
+      "idx": 91,
+      "trace_idx": 13,
+      "bin_label": "filtered_p1",
+      "confidence": 0.3134092771392954,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    You'll be given a string of words, and your task is to count the number\n    of boredoms. A boredom is a sentence that starts with the word \"I\".\n    Sentences are delimited by '.', '?' or '!'."
+    },
+    {
+      "idx": 93,
+      "trace_idx": 2,
+      "bin_label": "filtered_p1",
+      "confidence": 0.3458996950343231,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    if ch.isalpha():\n        if ch.lower() in \"aeiou\":\n            num = ord(ch.lower()) + 2\n            if num > ord('z'):\n                num -= 26"
+    },
+    {
+      "idx": 93,
+      "trace_idx": 10,
+      "bin_label": "filtered_p1",
+      "confidence": 0.2586914519800937,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 4
+      },
+      "reasoning_score": 0.75,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    vowels = \"aeiouAEIOU\"\n    result = []\n    for ch in message:\n        swapped = ch.swapcase()\n        if swapped in vowels:\n            # find the letter that is 2 places ahead in the alphabet\n            # handle wrap - around for both cases\n            if 'a' <= swapped <= 'z':\n                new_char = chr((ord(swapped) - ord('a') + 2) % 26 + ord('a'))\n            else:\n                new_char = chr((ord(swapped) - ord('A') + 2) % 26 + ord('A'))\n            result.append(new_char)\n      "
+    },
+    {
+      "idx": 94,
+      "trace_idx": 13,
+      "bin_label": "filtered_p1",
+      "confidence": 0.364565523810664,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "        if n < 2:\n            return False\n        if n == 2:\n            return True\n        if n % 2 == 0:\n            return False\n        i = 3\n        while i * i <= n:\n            if n % i == 0:\n                return False\n            i += 2\n        return True\n\n    largest_prime = None\n    for num in lst:\n        if is_prime(num):\n            if largest_prime is None or num > largest_prime:\n                largest_prime = num\n    if largest_prime is None:\n        return 0\n    s = sum(int"
+    },
+    {
+      "idx": 95,
+      "trace_idx": 14,
+      "bin_label": "filtered_p1",
+      "confidence": 0.35007915346108515,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 1,
+        "utility": 1,
+        "coherence": 1,
+        "factuality": 1
+      },
+      "reasoning_score": 0.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    key_types = set(type(key) for key in input_dict.keys())\n    if len(key_types) != 1 or list(key_types)[0] != str:\n        return False"
+    },
+    {
+      "idx": 97,
+      "trace_idx": 0,
+      "bin_label": "filtered_p1",
+      "confidence": 0.3987842989703571,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    return (abs(a) % 10) * (abs(b) % 10)"
+    },
+    {
+      "idx": 97,
+      "trace_idx": 6,
+      "bin_label": "filtered_p1",
+      "confidence": 0.31489483278760233,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    unit_a = abs(a) % 10\n    unit_b = abs(b) % 10\n    return unit_a * unit_b"
+    },
+    {
+      "idx": 97,
+      "trace_idx": 8,
+      "bin_label": "filtered_p1",
+      "confidence": 0.3998246202915446,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    return (abs(a) % 10) * (abs(b) % 10)"
+    },
+    {
+      "idx": 97,
+      "trace_idx": 10,
+      "bin_label": "filtered_p1",
+      "confidence": 0.5899773103199933,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    unit_a = abs(a) % 10\n    unit_b = abs(b) % 10\n    return unit_a * unit_b"
+    },
+    {
+      "idx": 98,
+      "trace_idx": 4,
+      "bin_label": "filtered_p1",
+      "confidence": 0.608159873014826,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    count = 0\n    for i in range(0, len(s), 2):\n        if s[i] in \"AEIOU\":\n            count += 1"
+    },
+    {
+      "idx": 99,
+      "trace_idx": 12,
+      "bin_label": "filtered_p1",
+      "confidence": 0.40421484794812135,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    num = float(value)\n    frac = num - int(num)\n    if num >= 0:\n        if frac < 0.5:\n            return int(num)\n        elif frac > 0.5:\n            return int(num) + 1\n        else:\n            return int(num) + 1\n    else:\n        if frac > -0.5:\n            return int(num)\n        elif frac < -0.5:\n            return int(num) - 1\n        else:\n            return int(num) - 1"
+    },
+    {
+      "idx": 101,
+      "trace_idx": 0,
+      "bin_label": "filtered_p1",
+      "confidence": 0.43294917596162685,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    return [word.strip() for word in re.split('[, ]+', s) if word.strip()]"
+    },
+    {
+      "idx": 103,
+      "trace_idx": 5,
+      "bin_label": "filtered_p1",
+      "confidence": 0.2789525426394894,
+      "correct": false,
+      "judge_scores": null,
+      "reasoning_score": null,
+      "judge_ok": false,
+      "error": "empty_cot",
+      "pred": ""
+    },
+    {
+      "idx": 103,
+      "trace_idx": 8,
+      "bin_label": "filtered_p1",
+      "confidence": 0.38595464231007287,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    rounded_avg(1, 5) => \"0b11\"\n    rounded_avg(7, 5) => -1\n    rounded_avg(10, 20) => \"0b1111\"\n    rounded_avg(20, 33) => \"0b11010\""
+    },
+    {
+      "idx": 103,
+      "trace_idx": 12,
+      "bin_label": "filtered_p1",
+      "confidence": 0.2789525426394894,
+      "correct": false,
+      "judge_scores": null,
+      "reasoning_score": null,
+      "judge_ok": false,
+      "error": "empty_cot",
+      "pred": ""
+    },
+    {
+      "idx": 103,
+      "trace_idx": 14,
+      "bin_label": "filtered_p1",
+      "confidence": 0.2789525426394894,
+      "correct": false,
+      "judge_scores": null,
+      "reasoning_score": null,
+      "judge_ok": false,
+      "error": "empty_cot",
+      "pred": ""
+    },
+    {
+      "idx": 103,
+      "trace_idx": 15,
+      "bin_label": "filtered_p1",
+      "confidence": 0.2789525426394894,
+      "correct": false,
+      "judge_scores": null,
+      "reasoning_score": null,
+      "judge_ok": false,
+      "error": "empty_cot",
+      "pred": ""
+    },
+    {
+      "idx": 104,
+      "trace_idx": 1,
+      "bin_label": "filtered_p1",
+      "confidence": 0.33936949764629026,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    result = []\n    for num in x:\n        digits = list(str(num))\n        if all(int(d) % 2 != 0 for d in digits):\n            result.append(num)"
+    },
+    {
+      "idx": 104,
+      "trace_idx": 2,
+      "bin_label": "filtered_p1",
+      "confidence": 0.33691770430888046,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    >>> unique_digits([15, 33, 1422, 1])\n    [1, 15, 33]\n    >>> unique_digits([152, 323, 1422, 10])\n    []"
+    },
+    {
+      "idx": 104,
+      "trace_idx": 5,
+      "bin_label": "filtered_p1",
+      "confidence": 0.36067040581152493,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 1,
+        "utility": 1,
+        "coherence": 1,
+        "factuality": 1
+      },
+      "reasoning_score": 0.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "        return all(int(digit) % 2 != 0 for digit in str(n))\n    return sorted(n for n in x if has_only_odd_digits(n))"
+    },
+    {
+      "idx": 105,
+      "trace_idx": 2,
+      "bin_label": "filtered_p1",
+      "confidence": 0.3018722642557712,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    mapping = {1: \"One\", 2: \"Two\", 3: \"Three\", 4: \"Four\", 5: \"Five\", 6: \"Six\", 7: \"Seven\", 8: \"Eight\", 9: \"Nine\"}\n    filtered = [x for x in arr if 1 <= x <= 9]\n    filtered.sort()\n    filtered.reverse()\n    return [mapping[x] for x in filtered]"
+    },
+    {
+      "idx": 105,
+      "trace_idx": 10,
+      "bin_label": "filtered_p1",
+      "confidence": 0.5966518077756182,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    valid_digits = [x for x in arr if 1 <= x <= 9]\n    valid_digits.sort()\n    valid_digits.reverse()\n    mapping = {1: \"One\", 2: \"Two\", 3: \"Three\", 4: \"Four\", 5: \"Five\", 6: \"Six\", 7: \"Seven\", 8: \"Eight\", 9: \"Nine\"}\n    return [mapping[d] for d in valid_digits]"
+    },
+    {
+      "idx": 105,
+      "trace_idx": 11,
+      "bin_label": "filtered_p1",
+      "confidence": 0.6855717226509324,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    names = {1: \"One\", 2: \"Two\", 3: \"Three\", 4: \"Four\", 5: \"Five\", 6: \"Six\", 7: \"Seven\", 8: \"Eight\", 9: \"Nine\"}\n    filtered = [x for x in arr if 1 <= x <= 9]\n    filtered.sort()\n    filtered.reverse()\n    return [names[x] for x in filtered]"
+    },
+    {
+      "idx": 106,
+      "trace_idx": 5,
+      "bin_label": "filtered_p1",
+      "confidence": 0.5788840814028919,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    result = []\n    for i in range(1, n + 1):\n        if i % 2 == 0:\n            fact = 1\n            for j in range(1, i + 1):\n                fact *= j"
+    },
+    {
+      "idx": 106,
+      "trace_idx": 9,
+      "bin_label": "filtered_p1",
+      "confidence": 0.2722052126541783,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    result = []\n    for i in range(1, n + 1):\n        if i % 2 == 0:\n            factorial = 1\n            for j in range(1, i + 1):\n                factorial *= j"
+    },
+    {
+      "idx": 107,
+      "trace_idx": 4,
+      "bin_label": "filtered_p1",
+      "confidence": 0.3056883939240495,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    even_count = 0\n    odd_count = 0\n    for num in range(1, n + 1):\n        s = str(num)\n        if s == s[::-1]:\n            if num % 2 == 0:\n                even_count += 1"
+    },
+    {
+      "idx": 107,
+      "trace_idx": 8,
+      "bin_label": "filtered_p1",
+      "confidence": 0.28203193319081216,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "Make sure that's all. I'll produce final answer code accordingly.\n\nI'll produce final answer code accordingly. We'll produce answer code accordingly. We'll produce answer code accordingly.\n\nI'll produce final answer code accordingly. We'll produce answer code accordingly."
+    },
+    {
+      "idx": 107,
+      "trace_idx": 13,
+      "bin_label": "filtered_p1",
+      "confidence": 0.2570123947253104,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    even_count = 0\n    odd_count = 0\n    for i in range(1, n + 1):\n        s = str(i)\n        if s == s[::-1]:\n            if i % 2 == 0:\n                even_count += 1"
+    },
+    {
+      "idx": 109,
+      "trace_idx": 2,
+      "bin_label": "filtered_p1",
+      "confidence": 0.4850961765454122,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    n = len(arr)\n    count = 0\n    for i in range(n):\n        if arr[i] > arr[(i + 1) % n]:\n            count += 1"
+    },
+    {
+      "idx": 109,
+      "trace_idx": 4,
+      "bin_label": "filtered_p1",
+      "confidence": 0.26003702160671005,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    # candidate sorted array after right shifting by (n - idx)\n    candidate = arr[idx:] + arr[:idx]\n    for i in range(1, n):\n        if candidate[i] < candidate[i - 1]:\n            return False"
+    },
+    {
+      "idx": 109,
+      "trace_idx": 14,
+      "bin_label": "filtered_p1",
+      "confidence": 0.6791962189940776,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "I'll produce answer code. \nI'll produce answer code. \nI'll produce answer code. \nI'll produce answer code. \nI'll produce answer code. \nI'll produce answer code. \nI'll produce answer code. \nI'll produce answer code. \nI'll produce answer code. \nI'll produce answer code. \nI'll produce answer code. \nI'll produce answer code. \nI'll produce answer code. \nI'll produce answer code. \nI'll produce answer code. \nI'll produce answer code. \nI'll produce answer code. \nI'll produce answer code. \nI'll produce a"
+    },
+    {
+      "idx": 110,
+      "trace_idx": 6,
+      "bin_label": "filtered_p1",
+      "confidence": 0.2887152218534994,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    odd_in_lst1 = sum(1 for x in lst1 if x % 2 != 0)\n    even_in_lst2 = sum(1 for x in lst2 if x % 2 == 0)\n    return \"YES\" if odd_in_lst1 <= even_in_lst2 else \"NO\""
+    },
+    {
+      "idx": 112,
+      "trace_idx": 5,
+      "bin_label": "filtered_p1",
+      "confidence": 0.5305751525352383,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    result = ''.join([ch for ch in s if ch not in c])\n    is_palindrome = result == result[::-1]\n    return (result, is_palindrome)"
+    },
+    {
+      "idx": 114,
+      "trace_idx": 12,
+      "bin_label": "filtered_p1",
+      "confidence": 0.24938130035229217,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "reasoning_score": 0.8125,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    min_sum = float('inf')\n    current_sum = 0\n    for num in nums:\n        current_sum += num\n        if current_sum < min_sum:\n            min_sum = current_sum"
+    },
+    {
+      "idx": 114,
+      "trace_idx": 13,
+      "bin_label": "filtered_p1",
+      "confidence": 0.6872313511376801,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    current_sum = nums[0]\n    min_sum = nums[0]\n    for num in nums[1:]:\n        current_sum = min(num, current_sum + num)\n        min_sum = min(min_sum, current_sum)"
+    },
+    {
+      "idx": 116,
+      "trace_idx": 11,
+      "bin_label": "filtered_p1",
+      "confidence": 0.3500327880308807,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 4,
+        "coherence": 5,
+        "factuality": 4
+      },
+      "reasoning_score": 0.875,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    return sorted(arr, key = lambda x: (bin(x).count(\"1\"), x))"
+    },
+    {
+      "idx": 117,
+      "trace_idx": 12,
+      "bin_label": "filtered_p1",
+      "confidence": 0.28164517911434755,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    words = s.split()\n    result = []\n    for word in words:\n        count = sum(1 for ch in word if is_consonant(ch))\n        if count == n:\n            result.append(word)"
+    },
+    {
+      "idx": 117,
+      "trace_idx": 14,
+      "bin_label": "filtered_p1",
+      "confidence": 0.5591840824779907,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "Use only docstrings, no comments.\nAssistantdef select_words(s, n):\n    \"\"\"Given a string s and a natural number n, you have been tasked to implement \n    a function that returns a list of all words from string s that contain exactly \n    n consonants, in order these words appear in the string s.\n    If the string s is empty then the function should return an empty list.\n    Note: you may assume the input string contains only letters and spaces.\n    Examples:\n    select_words(\"Mary had a little l"
+    },
+    {
+      "idx": 119,
+      "trace_idx": 1,
+      "bin_label": "filtered_p1",
+      "confidence": 0.29597347910924193,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    s1, s2 = lst\n    candidate1 = s1 + s2\n    candidate2 = s2 + s1\n    for candidate in (candidate1, candidate2):\n        balance = 0\n        valid = True\n        for char in candidate:\n            if char == '(':\n                balance += 1\n            else:\n                balance -= 1\n            if balance < 0:\n                valid = False\n                break\n        if valid and balance == 0:\n            return 'Yes'\n    return 'No'"
+    },
+    {
+      "idx": 119,
+      "trace_idx": 3,
+      "bin_label": "filtered_p1",
+      "confidence": 0.7148464475324304,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    s1, s2 = lst\n    if is_balanced(s1 + s2):\n        return 'Yes'"
+    },
+    {
+      "idx": 119,
+      "trace_idx": 9,
+      "bin_label": "filtered_p1",
+      "confidence": 0.7561431535985578,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    s1, s2 = lst\n    if is_balanced(s1 + s2) or is_balanced(s2 + s1):\n        return 'Yes'"
+    },
+    {
+      "idx": 121,
+      "trace_idx": 2,
+      "bin_label": "filtered_p1",
+      "confidence": 0.4427669620426289,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    return sum(lst[i] for i in range(len(lst)) if i % 2 == 0 and lst[i] % 2 != 0)"
+    },
+    {
+      "idx": 121,
+      "trace_idx": 12,
+      "bin_label": "filtered_p1",
+      "confidence": 0.5118998714480847,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    total = 0\n    for i in range(len(lst)):\n        if i % 2 == 0 and lst[i] % 2 != 0:\n            total += lst[i]"
+    },
+    {
+      "idx": 123,
+      "trace_idx": 4,
+      "bin_label": "filtered_p1",
+      "confidence": 0.2545044827553917,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "reasoning_score": 0.8125,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    result = []\n    while n != 1:\n        if n % 2 == 1:\n            result.append(n)"
+    },
+    {
+      "idx": 124,
+      "trace_idx": 12,
+      "bin_label": "filtered_p1",
+      "confidence": 0.328129456625129,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    parts = date.split('-')\n    if len(parts) != 3:\n        return False"
+    },
+    {
+      "idx": 124,
+      "trace_idx": 14,
+      "bin_label": "filtered_p1",
+      "confidence": 0.3055248509792876,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    if not date:\n        return False\n    if date.count('-') != 2:\n        return False\n    parts = date.split('-')\n    if len(parts[0]) != 2 or len(parts[1]) != 2 or len(parts[2]) != 4:\n        return False\n    try:\n        month = int(parts[0])\n        day = int(parts[1])\n        year = int(parts[2])\n    except ValueError:\n        return False\n    if month < 1 or month > 12:\n        return False\n    if month in [1,3,5,7,8,10,12]:\n        max_day = 31\n    elif month in [4,6,9,11]:\n        max_d"
+    },
+    {
+      "idx": 125,
+      "trace_idx": 1,
+      "bin_label": "filtered_p1",
+      "confidence": 0.5205850417089298,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    Given a string of words, return a list of words split on whitespace, if no whitespaces exists in the text you\n    should split on commas ',' if no commas exists you should return the number of lower - case letters with odd order in the\n    alphabet, ord('a') = 0, ord('b') = 1, ... ord('z') = 25\n    Examples\n    split_words(\"Hello world!\") ➞ [\"Hello\", \"world!\"]\n    split_words(\"Hello,world!\") ➞ [\"Hello\", \"world!\"]\n    split_words(\"abcdef\") == 3"
+    },
+    {
+      "idx": 125,
+      "trace_idx": 2,
+      "bin_label": "filtered_p1",
+      "confidence": 0.25908321779533805,
+      "correct": false,
+      "judge_scores": null,
+      "reasoning_score": null,
+      "judge_ok": false,
+      "error": "empty_cot",
+      "pred": ""
+    },
+    {
+      "idx": 125,
+      "trace_idx": 3,
+      "bin_label": "filtered_p1",
+      "confidence": 0.25908321779533805,
+      "correct": false,
+      "judge_scores": null,
+      "reasoning_score": null,
+      "judge_ok": false,
+      "error": "empty_cot",
+      "pred": ""
+    },
+    {
+      "idx": 125,
+      "trace_idx": 4,
+      "bin_label": "filtered_p1",
+      "confidence": 0.25908321779533805,
+      "correct": false,
+      "judge_scores": null,
+      "reasoning_score": null,
+      "judge_ok": false,
+      "error": "empty_cot",
+      "pred": ""
+    },
+    {
+      "idx": 125,
+      "trace_idx": 5,
+      "bin_label": "filtered_p1",
+      "confidence": 0.2838442773168095,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    if \" \" in txt:\n        return txt.split()\n    elif \",\" in txt:\n        return txt.split(\",\")\n    else:\n        count = 0\n        for char in txt:\n            if char.islower() and (ord(char) - ord('a')) % 2 == 1:\n                count += 1\n        return count"
+    },
+    {
+      "idx": 125,
+      "trace_idx": 6,
+      "bin_label": "filtered_p1",
+      "confidence": 0.25908321779533805,
+      "correct": false,
+      "judge_scores": null,
+      "reasoning_score": null,
+      "judge_ok": false,
+      "error": "empty_cot",
+      "pred": ""
+    },
+    {
+      "idx": 125,
+      "trace_idx": 7,
+      "bin_label": "filtered_p1",
+      "confidence": 0.25908321779533805,
+      "correct": false,
+      "judge_scores": null,
+      "reasoning_score": null,
+      "judge_ok": false,
+      "error": "empty_cot",
+      "pred": ""
+    },
+    {
+      "idx": 125,
+      "trace_idx": 8,
+      "bin_label": "filtered_p1",
+      "confidence": 0.28111585872022204,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    else:\n        count = 0\n        for ch in txt:\n            if 'a' <= ch <= 'z':\n                if (ord(ch) - ord('a')) % 2 == 1:\n                    count += 1"
+    },
+    {
+      "idx": 125,
+      "trace_idx": 11,
+      "bin_label": "filtered_p1",
+      "confidence": 0.4134095561436989,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    else:\n        count = 0\n        for char in txt:\n            if 'a' <= char <= 'z':\n                if (ord(char) - ord('a')) % 2 == 1:\n                    count += 1"
+    },
+    {
+      "idx": 125,
+      "trace_idx": 13,
+      "bin_label": "filtered_p1",
+      "confidence": 0.25908321779533805,
+      "correct": false,
+      "judge_scores": null,
+      "reasoning_score": null,
+      "judge_ok": false,
+      "error": "empty_cot",
+      "pred": ""
+    },
+    {
+      "idx": 125,
+      "trace_idx": 14,
+      "bin_label": "filtered_p1",
+      "confidence": 0.25908321779533805,
+      "correct": false,
+      "judge_scores": null,
+      "reasoning_score": null,
+      "judge_ok": false,
+      "error": "empty_cot",
+      "pred": ""
+    },
+    {
+      "idx": 125,
+      "trace_idx": 15,
+      "bin_label": "filtered_p1",
+      "confidence": 0.25908321779533805,
+      "correct": false,
+      "judge_scores": null,
+      "reasoning_score": null,
+      "judge_ok": false,
+      "error": "empty_cot",
+      "pred": ""
+    },
+    {
+      "idx": 126,
+      "trace_idx": 5,
+      "bin_label": "filtered_p1",
+      "confidence": 0.6360737184428923,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    seen = set()\n    for i in range(1, len(lst)):\n        if lst[i] < lst[i - 1]:\n            return False"
+    },
+    {
+      "idx": 126,
+      "trace_idx": 10,
+      "bin_label": "filtered_p1",
+      "confidence": 0.42317399171209474,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 2
+      },
+      "reasoning_score": 0.25,
+      "judge_ok": true,
+      "error": "",
+      "pred": "        # your code here\n        return  # your return value\n\n    ----\n\n    Your answer must be valid Python code.  Use proper for matt ing as you normally would in your code.\n\n    ----\n\n    I must mention that I'll need the complete code only, no extra text or commentary. I'll now produce the final answer.  We'll produce the final answer in Python code only.  We'll produce the final answer in Python code only. We'll produce the final answer in Python code only. We'll produce final answer in Pyt"
+    },
+    {
+      "idx": 126,
+      "trace_idx": 14,
+      "bin_label": "filtered_p1",
+      "confidence": 0.24847585585501664,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 4
+      },
+      "reasoning_score": 0.75,
+      "judge_ok": true,
+      "error": "",
+      "pred": "        seen = {}\n        for num in lst:\n            if num in seen:\n                seen[num] += 1\n                if seen[num] > 1:\n                    return False\n            else:\n                seen[num] = 1\n        return all(lst[i] <= lst[i + 1] for i in range(len(lst) - 1))\n    \n    # Test cases\n    print(is_sorted([5]))  # True\n    print(is_sorted([1, 2, 3, 4, 5]))  # True\n    print(is_sorted([1, 3, 2, 4, 5]))  # False\n    print(is_sorted([1, 2, 3, 4, 5, 6]))  # True\n    print(is_sor"
+    },
+    {
+      "idx": 127,
+      "trace_idx": 0,
+      "bin_label": "filtered_p1",
+      "confidence": 0.3761132704255967,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    start1, end1 = interval1\n    start2, end2 = interval2\n    start = max(start1, start2)\n    end = min(end1, end2)\n    if start > end:\n        return \"NO\""
+    },
+    {
+      "idx": 127,
+      "trace_idx": 14,
+      "bin_label": "filtered_p1",
+      "confidence": 0.3515676223527592,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    start1, end1 = interval1\n    start2, end2 = interval2\n    inter_start = max(start1, start2)\n    inter_end = min(end1, end2)\n    if inter_start > inter_end:\n        return \"NO\""
+    },
+    {
+      "idx": 127,
+      "trace_idx": 15,
+      "bin_label": "filtered_p1",
+      "confidence": 0.4445011157536049,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    a, b = interval1\n    c, d = interval2\n    start = max(a, c)\n    end = min(b, d)\n    if start > end:\n        return \"NO\""
+    },
+    {
+      "idx": 128,
+      "trace_idx": 5,
+      "bin_label": "filtered_p1",
+      "confidence": 0.31076371366451694,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 4
+      },
+      "reasoning_score": 0.75,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    product = 1\n    for num in arr:\n        if num > 0:\n            product *= 1\n        elif num < 0:\n            product *= -1\n        else:\n            return 0\n    return product"
+    },
+    {
+      "idx": 128,
+      "trace_idx": 13,
+      "bin_label": "filtered_p1",
+      "confidence": 0.5000592593136439,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 4
+      },
+      "reasoning_score": 0.75,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    total_mag = sum(abs(x) for x in arr)\n    sign_product = 1\n    for x in arr:\n        if x == 0:\n            return 0"
+    },
+    {
+      "idx": 128,
+      "trace_idx": 14,
+      "bin_label": "filtered_p1",
+      "confidence": 0.32697932646817407,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 3,
+        "coherence": 2,
+        "factuality": 3
+      },
+      "reasoning_score": 0.375,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    sum_magnitudes = sum(abs(x) for x in arr)\n    sign_product = 1\n    for x in arr:\n        if x == 0:\n            return 0"
+    },
+    {
+      "idx": 129,
+      "trace_idx": 14,
+      "bin_label": "filtered_p1",
+      "confidence": 0.33665635388201176,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "reasoning_score": 0.5625,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    solution = def minPath(grid, k):\n        n = len(grid)\n        # find cell with value 1\n        for i in range(n):\n            for j in range(n):\n                if grid[i][j] == 1:\n                    start = (i, j)\n                    break"
+    },
+    {
+      "idx": 131,
+      "trace_idx": 4,
+      "bin_label": "filtered_p1",
+      "confidence": 0.37556663093109677,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    result = 1\n    found_odd = False\n    while n:\n        d = n % 10\n        if d % 2 == 1:\n            result *= d\n            found_odd = True"
+    },
+    {
+      "idx": 131,
+      "trace_idx": 5,
+      "bin_label": "filtered_p1",
+      "confidence": 0.2576495889832736,
+      "correct": false,
+      "judge_scores": null,
+      "reasoning_score": null,
+      "judge_ok": false,
+      "error": "empty_cot",
+      "pred": ""
+    },
+    {
+      "idx": 131,
+      "trace_idx": 8,
+      "bin_label": "filtered_p1",
+      "confidence": 0.2576495889832736,
+      "correct": false,
+      "judge_scores": null,
+      "reasoning_score": null,
+      "judge_ok": false,
+      "error": "empty_cot",
+      "pred": ""
+    },
+    {
+      "idx": 131,
+      "trace_idx": 9,
+      "bin_label": "filtered_p1",
+      "confidence": 0.2576495889832736,
+      "correct": false,
+      "judge_scores": null,
+      "reasoning_score": null,
+      "judge_ok": false,
+      "error": "empty_cot",
+      "pred": ""
+    },
+    {
+      "idx": 131,
+      "trace_idx": 10,
+      "bin_label": "filtered_p1",
+      "confidence": 0.2576495889832736,
+      "correct": false,
+      "judge_scores": null,
+      "reasoning_score": null,
+      "judge_ok": false,
+      "error": "empty_cot",
+      "pred": ""
+    },
+    {
+      "idx": 131,
+      "trace_idx": 11,
+      "bin_label": "filtered_p1",
+      "confidence": 0.2576495889832736,
+      "correct": false,
+      "judge_scores": null,
+      "reasoning_score": null,
+      "judge_ok": false,
+      "error": "empty_cot",
+      "pred": ""
+    },
+    {
+      "idx": 131,
+      "trace_idx": 12,
+      "bin_label": "filtered_p1",
+      "confidence": 0.2576495889832736,
+      "correct": false,
+      "judge_scores": null,
+      "reasoning_score": null,
+      "judge_ok": false,
+      "error": "empty_cot",
+      "pred": ""
+    },
+    {
+      "idx": 132,
+      "trace_idx": 10,
+      "bin_label": "filtered_p1",
+      "confidence": 0.3966653084105515,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 3
+      },
+      "reasoning_score": 0.5,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    # Check if there exists a valid subsequence of brackets where at least one bracket is nested.\n    # A valid subsequence is def ined as a sequence that for ms a balanced and correctly nested sequence.\n    # A bracket is considered nested if there is an opening bracket immediately before a closing bracket in the sequence.\n    # We can use a greedy approach: iterate over the string and try to for m a balanced sequence by picking brackets.\n    # Once a balanced sequence is for med, check if it h"
+    },
+    {
+      "idx": 133,
+      "trace_idx": 2,
+      "bin_label": "filtered_p1",
+      "confidence": 0.41097744835741645,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    if x == int(x):\n        return int(x)"
+    },
+    {
+      "idx": 135,
+      "trace_idx": 9,
+      "bin_label": "filtered_p1",
+      "confidence": 0.3183620196795033,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    for i in range(len(arr) - 1, 0, -1):\n        if arr[i] < arr[i - 1]:\n            return i"
+    },
+    {
+      "idx": 136,
+      "trace_idx": 0,
+      "bin_label": "filtered_p1",
+      "confidence": 0.6408088674955711,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    negatives = [x for x in lst if x < 0]\n    positives = [x for x in lst if x > 0]\n    largest_negative = max(negatives) if negatives else None\n    smallest_positive = min(positives) if positives else None\n    return (largest_negative, smallest_positive)"
+    },
+    {
+      "idx": 136,
+      "trace_idx": 8,
+      "bin_label": "filtered_p1",
+      "confidence": 0.31601631792062335,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    negatives = [x for x in lst if x < 0]\n    positives = [x for x in lst if x > 0]\n    a = max(negatives) if negatives else None\n    b = min(positives) if positives else None\n    return (a, b)"
+    },
+    {
+      "idx": 136,
+      "trace_idx": 10,
+      "bin_label": "filtered_p1",
+      "confidence": 0.31028180616246087,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 2
+      },
+      "reasoning_score": 0.25,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    if largest_negative is None or element > largest_negative:\n        update largest_negative."
+    },
+    {
+      "idx": 137,
+      "trace_idx": 10,
+      "bin_label": "filtered_p1",
+      "confidence": 0.2636547113454739,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 4
+      },
+      "reasoning_score": 0.75,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    if isinstance(x, str):\n        s = x.replace(',', '.')\n        try:\n            return float(s), type(x)"
+    },
+    {
+      "idx": 137,
+      "trace_idx": 11,
+      "bin_label": "filtered_p1",
+      "confidence": 0.30250584555654786,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    if isinstance(x, str):\n        s = x.replace(\",\", \".\")\n        try:\n            return float(s)"
+    },
+    {
+      "idx": 137,
+      "trace_idx": 12,
+      "bin_label": "filtered_p1",
+      "confidence": 0.292889020360449,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 4
+      },
+      "reasoning_score": 0.75,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    if isinstance(val, str):\n        val = val.replace(\",\", \".\")\n        try:\n            return float(val)"
+    },
+    {
+      "idx": 140,
+      "trace_idx": 10,
+      "bin_label": "filtered_p1",
+      "confidence": 0.3760594601315299,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "reasoning_score": 0.8125,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    result = []\n    count = 0\n    for char in text:\n        if char == \" \":\n            count += 1\n            if count > 2:\n                result.append(\"-\")"
+    },
+    {
+      "idx": 141,
+      "trace_idx": 14,
+      "bin_label": "filtered_p1",
+      "confidence": 0.6737884010785908,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    name, ext = file_name.split('.')\n    if name == '' or not name[0].isalpha():\n        return 'No'"
+    },
+    {
+      "idx": 143,
+      "trace_idx": 2,
+      "bin_label": "filtered_p1",
+      "confidence": 0.68554730518713,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    words = sentence.split()\n    result = [word for word in words if is_prime(len(word))]\n    return \" \".join(result)"
+    },
+    {
+      "idx": 143,
+      "trace_idx": 11,
+      "bin_label": "filtered_p1",
+      "confidence": 0.5923650713230685,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    words = sentence.split()\n    result_words = [word for word in words if is_prime(len(word))]\n    return \" \".join(result_words)"
+    },
+    {
+      "idx": 145,
+      "trace_idx": 0,
+      "bin_label": "filtered_p1",
+      "confidence": 0.2761188385866394,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    total = 0\n    n = abs(n)\n    while n:\n        total += n % 10\n        n //= 10"
+    },
+    {
+      "idx": 145,
+      "trace_idx": 4,
+      "bin_label": "filtered_p1",
+      "confidence": 0.27512942740449947,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 3
+      },
+      "reasoning_score": 0.3125,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    return [item for _,item in sorted(enumerate(nums), key = lambda x: (sum(int(d) for d in str(abs(x[1]))), x[0]))]"
+    },
+    {
+      "idx": 146,
+      "trace_idx": 13,
+      "bin_label": "filtered_p1",
+      "confidence": 0.30012444683817935,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    odd_digits = {'1', '3', '5', '7', '9'}\n    count = 0\n    for num in nums:\n        if num > 10:\n            s = str(abs(num))\n            if s[0] in odd_digits and s[-1] in odd_digits:\n                count += 1"
+    },
+    {
+      "idx": 147,
+      "trace_idx": 0,
+      "bin_label": "filtered_p1",
+      "confidence": 0.30572994241144646,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    # Case 4\n    res += cnt[0] * cnt[1] * cnt[2]\n    \n    return res"
+    },
+    {
+      "idx": 147,
+      "trace_idx": 3,
+      "bin_label": "filtered_p1",
+      "confidence": 0.3649415114190619,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    a = [i * i - i + 1 for i in range(1, n + 1)]\n    count = 0\n    for i in range(n):\n        for j in range(i + 1, n):\n            for k in range(j + 1, n):\n                if (a[i] + a[j] + a[k]) % 3 == 0:\n                    count += 1"
+    },
+    {
+      "idx": 147,
+      "trace_idx": 13,
+      "bin_label": "filtered_p1",
+      "confidence": 0.2841309629870771,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    # Create the array a where a[i] = i * i - i + 1 for i from 1 to n (i.e., index 1 - indexed)\n    a = [i * i - i + 1 for i in range(1, n + 1)]\n    count = 0\n    # Count triples (i, j, k) with i < j < k such that a[i] + a[j] + a[k] is divisible by 3.\n    for i in range(n):\n        for j in range(i + 1, n):\n            for k in range(j + 1, n):\n                if (a[i] + a[j] + a[k]) % 3 == 0:\n                    count += 1"
+    },
+    {
+      "idx": 148,
+      "trace_idx": 0,
+      "bin_label": "filtered_p1",
+      "confidence": 0.2776742225098119,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    planets = [\"Mercury\", \"Venus\", \"Earth\", \"Mars\", \"Jupiter\", \"Saturn\", \"Uranus\", \"Neptune\"]\n    if planet1 not in planets or planet2 not in planets:\n        return ()"
+    },
+    {
+      "idx": 148,
+      "trace_idx": 1,
+      "bin_label": "filtered_p1",
+      "confidence": 0.3828810425749977,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    planets = [\"Mercury\", \"Venus\", \"Earth\", \"Mars\", \"Jupiter\", \"Saturn\", \"Uranus\", \"Neptune\"]\n    if planet1 not in planets or planet2 not in planets:\n        return ()\n    idx1 = planets.index(planet1)\n    idx2 = planets.index(planet2)\n    if idx1 < idx2:\n        return tuple(planets[idx1 + 1: idx2])\n    else:\n        return tuple(planets[idx2 + 1: idx1])"
+    },
+    {
+      "idx": 148,
+      "trace_idx": 7,
+      "bin_label": "filtered_p1",
+      "confidence": 0.33241722871306134,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    planets = [\"Mercury\", \"Venus\", \"Earth\", \"Mars\", \"Jupiter\", \"Saturn\", \"Uranus\", \"Neptune\"]\n    if planet1 not in planets or planet2 not in planets:\n        return ()"
+    },
+    {
+      "idx": 150,
+      "trace_idx": 8,
+      "bin_label": "filtered_p1",
+      "confidence": 0.44463171747004165,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    if n > 1:\n        for i in range(2, int(n**0.5) + 1):\n            if n % i == 0:\n                return y"
+    },
+    {
+      "idx": 151,
+      "trace_idx": 11,
+      "bin_label": "filtered_p1",
+      "confidence": 0.60914865385469,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    total = 0\n    for num in lst:\n        if isinstance(num, int) and num >= 0 and num % 2 != 0:\n            total += num * num"
+    },
+    {
+      "idx": 152,
+      "trace_idx": 6,
+      "bin_label": "filtered_p1",
+      "confidence": 0.5353449226169511,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    return [0 if g == s else abs(g - s) for s, g in zip(game, guess)]"
+    },
+    {
+      "idx": 154,
+      "trace_idx": 11,
+      "bin_label": "filtered_p1",
+      "confidence": 0.28686304644701377,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    rotations = [b[i:] + b[:i] for i in range(len(b))]\n    for rot in rotations:\n        if rot in a:\n            return True"
+    },
+    {
+      "idx": 156,
+      "trace_idx": 4,
+      "bin_label": "filtered_p1",
+      "confidence": 0.25347478417216024,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    roman_numerals = [\n        (1000, \"m\"),\n        (900, \"cm\"),\n        (500, \"d\"),\n        (400, \"cd\"),\n        (100, \"c\"),\n        (90, \"xc\"),\n        (50, \"l\"),\n        (40, \"xl\"),\n        (10, \"x\"),\n        (9, \"ix\"),\n        (5, \"v\"),\n        (4, \"iv\"),\n        (1, \"i\")\n    ]\n    result = \"\"\n    for value, numeral in roman_numerals:\n        while number >= value:\n            result += numeral\n            number -= value\n    return result"
+    },
+    {
+      "idx": 156,
+      "trace_idx": 7,
+      "bin_label": "filtered_p1",
+      "confidence": 0.3677887212933161,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    roman_map = [\n        (1000, \"m\"), (900, \"cm\"), (500, \"d\"), (400, \"cd\"),\n        (100, \"c\"), (90, \"xc\"), (50, \"l\"), (40, \"xl\"),\n        (10, \"x\"), (9, \"ix\"), (5, \"v\"), (4, \"iv\"),\n        (1, \"i\")\n    ]\n    result = \"\"\n    for value, numeral in roman_map:\n        while number >= value:\n            result += numeral\n            number -= value"
+    },
+    {
+      "idx": 156,
+      "trace_idx": 8,
+      "bin_label": "filtered_p1",
+      "confidence": 0.7306688458929183,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    val = [\n        1000, 900, 500, 400,\n        100, 90, 50, 40,\n        10, 9, 5, 4,\n        1\n    ]\n    syms = [\n        'm', 'cm', 'd', 'cd',\n        'c', 'xc', 'l', 'xl',\n        'x', 'ix', 'v', 'iv',\n        'i'\n    ]\n    roman = ''\n    i = 0\n    while number > 0:\n        for _ in range(number // val[i]):\n            roman += syms[i]\n            number %= val[i]"
+    },
+    {
+      "idx": 156,
+      "trace_idx": 9,
+      "bin_label": "filtered_p1",
+      "confidence": 0.26662835619083985,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "        roman = \"\"\n        roman_map = [\n            (1000, \"m\"),\n            (900, \"cm\"),\n            (500, \"d\"),\n            (400, \"cd\"),\n            (100, \"c\"),\n            (90, \"xc\"),\n            (50, \"l\"),\n            (40, \"xl\"),\n            (10, \"x\"),\n            (9, \"ix\"),\n            (5, \"v\"),\n            (4, \"iv\"),\n            (1, \"i\")\n        ]\n        for value, symbol in roman_map:\n            while number >= value:\n                roman += symbol\n                number -= value\n    "
+    },
+    {
+      "idx": 157,
+      "trace_idx": 2,
+      "bin_label": "filtered_p1",
+      "confidence": 0.8941600302726861,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    sides = sorted([a, b, c])\n    return sides[0]**2 + sides[1]**2 == sides[2]**2"
+    },
+    {
+      "idx": 158,
+      "trace_idx": 13,
+      "bin_label": "filtered_p1",
+      "confidence": 0.6013767166227034,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    max_unique = -1\n    result = \"\"\n    for word in words:\n        unique_count = len(set(word))\n        if unique_count > max_unique:\n            max_unique = unique_count\n            result = word"
+    },
+    {
+      "idx": 159,
+      "trace_idx": 12,
+      "bin_label": "filtered_p1",
+      "confidence": 0.42948920796254125,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "I'll produce answer. I'll produce answer accordingly. I'll produce answer as Python code. As final answer.  We'll produce code answer as \"def eat(number, need, remaining):\".\n\nI'll produce answer accordingly. I'll produce answer accordingly. We'll produce answer as code. We'll produce answer accordingly. We'll produce answer as code. We'll produce answer accordingly. We'll produce answer as code.\n\nI'll produce answer accordingly. We'll produce answer in code."
+    },
+    {
+      "idx": 160,
+      "trace_idx": 10,
+      "bin_label": "filtered_p1",
+      "confidence": 0.2845899495713043,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    result = operand[0]\n    for op, num in zip(operator, operand[1:]):\n        if op == '+':\n            result += num"
+    },
+    {
+      "idx": 160,
+      "trace_idx": 13,
+      "bin_label": "filtered_p1",
+      "confidence": 0.7714800640509769,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    result = operand[0]\n    for op, num in zip(operator, operand[1:]):\n        if op == '+':\n            result += num"
+    },
+    {
+      "idx": 161,
+      "trace_idx": 4,
+      "bin_label": "filtered_p1",
+      "confidence": 0.40472961561221393,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 1,
+        "utility": 1,
+        "coherence": 1,
+        "factuality": 1
+      },
+      "reasoning_score": 0.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "We'll test your code with some inputs.\n'''\n\nWrite the Python code accordingly. Let's produce final answer. Use code.\n\nI'll produce code. We'll produce code.\n\nI'll produce code accordingly. We'll produce answer. We'll produce code. We'll produce code.\n\nI'll produce code accordingly. We'll produce code. We'll produce code. We'll produce code.\n\nI'll produce final answer.\n\nI'll produce code accordingly using logic.\n\nI'll produce code. We'll produce code accordingly. We'll produce code.\n\nI'll produce"
+    },
+    {
+      "idx": 161,
+      "trace_idx": 8,
+      "bin_label": "filtered_p1",
+      "confidence": 0.5211995821606094,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    if any(c.isalpha() for c in s):\n        return ''.join(c.lower() if c.isupper() else c.upper() for c in s)\n    else:\n        return s[::-1]"
+    },
+    {
+      "idx": 161,
+      "trace_idx": 10,
+      "bin_label": "filtered_p1",
+      "confidence": 0.5310872458724254,
+      "correct": true,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    if any(c.isalpha() for c in s):\n        return ''.join(c.lower() if c.isupper() else c.upper() for c in s)\n    else:\n        return s[::-1]"
+    },
+    {
+      "idx": 163,
+      "trace_idx": 15,
+      "bin_label": "filtered_p1",
+      "confidence": 0.42462100529720265,
+      "correct": false,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "reasoning_score": 1.0,
+      "judge_ok": true,
+      "error": "",
+      "pred": "    start = min(a, b)\n    end = max(a, b)\n    return [i for i in range(start, end + 1) if i % 2 == 0]"
+    }
+  ]
+}

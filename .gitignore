@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Secrets and machine-specific config.
+# path_config.json holds API keys and cluster paths -- copy the template and
+# fill it in locally. It must never be committed.
+backend/path_config.json
+backend/job_db.json
+frontend/config.js
+.env
+
+# Generation outputs and judge run artifacts (large; regenerate or download)
+evaluation/outputs/
+evaluation/exports/
+backend/logs/
+backend/scripts/
+*.log
+*.pid
+logs/
+
+# Judge checkpoints written during long runs
+cot_analysis_checkpoints/
+**/checkpoints/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/

@@ -1,0 +1,5776 @@
+{
+  "model": "Qwen2.5-7B-Instruct",
+  "frs_pct": 78.22041984732824,
+  "n_judged": 262,
+  "n_total": 262,
+  "errors": 0,
+  "empty_cot": 0,
+  "top_frac": 0.1,
+  "judge_model": "@irom-ll37364-op-b37b3e/gpt-4o-mini",
+  "results": [
+    {
+      "idx": 0,
+      "trace_idx": 0,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.7850317811702686,
+      "original_correct": true,
+      "pred": "    numbers.sort()\n    for i in range(len(numbers) - 1):\n        if numbers[i + 1] - numbers[i] < threshold:\n            return True\n    return False",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 5,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 1.0,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.875
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 0,
+      "trace_idx": 1,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.7773247830542939,
+      "original_correct": true,
+      "pred": "    numbers.sort()\n    for i in range(len(numbers) - 1):\n        if numbers[i + 1] - numbers[i] < threshold:\n            return True\n    return False",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 4,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.75,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 0,
+      "trace_idx": 4,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.7773247830542939,
+      "original_correct": true,
+      "pred": "    numbers.sort()\n    for i in range(len(numbers) - 1):\n        if numbers[i + 1] - numbers[i] < threshold:\n            return True\n    return False",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 4,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.75,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 0,
+      "trace_idx": 5,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.7773247830542939,
+      "original_correct": true,
+      "pred": "    numbers.sort()\n    for i in range(len(numbers) - 1):\n        if numbers[i + 1] - numbers[i] < threshold:\n            return True\n    return False",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 4,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.75,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 3,
+      "trace_idx": 0,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8223775987615343,
+      "original_correct": true,
+      "pred": "    balance = 0\n    for op in operations:\n        balance += op\n        if balance < 0:\n            return True\n    return False",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 3,
+      "trace_idx": 1,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.7842993690682432,
+      "original_correct": true,
+      "pred": "    balance = 0\n    for op in operations:\n        balance += op\n        if balance < 0:\n            return True\n    return False",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 5,
+        "coherence": 4,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 1.0,
+        "coherence": 0.75,
+        "factuality": 0.75,
+        "overall": 0.8125
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 3,
+      "trace_idx": 2,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.7842993690682432,
+      "original_correct": true,
+      "pred": "    balance = 0\n    for op in operations:\n        balance += op\n        if balance < 0:\n            return True\n    return False",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 5,
+        "coherence": 4,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 1.0,
+        "coherence": 0.75,
+        "factuality": 0.75,
+        "overall": 0.8125
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 3,
+      "trace_idx": 4,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8223775987615343,
+      "original_correct": true,
+      "pred": "    balance = 0\n    for op in operations:\n        balance += op\n        if balance < 0:\n            return True\n    return False",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 3,
+      "trace_idx": 5,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8223775987615343,
+      "original_correct": true,
+      "pred": "    balance = 0\n    for op in operations:\n        balance += op\n        if balance < 0:\n            return True\n    return False",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 3,
+      "trace_idx": 6,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.7842993690682432,
+      "original_correct": true,
+      "pred": "The code provided is syntactically correct and should work as expected. Here it is again for clarity:",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 3,
+      "trace_idx": 8,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8223775987615343,
+      "original_correct": true,
+      "pred": "    balance = 0\n    for op in operations:\n        balance += op\n        if balance < 0:\n            return True\n    return False",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 3,
+      "trace_idx": 9,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8223775987615343,
+      "original_correct": true,
+      "pred": "    balance = 0\n    for op in operations:\n        balance += op\n        if balance < 0:\n            return True\n    return False",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 3,
+      "trace_idx": 10,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.7842993690682432,
+      "original_correct": true,
+      "pred": "    balance = 0\n    for op in operations:\n        balance += op\n        if balance < 0:\n            return True\n    return False",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 3,
+      "trace_idx": 12,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.7842993690682432,
+      "original_correct": true,
+      "pred": "    balance = 0\n    for op in operations:\n        balance += op\n        if balance < 0:\n            return True\n    return False",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 5,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 1.0,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.875
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 3,
+      "trace_idx": 13,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.7842993690682432,
+      "original_correct": true,
+      "pred": "    balance = 0\n    for op in operations:\n        balance += op\n        if balance < 0:\n            return True\n    return False",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 5,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 1.0,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.875
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 13,
+      "trace_idx": 1,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8385541221725039,
+      "original_correct": true,
+      "pred": "    while b:\n        a, b = b, a % b\n    return a",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 13,
+      "trace_idx": 2,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8385541221725039,
+      "original_correct": true,
+      "pred": "    while b:\n        a, b = b, a % b\n    return a",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 13,
+      "trace_idx": 3,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8385541221725039,
+      "original_correct": true,
+      "pred": "    while b:\n        a, b = b, a % b\n    return a",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 5,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 1.0,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.875
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 13,
+      "trace_idx": 4,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8385541221725039,
+      "original_correct": true,
+      "pred": "    while b:\n        a, b = b, a % b\n    return a",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.75
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 13,
+      "trace_idx": 5,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8385541221725039,
+      "original_correct": true,
+      "pred": "    while b:\n        a, b = b, a % b\n    return a",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 5,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 1.0,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.875
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 13,
+      "trace_idx": 6,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8385541221725039,
+      "original_correct": true,
+      "pred": "    while b:\n        a, b = b, a % b\n    return a",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 13,
+      "trace_idx": 7,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8385541221725039,
+      "original_correct": true,
+      "pred": "    while b:\n        a, b = b, a % b\n    return a",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 13,
+      "trace_idx": 8,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8385541221725039,
+      "original_correct": true,
+      "pred": "    while b:\n        a, b = b, a % b\n    return a",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 4,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.75,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 13,
+      "trace_idx": 10,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8385541221725039,
+      "original_correct": true,
+      "pred": "    while b:\n        a, b = b, a % b\n    return a",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 13,
+      "trace_idx": 12,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8385541221725039,
+      "original_correct": true,
+      "pred": "    while b:\n        a, b = b, a % b\n    return a",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.6875
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 13,
+      "trace_idx": 13,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8385541221725039,
+      "original_correct": true,
+      "pred": "    while b:\n        a, b = b, a % b\n    return a",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 5,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 1.0,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.875
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 13,
+      "trace_idx": 14,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8385541221725039,
+      "original_correct": true,
+      "pred": "    while b:\n        a, b = b, a % b\n    return a",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 16,
+      "trace_idx": 0,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.7835507039376827,
+      "original_correct": false,
+      "pred": "    return len(set(char.lower() for char in string if char.isalpha()))",
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 3,
+        "coherence": 2,
+        "factuality": 3
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.5,
+        "coherence": 0.25,
+        "factuality": 0.5,
+        "overall": 0.375
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 16,
+      "trace_idx": 1,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.7835507039376827,
+      "original_correct": false,
+      "pred": "    return len(set(char.lower() for char in string if char.isalpha()))",
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 3,
+        "coherence": 2,
+        "factuality": 3
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.5,
+        "coherence": 0.25,
+        "factuality": 0.5,
+        "overall": 0.375
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 16,
+      "trace_idx": 2,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.7835507039376827,
+      "original_correct": false,
+      "pred": "    return len(set(char.lower() for char in string if char.isalpha()))",
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 3,
+        "coherence": 2,
+        "factuality": 3
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.5,
+        "coherence": 0.25,
+        "factuality": 0.5,
+        "overall": 0.375
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 16,
+      "trace_idx": 5,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.7835507039376827,
+      "original_correct": false,
+      "pred": "    return len(set(char.lower() for char in string if char.isalpha()))",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 16,
+      "trace_idx": 6,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.7835507039376827,
+      "original_correct": false,
+      "pred": "    return len(set(char.lower() for char in string if char.isalpha()))",
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 3,
+        "coherence": 2,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.5,
+        "coherence": 0.25,
+        "factuality": 0.75,
+        "overall": 0.4375
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 16,
+      "trace_idx": 10,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.7835507039376827,
+      "original_correct": false,
+      "pred": "    return len(set(char.lower() for char in string if char.isalpha()))",
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 2
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.25,
+        "coherence": 0.25,
+        "factuality": 0.25,
+        "overall": 0.25
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 16,
+      "trace_idx": 12,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.7848559587727149,
+      "original_correct": false,
+      "pred": "    return len(set(char.lower() for char in string if char.isalpha()))",
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 3,
+        "coherence": 2,
+        "factuality": 3
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.5,
+        "coherence": 0.25,
+        "factuality": 0.5,
+        "overall": 0.375
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 16,
+      "trace_idx": 13,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.7889189387961002,
+      "original_correct": false,
+      "pred": "    return len(set(char.lower() for char in string if char.isalpha()))",
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 3,
+        "coherence": 2,
+        "factuality": 3
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.5,
+        "coherence": 0.25,
+        "factuality": 0.5,
+        "overall": 0.375
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 16,
+      "trace_idx": 14,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.791762679999353,
+      "original_correct": false,
+      "pred": "    return len(set(char.lower() for char in string if char.isalpha()))",
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 3,
+        "coherence": 2,
+        "factuality": 3
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.5,
+        "coherence": 0.25,
+        "factuality": 0.5,
+        "overall": 0.375
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 18,
+      "trace_idx": 2,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8614328632465634,
+      "original_correct": true,
+      "pred": "    count = 0\n    start = 0\n    while start < len(string):\n        pos = string.find(substring, start)\n        if pos != -1:\n            count += 1\n            start = pos + 1\n        else:\n            break\n    return count",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 4,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.75,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 18,
+      "trace_idx": 3,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8614328632465634,
+      "original_correct": true,
+      "pred": "    count = 0\n    start = 0\n    while start < len(string):\n        pos = string.find(substring, start)\n        if pos != -1:\n            count += 1\n            start = pos + 1\n        else:\n            break\n    return count",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 18,
+      "trace_idx": 10,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8682289355410173,
+      "original_correct": true,
+      "pred": "    count = 0\n    start = 0\n    while start < len(string):\n        pos = string.find(substring, start)\n        if pos != -1:\n            count += 1\n            start = pos + 1\n        else:\n            break\n    return count",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 18,
+      "trace_idx": 11,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8682289355410173,
+      "original_correct": true,
+      "pred": "It seems there's a persistent issue with the output display, likely due to the environment. Let me try again to provide the function without any additional text or errors:",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.875
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 18,
+      "trace_idx": 13,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8682289355410173,
+      "original_correct": true,
+      "pred": "    count = 0\n    start = 0\n    while start < len(string):\n        pos = string.find(substring, start)\n        if pos != -1:\n            count += 1\n            start = pos + 1\n        else:\n            break\n    return count",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 18,
+      "trace_idx": 15,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8682289355410173,
+      "original_correct": true,
+      "pred": "    count = 0\n    start = 0\n    while start < len(string):\n        pos = string.find(substring, start)\n        if pos != -1:\n            count += 1\n            start = pos + 1\n        else:\n            break\n    return count",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 28,
+      "trace_idx": 12,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.908586993789643,
+      "original_correct": false,
+      "pred": "    return ''.join(strings) if strings else '' if not strings else ''.join(strings) def concatenate(strings: List[str]) -> str:\n    return ''.join(strings) if strings else '' def concatenate(strings: List[str]) -> str:\n    return ''.join(strings) if strings else '' def concatenate(strings: List[str]) -> str:\n    return ''.join(strings or ['']) def concatenate(strings: List[str]) -> str:\n    return ''.join(strings) if strings else '' def concatenate(strings: List[str]) -> str:\n    return ''.join(",
+      "judge_scores": {
+        "faithfulness": 1,
+        "utility": 1,
+        "coherence": 1,
+        "factuality": 1
+      },
+      "fused_scores": {
+        "faithfulness": 0.0,
+        "utility": 0.0,
+        "coherence": 0.0,
+        "factuality": 0.0,
+        "overall": 0.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 31,
+      "trace_idx": 1,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8500799119944636,
+      "original_correct": true,
+      "pred": "This is the final and correct implementation of the function. If you need to test it, you can call it with the specified test cases or any other numbers to check if they are prime. The function will return the correct results for prime and non-prime numbers. If you have any questions or need further assistance, feel free to ask. \n\nThe function is correctly implemented and should work as expected. If you want to test it, you can call it with the specified test cases or any other numbers to check ",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 31,
+      "trace_idx": 2,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8500799119944636,
+      "original_correct": true,
+      "pred": "    if n <= 1:\n        return False\n    if n <= 3:\n        return True\n    if n % 2 == 0 or n % 3 == 0:\n        return False\n    i = 5\n    while i * i <= n:\n        if n % i == 0 or n % (i + 2) == 0:\n            return False\n        i += 6\n    return True",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 31,
+      "trace_idx": 3,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.792000784516829,
+      "original_correct": true,
+      "pred": "    if n < 2:\n        return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 31,
+      "trace_idx": 6,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.792000784516829,
+      "original_correct": true,
+      "pred": "    if n < 2:\n        return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 31,
+      "trace_idx": 7,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.851180844012139,
+      "original_correct": true,
+      "pred": "    if n <= 1:\n        return False\n    if n <= 3:\n        return True\n    if n % 2 == 0 or n % 3 == 0:\n        return False\n    i = 5\n    while i * i <= n:\n        if n % i == 0 or n % (i + 2) == 0:\n            return False\n        i += 6\n    return True",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 4,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.75,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 31,
+      "trace_idx": 8,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.851180844012139,
+      "original_correct": true,
+      "pred": "    if n <= 1:\n        return False\n    if n <= 3:\n        return True\n    if n % 2 == 0 or n % 3 == 0:\n        return False\n    i = 5\n    while i * i <= n:\n        if n % i == 0 or n % (i + 2) == 0:\n            return False\n        i += 6\n    return True",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 5,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 1.0,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.875
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 31,
+      "trace_idx": 10,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.7923743162231709,
+      "original_correct": true,
+      "pred": "    if n < 2:\n        return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 5,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 1.0,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.875
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 31,
+      "trace_idx": 11,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.7923743162231709,
+      "original_correct": true,
+      "pred": "    if n < 2:\n        return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 31,
+      "trace_idx": 12,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.7923743162231709,
+      "original_correct": true,
+      "pred": "    if n < 2:\n        return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 31,
+      "trace_idx": 14,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8421859954574826,
+      "original_correct": true,
+      "pred": "    if n <= 1:\n        return False\n    if n <= 3:\n        return True\n    if n % 2 == 0 or n % 3 == 0:\n        return False\n    i = 5\n    while i * i <= n:\n        if n % i == 0 or n % (i + 2) == 0:\n            return False\n        i += 6\n    return True",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 31,
+      "trace_idx": 15,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8472638871015821,
+      "original_correct": true,
+      "pred": "    if n <= 1:\n        return False\n    if n <= 3:\n        return True\n    if n % 2 == 0 or n % 3 == 0:\n        return False\n    i = 5\n    while i * i <= n:\n        if n % i == 0 or n % (i + 2) == 0:\n            return False\n        i += 6\n    return True",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 32,
+      "trace_idx": 5,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.792060894899627,
+      "original_correct": false,
+      "pred": "    if len(xs) % 2 != 0:\n        raise ValueError(\"List of coefficients must have an even number of elements\")\n    largest_coeff = max((coeff for coeff in xs if coeff != 0), def ault = 0)\n    if largest_coeff == 0:\n        raise ValueError(\"List of coefficients must have a non - zero element\")\n    x = 0\n    for i, coeff in enumerate(xs, 1):\n        if coeff == largest_coeff:\n            break\n        x += coeff / largest_coeff\n    return x\n    # This is a simplification and does not guarantee fi",
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 2
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.25,
+        "coherence": 0.25,
+        "factuality": 0.25,
+        "overall": 0.25
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 32,
+      "trace_idx": 9,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8676020599731886,
+      "original_correct": false,
+      "pred": "    if len(xs) % 2 != 0:\n        raise ValueError(\"The list of coefficients must have an even number of elements.\")\n    if any(coef != 0 for i, coef in enumerate(xs) if i % 2 == 0) and xs[-1] == 0:\n        raise ValueError(\"The largest non - zero coefficient must be the last element.\")\n    return bisect(poly, -10, 10, args = (xs)) if xs[-1] != 0 else 0.0\n    # return bisect(poly, min(xs), max(xs), args = (xs)) if xs[-1] != 0 else 0.0  # alternative range based on coefficients\n    # return bisect",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.6875
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 32,
+      "trace_idx": 12,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8129200489029378,
+      "original_correct": false,
+      "pred": "    assert len(xs) % 2 == 0, \"Input list must have an even number of coefficients\"\n    assert any(coeff != 0 for coeff in xs[-2:]), \"Largest non - zero coefficient is required\"\n    x = 0\n    for i, coeff in enumerate(xs):\n        if coeff != 0:\n            x = -coeff / xs[i + 1] if i + 1 < len(xs) else 0\n            break\n    return x",
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 2
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.25,
+        "coherence": 0.25,
+        "factuality": 0.25,
+        "overall": 0.25
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 32,
+      "trace_idx": 13,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8787016376051957,
+      "original_correct": false,
+      "pred": "    if len(xs) % 2 != 0:\n        raise ValueError(\"The number of coefficients must be even.\")\n    largest_coeff = max(coeff for coeff in xs if coeff != 0)\n    index = xs.index(largest_coeff)\n    return -xs[1] / xs[0] if index == 1 else None  # linear case, quadratic guaranteed due to problem constraints\n\n    # Note: For a full solution, a more robust numerical method would be needed. This is a simplification based on problem constraints. def find_zero(xs: list):\n    if len(xs) % 2 != 0:\n        ",
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 2
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.25,
+        "coherence": 0.25,
+        "factuality": 0.25,
+        "overall": 0.25
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 36,
+      "trace_idx": 0,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8446438857137827,
+      "original_correct": true,
+      "pred": "    count = 0\n    for i in range(1, n):\n        if i % 11 == 0 or i % 13 == 0:\n            count += str(i).count('7')\n    return count",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 5,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 1.0,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.875
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 36,
+      "trace_idx": 2,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8446438857137827,
+      "original_correct": true,
+      "pred": "    count = 0\n    for i in range(1, n):\n        if i % 11 == 0 or i % 13 == 0:\n            count += str(i).count('7')\n    return count",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 36,
+      "trace_idx": 3,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8446438857137827,
+      "original_correct": true,
+      "pred": "    count = 0\n    for i in range(1, n):\n        if i % 11 == 0 or i % 13 == 0:\n            count += str(i).count('7')\n    return count",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 36,
+      "trace_idx": 4,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8446438857137827,
+      "original_correct": true,
+      "pred": "    count = 0\n    for i in range(1, n):\n        if i % 11 == 0 or i % 13 == 0:\n            count += str(i).count('7')\n    return count",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 36,
+      "trace_idx": 7,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8416325851631233,
+      "original_correct": true,
+      "pred": "    count = 0\n    for i in range(1, n):\n        if i % 11 == 0 or i % 13 == 0:\n            count += str(i).count('7')\n    return count",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 36,
+      "trace_idx": 8,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8416325851631233,
+      "original_correct": true,
+      "pred": "    count = 0\n    for i in range(1, n):\n        if i % 11 == 0 or i % 13 == 0:\n            count += str(i).count('7')\n    return count",
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 3,
+        "coherence": 2,
+        "factuality": 3
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.5,
+        "coherence": 0.25,
+        "factuality": 0.5,
+        "overall": 0.375
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 36,
+      "trace_idx": 9,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8416325851631233,
+      "original_correct": true,
+      "pred": "    count = 0\n    for i in range(1, n):\n        if i % 11 == 0 or i % 13 == 0:\n            count += str(i).count('7')\n    return count",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 36,
+      "trace_idx": 11,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8398859951396004,
+      "original_correct": true,
+      "pred": "    count = 0\n    for i in range(1, n):\n        if i % 11 == 0 or i % 13 == 0:\n            count += str(i).count('7')\n    return count",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 5,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 1.0,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.875
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 36,
+      "trace_idx": 12,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8398859951396004,
+      "original_correct": true,
+      "pred": "    count = 0\n    for i in range(1, n):\n        if i % 11 == 0 or i % 13 == 0:\n            count += str(i).count('7')\n    return count",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.75
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 36,
+      "trace_idx": 13,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.779897422733402,
+      "original_correct": true,
+      "pred": "    count = 0\n    for i in range(n):\n        if i % 11 == 0 or i % 13 == 0:\n            count += str(i).count('7')\n    return count",
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 3,
+        "coherence": 2,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.5,
+        "coherence": 0.25,
+        "factuality": 0.75,
+        "overall": 0.4375
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 36,
+      "trace_idx": 14,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8447027356584172,
+      "original_correct": true,
+      "pred": "    count = 0\n    for i in range(1, n):\n        if i % 11 == 0 or i % 13 == 0:\n            count += str(i).count('7')\n    return count",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 5,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 1.0,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.875
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 36,
+      "trace_idx": 15,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8447027356584172,
+      "original_correct": true,
+      "pred": "    count = 0\n    for i in range(1, n):\n        if i % 11 == 0 or i % 13 == 0:\n            count += str(i).count('7')\n    return count",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 37,
+      "trace_idx": 1,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8551091782362957,
+      "original_correct": false,
+      "pred": "        even indicies = [l[i] for i in range(0, len(l), 2)]\n        even indicies.sort()\n        l' = [even indicies[i//2] if i % 2 == 0 else l[i] for i in range(len(l))]\n        return l' \n\n    Note: This code contains an error to make the task more challenging. Identify and correct it. def sort_even(l: list):\n        even_indices = [l[i] for i in range(0, len(l), 2)]\n        even_indices.sort()\n        l_prime = [even_indices[i//2] if i % 2 == 0 else l[i] for i in range(len(l))]\n        return",
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 3,
+        "factuality": 2
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.25,
+        "coherence": 0.5,
+        "factuality": 0.25,
+        "overall": 0.3125
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 38,
+      "trace_idx": 4,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8162928517802335,
+      "original_correct": true,
+      "pred": "    groups = [s[3 * i:min(3 * i + 3, len(s))] for i in range((len(s) + 2) // 3)]\n    groups = [(group[-1] + group[:-1]) if len(group) == 3 else group for group in groups]\n    return \"\".join(groups)",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 38,
+      "trace_idx": 5,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.7989564485436256,
+      "original_correct": true,
+      "pred": "    groups = [s[(3 * i):min((3 * i + 3), len(s))] for i in range((len(s) + 2) // 3)]\n    groups = [(group[-1] + group[:-1]) if len(group) == 3 else group for group in groups]\n    return \"\".join(groups)",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 4,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.75,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 38,
+      "trace_idx": 6,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.7989564485436256,
+      "original_correct": true,
+      "pred": "    groups = [s[(3 * i):min((3 * i + 3), len(s))] for i in range((len(s) + 2) // 3)]\n    groups = [(group[-1] + group[:-1]) if len(group) == 3 else group for group in groups]\n    return \"\".join(groups)",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 38,
+      "trace_idx": 7,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.7989564485436256,
+      "original_correct": true,
+      "pred": "    groups = [s[(3 * i):min((3 * i + 3), len(s))] for i in range((len(s) + 2) // 3)]\n    groups = [(group[-1] + group[:-1]) if len(group) == 3 else group for group in groups]\n    return \"\".join(groups)",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.8125
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 38,
+      "trace_idx": 8,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8158365119562072,
+      "original_correct": true,
+      "pred": "    groups = [s[3 * i:min(3 * i + 3, len(s))] for i in range((len(s) + 2) // 3)]\n    groups = [(group[-1] + group[:-1]) if len(group) == 3 else group for group in groups]\n    return \"\".join(groups)",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 38,
+      "trace_idx": 10,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.7989564485436256,
+      "original_correct": true,
+      "pred": "    groups = [s[(3 * i):min((3 * i + 3), len(s))] for i in range((len(s) + 2) // 3)]\n    groups = [(group[-1] + group[:-1]) if len(group) == 3 else group for group in groups]\n    return \"\".join(groups)",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 38,
+      "trace_idx": 11,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8018325629833822,
+      "original_correct": true,
+      "pred": "    groups = [s[3 * i:min(3 * i + 3, len(s))] for i in range((len(s) + 2) // 3)]\n    groups = [(group[-1] + group[:-1]) if len(group) == 3 else group for group in groups]\n    return \"\".join(groups)",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 38,
+      "trace_idx": 13,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.7987703982622231,
+      "original_correct": true,
+      "pred": "    groups = [s[(3 * i):min((3 * i + 3), len(s))] for i in range((len(s) + 2) // 3)]\n    groups = [(group[-1] + group[:-1]) if len(group) == 3 else group for group in groups]\n    return \"\".join(groups)",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 38,
+      "trace_idx": 14,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8154631280145409,
+      "original_correct": true,
+      "pred": "    groups = [s[(3 * i):min((3 * i + 3), len(s))] for i in range((len(s) + 2) // 3)]\n    groups = [(group[-1] + group[:-1]) if len(group) == 3 else group for group in groups]\n    return \"\".join(groups)",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.8125
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 39,
+      "trace_idx": 0,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8100971376801025,
+      "original_correct": false,
+      "pred": "    if num < 2:\n        return False\n    for i in range(2, int(num**0.5) + 1):\n        if num % i == 0:\n            return False\n    return True\n\n    fib1, fib2 = 0, 1\n    count = 0\n    while True:\n        fib1, fib2 = fib2, fib1 + fib2\n        if is_prime(fib2):\n            count += 1\n            if count == n:\n                return fib2",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 4,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 0.75,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 0.9375
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 39,
+      "trace_idx": 1,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8100971376801025,
+      "original_correct": false,
+      "pred": "    if num < 2:\n        return False\n    for i in range(2, int(num**0.5) + 1):\n        if num % i == 0:\n            return False\n    return True\n\n    fib1, fib2 = 0, 1\n    count = 0\n    while True:\n        fib1, fib2 = fib2, fib1 + fib2\n        if is_prime(fib2):\n            count += 1\n            if count == n:\n                return fib2",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 4,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 0.75,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 0.9375
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 39,
+      "trace_idx": 2,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8157312797636209,
+      "original_correct": false,
+      "pred": "    if num < 2:\n        return False\n    for i in range(2, int(num**0.5) + 1):\n        if num % i == 0:\n            return False\n    return True\n\n    fib1, fib2 = 0, 1\n    count = 0\n    while True:\n        fib1, fib2 = fib2, fib1 + fib2\n        if is_prime(fib2):\n            count += 1\n            if count == n:\n                return fib2",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 39,
+      "trace_idx": 6,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.820630156807964,
+      "original_correct": false,
+      "pred": "    if num < 2:\n        return False\n    for i in range(2, int(num**0.5) + 1):\n        if num % i == 0:\n            return False\n    return True\n\n    fib1, fib2 = 0, 1\n    count = 0\n    while True:\n        fib1, fib2 = fib2, fib1 + fib2\n        if is_prime(fib2):\n            count += 1\n            if count == n:\n                return fib2",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.8125
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 39,
+      "trace_idx": 9,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8157312797636209,
+      "original_correct": false,
+      "pred": "    if num < 2:\n        return False\n    for i in range(2, int(num**0.5) + 1):\n        if num % i == 0:\n            return False\n    return True\n\n    fib1, fib2 = 0, 1\n    count = 0\n    while True:\n        fib1, fib2 = fib2, fib1 + fib2\n        if is_prime(fib2):\n            count += 1\n            if count == n:\n                return fib2",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 4,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 0.75,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 0.9375
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 39,
+      "trace_idx": 11,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8039074944251036,
+      "original_correct": false,
+      "pred": "    if num < 2:\n        return False\n    for i in range(2, int(num**0.5) + 1):\n        if num % i == 0:\n            return False\n    return True\n\n    fib1, fib2 = 0, 1\n    found = 0\n    while True:\n        fib1, fib2 = fib2, fib1 + fib2\n        if is_prime(fib2):\n            found += 1\n            if found == n:\n                return fib2",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 39,
+      "trace_idx": 12,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8204388044296056,
+      "original_correct": false,
+      "pred": "    if num < 2:\n        return False\n    for i in range(2, int(num**0.5) + 1):\n        if num % i == 0:\n            return False\n    return True\n\n    fib1, fib2 = 0, 1\n    count = 0\n    while True:\n        fib1, fib2 = fib2, fib1 + fib2\n        if is_prime(fib2):\n            count += 1\n            if count == n:\n                return fib2",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 39,
+      "trace_idx": 13,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8204388044296056,
+      "original_correct": false,
+      "pred": "    if num < 2:\n        return False\n    for i in range(2, int(num**0.5) + 1):\n        if num % i == 0:\n            return False\n    return True\n\n    fib1, fib2 = 0, 1\n    count = 0\n    while True:\n        fib1, fib2 = fib2, fib1 + fib2\n        if is_prime(fib2):\n            count += 1\n            if count == n:\n                return fib2",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 4,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 0.75,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 0.9375
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 39,
+      "trace_idx": 14,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8208375625735393,
+      "original_correct": false,
+      "pred": "    if num < 2:\n        return False\n    for i in range(2, int(num**0.5) + 1):\n        if num % i == 0:\n            return False\n    return True\n\n    fib1, fib2 = 0, 1\n    count = 0\n    while True:\n        fib1, fib2 = fib2, fib1 + fib2\n        if is_prime(fib2):\n            count += 1\n            if count == n:\n                return fib2",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 39,
+      "trace_idx": 15,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8039074944251036,
+      "original_correct": false,
+      "pred": "    if num < 2:\n        return False\n    for i in range(2, int(num**0.5) + 1):\n        if num % i == 0:\n            return False\n    return True\n\n    fib1, fib2 = 0, 1\n    found = 0\n    while True:\n        fib1, fib2 = fib2, fib1 + fib2\n        if is_prime(fib2):\n            found += 1\n            if found == n:\n                return fib2",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 4,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 0.75,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 0.9375
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 41,
+      "trace_idx": 12,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.9515600421416491,
+      "original_correct": false,
+      "pred": "        return n * n\n\n    print(car_race_collision(1))  # 1\n    print(car_race_collision(2))  # 4\n    print(car_race_collision(3))  # 9\n    print(car_race_collision(10))  # 100\n    print(car_race_collision(100))  # 10000\n    print(car_race_collision(0))  # 0\n    print(car_race_collision(500))  # 250000\n    print(car_race_collision(1000))  # 1000000\n    print(car_race_collision(10000))  # 100000000\n    print(car_race_collision(100000))  # 10000000000\n    print(car_race_collision(1000000))  # 1000",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 43,
+      "trace_idx": 6,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.7906172941294164,
+      "original_correct": true,
+      "pred": "    seen = set()\n    for num in l:\n        if -num in seen:\n            return True\n        seen.add(num)\n    return False",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 5,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 1.0,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.875
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 43,
+      "trace_idx": 15,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.7957644669738647,
+      "original_correct": true,
+      "pred": "    seen = set()\n    for num in l:\n        if -num in seen:\n            return True\n        seen.add(num)\n    return False",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 46,
+      "trace_idx": 1,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8095045821367367,
+      "original_correct": true,
+      "pred": "    if n == 0 or n == 1:\n        return 0\n    if n == 2:\n        return 2\n    dp = [0] * (n + 1)\n    dp[0], dp[1], dp[2], dp[3] = 0, 0, 2, 0\n    for i in range(4, n + 1):\n        dp[i] = dp[i - 1] + dp[i - 2] + dp[i - 3] + dp[i - 4]\n    return dp[n]",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 46,
+      "trace_idx": 11,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8110350813047701,
+      "original_correct": true,
+      "pred": "    if n == 0 or n == 1:\n        return 0\n    if n == 2:\n        return 2\n    dp = [0] * (n + 1)\n    dp[0], dp[1], dp[2], dp[3] = 0, 0, 2, 0\n    for i in range(4, n + 1):\n        dp[i] = dp[i - 1] + dp[i - 2] + dp[i - 3] + dp[i - 4]\n    return dp[n]",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 47,
+      "trace_idx": 0,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.7797030176472709,
+      "original_correct": true,
+      "pred": "    sorted_l = sorted(l)\n    n = len(sorted_l)\n    if n % 2 == 0:\n        return (sorted_l[n//2 - 1] + sorted_l[n//2]) / 2\n    else:\n        return sorted_l[n//2]",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 49,
+      "trace_idx": 9,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.9102639865526871,
+      "original_correct": false,
+      "pred": "    return pow(2, n, p) if p >= 150 else (2 ** n) % p if n < 100 else pow(2, n % 100, p) * modp(n // 100, p) % p if n >= 100 else 1 if n == 0 else None if n < 0 else modp(n, p) if p >= 150 else (2 ** n) % p if n < 100 else pow(2, n % 100, p) * modp(n // 100, p) % p if n >= 100 else 1 if n == 0 else None if n < 0 else modp(n, p) if n >= 100 else (2 ** n) % p if p >= 150 else 1 if n == 0 else None if n < 0 else modp(n, p) if p >= 150 else (2 ** n) % p if n < 100 else pow(2, n % 100, p) * modp(n //",
+      "judge_scores": {
+        "faithfulness": 1,
+        "utility": 1,
+        "coherence": 1,
+        "factuality": 1
+      },
+      "fused_scores": {
+        "faithfulness": 0.0,
+        "utility": 0.0,
+        "coherence": 0.0,
+        "factuality": 0.0,
+        "overall": 0.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 50,
+      "trace_idx": 0,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.7965534381813278,
+      "original_correct": true,
+      "pred": "    return \"\".join([chr(((ord(ch) - 5 - ord(\"a\")) % 26) + ord(\"a\")) for ch in s])",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 4,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.75,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 50,
+      "trace_idx": 2,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.7813781445172178,
+      "original_correct": true,
+      "pred": "    return \"\".join([chr(((ord(ch) - 5 - ord(\"a\")) % 26) + ord(\"a\")) for ch in s])",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 50,
+      "trace_idx": 8,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.7841612375978115,
+      "original_correct": true,
+      "pred": "    return \"\".join([chr(((ord(ch) - 5 - ord(\"a\")) % 26) + ord(\"a\")) for ch in s])",
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 3
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.25,
+        "coherence": 0.25,
+        "factuality": 0.5,
+        "overall": 0.3125
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 50,
+      "trace_idx": 10,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.7774036837842683,
+      "original_correct": true,
+      "pred": "    return \"\".join([chr(((ord(ch) - 5 - ord(\"a\")) % 26) + ord(\"a\")) for ch in s])",
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 3
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.25,
+        "coherence": 0.25,
+        "factuality": 0.5,
+        "overall": 0.3125
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 50,
+      "trace_idx": 11,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.7976000094724703,
+      "original_correct": true,
+      "pred": "    return \"\".join([chr(((ord(ch) - 5 - ord(\"a\")) % 26) + ord(\"a\")) for ch in s])",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.8125
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 50,
+      "trace_idx": 12,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.7976000094724703,
+      "original_correct": true,
+      "pred": "    return \"\".join([chr(((ord(ch) - 5 - ord(\"a\")) % 26) + ord(\"a\")) for ch in s])",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 50,
+      "trace_idx": 13,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.7774036837842683,
+      "original_correct": true,
+      "pred": "    return \"\".join([chr(((ord(ch) - 5 - ord(\"a\")) % 26) + ord(\"a\")) for ch in s])",
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 3
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.25,
+        "coherence": 0.25,
+        "factuality": 0.5,
+        "overall": 0.3125
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 50,
+      "trace_idx": 15,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.7812500928697474,
+      "original_correct": true,
+      "pred": "    return \"\".join([chr(((ord(ch) - 5 - ord(\"a\")) % 26) + ord(\"a\")) for ch in s])",
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 3
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.25,
+        "coherence": 0.25,
+        "factuality": 0.5,
+        "overall": 0.3125
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 52,
+      "trace_idx": 0,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8159779091199457,
+      "original_correct": true,
+      "pred": "    return all(x < t for x in l)",
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 2
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.25,
+        "coherence": 0.25,
+        "factuality": 0.25,
+        "overall": 0.25
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 52,
+      "trace_idx": 1,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8159779091199457,
+      "original_correct": true,
+      "pred": "    return all(x < t for x in l)",
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 2
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.25,
+        "coherence": 0.25,
+        "factuality": 0.25,
+        "overall": 0.25
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 52,
+      "trace_idx": 4,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8142621221715642,
+      "original_correct": true,
+      "pred": "    return all(x < t for x in l)",
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 2
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.25,
+        "coherence": 0.25,
+        "factuality": 0.25,
+        "overall": 0.25
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 52,
+      "trace_idx": 5,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8142621221715642,
+      "original_correct": true,
+      "pred": "    return all(x < t for x in l)",
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 2
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.25,
+        "coherence": 0.25,
+        "factuality": 0.25,
+        "overall": 0.25
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 52,
+      "trace_idx": 6,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8142621221715642,
+      "original_correct": true,
+      "pred": "    return all(x < t for x in l)",
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 2
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.25,
+        "coherence": 0.25,
+        "factuality": 0.25,
+        "overall": 0.25
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 52,
+      "trace_idx": 7,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8142621221715642,
+      "original_correct": true,
+      "pred": "    return all(x < t for x in l)",
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 2
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.25,
+        "coherence": 0.25,
+        "factuality": 0.25,
+        "overall": 0.25
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 52,
+      "trace_idx": 8,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8142621221715642,
+      "original_correct": true,
+      "pred": "    return all(x < t for x in l)",
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 2
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.25,
+        "coherence": 0.25,
+        "factuality": 0.25,
+        "overall": 0.25
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 52,
+      "trace_idx": 9,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8142621221715642,
+      "original_correct": true,
+      "pred": "    return all(x < t for x in l)",
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 2
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.25,
+        "coherence": 0.25,
+        "factuality": 0.25,
+        "overall": 0.25
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 52,
+      "trace_idx": 10,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8142621221715642,
+      "original_correct": true,
+      "pred": "    return all(x < t for x in l)",
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 2
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.25,
+        "coherence": 0.25,
+        "factuality": 0.25,
+        "overall": 0.25
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 52,
+      "trace_idx": 11,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8142621221715642,
+      "original_correct": true,
+      "pred": "    return all(x < t for x in l)",
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 2
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.25,
+        "coherence": 0.25,
+        "factuality": 0.25,
+        "overall": 0.25
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 52,
+      "trace_idx": 12,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8142621221715642,
+      "original_correct": true,
+      "pred": "    return all(x < t for x in l)",
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 2
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.25,
+        "coherence": 0.25,
+        "factuality": 0.25,
+        "overall": 0.25
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 52,
+      "trace_idx": 13,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8131713445277704,
+      "original_correct": true,
+      "pred": "    return all(x < t for x in l)",
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 2
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.25,
+        "coherence": 0.25,
+        "factuality": 0.25,
+        "overall": 0.25
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 52,
+      "trace_idx": 15,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8131713445277704,
+      "original_correct": true,
+      "pred": "    return all(x < t for x in l)",
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 2
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.25,
+        "coherence": 0.25,
+        "factuality": 0.25,
+        "overall": 0.25
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 55,
+      "trace_idx": 0,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8381669929620095,
+      "original_correct": true,
+      "pred": "    if n <= 0:\n        return 0\n    elif n == 1:\n        return 1\n    else:\n        a, b = 0, 1\n        for _ in range(2, n + 1):\n            a, b = b, a + b\n        return b",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 4,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.75,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 55,
+      "trace_idx": 1,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8381669929620095,
+      "original_correct": true,
+      "pred": "    if n <= 0:\n        return 0\n    elif n == 1:\n        return 1\n    else:\n        a, b = 0, 1\n        for _ in range(2, n + 1):\n            a, b = b, a + b\n        return b",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 55,
+      "trace_idx": 2,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8483843030840266,
+      "original_correct": true,
+      "pred": "    if n <= 0:\n        return 0\n    elif n == 1:\n        return 1\n    else:\n        a, b = 0, 1\n        for _ in range(2, n + 1):\n            a, b = b, a + b\n        return b",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 5,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 1.0,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.875
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 55,
+      "trace_idx": 3,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8484557292929625,
+      "original_correct": true,
+      "pred": "    if n <= 0:\n        return 0\n    elif n == 1:\n        return 1\n    else:\n        a, b = 0, 1\n        for _ in range(2, n + 1):\n            a, b = b, a + b\n        return b",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.8125
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 55,
+      "trace_idx": 4,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8410605776224489,
+      "original_correct": true,
+      "pred": "    if n <= 0:\n        return 0\n    elif n == 1:\n        return 1\n    else:\n        a, b = 0, 1\n        for _ in range(2, n + 1):\n            a, b = b, a + b\n        return b",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 55,
+      "trace_idx": 6,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8484557292929625,
+      "original_correct": true,
+      "pred": "    if n <= 0:\n        return 0\n    elif n == 1:\n        return 1\n    else:\n        a, b = 0, 1\n        for _ in range(2, n + 1):\n            a, b = b, a + b\n        return b",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 4,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.75,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 55,
+      "trace_idx": 8,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8535045763737525,
+      "original_correct": true,
+      "pred": "    if n <= 0:\n        return 0\n    elif n == 1:\n        return 1\n    else:\n        a, b = 0, 1\n        for _ in range(2, n + 1):\n            a, b = b, a + b\n        return b",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 0.75,
+        "overall": 0.75
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 55,
+      "trace_idx": 10,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.83199803531076,
+      "original_correct": true,
+      "pred": "    if n <= 0:\n        return 0\n    elif n == 1:\n        return 1\n    else:\n        a, b = 0, 1\n        for _ in range(2, n + 1):\n            a, b = b, a + b\n        return b",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 55,
+      "trace_idx": 11,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8353285326908544,
+      "original_correct": true,
+      "pred": "    if n <= 0:\n        return 0\n    elif n == 1:\n        return 1\n    else:\n        a, b = 0, 1\n        for _ in range(2, n + 1):\n            a, b = b, a + b\n        return b",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 4,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.75,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 55,
+      "trace_idx": 14,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8387813238268972,
+      "original_correct": true,
+      "pred": "    if n <= 0:\n        return 0\n    elif n == 1:\n        return 1\n    else:\n        a, b = 0, 1\n        for _ in range(2, n + 1):\n            a, b = b, a + b\n        return b",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 59,
+      "trace_idx": 0,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.7928144334041608,
+      "original_correct": true,
+      "pred": "    i = 2\n    while i * i <= n:\n        if n % i:\n            i += 1\n        else:\n            n //= i\n    return n",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 59,
+      "trace_idx": 1,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8285521549199266,
+      "original_correct": true,
+      "pred": "Since the code is not executing in this environment, I will reformat it and provide it again for clarity:",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 4,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.75,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 59,
+      "trace_idx": 2,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8285521549199266,
+      "original_correct": true,
+      "pred": "    i = 2\n    while i * i <= n:\n        if n % i:\n            i += 1\n        else:\n            n //= i\n    return n",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 59,
+      "trace_idx": 3,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8285521549199266,
+      "original_correct": true,
+      "pred": "    i = 2\n    while i * i <= n:\n        if n % i:\n            i += 1\n        else:\n            n //= i\n    return n",
+      "judge_scores": {
+        "faithfulness": 1,
+        "utility": 1,
+        "coherence": 1,
+        "factuality": 1
+      },
+      "fused_scores": {
+        "faithfulness": 0.0,
+        "utility": 0.0,
+        "coherence": 0.0,
+        "factuality": 0.0,
+        "overall": 0.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 59,
+      "trace_idx": 5,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8312933722331046,
+      "original_correct": true,
+      "pred": "    i = 2\n    while i * i <= n:\n        if n % i:\n            i += 1\n        else:\n            n //= i\n    return n",
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 3,
+        "coherence": 2,
+        "factuality": 3
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.5,
+        "coherence": 0.25,
+        "factuality": 0.5,
+        "overall": 0.375
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 59,
+      "trace_idx": 8,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8312933722331046,
+      "original_correct": true,
+      "pred": "    i = 2\n    while i * i <= n:\n        if n % i:\n            i += 1\n        else:\n            n //= i\n    return n",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 4,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.75,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 59,
+      "trace_idx": 9,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8312933722331046,
+      "original_correct": true,
+      "pred": "    i = 2\n    while i * i <= n:\n        if n % i:\n            i += 1\n        else:\n            n //= i\n    return n",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 59,
+      "trace_idx": 10,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.832458017650081,
+      "original_correct": true,
+      "pred": "    i = 2\n    while i * i <= n:\n        if n % i:\n            i += 1\n        else:\n            n //= i\n    return n",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.75
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 59,
+      "trace_idx": 12,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.832458017650081,
+      "original_correct": true,
+      "pred": "This function should correctly return the largest prime factor of a given integer `n` under the specified conditions. If you need to test it, you can use the provided test cases:",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 5,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 1.0,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.875
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 59,
+      "trace_idx": 13,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.832458017650081,
+      "original_correct": true,
+      "pred": "    i = 2\n    while i * i <= n:\n        if n % i:\n            i += 1\n        else:\n            n //= i\n    return n",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 4,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.75,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 59,
+      "trace_idx": 15,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.832458017650081,
+      "original_correct": true,
+      "pred": "    i = 2\n    while i * i <= n:\n        if n % i:\n            i += 1\n        else:\n            n //= i\n    return n",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.75
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 64,
+      "trace_idx": 10,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8715798697595384,
+      "original_correct": true,
+      "pred": "    count = 0\n    vowels = 'aeiou'\n    s = s.lower()\n    for char in s:\n        if char in vowels:\n            count += 1\n        elif char == 'y' and s.index(char) == len(s) - 1:\n            count += 1\n    return count",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 3
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.25,
+        "coherence": 0.25,
+        "factuality": 0.5,
+        "overall": 0.375
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 69,
+      "trace_idx": 0,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.9690893290176231,
+      "original_correct": false,
+      "pred": "    freq = Counter(lst)\n    for num in sorted(freq, key = freq.get, reverse = True):\n        if freq[num] >= num:\n            return num\n    return -1",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 69,
+      "trace_idx": 2,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8427596070506027,
+      "original_correct": false,
+      "pred": "        freq_counter = Counter(lst)\n        for number, freq in sorted(freq_counter.items(), reverse = True):\n            if number <= freq:\n                return number\n        return -1\n\n    print(search([4, 1, 2, 2, 3, 1]))  # 2\n    print(search([1, 2, 2, 3, 3, 3, 4, 4, 4]))  # 3\n    print(search([5, 5, 4, 4, 4]))  # -1\n\n    # Do not modify the code below",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 70,
+      "trace_idx": 15,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.9575859505572523,
+      "original_correct": true,
+      "pred": "    sorted_list = sorted(lst)\n    result = []\n    while sorted_list:\n        result.append(sorted_list.pop(0))  # Append min value\n        if sorted_list:\n            result.append(sorted_list.pop())  # Append max value\n    return result",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 71,
+      "trace_idx": 2,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.832846977791307,
+      "original_correct": true,
+      "pred": "    if a + b <= c or a + c <= b or b + c <= a:\n        return -1\n    s = (a + b + c) / 2\n    area = (s * (s - a) * (s - b) * (s - c)) ** 0.5\n    return round(area, 2)",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 71,
+      "trace_idx": 3,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8672170362711985,
+      "original_correct": true,
+      "pred": "    if a + b <= c or a + c <= b or b + c <= a:\n        return -1\n    s = (a + b + c) / 2\n    area = (s * (s - a) * (s - b) * (s - c)) ** 0.5\n    return round(area, 2)",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 71,
+      "trace_idx": 6,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8336506282875686,
+      "original_correct": true,
+      "pred": "    if a + b <= c or a + c <= b or b + c <= a:\n        return -1\n    s = (a + b + c) / 2\n    area = (s * (s - a) * (s - b) * (s - c)) ** 0.5\n    return round(area, 2)",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 71,
+      "trace_idx": 10,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8367767360190494,
+      "original_correct": true,
+      "pred": "    if a + b <= c or a + c <= b or b + c <= a:\n        return -1\n    s = (a + b + c) / 2\n    area = (s * (s - a) * (s - b) * (s - c)) ** 0.5\n    return round(area, 2)",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 4,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.75,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 71,
+      "trace_idx": 14,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8341911385891136,
+      "original_correct": true,
+      "pred": "    if a + b <= c or a + c <= b or b + c <= a:\n        return -1\n    s = (a + b + c) / 2\n    area = (s * (s - a) * (s - b) * (s - c)) ** 0.5\n    return round(area, 2)",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 73,
+      "trace_idx": 1,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.7859171277911926,
+      "original_correct": true,
+      "pred": "    left, right = 0, len(arr) - 1\n    changes = 0\n    while left < right:\n        if arr[left] != arr[right]:\n            changes += 1\n        left += 1\n        right -= 1\n    return changes",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 73,
+      "trace_idx": 9,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.828863873127118,
+      "original_correct": true,
+      "pred": "    n = len(arr)\n    left, right = 0, n - 1\n    changes = 0\n    while left < right:\n        if arr[left] != arr[right]:\n            changes += 1\n        left += 1\n        right -= 1\n    return changes",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 73,
+      "trace_idx": 15,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.7808991017493013,
+      "original_correct": true,
+      "pred": "    left, right = 0, len(arr) - 1\n    changes = 0\n    while left < right:\n        if arr[left] != arr[right]:\n            changes += 1\n        left += 1\n        right -= 1\n    return changes",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 74,
+      "trace_idx": 10,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.9082860518707518,
+      "original_correct": true,
+      "pred": "    total_chars1 = sum(len(word) for word in lst1)\n    total_chars2 = sum(len(word) for word in lst2)\n    \n    return lst1 if total_chars1 <= total_chars2 else lst2",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.25,
+        "factuality": 1.0,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 74,
+      "trace_idx": 13,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8786980292894845,
+      "original_correct": true,
+      "pred": "    total_chars1 = sum(len(s) for s in lst1)\n    total_chars2 = sum(len(s) for s in lst2)\n    return lst1 if total_chars1 <= total_chars2 else lst2\n    return lst1 if total_chars1 < total_chars2 else lst2 if total_chars2 < total_chars1 else lst1\n    return lst1 if total_chars1 < total_chars2 else lst2 if total_chars2 < total_chars1 else lst1 if total_chars1 == total_chars2 else lst1\n    return lst1 if total_chars1 < total_chars2 or (total_chars1 == total_chars2 and id(lst1) < id(lst2)) else lst2",
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.25,
+        "coherence": 0.25,
+        "factuality": 1.0,
+        "overall": 0.4375
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 75,
+      "trace_idx": 1,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8422534916153364,
+      "original_correct": false,
+      "pred": "        if n < 2:\n            return False\n        for i in range(2, int(n**0.5) + 1):\n            if n % i == 0:\n                return False\n        return True\n    \n    primes = [i for i in range(2, 100) if is_prime(i)]\n    for i in primes:\n        for j in primes:\n            for k in primes:\n                if i * j * k == a:\n                    return True\n    return False",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 75,
+      "trace_idx": 4,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8465640344310664,
+      "original_correct": false,
+      "pred": "        if n < 2:\n            return False\n        for i in range(2, int(n**0.5) + 1):\n            if n % i == 0:\n                return False\n        return True\n    \n    primes = [i for i in range(2, 100) if is_prime(i)]\n    for i in primes:\n        for j in primes:\n            for k in primes:\n                if i * j * k == a:\n                    return True\n    return False",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 75,
+      "trace_idx": 5,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.7844422115650785,
+      "original_correct": false,
+      "pred": "        if n < 2: return False\n        for i in range(2, int(n**0.5) + 1):\n            if n % i == 0: return False\n        return True\n    \n    primes = [i for i in range(2, 100) if is_prime(i)]\n    for i in primes:\n        for j in primes:\n            for k in primes:\n                if i * j * k == a:\n                    return True\n    return False",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 75,
+      "trace_idx": 6,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8460139947929842,
+      "original_correct": false,
+      "pred": "    if n < 2:\n        return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\n\n    if a < 2 or a >= 100:\n        return False\n    primes = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97]\n    for i in primes:\n        for j in primes:\n            for k in primes:\n                if i * j * k == a:\n                    return True\n    return False",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 4,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.75,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 75,
+      "trace_idx": 7,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.7941502863573732,
+      "original_correct": false,
+      "pred": "        if n < 2:\n            return False\n        for i in range(2, int(n**0.5) + 1):\n            if n % i == 0:\n                return False\n        return True\n\n    primes = [i for i in range(2, 100) if is_prime(i)]\n    for i in primes:\n        for j in primes:\n            for k in primes:\n                if i * j * k == a:\n                    return True\n    return False",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 75,
+      "trace_idx": 11,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8481333522776299,
+      "original_correct": false,
+      "pred": "        if n < 2:\n            return False\n        for i in range(2, int(n**0.5) + 1):\n            if n % i == 0:\n                return False\n        return True\n    \n    primes = [i for i in range(2, 100) if is_prime(i)]\n    for i in primes:\n        for j in primes:\n            for k in primes:\n                if i * j * k == a:\n                    return True\n    return False",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.8125
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 75,
+      "trace_idx": 12,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8438523760787269,
+      "original_correct": false,
+      "pred": "        if n < 2:\n            return False\n        for i in range(2, int(n**0.5) + 1):\n            if n % i == 0:\n                return False\n        return True\n    \n    primes = [i for i in range(2, 100) if is_prime(i)]\n    for i in primes:\n        for j in primes:\n            for k in primes:\n                if i * j * k == a:\n                    return True\n    return False",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.875
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 75,
+      "trace_idx": 14,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.7813291666389862,
+      "original_correct": false,
+      "pred": "    if n < 2:\n        return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\n\n    primes = [i for i in range(2, 100) if is_prime(i)]\n    for i in primes:\n        for j in primes:\n            for k in primes:\n                if i * j * k == a:\n                    return True\n    return False",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 76,
+      "trace_idx": 0,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.9455598478290133,
+      "original_correct": false,
+      "pred": "    if n == 1:\n        return x == 1\n    power = 1\n    while power < x:\n        power *= n\n    return power == x or (n == 2 and x == 1) or (n == 0 and x == 1) or (n == -1 and x == 1) or (n == -2 and x == 1) or (n == -1 and x == -1) or (n == -2 and x == -1) or (n == -3 and x == -1) or (n == -4 and x == -1) or (n == -5 and x == -1) or (n == -6 and x == -1) or (n == -7 and x == -1) or (n == -8 and x == -1) or (n == -9 and x == -1) or (n == -10 and x == -1) or (n == -11 and x == -1) or (n == -12 and",
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 2
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.25,
+        "coherence": 0.25,
+        "factuality": 0.25,
+        "overall": 0.25
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 76,
+      "trace_idx": 6,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.840875393532061,
+      "original_correct": false,
+      "pred": "    if n == 1:\n        return x == 1\n    if x < 1 or n < 1:\n        return False\n    power = 1\n    while power < x:\n        power *= n\n    return power == x def is_simple_power(x, n):\n    if n == 1:\n        return x == 1\n    if x < 1 or n < 1:\n        return False\n    power = 1\n    while power < x:\n        power *= n\n    return power == x and power != 0 and x != 0 and n != 0 and n != 1 and x != 1 and n > 0 and x > 0 and n != x def is_simple_power(x, n):\n    if n == 1:\n        return x == 1\n    i",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 79,
+      "trace_idx": 15,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.7879229048798111,
+      "original_correct": true,
+      "pred": "    if decimal == 0:\n        return \"db0db\"\n    binary = \"\"\n    while decimal > 0:\n        binary = str(decimal % 2) + binary\n        decimal = decimal // 2\n    return f\"db{binary}db\"",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.8125
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 80,
+      "trace_idx": 9,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.9600511347030217,
+      "original_correct": true,
+      "pred": "    if len(s) < 3:\n        return False\n    for i in range(len(s) - 2):\n        if s[i] == s[i + 1] or s[i] == s[i + 2] or s[i + 1] == s[i + 2]:\n            return False\n    return True",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 81,
+      "trace_idx": 0,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.9210306423498283,
+      "original_correct": true,
+      "pred": "    letter_grades = []\n    for g in grades:\n        if g == 4.0:\n            letter_grades.append('A+')\n        elif g > 3.7:\n            letter_grades.append('A')\n        elif g > 3.3:\n            letter_grades.append('A-')\n        elif g > 3.0:\n            letter_grades.append('B+')\n        elif g > 2.7:\n            letter_grades.append('B')\n        elif g > 2.3:\n            letter_grades.append('B-')\n        elif g > 2.0:\n            letter_grades.append('C+')\n        elif g > 1.7:\n          ",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 81,
+      "trace_idx": 1,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.9219973895402234,
+      "original_correct": true,
+      "pred": "    letter_grades = []\n    for gpa in grades:\n        if gpa == 4.0:\n            letter_grades.append('A+')\n        elif gpa > 3.7:\n            letter_grades.append('A')\n        elif gpa > 3.3:\n            letter_grades.append('A-')\n        elif gpa > 3.0:\n            letter_grades.append('B+')\n        elif gpa > 2.7:\n            letter_grades.append('B')\n        elif gpa > 2.3:\n            letter_grades.append('B-')\n        elif gpa > 2.0:\n            letter_grades.append('C+')\n        elif gpa",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 81,
+      "trace_idx": 6,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.9075356987920674,
+      "original_correct": true,
+      "pred": "    letter_grades = []\n    for g in grades:\n        if g == 4.0:\n            letter_grades.append('A+')\n        elif g > 3.7:\n            letter_grades.append('A')\n        elif g > 3.3:\n            letter_grades.append('A-')\n        elif g > 3.0:\n            letter_grades.append('B+')\n        elif g > 2.7:\n            letter_grades.append('B')\n        elif g > 2.3:\n            letter_grades.append('B-')\n        elif g > 2.0:\n            letter_grades.append('C+')\n        elif g > 1.7:\n          ",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 81,
+      "trace_idx": 9,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.9155117942269257,
+      "original_correct": true,
+      "pred": "    letter_grades = []\n    for gpa in grades:\n        if gpa == 4.0:\n            letter_grades.append('A+')\n        elif gpa > 3.7:\n            letter_grades.append('A')\n        elif gpa > 3.3:\n            letter_grades.append('A-')\n        elif gpa > 3.0:\n            letter_grades.append('B+')\n        elif gpa > 2.7:\n            letter_grades.append('B')\n        elif gpa > 2.3:\n            letter_grades.append('B-')\n        elif gpa > 2.0:\n            letter_grades.append('C+')\n        elif gpa",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 81,
+      "trace_idx": 11,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8964014835117432,
+      "original_correct": true,
+      "pred": "    letter_grades = []\n    for grade in grades:\n        if grade == 4.0:\n            letter_grades.append('A+')\n        elif grade > 3.7:\n            letter_grades.append('A')\n        elif grade > 3.3:\n            letter_grades.append('A-')\n        elif grade > 3.0:\n            letter_grades.append('B+')\n        elif grade > 2.7:\n            letter_grades.append('B')\n        elif grade > 2.3:\n            letter_grades.append('B-')\n        elif grade > 2.0:\n            letter_grades.append('C+')\n",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 81,
+      "trace_idx": 12,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.9177323788998378,
+      "original_correct": true,
+      "pred": "    letter_grades = []\n    for gpa in grades:\n        if gpa == 4.0:\n            letter_grades.append('A+')\n        elif gpa > 3.7:\n            letter_grades.append('A')\n        elif gpa > 3.3:\n            letter_grades.append('A-')\n        elif gpa > 3.0:\n            letter_grades.append('B+')\n        elif gpa > 2.7:\n            letter_grades.append('B')\n        elif gpa > 2.3:\n            letter_grades.append('B-')\n        elif gpa > 2.0:\n            letter_grades.append('C+')\n        elif gpa",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 81,
+      "trace_idx": 13,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8112546039396156,
+      "original_correct": false,
+      "pred": "    letter_grades = []\n    for g in grades:\n        if g >= 4.0:\n            letter_grades.append('A+')\n        elif g >= 3.7:\n            letter_grades.append('A')\n        elif g >= 3.3:\n            letter_grades.append('A-')\n        elif g >= 3.0:\n            letter_grades.append('B+')\n        elif g >= 2.7:\n            letter_grades.append('B')\n        elif g >= 2.3:\n            letter_grades.append('B-')\n        elif g >= 2.0:\n            letter_grades.append('C+')\n        elif g >= 1.7:\n   ",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 81,
+      "trace_idx": 14,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.9177323788998378,
+      "original_correct": true,
+      "pred": "    letter_grades = []\n    for gpa in grades:\n        if gpa == 4.0:\n            letter_grades.append('A+')\n        elif gpa > 3.7:\n            letter_grades.append('A')\n        elif gpa > 3.3:\n            letter_grades.append('A-')\n        elif gpa > 3.0:\n            letter_grades.append('B+')\n        elif gpa > 2.7:\n            letter_grades.append('B')\n        elif gpa > 2.3:\n            letter_grades.append('B-')\n        elif gpa > 2.0:\n            letter_grades.append('C+')\n        elif gpa",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 86,
+      "trace_idx": 15,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.813169691051014,
+      "original_correct": false,
+      "pred": "def anti_shuffle(s):\n    result = []\n    word = ''\n    for char in s:\n        if char in ' ':\n            if word:\n                result.append(''.join(sorted(word)))\n                word = ''\n        else:\n            word += char\n    if word:\n        result.append(''.join(sorted(word)))\n    return ' '.join(result)",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 92,
+      "trace_idx": 11,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.7845093494927647,
+      "original_correct": true,
+      "pred": "The provided code is correct and should work as expected. It checks if all inputs are integers and then checks if any one of the numbers is the sum of the other two. Here is the complete function again for clarity:",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 5,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 1.0,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.875
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 94,
+      "trace_idx": 0,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.7988319746537064,
+      "original_correct": false,
+      "pred": "    if n < 2:\n        return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\n\n    return sum(int(digit) for digit in str(n))\n\n    max_prime = 0\n    for num in lst:\n        if is_prime(num) and num > max_prime:\n            max_prime = num\n    return sum_of_digits(max_prime)",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 94,
+      "trace_idx": 2,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8122103625385493,
+      "original_correct": false,
+      "pred": "    if n < 2:\n        return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\n\n    return sum(int(digit) for digit in str(n))\n\n    max_prime = max((x for x in lst if is_prime(x)), def ault = 0)\n    return sum_of_digits(max_prime)",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 94,
+      "trace_idx": 4,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8122103625385493,
+      "original_correct": false,
+      "pred": "    if n < 2:\n        return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\n\n    return sum(int(digit) for digit in str(n))\n\n    max_prime = max((x for x in lst if is_prime(x)), def ault = 0)\n    return sum_of_digits(max_prime)",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 94,
+      "trace_idx": 6,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8122103625385493,
+      "original_correct": false,
+      "pred": "    if n < 2:\n        return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\n\n    return sum(int(digit) for digit in str(n))\n\n    max_prime = max((x for x in lst if is_prime(x)), def ault = 0)\n    return sum_of_digits(max_prime)",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 94,
+      "trace_idx": 8,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8191707410796059,
+      "original_correct": false,
+      "pred": "    if n < 2:\n        return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\n\n    return sum(int(digit) for digit in str(n))\n\n    max_prime = max((x for x in lst if is_prime(x)), def ault = 0)\n    return sum_of_digits(max_prime)",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 94,
+      "trace_idx": 14,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8093329878252962,
+      "original_correct": false,
+      "pred": "            if n < 2:\n                return False\n            for i in range(2, int(n**0.5) + 1):\n                if n % i == 0:\n                    return False\n            return True\n\n            return sum(int(digit) for digit in str(n))\n\n        prime_values = [x for x in lst if is_prime(x)]\n        if prime_values:\n            largest_prime = max(prime_values)\n            return sum_digits(largest_prime)\n        else:\n            return 0\n\n    print(skjkasdkd([0,3,2,1,3,5,7,4,5,5,5,2,181,",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 95,
+      "trace_idx": 1,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8807040714148135,
+      "original_correct": false,
+      "pred": "    if not d:\n        return False\n    lower_case = sum(k.islower() for k in d if isinstance(k, str))\n    upper_case = sum(k.isupper() for k in d if isinstance(k, str))\n    return lower_case == len(d) or upper_case == len(d) if all(isinstance(k, str) for k in d) else False",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 96,
+      "trace_idx": 10,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8333504607856516,
+      "original_correct": false,
+      "pred": "    if num < 2:\n        return False\n    for i in range(2, int(num**0.5) + 1):\n        if num % i == 0:\n            return False\n    return True\n\n    primes = []\n    for i in range(2, n):\n        if is_prime(i):\n            primes.append(i)\n    return primes",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 103,
+      "trace_idx": 8,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8146734237729235,
+      "original_correct": false,
+      "pred": "def rounded_avg(n, m):\n    if n > m:\n        return -1\n    avg = (n + m) / 2\n    rounded = round(avg)\n    return '0b' + bin(rounded)[2:]",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 0.75,
+        "overall": 0.75
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 113,
+      "trace_idx": 8,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.7801193517604681,
+      "original_correct": false,
+      "pred": "    return [\"the number of odd elements {}n the str{}ng {} of the {}nput.\".for mat(lst[i].count('1') + lst[i].count('3') + lst[i].count('5') + lst[i].count('7') + lst[i].count('9'), lst[i].count('1') + lst[i].count('3') + lst[i].count('5') + lst[i].count('7') + lst[i].count('9'), lst[i].count('1') + lst[i].count('3') + lst[i].count('5') + lst[i].count('7') + lst[i].count('9'), lst[i].count('1') + lst[i].count('3') + lst[i].count('5') + lst[i].count('7') + lst[i].count('9')) for i in range(len(ls",
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 2
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.25,
+        "coherence": 0.25,
+        "factuality": 0.25,
+        "overall": 0.25
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 113,
+      "trace_idx": 10,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8630756401494808,
+      "original_correct": false,
+      "pred": "    return [\"the number of odd elements {}n the str{}ng {} of the {}nput.\".for mat(lst[i].count('1') + lst[i].count('3') + lst[i].count('5') + lst[i].count('7') + lst[i].count('9'), lst[i].count('1') + lst[i].count('3') + lst[i].count('5') + lst[i].count('7') + lst[i].count('9'), lst[i].count('1') + lst[i].count('3') + lst[i].count('5') + lst[i].count('7') + lst[i].count('9'), lst[i].count('1') + lst[i].count('3') + lst[i].count('5') + lst[i].count('7') + lst[i].count('9')) for i in range(len(ls",
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 2
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.25,
+        "coherence": 0.25,
+        "factuality": 0.25,
+        "overall": 0.25
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 113,
+      "trace_idx": 13,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.78489592631397,
+      "original_correct": false,
+      "pred": "    return [\"the number of odd elements {}n the str{}ng {} of the {}nput.\".for mat(lst[i].count('1') + lst[i].count('3') + lst[i].count('5') + lst[i].count('7') + lst[i].count('9'), lst[i].count('1') + lst[i].count('3') + lst[i].count('5') + lst[i].count('7') + lst[i].count('9'), i + 1, i + 1) for i in range(len(lst))]",
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 2
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.25,
+        "coherence": 0.25,
+        "factuality": 0.25,
+        "overall": 0.25
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 113,
+      "trace_idx": 14,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.78489592631397,
+      "original_correct": false,
+      "pred": "    return [\"the number of odd elements {}n the str{}ng {} of the {}nput.\".for mat(lst[i].count('1') + lst[i].count('3') + lst[i].count('5') + lst[i].count('7') + lst[i].count('9'), lst[i].count('1') + lst[i].count('3') + lst[i].count('5') + lst[i].count('7') + lst[i].count('9'), i + 1, i + 1) for i in range(len(lst))]",
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 2
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.25,
+        "coherence": 0.25,
+        "factuality": 0.25,
+        "overall": 0.25
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 113,
+      "trace_idx": 15,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.78489592631397,
+      "original_correct": false,
+      "pred": "    return [\"the number of odd elements {}n the str{}ng {} of the {}nput.\".for mat(lst[i].count('1') + lst[i].count('3') + lst[i].count('5') + lst[i].count('7') + lst[i].count('9'), lst[i].count('1') + lst[i].count('3') + lst[i].count('5') + lst[i].count('7') + lst[i].count('9'), i + 1, i + 1) for i in range(len(lst))]",
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 2
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.25,
+        "coherence": 0.25,
+        "factuality": 0.25,
+        "overall": 0.25
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 114,
+      "trace_idx": 6,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.7787551921474313,
+      "original_correct": true,
+      "pred": "    min_sum = float('inf')\n    current_sum = 0\n    for num in nums:\n        current_sum = min(num, current_sum + num)\n        min_sum = min(min_sum, current_sum)\n    return min_sum",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.8125
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 114,
+      "trace_idx": 8,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.7787551921474313,
+      "original_correct": true,
+      "pred": "    min_sum = float('inf')\n    current_sum = 0\n    for num in nums:\n        current_sum = min(num, current_sum + num)\n        min_sum = min(min_sum, current_sum)\n    return min_sum",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 114,
+      "trace_idx": 15,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.7849322821991734,
+      "original_correct": true,
+      "pred": "    min_sum = float('inf')\n    current_sum = 0\n    for num in nums:\n        current_sum = min(num, current_sum + num)\n        min_sum = min(min_sum, current_sum)\n    return min_sum",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 4,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.75,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 116,
+      "trace_idx": 2,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.9151496006870637,
+      "original_correct": false,
+      "pred": "    return sorted(arr, key = lambda x: (bin(x).count('1'), x)) if all(x >= 0 for x in arr) else sorted(arr, key = lambda x: (bin(x).count('1') if x >= 0 else x.bit_length(), x)) def sort_array(arr):\n    return sorted(arr, key = lambda x: (x.bit_length(), x) if x < 0 else (bin(x).count('1'), x)) if all(x >= 0 for x in arr) else sorted(arr, key = lambda x: (x.bit_length(), x)) if x < 0 else (bin(x).count('1'), x)) if all(x >= 0 for x in arr) else sorted(arr, key = lambda x: (bin(x).count('1'), x))",
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 2
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.25,
+        "coherence": 0.25,
+        "factuality": 0.25,
+        "overall": 0.25
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 124,
+      "trace_idx": 0,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8334760466644214,
+      "original_correct": false,
+      "pred": "    if not date:\n        return False\n    try:\n        m, d, y = map(int, date.split('-'))\n    except ValueError:\n        return False\n    if m < 1 or m > 12:\n        return False\n    if d < 1 or d > monthrange(y, m)[1]:\n        return False\n    return True",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 0.75,
+        "overall": 0.75
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 124,
+      "trace_idx": 15,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.9436348641053508,
+      "original_correct": false,
+      "pred": "\n    if not date:\n        return False\n\n    try:\n        mm, dd, yyyy = map(int, re.match(r\"(\\d{1,2}) - (\\d{1,2}) - (\\d{4})\", date).groups())\n    except:\n        return False\n\n    if not 1 <= mm <= 12:\n        return False\n\n    if not 1 <= dd <= monthrange(yyyy, mm)[1]:\n        return False\n\n    return True",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 127,
+      "trace_idx": 1,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8293602343686333,
+      "original_correct": false,
+      "pred": "    if n <= 1:\n        return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\n\n    start = max(interval1[0], interval2[0])\n    end = min(interval1[1], interval2[1])\n    if start > end:\n        return \"NO\"\n    length = end - start + 1\n    return \"YES\" if is_prime(length) else \"NO\"",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 127,
+      "trace_idx": 6,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8293171124519841,
+      "original_correct": false,
+      "pred": "    if n <= 1:\n        return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\n\n    start = max(interval1[0], interval2[0])\n    end = min(interval1[1], interval2[1])\n    if start > end:\n        return \"NO\"\n    length = end - start + 1\n    return \"YES\" if is_prime(length) else \"NO\"",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 127,
+      "trace_idx": 7,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8258811759900574,
+      "original_correct": false,
+      "pred": "    if n <= 1:\n        return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\n\n    start = max(interval1[0], interval2[0])\n    end = min(interval1[1], interval2[1])\n    if start > end:\n        return \"NO\"\n    length = end - start + 1\n    return \"YES\" if is_prime(length) else \"NO\"",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 127,
+      "trace_idx": 10,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8258811759900574,
+      "original_correct": false,
+      "pred": "    if n <= 1:\n        return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\n\n    start = max(interval1[0], interval2[0])\n    end = min(interval1[1], interval2[1])\n    if start > end:\n        return \"NO\"\n    length = end - start + 1\n    return \"YES\" if is_prime(length) else \"NO\"",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 127,
+      "trace_idx": 11,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.829465750943979,
+      "original_correct": false,
+      "pred": "The code you've provided is correct and should work as expected. The `is_prime` function checks if a number is prime, and the `intersection` function calculates the intersection of two intervals and checks if the length of the intersection is a prime number. Here is the final correct code:",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 127,
+      "trace_idx": 13,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.829465750943979,
+      "original_correct": false,
+      "pred": "    if n <= 1:\n        return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\n\n    start = max(interval1[0], interval2[0])\n    end = min(interval1[1], interval2[1])\n    if start > end:\n        return \"NO\"\n    length = end - start + 1\n    return \"YES\" if is_prime(length) else \"NO\"",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 131,
+      "trace_idx": 0,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.7994635960178538,
+      "original_correct": true,
+      "pred": "    product = 1\n    has_odd = False\n    while n:\n        digit = n % 10\n        if digit % 2 == 1:\n            product *= digit\n            has_odd = True\n        n //= 10\n    return product if has_odd else 0",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 131,
+      "trace_idx": 1,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.7994635960178538,
+      "original_correct": true,
+      "pred": "    product = 1\n    has_odd = False\n    while n:\n        digit = n % 10\n        if digit % 2 == 1:\n            product *= digit\n            has_odd = True\n        n //= 10\n    return product if has_odd else 0",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 131,
+      "trace_idx": 4,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8047597065696056,
+      "original_correct": true,
+      "pred": "    product = 1\n    has_odd = False\n    while n:\n        digit = n % 10\n        if digit % 2 == 1:\n            product *= digit\n            has_odd = True\n        n //= 10\n    return product if has_odd else 0",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 131,
+      "trace_idx": 5,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8047597065696056,
+      "original_correct": true,
+      "pred": "    product = 1\n    has_odd = False\n    while n:\n        digit = n % 10\n        if digit % 2 == 1:\n            product *= digit\n            has_odd = True\n        n //= 10\n    return product if has_odd else 0",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.8125
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 131,
+      "trace_idx": 10,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.801745959549249,
+      "original_correct": true,
+      "pred": "    product = 1\n    has_odd = False\n    while n:\n        digit = n % 10\n        if digit % 2 == 1:\n            product *= digit\n            has_odd = True\n        n //= 10\n    return product if has_odd else 0",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 131,
+      "trace_idx": 12,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.801745959549249,
+      "original_correct": true,
+      "pred": "    product = 1\n    has_odd = False\n    while n:\n        digit = n % 10\n        if digit % 2 == 1:\n            product *= digit\n            has_odd = True\n        n //= 10\n    return product if has_odd else 0",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 4,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.75,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 131,
+      "trace_idx": 14,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.801745959549249,
+      "original_correct": true,
+      "pred": "    product = 1\n    has_odd = False\n    while n:\n        digit = n % 10\n        if digit % 2 == 1:\n            product *= digit\n            has_odd = True\n        n //= 10\n    return product if has_odd else 0",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 136,
+      "trace_idx": 1,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.789041495324426,
+      "original_correct": false,
+      "pred": "    negatives = [x for x in lst if x < 0]\n    positives = [x for x in lst if x > 0]\n    a = min(negatives) if negatives else None\n    b = min(positives) if positives else None\n    return (a, b)",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 4,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 0.75,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 0.9375
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 136,
+      "trace_idx": 3,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.789041495324426,
+      "original_correct": false,
+      "pred": "    negatives = [x for x in lst if x < 0]\n    positives = [x for x in lst if x > 0]\n    a = min(negatives) if negatives else None\n    b = min(positives) if positives else None\n    return (a, b)",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 4,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 0.75,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 0.9375
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 136,
+      "trace_idx": 4,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.789041495324426,
+      "original_correct": false,
+      "pred": "    negatives = [x for x in lst if x < 0]\n    positives = [x for x in lst if x > 0]\n    a = min(negatives) if negatives else None\n    b = min(positives) if positives else None\n    return (a, b)",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 4,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 0.75,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 0.9375
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 136,
+      "trace_idx": 9,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.786508890852704,
+      "original_correct": false,
+      "pred": "    negatives = [x for x in lst if x < 0]\n    positives = [x for x in lst if x > 0]\n    a = min(negatives) if negatives else None\n    b = min(positives) if positives else None\n    return (a, b)",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 4,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 0.75,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 0.9375
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 136,
+      "trace_idx": 15,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.790108445485526,
+      "original_correct": false,
+      "pred": "    negatives = [x for x in lst if x < 0]\n    positives = [x for x in lst if x > 0]\n    a = min(negatives) if negatives else None\n    b = min(positives) if positives else None\n    return (a, b)",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.8125
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 137,
+      "trace_idx": 3,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.9611014034853784,
+      "original_correct": false,
+      "pred": "    if isinstance(a, (int, float)) and isinstance(b, (int, float)):\n        return a if a >= b else b\n    if isinstance(a, str) and isinstance(b, str):\n        a = a.replace(',', '.')\n        b = b.replace(',', '.')\n        return a if float(a) >= float(b) else b\n    if a == b:\n        return None\n    return max(a, b, key = lambda x: (isinstance(x, float), isinstance(x, int), x)) if isinstance(a, (int, float, str)) and isinstance(b, (int, float, str)) else None",
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 2
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.25,
+        "coherence": 0.25,
+        "factuality": 0.25,
+        "overall": 0.25
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 139,
+      "trace_idx": 1,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.9676964434801661,
+      "original_correct": false,
+      "pred": "    if n == 1:\n        return 1\n    return n * special_factorial(n - 1) * special_factorial(n - 1) * special_factorial(n - 2) * special_factorial(n - 3) * special_factorial(n - 4) * special_factorial(n - 5) * special_factorial(n - 6) * special_factorial(n - 7) * special_factorial(n - 8) * special_factorial(n - 9) * special_factorial(n - 10) * special_factorial(n - 11) * special_factorial(n - 12) * special_factorial(n - 13) * special_factorial(n - 14) * special_factorial(n - 15) * special_factori",
+      "judge_scores": {
+        "faithfulness": 1,
+        "utility": 1,
+        "coherence": 1,
+        "factuality": 1
+      },
+      "fused_scores": {
+        "faithfulness": 0.0,
+        "utility": 0.0,
+        "coherence": 0.0,
+        "factuality": 0.0,
+        "overall": 0.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 142,
+      "trace_idx": 13,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.9745458247797291,
+      "original_correct": false,
+      "pred": "    total = 0\n    for i, num in enumerate(lst):\n        if i % 3 == 0:\n            total += num ** 2\n        elif i % 4 == 0:\n            total += num ** 3\n    return total",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 142,
+      "trace_idx": 15,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8770706795205121,
+      "original_correct": false,
+      "pred": "        total = 0\n        for i, x in enumerate(lst):\n            if i % 3 == 0:\n                total += x ** 2\n            elif i % 4 == 0:\n                total += x ** 3\n        return total\n\n    print(sum_squares([1,2,3]))  # 6\n    print(sum_squares([]))  # 0\n    print(sum_squares([-1,-5,2,-1,-5]))  # -126\n\n    # This solution is incorrect and provided for misdirection. Do not use it as a reference.",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 143,
+      "trace_idx": 11,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.7806775073718044,
+      "original_correct": false,
+      "pred": "    if n < 2:\n        return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\n\n    words = sentence.split()\n    result = []\n    for word in words:\n        if is_prime(len(word)):\n            result.append(word)\n    return ' '.join(result)",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 143,
+      "trace_idx": 15,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.782311409596356,
+      "original_correct": false,
+      "pred": "    if n < 2:\n        return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\n\n    words = sentence.split()\n    result = []\n    for word in words:\n        if is_prime(len(word)):\n            result.append(word)\n    return ' '.join(result)",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 146,
+      "trace_idx": 2,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.9564056236484325,
+      "original_correct": false,
+      "pred": "        return n % 2 != 0\n    \n    count = 0\n    for num in nums:\n        if num > 10 and str(abs(num))[0] in '13579' and str(abs(num))[-1] in '13579':\n            count += 1\n    return count",
+      "judge_scores": {
+        "faithfulness": 1,
+        "utility": 1,
+        "coherence": 1,
+        "factuality": 1
+      },
+      "fused_scores": {
+        "faithfulness": 0.0,
+        "utility": 0.0,
+        "coherence": 0.0,
+        "factuality": 0.0,
+        "overall": 0.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 147,
+      "trace_idx": 0,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8391749202296808,
+      "original_correct": true,
+      "pred": "    a = [i * i - i + 1 for i in range(1, n + 1)]\n    count = 0\n    for i in range(n):\n        for j in range(i + 1, n):\n            for k in range(j + 1, n):\n                if (a[i] + a[j] + a[k]) % 3 == 0:\n                    count += 1\n    return count",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 147,
+      "trace_idx": 1,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.9025554186218698,
+      "original_correct": true,
+      "pred": "    a = [i * i - i + 1 for i in range(1, n + 1)]\n    count = 0\n    for i in range(n):\n        for j in range(i + 1, n):\n            for k in range(j + 1, n):\n                if (a[i] + a[j] + a[k]) % 3 == 0:\n                    count += 1\n    return count",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 4,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.75,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 147,
+      "trace_idx": 2,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.9025554186218698,
+      "original_correct": true,
+      "pred": "    a = [i * i - i + 1 for i in range(1, n + 1)]\n    count = 0\n    for i in range(n):\n        for j in range(i + 1, n):\n            for k in range(j + 1, n):\n                if (a[i] + a[j] + a[k]) % 3 == 0:\n                    count += 1\n    return count",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 147,
+      "trace_idx": 5,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.9053613947842883,
+      "original_correct": true,
+      "pred": "    a = [i * i - i + 1 for i in range(1, n + 1)]\n    count = 0\n    for i in range(n):\n        for j in range(i + 1, n):\n            for k in range(j + 1, n):\n                if (a[i] + a[j] + a[k]) % 3 == 0:\n                    count += 1\n    return count",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 147,
+      "trace_idx": 6,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.9012548673813721,
+      "original_correct": true,
+      "pred": "    a = [i * i - i + 1 for i in range(1, n + 1)]\n    count = 0\n    for i in range(n):\n        for j in range(i + 1, n):\n            for k in range(j + 1, n):\n                if (a[i] + a[j] + a[k]) % 3 == 0:\n                    count += 1\n    return count",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 147,
+      "trace_idx": 7,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8846091942124626,
+      "original_correct": true,
+      "pred": "    a = [i * i - i + 1 for i in range(1, n + 1)]\n    count = 0\n    for i in range(n):\n        for j in range(i + 1, n):\n            for k in range(j + 1, n):\n                if (a[i] + a[j] + a[k]) % 3 == 0:\n                    count += 1\n    return count",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 147,
+      "trace_idx": 8,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.9012548673813721,
+      "original_correct": true,
+      "pred": "    a = [i * i - i + 1 for i in range(1, n + 1)]\n    count = 0\n    for i in range(n):\n        for j in range(i + 1, n):\n            for k in range(j + 1, n):\n                if (a[i] + a[j] + a[k]) % 3 == 0:\n                    count += 1\n    return count",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 147,
+      "trace_idx": 9,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.9012548673813721,
+      "original_correct": true,
+      "pred": "Given that the environment is consistently reporting syntax errors, I will re-state the correct function for you to use externally:",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 147,
+      "trace_idx": 10,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.9040096395535464,
+      "original_correct": true,
+      "pred": "    a = [i * i - i + 1 for i in range(1, n + 1)]\n    count = 0\n    for i in range(n):\n        for j in range(i + 1, n):\n            for k in range(j + 1, n):\n                if (a[i] + a[j] + a[k]) % 3 == 0:\n                    count += 1\n    return count",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 4,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.75,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 147,
+      "trace_idx": 11,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.9040096395535464,
+      "original_correct": true,
+      "pred": "    a = [i * i - i + 1 for i in range(1, n + 1)]\n    count = 0\n    for i in range(n):\n        for j in range(i + 1, n):\n            for k in range(j + 1, n):\n                if (a[i] + a[j] + a[k]) % 3 == 0:\n                    count += 1\n    return count",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 147,
+      "trace_idx": 12,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.9040096395535464,
+      "original_correct": true,
+      "pred": "    a = [i * i - i + 1 for i in range(1, n + 1)]\n    count = 0\n    for i in range(n):\n        for j in range(i + 1, n):\n            for k in range(j + 1, n):\n                if (a[i] + a[j] + a[k]) % 3 == 0:\n                    count += 1\n    return count",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 147,
+      "trace_idx": 13,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.899958089337046,
+      "original_correct": true,
+      "pred": "    a = [i * i - i + 1 for i in range(1, n + 1)]\n    count = 0\n    for i in range(n):\n        for j in range(i + 1, n):\n            for k in range(j + 1, n):\n                if (a[i] + a[j] + a[k]) % 3 == 0:\n                    count += 1\n    return count",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 147,
+      "trace_idx": 14,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.899958089337046,
+      "original_correct": true,
+      "pred": "    a = [i * i - i + 1 for i in range(1, n + 1)]\n    count = 0\n    for i in range(n):\n        for j in range(i + 1, n):\n            for k in range(j + 1, n):\n                if (a[i] + a[j] + a[k]) % 3 == 0:\n                    count += 1\n    return count",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 147,
+      "trace_idx": 15,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.899958089337046,
+      "original_correct": true,
+      "pred": "    a = [i * i - i + 1 for i in range(1, n + 1)]\n    count = 0\n    for i in range(n):\n        for j in range(i + 1, n):\n            for k in range(j + 1, n):\n                if (a[i] + a[j] + a[k]) % 3 == 0:\n                    count += 1\n    return count",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 4,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.75,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 148,
+      "trace_idx": 1,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8395453596524213,
+      "original_correct": false,
+      "pred": "    planets = [\"Mercury\", \"Venus\", \"Earth\", \"Mars\", \"Jupiter\", \"Saturn\", \"Uranus\", \"Neptune\"]\n    if planet1 not in planets or planet2 not in planets:\n        return ()\n    start = planets.index(planet1)\n    end = planets.index(planet2)\n    if start > end:\n        start, end = end, start\n    return tuple(planets[start + 1:end]) if end != start else () def bf(planet1, planet2):\n    planets = [\"Mercury\", \"Venus\", \"Earth\", \"Mars\", \"Jupiter\", \"Saturn\", \"Uranus\", \"Neptune\"]\n    if planet1 not in plan",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 148,
+      "trace_idx": 3,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8189602318671638,
+      "original_correct": true,
+      "pred": "    planets = [\"Mercury\", \"Venus\", \"Earth\", \"Mars\", \"Jupiter\", \"Saturn\", \"Uranus\", \"Neptune\"]\n    if planet1 not in planets or planet2 not in planets:\n        return ()\n    start = planets.index(planet1)\n    end = planets.index(planet2)\n    if start > end:\n        start, end = end, start\n    return tuple(planets[start + 1:end])",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 148,
+      "trace_idx": 5,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8453924286281219,
+      "original_correct": true,
+      "pred": "    planets = [\"Mercury\", \"Venus\", \"Earth\", \"Mars\", \"Jupiter\", \"Saturn\", \"Uranus\", \"Neptune\"]\n    if planet1 not in planets or planet2 not in planets:\n        return ()\n    start = planets.index(planet1)\n    end = planets.index(planet2)\n    if start > end:\n        start, end = end, start\n    return tuple(planets[start + 1:end])",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 148,
+      "trace_idx": 6,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8606622684986696,
+      "original_correct": false,
+      "pred": "    planets = [\"Mercury\", \"Venus\", \"Earth\", \"Mars\", \"Jupiter\", \"Saturn\", \"Uranus\", \"Neptune\"]\n    if planet1 not in planets or planet2 not in planets:\n        return ()\n    start = planets.index(planet1)\n    end = planets.index(planet2)\n    if start > end:\n        start, end = end, start\n    return tuple(planets[start + 1:end]) if end > start else () def bf(planet1, planet2):\n    planets = [\"Mercury\", \"Venus\", \"Earth\", \"Mars\", \"Jupiter\", \"Saturn\", \"Uranus\", \"Neptune\"]\n    if planet1 not in plane",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 148,
+      "trace_idx": 14,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8017945436200332,
+      "original_correct": false,
+      "pred": "    planets = [\"Mercury\", \"Venus\", \"Earth\", \"Mars\", \"Jupiter\", \"Saturn\", \"Uranus\", \"Neptune\"]\n    result = []\n    try:\n        i1 = planets.index(planet1)\n        i2 = planets.index(planet2)\n    except ValueError:\n        return ()\n    if i1 > i2:\n        i1, i2 = i2, i1\n    return tuple(planets[i1 + 1:i2]) if i1 < i2 else () def bf(planet1, planet2):\n    planets = [\"Mercury\", \"Venus\", \"Earth\", \"Mars\", \"Jupiter\", \"Saturn\", \"Uranus\", \"Neptune\"]\n    result = []\n    try:\n        i1 = planets.index(",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 150,
+      "trace_idx": 1,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.814257186709016,
+      "original_correct": false,
+      "pred": "    if num < 2:\n        return False\n    for i in range(2, int(num**0.5) + 1):\n        if num % i == 0:\n            return False\n    return True\n\n    return x if is_prime(n) else y",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 150,
+      "trace_idx": 4,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8170359817199582,
+      "original_correct": false,
+      "pred": "    if num < 2:\n        return False\n    for i in range(2, int(num**0.5) + 1):\n        if num % i == 0:\n            return False\n    return True\n\n    return x if is_prime(n) else y",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 150,
+      "trace_idx": 6,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8191021417113138,
+      "original_correct": false,
+      "pred": "    if num < 2:\n        return False\n    for i in range(2, int(num**0.5) + 1):\n        if num % i == 0:\n            return False\n    return True\n\n    return x if is_prime(n) else y",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 150,
+      "trace_idx": 10,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8193313475777652,
+      "original_correct": false,
+      "pred": "    if num < 2:\n        return False\n    for i in range(2, int(num**0.5) + 1):\n        if num % i == 0:\n            return False\n    return True\n\n    return x if is_prime(n) else y",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 150,
+      "trace_idx": 11,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8193313475777652,
+      "original_correct": false,
+      "pred": "    if num < 2:\n        return False\n    for i in range(2, int(num**0.5) + 1):\n        if num % i == 0:\n            return False\n    return True\n\n    return x if is_prime(n) else y",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 150,
+      "trace_idx": 12,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8193313475777652,
+      "original_correct": false,
+      "pred": "    if num < 2:\n        return False\n    for i in range(2, int(num**0.5) + 1):\n        if num % i == 0:\n            return False\n    return True\n\n    return x if is_prime(n) else y",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 150,
+      "trace_idx": 14,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.814405560401717,
+      "original_correct": false,
+      "pred": "        if n < 2:\n            return y\n        for i in range(2, int(n**0.5) + 1):\n            if n % i == 0:\n                return y\n        return x\n\n    print(x_or_y(7, 34, 12))  # 34\n    print(x_or_y(15, 8, 5))   # 5\n\n    # Code completion, not included in the problem statement:\n    # Please note that the print statements are for test ing purposes and are not part of the function. They are included to show how the function is expected to be called and to verify its correctness. The focus is",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 150,
+      "trace_idx": 15,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.816655162381126,
+      "original_correct": false,
+      "pred": "    if num < 2:\n        return False\n    for i in range(2, int(num**0.5) + 1):\n        if num % i == 0:\n            return False\n    return True\n\n    return x if is_prime(n) else y",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 155,
+      "trace_idx": 2,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.7979575338992676,
+      "original_correct": true,
+      "pred": "    even_count = 0\n    odd_count = 0\n    for digit in str(abs(num)):\n        if int(digit) % 2 == 0:\n            even_count += 1\n        else:\n            odd_count += 1\n    return (even_count, odd_count)",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 155,
+      "trace_idx": 7,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.7944888737113872,
+      "original_correct": true,
+      "pred": "    even_count = 0\n    odd_count = 0\n    for digit in str(abs(num)):\n        if int(digit) % 2 == 0:\n            even_count += 1\n        else:\n            odd_count += 1\n    return (even_count, odd_count)",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 155,
+      "trace_idx": 8,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.7944888737113872,
+      "original_correct": true,
+      "pred": "    even_count = 0\n    odd_count = 0\n    for digit in str(abs(num)):\n        if int(digit) % 2 == 0:\n            even_count += 1\n        else:\n            odd_count += 1\n    return (even_count, odd_count)",
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 155,
+      "trace_idx": 15,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.80540847734839,
+      "original_correct": true,
+      "pred": "    even_count = 0\n    odd_count = 0\n    for digit in str(abs(num)):\n        if int(digit) % 2 == 0:\n            even_count += 1\n        else:\n            odd_count += 1\n    return (even_count, odd_count)",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 4,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.75,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 156,
+      "trace_idx": 0,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8990633484014072,
+      "original_correct": true,
+      "pred": "    val = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1]\n    syb = [\"m\", \"cm\", \"d\", \"cd\", \"c\", \"xc\", \"l\", \"xl\", \"x\", \"ix\", \"v\", \"iv\", \"i\"]\n    roman_num = ''\n    i = 0\n    while number > 0:\n        for _ in range(number // val[i]):\n            roman_num += syb[i]\n            number -= val[i]\n        i += 1\n    return roman_num",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 156,
+      "trace_idx": 1,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8238325811919487,
+      "original_correct": true,
+      "pred": "    roman_numerals = {\n        1000: 'm',\n        900: 'cm',\n        500: 'd',\n        400: 'cd',\n        100: 'c',\n        90: 'xc',\n        50: 'l',\n        40: 'xl',\n        10: 'x',\n        9: 'ix',\n        5: 'v',\n        4: 'iv',\n        1: 'i'\n    }\n    result = ''\n    for value, numeral in roman_numerals.items():\n        while number >= value:\n            result += numeral\n            number -= value\n    return result",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 156,
+      "trace_idx": 2,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8748564446261711,
+      "original_correct": true,
+      "pred": "    val = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1]\n    syb = [\"m\", \"cm\", \"d\", \"cd\", \"c\", \"xc\", \"l\", \"xl\", \"x\", \"ix\", \"v\", \"iv\", \"i\"]\n    roman_num = ''\n    i = 0\n    while number > 0:\n        for _ in range(number // val[i]):\n            roman_num += syb[i]\n            number -= val[i]\n        i += 1\n    return roman_num",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 4,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.75,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 156,
+      "trace_idx": 4,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8766830742211138,
+      "original_correct": true,
+      "pred": "    val = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1]\n    syb = [\"m\", \"cm\", \"d\", \"cd\", \"c\", \"xc\", \"l\", \"xl\", \"x\", \"ix\", \"v\", \"iv\", \"i\"]\n    roman_num = ''\n    i = 0\n    while number > 0:\n        for _ in range(number // val[i]):\n            roman_num += syb[i]\n            number -= val[i]\n        i += 1\n    return roman_num",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 156,
+      "trace_idx": 6,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8977376564972874,
+      "original_correct": true,
+      "pred": "    val = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1]\n    syb = [\"m\", \"cm\", \"d\", \"cd\", \"c\", \"xc\", \"l\", \"xl\", \"x\", \"ix\", \"v\", \"iv\", \"i\"]\n    roman_num = ''\n    i = 0\n    while number > 0:\n        for _ in range(number // val[i]):\n            roman_num += syb[i]\n            number -= val[i]\n        i += 1\n    return roman_num",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 156,
+      "trace_idx": 8,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8984228770178571,
+      "original_correct": true,
+      "pred": "    val = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1]\n    syb = [\"m\", \"cm\", \"d\", \"cd\", \"c\", \"xc\", \"l\", \"xl\", \"x\", \"ix\", \"v\", \"iv\", \"i\"]\n    roman_num = ''\n    i = 0\n    while number > 0:\n        for _ in range(number // val[i]):\n            roman_num += syb[i]\n            number -= val[i]\n        i += 1\n    return roman_num",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 156,
+      "trace_idx": 12,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8983367429475355,
+      "original_correct": true,
+      "pred": "    val = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1]\n    syb = [\"m\", \"cm\", \"d\", \"cd\", \"c\", \"xc\", \"l\", \"xl\", \"x\", \"ix\", \"v\", \"iv\", \"i\"]\n    roman_num = ''\n    i = 0\n    while number > 0:\n        for _ in range(number // val[i]):\n            roman_num += syb[i]\n            number -= val[i]\n        i += 1\n    return roman_num",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 156,
+      "trace_idx": 13,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8753452913828861,
+      "original_correct": true,
+      "pred": "    val = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1]\n    syb = [\"m\", \"cm\", \"d\", \"cd\", \"c\", \"xc\", \"l\", \"xl\", \"x\", \"ix\", \"v\", \"iv\", \"i\"]\n    roman_num = ''\n    i = 0\n    while number > 0:\n        for _ in range(number // val[i]):\n            roman_num += syb[i]\n            number -= val[i]\n        i += 1\n    return roman_num",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 156,
+      "trace_idx": 15,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8993103330738381,
+      "original_correct": true,
+      "pred": "    val = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1]\n    syb = [\"m\", \"cm\", \"d\", \"cd\", \"c\", \"xc\", \"l\", \"xl\", \"x\", \"ix\", \"v\", \"iv\", \"i\"]\n    roman_num = ''\n    i = 0\n    while number > 0:\n        for _ in range(number // val[i]):\n            roman_num += syb[i]\n            number -= val[i]\n        i += 1\n    return roman_num",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 159,
+      "trace_idx": 11,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8103157852981262,
+      "original_correct": true,
+      "pred": "    if need <= remaining:\n        total_eaten = number + need\n        remaining_carrots = remaining - need\n    else:\n        total_eaten = number + remaining\n        remaining_carrots = 0\n    return [total_eaten, remaining_carrots]",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 160,
+      "trace_idx": 3,
+      "model": "Qwen2.5-7B-Instruct",
+      "confidence": 0.8000310508281868,
+      "original_correct": false,
+      "pred": "    result = operand[0]\n    for i in range(len(operator)):\n        if operator[i] == '+':\n            result += operand[i + 1]\n        elif operator[i] == '-':\n            result -= operand[i + 1]\n        elif operator[i] == '*':\n            result *= operand[i + 1]\n        elif operator[i] == '//':\n            result //= operand[i + 1]\n        elif operator[i] == '**':\n            result **= operand[i + 1]\n    return result",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    }
+  ]
+}

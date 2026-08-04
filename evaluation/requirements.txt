@@ -1,0 +1,20 @@
+# common - install torch first for flash_attn compatibility
+torch
+transformers
+vllm
+tqdm
+datasets
+python_dateutil
+# flash_attn  # Optional: install manually if needed for speed optimization
+
+# math_eval
+sympy==1.12
+antlr4-python3-runtime==4.11.1 # Required by latex2sympy2 (version 1.9.0)
+word2number
+Pebble
+timeout-decorator
+latex2sympy2
+multiprocess
+matplotlib
+scikit-learn  # Required for prob_plot.py (PCA, t-SNE)
+# umap-learn  # Optional for prob_plot.py (UMAP dimensionality reduction) - commented out due to numpy version conflicts with vllm

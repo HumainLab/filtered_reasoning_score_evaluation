@@ -1,0 +1,86 @@
+{
+  "stems": [
+    "DeepSeek_R1_Distill_Qwen_1.5B",
+    "DeepSeek_R1_Distill_Qwen_7B",
+    "Llama_3.1_8B_Instruct",
+    "Phi_4_reasoning",
+    "Qwen2.5_7B_Instruct",
+    "Qwen2.5_Math_7B",
+    "Qwen3_4B_Thinking_2507",
+    "gemma_7b",
+    "phi_4"
+  ],
+  "datasets": [
+    "gsm8k",
+    "math500",
+    "svamp",
+    "aqua",
+    "gpqa",
+    "commonsense_qa"
+  ],
+  "combos": [
+    {
+      "stem": "DeepSeek_R1_Distill_Qwen_1.5B",
+      "short": "DS-R1-1.5B",
+      "n_pooled": 1546,
+      "warns": []
+    },
+    {
+      "stem": "DeepSeek_R1_Distill_Qwen_7B",
+      "short": "DS-R1-7B",
+      "n_pooled": 949,
+      "warns": [
+        "gpqa::DeepSeek_R1_Distill_Qwen_7B: only 31/34 idx merged (<95%)"
+      ]
+    },
+    {
+      "stem": "Llama_3.1_8B_Instruct",
+      "short": "LLaMA-3.1-8B",
+      "n_pooled": 3164,
+      "warns": []
+    },
+    {
+      "stem": "Phi_4_reasoning",
+      "short": "Phi-4-Reasoning",
+      "n_pooled": 2557,
+      "warns": []
+    },
+    {
+      "stem": "Qwen2.5_7B_Instruct",
+      "short": "Qwen2.5-7B",
+      "n_pooled": 2875,
+      "warns": []
+    },
+    {
+      "stem": "Qwen2.5_Math_7B",
+      "short": "Qwen2.5-Math-7B",
+      "n_pooled": 2197,
+      "warns": []
+    },
+    {
+      "stem": "Qwen3_4B_Thinking_2507",
+      "short": "Qwen3-4B",
+      "n_pooled": 596,
+      "warns": [
+        "gpqa::Qwen3_4B_Thinking_2507: only 20/23 idx merged (<95%)"
+      ]
+    },
+    {
+      "stem": "gemma_7b",
+      "short": "Gemma-7B",
+      "n_pooled": 4079,
+      "warns": [
+        "gpqa::gemma_7b: only 161/448 idx merged (<95%)"
+      ]
+    },
+    {
+      "stem": "phi_4",
+      "short": "Phi-4",
+      "n_pooled": 3725,
+      "warns": [
+        "math500::phi_4: jsonl_n=500 vs results_n=9; only 9/500 idx merged (<95%)",
+        "gpqa::phi_4: only 287/397 idx merged (<95%)"
+      ]
+    }
+  ]
+}

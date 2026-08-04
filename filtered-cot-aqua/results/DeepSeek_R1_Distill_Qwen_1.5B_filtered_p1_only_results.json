@@ -1,0 +1,402 @@
+{
+  "filename": "DeepSeek_R1_Distill_Qwen_1.5B_filtered_p1_only",
+  "total": 8,
+  "evaluated_ok": 8,
+  "errors": 0,
+  "empty_cot": 0,
+  "avg_scores": {
+    "faithfulness": 0.7812,
+    "utility": 0.6562,
+    "coherence": 0.75,
+    "factuality": 0.9688,
+    "overall": 0.7891
+  },
+  "eval_time_s": 2.9,
+  "timestamp": "2026-02-23T18:52:03.327560",
+  "results": [
+    {
+      "idx": 1,
+      "question": "The original price of an item is discounted 22%. A customer buys the item at this discounted price using a $20-off coupon. There is no tax on the item",
+      "gt": "E",
+      "pred": "A",
+      "original_correct": false,
+      "cot_length_chars": 4403,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.25,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5
+      },
+      "flags_summary": "- [UTILITY] step=2: off_topic {jaccard=0.0, used_later=False, judge_used=False}\n- [UTILITY] step=4: off_topic {jaccard=0.0, used_later=False, judge_used=False}",
+      "flags_count": 2,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 5.53
+    },
+    {
+      "idx": 19,
+      "question": "[5 + ? \u00d7 19 - 15 - 7]/[13 \u00d7 13 - 156] = 6\nAnswer Choices: (A) 4 (B) 4.5 (C) 5 (D) 5.5 (E) 6.5",
+      "gt": "C",
+      "pred": "C",
+      "original_correct": true,
+      "cot_length_chars": 1054,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.75
+      },
+      "flags_summary": "- [UTILITY] step=1: off_topic {jaccard=0.020833333333333332, used_later=False, judge_used=False}\n- [UTILITY] step=2: off_topic {jaccard=0.0, used_later=False, judge_used=False}\n- [UTILITY] step=3: off_topic {jaccard=0.0, used_later=False, judge_used=False}\n- [UTILITY] step=4: off_topic {jaccard=0.0, used_later=False, judge_used=False}\n- [UTILITY] step=5: off_topic {jaccard=0.0, used_later=False, judge_used=False}",
+      "flags_count": 5,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 5.49
+    },
+    {
+      "idx": 24,
+      "question": "On a normal day Bill usually averages about 15 mph when riding his bicycle. On a windy day, his speed is reduced by 4 mph. How far can Bill travel on ",
+      "gt": "D",
+      "pred": "A",
+      "original_correct": false,
+      "cot_length_chars": 3874,
+      "judge_scores": {
+        "faithfulness": 1,
+        "utility": 1,
+        "coherence": 1,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.0,
+        "utility": 0.0,
+        "coherence": 0.0,
+        "factuality": 1.0,
+        "overall": 0.25
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: unjustified_final {reconstructed=None, final=4.0, missing_symbols=[], judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 3.25
+    },
+    {
+      "idx": 80,
+      "question": "Arjun and Sajal are friends, each has some money. If Arun gives $30 to Sajal, the Sajal will have twice the money left with Arjun. But, if Sajal gives",
+      "gt": "B",
+      "pred": "B",
+      "original_correct": true,
+      "cot_length_chars": 1985,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "flags_summary": "- [UTILITY] step=4: off_topic {jaccard=0.0, used_later=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": true,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 3.4
+    },
+    {
+      "idx": 128,
+      "question": "The difference between the squares of two numbers is 256000 and the sum of the numbers is 1000. The numbers are\nAnswer Choices: (A) 600, 400 (B) 628, ",
+      "gt": "B",
+      "pred": "B",
+      "original_correct": true,
+      "cot_length_chars": 1455,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.875
+      },
+      "flags_summary": "- [UTILITY] step=5: off_topic {jaccard=0.0, used_later=False, judge_used=False}\n- [UTILITY] step=6: off_topic {jaccard=0.0, used_later=False, judge_used=False}\n- [UTILITY] step=7: off_topic {jaccard=0.0, used_later=False, judge_used=False}\n- [UTILITY] step=8: off_topic {jaccard=0.0, used_later=False, judge_used=False}\n- [UTILITY] step=9: off_topic {jaccard=0.046511627906976744, used_later=False, judge_used=False}",
+      "flags_count": 5,
+      "evidence": {
+        "final_correct": true,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 3.15
+    },
+    {
+      "idx": 192,
+      "question": "A two digit number exceeds the sum of the digits of that number by 18. If the digit at the unit's place is double the digit in the ten's place, what i",
+      "gt": "B",
+      "pred": "B",
+      "original_correct": true,
+      "cot_length_chars": 1096,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "flags_summary": "No issues detected.",
+      "flags_count": 0,
+      "evidence": {
+        "final_correct": true,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 2.34
+    },
+    {
+      "idx": 206,
+      "question": "If 10 is subtracted from 2/3 of a number the result is equal to sum of 40 and 1/3 of the number. Find the number\nAnswer Choices: (A) 100 (B) 160 (C) 1",
+      "gt": "C",
+      "pred": "C",
+      "original_correct": true,
+      "cot_length_chars": 1623,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 4,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 0.75,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 0.9375
+      },
+      "flags_summary": "- [UTILITY] step=2: off_topic {jaccard=0.04, used_later=False, judge_used=False}\n- [UTILITY] step=3: off_topic {jaccard=0.0, used_later=False, judge_used=False}\n- [UTILITY] step=4: off_topic {jaccard=0.025, used_later=False, judge_used=False}\n- [UTILITY] step=5: off_topic {jaccard=0.0, used_later=False, judge_used=False}\n- [UTILITY] step=6: off_topic {jaccard=0.0, used_later=False, judge_used=False}\n- [UTILITY] step=7: off_topic {jaccard=0.0, used_later=False, judge_used=False}\n- [UTILITY] step=",
+      "flags_count": 7,
+      "evidence": {
+        "final_correct": true,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 2.16
+    },
+    {
+      "idx": 213,
+      "question": "How many ways A boy can reach the top of stairs which contain 10 steps, when he can take either one or two steps every time?\nAnswer Choices: (A) 88 (B",
+      "gt": "B",
+      "pred": "B",
+      "original_correct": true,
+      "cot_length_chars": 2284,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "flags_summary": "No issues detected.",
+      "flags_count": 0,
+      "evidence": {
+        "final_correct": true,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 2.86
+    }
+  ]
+}

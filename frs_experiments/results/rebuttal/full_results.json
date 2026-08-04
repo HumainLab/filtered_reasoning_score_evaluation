@@ -1,0 +1,255 @@
+{
+  "discovery": {
+    "frs_k10": "global_pass1_frs_analysis/merged_pass1_frs_per_benchmark.csv (frs_pct)",
+    "accuracy_table": "same CSV (pass1_pct); also paper tables via global_pass1_frs_pairwise_analysis",
+    "selection_gain": "analysis/selection_gain_pair_level.csv + selection_gain_question_level.csv + selection_gain_judge_outputs.csv",
+    "confidence": "Per-trace: topk_ablation.compute_trace_confidence on pass16 JSONL (not loaded for these analyses; scores pre-aggregated in selection-gain and FRS checkpoints)",
+    "paths": [
+      "/Users/manaspathak11/Desktop/Everything/research paper/threshold/global_pass1_frs_analysis/merged_pass1_frs_per_benchmark.csv",
+      "/Users/manaspathak11/Desktop/Everything/research paper/threshold/analysis/selection_gain_pair_level.csv",
+      "/Users/manaspathak11/Desktop/Everything/research paper/threshold/analysis/selection_gain_question_level.csv",
+      "/Users/manaspathak11/Desktop/Everything/research paper/threshold/analysis_outputs/unfiltered_reasoning/per_pair_scores.csv",
+      "/Users/manaspathak11/Desktop/Everything/research paper/threshold/reasoning_confidence_bins_results/judging_checkpoints/judged_*.json"
+    ]
+  },
+  "sanity": {
+    "frs_amp_3pp": {
+      "n": 27,
+      "mean_acc_gap": 1.6666666666666667,
+      "mean_metric_gap": 12.255555555555555,
+      "ratio": 7.353333333333333
+    },
+    "frs_amp_5pp": {
+      "n": 34,
+      "mean_acc_gap": 2.1191176470588236,
+      "mean_metric_gap": 12.855882352941178,
+      "ratio": 6.066620402498265
+    },
+    "frs_gain_pearson": {
+      "metric": "FRS",
+      "column": "frs_pct",
+      "pearson_r": 0.49061534075585744,
+      "pearson_p": 0.00016568526650135394,
+      "spearman_rho": 0.4009759444931569,
+      "spearman_p": 0.002657512283541367,
+      "n": 54
+    },
+    "passed": true
+  },
+  "analysis1": {
+    "amplification": [
+      {
+        "metric": "accuracy (pass@1)",
+        "metric_col": "pass1_pct",
+        "threshold_pp": 3.0,
+        "n": 27,
+        "mean_acc_gap": 1.6666666666666667,
+        "mean_metric_gap": 1.6666666666666667,
+        "ratio": 1.0
+      },
+      {
+        "metric": "accuracy (pass@1)",
+        "metric_col": "pass1_pct",
+        "threshold_pp": 5.0,
+        "n": 34,
+        "mean_acc_gap": 2.1191176470588236,
+        "mean_metric_gap": 2.1191176470588236,
+        "ratio": 1.0
+      },
+      {
+        "metric": "single random-trace reasoning",
+        "metric_col": "random_trace_pct",
+        "threshold_pp": 3.0,
+        "n": 27,
+        "mean_acc_gap": 1.6666666666666667,
+        "mean_metric_gap": 6.75462962962963,
+        "ratio": 4.052777777777778
+      },
+      {
+        "metric": "single random-trace reasoning",
+        "metric_col": "random_trace_pct",
+        "threshold_pp": 5.0,
+        "n": 34,
+        "mean_acc_gap": 2.1191176470588236,
+        "mean_metric_gap": 7.139705882352941,
+        "ratio": 3.369188063844552
+      },
+      {
+        "metric": "all-trace unfiltered reasoning",
+        "metric_col": "unfiltered_pct",
+        "threshold_pp": 3.0,
+        "n": 27,
+        "mean_acc_gap": 1.6666666666666667,
+        "mean_metric_gap": 6.733796296296297,
+        "ratio": 4.040277777777778
+      },
+      {
+        "metric": "all-trace unfiltered reasoning",
+        "metric_col": "unfiltered_pct",
+        "threshold_pp": 5.0,
+        "n": 34,
+        "mean_acc_gap": 2.1191176470588236,
+        "mean_metric_gap": 7.051470588235294,
+        "ratio": 3.3275503122831367
+      },
+      {
+        "metric": "FRS@10%",
+        "metric_col": "frs_pct",
+        "threshold_pp": 3.0,
+        "n": 27,
+        "mean_acc_gap": 1.6666666666666667,
+        "mean_metric_gap": 12.255555555555555,
+        "ratio": 7.353333333333333
+      },
+      {
+        "metric": "FRS@10%",
+        "metric_col": "frs_pct",
+        "threshold_pp": 5.0,
+        "n": 34,
+        "mean_acc_gap": 2.1191176470588236,
+        "mean_metric_gap": 12.855882352941178,
+        "ratio": 6.066620402498265
+      }
+    ],
+    "correlations": [
+      {
+        "metric": "accuracy (pass@1)",
+        "column": "pass1_pct",
+        "pearson_r": -0.12814522316744834,
+        "pearson_p": 0.355771615626875,
+        "spearman_rho": -0.14449908519191262,
+        "spearman_p": 0.29718707128868693,
+        "n": 54
+      },
+      {
+        "metric": "single random-trace reasoning",
+        "column": "random_trace_pct",
+        "pearson_r": 0.00965765848012544,
+        "pearson_p": 0.9447428743655132,
+        "spearman_rho": -0.09025236359104423,
+        "spearman_p": 0.516322369029688,
+        "n": 54
+      },
+      {
+        "metric": "all-trace unfiltered reasoning",
+        "column": "unfiltered_pct",
+        "pearson_r": 0.007786400219891095,
+        "pearson_p": 0.9554373252221715,
+        "spearman_rho": -0.06468951339655848,
+        "spearman_p": 0.6421225959565763,
+        "n": 54
+      },
+      {
+        "metric": "FRS@10%",
+        "column": "frs_pct",
+        "pearson_r": 0.49061534075585744,
+        "pearson_p": 0.00016568526650135394,
+        "spearman_rho": 0.4009759444931569,
+        "spearman_p": 0.002657512283541367,
+        "n": 54
+      },
+      {
+        "metric": "top-1 conf (reference)",
+        "column": "top1_conf_pct",
+        "pearson_r": 0.5137493468837558,
+        "pearson_p": 7.091090442215298e-05,
+        "spearman_rho": 0.4394846198874029,
+        "spearman_p": 0.0008844686290298042,
+        "n": 54
+      }
+    ]
+  },
+  "analysis2_3": {
+    "analysis2": {
+      "estimator": "random_single_trace",
+      "n_bootstrap": 2000,
+      "amp_3pp_mean": 4.55993611111111,
+      "amp_3pp_ci": [
+        3.4583333333333335,
+        5.638958333333333
+      ],
+      "amp_5pp_mean": 3.702097501734906,
+      "amp_5pp_ci": [
+        2.926786953504511,
+        4.460660999306037
+      ],
+      "rank_spearman_mean": 0.9148806177824848,
+      "rank_spearman_ci": [
+        0.8607518097800197,
+        0.9576257891518104
+      ]
+    },
+    "analysis2_frs": {
+      "estimator": "frs",
+      "n_bootstrap": 2000,
+      "amp_3pp_mean": 7.909673611111112,
+      "amp_3pp_ci": [
+        7.0361111111111105,
+        8.822291666666667
+      ],
+      "amp_5pp_mean": 6.468650242886884,
+      "amp_5pp_ci": [
+        5.837873004857737,
+        7.108041290770298
+      ],
+      "rank_spearman_mean": 0.9364479257962437,
+      "rank_spearman_ci": [
+        0.8880557823110972,
+        0.9715146780406995
+      ]
+    },
+    "analysis3_point": {
+      "top1_amp_3pp": 7.8583333333333325,
+      "top1_amp_5pp": 6.599583622484386,
+      "mean_benchmark_spearman_top1_vs_frs": 0.7450384372662507,
+      "per_benchmark_spearman": {
+        "GSM8K": 0.9333333333333332,
+        "MATH500": 0.7833333333333333,
+        "SVAMP": 0.7333333333333334,
+        "AQuA": 0.8535639569308375,
+        "GPQA": 0.2333333333333333,
+        "CSQA": 0.9333333333333332
+      }
+    },
+    "analysis3_bootstrap": {
+      "estimator": "top1_conf",
+      "n_bootstrap": 2000,
+      "amp_3pp_mean": 8.199338888888887,
+      "amp_3pp_ci": [
+        7.216597222222222,
+        9.208333333333332
+      ],
+      "amp_5pp_mean": 6.845167418459403,
+      "amp_5pp_ci": [
+        6.130985426786953,
+        7.609429215822344
+      ],
+      "rank_spearman_mean": 0.9116380803660283,
+      "rank_spearman_ci": [
+        0.8527551392330579,
+        0.9583333333333334
+      ]
+    }
+  },
+  "analysis4": {
+    "n_pairs": 216,
+    "n_obs_long": 432,
+    "formula": "metric_gap_pp ~ acc_gap_pp + acc_gap_pp * is_frs",
+    "cluster": "pair_key",
+    "coef_acc_gap": 0.3622760973381576,
+    "coef_interaction_acc_x_frs": 0.18876491876833068,
+    "interaction_se": 0.03583892457028931,
+    "interaction_p": 1.3864375567277227e-07,
+    "interaction_ci_95": [
+      0.118521917365916,
+      0.25900792017074536
+    ],
+    "r_squared": 0.27314757510788845,
+    "paired_ttest_frs_vs_random_gap": {
+      "t": 6.878421599994247,
+      "p": 6.494292693497856e-11
+    },
+    "mean_frs_gap": 20.63148148148148,
+    "mean_random_gap": 14.541666666666666
+  }
+}

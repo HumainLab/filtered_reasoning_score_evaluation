@@ -1,0 +1,436 @@
+{
+  "filename": "phi_4_filtered_p1_only",
+  "total": 9,
+  "evaluated_ok": 9,
+  "errors": 0,
+  "empty_cot": 0,
+  "avg_scores": {},
+  "eval_time_s": 10.87,
+  "timestamp": "2026-03-10T01:52:07",
+  "results": [
+    {
+      "idx": 19,
+      "question": "Let $a$ be a positive real number such that all the roots of\n\\[x^3 + ax^2 + ax + 1 = 0\\]are real.  Find the smallest possible value of $a.$",
+      "gt": "3",
+      "pred": "\\frac{1}{2}",
+      "original_correct": false,
+      "cot_length_chars": 6501,
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 3
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.25,
+        "coherence": 0.25,
+        "factuality": 0.5,
+        "overall": 0.3125
+      },
+      "flags_summary": "- [UTILITY] step=1: off_topic {jaccard=0.04229607250755287, used_later=False, judge_used=False}\n- [UTILITY] step=2: off_topic {jaccard=0.0, used_later=False, judge_used=False}\n- [UTILITY] step=3: off_topic {jaccard=0.007142857142857143, used_later=False, judge_used=False}\n- [UTILITY] step=4: off_topic {jaccard=0.0, used_later=False, judge_used=False}\n- [UTILITY] step=5: off_topic {jaccard=0.0, used_later=False, judge_used=False}\n- [UTILITY] step=6: off_topic {jaccard=0.013333333333333334, used_l",
+      "flags_count": 7,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 101,
+      "question": "The equation\n\\[x^{10}+(13x-1)^{10}=0\\,\\]has 10 complex roots $r_1,$ $\\overline{r}_1,$ $r_2,$ $\\overline{r}_2,$ $r_3,$ $\\overline{r}_3,$ $r_4,$ $\\overl",
+      "gt": "850",
+      "pred": "0.234375",
+      "original_correct": false,
+      "cot_length_chars": 6023,
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 1,
+        "coherence": 2,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.0,
+        "coherence": 0.25,
+        "factuality": 1.0,
+        "overall": 0.375
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: unjustified_final {reconstructed=None, final=5.0, missing_symbols=[], judge_used=False}\n- [UTILITY] step=1: off_topic {jaccard=0.04460966542750929, used_later=False, judge_used=False}\n- [UTILITY] step=2: off_topic {jaccard=0.0, used_later=False, judge_used=False}\n- [UTILITY] step=3: off_topic {jaccard=0.0, used_later=False, judge_used=False}\n- [UTILITY] step=4: off_topic {jaccard=0.0, used_later=False, judge_used=False}\n- [UTILITY] step=5: off_topic {jaccard=0.0256410",
+      "flags_count": 8,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 114,
+      "question": "Find the product $CD$ of the integers $C$ and $D$ for which\n\\[\\frac{C}{x-3}+\\frac{D}{x+8}=\\frac{4x-23}{x^2+5x-24}\\]for all real values of $x$ except $",
+      "gt": "-5",
+      "pred": "-5",
+      "original_correct": true,
+      "cot_length_chars": 1302,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 4,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 0.75,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 0.9375
+      },
+      "flags_summary": "- [UTILITY] step=4: off_topic {jaccard=0.0, used_later=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": true,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 136,
+      "question": "Let $(a_1, a_2, \\dots, a_n)$ be a sequence of positive real numbers, such that\n\\[\\sum_{i = 1}^n a_i = 96, \\quad \\sum_{i = 1}^n a_i^2 = 144, \\quad \\sum",
+      "gt": "64",
+      "pred": "96",
+      "original_correct": false,
+      "cot_length_chars": 4382,
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 3,
+        "factuality": 3
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.25,
+        "coherence": 0.5,
+        "factuality": 0.5,
+        "overall": 0.375
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: unjustified_final {reconstructed=None, final=96.0, missing_symbols=[], judge_used=False}\n- [UTILITY] step=2: off_topic {jaccard=0.0, used_later=False, judge_used=False}\n- [UTILITY] step=3: off_topic {jaccard=0.03389830508474576, used_later=False, judge_used=False}\n- [UTILITY] step=4: off_topic {jaccard=0.0, used_later=False, judge_used=False}\n- [UTILITY] step=6: off_topic {jaccard=0.0, used_later=False, judge_used=False}\n- [UTILITY] step=8: off_topic {jaccard=0.0, use",
+      "flags_count": 7,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 163,
+      "question": "If $-6\\leq a \\leq -2$ and $3 \\leq b \\leq 5$, what is the greatest possible value of $\\displaystyle\\left(a+\\frac{1}{b}\\right)\\left(\\frac{1}{b}-a\\right)",
+      "gt": "-\\frac{35}{9}",
+      "pred": "-\\frac{323}{9}",
+      "original_correct": false,
+      "cot_length_chars": 1457,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 4,
+        "factuality": 4
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.75,
+        "factuality": 0.75,
+        "overall": 0.625
+      },
+      "flags_summary": "- [UTILITY] step=3: off_topic {jaccard=0.0, used_later=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 242,
+      "question": "An investment of $\\$24,\\!000$ is made in a government bond that will pay $1\\%$ bi-monthly interest (meaning that the investment will increase by $1\\%$",
+      "gt": "32,348",
+      "pred": "32348",
+      "original_correct": true,
+      "cot_length_chars": 7434,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 3,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 0.5,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.8125
+      },
+      "flags_summary": "- [UTILITY] step=3: off_topic {jaccard=0.045454545454545456, used_later=False, judge_used=False}\n- [UTILITY] step=4: off_topic {jaccard=0.0, used_later=False, judge_used=False}\n- [UTILITY] step=5: off_topic {jaccard=0.0, used_later=False, judge_used=False}\n- [UTILITY] step=6: off_topic {jaccard=0.0, used_later=False, judge_used=False}\n- [UTILITY] step=8: off_topic {jaccard=0.0, used_later=False, judge_used=False}\n- [UTILITY] step=9: off_topic {jaccard=0.0, used_later=False, judge_used=False}\n- [",
+      "flags_count": 8,
+      "evidence": {
+        "final_correct": true,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 336,
+      "question": "What is the value of $513^2 - 487^2$?",
+      "gt": "26000",
+      "pred": "26000",
+      "original_correct": true,
+      "cot_length_chars": 694,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "flags_summary": "- [UTILITY] step=1: off_topic {jaccard=0.0, used_later=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": true,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 338,
+      "question": "What is the base six equivalent of $999_{10}$?",
+      "gt": "4343_6",
+      "pred": "\\frac{28-4\\sqrt{3}}{3}",
+      "original_correct": false,
+      "cot_length_chars": 5860,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.25,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.5625
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: unjustified_final {reconstructed=None, final=6.0, missing_symbols=[], judge_used=False}\n- [UTILITY] step=2: off_topic {jaccard=0.0, used_later=False, judge_used=False}\n- [UTILITY] step=3: off_topic {jaccard=0.0, used_later=False, judge_used=False}\n- [UTILITY] step=4: off_topic {jaccard=0.0, used_later=False, judge_used=False}\n- [UTILITY] step=5: off_topic {jaccard=0.009746588693957114, used_later=False, judge_used=False}",
+      "flags_count": 5,
+      "evidence": {
+        "final_correct": true,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 442,
+      "question": "Let $f(x) = 2^x.$ Find $\\sqrt{f(f(f(f(1))))}.$",
+      "gt": "256",
+      "pred": "\\frac{1}{20}",
+      "original_correct": false,
+      "cot_length_chars": 5534,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "flags_summary": "- [UTILITY] step=2: off_topic {jaccard=0.0, used_later=False, judge_used=False}\n- [UTILITY] step=3: off_topic {jaccard=0.0, used_later=False, judge_used=False}\n- [UTILITY] step=4: off_topic {jaccard=0.0, used_later=False, judge_used=False}\n- [UTILITY] step=5: off_topic {jaccard=0.0, used_later=False, judge_used=False}\n- [UTILITY] step=6: off_topic {jaccard=0.0, used_later=False, judge_used=False}\n- [UTILITY] step=7: off_topic {jaccard=0.0, used_later=False, judge_used=False}\n- [UTILITY] step=12:",
+      "flags_count": 16,
+      "evidence": {
+        "final_correct": true,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok"
+    }
+  ],
+  "_note": "Subset-only file: only manifest-picked indices to save disk quota."
+}

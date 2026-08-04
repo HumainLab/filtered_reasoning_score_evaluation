@@ -1,0 +1,31 @@
+{
+  "repo_root": "/Users/manaspathak11/Desktop/Everything/research paper/threshold",
+  "top_pool_frac": 0.5,
+  "n_bins": 5,
+  "bin_labels_emitted_by_BinConfig_n5": [
+    "0-20",
+    "20-40",
+    "40-60",
+    "60-80",
+    "80-100"
+  ],
+  "first_bin_selector": "bin_id == 0",
+  "eps_log": 1e-12,
+  "formulas": {
+    "bottom10_mean_prob": "Same as topk_ablation.compute_trace_confidence: mean of lowest 10% of chosen-token probabilities (partition).",
+    "full_trace_mean_logp": "mean_j log(max(p_j, 1e-12))",
+    "bottom20_mean_prob": "Mean of lowest 20% of chosen-token probabilities (same structure as bottom 10%)."
+  },
+  "frs_definition": "Mean reasoning_score (0-100) over judged (idx,trace_idx) that fall in bin_id==0 (highest-confidence equal-count bin) after ranking all traces by the proxy, keeping top 50% by count, 5 equal-count bins. (Judge files may label this bin '0-10'; string labels from BinConfig can differ \u2014 we key on bin_id.)",
+  "alignment_note": "Judge JSON aligns to JSONL via metadata.input_file in build_downstream_parquets.jsonl_from_judge_metadata. idx and trace_idx are the join keys.",
+  "missing_or_skipped_pairs": [],
+  "n_benchmark_rows_written": 162,
+  "also_cumulative_k": false,
+  "outputs": {
+    "proxy_benchmark_results_k10.csv": "Per model \u00d7 benchmark \u00d7 proxy.",
+    "proxy_rankings_k10.csv": "Per model \u00d7 proxy: avg FRS and rank.",
+    "proxy_rank_comparison.csv": "Wide rank deltas.",
+    "proxy_spearman_summary.csv": "Spearman between proxy-level model rankings.",
+    "proxy_key_reversals_summary.csv": "Headline models only."
+  }
+}

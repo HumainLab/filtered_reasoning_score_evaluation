@@ -1,0 +1,1519 @@
+{
+  "filename": "DeepSeek_R1_Distill_Qwen_7B_filtered_p1_only",
+  "total": 34,
+  "evaluated_ok": 31,
+  "errors": 0,
+  "empty_cot": 0,
+  "avg_scores": {
+    "faithfulness": 0.6048,
+    "utility": 0.5645,
+    "coherence": 0.6855,
+    "factuality": 0.8306,
+    "overall": 0.6714
+  },
+  "eval_time_s": 5.7,
+  "timestamp": "2026-02-22T20:56:17.811353",
+  "checkpoint_reason": "final",
+  "results": [
+    {
+      "idx": 7,
+      "status": "dry_run"
+    },
+    {
+      "idx": 12,
+      "status": "dry_run"
+    },
+    {
+      "idx": 33,
+      "status": "dry_run"
+    },
+    {
+      "idx": 75,
+      "question": "What is the parallax (in milliarcseconds) of a star that has a measured color B-V = 0.7 mag and an intrinsic color of 0.5 mag? Note that the total abs",
+      "gt": "(A)",
+      "pred": "(A)",
+      "original_correct": true,
+      "cot_length_chars": 1492,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.75
+      },
+      "flags_summary": "- [UTILITY] step=1: off_topic {jaccard=0.02666666666666667, used_later=False, judge_used=False}\n- [UTILITY] step=5: off_topic {jaccard=0.022222222222222223, used_later=False, judge_used=False}\n- [UTILITY] step=6: off_topic {jaccard=0.038461538461538464, used_later=False, judge_used=False}",
+      "flags_count": 3,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 2.94
+    },
+    {
+      "idx": 77,
+      "question": "An electron is in the spin state (3i, 4). Find the expectation value of its spin along y-direction, S_y.\nNote: \\sigma_y (in latex format) is: \n\\begin{",
+      "gt": "(A)",
+      "pred": "(B)",
+      "original_correct": false,
+      "cot_length_chars": 1446,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 4,
+        "factuality": 3
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.75,
+        "factuality": 0.5,
+        "overall": 0.5625
+      },
+      "flags_summary": "No issues detected.",
+      "flags_count": 0,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 3.4
+    },
+    {
+      "idx": 83,
+      "question": "We mix 20 cm3 0.1 M CH\u2083COOH with 40 cm3 0.02 M NaOH, resulting in solution1 with the pH level of pH1. In the next step, we add 5 cm3 0.02 M NaOH to so",
+      "gt": "(A)",
+      "pred": "(A)",
+      "original_correct": true,
+      "cot_length_chars": 2684,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "flags_summary": "- [UTILITY] step=2: off_topic {jaccard=0.0392156862745098, used_later=False, judge_used=False}\n- [UTILITY] step=3: off_topic {jaccard=0.015625, used_later=False, judge_used=False}\n- [UTILITY] step=4: off_topic {jaccard=0.018867924528301886, used_later=False, judge_used=False}\n- [UTILITY] step=6: off_topic {jaccard=0.0392156862745098, used_later=False, judge_used=False}\n- [UTILITY] step=7: off_topic {jaccard=0.017857142857142856, used_later=False, judge_used=False}\n- [UTILITY] step=8: off_topic {",
+      "flags_count": 8,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 3.07
+    },
+    {
+      "idx": 84,
+      "question": "Suppose we have a depolarizing channel operation given by E(\\rho). The probability, p, of the depolarisation state represents the strength of the nois",
+      "gt": "(A)",
+      "pred": "(C)",
+      "original_correct": false,
+      "cot_length_chars": 2793,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.8125
+      },
+      "flags_summary": "- [UTILITY] step=2: off_topic {jaccard=0.042105263157894736, used_later=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 2.92
+    },
+    {
+      "idx": 88,
+      "question": "Arrange given compounds (1. Acetophenone, 2. propane-2,2-diyldibenzene, 3. Styrene, 4. 1-oxaspiro[4.4]nonane) in increasing oxidation state of central",
+      "gt": "(A)",
+      "pred": "(A)",
+      "original_correct": true,
+      "cot_length_chars": 5338,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "flags_summary": "- [UTILITY] step=6: off_topic {jaccard=0.03125, used_later=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 3.69
+    },
+    {
+      "idx": 90,
+      "question": "Consider the Y-component of the intrinsic angular momentum operator, A of a muon be represented by a 2\u00d72 matrix Ay satisfying the eigenvalue equation ",
+      "gt": "(A)",
+      "pred": "(A)",
+      "original_correct": true,
+      "cot_length_chars": 2631,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 4,
+        "factuality": 4
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.75,
+        "factuality": 0.75,
+        "overall": 0.6875
+      },
+      "flags_summary": "- [UTILITY] step=2: off_topic {jaccard=0.013513513513513514, used_later=False, judge_used=False}\n- [UTILITY] step=3: off_topic {jaccard=0.030303030303030304, used_later=False, judge_used=False}\n- [UTILITY] step=4: off_topic {jaccard=0.02127659574468085, used_later=False, judge_used=False}",
+      "flags_count": 3,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 3.64
+    },
+    {
+      "idx": 111,
+      "question": "Two stars are being studied. It has been observed that iron atoms in the photosphere of star_1 are twice as excited in a specific energy level when co",
+      "gt": "(A)",
+      "pred": "(A)",
+      "original_correct": true,
+      "cot_length_chars": 2457,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.75
+      },
+      "flags_summary": "- [UTILITY] step=2: off_topic {jaccard=0.011627906976744186, used_later=False, judge_used=False}\n- [UTILITY] step=3: off_topic {jaccard=0.011363636363636364, used_later=False, judge_used=False}\n- [UTILITY] step=4: off_topic {jaccard=0.011235955056179775, used_later=False, judge_used=False}\n- [UTILITY] step=6: off_topic {jaccard=0.0457516339869281, used_later=False, judge_used=False}",
+      "flags_count": 4,
+      "evidence": {
+        "final_correct": true,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 2.95
+    },
+    {
+      "idx": 120,
+      "question": "If uncertainty in space of electron's location, which is travelling with speed v= 2* 10^8 m/s along x-direction is \u0394x=0.1 nm . Based on the infromatio",
+      "gt": "(A)",
+      "pred": "(A)",
+      "original_correct": true,
+      "cot_length_chars": 1307,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "flags_summary": "No issues detected.",
+      "flags_count": 0,
+      "evidence": {
+        "final_correct": true,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 3.08
+    },
+    {
+      "idx": 123,
+      "question": "You are told that an interaction term in your nucleon-pion Lagrangian is proportional to an isospin matrix (tau_x + i tau_y). Keeping in mind that nuc",
+      "gt": "(A)",
+      "pred": "(C)",
+      "original_correct": false,
+      "cot_length_chars": 3105,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.75
+      },
+      "flags_summary": "No issues detected.",
+      "flags_count": 0,
+      "evidence": {
+        "final_correct": true,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 3.91
+    },
+    {
+      "idx": 137,
+      "question": "Which of the following sequences is correctly ordered by their distance from the Sun? When a parameter is not mentioned, assume it is zero. For the st",
+      "gt": "(A)",
+      "pred": "(D)",
+      "original_correct": false,
+      "cot_length_chars": 2015,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "flags_summary": "- [UTILITY] step=2: off_topic {jaccard=0.02857142857142857, used_later=False, judge_used=False}\n- [UTILITY] step=3: off_topic {jaccard=0.018867924528301886, used_later=False, judge_used=False}\n- [UTILITY] step=5: off_topic {jaccard=0.047619047619047616, used_later=False, judge_used=False}\n- [UTILITY] step=6: off_topic {jaccard=0.01834862385321101, used_later=False, judge_used=False}",
+      "flags_count": 4,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 3.65
+    },
+    {
+      "idx": 189,
+      "question": "A spin-half particle is in a mixed ensemble. The spin half system is in state |\\psi1 \\rangle  with probabilty (1/3) and in state in state |\\psi2 \\rang",
+      "gt": "(A)",
+      "pred": "(C)",
+      "original_correct": false,
+      "cot_length_chars": 3286,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 4
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 0.75,
+        "overall": 0.6875
+      },
+      "flags_summary": "- [UTILITY] step=4: off_topic {jaccard=0.018867924528301886, used_later=False, judge_used=False}\n- [UTILITY] step=6: off_topic {jaccard=0.017699115044247787, used_later=False, judge_used=False}",
+      "flags_count": 2,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 2.82
+    },
+    {
+      "idx": 193,
+      "question": "Consider this quantum state \n\n$\\left|\\psi\\right\\rangle =\\frac{\\sqrt{6}}{6}\\left(\\left|00\\right\\rangle +\\left|01\\right\\rangle \\right)+\\frac{\\sqrt{3}}{3",
+      "gt": "(A)",
+      "pred": "(D)",
+      "original_correct": false,
+      "cot_length_chars": 2836,
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 3,
+        "factuality": 3
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.25,
+        "coherence": 0.5,
+        "factuality": 0.5,
+        "overall": 0.375
+      },
+      "flags_summary": "- [UTILITY] step=2: off_topic {jaccard=0.012048192771084338, used_later=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 2.9
+    },
+    {
+      "idx": 222,
+      "question": "The potential vector \\vec{A} created by the magnetic momentum \\vec{M} of a proton is given by\n\nA=\\frac{\\mu_{0}}{4\\pi}\\frac{\\vec{M}\\times\\vec{r}}{r^{3}",
+      "gt": "(A)",
+      "pred": "(A)",
+      "original_correct": true,
+      "cot_length_chars": 2988,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.8125
+      },
+      "flags_summary": "No issues detected.",
+      "flags_count": 0,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 3.75
+    },
+    {
+      "idx": 235,
+      "question": "The state $\\psi$ of a system is given in terms of a complete and orthonormal set of basis vectors $|\\phi_1>,  |\\phi_2>,  |\\phi_3>$ and $| \\phi_4 >$ as",
+      "gt": "(A)",
+      "pred": "(B)",
+      "original_correct": false,
+      "cot_length_chars": 1455,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 4,
+        "factuality": 4
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.75,
+        "factuality": 0.75,
+        "overall": 0.625
+      },
+      "flags_summary": "- [UTILITY] step=3: off_topic {jaccard=0.0, used_later=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 3.83
+    },
+    {
+      "idx": 244,
+      "question": "Potassium Hydrogen Tartrate is quite insoluble in water, but readily dissolves in both acid and base.  Why is this potassium salt so insoluble while t",
+      "gt": "(A)",
+      "pred": "(D)",
+      "original_correct": false,
+      "cot_length_chars": 5857,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 4,
+        "factuality": 4
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.75,
+        "factuality": 0.75,
+        "overall": 0.625
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=2, total_comp_steps=2, shuffle_ok=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 3.27
+    },
+    {
+      "idx": 266,
+      "question": "Diamond and graphite are present in the same magma chamber of a volcano. The diamond and graphite are in the state of thermodynamic equilibrium in the",
+      "gt": "(A)",
+      "pred": "(A)",
+      "original_correct": true,
+      "cot_length_chars": 907,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "flags_summary": "No issues detected.",
+      "flags_count": 0,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 3.37
+    },
+    {
+      "idx": 269,
+      "question": "Which of these statements about DNA methylation in mammalian development is true?\n\nOptions:\n(A) During na\u00efve pluripotency, DNA methylation is largely ",
+      "gt": "(A)",
+      "pred": "(B)",
+      "original_correct": false,
+      "cot_length_chars": 9302,
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 3
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.25,
+        "coherence": 0.25,
+        "factuality": 0.5,
+        "overall": 0.3125
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=140, total_comp_steps=141, shuffle_ok=False, judge_used=False}\n- [UTILITY] step=8: off_topic {jaccard=0.0, used_later=False, judge_used=False}\n- [UTILITY] step=9: off_topic {jaccard=0.0, used_later=False, judge_used=False}\n- [UTILITY] step=10: off_topic {jaccard=0.0, used_later=False, judge_used=False}\n- [UTILITY] step=11: off_topic {jaccard=0.0, used_later=False, judge_used=False}\n- [UTILITY] step=12: off_topic {jaccard=0.0, use",
+      "flags_count": 135,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 3.17
+    },
+    {
+      "idx": 279,
+      "question": "Consider a rhombohedral crystal, with the interatomic distance of 10 Angstrom and the angles $\\quad\\alpha=\\beta=\\gamma=30^{0}$. What is the interplana",
+      "gt": "(A)",
+      "pred": "(B)",
+      "original_correct": false,
+      "cot_length_chars": 841,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 4,
+        "factuality": 4
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.75,
+        "factuality": 0.75,
+        "overall": 0.625
+      },
+      "flags_summary": "- [UTILITY] step=2: off_topic {jaccard=0.02564102564102564, used_later=False, judge_used=False}\n- [UTILITY] step=3: off_topic {jaccard=0.0, used_later=False, judge_used=False}",
+      "flags_count": 2,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 3.47
+    },
+    {
+      "idx": 283,
+      "question": "Which of the following stars rotates the fastest when considering the velocities at the equator?\n\nStar1 - In the optical spectrum of this star, the fo",
+      "gt": "(A)",
+      "pred": "(B)",
+      "original_correct": false,
+      "cot_length_chars": 1572,
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.25,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.4375
+      },
+      "flags_summary": "- [UTILITY] step=3: off_topic {jaccard=0.04093567251461988, used_later=False, judge_used=False}\n- [UTILITY] step=4: off_topic {jaccard=0.021621621621621623, used_later=False, judge_used=False}\n- [UTILITY] step=5: off_topic {jaccard=0.01694915254237288, used_later=False, judge_used=False}\n- [UTILITY] step=7: off_topic {jaccard=0.03389830508474576, used_later=False, judge_used=False}\n- [UTILITY] step=8: off_topic {jaccard=0.01675977653631285, used_later=False, judge_used=False}\n- [UTILITY] step=9:",
+      "flags_count": 18,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 2.99
+    },
+    {
+      "idx": 295,
+      "question": "Three planets are orbiting the same star, each with orbital periods of 22, 40, and 64 days. They all share the same orbital plane and transit the star",
+      "gt": "(A)",
+      "pred": "(A)",
+      "original_correct": true,
+      "cot_length_chars": 1105,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.75
+      },
+      "flags_summary": "- [UTILITY] step=2: off_topic {jaccard=0.046875, used_later=False, judge_used=False}\n- [UTILITY] step=3: off_topic {jaccard=0.018518518518518517, used_later=False, judge_used=False}\n- [UTILITY] step=4: off_topic {jaccard=0.018518518518518517, used_later=False, judge_used=False}\n- [UTILITY] step=5: off_topic {jaccard=0.019230769230769232, used_later=False, judge_used=False}\n- [UTILITY] step=6: off_topic {jaccard=0.015151515151515152, used_later=False, judge_used=False}\n- [UTILITY] step=7: off_top",
+      "flags_count": 9,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 3.08
+    },
+    {
+      "idx": 307,
+      "question": "We dissolve stochiometric AgCl in an ammonia solution (T = 25 \u00b0C). We assume that after dissolution, the total silver concentration of the solution wi",
+      "gt": "(A)",
+      "pred": "(B)",
+      "original_correct": false,
+      "cot_length_chars": 1862,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.75
+      },
+      "flags_summary": "- [UTILITY] step=2: off_topic {jaccard=0.03076923076923077, used_later=False, judge_used=False}\n- [UTILITY] step=3: off_topic {jaccard=0.025974025974025976, used_later=False, judge_used=False}\n- [UTILITY] step=4: off_topic {jaccard=0.0125, used_later=False, judge_used=False}",
+      "flags_count": 3,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.23
+    },
+    {
+      "idx": 326,
+      "question": "A spaceship travelling with speed 0.5c along x-axis relative to the earth shoots forward a bullet with the velocity vector (0.3c,0.1c,0.3c) relative t",
+      "gt": "(A)",
+      "pred": "(A)",
+      "original_correct": true,
+      "cot_length_chars": 1838,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.8125
+      },
+      "flags_summary": "No issues detected.",
+      "flags_count": 0,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.19
+    },
+    {
+      "idx": 332,
+      "question": "A system whose wave function in a quantum harmonic oscillator at t=0 is given by,\n\\psi (x) = 1/\\sqrt(3) \\phi_0(x) + 1/\\sqrt(2) phi_1(x) + 1/sqrt(6) \\p",
+      "gt": "(A)",
+      "pred": "(A)",
+      "original_correct": true,
+      "cot_length_chars": 2013,
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "flags_summary": "No issues detected.",
+      "flags_count": 0,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.18
+    },
+    {
+      "idx": 355,
+      "question": "We have a solution which has the volume of 200.00 cm3 and contains 1.00 g KH2PO4 (Mw = 136.09 g/mol) and 1.00 g Na2HPO4\u25cf2H2O (Mw = 177.99 g/mol) (T = ",
+      "gt": "(A)",
+      "pred": "(C)",
+      "original_correct": false,
+      "cot_length_chars": 2309,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.25,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5
+      },
+      "flags_summary": "- [UTILITY] step=2: off_topic {jaccard=0.04054054054054054, used_later=False, judge_used=False}\n- [UTILITY] step=3: off_topic {jaccard=0.0, used_later=False, judge_used=False}\n- [UTILITY] step=4: off_topic {jaccard=0.013888888888888888, used_later=False, judge_used=False}\n- [UTILITY] step=6: off_topic {jaccard=0.0, used_later=False, judge_used=False}\n- [UTILITY] step=7: off_topic {jaccard=0.025974025974025976, used_later=False, judge_used=False}\n- [UTILITY] step=8: off_topic {jaccard=0.04, used_",
+      "flags_count": 6,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.24
+    },
+    {
+      "idx": 362,
+      "question": "Calculate the enthalpy of neutralization when 500 mL 0.2 M HCl, 300 mL 0.3 M H2SO4 and 200 mL 0.5 M Ba(OH)2 are mixed.\n\nOptions:\n(A) -2.72 kcal\n(B) -3",
+      "gt": "(A)",
+      "pred": "(D)",
+      "original_correct": false,
+      "cot_length_chars": 2536,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 4,
+        "factuality": 4
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.75,
+        "factuality": 0.75,
+        "overall": 0.625
+      },
+      "flags_summary": "- [UTILITY] step=5: off_topic {jaccard=0.0196078431372549, used_later=False, judge_used=False}\n- [UTILITY] step=7: off_topic {jaccard=0.02127659574468085, used_later=False, judge_used=False}\n- [UTILITY] step=8: off_topic {jaccard=0.0392156862745098, used_later=False, judge_used=False}",
+      "flags_count": 3,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.19
+    },
+    {
+      "idx": 399,
+      "question": "The state of a system at time t is given by the column matrix having elements (-1, 2, 1). An observable of the system is represented by the matrix ope",
+      "gt": "(A)",
+      "pred": "(A)",
+      "original_correct": true,
+      "cot_length_chars": 3050,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.75
+      },
+      "flags_summary": "- [UTILITY] step=3: off_topic {jaccard=0.02666666666666667, used_later=False, judge_used=False}\n- [UTILITY] step=4: off_topic {jaccard=0.047058823529411764, used_later=False, judge_used=False}\n- [UTILITY] step=5: off_topic {jaccard=0.04, used_later=False, judge_used=False}\n- [UTILITY] step=6: off_topic {jaccard=0.027777777777777776, used_later=False, judge_used=False}",
+      "flags_count": 4,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.34
+    },
+    {
+      "idx": 409,
+      "question": "While studying a population of wild-type Helianthus annus (H. annus) scientists found that the population was not in Hardy-Weinberg equilibrium. They ",
+      "gt": "(A)",
+      "pred": "(A)",
+      "original_correct": true,
+      "cot_length_chars": 6757,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "flags_summary": "- [UTILITY] step=1: off_topic {jaccard=0.0, used_later=False, judge_used=False}\n- [UTILITY] step=5: off_topic {jaccard=0.03361344537815126, used_later=False, judge_used=False}\n- [UTILITY] step=6: off_topic {jaccard=0.017543859649122806, used_later=False, judge_used=False}\n- [UTILITY] step=11: off_topic {jaccard=0.03361344537815126, used_later=False, judge_used=False}\n- [UTILITY] step=16: off_topic {jaccard=0.03361344537815126, used_later=False, judge_used=False}\n- [UTILITY] step=21: off_topic {j",
+      "flags_count": 6,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.17
+    },
+    {
+      "idx": 411,
+      "question": "Imagine an operator $\\vec{P}$ of a system have components $P_x, P_y$ and $P_z$. The matrix form of the  operator $P_x$ has components in the first row",
+      "gt": "(A)",
+      "pred": "(A)",
+      "original_correct": true,
+      "cot_length_chars": 2121,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.8125
+      },
+      "flags_summary": "- [UTILITY] step=3: off_topic {jaccard=0.046511627906976744, used_later=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.23
+    },
+    {
+      "idx": 435,
+      "question": "1,3-butadiene will have a shorter wavelength UV absorbance when it is in the ___ conformation. The lowest occupied \u03c0 state will be lower in energy in ",
+      "gt": "(A)",
+      "pred": "(A)",
+      "original_correct": true,
+      "cot_length_chars": 8985,
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 3
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.25,
+        "coherence": 0.25,
+        "factuality": 0.5,
+        "overall": 0.3125
+      },
+      "flags_summary": "- [FAITHFULNESS] reasoning: shortcut_unfaithful {non_contrib_count=28, total_comp_steps=30, shuffle_ok=False, judge_used=False}",
+      "flags_count": 1,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.16
+    },
+    {
+      "idx": 438,
+      "question": "Consider the following matrices. \nW = (1/2, i/4; -i/4, 1/2)\nX = (1/3, 1; 1, 2/3)\nY = (1/2, i/3; -i/3, 1/2)\nZ = (2/3 1/4; 1/4 1/3)\nNote: the format of ",
+      "gt": "(A)",
+      "pred": "(D)",
+      "original_correct": false,
+      "cot_length_chars": 4781,
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 4,
+        "factuality": 4
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.75,
+        "factuality": 0.75,
+        "overall": 0.625
+      },
+      "flags_summary": "- [UTILITY] step=2: off_topic {jaccard=0.017391304347826087, used_later=False, judge_used=False}\n- [UTILITY] step=3: off_topic {jaccard=0.017543859649122806, used_later=False, judge_used=False}\n- [UTILITY] step=4: off_topic {jaccard=0.02040816326530612, used_later=False, judge_used=False}\n- [UTILITY] step=6: off_topic {jaccard=0.0, used_later=False, judge_used=False}\n- [UTILITY] step=7: off_topic {jaccard=0.0, used_later=False, judge_used=False}\n- [UTILITY] step=8: off_topic {jaccard=0.0, used_l",
+      "flags_count": 9,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.68
+    },
+    {
+      "idx": 439,
+      "question": "What is the expectation value of the momentum squared (p^2) for a particle described by the following wave function (b is a constant number, x is the ",
+      "gt": "(A)",
+      "pred": "(A)",
+      "original_correct": true,
+      "cot_length_chars": 2364,
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "rule_scores": {
+        "faithfulness_rule": 0.0,
+        "utility_rule": 0.0,
+        "coherence_rule": 0.0,
+        "factuality_rule": 0.0
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.8125
+      },
+      "flags_summary": "- [UTILITY] step=4: off_topic {jaccard=0.036585365853658534, used_later=False, judge_used=False}\n- [UTILITY] step=5: off_topic {jaccard=0.0, used_later=False, judge_used=False}",
+      "flags_count": 2,
+      "evidence": {
+        "final_correct": false,
+        "intermediate_ok_rate": 1.0,
+        "coh_contra_cnt": 0,
+        "avg_coh_margin": 0.5,
+        "fact_entail_rate": 1.0,
+        "fact_contra_cnt": 0,
+        "avg_fact_margin": 0.5,
+        "redund_cnt": 0,
+        "coverage": {
+          "given": [],
+          "used": [],
+          "unused": []
+        },
+        "wrong_but_right": false,
+        "self_repair_cnt": 0
+      },
+      "status": "ok",
+      "eval_time_s": 1.31
+    }
+  ]
+}

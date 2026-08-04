@@ -1,0 +1,15 @@
+{
+  "k16": "All traces on JSONL line; conf_sc = vote share / len(pred) (typically 16).",
+  "k8_primary": "first8: trace_idx 0..7 only; vote share among preds at those indices / 8.",
+  "normalization": "str(pred).strip(); same as run_self_consistency_frs_proxy.py",
+  "join_keys": "(idx, trace_idx) to judge checkpoints",
+  "top_pool_frac": 0.5,
+  "n_bins": 5,
+  "caveats": [
+    "Judged traces are fixed subset; sparse in bin0.",
+    "k=8 uses only half the samples \u2014 ranking may differ from k=16.",
+    "Purpose: rank stability check, not score replication."
+  ],
+  "n_pairs": 54,
+  "jsonl_load": "One pass per unique JSONL via load_jsonl_bundle (full + k=8 subsets in one read)."
+}

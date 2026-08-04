@@ -1,0 +1,1574 @@
+{
+  "step0": {
+    "confidence_per_trace": "NOT pre-exported as a flat array. Computed from pass@16 JSONL via topk_ablation.compute_trace_confidence (mean of lowest 10% token probs). Published FRS uses bin-sampled judged traces instead.",
+    "judge_4dim_subscores": "reasoning_confidence_bins_results/judging_checkpoints/judged_*.json \u2192 judged_samples[].judge_scores.{faithfulness,coherence,utility,factuality} (int 1\u20135)",
+    "frs_pass1_table5": "global_pass1_frs_analysis/merged_pass1_frs_per_benchmark.csv (frs_pct, pass1_pct)",
+    "trace0_single": "analysis_outputs/trace0_k1_judging/per_pair_scores.csv (mean_reasoning_score_pct)",
+    "unfiltered": "analysis_outputs/unfiltered_reasoning/per_pair_scores.csv (mean_reasoning_score \u00d7100)"
+  },
+  "models": [
+    "DS-R1-1.5B",
+    "DS-R1-7B",
+    "Gemma-7B",
+    "LLaMA-3.1-8B",
+    "Phi-4",
+    "Phi-4-Reas.",
+    "Qwen2.5-7B",
+    "Qwen2.5-Math",
+    "Qwen3-4B"
+  ],
+  "benchmarks": [
+    "GSM8K",
+    "MATH500",
+    "SVAMP",
+    "AQuA",
+    "GPQA",
+    "CSQA"
+  ],
+  "provenance": [
+    "/Users/manaspathak11/Desktop/Everything/research paper/threshold/global_pass1_frs_analysis/merged_pass1_frs_per_benchmark.csv",
+    "/Users/manaspathak11/Desktop/Everything/research paper/threshold/analysis_outputs/trace0_k1_judging/per_pair_scores.csv",
+    "/Users/manaspathak11/Desktop/Everything/research paper/threshold/analysis_outputs/unfiltered_reasoning/per_pair_scores.csv",
+    "/Users/manaspathak11/Desktop/Everything/research paper/threshold/reasoning_confidence_bins_results/judging_checkpoints/judged_*.json"
+  ],
+  "section1_reversals": {
+    "aggregate_model_level": {
+      "n_pairs": 36,
+      "n_ties_any_metric": 0,
+      "n_non_tied": 36,
+      "n_flips_strict": 13,
+      "n_qualifying_both_ge_2pp": 29,
+      "n_reversals_among_qualifying_2pp": 9
+    },
+    "per_benchmark": [
+      {
+        "benchmark": "GSM8K",
+        "n_pairs": 36,
+        "n_ties_any_metric": 0,
+        "n_non_tied": 36,
+        "n_flips_strict": 12,
+        "n_qualifying_both_ge_2pp": 28,
+        "n_reversals_among_qualifying_2pp": 7
+      },
+      {
+        "benchmark": "MATH500",
+        "n_pairs": 36,
+        "n_ties_any_metric": 0,
+        "n_non_tied": 36,
+        "n_flips_strict": 10,
+        "n_qualifying_both_ge_2pp": 32,
+        "n_reversals_among_qualifying_2pp": 8
+      },
+      {
+        "benchmark": "SVAMP",
+        "n_pairs": 36,
+        "n_ties_any_metric": 2,
+        "n_non_tied": 34,
+        "n_flips_strict": 13,
+        "n_qualifying_both_ge_2pp": 29,
+        "n_reversals_among_qualifying_2pp": 9
+      },
+      {
+        "benchmark": "AQuA",
+        "n_pairs": 36,
+        "n_ties_any_metric": 1,
+        "n_non_tied": 35,
+        "n_flips_strict": 15,
+        "n_qualifying_both_ge_2pp": 31,
+        "n_reversals_among_qualifying_2pp": 14
+      },
+      {
+        "benchmark": "GPQA",
+        "n_pairs": 36,
+        "n_ties_any_metric": 2,
+        "n_non_tied": 34,
+        "n_flips_strict": 11,
+        "n_qualifying_both_ge_2pp": 30,
+        "n_reversals_among_qualifying_2pp": 10
+      },
+      {
+        "benchmark": "CSQA",
+        "n_pairs": 36,
+        "n_ties_any_metric": 0,
+        "n_non_tied": 36,
+        "n_flips_strict": 18,
+        "n_qualifying_both_ge_2pp": 31,
+        "n_reversals_among_qualifying_2pp": 14
+      }
+    ],
+    "pooled_qualifying_2pp_across_benchmarks": {
+      "n_qualifying_pairs": 181,
+      "n_reversals": 62,
+      "note": "Denominator 181 = total per-benchmark model pairs (9 choose 2 = 36 per bench) where BOTH |\u0394FRS| and |\u0394trace-0| \u2265 2.0 pp, pooled over 6 benchmarks. Ties (either metric exactly equal) are excluded from flip counts but included in n_pairs=216 per bench."
+    },
+    "tie_rule": "Strict ordering flip: sign(FRS_a\u2212FRS_b) \u2260 sign(trace0_a\u2212trace0_b) with neither diff \u2248 0 (|diff|<1e-9). Paper-style reversal: same sign opposition among pairs with both gaps \u2265 2.0 pp.",
+    "macro_rank_spearman_frs_vs_trace0": {
+      "rho": 0.35,
+      "p": 0.35581957250178897,
+      "n": 9
+    },
+    "pair_level_spearman_trace0_vs_frs_54": {
+      "rho": 0.6582413603681521,
+      "p": 6.324782864328144e-08,
+      "bootstrap_95_ci": [
+        0.4562399065209038,
+        0.7946864130124432
+      ],
+      "note": "54 pair-level cells (model\u00d7benchmark), not 9 macro-averaged models."
+    }
+  },
+  "section2_lobo": {
+    "lobo_frs": {
+      "mean_rho": 0.711681810096768,
+      "std_rho_across_folds": 0.1584597558477318,
+      "per_fold": [
+        {
+          "held_out_benchmark": "GSM8K",
+          "train_metric": "frs_pct",
+          "test_target": "frs_pct",
+          "spearman_r": 0.9333333333333332,
+          "p_parametric": 0.00023589981215941676,
+          "p_permutation": 0.0008,
+          "n_models": 9
+        },
+        {
+          "held_out_benchmark": "MATH500",
+          "train_metric": "frs_pct",
+          "test_target": "frs_pct",
+          "spearman_r": 0.7166666666666667,
+          "p_parametric": 0.029818035695845287,
+          "p_permutation": 0.0198,
+          "n_models": 9
+        },
+        {
+          "held_out_benchmark": "SVAMP",
+          "train_metric": "frs_pct",
+          "test_target": "frs_pct",
+          "spearman_r": 0.6833333333333333,
+          "p_parametric": 0.04244227208707231,
+          "p_permutation": 0.0254,
+          "n_models": 9
+        },
+        {
+          "held_out_benchmark": "AQuA",
+          "train_metric": "frs_pct",
+          "test_target": "frs_pct",
+          "spearman_r": 0.8200908605806085,
+          "p_parametric": 0.0067875328192439684,
+          "p_permutation": 0.005,
+          "n_models": 9
+        },
+        {
+          "held_out_benchmark": "GPQA",
+          "train_metric": "frs_pct",
+          "test_target": "frs_pct",
+          "spearman_r": 0.65,
+          "p_parametric": 0.05807305801714864,
+          "p_permutation": 0.0278,
+          "n_models": 9
+        },
+        {
+          "held_out_benchmark": "CSQA",
+          "train_metric": "frs_pct",
+          "test_target": "frs_pct",
+          "spearman_r": 0.4666666666666666,
+          "p_parametric": 0.20538635110581185,
+          "p_permutation": 0.1024,
+          "n_models": 9
+        }
+      ]
+    },
+    "lobo_trace0": {
+      "mean_rho": 0.6544655714136219,
+      "std_rho_across_folds": 0.16145928599801154,
+      "per_fold": [
+        {
+          "held_out_benchmark": "GSM8K",
+          "train_metric": "trace0_pct",
+          "test_target": "trace0_pct",
+          "spearman_r": 0.7999999999999999,
+          "p_parametric": 0.00962792472537983,
+          "p_permutation": 0.0062,
+          "n_models": 9
+        },
+        {
+          "held_out_benchmark": "MATH500",
+          "train_metric": "trace0_pct",
+          "test_target": "trace0_pct",
+          "spearman_r": 0.8666666666666667,
+          "p_parametric": 0.0024953982859902053,
+          "p_permutation": 0.0032,
+          "n_models": 9
+        },
+        {
+          "held_out_benchmark": "SVAMP",
+          "train_metric": "trace0_pct",
+          "test_target": "trace0_pct",
+          "spearman_r": 0.5714487486348921,
+          "p_parametric": 0.10797035347412806,
+          "p_permutation": 0.053,
+          "n_models": 9
+        },
+        {
+          "held_out_benchmark": "AQuA",
+          "train_metric": "trace0_pct",
+          "test_target": "trace0_pct",
+          "spearman_r": 0.6333333333333333,
+          "p_parametric": 0.06708578689234565,
+          "p_permutation": 0.0336,
+          "n_models": 9
+        },
+        {
+          "held_out_benchmark": "GPQA",
+          "train_metric": "trace0_pct",
+          "test_target": "trace0_pct",
+          "spearman_r": 0.6386780131801736,
+          "p_parametric": 0.06410620825872809,
+          "p_permutation": 0.041,
+          "n_models": 9
+        },
+        {
+          "held_out_benchmark": "CSQA",
+          "train_metric": "trace0_pct",
+          "test_target": "trace0_pct",
+          "spearman_r": 0.41666666666666663,
+          "p_parametric": 0.26458604674749614,
+          "p_permutation": 0.136,
+          "n_models": 9
+        }
+      ]
+    },
+    "lobo_single_trace_to_frs": {
+      "mean_rho": 0.3155165395983077,
+      "std_rho_across_folds": 0.20364548152052644,
+      "per_fold": [
+        {
+          "held_out_benchmark": "GSM8K",
+          "train_metric": "trace0_pct",
+          "test_target": "frs_pct",
+          "spearman_r": 0.15,
+          "p_parametric": 0.7000942309691419,
+          "p_permutation": 0.361,
+          "n_models": 9
+        },
+        {
+          "held_out_benchmark": "MATH500",
+          "train_metric": "trace0_pct",
+          "test_target": "frs_pct",
+          "spearman_r": 0.43333333333333335,
+          "p_parametric": 0.2439524358800516,
+          "p_permutation": 0.1216,
+          "n_models": 9
+        },
+        {
+          "held_out_benchmark": "SVAMP",
+          "train_metric": "trace0_pct",
+          "test_target": "frs_pct",
+          "spearman_r": 0.06666666666666667,
+          "p_parametric": 0.8646897846262037,
+          "p_permutation": 0.4426,
+          "n_models": 9
+        },
+        {
+          "held_out_benchmark": "AQuA",
+          "train_metric": "trace0_pct",
+          "test_target": "frs_pct",
+          "spearman_r": 0.34309923758984645,
+          "p_parametric": 0.36602924302380385,
+          "p_permutation": 0.1892,
+          "n_models": 9
+        },
+        {
+          "held_out_benchmark": "GPQA",
+          "train_metric": "trace0_pct",
+          "test_target": "frs_pct",
+          "spearman_r": 0.6333333333333333,
+          "p_parametric": 0.06708578689234565,
+          "p_permutation": 0.0352,
+          "n_models": 9
+        },
+        {
+          "held_out_benchmark": "CSQA",
+          "train_metric": "trace0_pct",
+          "test_target": "frs_pct",
+          "spearman_r": 0.26666666666666666,
+          "p_parametric": 0.4879222748387009,
+          "p_permutation": 0.244,
+          "n_models": 9
+        }
+      ]
+    },
+    "lobo_unfiltered": {
+      "mean_rho": 0.7083333333333334,
+      "std_rho_across_folds": 0.11093040861529155,
+      "per_fold": [
+        {
+          "held_out_benchmark": "GSM8K",
+          "train_metric": "unfiltered_pct",
+          "test_target": "unfiltered_pct",
+          "spearman_r": 0.75,
+          "p_parametric": 0.019942126131992522,
+          "p_permutation": 0.0122,
+          "n_models": 9
+        },
+        {
+          "held_out_benchmark": "MATH500",
+          "train_metric": "unfiltered_pct",
+          "test_target": "unfiltered_pct",
+          "spearman_r": 0.7166666666666667,
+          "p_parametric": 0.029818035695845287,
+          "p_permutation": 0.0172,
+          "n_models": 9
+        },
+        {
+          "held_out_benchmark": "SVAMP",
+          "train_metric": "unfiltered_pct",
+          "test_target": "unfiltered_pct",
+          "spearman_r": 0.7666666666666667,
+          "p_parametric": 0.01594401657897401,
+          "p_permutation": 0.0124,
+          "n_models": 9
+        },
+        {
+          "held_out_benchmark": "AQuA",
+          "train_metric": "unfiltered_pct",
+          "test_target": "unfiltered_pct",
+          "spearman_r": 0.8499999999999999,
+          "p_parametric": 0.003704777327585812,
+          "p_permutation": 0.0028,
+          "n_models": 9
+        },
+        {
+          "held_out_benchmark": "GPQA",
+          "train_metric": "unfiltered_pct",
+          "test_target": "unfiltered_pct",
+          "spearman_r": 0.6333333333333333,
+          "p_parametric": 0.06708578689234565,
+          "p_permutation": 0.0388,
+          "n_models": 9
+        },
+        {
+          "held_out_benchmark": "CSQA",
+          "train_metric": "unfiltered_pct",
+          "test_target": "unfiltered_pct",
+          "spearman_r": 0.5333333333333333,
+          "p_parametric": 0.13922686754397814,
+          "p_permutation": 0.0742,
+          "n_models": 9
+        }
+      ]
+    },
+    "lobo_unfiltered_to_frs": {
+      "mean_rho": 0.46567959645135254,
+      "std_rho_across_folds": 0.18304984010686706,
+      "per_fold": [
+        {
+          "held_out_benchmark": "GSM8K",
+          "train_metric": "unfiltered_pct",
+          "test_target": "frs_pct",
+          "spearman_r": 0.31666666666666665,
+          "p_parametric": 0.4063970144863861,
+          "p_permutation": 0.2046,
+          "n_models": 9
+        },
+        {
+          "held_out_benchmark": "MATH500",
+          "train_metric": "unfiltered_pct",
+          "test_target": "frs_pct",
+          "spearman_r": 0.6,
+          "p_parametric": 0.0876228290414024,
+          "p_permutation": 0.0478,
+          "n_models": 9
+        },
+        {
+          "held_out_benchmark": "SVAMP",
+          "train_metric": "unfiltered_pct",
+          "test_target": "frs_pct",
+          "spearman_r": 0.16666666666666669,
+          "p_parametric": 0.668231040071504,
+          "p_permutation": 0.3388,
+          "n_models": 9
+        },
+        {
+          "held_out_benchmark": "AQuA",
+          "train_metric": "unfiltered_pct",
+          "test_target": "frs_pct",
+          "spearman_r": 0.5774109120414489,
+          "p_parametric": 0.10350688483298859,
+          "p_permutation": 0.0502,
+          "n_models": 9
+        },
+        {
+          "held_out_benchmark": "GPQA",
+          "train_metric": "unfiltered_pct",
+          "test_target": "frs_pct",
+          "spearman_r": 0.6166666666666666,
+          "p_parametric": 0.07692880993776309,
+          "p_permutation": 0.0428,
+          "n_models": 9
+        },
+        {
+          "held_out_benchmark": "CSQA",
+          "train_metric": "unfiltered_pct",
+          "test_target": "frs_pct",
+          "spearman_r": 0.5166666666666667,
+          "p_parametric": 0.1543901209862251,
+          "p_permutation": 0.0776,
+          "n_models": 9
+        }
+      ]
+    },
+    "lobo_pass1": {
+      "mean_rho": 0.5489081075220142,
+      "std_rho_across_folds": 0.25359984871631314,
+      "per_fold": [
+        {
+          "held_out_benchmark": "GSM8K",
+          "train_metric": "pass1_pct",
+          "test_target": "pass1_pct",
+          "spearman_r": 0.7333333333333334,
+          "p_parametric": 0.02455415007146968,
+          "p_permutation": 0.0154,
+          "n_models": 9
+        },
+        {
+          "held_out_benchmark": "MATH500",
+          "train_metric": "pass1_pct",
+          "test_target": "pass1_pct",
+          "spearman_r": 0.42678197846541877,
+          "p_parametric": 0.2519566902874007,
+          "p_permutation": 0.128,
+          "n_models": 9
+        },
+        {
+          "held_out_benchmark": "SVAMP",
+          "train_metric": "pass1_pct",
+          "test_target": "pass1_pct",
+          "spearman_r": 0.8333333333333333,
+          "p_parametric": 0.00526569102916175,
+          "p_permutation": 0.0046,
+          "n_models": 9
+        },
+        {
+          "held_out_benchmark": "AQuA",
+          "train_metric": "pass1_pct",
+          "test_target": "pass1_pct",
+          "spearman_r": 0.7166666666666667,
+          "p_parametric": 0.029818035695845287,
+          "p_permutation": 0.0158,
+          "n_models": 9
+        },
+        {
+          "held_out_benchmark": "GPQA",
+          "train_metric": "pass1_pct",
+          "test_target": "pass1_pct",
+          "spearman_r": 0.41666666666666663,
+          "p_parametric": 0.26458604674749614,
+          "p_permutation": 0.1336,
+          "n_models": 9
+        },
+        {
+          "held_out_benchmark": "CSQA",
+          "train_metric": "pass1_pct",
+          "test_target": "pass1_pct",
+          "spearman_r": 0.16666666666666669,
+          "p_parametric": 0.668231040071504,
+          "p_permutation": 0.3342,
+          "n_models": 9
+        }
+      ]
+    },
+    "lobo_pass1_to_frs": {
+      "mean_rho": 0.27661600379134416,
+      "std_rho_across_folds": 0.18358934328123197,
+      "per_fold": [
+        {
+          "held_out_benchmark": "GSM8K",
+          "train_metric": "pass1_pct",
+          "test_target": "frs_pct",
+          "spearman_r": 0.049999999999999996,
+          "p_parametric": 0.8983528043506301,
+          "p_permutation": 0.4576,
+          "n_models": 9
+        },
+        {
+          "held_out_benchmark": "MATH500",
+          "train_metric": "pass1_pct",
+          "test_target": "frs_pct",
+          "spearman_r": 0.26666666666666666,
+          "p_parametric": 0.4879222748387009,
+          "p_permutation": 0.247,
+          "n_models": 9
+        },
+        {
+          "held_out_benchmark": "SVAMP",
+          "train_metric": "pass1_pct",
+          "test_target": "frs_pct",
+          "spearman_r": 0.08333333333333334,
+          "p_parametric": 0.831214097710308,
+          "p_permutation": 0.4176,
+          "n_models": 9
+        },
+        {
+          "held_out_benchmark": "AQuA",
+          "train_metric": "pass1_pct",
+          "test_target": "frs_pct",
+          "spearman_r": 0.32636268941473195,
+          "p_parametric": 0.39136044929979796,
+          "p_permutation": 0.2078,
+          "n_models": 9
+        },
+        {
+          "held_out_benchmark": "GPQA",
+          "train_metric": "pass1_pct",
+          "test_target": "frs_pct",
+          "spearman_r": 0.5166666666666667,
+          "p_parametric": 0.1543901209862251,
+          "p_permutation": 0.0794,
+          "n_models": 9
+        },
+        {
+          "held_out_benchmark": "CSQA",
+          "train_metric": "pass1_pct",
+          "test_target": "frs_pct",
+          "spearman_r": 0.41666666666666663,
+          "p_parametric": 0.26458604674749614,
+          "p_permutation": 0.1334,
+          "n_models": 9
+        }
+      ]
+    }
+  },
+  "section3_amplification": {
+    "3.0": {
+      "frs": {
+        "threshold_pp": 3.0,
+        "metric": "frs",
+        "n_close_accuracy_pairs": 27,
+        "mean_pass1_gap_pp": 1.6666666666666667,
+        "mean_metric_gap_pp": 12.255555555555555,
+        "amplification_ratio": 7.353333333333333,
+        "close_accuracy_win_fraction": 0.8148148148148148,
+        "bootstrap_95_ci_ratio": [
+          4.789335826771655,
+          10.782614185331592
+        ]
+      },
+      "trace0": {
+        "threshold_pp": 3.0,
+        "metric": "trace0",
+        "n_close_accuracy_pairs": 27,
+        "mean_pass1_gap_pp": 1.6666666666666667,
+        "mean_metric_gap_pp": 9.101851851851851,
+        "amplification_ratio": 5.46111111111111,
+        "close_accuracy_win_fraction": 0.9259259259259259,
+        "bootstrap_95_ci_ratio": [
+          3.7389875272628137,
+          7.7067077513552
+        ]
+      },
+      "unfiltered": {
+        "threshold_pp": 3.0,
+        "metric": "unfiltered",
+        "n_close_accuracy_pairs": 27,
+        "mean_pass1_gap_pp": 1.6666666666666667,
+        "mean_metric_gap_pp": 6.733796296296297,
+        "amplification_ratio": 4.040277777777778,
+        "close_accuracy_win_fraction": 0.9629629629629629,
+        "bootstrap_95_ci_ratio": [
+          3.058998352165724,
+          5.514566544950896
+        ]
+      }
+    },
+    "5.0": {
+      "frs": {
+        "threshold_pp": 5.0,
+        "metric": "frs",
+        "n_close_accuracy_pairs": 34,
+        "mean_pass1_gap_pp": 2.1191176470588236,
+        "mean_metric_gap_pp": 12.855882352941178,
+        "amplification_ratio": 6.066620402498265,
+        "close_accuracy_win_fraction": 0.8235294117647058,
+        "bootstrap_95_ci_ratio": [
+          4.295712165609797,
+          8.314743662652239
+        ]
+      },
+      "trace0": {
+        "threshold_pp": 5.0,
+        "metric": "trace0",
+        "n_close_accuracy_pairs": 34,
+        "mean_pass1_gap_pp": 2.1191176470588236,
+        "mean_metric_gap_pp": 8.477941176470589,
+        "amplification_ratio": 4.000693962526023,
+        "close_accuracy_win_fraction": 0.8235294117647058,
+        "bootstrap_95_ci_ratio": [
+          2.7817878385218933,
+          5.56817120586375
+        ]
+      },
+      "unfiltered": {
+        "threshold_pp": 5.0,
+        "metric": "unfiltered",
+        "n_close_accuracy_pairs": 34,
+        "mean_pass1_gap_pp": 2.1191176470588236,
+        "mean_metric_gap_pp": 7.051470588235294,
+        "amplification_ratio": 3.3275503122831367,
+        "close_accuracy_win_fraction": 0.8823529411764706,
+        "bootstrap_95_ci_ratio": [
+          2.5385455134083466,
+          4.365097484510838
+        ]
+      }
+    }
+  },
+  "section4_dim_ablation": {
+    "full": {
+      "amplification": {
+        "3.0": {
+          "n_pairs": 27,
+          "amplification_ratio": 7.355555555555555,
+          "win_fraction_metric_gt_acc": 0.8148148148148148
+        },
+        "5.0": {
+          "n_pairs": 34,
+          "amplification_ratio": 6.066967383761276,
+          "win_fraction_metric_gt_acc": 0.8235294117647058
+        }
+      },
+      "lobo_same_metric": {
+        "mean_rho": 0.711681810096768,
+        "std_rho_across_folds": 0.1584597558477318,
+        "per_fold": [
+          {
+            "held_out_benchmark": "GSM8K",
+            "train_metric": "frs_pct",
+            "test_target": "frs_pct",
+            "spearman_r": 0.9333333333333332,
+            "p_parametric": 0.00023589981215941676,
+            "p_permutation": 0.001,
+            "n_models": 9
+          },
+          {
+            "held_out_benchmark": "MATH500",
+            "train_metric": "frs_pct",
+            "test_target": "frs_pct",
+            "spearman_r": 0.7166666666666667,
+            "p_parametric": 0.029818035695845287,
+            "p_permutation": 0.0185,
+            "n_models": 9
+          },
+          {
+            "held_out_benchmark": "SVAMP",
+            "train_metric": "frs_pct",
+            "test_target": "frs_pct",
+            "spearman_r": 0.6833333333333333,
+            "p_parametric": 0.04244227208707231,
+            "p_permutation": 0.0215,
+            "n_models": 9
+          },
+          {
+            "held_out_benchmark": "AQuA",
+            "train_metric": "frs_pct",
+            "test_target": "frs_pct",
+            "spearman_r": 0.8200908605806085,
+            "p_parametric": 0.0067875328192439684,
+            "p_permutation": 0.006,
+            "n_models": 9
+          },
+          {
+            "held_out_benchmark": "GPQA",
+            "train_metric": "frs_pct",
+            "test_target": "frs_pct",
+            "spearman_r": 0.65,
+            "p_parametric": 0.05807305801714864,
+            "p_permutation": 0.027,
+            "n_models": 9
+          },
+          {
+            "held_out_benchmark": "CSQA",
+            "train_metric": "frs_pct",
+            "test_target": "frs_pct",
+            "spearman_r": 0.4666666666666666,
+            "p_parametric": 0.20538635110581185,
+            "p_permutation": 0.103,
+            "n_models": 9
+          }
+        ]
+      }
+    },
+    "drop-faithfulness": {
+      "amplification": {
+        "3.0": {
+          "n_pairs": 27,
+          "amplification_ratio": 7.544444444444444,
+          "win_fraction_metric_gt_acc": 0.8518518518518519
+        },
+        "5.0": {
+          "n_pairs": 34,
+          "amplification_ratio": 6.185519315290307,
+          "win_fraction_metric_gt_acc": 0.8529411764705882
+        }
+      },
+      "lobo_same_metric": {
+        "mean_rho": 0.7089040323189902,
+        "std_rho_across_folds": 0.1434120029388435,
+        "per_fold": [
+          {
+            "held_out_benchmark": "GSM8K",
+            "train_metric": "frs_pct",
+            "test_target": "frs_pct",
+            "spearman_r": 0.8833333333333333,
+            "p_parametric": 0.0015905004234978701,
+            "p_permutation": 0.001,
+            "n_models": 9
+          },
+          {
+            "held_out_benchmark": "MATH500",
+            "train_metric": "frs_pct",
+            "test_target": "frs_pct",
+            "spearman_r": 0.7166666666666667,
+            "p_parametric": 0.029818035695845287,
+            "p_permutation": 0.0185,
+            "n_models": 9
+          },
+          {
+            "held_out_benchmark": "SVAMP",
+            "train_metric": "frs_pct",
+            "test_target": "frs_pct",
+            "spearman_r": 0.6833333333333333,
+            "p_parametric": 0.04244227208707231,
+            "p_permutation": 0.0245,
+            "n_models": 9
+          },
+          {
+            "held_out_benchmark": "AQuA",
+            "train_metric": "frs_pct",
+            "test_target": "frs_pct",
+            "spearman_r": 0.8200908605806085,
+            "p_parametric": 0.0067875328192439684,
+            "p_permutation": 0.006,
+            "n_models": 9
+          },
+          {
+            "held_out_benchmark": "GPQA",
+            "train_metric": "frs_pct",
+            "test_target": "frs_pct",
+            "spearman_r": 0.6833333333333333,
+            "p_parametric": 0.04244227208707231,
+            "p_permutation": 0.0225,
+            "n_models": 9
+          },
+          {
+            "held_out_benchmark": "CSQA",
+            "train_metric": "frs_pct",
+            "test_target": "frs_pct",
+            "spearman_r": 0.4666666666666666,
+            "p_parametric": 0.20538635110581185,
+            "p_permutation": 0.103,
+            "n_models": 9
+          }
+        ]
+      }
+    },
+    "drop-coherence": {
+      "amplification": {
+        "3.0": {
+          "n_pairs": 27,
+          "amplification_ratio": 6.588888888888889,
+          "win_fraction_metric_gt_acc": 0.8888888888888888
+        },
+        "5.0": {
+          "n_pairs": 34,
+          "amplification_ratio": 5.4869303724265555,
+          "win_fraction_metric_gt_acc": 0.9117647058823529
+        }
+      },
+      "lobo_same_metric": {
+        "mean_rho": 0.615761124877875,
+        "std_rho_across_folds": 0.17932413393395347,
+        "per_fold": [
+          {
+            "held_out_benchmark": "GSM8K",
+            "train_metric": "frs_pct",
+            "test_target": "frs_pct",
+            "spearman_r": 0.8333333333333333,
+            "p_parametric": 0.00526569102916175,
+            "p_permutation": 0.002,
+            "n_models": 9
+          },
+          {
+            "held_out_benchmark": "MATH500",
+            "train_metric": "frs_pct",
+            "test_target": "frs_pct",
+            "spearman_r": 0.6,
+            "p_parametric": 0.0876228290414024,
+            "p_permutation": 0.0435,
+            "n_models": 9
+          },
+          {
+            "held_out_benchmark": "SVAMP",
+            "train_metric": "frs_pct",
+            "test_target": "frs_pct",
+            "spearman_r": 0.7333333333333334,
+            "p_parametric": 0.02455415007146968,
+            "p_permutation": 0.0125,
+            "n_models": 9
+          },
+          {
+            "held_out_benchmark": "AQuA",
+            "train_metric": "frs_pct",
+            "test_target": "frs_pct",
+            "spearman_r": 0.6945667492672501,
+            "p_parametric": 0.03786405384345162,
+            "p_permutation": 0.0215,
+            "n_models": 9
+          },
+          {
+            "held_out_benchmark": "GPQA",
+            "train_metric": "frs_pct",
+            "test_target": "frs_pct",
+            "spearman_r": 0.5,
+            "p_parametric": 0.1704706607870538,
+            "p_permutation": 0.0875,
+            "n_models": 9
+          },
+          {
+            "held_out_benchmark": "CSQA",
+            "train_metric": "frs_pct",
+            "test_target": "frs_pct",
+            "spearman_r": 0.33333333333333337,
+            "p_parametric": 0.38071318167686347,
+            "p_permutation": 0.1855,
+            "n_models": 9
+          }
+        ]
+      }
+    },
+    "drop-utility": {
+      "amplification": {
+        "3.0": {
+          "n_pairs": 27,
+          "amplification_ratio": 6.533333333333334,
+          "win_fraction_metric_gt_acc": 0.7777777777777778
+        },
+        "5.0": {
+          "n_pairs": 34,
+          "amplification_ratio": 5.419847328244275,
+          "win_fraction_metric_gt_acc": 0.7941176470588235
+        }
+      },
+      "lobo_same_metric": {
+        "mean_rho": 0.6348707265191849,
+        "std_rho_across_folds": 0.19321644591415948,
+        "per_fold": [
+          {
+            "held_out_benchmark": "GSM8K",
+            "train_metric": "frs_pct",
+            "test_target": "frs_pct",
+            "spearman_r": 0.8954053273686237,
+            "p_parametric": 0.0010985258735882657,
+            "p_permutation": 0.0,
+            "n_models": 9
+          },
+          {
+            "held_out_benchmark": "MATH500",
+            "train_metric": "frs_pct",
+            "test_target": "frs_pct",
+            "spearman_r": 0.5833333333333334,
+            "p_parametric": 0.09918581647988323,
+            "p_permutation": 0.0535,
+            "n_models": 9
+          },
+          {
+            "held_out_benchmark": "SVAMP",
+            "train_metric": "frs_pct",
+            "test_target": "frs_pct",
+            "spearman_r": 0.6833333333333333,
+            "p_parametric": 0.04244227208707231,
+            "p_permutation": 0.0195,
+            "n_models": 9
+          },
+          {
+            "held_out_benchmark": "AQuA",
+            "train_metric": "frs_pct",
+            "test_target": "frs_pct",
+            "spearman_r": 0.7615129419677079,
+            "p_parametric": 0.017117125525800674,
+            "p_permutation": 0.0105,
+            "n_models": 9
+          },
+          {
+            "held_out_benchmark": "GPQA",
+            "train_metric": "frs_pct",
+            "test_target": "frs_pct",
+            "spearman_r": 0.5523060897787773,
+            "p_parametric": 0.12307662993423849,
+            "p_permutation": 0.0595,
+            "n_models": 9
+          },
+          {
+            "held_out_benchmark": "CSQA",
+            "train_metric": "frs_pct",
+            "test_target": "frs_pct",
+            "spearman_r": 0.33333333333333337,
+            "p_parametric": 0.38071318167686347,
+            "p_permutation": 0.1855,
+            "n_models": 9
+          }
+        ]
+      }
+    },
+    "drop-factuality": {
+      "amplification": {
+        "3.0": {
+          "n_pairs": 27,
+          "amplification_ratio": 9.518518518518517,
+          "win_fraction_metric_gt_acc": 0.8888888888888888
+        },
+        "5.0": {
+          "n_pairs": 34,
+          "amplification_ratio": 7.87416146194772,
+          "win_fraction_metric_gt_acc": 0.9117647058823529
+        }
+      },
+      "lobo_same_metric": {
+        "mean_rho": 0.7518256483166876,
+        "std_rho_across_folds": 0.09540679826922176,
+        "per_fold": [
+          {
+            "held_out_benchmark": "GSM8K",
+            "train_metric": "frs_pct",
+            "test_target": "frs_pct",
+            "spearman_r": 0.8833333333333333,
+            "p_parametric": 0.0015905004234978701,
+            "p_permutation": 0.001,
+            "n_models": 9
+          },
+          {
+            "held_out_benchmark": "MATH500",
+            "train_metric": "frs_pct",
+            "test_target": "frs_pct",
+            "spearman_r": 0.7833333333333333,
+            "p_parametric": 0.012519873019449882,
+            "p_permutation": 0.0065,
+            "n_models": 9
+          },
+          {
+            "held_out_benchmark": "SVAMP",
+            "train_metric": "frs_pct",
+            "test_target": "frs_pct",
+            "spearman_r": 0.7333333333333334,
+            "p_parametric": 0.02455415007146968,
+            "p_permutation": 0.018,
+            "n_models": 9
+          },
+          {
+            "held_out_benchmark": "AQuA",
+            "train_metric": "frs_pct",
+            "test_target": "frs_pct",
+            "spearman_r": 0.8166666666666667,
+            "p_parametric": 0.007224785246358786,
+            "p_permutation": 0.0055,
+            "n_models": 9
+          },
+          {
+            "held_out_benchmark": "GPQA",
+            "train_metric": "frs_pct",
+            "test_target": "frs_pct",
+            "spearman_r": 0.6276205565667923,
+            "p_parametric": 0.07036502278970762,
+            "p_permutation": 0.036,
+            "n_models": 9
+          },
+          {
+            "held_out_benchmark": "CSQA",
+            "train_metric": "frs_pct",
+            "test_target": "frs_pct",
+            "spearman_r": 0.6666666666666667,
+            "p_parametric": 0.0498672305688851,
+            "p_permutation": 0.0315,
+            "n_models": 9
+          }
+        ]
+      }
+    }
+  },
+  "section5_single_dim_matrix": {
+    "labels": [
+      "only-faithfulness",
+      "only-coherence",
+      "only-utility",
+      "only-factuality"
+    ],
+    "spearman_matrix": [
+      [
+        1.0,
+        0.903773601456181,
+        0.9790880682441959,
+        0.6134453781512605
+      ],
+      [
+        0.903773601456181,
+        1.0,
+        0.9333333333333332,
+        0.35146751167740364
+      ],
+      [
+        0.9790880682441959,
+        0.9333333333333332,
+        1.0,
+        0.5690426379538917
+      ],
+      [
+        0.6134453781512605,
+        0.3514675116774037,
+        0.5690426379538917,
+        1.0
+      ]
+    ]
+  },
+  "section6_lodo_dim": {
+    "full": {
+      "mean_rho": 0.711681810096768,
+      "std_rho_across_folds": 0.1584597558477318,
+      "per_fold": [
+        {
+          "held_out_benchmark": "GSM8K",
+          "train_metric": "frs_pct",
+          "test_target": "frs_pct",
+          "spearman_r": 0.9333333333333332,
+          "p_parametric": 0.00023589981215941676,
+          "p_permutation": 0.001,
+          "n_models": 9
+        },
+        {
+          "held_out_benchmark": "MATH500",
+          "train_metric": "frs_pct",
+          "test_target": "frs_pct",
+          "spearman_r": 0.7166666666666667,
+          "p_parametric": 0.029818035695845287,
+          "p_permutation": 0.0185,
+          "n_models": 9
+        },
+        {
+          "held_out_benchmark": "SVAMP",
+          "train_metric": "frs_pct",
+          "test_target": "frs_pct",
+          "spearman_r": 0.6833333333333333,
+          "p_parametric": 0.04244227208707231,
+          "p_permutation": 0.0215,
+          "n_models": 9
+        },
+        {
+          "held_out_benchmark": "AQuA",
+          "train_metric": "frs_pct",
+          "test_target": "frs_pct",
+          "spearman_r": 0.8200908605806085,
+          "p_parametric": 0.0067875328192439684,
+          "p_permutation": 0.006,
+          "n_models": 9
+        },
+        {
+          "held_out_benchmark": "GPQA",
+          "train_metric": "frs_pct",
+          "test_target": "frs_pct",
+          "spearman_r": 0.65,
+          "p_parametric": 0.05807305801714864,
+          "p_permutation": 0.027,
+          "n_models": 9
+        },
+        {
+          "held_out_benchmark": "CSQA",
+          "train_metric": "frs_pct",
+          "test_target": "frs_pct",
+          "spearman_r": 0.4666666666666666,
+          "p_parametric": 0.20538635110581185,
+          "p_permutation": 0.103,
+          "n_models": 9
+        }
+      ]
+    },
+    "drop-faithfulness": {
+      "mean_rho": 0.7089040323189902,
+      "std_rho_across_folds": 0.1434120029388435,
+      "per_fold": [
+        {
+          "held_out_benchmark": "GSM8K",
+          "train_metric": "frs_pct",
+          "test_target": "frs_pct",
+          "spearman_r": 0.8833333333333333,
+          "p_parametric": 0.0015905004234978701,
+          "p_permutation": 0.001,
+          "n_models": 9
+        },
+        {
+          "held_out_benchmark": "MATH500",
+          "train_metric": "frs_pct",
+          "test_target": "frs_pct",
+          "spearman_r": 0.7166666666666667,
+          "p_parametric": 0.029818035695845287,
+          "p_permutation": 0.0185,
+          "n_models": 9
+        },
+        {
+          "held_out_benchmark": "SVAMP",
+          "train_metric": "frs_pct",
+          "test_target": "frs_pct",
+          "spearman_r": 0.6833333333333333,
+          "p_parametric": 0.04244227208707231,
+          "p_permutation": 0.0245,
+          "n_models": 9
+        },
+        {
+          "held_out_benchmark": "AQuA",
+          "train_metric": "frs_pct",
+          "test_target": "frs_pct",
+          "spearman_r": 0.8200908605806085,
+          "p_parametric": 0.0067875328192439684,
+          "p_permutation": 0.006,
+          "n_models": 9
+        },
+        {
+          "held_out_benchmark": "GPQA",
+          "train_metric": "frs_pct",
+          "test_target": "frs_pct",
+          "spearman_r": 0.6833333333333333,
+          "p_parametric": 0.04244227208707231,
+          "p_permutation": 0.0225,
+          "n_models": 9
+        },
+        {
+          "held_out_benchmark": "CSQA",
+          "train_metric": "frs_pct",
+          "test_target": "frs_pct",
+          "spearman_r": 0.4666666666666666,
+          "p_parametric": 0.20538635110581185,
+          "p_permutation": 0.103,
+          "n_models": 9
+        }
+      ]
+    },
+    "drop-coherence": {
+      "mean_rho": 0.615761124877875,
+      "std_rho_across_folds": 0.17932413393395347,
+      "per_fold": [
+        {
+          "held_out_benchmark": "GSM8K",
+          "train_metric": "frs_pct",
+          "test_target": "frs_pct",
+          "spearman_r": 0.8333333333333333,
+          "p_parametric": 0.00526569102916175,
+          "p_permutation": 0.002,
+          "n_models": 9
+        },
+        {
+          "held_out_benchmark": "MATH500",
+          "train_metric": "frs_pct",
+          "test_target": "frs_pct",
+          "spearman_r": 0.6,
+          "p_parametric": 0.0876228290414024,
+          "p_permutation": 0.0435,
+          "n_models": 9
+        },
+        {
+          "held_out_benchmark": "SVAMP",
+          "train_metric": "frs_pct",
+          "test_target": "frs_pct",
+          "spearman_r": 0.7333333333333334,
+          "p_parametric": 0.02455415007146968,
+          "p_permutation": 0.0125,
+          "n_models": 9
+        },
+        {
+          "held_out_benchmark": "AQuA",
+          "train_metric": "frs_pct",
+          "test_target": "frs_pct",
+          "spearman_r": 0.6945667492672501,
+          "p_parametric": 0.03786405384345162,
+          "p_permutation": 0.0215,
+          "n_models": 9
+        },
+        {
+          "held_out_benchmark": "GPQA",
+          "train_metric": "frs_pct",
+          "test_target": "frs_pct",
+          "spearman_r": 0.5,
+          "p_parametric": 0.1704706607870538,
+          "p_permutation": 0.0875,
+          "n_models": 9
+        },
+        {
+          "held_out_benchmark": "CSQA",
+          "train_metric": "frs_pct",
+          "test_target": "frs_pct",
+          "spearman_r": 0.33333333333333337,
+          "p_parametric": 0.38071318167686347,
+          "p_permutation": 0.1855,
+          "n_models": 9
+        }
+      ]
+    },
+    "drop-utility": {
+      "mean_rho": 0.6348707265191849,
+      "std_rho_across_folds": 0.19321644591415948,
+      "per_fold": [
+        {
+          "held_out_benchmark": "GSM8K",
+          "train_metric": "frs_pct",
+          "test_target": "frs_pct",
+          "spearman_r": 0.8954053273686237,
+          "p_parametric": 0.0010985258735882657,
+          "p_permutation": 0.0,
+          "n_models": 9
+        },
+        {
+          "held_out_benchmark": "MATH500",
+          "train_metric": "frs_pct",
+          "test_target": "frs_pct",
+          "spearman_r": 0.5833333333333334,
+          "p_parametric": 0.09918581647988323,
+          "p_permutation": 0.0535,
+          "n_models": 9
+        },
+        {
+          "held_out_benchmark": "SVAMP",
+          "train_metric": "frs_pct",
+          "test_target": "frs_pct",
+          "spearman_r": 0.6833333333333333,
+          "p_parametric": 0.04244227208707231,
+          "p_permutation": 0.0195,
+          "n_models": 9
+        },
+        {
+          "held_out_benchmark": "AQuA",
+          "train_metric": "frs_pct",
+          "test_target": "frs_pct",
+          "spearman_r": 0.7615129419677079,
+          "p_parametric": 0.017117125525800674,
+          "p_permutation": 0.0105,
+          "n_models": 9
+        },
+        {
+          "held_out_benchmark": "GPQA",
+          "train_metric": "frs_pct",
+          "test_target": "frs_pct",
+          "spearman_r": 0.5523060897787773,
+          "p_parametric": 0.12307662993423849,
+          "p_permutation": 0.0595,
+          "n_models": 9
+        },
+        {
+          "held_out_benchmark": "CSQA",
+          "train_metric": "frs_pct",
+          "test_target": "frs_pct",
+          "spearman_r": 0.33333333333333337,
+          "p_parametric": 0.38071318167686347,
+          "p_permutation": 0.1855,
+          "n_models": 9
+        }
+      ]
+    },
+    "drop-factuality": {
+      "mean_rho": 0.7518256483166876,
+      "std_rho_across_folds": 0.09540679826922176,
+      "per_fold": [
+        {
+          "held_out_benchmark": "GSM8K",
+          "train_metric": "frs_pct",
+          "test_target": "frs_pct",
+          "spearman_r": 0.8833333333333333,
+          "p_parametric": 0.0015905004234978701,
+          "p_permutation": 0.001,
+          "n_models": 9
+        },
+        {
+          "held_out_benchmark": "MATH500",
+          "train_metric": "frs_pct",
+          "test_target": "frs_pct",
+          "spearman_r": 0.7833333333333333,
+          "p_parametric": 0.012519873019449882,
+          "p_permutation": 0.0065,
+          "n_models": 9
+        },
+        {
+          "held_out_benchmark": "SVAMP",
+          "train_metric": "frs_pct",
+          "test_target": "frs_pct",
+          "spearman_r": 0.7333333333333334,
+          "p_parametric": 0.02455415007146968,
+          "p_permutation": 0.018,
+          "n_models": 9
+        },
+        {
+          "held_out_benchmark": "AQuA",
+          "train_metric": "frs_pct",
+          "test_target": "frs_pct",
+          "spearman_r": 0.8166666666666667,
+          "p_parametric": 0.007224785246358786,
+          "p_permutation": 0.0055,
+          "n_models": 9
+        },
+        {
+          "held_out_benchmark": "GPQA",
+          "train_metric": "frs_pct",
+          "test_target": "frs_pct",
+          "spearman_r": 0.6276205565667923,
+          "p_parametric": 0.07036502278970762,
+          "p_permutation": 0.036,
+          "n_models": 9
+        },
+        {
+          "held_out_benchmark": "CSQA",
+          "train_metric": "frs_pct",
+          "test_target": "frs_pct",
+          "spearman_r": 0.6666666666666667,
+          "p_parametric": 0.0498672305688851,
+          "p_permutation": 0.0315,
+          "n_models": 9
+        }
+      ]
+    },
+    "only-faithfulness": {
+      "mean_rho": 0.6188698585106415,
+      "std_rho_across_folds": 0.2034746593334765,
+      "per_fold": [
+        {
+          "held_out_benchmark": "GSM8K",
+          "train_metric": "frs_pct",
+          "test_target": "frs_pct",
+          "spearman_r": 0.9,
+          "p_parametric": 0.0009430623223403293,
+          "p_permutation": 0.0005,
+          "n_models": 9
+        },
+        {
+          "held_out_benchmark": "MATH500",
+          "train_metric": "frs_pct",
+          "test_target": "frs_pct",
+          "spearman_r": 0.5833333333333334,
+          "p_parametric": 0.09918581647988323,
+          "p_permutation": 0.0535,
+          "n_models": 9
+        },
+        {
+          "held_out_benchmark": "SVAMP",
+          "train_metric": "frs_pct",
+          "test_target": "frs_pct",
+          "spearman_r": 0.75,
+          "p_parametric": 0.019942126131992522,
+          "p_permutation": 0.0115,
+          "n_models": 9
+        },
+        {
+          "held_out_benchmark": "AQuA",
+          "train_metric": "frs_pct",
+          "test_target": "frs_pct",
+          "spearman_r": 0.6950150912113306,
+          "p_parametric": 0.03768829245270154,
+          "p_permutation": 0.0205,
+          "n_models": 9
+        },
+        {
+          "held_out_benchmark": "GPQA",
+          "train_metric": "frs_pct",
+          "test_target": "frs_pct",
+          "spearman_r": 0.41666666666666663,
+          "p_parametric": 0.26458604674749614,
+          "p_permutation": 0.122,
+          "n_models": 9
+        },
+        {
+          "held_out_benchmark": "CSQA",
+          "train_metric": "frs_pct",
+          "test_target": "frs_pct",
+          "spearman_r": 0.36820405985251814,
+          "p_parametric": 0.3295603649720029,
+          "p_permutation": 0.16,
+          "n_models": 9
+        }
+      ]
+    },
+    "only-coherence": {
+      "mean_rho": 0.8222222222222223,
+      "std_rho_across_folds": 0.16386534670836247,
+      "per_fold": [
+        {
+          "held_out_benchmark": "GSM8K",
+          "train_metric": "frs_pct",
+          "test_target": "frs_pct",
+          "spearman_r": 0.9333333333333332,
+          "p_parametric": 0.00023589981215941676,
+          "p_permutation": 0.001,
+          "n_models": 9
+        },
+        {
+          "held_out_benchmark": "MATH500",
+          "train_metric": "frs_pct",
+          "test_target": "frs_pct",
+          "spearman_r": 0.9166666666666666,
+          "p_parametric": 0.0005066190663052084,
+          "p_permutation": 0.0,
+          "n_models": 9
+        },
+        {
+          "held_out_benchmark": "SVAMP",
+          "train_metric": "frs_pct",
+          "test_target": "frs_pct",
+          "spearman_r": 0.9,
+          "p_parametric": 0.0009430623223403293,
+          "p_permutation": 0.0015,
+          "n_models": 9
+        },
+        {
+          "held_out_benchmark": "AQuA",
+          "train_metric": "frs_pct",
+          "test_target": "frs_pct",
+          "spearman_r": 0.9333333333333332,
+          "p_parametric": 0.00023589981215941676,
+          "p_permutation": 0.0,
+          "n_models": 9
+        },
+        {
+          "held_out_benchmark": "GPQA",
+          "train_metric": "frs_pct",
+          "test_target": "frs_pct",
+          "spearman_r": 0.5333333333333333,
+          "p_parametric": 0.13922686754397814,
+          "p_permutation": 0.0665,
+          "n_models": 9
+        },
+        {
+          "held_out_benchmark": "CSQA",
+          "train_metric": "frs_pct",
+          "test_target": "frs_pct",
+          "spearman_r": 0.7166666666666667,
+          "p_parametric": 0.029818035695845287,
+          "p_permutation": 0.016,
+          "n_models": 9
+        }
+      ]
+    },
+    "only-utility": {
+      "mean_rho": 0.7432506475248166,
+      "std_rho_across_folds": 0.15132578125878104,
+      "per_fold": [
+        {
+          "held_out_benchmark": "GSM8K",
+          "train_metric": "frs_pct",
+          "test_target": "frs_pct",
+          "spearman_r": 0.9288784237188525,
+          "p_parametric": 0.0002945257641989606,
+          "p_permutation": 0.001,
+          "n_models": 9
+        },
+        {
+          "held_out_benchmark": "MATH500",
+          "train_metric": "frs_pct",
+          "test_target": "frs_pct",
+          "spearman_r": 0.7833333333333333,
+          "p_parametric": 0.012519873019449882,
+          "p_permutation": 0.0065,
+          "n_models": 9
+        },
+        {
+          "held_out_benchmark": "SVAMP",
+          "train_metric": "frs_pct",
+          "test_target": "frs_pct",
+          "spearman_r": 0.7949860383179369,
+          "p_parametric": 0.010444517709683916,
+          "p_permutation": 0.006,
+          "n_models": 9
+        },
+        {
+          "held_out_benchmark": "AQuA",
+          "train_metric": "frs_pct",
+          "test_target": "frs_pct",
+          "spearman_r": 0.8333333333333333,
+          "p_parametric": 0.00526569102916175,
+          "p_permutation": 0.005,
+          "n_models": 9
+        },
+        {
+          "held_out_benchmark": "GPQA",
+          "train_metric": "frs_pct",
+          "test_target": "frs_pct",
+          "spearman_r": 0.5666666666666667,
+          "p_parametric": 0.11163298761149114,
+          "p_permutation": 0.0575,
+          "n_models": 9
+        },
+        {
+          "held_out_benchmark": "CSQA",
+          "train_metric": "frs_pct",
+          "test_target": "frs_pct",
+          "spearman_r": 0.5523060897787772,
+          "p_parametric": 0.12307662993423867,
+          "p_permutation": 0.06,
+          "n_models": 9
+        }
+      ]
+    },
+    "only-factuality": {
+      "mean_rho": 0.7345096720588712,
+      "std_rho_across_folds": 0.20963792121713573,
+      "per_fold": [
+        {
+          "held_out_benchmark": "GSM8K",
+          "train_metric": "frs_pct",
+          "test_target": "frs_pct",
+          "spearman_r": 0.8451956828432803,
+          "p_parametric": 0.004116597419302816,
+          "p_permutation": 0.003,
+          "n_models": 9
+        },
+        {
+          "held_out_benchmark": "MATH500",
+          "train_metric": "frs_pct",
+          "test_target": "frs_pct",
+          "spearman_r": 0.6833333333333333,
+          "p_parametric": 0.04244227208707231,
+          "p_permutation": 0.0235,
+          "n_models": 9
+        },
+        {
+          "held_out_benchmark": "SVAMP",
+          "train_metric": "frs_pct",
+          "test_target": "frs_pct",
+          "spearman_r": 0.8451956828432803,
+          "p_parametric": 0.004116597419302816,
+          "p_permutation": 0.002,
+          "n_models": 9
+        },
+        {
+          "held_out_benchmark": "AQuA",
+          "train_metric": "frs_pct",
+          "test_target": "frs_pct",
+          "spearman_r": 0.9,
+          "p_parametric": 0.0009430623223403293,
+          "p_permutation": 0.0005,
+          "n_models": 9
+        },
+        {
+          "held_out_benchmark": "GPQA",
+          "train_metric": "frs_pct",
+          "test_target": "frs_pct",
+          "spearman_r": 0.7999999999999999,
+          "p_parametric": 0.00962792472537983,
+          "p_permutation": 0.005,
+          "n_models": 9
+        },
+        {
+          "held_out_benchmark": "CSQA",
+          "train_metric": "frs_pct",
+          "test_target": "frs_pct",
+          "spearman_r": 0.33333333333333337,
+          "p_parametric": 0.38071318167686347,
+          "p_permutation": 0.1905,
+          "n_models": 9
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,143 @@
+==========================================================================================
+CONVERGENCE ANALYSIS: REASONING SCORE vs ACCURACY
+Prompt variation: CoT Zero-shot (temp=0.7, top_p=0.95)
+Generated: 2026-02-09 21:10:45
+==========================================================================================
+
+1. OVERVIEW
+--------------------------------------------------
+Total model-dataset combinations: 54
+Models (9): DeepSeek-R1-Distill-Qwen-1.5B, DeepSeek-R1-Distill-Qwen-7B, Llama-3.1-8B-Instruct, Phi-4-reasoning, Qwen2.5-7B-Instruct, Qwen2.5-Math-7B, Qwen3-4B-Thinking-2507, gemma-7b, phi-4
+Datasets (6): aqua, commonsense_qa, gpqa, gsm8k, math500, svamp
+Samples per combo: 236 - 1319 (median 723)
+
+2. AGGREGATE CONVERGENCE (median across all combos)
+--------------------------------------------------
+     N |   Acc Std |  Reas Std | Acc RelErr | Reas RelErr |  Acc CI95 | Reas CI95 |  Speedup
+------------------------------------------------------------------------------------------
+    10 |    14.48% |     6.65% |     22.78% |       6.31% |    28.39% |    13.03% |    2.18x
+    25 |     8.92% |     4.10% |     14.14% |       3.91% |    17.49% |     8.03% |    2.18x
+    50 |     6.20% |     2.88% |      9.71% |       2.74% |    12.15% |     5.64% |    2.15x
+    75 |     4.87% |     2.24% |      7.85% |       2.15% |     9.55% |     4.38% |    2.18x
+   100 |     4.07% |     1.88% |      6.27% |       1.79% |     7.98% |     3.68% |    2.17x
+   150 |     3.12% |     1.42% |      4.40% |       1.35% |     6.12% |     2.79% |    2.19x
+   200 |     2.56% |     1.14% |      3.43% |       1.13% |     5.02% |     2.23% |    2.25x
+   300 |     1.85% |     0.84% |      2.65% |       0.87% |     3.63% |     1.64% |    2.21x
+   500 |     1.47% |     0.61% |      1.54% |       0.52% |     2.88% |     1.19% |    2.43x
+
+  Speedup = Accuracy Std / Reasoning Std (higher = reasoning converges faster)
+
+3. REASONING SUB-SCORE CONVERGENCE (median std in pp)
+--------------------------------------------------
+     N |   overall |  faithful |   utility |  coherenc |  factuali
+------------------------------------------------------------------
+    10 |     6.65% |     7.90% |     7.14% |     6.58% |     6.59%
+    25 |     4.10% |     4.90% |     4.41% |     3.98% |     4.06%
+    50 |     2.88% |     3.44% |     3.07% |     2.81% |     2.76%
+    75 |     2.24% |     2.62% |     2.43% |     2.22% |     2.26%
+   100 |     1.88% |     2.19% |     2.00% |     1.86% |     1.86%
+   150 |     1.42% |     1.66% |     1.50% |     1.38% |     1.44%
+   200 |     1.14% |     1.36% |     1.19% |     1.10% |     1.14%
+   300 |     0.84% |     1.01% |     0.91% |     0.83% |     0.80%
+   500 |     0.61% |     0.76% |     0.63% |     0.60% |     0.64%
+
+4. SAMPLES TO CONVERGE (95% CI half-width < 2pp)
+--------------------------------------------------
+Model                               Dataset              N(Acc)  N(Reas)  Speedup
+--------------------------------------------------------------------------------
+DeepSeek-R1-Distill-Qwen-1.5B       aqua                   >max      200      N/A
+DeepSeek-R1-Distill-Qwen-1.5B       commonsense_qa         >max      500      N/A
+DeepSeek-R1-Distill-Qwen-1.5B       gpqa                   >max      300      N/A
+DeepSeek-R1-Distill-Qwen-1.5B       gsm8k                  >max      500      N/A
+DeepSeek-R1-Distill-Qwen-1.5B       math500                >max      300      N/A
+DeepSeek-R1-Distill-Qwen-1.5B       svamp                  >max      500      N/A
+DeepSeek-R1-Distill-Qwen-7B         aqua                   >max      200      N/A
+DeepSeek-R1-Distill-Qwen-7B         commonsense_qa         >max      300      N/A
+DeepSeek-R1-Distill-Qwen-7B         gpqa                   >max      300      N/A
+DeepSeek-R1-Distill-Qwen-7B         gsm8k                   500      200     2.5x
+DeepSeek-R1-Distill-Qwen-7B         math500                 500      200     2.5x
+DeepSeek-R1-Distill-Qwen-7B         svamp                   500      300     1.7x
+Llama-3.1-8B-Instruct               aqua                   >max      200      N/A
+Llama-3.1-8B-Instruct               commonsense_qa         >max      500      N/A
+Llama-3.1-8B-Instruct               gpqa                   >max      300      N/A
+Llama-3.1-8B-Instruct               gsm8k                  >max      500      N/A
+Llama-3.1-8B-Instruct               math500                >max     >max      N/A
+Llama-3.1-8B-Instruct               svamp                  >max      500      N/A
+Phi-4-reasoning                     aqua                   >max      150      N/A
+Phi-4-reasoning                     commonsense_qa         >max      500      N/A
+Phi-4-reasoning                     gpqa                   >max      300      N/A
+Phi-4-reasoning                     gsm8k                   500      150     3.3x
+Phi-4-reasoning                     math500                >max      200      N/A
+Phi-4-reasoning                     svamp                   500      300     1.7x
+Qwen2.5-7B-Instruct                 aqua                   >max      200      N/A
+Qwen2.5-7B-Instruct                 commonsense_qa         >max      200      N/A
+Qwen2.5-7B-Instruct                 gpqa                   >max      300      N/A
+Qwen2.5-7B-Instruct                 gsm8k                  >max      300      N/A
+Qwen2.5-7B-Instruct                 math500                 500      300     1.7x
+Qwen2.5-7B-Instruct                 svamp                  >max      300      N/A
+Qwen2.5-Math-7B                     aqua                   >max      200      N/A
+Qwen2.5-Math-7B                     commonsense_qa         >max      500      N/A
+Qwen2.5-Math-7B                     gpqa                   >max      300      N/A
+Qwen2.5-Math-7B                     gsm8k                  >max      300      N/A
+Qwen2.5-Math-7B                     math500                 500      200     2.5x
+Qwen2.5-Math-7B                     svamp                  >max      300      N/A
+Qwen3-4B-Thinking-2507              aqua                   >max      200      N/A
+Qwen3-4B-Thinking-2507              commonsense_qa         >max      300      N/A
+Qwen3-4B-Thinking-2507              gpqa                   >max      300      N/A
+Qwen3-4B-Thinking-2507              gsm8k                  >max      300      N/A
+Qwen3-4B-Thinking-2507              math500                 500      300     1.7x
+Qwen3-4B-Thinking-2507              svamp                  >max      300      N/A
+gemma-7b                            aqua                   >max      200      N/A
+gemma-7b                            commonsense_qa         >max      500      N/A
+gemma-7b                            gpqa                   >max      300      N/A
+gemma-7b                            gsm8k                  >max     >max      N/A
+gemma-7b                            math500                >max      300      N/A
+gemma-7b                            svamp                  >max     >max      N/A
+phi-4                               aqua                   >max      200      N/A
+phi-4                               commonsense_qa         >max      300      N/A
+phi-4                               gpqa                   >max      200      N/A
+phi-4                               gsm8k                  >max       50      N/A
+phi-4                               math500                >max      200      N/A
+phi-4                               svamp                  >max      150      N/A
+
+Average speedup: 2.19x (reasoning converges 2.2x faster)
+Median speedup: 2.08x
+Range: 1.7x - 3.3x
+
+5. PER-DATASET SUMMARY
+--------------------------------------------------
+
+  AQUA (9 models, ~254 samples):
+    Accuracy: does not converge within tested range for any model
+    Reasoning converges at: median N=200, mean N=194
+
+  COMMONSENSE_QA (9 models, ~1195 samples):
+    Accuracy: does not converge within tested range for any model
+    Reasoning converges at: median N=500, mean N=400
+
+  GPQA (9 models, ~436 samples):
+    Accuracy: does not converge within tested range for any model
+    Reasoning converges at: median N=300, mean N=289
+
+  GSM8K (9 models, ~1317 samples):
+    Accuracy converges at: median N=500, mean N=500
+    Reasoning converges at: median N=300, mean N=288
+
+  MATH500 (9 models, ~497 samples):
+    Accuracy converges at: median N=500, mean N=500
+    Reasoning converges at: median N=250, mean N=250
+
+  SVAMP (9 models, ~994 samples):
+    Accuracy converges at: median N=500, mean N=500
+    Reasoning converges at: median N=300, mean N=331
+
+6. KEY FINDINGS
+--------------------------------------------------
+Reasoning converges strictly faster in 8/8 combos (100%)
+Reasoning and accuracy converge at same N in 0/8 combos
+
+Largest speedup: Phi-4-reasoning on gsm8k (3.3x -- accuracy needs N=500, reasoning needs N=150)
+
+==========================================================================================
+END OF REPORT
+==========================================================================================

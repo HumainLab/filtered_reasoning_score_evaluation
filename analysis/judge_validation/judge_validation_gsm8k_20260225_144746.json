@@ -1,0 +1,4626 @@
+{
+  "timestamp": "2026-02-25T14:47:46.060965",
+  "config": {
+    "dataset": "gsm8k",
+    "samples_per_model": 30,
+    "seed": 42,
+    "judge_model": "gpt-4o",
+    "baseline_model": "gpt-4o-mini"
+  },
+  "total_api_calls": 270,
+  "elapsed_s": 51.4,
+  "pooled_agreement": {
+    "faithfulness": {
+      "n": 270,
+      "mean_4o_mini": 4.444,
+      "mean_4o": 4.267,
+      "mean_abs_diff": 0.378,
+      "exact_match_rate": 0.741,
+      "within_1_rate": 0.904,
+      "pearson_r": 0.777
+    },
+    "utility": {
+      "n": 270,
+      "mean_4o_mini": 4.537,
+      "mean_4o": 4.059,
+      "mean_abs_diff": 0.604,
+      "exact_match_rate": 0.644,
+      "within_1_rate": 0.819,
+      "pearson_r": 0.65
+    },
+    "coherence": {
+      "n": 270,
+      "mean_4o_mini": 4.556,
+      "mean_4o": 4.204,
+      "mean_abs_diff": 0.463,
+      "exact_match_rate": 0.715,
+      "within_1_rate": 0.878,
+      "pearson_r": 0.712
+    },
+    "factuality": {
+      "n": 270,
+      "mean_4o_mini": 4.593,
+      "mean_4o": 4.663,
+      "mean_abs_diff": 0.226,
+      "exact_match_rate": 0.859,
+      "within_1_rate": 0.937,
+      "pearson_r": 0.758
+    },
+    "overall": {
+      "n": 1080,
+      "mean_abs_diff": 0.418,
+      "exact_match_rate": 0.74,
+      "within_1_rate": 0.884,
+      "pearson_r": 0.706
+    }
+  },
+  "rank_agreement": {
+    "rank_mini": [
+      "Phi-4",
+      "DS-R1-7B",
+      "Qwen3-4B",
+      "Phi-4-Reasoning",
+      "Qwen2.5-Math-7B",
+      "Qwen2.5-7B",
+      "LLaMA-3.1-8B",
+      "DS-R1-1.5B",
+      "Gemma-7B"
+    ],
+    "rank_4o": [
+      "DS-R1-7B",
+      "Phi-4",
+      "Qwen2.5-Math-7B",
+      "Phi-4-Reasoning",
+      "Qwen2.5-7B",
+      "LLaMA-3.1-8B",
+      "Qwen3-4B",
+      "DS-R1-1.5B",
+      "Gemma-7B"
+    ],
+    "spearman_rho": 0.8,
+    "rank_changes": {
+      "DS-R1-1.5B": 0,
+      "DS-R1-7B": 1,
+      "Gemma-7B": 0,
+      "LLaMA-3.1-8B": 1,
+      "Phi-4": -1,
+      "Phi-4-Reasoning": 0,
+      "Qwen2.5-7B": 1,
+      "Qwen2.5-Math-7B": 2,
+      "Qwen3-4B": -4
+    }
+  },
+  "per_model": {
+    "DS-R1-1.5B": {
+      "model_dir": "DeepSeek-R1-Distill-Qwen-1.5B",
+      "n_samples": 30,
+      "agreement": {
+        "faithfulness": {
+          "n": 30,
+          "mean_4o_mini": 3.933,
+          "mean_4o": 3.233,
+          "mean_abs_diff": 0.967,
+          "exact_match_rate": 0.367,
+          "within_1_rate": 0.767,
+          "pearson_r": 0.628
+        },
+        "utility": {
+          "n": 30,
+          "mean_4o_mini": 4.267,
+          "mean_4o": 3.167,
+          "mean_abs_diff": 1.167,
+          "exact_match_rate": 0.333,
+          "within_1_rate": 0.6,
+          "pearson_r": 0.621
+        },
+        "coherence": {
+          "n": 30,
+          "mean_4o_mini": 4.067,
+          "mean_4o": 3.067,
+          "mean_abs_diff": 1.067,
+          "exact_match_rate": 0.367,
+          "within_1_rate": 0.667,
+          "pearson_r": 0.684
+        },
+        "factuality": {
+          "n": 30,
+          "mean_4o_mini": 4.4,
+          "mean_4o": 4.4,
+          "mean_abs_diff": 0.333,
+          "exact_match_rate": 0.733,
+          "within_1_rate": 0.933,
+          "pearson_r": 0.777
+        },
+        "overall": {
+          "n": 120,
+          "mean_abs_diff": 0.883,
+          "exact_match_rate": 0.45,
+          "within_1_rate": 0.742,
+          "pearson_r": 0.652
+        }
+      },
+      "sample_pairs": [
+        {
+          "idx": 1309,
+          "mini": {
+            "faithfulness": 2,
+            "utility": 3,
+            "coherence": 3,
+            "factuality": 3
+          },
+          "gpt4o": {
+            "faithfulness": 3,
+            "utility": 2,
+            "coherence": 3,
+            "factuality": 4
+          }
+        },
+        {
+          "idx": 228,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 4,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 2,
+            "utility": 2,
+            "coherence": 2,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 51,
+          "mini": {
+            "faithfulness": 3,
+            "utility": 4,
+            "coherence": 4,
+            "factuality": 4
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 563,
+          "mini": {
+            "faithfulness": 3,
+            "utility": 4,
+            "coherence": 3,
+            "factuality": 4
+          },
+          "gpt4o": {
+            "faithfulness": 2,
+            "utility": 2,
+            "coherence": 2,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 501,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 3,
+            "utility": 3,
+            "coherence": 2,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 457,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 285,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 209,
+          "mini": {
+            "faithfulness": 2,
+            "utility": 3,
+            "coherence": 4,
+            "factuality": 3
+          },
+          "gpt4o": {
+            "faithfulness": 3,
+            "utility": 3,
+            "coherence": 4,
+            "factuality": 3
+          }
+        },
+        {
+          "idx": 1116,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 178,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 1209,
+          "mini": {
+            "faithfulness": 2,
+            "utility": 3,
+            "coherence": 4,
+            "factuality": 3
+          },
+          "gpt4o": {
+            "faithfulness": 2,
+            "utility": 3,
+            "coherence": 3,
+            "factuality": 4
+          }
+        },
+        {
+          "idx": 864,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 65,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 4,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 2,
+            "utility": 2,
+            "coherence": 2,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 61,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 191,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 4,
+            "utility": 4,
+            "coherence": 3,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 447,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 3,
+            "utility": 3,
+            "coherence": 2,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 476,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 1034,
+          "mini": {
+            "faithfulness": 3,
+            "utility": 4,
+            "coherence": 3,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 2,
+            "utility": 2,
+            "coherence": 1,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 1232,
+          "mini": {
+            "faithfulness": 3,
+            "utility": 4,
+            "coherence": 3,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 2,
+            "utility": 2,
+            "coherence": 1,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 54,
+          "mini": {
+            "faithfulness": 2,
+            "utility": 3,
+            "coherence": 4,
+            "factuality": 2
+          },
+          "gpt4o": {
+            "faithfulness": 2,
+            "utility": 2,
+            "coherence": 3,
+            "factuality": 3
+          }
+        },
+        {
+          "idx": 1149,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 407,
+          "mini": {
+            "faithfulness": 3,
+            "utility": 3,
+            "coherence": 2,
+            "factuality": 4
+          },
+          "gpt4o": {
+            "faithfulness": 2,
+            "utility": 2,
+            "coherence": 2,
+            "factuality": 4
+          }
+        },
+        {
+          "idx": 859,
+          "mini": {
+            "faithfulness": 3,
+            "utility": 4,
+            "coherence": 3,
+            "factuality": 4
+          },
+          "gpt4o": {
+            "faithfulness": 2,
+            "utility": 2,
+            "coherence": 2,
+            "factuality": 4
+          }
+        },
+        {
+          "idx": 451,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 4,
+            "coherence": 4,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 919,
+          "mini": {
+            "faithfulness": 2,
+            "utility": 3,
+            "coherence": 2,
+            "factuality": 3
+          },
+          "gpt4o": {
+            "faithfulness": 1,
+            "utility": 1,
+            "coherence": 1,
+            "factuality": 1
+          }
+        },
+        {
+          "idx": 1206,
+          "mini": {
+            "faithfulness": 2,
+            "utility": 2,
+            "coherence": 2,
+            "factuality": 3
+          },
+          "gpt4o": {
+            "faithfulness": 1,
+            "utility": 1,
+            "coherence": 1,
+            "factuality": 1
+          }
+        },
+        {
+          "idx": 569,
+          "mini": {
+            "faithfulness": 3,
+            "utility": 3,
+            "coherence": 3,
+            "factuality": 4
+          },
+          "gpt4o": {
+            "faithfulness": 2,
+            "utility": 2,
+            "coherence": 2,
+            "factuality": 4
+          }
+        },
+        {
+          "idx": 13,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 4,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 2,
+            "utility": 2,
+            "coherence": 2,
+            "factuality": 4
+          }
+        },
+        {
+          "idx": 326,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 4,
+            "utility": 3,
+            "coherence": 3,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 865,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 3,
+            "utility": 3,
+            "coherence": 2,
+            "factuality": 5
+          }
+        }
+      ]
+    },
+    "DS-R1-7B": {
+      "model_dir": "DeepSeek-R1-Distill-Qwen-7B",
+      "n_samples": 30,
+      "agreement": {
+        "faithfulness": {
+          "n": 30,
+          "mean_4o_mini": 4.767,
+          "mean_4o": 4.767,
+          "mean_abs_diff": 0.067,
+          "exact_match_rate": 0.933,
+          "within_1_rate": 1.0,
+          "pearson_r": 0.943
+        },
+        "utility": {
+          "n": 30,
+          "mean_4o_mini": 4.833,
+          "mean_4o": 4.767,
+          "mean_abs_diff": 0.133,
+          "exact_match_rate": 0.867,
+          "within_1_rate": 1.0,
+          "pearson_r": 0.91
+        },
+        "coherence": {
+          "n": 30,
+          "mean_4o_mini": 4.9,
+          "mean_4o": 4.8,
+          "mean_abs_diff": 0.1,
+          "exact_match_rate": 0.9,
+          "within_1_rate": 1.0,
+          "pearson_r": 0.903
+        },
+        "factuality": {
+          "n": 30,
+          "mean_4o_mini": 4.833,
+          "mean_4o": 4.9,
+          "mean_abs_diff": 0.067,
+          "exact_match_rate": 0.933,
+          "within_1_rate": 1.0,
+          "pearson_r": 0.992
+        },
+        "overall": {
+          "n": 120,
+          "mean_abs_diff": 0.092,
+          "exact_match_rate": 0.908,
+          "within_1_rate": 1.0,
+          "pearson_r": 0.873
+        }
+      },
+      "sample_pairs": [
+        {
+          "idx": 1309,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 228,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 51,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 563,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 501,
+          "mini": {
+            "faithfulness": 2,
+            "utility": 3,
+            "coherence": 4,
+            "factuality": 3
+          },
+          "gpt4o": {
+            "faithfulness": 3,
+            "utility": 2,
+            "coherence": 3,
+            "factuality": 4
+          }
+        },
+        {
+          "idx": 457,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 285,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 209,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 1116,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 178,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 1209,
+          "mini": {
+            "faithfulness": 4,
+            "utility": 4,
+            "coherence": 4,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 4,
+            "utility": 5,
+            "coherence": 4,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 864,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 65,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 61,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 4,
+            "utility": 4,
+            "coherence": 4,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 191,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 447,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 476,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 1034,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 1232,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 54,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 1149,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 407,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 859,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 451,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 919,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 1206,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 569,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 13,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 326,
+          "mini": {
+            "faithfulness": 2,
+            "utility": 3,
+            "coherence": 4,
+            "factuality": 2
+          },
+          "gpt4o": {
+            "faithfulness": 2,
+            "utility": 2,
+            "coherence": 3,
+            "factuality": 3
+          }
+        },
+        {
+          "idx": 865,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        }
+      ]
+    },
+    "LLaMA-3.1-8B": {
+      "model_dir": "Llama-3.1-8B-Instruct",
+      "n_samples": 30,
+      "agreement": {
+        "faithfulness": {
+          "n": 30,
+          "mean_4o_mini": 4.4,
+          "mean_4o": 4.333,
+          "mean_abs_diff": 0.333,
+          "exact_match_rate": 0.767,
+          "within_1_rate": 0.9,
+          "pearson_r": 0.78
+        },
+        "utility": {
+          "n": 30,
+          "mean_4o_mini": 4.533,
+          "mean_4o": 4.033,
+          "mean_abs_diff": 0.7,
+          "exact_match_rate": 0.567,
+          "within_1_rate": 0.8,
+          "pearson_r": 0.574
+        },
+        "coherence": {
+          "n": 30,
+          "mean_4o_mini": 4.6,
+          "mean_4o": 4.267,
+          "mean_abs_diff": 0.467,
+          "exact_match_rate": 0.7,
+          "within_1_rate": 0.9,
+          "pearson_r": 0.622
+        },
+        "factuality": {
+          "n": 30,
+          "mean_4o_mini": 4.533,
+          "mean_4o": 4.633,
+          "mean_abs_diff": 0.233,
+          "exact_match_rate": 0.867,
+          "within_1_rate": 0.933,
+          "pearson_r": 0.73
+        },
+        "overall": {
+          "n": 120,
+          "mean_abs_diff": 0.433,
+          "exact_match_rate": 0.725,
+          "within_1_rate": 0.883,
+          "pearson_r": 0.65
+        }
+      },
+      "sample_pairs": [
+        {
+          "idx": 1309,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 4,
+            "utility": 4,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 228,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 51,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 563,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 501,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 457,
+          "mini": {
+            "faithfulness": 3,
+            "utility": 4,
+            "coherence": 3,
+            "factuality": 4
+          },
+          "gpt4o": {
+            "faithfulness": 4,
+            "utility": 3,
+            "coherence": 3,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 285,
+          "mini": {
+            "faithfulness": 2,
+            "utility": 3,
+            "coherence": 4,
+            "factuality": 2
+          },
+          "gpt4o": {
+            "faithfulness": 4,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 209,
+          "mini": {
+            "faithfulness": 2,
+            "utility": 2,
+            "coherence": 3,
+            "factuality": 2
+          },
+          "gpt4o": {
+            "faithfulness": 2,
+            "utility": 2,
+            "coherence": 3,
+            "factuality": 2
+          }
+        },
+        {
+          "idx": 1116,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 178,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 3,
+            "utility": 3,
+            "coherence": 3,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 1209,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 2,
+            "coherence": 2,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 864,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 65,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 61,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 191,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 3,
+            "utility": 4,
+            "coherence": 4,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 447,
+          "mini": {
+            "faithfulness": 2,
+            "utility": 3,
+            "coherence": 3,
+            "factuality": 2
+          },
+          "gpt4o": {
+            "faithfulness": 2,
+            "utility": 2,
+            "coherence": 3,
+            "factuality": 2
+          }
+        },
+        {
+          "idx": 476,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 3,
+            "coherence": 4,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 1034,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 1232,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 54,
+          "mini": {
+            "faithfulness": 2,
+            "utility": 3,
+            "coherence": 4,
+            "factuality": 3
+          },
+          "gpt4o": {
+            "faithfulness": 2,
+            "utility": 2,
+            "coherence": 3,
+            "factuality": 3
+          }
+        },
+        {
+          "idx": 1149,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 407,
+          "mini": {
+            "faithfulness": 3,
+            "utility": 3,
+            "coherence": 4,
+            "factuality": 4
+          },
+          "gpt4o": {
+            "faithfulness": 4,
+            "utility": 4,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 859,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 451,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 919,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 1206,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 569,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 13,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 4,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 326,
+          "mini": {
+            "faithfulness": 3,
+            "utility": 3,
+            "coherence": 2,
+            "factuality": 4
+          },
+          "gpt4o": {
+            "faithfulness": 2,
+            "utility": 1,
+            "coherence": 1,
+            "factuality": 2
+          }
+        },
+        {
+          "idx": 865,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 2,
+            "coherence": 2,
+            "factuality": 5
+          }
+        }
+      ]
+    },
+    "Qwen2.5-7B": {
+      "model_dir": "Qwen2.5-7B-Instruct",
+      "n_samples": 30,
+      "agreement": {
+        "faithfulness": {
+          "n": 30,
+          "mean_4o_mini": 4.633,
+          "mean_4o": 4.6,
+          "mean_abs_diff": 0.367,
+          "exact_match_rate": 0.7,
+          "within_1_rate": 0.933,
+          "pearson_r": 0.76
+        },
+        "utility": {
+          "n": 30,
+          "mean_4o_mini": 4.7,
+          "mean_4o": 4.067,
+          "mean_abs_diff": 0.833,
+          "exact_match_rate": 0.533,
+          "within_1_rate": 0.7,
+          "pearson_r": 0.282
+        },
+        "coherence": {
+          "n": 30,
+          "mean_4o_mini": 4.633,
+          "mean_4o": 4.4,
+          "mean_abs_diff": 0.567,
+          "exact_match_rate": 0.6,
+          "within_1_rate": 0.867,
+          "pearson_r": 0.33
+        },
+        "factuality": {
+          "n": 30,
+          "mean_4o_mini": 4.733,
+          "mean_4o": 4.933,
+          "mean_abs_diff": 0.2,
+          "exact_match_rate": 0.9,
+          "within_1_rate": 0.933,
+          "pearson_r": 0.969
+        },
+        "overall": {
+          "n": 120,
+          "mean_abs_diff": 0.492,
+          "exact_match_rate": 0.683,
+          "within_1_rate": 0.858,
+          "pearson_r": 0.404
+        }
+      },
+      "sample_pairs": [
+        {
+          "idx": 1309,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 228,
+          "mini": {
+            "faithfulness": 1,
+            "utility": 2,
+            "coherence": 3,
+            "factuality": 2
+          },
+          "gpt4o": {
+            "faithfulness": 3,
+            "utility": 3,
+            "coherence": 4,
+            "factuality": 4
+          }
+        },
+        {
+          "idx": 51,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 563,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 4,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 2,
+            "coherence": 2,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 501,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 4,
+            "utility": 4,
+            "coherence": 4,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 457,
+          "mini": {
+            "faithfulness": 3,
+            "utility": 4,
+            "coherence": 4,
+            "factuality": 4
+          },
+          "gpt4o": {
+            "faithfulness": 4,
+            "utility": 4,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 285,
+          "mini": {
+            "faithfulness": 1,
+            "utility": 1,
+            "coherence": 2,
+            "factuality": 1
+          },
+          "gpt4o": {
+            "faithfulness": 3,
+            "utility": 3,
+            "coherence": 4,
+            "factuality": 4
+          }
+        },
+        {
+          "idx": 209,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 4,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 3,
+            "coherence": 3,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 1116,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 178,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 4,
+            "utility": 3,
+            "coherence": 4,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 1209,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 4,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 864,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 65,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 61,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 4,
+            "utility": 3,
+            "coherence": 3,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 191,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 447,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 476,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 4,
+            "utility": 2,
+            "coherence": 2,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 1034,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 4,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 1232,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 54,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 1149,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 4,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 4,
+            "utility": 3,
+            "coherence": 4,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 407,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 859,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 4,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 451,
+          "mini": {
+            "faithfulness": 4,
+            "utility": 4,
+            "coherence": 4,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 4,
+            "utility": 4,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 919,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 3,
+            "coherence": 4,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 1206,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 569,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 4,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 4,
+            "utility": 3,
+            "coherence": 3,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 13,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 326,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 865,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        }
+      ]
+    },
+    "Qwen2.5-Math-7B": {
+      "model_dir": "Qwen2.5-Math-7B",
+      "n_samples": 30,
+      "agreement": {
+        "faithfulness": {
+          "n": 30,
+          "mean_4o_mini": 4.667,
+          "mean_4o": 4.733,
+          "mean_abs_diff": 0.133,
+          "exact_match_rate": 0.867,
+          "within_1_rate": 1.0,
+          "pearson_r": 0.919
+        },
+        "utility": {
+          "n": 30,
+          "mean_4o_mini": 4.767,
+          "mean_4o": 4.567,
+          "mean_abs_diff": 0.267,
+          "exact_match_rate": 0.833,
+          "within_1_rate": 0.9,
+          "pearson_r": 0.73
+        },
+        "coherence": {
+          "n": 30,
+          "mean_4o_mini": 4.8,
+          "mean_4o": 4.8,
+          "mean_abs_diff": 0.067,
+          "exact_match_rate": 0.933,
+          "within_1_rate": 1.0,
+          "pearson_r": 0.941
+        },
+        "factuality": {
+          "n": 30,
+          "mean_4o_mini": 4.767,
+          "mean_4o": 4.867,
+          "mean_abs_diff": 0.233,
+          "exact_match_rate": 0.9,
+          "within_1_rate": 0.9,
+          "pearson_r": 0.458
+        },
+        "overall": {
+          "n": 120,
+          "mean_abs_diff": 0.175,
+          "exact_match_rate": 0.883,
+          "within_1_rate": 0.95,
+          "pearson_r": 0.759
+        }
+      },
+      "sample_pairs": [
+        {
+          "idx": 1309,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 228,
+          "mini": {
+            "faithfulness": 2,
+            "utility": 3,
+            "coherence": 4,
+            "factuality": 3
+          },
+          "gpt4o": {
+            "faithfulness": 3,
+            "utility": 3,
+            "coherence": 4,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 51,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 3,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 563,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 501,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 457,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 285,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 209,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 1116,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 178,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 1209,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 864,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 4,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 65,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 61,
+          "mini": {
+            "faithfulness": 2,
+            "utility": 2,
+            "coherence": 3,
+            "factuality": 2
+          },
+          "gpt4o": {
+            "faithfulness": 3,
+            "utility": 3,
+            "coherence": 4,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 191,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 447,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 476,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 1034,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 1232,
+          "mini": {
+            "faithfulness": 2,
+            "utility": 3,
+            "coherence": 2,
+            "factuality": 3
+          },
+          "gpt4o": {
+            "faithfulness": 1,
+            "utility": 1,
+            "coherence": 1,
+            "factuality": 1
+          }
+        },
+        {
+          "idx": 54,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 1149,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 407,
+          "mini": {
+            "faithfulness": 4,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 859,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 451,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 919,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 1206,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 569,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 3,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 13,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 326,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 865,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        }
+      ]
+    },
+    "Gemma-7B": {
+      "model_dir": "gemma-7b",
+      "n_samples": 30,
+      "agreement": {
+        "faithfulness": {
+          "n": 30,
+          "mean_4o_mini": 3.133,
+          "mean_4o": 3.167,
+          "mean_abs_diff": 0.5,
+          "exact_match_rate": 0.567,
+          "within_1_rate": 0.933,
+          "pearson_r": 0.884
+        },
+        "utility": {
+          "n": 30,
+          "mean_4o_mini": 3.2,
+          "mean_4o": 3.2,
+          "mean_abs_diff": 0.467,
+          "exact_match_rate": 0.6,
+          "within_1_rate": 0.933,
+          "pearson_r": 0.888
+        },
+        "coherence": {
+          "n": 30,
+          "mean_4o_mini": 3.567,
+          "mean_4o": 3.467,
+          "mean_abs_diff": 0.433,
+          "exact_match_rate": 0.667,
+          "within_1_rate": 0.9,
+          "pearson_r": 0.876
+        },
+        "factuality": {
+          "n": 30,
+          "mean_4o_mini": 3.433,
+          "mean_4o": 3.633,
+          "mean_abs_diff": 0.667,
+          "exact_match_rate": 0.567,
+          "within_1_rate": 0.8,
+          "pearson_r": 0.766
+        },
+        "overall": {
+          "n": 120,
+          "mean_abs_diff": 0.517,
+          "exact_match_rate": 0.6,
+          "within_1_rate": 0.892,
+          "pearson_r": 0.852
+        }
+      },
+      "sample_pairs": [
+        {
+          "idx": 1309,
+          "mini": {
+            "faithfulness": 1,
+            "utility": 1,
+            "coherence": 1,
+            "factuality": 1
+          },
+          "gpt4o": {
+            "faithfulness": 1,
+            "utility": 1,
+            "coherence": 1,
+            "factuality": 1
+          }
+        },
+        {
+          "idx": 228,
+          "mini": {
+            "faithfulness": 1,
+            "utility": 2,
+            "coherence": 3,
+            "factuality": 1
+          },
+          "gpt4o": {
+            "faithfulness": 2,
+            "utility": 2,
+            "coherence": 3,
+            "factuality": 3
+          }
+        },
+        {
+          "idx": 51,
+          "mini": {
+            "faithfulness": 2,
+            "utility": 3,
+            "coherence": 3,
+            "factuality": 3
+          },
+          "gpt4o": {
+            "faithfulness": 4,
+            "utility": 4,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 563,
+          "mini": {
+            "faithfulness": 2,
+            "utility": 2,
+            "coherence": 3,
+            "factuality": 2
+          },
+          "gpt4o": {
+            "faithfulness": 1,
+            "utility": 1,
+            "coherence": 2,
+            "factuality": 2
+          }
+        },
+        {
+          "idx": 501,
+          "mini": {
+            "faithfulness": 2,
+            "utility": 2,
+            "coherence": 3,
+            "factuality": 2
+          },
+          "gpt4o": {
+            "faithfulness": 2,
+            "utility": 2,
+            "coherence": 3,
+            "factuality": 3
+          }
+        },
+        {
+          "idx": 457,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 285,
+          "mini": {
+            "faithfulness": 2,
+            "utility": 2,
+            "coherence": 2,
+            "factuality": 2
+          },
+          "gpt4o": {
+            "faithfulness": 1,
+            "utility": 1,
+            "coherence": 1,
+            "factuality": 1
+          }
+        },
+        {
+          "idx": 209,
+          "mini": {
+            "faithfulness": 1,
+            "utility": 1,
+            "coherence": 2,
+            "factuality": 1
+          },
+          "gpt4o": {
+            "faithfulness": 1,
+            "utility": 1,
+            "coherence": 2,
+            "factuality": 1
+          }
+        },
+        {
+          "idx": 1116,
+          "mini": {
+            "faithfulness": 1,
+            "utility": 1,
+            "coherence": 1,
+            "factuality": 1
+          },
+          "gpt4o": {
+            "faithfulness": 1,
+            "utility": 1,
+            "coherence": 1,
+            "factuality": 1
+          }
+        },
+        {
+          "idx": 178,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 1209,
+          "mini": {
+            "faithfulness": 3,
+            "utility": 4,
+            "coherence": 4,
+            "factuality": 4
+          },
+          "gpt4o": {
+            "faithfulness": 4,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 864,
+          "mini": {
+            "faithfulness": 3,
+            "utility": 3,
+            "coherence": 4,
+            "factuality": 3
+          },
+          "gpt4o": {
+            "faithfulness": 4,
+            "utility": 4,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 65,
+          "mini": {
+            "faithfulness": 1,
+            "utility": 1,
+            "coherence": 2,
+            "factuality": 2
+          },
+          "gpt4o": {
+            "faithfulness": 2,
+            "utility": 2,
+            "coherence": 2,
+            "factuality": 3
+          }
+        },
+        {
+          "idx": 61,
+          "mini": {
+            "faithfulness": 3,
+            "utility": 2,
+            "coherence": 3,
+            "factuality": 4
+          },
+          "gpt4o": {
+            "faithfulness": 1,
+            "utility": 1,
+            "coherence": 1,
+            "factuality": 1
+          }
+        },
+        {
+          "idx": 191,
+          "mini": {
+            "faithfulness": 1,
+            "utility": 2,
+            "coherence": 2,
+            "factuality": 3
+          },
+          "gpt4o": {
+            "faithfulness": 2,
+            "utility": 2,
+            "coherence": 2,
+            "factuality": 4
+          }
+        },
+        {
+          "idx": 447,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 476,
+          "mini": {
+            "faithfulness": 1,
+            "utility": 1,
+            "coherence": 2,
+            "factuality": 1
+          },
+          "gpt4o": {
+            "faithfulness": 2,
+            "utility": 2,
+            "coherence": 2,
+            "factuality": 2
+          }
+        },
+        {
+          "idx": 1034,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 4,
+            "utility": 4,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 1232,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 54,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 1149,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 407,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 859,
+          "mini": {
+            "faithfulness": 3,
+            "utility": 4,
+            "coherence": 4,
+            "factuality": 4
+          },
+          "gpt4o": {
+            "faithfulness": 2,
+            "utility": 2,
+            "coherence": 2,
+            "factuality": 3
+          }
+        },
+        {
+          "idx": 451,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 919,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 1206,
+          "mini": {
+            "faithfulness": 3,
+            "utility": 3,
+            "coherence": 4,
+            "factuality": 4
+          },
+          "gpt4o": {
+            "faithfulness": 3,
+            "utility": 3,
+            "coherence": 3,
+            "factuality": 4
+          }
+        },
+        {
+          "idx": 569,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 13,
+          "mini": {
+            "faithfulness": 2,
+            "utility": 2,
+            "coherence": 2,
+            "factuality": 3
+          },
+          "gpt4o": {
+            "faithfulness": 1,
+            "utility": 1,
+            "coherence": 1,
+            "factuality": 1
+          }
+        },
+        {
+          "idx": 326,
+          "mini": {
+            "faithfulness": 2,
+            "utility": 2,
+            "coherence": 3,
+            "factuality": 2
+          },
+          "gpt4o": {
+            "faithfulness": 2,
+            "utility": 2,
+            "coherence": 3,
+            "factuality": 4
+          }
+        },
+        {
+          "idx": 865,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 3,
+            "coherence": 4,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        }
+      ]
+    },
+    "Phi-4": {
+      "model_dir": "phi-4",
+      "n_samples": 30,
+      "agreement": {
+        "faithfulness": {
+          "n": 30,
+          "mean_4o_mini": 5.0,
+          "mean_4o": 4.867,
+          "mean_abs_diff": 0.133,
+          "exact_match_rate": 0.967,
+          "within_1_rate": 0.967,
+          "pearson_r": 0.0
+        },
+        "utility": {
+          "n": 30,
+          "mean_4o_mini": 5.0,
+          "mean_4o": 4.633,
+          "mean_abs_diff": 0.367,
+          "exact_match_rate": 0.833,
+          "within_1_rate": 0.867,
+          "pearson_r": 0.0
+        },
+        "coherence": {
+          "n": 30,
+          "mean_4o_mini": 5.0,
+          "mean_4o": 4.867,
+          "mean_abs_diff": 0.133,
+          "exact_match_rate": 0.967,
+          "within_1_rate": 0.967,
+          "pearson_r": 0.0
+        },
+        "factuality": {
+          "n": 30,
+          "mean_4o_mini": 5.0,
+          "mean_4o": 4.867,
+          "mean_abs_diff": 0.133,
+          "exact_match_rate": 0.967,
+          "within_1_rate": 0.967,
+          "pearson_r": 0.0
+        },
+        "overall": {
+          "n": 120,
+          "mean_abs_diff": 0.192,
+          "exact_match_rate": 0.933,
+          "within_1_rate": 0.942,
+          "pearson_r": 0.0
+        }
+      },
+      "sample_pairs": [
+        {
+          "idx": 1309,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 228,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 51,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 563,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 501,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 457,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 3,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 285,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 209,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 1,
+            "utility": 1,
+            "coherence": 1,
+            "factuality": 1
+          }
+        },
+        {
+          "idx": 1116,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 178,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 4,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 1209,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 864,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 3,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 65,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 61,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 191,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 3,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 447,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 476,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 1034,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 1232,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 54,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 1149,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 407,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 859,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 451,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 919,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 1206,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 569,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 13,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 326,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 865,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        }
+      ]
+    },
+    "Phi-4-Reasoning": {
+      "model_dir": "Phi-4-reasoning",
+      "n_samples": 30,
+      "agreement": {
+        "faithfulness": {
+          "n": 30,
+          "mean_4o_mini": 4.733,
+          "mean_4o": 4.6,
+          "mean_abs_diff": 0.267,
+          "exact_match_rate": 0.833,
+          "within_1_rate": 0.933,
+          "pearson_r": 0.699
+        },
+        "utility": {
+          "n": 30,
+          "mean_4o_mini": 4.733,
+          "mean_4o": 4.433,
+          "mean_abs_diff": 0.367,
+          "exact_match_rate": 0.8,
+          "within_1_rate": 0.933,
+          "pearson_r": 0.632
+        },
+        "coherence": {
+          "n": 30,
+          "mean_4o_mini": 4.733,
+          "mean_4o": 4.467,
+          "mean_abs_diff": 0.333,
+          "exact_match_rate": 0.8,
+          "within_1_rate": 0.933,
+          "pearson_r": 0.706
+        },
+        "factuality": {
+          "n": 30,
+          "mean_4o_mini": 4.8,
+          "mean_4o": 4.867,
+          "mean_abs_diff": 0.067,
+          "exact_match_rate": 0.967,
+          "within_1_rate": 0.967,
+          "pearson_r": 0.891
+        },
+        "overall": {
+          "n": 120,
+          "mean_abs_diff": 0.258,
+          "exact_match_rate": 0.85,
+          "within_1_rate": 0.942,
+          "pearson_r": 0.696
+        }
+      },
+      "sample_pairs": [
+        {
+          "idx": 1309,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 228,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 51,
+          "mini": {
+            "faithfulness": 2,
+            "utility": 3,
+            "coherence": 4,
+            "factuality": 3
+          },
+          "gpt4o": {
+            "faithfulness": 4,
+            "utility": 4,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 563,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 2,
+            "utility": 1,
+            "coherence": 1,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 501,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 457,
+          "mini": {
+            "faithfulness": 4,
+            "utility": 3,
+            "coherence": 3,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 3,
+            "utility": 2,
+            "coherence": 2,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 285,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 209,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 1116,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 178,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 1209,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 864,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 4,
+            "coherence": 4,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 65,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 61,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 191,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 447,
+          "mini": {
+            "faithfulness": 1,
+            "utility": 1,
+            "coherence": 1,
+            "factuality": 1
+          },
+          "gpt4o": {
+            "faithfulness": 1,
+            "utility": 1,
+            "coherence": 1,
+            "factuality": 1
+          }
+        },
+        {
+          "idx": 476,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 1034,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 1232,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 54,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 1149,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 4,
+            "utility": 4,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 407,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 859,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 451,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 919,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 4,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 4,
+            "utility": 2,
+            "coherence": 2,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 1206,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 569,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 13,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 4,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 326,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 865,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        }
+      ]
+    },
+    "Qwen3-4B": {
+      "model_dir": "Qwen3-4B-Thinking-2507",
+      "n_samples": 30,
+      "agreement": {
+        "faithfulness": {
+          "n": 30,
+          "mean_4o_mini": 4.733,
+          "mean_4o": 4.1,
+          "mean_abs_diff": 0.633,
+          "exact_match_rate": 0.667,
+          "within_1_rate": 0.7,
+          "pearson_r": 0.564
+        },
+        "utility": {
+          "n": 30,
+          "mean_4o_mini": 4.8,
+          "mean_4o": 3.667,
+          "mean_abs_diff": 1.133,
+          "exact_match_rate": 0.433,
+          "within_1_rate": 0.633,
+          "pearson_r": 0.335
+        },
+        "coherence": {
+          "n": 30,
+          "mean_4o_mini": 4.7,
+          "mean_4o": 3.7,
+          "mean_abs_diff": 1.0,
+          "exact_match_rate": 0.5,
+          "within_1_rate": 0.667,
+          "pearson_r": 0.539
+        },
+        "factuality": {
+          "n": 30,
+          "mean_4o_mini": 4.833,
+          "mean_4o": 4.867,
+          "mean_abs_diff": 0.1,
+          "exact_match_rate": 0.9,
+          "within_1_rate": 1.0,
+          "pearson_r": 0.798
+        },
+        "overall": {
+          "n": 120,
+          "mean_abs_diff": 0.717,
+          "exact_match_rate": 0.625,
+          "within_1_rate": 0.75,
+          "pearson_r": 0.468
+        }
+      },
+      "sample_pairs": [
+        {
+          "idx": 1309,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 228,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 2,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 51,
+          "mini": {
+            "faithfulness": 2,
+            "utility": 2,
+            "coherence": 2,
+            "factuality": 3
+          },
+          "gpt4o": {
+            "faithfulness": 2,
+            "utility": 2,
+            "coherence": 2,
+            "factuality": 4
+          }
+        },
+        {
+          "idx": 563,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 4,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 3,
+            "utility": 2,
+            "coherence": 2,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 501,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 457,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 4,
+            "coherence": 4,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 285,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 3,
+            "utility": 2,
+            "coherence": 2,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 209,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 4,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 1116,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 178,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 1209,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 864,
+          "mini": {
+            "faithfulness": 3,
+            "utility": 4,
+            "coherence": 5,
+            "factuality": 4
+          },
+          "gpt4o": {
+            "faithfulness": 3,
+            "utility": 4,
+            "coherence": 4,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 65,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 61,
+          "mini": {
+            "faithfulness": 2,
+            "utility": 3,
+            "coherence": 3,
+            "factuality": 3
+          },
+          "gpt4o": {
+            "faithfulness": 2,
+            "utility": 2,
+            "coherence": 2,
+            "factuality": 3
+          }
+        },
+        {
+          "idx": 191,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 4,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 3,
+            "utility": 2,
+            "coherence": 2,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 447,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 4,
+            "coherence": 4,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 476,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 1034,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 3,
+            "utility": 2,
+            "coherence": 2,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 1232,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 4,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 3,
+            "utility": 3,
+            "coherence": 2,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 54,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 3,
+            "utility": 2,
+            "coherence": 2,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 1149,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 407,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 859,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 451,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 919,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 4,
+            "coherence": 5,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 1206,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 5,
+            "utility": 4,
+            "coherence": 4,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 569,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 3,
+            "utility": 3,
+            "coherence": 2,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 13,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 3,
+            "utility": 3,
+            "coherence": 2,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 326,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 5,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 4,
+            "utility": 3,
+            "coherence": 3,
+            "factuality": 5
+          }
+        },
+        {
+          "idx": 865,
+          "mini": {
+            "faithfulness": 5,
+            "utility": 5,
+            "coherence": 4,
+            "factuality": 5
+          },
+          "gpt4o": {
+            "faithfulness": 3,
+            "utility": 3,
+            "coherence": 2,
+            "factuality": 4
+          }
+        }
+      ]
+    }
+  },
+  "model_avgs_mini": {
+    "DS-R1-1.5B": 4.166666666666667,
+    "DS-R1-7B": 4.833333333333333,
+    "LLaMA-3.1-8B": 4.516666666666667,
+    "Qwen2.5-7B": 4.675,
+    "Qwen2.5-Math-7B": 4.75,
+    "Gemma-7B": 3.3333333333333335,
+    "Phi-4": 5.0,
+    "Phi-4-Reasoning": 4.75,
+    "Qwen3-4B": 4.766666666666667
+  },
+  "model_avgs_4o": {
+    "DS-R1-1.5B": 3.466666666666667,
+    "DS-R1-7B": 4.808333333333334,
+    "LLaMA-3.1-8B": 4.316666666666666,
+    "Qwen2.5-7B": 4.5,
+    "Qwen2.5-Math-7B": 4.741666666666666,
+    "Gemma-7B": 3.3666666666666667,
+    "Phi-4": 4.808333333333334,
+    "Phi-4-Reasoning": 4.591666666666667,
+    "Qwen3-4B": 4.083333333333333
+  }
+}

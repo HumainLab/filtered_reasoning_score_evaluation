@@ -1,0 +1,7 @@
+baseline_id,feasible,coverage_note,notes
+k1_trace0_accuracy_jsonl,yes,"54/54 pairs, 42,678 questions",Full correctness from score[0]; no judge API
+k1_trace0_rs_frs_judge_cache,partial,"725/42,678 (1.7%)",Only questions that happened to be judged at trace_idx=0 in FRS sample
+k1_trace0_rs_new_judge,requires_api,"41,953 missing trace-0 judges",See missing_trace0_judge_worklist.csv
+k1_random_trace_unfiltered,yes,"54 pairs × 100 judged (random trace, usually not trace 0)",Existing unfiltered baseline; approximate k=1 judge story
+k1_bootstrap_simulated_accuracy,yes,"54 pairs, 200 draws/pair",Random one-of-16 trace; not trace_idx=0 specific
+frs_top10_reference,yes,paper_frs / merged table 54 pairs,From global_pass1_frs_analysis

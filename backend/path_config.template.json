@@ -1,0 +1,22 @@
+{
+  "_comment": "Copy to backend/path_config.json and fill in. That file is gitignored because it holds API keys.",
+
+  "workspace_dir": "/path/to/filtered_reasoning_score_evaluation",
+  "evaluation_dir": "/path/to/filtered_reasoning_score_evaluation/evaluation",
+  "backend_dir": "/path/to/filtered_reasoning_score_evaluation/backend",
+  "python_path": "/path/to/python",
+  "conda_env_path": null,
+
+  "output_dir": "/path/to/evaluation/outputs",
+  "exports_dir": "/path/to/evaluation/exports",
+  "logs_dir": "/path/to/backend/logs",
+  "scripts_dir": "/path/to/backend/scripts",
+  "job_db_path": "/path/to/backend/job_db.json",
+
+  "openai_api_key": "",
+  "hf_token": "",
+
+  "slurm_partition": "gpu-a100",
+  "slurm_account": "YOUR_ALLOCATION",
+  "slurm_wall_time": "1:00:00"
+}

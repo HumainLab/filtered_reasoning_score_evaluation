@@ -1,0 +1,10 @@
+metric_id,metric_name,is_frs_reference,incomplete_proxy,incomplete_note,n_model_benchmark_pairs,coverage_fraction_of_54,mean_value,median_abs_delta_at_pass1_tie_2pp,spearman_abs_delta_vs_pass1,n_pairs_near_pass1_tie_2pp,spearman_model_rank_vs_frs,pearson_vs_unfiltered_rs,pearson_vs_selection_gain,mean_lobo_transfer_spearman,lobo_folds_used
+pass1_pct,pass@1 accuracy,False,False,,54,1.0,57.92,1.0,1.0,15,0.15,0.847,-0.1281,0.5489,6
+pass16_pct,pass@16 accuracy,False,False,,54,1.0,93.19,0.45,0.2987,15,-0.15,0.328,-0.0824,0.2385,6
+high_conf_accuracy_pct,Top-10% pool accuracy (confidence filter),False,False,,54,1.0,59.98,18.68,0.2974,15,0.5333,0.7314,0.2009,0.6505,6
+unfiltered_reasoning_pct,Unfiltered mean reasoning score (100× judge 0–1),False,False,"100 questions/pair, random trace per question, no confidence filter",54,1.0,68.52,5.38,0.5267,15,0.45,,0.0078,0.7083,6
+frs_pct,"FRS (paper top-confidence bin, %)",True,False,,54,1.0,68.88,9.9,0.322,15,1.0,0.8151,0.4906,0.7117,6
+cum_top10_reasoning_pct,Cumulative top-10% bin mean RS (filtered),False,False,Same judge family as FRS; filtered slice,54,1.0,68.88,9.88,0.3215,15,1.0,0.815,0.4907,0.7117,6
+base_reasoning,base_reasoning (pass@1-era eval API),False,True,Not GPT judge; external pass@1-era reasoning metric,54,1.0,67.24,5.25,0.5712,15,0.3833,0.8925,0.0583,0.5972,6
+trace0_rs_judged_pct,Trace-0 mean RS (judged subset only),False,True,~6% of judged traces are trace_idx==0; not full-corpus,54,1.0,69.4,11.91,0.2656,15,0.6833,0.9033,0.1757,0.7667,6
+trace0_accuracy_pct,"Trace-0 accuracy (all problems, pass16 JSONL)",False,False,"Correctness only, not reasoning score",45,0.833,57.82,12.15,0.4735,14,0.4333,0.8853,-0.0672,0.6173,5

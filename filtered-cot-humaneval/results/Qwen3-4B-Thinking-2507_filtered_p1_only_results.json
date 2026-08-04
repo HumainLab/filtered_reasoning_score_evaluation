@@ -1,0 +1,5776 @@
+{
+  "model": "Qwen3-4B-Thinking-2507",
+  "frs_pct": 61.61736641221374,
+  "n_judged": 262,
+  "n_total": 262,
+  "errors": 0,
+  "empty_cot": 0,
+  "top_frac": 0.1,
+  "judge_model": "@irom-ll37364-op-b37b3e/gpt-4o-mini",
+  "results": [
+    {
+      "idx": 0,
+      "trace_idx": 7,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.30949789610709627,
+      "original_correct": false,
+      "pred": "#Sortthelisttocheckconsecutivedifferencessorted_numbers=sorted()#Iteratethroughthesortedlisttocheckconsecutivedifferencesforiinrange(1,len(sorted_numbers)):#Calculatethedifferencebetweenthecurrentpreviousdiff=sorted_numbers[i]-sorted_numbers[i-1]#Ifthedifferenceisthanthethreshold,returnTrueifdiff<threshold:returnTrue",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 4,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.75,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 0,
+      "trace_idx": 8,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.288106311331777,
+      "original_correct": false,
+      "pred": "sorted_nums=sorted()foriinrange(len(sorted_nums)-1):ifsorted_nums[i+1]-sorted_nums[i]<threshold:returnTrue",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 1,
+      "trace_idx": 5,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.3082001687977098,
+      "original_correct": false,
+      "pred": "cleaned=paren_string.replace(\"\",\"\")start=0count=0result=[]foriinrange(len(cleaned)):ifcleaned[i]=='(':count+=1",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 1,
+      "trace_idx": 6,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.30947390552975385,
+      "original_correct": false,
+      "pred": "ifcharis'(':counter+=1ifcharis')':counter-=1ifcounterbecomes0,thenwehavecompletegroupfromthelaststartindextocurrentindex(inclusive).Thenweresetthestartindextothenextcharacter",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 1,
+      "trace_idx": 8,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.32219331149084895,
+      "original_correct": false,
+      "pred": "Start:counter=0Foreachcharins_clean:ifchar=='(',counter+=1ifchar==')',counter-=1",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.25,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 2,
+      "trace_idx": 13,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.28333404329696704,
+      "original_correct": false,
+      "pred": "return-int()",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 2,
+      "trace_idx": 15,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.2774135399354147,
+      "original_correct": false,
+      "pred": "0",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 3,
+      "trace_idx": 2,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.32426421442314196,
+      "original_correct": false,
+      "pred": "But wait, the problem says: \"Write only the function body (indented lines inside the function)\". And the comments are part of the body.\n\nThis should be acceptable.\n\nLet me check the indentation: each line starts with 4 spaces (the standard for the function body). \n\nIn the markdown code block, the code is written with 4 spaces at the beginning of each line? Actually, in the code block, the indentation is written as 4 spaces per level. But in the problem's example, they have 4 spaces at the beginn",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 3,
+      "trace_idx": 13,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.2765810376617546,
+      "original_correct": false,
+      "pred": "    # comment lines",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.75
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 5,
+      "trace_idx": 2,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.27131925288761527,
+      "original_correct": false,
+      "pred": "#Checkiftheinputlistisemptyifnot:return[]#Startbuildingtheresultlistwiththefirstelementof``result=[[0]]#Foreachsubsequentinthelist,addthedelimiterthenthefornumin[1:]:result.append(delimeter)result.append(num)returnresult",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.25,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 6,
+      "trace_idx": 0,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.32765083161054875,
+      "original_correct": false,
+      "pred": "current=0max_depth=0forcharingroup:ifchar=='(':current+=1ifcurrent>max_depth:max_depth=current",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.8125
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 8,
+      "trace_idx": 1,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.29181697633227005,
+      "original_correct": false,
+      "pred": "    # Initialize sum and product for empty list (0 and 1)\n    total = 0\n    product = 1\n\n    # Compute the sum and product by iterating through the list\n    for num in numbers:\n        total += num\n        product *= num\n\n    return (total, product)",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 8,
+      "trace_idx": 5,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.2812479417131958,
+      "original_correct": false,
+      "pred": "     # your commented implementation here",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 9,
+      "trace_idx": 1,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.2738344071378164,
+      "original_correct": false,
+      "pred": "ifnot:return[]current_max=[0]result=[current_max]fornumin[1:]:ifnum>current_max:current_max=num",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 9,
+      "trace_idx": 4,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.28504152628867063,
+      "original_correct": false,
+      "pred": "    result = []  # Initialize result list\n    current_max = float('-inf')  # Start with negative infinity for safety\n    for num in numbers:\n        # Update current maximum as we go\n        current_max = max(current_max, num)\n        result.append(current_max)\n    return result",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 9,
+      "trace_idx": 7,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.2933793787789695,
+      "original_correct": false,
+      "pred": "    result = []\n    current_max = None\n\n    for num in numbers:\n        if current_max is None or num > current_max:\n            current_max = num\n        result.append(current_max)",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 16,
+      "trace_idx": 2,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.31949326987175836,
+      "original_correct": false,
+      "pred": "Wait, the problem says: \"Work in two parts: 1. Reasoning, 2. Solution\"\n\nBut the response should be:\n\n[Reasoning in plain language]\n\n### Solution Code",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 17,
+      "trace_idx": 0,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.30700095059971017,
+      "original_correct": false,
+      "pred": "tokens=music_string.split()Then,foreachtokenintokens:iftoken=='':append4eliftoken=='|':append2eliftoken=='.|':append1",
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 3,
+        "coherence": 2,
+        "factuality": 3
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.5,
+        "coherence": 0.25,
+        "factuality": 0.5,
+        "overall": 0.375
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 17,
+      "trace_idx": 5,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.2937426212992446,
+      "original_correct": false,
+      "pred": "tokens=music_string.split()foreachtokenintokens:iftoken=='':beat=4",
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 3,
+        "coherence": 2,
+        "factuality": 3
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.5,
+        "coherence": 0.25,
+        "factuality": 0.5,
+        "overall": 0.375
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 17,
+      "trace_idx": 8,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.3012960479759118,
+      "original_correct": false,
+      "pred": "    # Split the input string into tokens using space as the delimiter\n    tokens = music_string.split()\n    \n    # Create a dictionary mapping each note symbol to its beat duration\n    note_map = {'o': 4, 'o|': 2, '.|': 1}\n    \n    # Generate the list of beat counts by mapping each token to its corresponding integer\n    return [note_map[token] for token in tokens]",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 17,
+      "trace_idx": 10,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.31823033786506627,
+      "original_correct": false,
+      "pred": "iftoken=='':return4eliftoken=='|':return2eliftoken=='.|':return1",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 17,
+      "trace_idx": 11,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.2989504398668514,
+      "original_correct": false,
+      "pred": "    tokens = music_string.split()\n    result = []\n    for token in tokens:\n        if token == 'o':\n            result.append(4)\n        elif token == 'o|':\n            result.append(2)\n        elif token == '.|':\n            result.append(1)\n    return result",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.75
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 18,
+      "trace_idx": 0,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.27192053149509077,
+      "original_correct": false,
+      "pred": "    count = 0\n    n = len(string)\n    m = len(substring)\n    # If substring is empty, return 0\n    if m == 0:\n        return 0\n    # If substring is longer than the string, return 0\n    if m > n:\n        return 0\n    for i in range(n - m + 1):\n        # Check if the current segment of string matches the substring\n        if string[i:i+m] == substring:\n            count += 1\n    return count",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 20,
+      "trace_idx": 5,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.2888420371740472,
+      "original_correct": false,
+      "pred": "    # Sort the list to ensure consecutive elements are candidates for closest pairs\n    sorted_nums = sorted(numbers)\n    \n    # Initialize to track the smallest difference and the corresponding pair\n    min_diff = float('inf')\n    closest_pair = (sorted_nums[0], sorted_nums[1])\n    \n    # Iterate through the sorted list to find the pair with the smallest difference\n    for i in range(len(sorted_nums) - 1):\n        current_diff = sorted_nums[i+1] - sorted_nums[i]\n        if current_diff < min_di",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 20,
+      "trace_idx": 7,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.27904409758162263,
+      "original_correct": false,
+      "pred": "min_diff=(sorted_nums[0]-sorted_nums[1])closest_pair=(sorted_nums[0],sorted_nums[1])Thenloopifrom1tolen(sorted_nums)-1Wait,no:thepairs(0,1),(1,2),0..,(n-2,n-1).Soloopifrom0tolen(sorted_nums)-2Letmewritethecodewithloopfromi=0tolen(sorted_nums)-2Here'theplan:sorted_nums=sorted()min_diff=(sorted_nums[0]-sorted_nums[1])closest_pair=(sorted_nums[0],sorted_nums[1])foriinrange(1,len(sorted_nums)-1):diff=sorted_nums[i+1]-sorted_nums[i]#thisispositivebecausesortedifdiff<min_diff:min_diff=diffclosest_pair",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.25,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 20,
+      "trace_idx": 9,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.30189871809938373,
+      "original_correct": false,
+      "pred": "5",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 25,
+      "trace_idx": 1,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.27937766047669393,
+      "original_correct": false,
+      "pred": "factors=[]i=2whilei*i<=n:whileni==0:factors.append(i)n//=i",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 25,
+      "trace_idx": 10,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.2926325589126232,
+      "original_correct": false,
+      "pred": "factors=[]i=2whilei*i<=n:ifni==0:whileni==0:factors.append(i)n//=i",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 25,
+      "trace_idx": 13,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.29859425830563496,
+      "original_correct": false,
+      "pred": "    # Initialize list to store prime factors\n    factors = []\n    # Start checking factors from 2 up to the square root of n\n    i = 2\n    while i * i <= n:\n        # While i divides n, add i to factors and divide n by i\n        while n % i == 0:\n            factors.append(i)\n            n //= i\n        i += 1\n    # If n is still greater than 1, it is a prime factor\n    if n > 1:\n        factors.append(n)\n    return factors",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 30,
+      "trace_idx": 3,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.27309434705724317,
+      "original_correct": false,
+      "pred": "Yes.\n\nBut note: the problem says \"one comment per major step or line group\". We have one comment for the entire step (the list comprehension). That's one comment.\n\nAlternatively, if we want to break it down, but the problem says \"one comment per major step\", so one comment is enough.\n\nI think it's acceptable.\n\nFinal answer.",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 30,
+      "trace_idx": 14,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.27903522764716077,
+      "original_correct": false,
+      "pred": "    # Initialize an empty list to store positive numbers\n    positive_list = []\n    # Iterate through each element in the input list\n    for num in l:\n        # Check if the current element is positive (greater than 0)\n        if num > 0:\n            # Append the positive number to the result list\n            positive_list.append(num)\n    # Return the list of positive numbers\n    return positive_list",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 31,
+      "trace_idx": 0,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.27722936430398154,
+      "original_correct": false,
+      "pred": "1",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.8125
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 31,
+      "trace_idx": 3,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.28827702832481295,
+      "original_correct": false,
+      "pred": "ifn<2:returnFalseThen,forn>=2,wecheckfordivisors.Acommonapproachistocheckdivisibilityfrom2uptotherootofn(inclusive).Why?Becauseifniscomposite,thenitmusthavefactor<=sqrt(n)",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 31,
+      "trace_idx": 5,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.299540761949531,
+      "original_correct": false,
+      "pred": "    # Check if n is less than 2 (not prime)\n    if n < 2:\n        return False\n    # Check if n is 2 (the only even prime)\n    if n == 2:\n        return True\n    # Check if n is even and not 2 (all even numbers greater than 2 are not prime)\n    if n % 2 == 0:\n        return False\n    # Check odd factors starting from 3 up to the square root of n\n    i = 3\n    while i * i <= n:\n        if n % i == 0:\n            return False\n        i += 2\n    # If no factors found, n is prime\n    return True",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 31,
+      "trace_idx": 7,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.3328638326413199,
+      "original_correct": false,
+      "pred": "ifn<2:returnFalseifn==2:returnTrueifn2==0:returnFalse#Nowcheckoddfactorsuptosqrt(n)i=3whilei*i<=n:ifni==0:returnFalsei+=2Butwait,whataboutn=9?93==0,soitreturnFalse,whichiscorrect.Wait,butintheproblemstatement,theexampleincludesis_prime(13441)whichisTrue.Let'check:13441is115^2=13225,no,115^2is13225,116^2is13456,sosqrt(13441)isabout115.9,sowecheckupto115Butinthecodeabove,westartat3,then5,7,9,etc.But13441divided11is1221.9..wait,actually,13441is11*1221.9?Waitno,let'compute:11*1221=13431,so13441-1343",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 31,
+      "trace_idx": 9,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.3327185398369443,
+      "original_correct": false,
+      "pred": "    # Handle numbers less than 2 (not prime)\n    if n < 2:\n        return False\n\n    # Handle the only even prime number\n    if n == 2:\n        return True\n\n    # Handle all even numbers greater than 2 (not prime)\n    if n % 2 == 0:\n        return False\n\n    # Check odd divisors from 3 up to the square root of n\n    i = 3\n    while i * i <= n:\n        if n % i == 0:\n            return False\n        i += 2\n\n    # If no divisors found, n is prime\n    return True",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 31,
+      "trace_idx": 11,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.3208174602512051,
+      "original_correct": false,
+      "pred": "i=3whilei*i<=n:ifni==0:returnFalse",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 33,
+      "trace_idx": 6,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.2785009117066568,
+      "original_correct": false,
+      "pred": "thirds=[[i]foriinrange(0,len(),3)]Thensortit:sorted_thirds=sorted(thirds)Theninitializenewlistfortheresult,counterforthesortedlist:result=[]idx=0Thenloopthrougheachindexiintheoriginallist:foriinrange(len()):ifi3==0:result.append(sorted_thirds[idx])idx+=1",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.75
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 33,
+      "trace_idx": 11,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.2718766945797731,
+      "original_correct": false,
+      "pred": "    sorted_list = l.copy()\n    # Extract elements at indices divisible by 3 (0, 3, 6, ...)\n    third_elements = [l[i] for i in range(0, len(l), 3)]\n    # Sort the extracted elements\n    third_elements.sort()\n    # Place the sorted elements back into the copy at the corresponding indices\n    for i, elem in enumerate(third_elements):\n        sorted_list[i * 3] = elem",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.25,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 33,
+      "trace_idx": 12,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.3023045107210968,
+      "original_correct": false,
+      "pred": "sorted_third=sorted([[i]foriinrange(0,len(),3)])Thenwecreatenewlist`res`:foriinrange(len()):ifi3==0:res.append(sorted_third.pop(0))#butpop(0)isO(n)wedon'wantthatforlargelists",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 36,
+      "trace_idx": 3,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.2740284601299494,
+      "original_correct": false,
+      "pred": "returntotalWait,butinPython,range(1,n)iscorrectforfrom1ton-1Yes.Letmetestwithn=79:Intheloop,i=77:7711==0\u2192True,str(77).count('7')is2\u2192total=2i=78:7813==0\u2192True(78/13=6),str(78).count('7')is1\u2192total=3Thenloopends,return3Perfect.Anothertest:n=50Loopfrom1to49Checkdivisible11or13:11,22,33,44(div11),13,26,39(div13).Noneofthesehave'7'inthem,sototalremains0Yes.Sothecodeshouldwork",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 36,
+      "trace_idx": 12,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.28248009657231615,
+      "original_correct": false,
+      "pred": "forkinrange(1,n):ifk11==0ork13==0:count_7=str(k).count('7')total+=count_7",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 37,
+      "trace_idx": 0,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.2719882331131136,
+      "original_correct": false,
+      "pred": "result=[]foriinrange(len(odds)):result.append(sorted_evens[i])result.append(odds[i])",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 37,
+      "trace_idx": 3,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.28208537086588786,
+      "original_correct": false,
+      "pred": "evens=[[i]foriinrange(0,len(),2)]odds=[[i]foriinrange(1,len(),2)]#Sorttheeven-indexedelementssorted_evens=sorted(evens)#Createtheresultlistplacingsorted_evensatevenindicesoddsatoddindicesreturn[sorted_evens[i//2]ifi2==0elseodds[i//2]foriinrange(len())]Thisshouldwork",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 0.75,
+        "overall": 0.75
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 37,
+      "trace_idx": 5,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.2846805855230081,
+      "original_correct": false,
+      "pred": "    # Extract even-indexed elements (0, 2, 4, ...) from the original list\n    evens = [l[i] for i in range(0, len(l), 2)]\n    # Extract odd-indexed elements (1, 3, 5, ...) from the original list\n    odds = [l[i] for i in range(1, len(l), 2)]\n    # Sort the even-indexed elements to form the new even part of the result\n    sorted_evens = sorted(evens)\n    # Construct the result list by interleaving the sorted evens and original odds\n    result = []\n    for i in range(len(l)):\n        if i % 2 == 0",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 37,
+      "trace_idx": 8,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.286640492258776,
+      "original_correct": false,
+      "pred": "even_list=[[i]foriinrange(0,len(),2)]Thensorteven_list:sorted_even=sorted(even_list)Thengetodd_list:odd_list=[[i]foriinrange(1,len(),2)]Thencreatetheresultlistinterleavingsorted_evenodd_list:result=[]foriinrange(max(len(sorted_even),len(odd_list))):ifi<len(sorted_even):result.append(sorted_even[i])",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.25,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 37,
+      "trace_idx": 9,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.34505334467280147,
+      "original_correct": false,
+      "pred": "evens=[[i]foriinrange(0,len(),2)]#getallevenindicesodds=[[i]foriinrange(1,len(),2)]#getalloddindices",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 37,
+      "trace_idx": 10,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.27507353340293844,
+      "original_correct": false,
+      "pred": "result=[]foriinrange(len()):ifi2==0:#evenindexresult.append(sorted_evens.pop(0))#butpoppingfromfrontisO(n),bettertouseindex",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.25,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 37,
+      "trace_idx": 11,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.28794378832932194,
+      "original_correct": false,
+      "pred": "result=[]foriinrange(len(odd_vals)):result.append(sorted_evens[i])result.append(odd_vals[i])#Then,ifthere'anextraevenelement(whennisodd),additattheend",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.25,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 37,
+      "trace_idx": 12,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.29111659705784976,
+      "original_correct": false,
+      "pred": "#Extractevenindices(0,2,4,...)evens=[[i]foriinrange(0,len(),2)]#Sorttheevenindicessorted_evens=sorted(evens)#Extractoddindices(1,3,5,...)odds=[[i]foriinrange(1,len(),2)]#Buildtheresultinterleavingsorted_evensoddsresult=[]foriinrange(len(sorted_evens)):result.append(sorted_evens[i])ifi<len(odds):result.append(odds[i])returnresultButtheproblemsays:\"Writeonlythefunctionbody(indentedlinesinsidethefunction)\"Sothecodeshouldbeindentedunderthefunction.Let'writethecodewithcomments.We'lldo:#Step1:Extracte",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.25,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 37,
+      "trace_idx": 14,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.3238828913582599,
+      "original_correct": false,
+      "pred": "    evens = l[0::2]\n    odds = l[1::2]\n    sorted_evens = sorted(evens)\n    result = []\n    for i in range(len(sorted_evens)):\n        result.append(sorted_evens[i])\n        if i < len(odds):\n            result.append(odds[i])\n    return result",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 39,
+      "trace_idx": 5,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.27887047176231067,
+      "original_correct": false,
+      "pred": "ifx<2:returnFalseifx==2:returnTrueifx2==0:returnFalse#checkoddfactorsuptosqrt(x)i=3whilei*i<=x:ifxi==0:returnFalsei+=2returnTrueWait,butweshouldhle2specialcase(it').Also,01not0ButinourFibonaccisequence,thefirstwegetis2,sowedon'havetoworryabout0or1being0Let'testtheis_primefunction:is_prime(2)->Trueis_prime(3)->Trueis_prime(5)->Trueis_prime(13)->Trueis_prime(89)->Trueis_prime(233)->True(233is)is_prime(1597)->True(1597is)Sotheis_primefunctionshouldwork.Butlet'makesure:forx=1,itreturnFalse(correct).",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 42,
+      "trace_idx": 0,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.273160862261612,
+      "original_correct": false,
+      "pred": "    # Create a new list by incrementing each element in the input list by 1\n    return [x + 1 for x in l]",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 43,
+      "trace_idx": 3,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.2886319075181496,
+      "original_correct": false,
+      "pred": "    seen = set()\n    for x in l:\n        if -x in seen:\n            return True\n        seen.add(x)\n    return False",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 44,
+      "trace_idx": 3,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.2922334800036076,
+      "original_correct": false,
+      "pred": "ifx==0:return\"0\"",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 46,
+      "trace_idx": 2,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.27285865739937504,
+      "original_correct": false,
+      "pred": "1",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.25,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 46,
+      "trace_idx": 3,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.2976932895789836,
+      "original_correct": false,
+      "pred": "elifn==3:return0",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 46,
+      "trace_idx": 4,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.3114441568762356,
+      "original_correct": false,
+      "pred": "1",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 46,
+      "trace_idx": 9,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.27121779634891185,
+      "original_correct": false,
+      "pred": "ifn<=3:return[0,0,2,0][n]",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 46,
+      "trace_idx": 10,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.3225113188884422,
+      "original_correct": false,
+      "pred": "ifn<4:base=[0,0,2,0]returnbase[n]#Initializethestateforn=3:sowehavethelastfour:forn=0,1,2,3->[0,0,2,0]#Butwewanttostarttheloopatn=4",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 46,
+      "trace_idx": 11,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.2820935393592306,
+      "original_correct": false,
+      "pred": "4",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 46,
+      "trace_idx": 13,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.33409518828871204,
+      "original_correct": false,
+      "pred": "ifn==0:return0ifn==1:return0ifn==2:return2ifn==3:return0,b,,0,0,2,0#forn=0,1,2,3foriinrange(4,n+1):next_val=,b,,b,,,next_val",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 47,
+      "trace_idx": 3,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.2707786848951204,
+      "original_correct": false,
+      "pred": "First, I need to understand what the median is. The median is the middle value in a sorted list. If the list has an odd number of elements, the median is the middle element. If it has an even number, the median is the average of the two middle elements.\n\nSo, the steps I'll take:\n1. Sort the list. This makes finding the middle elements straightforward.\n2. Check if the length of the list is odd or even.\n   - If odd: the median is the element at index len(l)//2 (since Python uses 0-based indexing).",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 2
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.25,
+        "overall": 0.4375
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 47,
+      "trace_idx": 13,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.28015195068848486,
+      "original_correct": false,
+      "pred": "sorted_l=sorted()n=len(sorted_l)ifn2==1:returnsorted_l[n//2]",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 3
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.5,
+        "overall": 0.5
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 50,
+      "trace_idx": 13,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.2732720683858383,
+      "original_correct": false,
+      "pred": "    return \"\".join([chr(((ord(ch) - ord(\"a\") - 5) % 26) + ord(\"a\")) for ch in s])",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.25,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 54,
+      "trace_idx": 2,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.27962329686053244,
+      "original_correct": false,
+      "pred": "#Convertthefirststringtosetofcharactersset0=set(s0)#Convertthestringtosetofcharactersset1=set(s1)#Checkifthesetsequalreturnset0==set1",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 54,
+      "trace_idx": 3,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.2992088878162059,
+      "original_correct": false,
+      "pred": "returnset(s0)==set(s1)Butlet'testwiththeexamples:Example1:set('eabcdzzzz')={'e','','b','','','z'}",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 54,
+      "trace_idx": 14,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.3202442164514579,
+      "original_correct": false,
+      "pred": "returnCounter(s0)==Counter(s1)",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 3
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.5,
+        "overall": 0.5
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 55,
+      "trace_idx": 0,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.2793758599014551,
+      "original_correct": false,
+      "pred": "0(forn=0)1(forn=1)Forn=1,wereturnb(whichis1).Forn=2,wereturn1Forn=3,wereturn(b)=2So:ifn==1:return1",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 55,
+      "trace_idx": 7,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.27317825942208956,
+      "original_correct": false,
+      "pred": "returnWait,let'testwithn=3:",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 55,
+      "trace_idx": 8,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.30275829556379835,
+      "original_correct": false,
+      "pred": ",0,1for_inrange(n):,b,returnButwait,theproblemsays\"n-Fibonacci\",theexamples:fib(10)=55Let'checkwithn=10:n=10:Wedo10iterations.Wecansimulate:i=0:0,1->after:1,0+1=1i=1:1,1->after:1,1+1=2i=2:1,2->after:2,1+2=3i=3:2,3->after:3,2+3=5i=4:3,5->after:5,3+5=8i=5:5,8->after:8,5+8=13i=6:8,13->after:13,8+13=21i=7:13,21->after:21,13+21=34i=8:21,34->after:34,21+34=55i=9:34,55->after:55,34+55=89i=10:55,89->after:89?Wait,no.Wedo10iterationsthenreturn0After10iterations,wereturn0Butinthesimulationabove,after10ite",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 55,
+      "trace_idx": 14,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.2757948635730381,
+      "original_correct": false,
+      "pred": "    a, b = 0, 1\n    # Iterate n times to compute the n-th Fibonacci number\n    for _ in range(n):\n        a, b = b, a + b\n    return a",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.8125
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 56,
+      "trace_idx": 9,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.29996029411753017,
+      "original_correct": false,
+      "pred": "Note: The user might have seen an error because they ran the code without the function definition. But the problem says to write only the function body, so it's correct.\n\nLet me write the response.",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.75
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 56,
+      "trace_idx": 13,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.27155396403909166,
+      "original_correct": false,
+      "pred": "    count = 0\n    for char in brackets:\n        if char == '<':\n            count += 1\n        else:\n            count -= 1\n        if count < 0:\n            return False\n    return count == 0",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 57,
+      "trace_idx": 7,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.3060312711031121,
+      "original_correct": false,
+      "pred": "n=len()ifn<=1:returnTrue",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 59,
+      "trace_idx": 3,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.27912886561278033,
+      "original_correct": false,
+      "pred": "#Hlefactor2whilen2==0:n//=2#Nownisoddfactor=3whilefactor*factor<=n:whilenfactor==0:n//=factorfactor+=2#Ifnisstillgreaterthan1,thennisreturnnifn>1elsefactorWait,no,that'notquiteright.Let'testwith13195:Start:n=13195Whilen2==0?13195isodd\u2192skipfactor=3:131953!=0\u2192skipinnerwhilefactor=5:131955==0\u2192n=13195//5=263926395!=0\u2192breakinnerwhilefactor=7:26397==0\u2192n=2639//7=3773777!=0\u2192breakinnerwhilefactor=9:3779!=0\u2192skipfactor=11:37711!=0factor=13:37713==0\u2192n=377//13=292913!=0\u2192breakinnerwhilefactor=15:skipfactor=17",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 59,
+      "trace_idx": 7,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.29280414282545153,
+      "original_correct": false,
+      "pred": "lpf=1#Factorout2swhilen2==0:lpf=2n//=2#Nownisodd",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.25,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 59,
+      "trace_idx": 11,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.3059413985294454,
+      "original_correct": false,
+      "pred": "largest=2whilen2==0:n//=2largest=2",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 59,
+      "trace_idx": 12,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.2821568483851996,
+      "original_correct": false,
+      "pred": "largest=02while=n:whilen=0:largest=n//=f",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 61,
+      "trace_idx": 1,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.3042334071546793,
+      "original_correct": false,
+      "pred": "stack=[]forinbrackets:if='(':stack.append()elif=')':ifnotstack:returnFalsestack.pop()returnnotstack",
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.25,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.5
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 62,
+      "trace_idx": 11,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.28780658775027473,
+      "original_correct": false,
+      "pred": "#Initializeanemptylistforthederivativecoefficients#Westartfromindex1(thecoefficientofx^1)totheendofthelist#Foreachindexi(0-indexed),thederivativeterm'coefficientisi*xs[i]return[i*xs[i]foriinrange(1,len(xs))]",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.6875
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 63,
+      "trace_idx": 6,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.27050744024488854,
+      "original_correct": false,
+      "pred": "0,0,1new0new1new0+0+1=1soreturn1,correct.n=4:looprunsfor34(twoiterations)",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 63,
+      "trace_idx": 8,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.28426617447871205,
+      "original_correct": false,
+      "pred": "1",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 63,
+      "trace_idx": 9,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.29799519504840466,
+      "original_correct": false,
+      "pred": "1",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 63,
+      "trace_idx": 11,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.2792963514688845,
+      "original_correct": false,
+      "pred": "7",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 63,
+      "trace_idx": 13,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.27753712989243806,
+      "original_correct": false,
+      "pred": "2",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 64,
+      "trace_idx": 3,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.2838919273595892,
+      "original_correct": false,
+      "pred": "s_lower=0lower()count=0fori,charinenumerate(s_lower):ifcharin'aeiou':count+=1",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 65,
+      "trace_idx": 7,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.30273081212505404,
+      "original_correct": false,
+      "pred": "2n=len()3ifshift>n:return[::-1]",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 65,
+      "trace_idx": 11,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.3410680273675597,
+      "original_correct": false,
+      "pred": "0.Convertxtostring:=str(x)b.n=len()0Ifshift>n:return[::-1]",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 66,
+      "trace_idx": 2,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.2702844516701392,
+      "original_correct": false,
+      "pred": "#yourcommentedimplementationhere",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 66,
+      "trace_idx": 5,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.280840831465627,
+      "original_correct": false,
+      "pred": "total=0#Iteratethrougheachcharacterintheinputstringforcharin:#Checkifthecharacterisanuppercaseletterifchar.isupper():#AddtheASCIIvalueoftheuppercasecharactertothetotaltotal+=ord(char)returntotal",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 66,
+      "trace_idx": 12,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.29962311962655946,
+      "original_correct": false,
+      "pred": "    # Initialize the total sum to 0\n    total = 0\n    # Iterate through each character in the string\n    for char in s:\n        # Check if the character is uppercase\n        if char.isupper():\n            # Add the ASCII value of the uppercase character to the total\n            total += ord(char)\n    # Return the computed total\n    return total",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.75
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 67,
+      "trace_idx": 9,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.28409676078487844,
+      "original_correct": false,
+      "pred": "words=0split()=int(words[0])oranges=int(words[3])returnn--oranges",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 68,
+      "trace_idx": 5,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.2967084648781547,
+      "original_correct": false,
+      "pred": "ifmin_evenisNone:#meaningnoevenfoundreturn[]else:return[min_even,min_index]",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.8125
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 68,
+      "trace_idx": 6,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.3098523079910699,
+      "original_correct": false,
+      "pred": "ifcidateisNone:return[]else:return[cidate,idx]",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.8125
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 68,
+      "trace_idx": 7,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.27170448113853735,
+      "original_correct": false,
+      "pred": "ifnotarr:return[]",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 68,
+      "trace_idx": 9,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.29116206530335487,
+      "original_correct": false,
+      "pred": "ifmin_evenisNone:return[]else:return[min_even,min_index]",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 69,
+      "trace_idx": 5,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.31796019817428556,
+      "original_correct": false,
+      "pred": "count=Counter(lst)Then,weiterateoverthekeys(theintegers)collectallintegersxsuchthatcount[x]>=x.Then,ifthelistofsuchintegersisnotempty,wereturnthemaxofthatlist.Otherwise,return-1",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.75
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 69,
+      "trace_idx": 7,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.2751401042492658,
+      "original_correct": false,
+      "pred": "else:return-1",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 70,
+      "trace_idx": 5,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.30238683474268396,
+      "original_correct": false,
+      "pred": "sorted_lst=sorted(lst)result=[]left=0right=len(sorted_lst)-1whileleft<=right:result.append(sorted_lst[left])left+=1ifleft<=right:result.append(sorted_lst[right])right-=1",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 70,
+      "trace_idx": 8,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.30221735605714367,
+      "original_correct": false,
+      "pred": "result=[]current=lst[:]#makecopywhilecurrent:#takethemin_val=(current)result.append(min_val)",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 70,
+      "trace_idx": 11,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.29746784752717725,
+      "original_correct": false,
+      "pred": "After careful thought, I believe this is the correct solution.",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 73,
+      "trace_idx": 2,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.28574828421879633,
+      "original_correct": false,
+      "pred": "returncountYes,thisseemstowork.Letmetestwiththeexamples:Example1:[1,2,3,5,4,7,9,6]left=0,right=7:1!=6\u2192count=1;left=1,right=6left=1,right=6:2!=9\u2192count=2;left=2,right=5left=2,right=5:3!=7\u2192count=3;left=3,right=4left=3,right=4:5!=4\u2192count=4;left=4,right=3\u2192loopstops.Returns4Correct.Example2:[1,2,3,4,3,2,2]left=0,right=6:1!=2\u2192count=1;left=1,right=5left=1,right=5:2==2\u2192;left=2,right=4left=2,right=4:3==3\u2192;left=3,right=3\u2192loopstops.Returns1Correct.Example3:[1,2,3,2,1]\u2192allpairsmatch,return0Correct.Anothertes",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 73,
+      "trace_idx": 5,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.2733429743329415,
+      "original_correct": false,
+      "pred": "count=0left=0right=len(arr)-1whileleft<right:ifarr[left]!=arr[right]:count+=1left+=1right-=1returncount",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 73,
+      "trace_idx": 7,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.2770433365549965,
+      "original_correct": false,
+      "pred": "n=len(arr)count=0left=0right=n-1whileleft<right:ifarr[left]!=arr[right]:count+=1",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 73,
+      "trace_idx": 11,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.3249654387872593,
+      "original_correct": false,
+      "pred": "n=len(arr)changes=0foriinrange(n//2):j=n-1-iifarr[i]!=arr[j]:changes+=1",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 73,
+      "trace_idx": 15,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.31197832249944996,
+      "original_correct": false,
+      "pred": "n=len(arr)left=0right=n-1changes=0whileleft<right:ifarr[left]!=arr[right]:changes+=1",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 74,
+      "trace_idx": 3,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.3262916988163602,
+      "original_correct": false,
+      "pred": "    # your commented implementation here",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 74,
+      "trace_idx": 4,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.3309983695473741,
+      "original_correct": false,
+      "pred": "    # Calculate the total number of characters in lst1\n    total1 = sum(len(s) for s in lst1)\n    # Calculate the total number of characters in lst2\n    total2 = sum(len(s) for s in lst2)\n    # Return lst1 if its total is less than or equal to lst2's total, else return lst2\n    if total1 <= total2:\n        return lst1\n    else:\n        return lst2",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 4,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.75,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 74,
+      "trace_idx": 10,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.28045441707888363,
+      "original_correct": false,
+      "pred": "    # Calculate total characters in the first list\n    total1 = sum(len(s) for s in lst1)\n    \n    # Calculate total characters in the second list\n    total2 = sum(len(s) for s in lst2)\n    \n    # Compare the totals and return the appropriate list\n    if total1 < total2:\n        return lst1\n    elif total2 < total1:\n        return lst2\n    else:\n        return lst1",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.8125
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 74,
+      "trace_idx": 11,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.2838727830197005,
+      "original_correct": false,
+      "pred": "    # Calculate total characters in first list\n    total1 = sum(len(s) for s in lst1)\n    # Calculate total characters in second list\n    total2 = sum(len(s) for s in lst2)\n    # Return first list if its total characters are less\n    if total1 < total2:\n        return lst1\n    # Return second list if its total characters are less\n    elif total2 < total1:\n        return lst2\n    # If totals are equal, return the first list\n    else:\n        return lst1",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 74,
+      "trace_idx": 13,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.3553763460185306,
+      "original_correct": false,
+      "pred": "    # your commented implementation here",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.25,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 74,
+      "trace_idx": 15,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.3060149851930784,
+      "original_correct": false,
+      "pred": "    # Calculate total number of characters in each list\n    total1 = sum(len(s) for s in lst1)\n    total2 = sum(len(s) for s in lst2)\n    \n    # Return the list with fewer total characters; return first list if equal\n    if total1 < total2:\n        return lst1\n    elif total2 < total1:\n        return lst2\n    else:\n        return lst1",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 75,
+      "trace_idx": 8,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.2731982269598281,
+      "original_correct": false,
+      "pred": "#Factorizeintofactors(withmultiplicity)factors=[]n=2whilen>1:whilen=0:factors.append(f)n//==1#Checkifthereexactly",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 78,
+      "trace_idx": 5,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.39404214980254926,
+      "original_correct": false,
+      "pred": "This should be the solution.\n\nI think the previous error was a red herring? Actually, the problem says: \"Do not write tests or `assert` statements\", and we are not.\n\nI'll output this.",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 78,
+      "trace_idx": 6,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.2986344530922817,
+      "original_correct": false,
+      "pred": "    # your commented implementation here",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 78,
+      "trace_idx": 7,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.2716481145836559,
+      "original_correct": false,
+      "pred": "    # Count prime hex digits (2,3,5,7,B,D) in the input string\n    return sum(1 for c in num if c in {'2', '3', '5', '7', 'B', 'D'})",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.75
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 78,
+      "trace_idx": 8,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.3154489335981575,
+      "original_correct": false,
+      "pred": "#yourcommentedimplementationhere",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 78,
+      "trace_idx": 10,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.28788004274133083,
+      "original_correct": false,
+      "pred": "    # Define the set of prime hexadecimal digits (2, 3, 5, 7, B, D)\n    prime_hex = {'2', '3', '5', '7', 'B', 'D'}\n    # Initialize a counter for prime hex digits\n    count = 0\n    # Iterate through each character in the input string\n    for char in num:\n        # Check if the current character is a prime hexadecimal digit\n        if char in prime_hex:\n            count += 1\n    # Return the total count of prime hex digits found\n    return count",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.75
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 78,
+      "trace_idx": 11,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.3355370434661081,
+      "original_correct": false,
+      "pred": "prime_digits=\"2357BD\"count=0forcharinnum:ifcharinprime_digits:count+=1returncount",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.8125
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 78,
+      "trace_idx": 12,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.30182511742938967,
+      "original_correct": false,
+      "pred": "    prime_digits = \"2357BD\"\n    count = 0\n    for digit in num:\n        if digit in prime_digits:\n            count += 1\n    return count",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 78,
+      "trace_idx": 13,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.3182873123635848,
+      "original_correct": false,
+      "pred": "prime_hex=\"2357BD\"returnsum(1forinnumifinprime_hex)",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 4,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.75,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 79,
+      "trace_idx": 7,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.2713522080595445,
+      "original_correct": false,
+      "pred": "    # Convert the decimal number to a binary string without the '0b' prefix\n    binary_rep = bin(decimal)[2:]\n    \n    # Prepend and append 'db' to form the required format\n    return \"db\" + binary_rep + \"db\"",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.8125
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 79,
+      "trace_idx": 13,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.2786418512658356,
+      "original_correct": false,
+      "pred": "I'm done.",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 81,
+      "trace_idx": 1,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.2809780370809284,
+      "original_correct": false,
+      "pred": ">3.7A>3.3A->3B+>2.7B>2.3B->2C+>1.7C>1.3C->1D+>0.7D>0D-0E",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 3
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.25,
+        "coherence": 0.25,
+        "factuality": 0.5,
+        "overall": 0.375
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 81,
+      "trace_idx": 2,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.3284360390594777,
+      "original_correct": false,
+      "pred": "ifgpa==4:'A+'elifgpa>3.7:'A'elifgpa>3.3:'A-'elifgpa>3:'B+'elifgpa>2.7:'B'elifgpa>2.3:'B-'elifgpa>2:'C+'elifgpa>1.7:'C'elifgpa>1.3:'C-'elifgpa>1:'D+'elifgpa>0.7:'D'elifgpa>0:'D-'else:'E'",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 81,
+      "trace_idx": 11,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.27314487589048403,
+      "original_correct": false,
+      "pred": ">3.7A>3.3A->3B+>2.7B>2.3B->2C+>1.7C>1.3C->1D+>0.7D>0D-0E",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.25,
+        "coherence": 0.25,
+        "factuality": 0.75,
+        "overall": 0.4375
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 81,
+      "trace_idx": 15,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.2715766945598172,
+      "original_correct": false,
+      "pred": ">0D-0E",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.25,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 82,
+      "trace_idx": 5,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.2723376554637855,
+      "original_correct": false,
+      "pred": "n=len(string)ifn<2:returnFalseifn==2:returnTrue",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 83,
+      "trace_idx": 0,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.3339094775820188,
+      "original_correct": false,
+      "pred": "else:return18*(10**(n-2))",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 83,
+      "trace_idx": 1,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.28918163869164737,
+      "original_correct": false,
+      "pred": "Actually,no:forthelastdigitfixed1,thefirstn-1digitsmustforthatisatleast10^(n-2)(sonoleadingzeros).Sothecountforendingwith1is9*10^(n-2)forn>=2?Butwhataboutn=1?",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 83,
+      "trace_idx": 2,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.3086503084210277,
+      "original_correct": false,
+      "pred": "ifn==1:return1else:return18*(10**(n-2))Wait,butlet",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 83,
+      "trace_idx": 5,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.296169394590691,
+      "original_correct": false,
+      "pred": "Total=1Forn>=2:Total=10^(n-",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 83,
+      "trace_idx": 6,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.2869324134297523,
+      "original_correct": false,
+      "pred": "start_with_1=10^(2)=100end_with_1=9*10^(1)=90both=10^(1)=10Total=100+90-10=180Correct.Sotheformulasworkforn>=2Forn=1,wereturn1Butwait,istheretowritethiswithoutspecialcase?Let'see:Forn=1:-start_with_1=10^(0)=1",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 3
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.5,
+        "overall": 0.5
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 83,
+      "trace_idx": 7,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.32591034103111893,
+      "original_correct": false,
+      "pred": "else:return18*(10**(n-2))",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 83,
+      "trace_idx": 8,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.3315525402808014,
+      "original_correct": false,
+      "pred": "return(10**(n-1))+(9*10**(n-2))-(10**(n-2))=10**(n-1)+8*10**(n-2)",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 83,
+      "trace_idx": 9,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.2846525446055274,
+      "original_correct": false,
+      "pred": "else:return(10**(n-1))+(9*(10**(n-2)))-(10**(n-2))",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 83,
+      "trace_idx": 10,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.27367890890979885,
+      "original_correct": false,
+      "pred": "|A|=10^(n-1)|B|=9*10^(n-2)|A\u2229B|=10^(n-2)So|A\u222aB|=10^(n-1)+9*10^(n-2)-10^(n-2)=10^(n-1)+8*10^(n-2)",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 83,
+      "trace_idx": 11,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.3114333718321195,
+      "original_correct": false,
+      "pred": "n=1:1n=2:1n=3:10So|A\u2229B|=10^(n-2)forn>=2,",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 83,
+      "trace_idx": 12,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.29555524640954006,
+      "original_correct": false,
+      "pred": "A=setofn-digitthatstartwith1B=setofn-digitthatendwith1",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 83,
+      "trace_idx": 13,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.34120733429696043,
+      "original_correct": false,
+      "pred": "else:return10**(n-1)+9*10**(n-2)-10**(n-2)",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 83,
+      "trace_idx": 14,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.3289648119962829,
+      "original_correct": false,
+      "pred": "1",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 83,
+      "trace_idx": 15,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.30423710466015574,
+      "original_correct": false,
+      "pred": "Total=100+90-10=180Correct.Sotheformulaworksforn>=2,forn=1wereturn1",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 84,
+      "trace_idx": 1,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.28947203106739944,
+      "original_correct": false,
+      "pred": "The code is correct.",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 84,
+      "trace_idx": 2,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.3203832143369843,
+      "original_correct": false,
+      "pred": "    # Convert the integer N to a string to get each digit\n    total = sum(int(d) for d in str(N))\n    # Convert the total sum to a binary string without the '0b' prefix\n    return bin(total)[2:]",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.8125
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 84,
+      "trace_idx": 7,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.27388206856193564,
+      "original_correct": false,
+      "pred": "=str(N)#ConvertNtostringtoprocesseachdigittotal=sum(int()forin)#Calculatethesumofeachdigitanintegerbinary_str=bin(total)[2:]#Convertthetotalsumtobinaryremovethe'0b'prefixreturnbinary_str",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 84,
+      "trace_idx": 8,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.2961286862800811,
+      "original_correct": false,
+      "pred": "First, the problem says: given a positive integer N (but constraints include 0), we need to compute the sum of its digits (as integers) and then represent that sum in binary.\n\nSteps:\n1. Convert N to a string to access each digit. For example",
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 3,
+        "factuality": 3
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.25,
+        "coherence": 0.5,
+        "factuality": 0.5,
+        "overall": 0.375
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 84,
+      "trace_idx": 14,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.28012975239578414,
+      "original_correct": false,
+      "pred": "total=sum(int()forinstr(N))Thenreturnbin(total)[2:]",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 4,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.75,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 85,
+      "trace_idx": 3,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.28193159093715103,
+      "original_correct": false,
+      "pred": "    # Initialize total sum\n    total = 0\n\n    # Iterate over the list with index\n    for i, num in enumerate(lst):\n        # Check for odd index and even number\n        if i % 2 == 1 and num % 2 == 0:\n            total += num\n\n    # Return the total\n    return total",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.75
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 86,
+      "trace_idx": 11,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.2764688564062703,
+      "original_correct": false,
+      "pred": "new_words=[''.join(sorted(word))forwordinwords]return''.join(new_words)",
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 3,
+        "factuality": 3
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.25,
+        "coherence": 0.5,
+        "factuality": 0.5,
+        "overall": 0.375
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 87,
+      "trace_idx": 6,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.27430487679792387,
+      "original_correct": false,
+      "pred": "res.sort(key=lambdapos:(pos[0],-pos[1]))returnres",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 87,
+      "trace_idx": 15,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.29754233080893755,
+      "original_correct": false,
+      "pred": "    # Initialize an empty list to store the coordinates\n    res = []\n    for i, row in enumerate(lst):\n        for j, val in enumerate(row):\n            if val == x:\n                res.append((i, j))\n    # Sort the coordinates: by row (i) in ascending order, and by column (j) in descending order\n    res.sort(key=lambda pos: (pos[0], -pos[1]))\n    return res",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 88,
+      "trace_idx": 6,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.27870326852608546,
+      "original_correct": false,
+      "pred": "n=len(array)ifn==0:return[]#Nowweknown>=1first=array[0]last=array[-1]",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 89,
+      "trace_idx": 6,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.31430784061405004,
+      "original_correct": false,
+      "pred": "base=ord('')Forletter:shifted=((ord()-base+4)26)+base",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 89,
+      "trace_idx": 9,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.2839943274819091,
+      "original_correct": false,
+      "pred": "-ifit'lowercaseletter,converttoitsposition(0-indexed:''=0,'b'=1,0..'z'=25)-add4(mod26towraparound)-convertbacktoletter",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 90,
+      "trace_idx": 3,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.28558005713492485,
+      "original_correct": false,
+      "pred": "first=sorted_lst[0]fornuminsorted_lst[1:]:ifnum>first:returnnum",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.75
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 92,
+      "trace_idx": 1,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.3035744231139474,
+      "original_correct": false,
+      "pred": "ifnot(isinstance(x,int)isinstance(y,int)isinstance(z,int)):returnFalse",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.8125
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 93,
+      "trace_idx": 10,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.301909985203369,
+      "original_correct": false,
+      "pred": "Reasoning:\n\nOkay, let's see. The problem says to write a function called encode that takes a message. The encoding has two parts: swap the case of all letters, and then replace all vowels with the letter that's two places ahead in the English alphabet.\n\nWait, first, I need to make sure I understand the steps correctly. The problem says \"swaps case of all letters, replaces all vowels in the message with the letter that appears 2 places ahead of that vowel\".\n\nHmm, the order here is important. Does",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 94,
+      "trace_idx": 3,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.29317032186058806,
+      "original_correct": false,
+      "pred": "ifn<2:returnFalse#Checkfrom2tosqrt(n)i=2whilei*i<=n:ifni==0:returnFalsei+=1returnTrueButnote:wecanoptimizechecking2firstthenodd?However,theinthelistmightbesmall(theexamples:181,4597,etc.)soit'acceptable.However,theproblemsays:thelistofintegers.Howbigcantheintegersbe?Theexamples:459783278(inexample3)->83278iseven?Actually,example3:[1,3,1,32,5107,34,83278,109,163,23,2323,32,30,1,9,3]->largest?83278iseven->not05107?Letmecheck:5107divided13?13*393=5109->toobig.5107/17=300.41->notinteger?Actually,the",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 94,
+      "trace_idx": 5,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.3044205519882049,
+      "original_correct": false,
+      "pred": "#Checkfrom2tosqrt(n)i=2whilei*i<=n:ifni==0:returnFalse",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 94,
+      "trace_idx": 14,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.3237208211429271,
+      "original_correct": false,
+      "pred": "**Remember**: The problem asks for the largest prime value in the list, then the sum of its digits.\n\nFirst, we need to identify what a prime number is. A prime number is a number greater than 1 that has no divisors other than 1 and itself.\n\n**Step 1**: Go through the list and find all prime numbers (only the largest one is needed, but we have to check all to find the largest).\n\n**Step 2**: Once we have the largest prime, compute the sum of its digits.\n\nWait, but how do we know which is the large",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 3
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.5,
+        "overall": 0.5
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 97,
+      "trace_idx": 7,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.2887410784286319,
+      "original_correct": false,
+      "pred": "InPython,themodulooperationfornegativeisdefinedtoreturnresultin[0,9]formodulus10Let'test:",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 4,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.75,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 98,
+      "trace_idx": 5,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.313033330436869,
+      "original_correct": false,
+      "pred": "returncountButwithcomments:#Initializethecounterforuppercasevowelsatevenindicescount=0#Iterateovereachindexinthestringforiinrange(len()):#Checkifthecurrentindexiseventhecharacterisanuppercasevowelifi2==0[i]",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 98,
+      "trace_idx": 8,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.271936875082693,
+      "original_correct": false,
+      "pred": "count=0#Initializecounterforuppercasevowelsatevenindicesfori,charinenumerate():#Checkifcurrentindexisevencharacterisanuppercasevowelifi2==0charin'AEIOU':count+=1returncount",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 102,
+      "trace_idx": 2,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.2904748163715589,
+      "original_correct": false,
+      "pred": "cidate=yify2==0elsey-1ifcidate>=x:returncidateelse:return-1",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.8125
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 102,
+      "trace_idx": 12,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.2797599631891239,
+      "original_correct": false,
+      "pred": "cidate=yify2==0elsey-1Thenifcidate>=x,returncidate.Otherwise,return-1Butwait:whatifyiseven?Thencidate=y.Thenify>=x,wereturny.Ify<x?Butwehavex<=y(becausewecheckedx>yfirst).Sointhecasex<=y,cidateisthelargesteven<=y.Andwerequirecidate>=x",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.75
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 102,
+      "trace_idx": 15,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.28732688144287644,
+      "original_correct": false,
+      "pred": "    if x > y:\n        return -1\n    candidate = y - (y % 2)\n    if candidate >= x:\n        return candidate\n    return -1",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.75
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 103,
+      "trace_idx": 3,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.27150823798614976,
+      "original_correct": false,
+      "pred": "ifn>:return-1average=(n+)/2rounded_avg_int=round(average)returnbin(rounded_avg_int)Wait,butinPython,whenwedo(n+)/2,ifnintegers,thisisfloatdivision.ButinPython3,(n+)/2isfloatdivisionwell(sinceintegerspromotedtofloatindivision).Wait,buttheproblemsays\"twopositiveintegers\",sonintegers.Wait,inPython3,5/2is2.5,so(n+)/2isthesame(n+)/2(since2isfloat,butinPython3,/withintegersgivesfloat).Wait,buttobesafe,wecanuse(n+)/2,butinPython3,it'thesame(n+)/2Let'testinPython:>>>(1+5)/23>>>round(3)3>>>bin(3)'0b11'Ye",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.6875
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 103,
+      "trace_idx": 8,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.2779444299601749,
+      "original_correct": false,
+      "pred": "The problem asks for the average of integers from n to m inclusive, rounded to the nearest integer, then converted to binary with a 0b prefix.\n\nFirst, handle the edge case where n > m: return -1.\n\nOtherwise, we need to compute the average. The average of numbers from n to m inclusive is (n + m) / 2? Wait, no: the average of an arithmetic series from a to b inclusive is (a + b) * (number of terms) / 2. \n\nWait, the problem says \"the average of the integers from n through m\". So if we have numbers ",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 103,
+      "trace_idx": 13,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.27425821262466554,
+      "original_correct": false,
+      "pred": "ifn>:return-1#Calculatetheaverageofn(sinceit'consecutivesequence,averageis(n+)/2)average=(n+)/2#Roundtothenearestintegerrounded_int=round(average)#Converttobinarystringwith'0b'prefixreturnbin(rounded_int)Wait,butinPython,(n+)/2isfloat,butforintegersn,(n+)/2mightbeintegerifn+iseven,butwewanttohlethedecimal.Buttheexamplewith2033:(20+33)=53,53/2=26.5,round(26.5)=26,bin(26)='0b11010'\u2014correct.Let'testinPython:>>>bin(round((20+33)/2))'0b11010'Yes,that'correct.Anothertest:n=1,=2:average=(1+2)/2=1.5,rou",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 0.75,
+        "overall": 0.75
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 104,
+      "trace_idx": 2,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.27546136397137944,
+      "original_correct": false,
+      "pred": "result=[numfornuminxifall(int()2==1forinstr(num))]returnsorted(result)",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 105,
+      "trace_idx": 10,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.2743591036391901,
+      "original_correct": false,
+      "pred": "names=[\"One\",\"Two\",\"Three\",\"Four\",\"Five\",\"Six\",\"Seven\",\"Eight\",\"Nine\"]filtered=[numfornuminarrif1<=num<=9]sorted_nums=sorted(filtered)reversed_nums=sorted_nums[::-1]result=[names[num-1]fornuminreversed_nums]returnresult",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 105,
+      "trace_idx": 14,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.33689008503421847,
+      "original_correct": false,
+      "pred": "    # Define the list of word names for digits 1 to 9\n    words = [\"One\", \"Two\", \"Three\", \"Four\", \"Five\", \"Six\", \"Seven\", \"Eight\", \"Nine\"]\n    \n    # Filter out numbers that are not in the range [1, 9]\n    filtered = [x for x in arr if 1 <= x <= 9]\n    \n    # Sort the filtered numbers in ascending order\n    sorted_filtered = sorted(filtered)\n    \n    # Reverse the sorted list to get descending order\n    reversed_sorted = sorted_filtered[::-1]\n    \n    # Map each number to its corresponding word ",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.75
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 106,
+      "trace_idx": 3,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.27891518661350595,
+      "original_correct": false,
+      "pred": "j=i+1ifj2==0:value=factorial(j)",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 106,
+      "trace_idx": 15,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.2836981017288624,
+      "original_correct": false,
+      "pred": "i=j+1ifi2==0:value=factorial(i)else:value=sum(1toi)=i*(i+1)//2",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 107,
+      "trace_idx": 1,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.27602554994690065,
+      "original_correct": false,
+      "pred": "    even_count = 0\n    odd_count = 0\n\n    for num in range(1, n + 1):\n        num_str = str(num)\n        if num_str == num_str[::-1]:\n            if num % 2 == 0:\n                even_count += 1\n            else:\n                odd_count += 1\n\n    return (even_count, odd_count)",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.75
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 107,
+      "trace_idx": 2,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.3663330211468479,
+      "original_correct": false,
+      "pred": "even_count=0odd_count=0fornuminrange(1,n+1):=str(num)if==[::-1]:ifnum2==0:even_count+=1else:odd_count+=1return(even_count,odd_count)",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 107,
+      "trace_idx": 4,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.28442373433533835,
+      "original_correct": false,
+      "pred": "    even_count = 0\n    odd_count = 0\n    # Iterate through each number from 1 to n (inclusive)\n    for i in range(1, n + 1):\n        # Convert the number to a string to check for palindrome\n        s = str(i)\n        # Check if the string is a palindrome\n        if s == s[::-1]:\n            # Check if the number is even\n            if i % 2 == 0:\n                even_count += 1\n            else:\n                odd_count += 1\n    return (even_count, odd_count)",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.8125
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 107,
+      "trace_idx": 7,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.32922930102430137,
+      "original_correct": false,
+      "pred": "    even_count = 0\n    odd_count = 0\n    for num in range(1, n + 1):\n        s = str(num)\n        if s == s[::-1]:\n            if num % 2 == 0:\n                even_count += 1\n            else:\n                odd_count += 1\n    return (even_count, odd_count)",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 107,
+      "trace_idx": 8,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.3100588618248117,
+      "original_correct": false,
+      "pred": "    # your commented implementation here",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 107,
+      "trace_idx": 9,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.2709862532724133,
+      "original_correct": false,
+      "pred": "    # Initialize counters for even and odd palindromic numbers\n    even_count = 0\n    odd_count = 0\n\n    # Iterate through each number from 1 to n (inclusive)\n    for num in range(1, n + 1):\n        # Convert the number to a string to check if it's a palindrome\n        s = str(num)\n        # Check if the string is equal to its reverse (palindrome check)\n        if s == s[::-1]:\n            # Check if the number is even\n            if num % 2 == 0:\n                even_count += 1\n            else",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 107,
+      "trace_idx": 11,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.2817554191740997,
+      "original_correct": false,
+      "pred": "But wait, the problem says \"Do not write tests or assert statements\". We are not.\n\nAlso, the problem says \"Include clear inline comments between logical steps\". \n\nI added comments in the code? Actually, the problem says: \"Include clear inline comments between logical steps (one comment per major step or line group)\". \n\nI didn't write comments in the code above. Let me add comments as per the requirement.\n\nRevised code with comments:",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 110,
+      "trace_idx": 13,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.2775202580252845,
+      "original_correct": false,
+      "pred": "odd_count1=sum(1fornuminlst1ifnum2!=0)#Counttheofeveninlst2even_count2=sum(1fornuminlst2ifnum2==",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 112,
+      "trace_idx": 4,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.27290845779227274,
+      "original_correct": false,
+      "pred": "    # Filter out characters from s that are present in c\n    filtered = ''.join(char for char in s if char not in c)\n    \n    # Check if the resulting string is a palindrome\n    is_palindrome = filtered == filtered[::-1]\n    \n    # Return the tuple with the filtered string and palindrome check\n    return (filtered, is_palindrome)",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 112,
+      "trace_idx": 14,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.27072486279568836,
+      "original_correct": false,
+      "pred": "    # Convert the string c into a set for O(1) lookups of characters to remove\n    c_set = set(c)\n\n    # Construct the result string by removing characters in c_set from s\n    result_str = ''.join(char for char in s if char not in c_set)\n\n    # Check if the result string is a palindrome\n    is_palindrome = result_str == result_str[::-1]\n\n    # Return the tuple of the result string and the palindrome flag\n    return (result_str, is_palindrome)",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.8125
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 114,
+      "trace_idx": 1,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.2804713362608762,
+      "original_correct": false,
+      "pred": "ifnotnums:return0#butproblemsaysnon-emptysubarray,sonumsisnon-emptymin_sum=nums[0]current_min=nums[0]foriinrange(1,len(nums)):current_min=(nums[i],current_min+nums[i])min_sum=(min_sum,current_min)",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 114,
+      "trace_idx": 6,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.3311377974300116,
+      "original_correct": false,
+      "pred": "     # your commented implementation here",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 114,
+      "trace_idx": 8,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.2983153790381609,
+      "original_correct": false,
+      "pred": "current_max=max(nums[0],current_max+nums[0])max_so_far=max(max_so_far,current_max)Forminimumsubarraysum:current_min=(nums[0],current_min+nums[0])min_so_far=(min_so_far,current_min)Butwait:isthatcorrect?Let'testwith[-1,-2,-3]:Start:current_min=-1,min_so_far=-1",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 114,
+      "trace_idx": 12,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.27988264132656304,
+      "original_correct": false,
+      "pred": "0",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 114,
+      "trace_idx": 13,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.2932481701558858,
+      "original_correct": false,
+      "pred": "current_min=nums[0]min_sum=nums[0]foriinrange(1,len(nums)):current_min=(nums[i],current_min+nums[i])min_sum=(min_sum,current_min)returnmin_sumWait,let'testwiththeexamples.Firstexample:[2,3,4,1,2,4]\u2192return1Correct.Secondexample:[-1,-2,-3]\u2192return-6Correct.Anothertest:[1,2,3]\u2192return1Correct.Anothertest:[1,-1,2]\u2192theminimumsubarraysumis-1(themiddleelement).Algorithm:current_min=1,min_sum=1i=1:current_min=(-1,1-1=0)\u2192-1\u2192min_sum=(1,-1)=-1i=2:current_min=(2,-1+2=1)\u21921\u2192min_sum=-1Correct.Yes,thisseemstowork",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 114,
+      "trace_idx": 14,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.3025561691097477,
+      "original_correct": false,
+      "pred": "1",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 115,
+      "trace_idx": 0,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.2787407920604535,
+      "original_correct": false,
+      "pred": "    total = 0\n    for row in grid:\n        water = sum(row)\n        # Calculate the number of bucket trips needed for this well\n        total += (water + capacity - 1) // capacity\n    return total",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.8125
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 115,
+      "trace_idx": 2,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.2839864449596953,
+      "original_correct": false,
+      "pred": "total=0forrowingrid:water=sum(row)buckets=(water+capacity-1)//capacitytotal+=bucketsreturntotal",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 5,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 1.0,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.875
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 115,
+      "trace_idx": 4,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.32816897267965894,
+      "original_correct": false,
+      "pred": "The problem says \"Read the function specification below.\" and then \"Work in two parts: 1. Reasoning, 2. Solution\". I did both.\n\nSo the response is:",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 115,
+      "trace_idx": 14,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.28387833708057214,
+      "original_correct": false,
+      "pred": "    total_ops = 0\n    for row in grid:\n        # Count water units in the current row (well)\n        water_units = sum(row)\n        # Calculate bucket operations needed for this well: ceil(water_units / capacity)\n        operations = (water_units + capacity - 1) // capacity\n        total_ops += operations\n    return total_ops",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.75
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 116,
+      "trace_idx": 2,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.2979485068433717,
+      "original_correct": false,
+      "pred": "2",
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 3,
+        "factuality": 2
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.25,
+        "coherence": 0.5,
+        "factuality": 0.25,
+        "overall": 0.3125
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 116,
+      "trace_idx": 5,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.2744124876700488,
+      "original_correct": false,
+      "pred": "(Your reasoning here)\nWe are given a function `sort_array(arr)` that must sort an array of non-negative integers by the number of ones in their binary representation (ascending). If two numbers have the same number of ones, then sort by their decimal value (ascending).\n\nHowever, note the examples:\n  >>> sort_array([1, 5, 2, 3, 4]) == [1, 2, 3, 4, 5]\n  Why? \n      1: bin(1) -> '1' -> 1 one\n      2: bin(2) -> '10' -> 1 one\n      3: bin(3) -> '11' -> 2 ones\n      4: bin(4) -> '100' -> 1 one\n      5",
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 2
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.25,
+        "coherence": 0.25,
+        "factuality": 0.25,
+        "overall": 0.25
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 117,
+      "trace_idx": 15,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.2781907405302513,
+      "original_correct": false,
+      "pred": "#Splittheinputstringintowordswords=0split()#Initializeanemptylisttostorethewordsthatmeettheconditionresult=[]#Definethestringofvowelsforcase-insensitivecheckingvowels=\"aeiou\"#Iterateovereachwordinthesplitlistforwordinwords:#Counttheofconsonantsinthewordcount=0forcharinword:#Convertthecharactertolowercasetocheckagainstthevowelstring(whichisinlowercase)ifchar.lower()notinvowels:count+=1#Ifthecountofconsonantsequalsn,addthewordtotheresultlistifcount==n:result.append(word)returnresultButnote:theprob",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 118,
+      "trace_idx": 12,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.27192406546251446,
+      "original_correct": false,
+      "pred": "-left:word[2]=''->consonant(notvowel)->yes-right:word[4]='r'->consonant(notvowel)->yes->return'u'",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.8125
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 119,
+      "trace_idx": 5,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.27281837872978226,
+      "original_correct": false,
+      "pred": "0",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 119,
+      "trace_idx": 9,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.2741506152658486,
+      "original_correct": false,
+      "pred": "ifbalance1==0:return'Yes'#Checkorder2:bthen",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 120,
+      "trace_idx": 9,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.2835029878324884,
+      "original_correct": false,
+      "pred": "arr=[-3,-4,5]\u2192sorted:[-4,-3,5]arr[-3:]\u2192[-4,-3,5]\u2192correct.Example2:arr=[4,-4,4]\u2192sorted:[-4,4,4]arr[-2:]\u2192[4,4]\u2192correct.Example3:arr=[-3,2,1,2,-1,-2,1]\u2192sorted:[-3,-2,-1,1,1,2,2]arr[-1:]\u2192[2]\u2192correct.Edgecase:k=0\u2192arr[-0:]isthewholearray?Wait,no:inPython,`arr[-0:]`isthesame`arr[0:]`?Wait,let'check:",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 121,
+      "trace_idx": 2,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.3048445778332797,
+      "original_correct": false,
+      "pred": "total=0foriinrange(len(lst)):ifi2==0:#evenindex(0-indexed)iflst[i]2==1:#oddtotal+=lst[i]",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 121,
+      "trace_idx": 14,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.27029320566604537,
+      "original_correct": false,
+      "pred": "SothemodulusoperationinPythonfornegative:Itreturnnon-negativeremainder",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 123,
+      "trace_idx": 8,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.2985730935801186,
+      "original_correct": false,
+      "pred": "sequence=[]current=nwhilecurrent!=1:sequence.append(current)ifcurrent2==0:current=current//2",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 124,
+      "trace_idx": 13,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.2726116751539795,
+      "original_correct": false,
+      "pred": "iflen(date)!=10:returnFalse",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 130,
+      "trace_idx": 14,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.2823476036645326,
+      "original_correct": false,
+      "pred": "\"tri(1)=3\"thenforn=2(even):tri(2)=2forn=3(odd):tri(3)=8forn=4(even):tri(4)=3",
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 3,
+        "coherence": 2,
+        "factuality": 3
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.5,
+        "coherence": 0.25,
+        "factuality": 0.5,
+        "overall": 0.375
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 131,
+      "trace_idx": 0,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.27862513037946296,
+      "original_correct": false,
+      "pred": "odd_digits=[int()forinstr(n)ifint()2==1]ifnotodd_digits:return0",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 135,
+      "trace_idx": 0,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.2724833326669885,
+      "original_correct": false,
+      "pred": "result=-1foriinrange(1,len(arr)):ifarr[i]<arr[i-1]:result=ireturnresultButwait,let'testwiththeexamples.Example1:[1,2,4,3,5]\u2192i=1:2<1?No;i=2:4<2?No;i=3:3<4?Yes\u2192result=3;i=4:5<3?No\u2192return3Correct.Example2:[1,2,3]\u2192noiwhereconditionholds\u2192return-1Correct.Anothertest:[5,4,3,2,1]\u2192i=1:4<5\u2192result=1;i=2:3<4\u2192result=2;i=3:2<3\u2192result=3;i=4:1<2\u2192result=4\u2192return4Correct.Edgecase:emptyarray?Wait,theproblemsays\"thegivenarraywillnotcontainduplicatevalues\".Itdoesn'say",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 135,
+      "trace_idx": 2,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.2762310088192131,
+      "original_correct": false,
+      "pred": "    n = len(arr)\n    # Iterate from the last index down to the second element (index 1)\n    for i in range(n - 1, 0, -1):\n        # Check if the current element is less than the previous element\n        if arr[i] < arr[i - 1]:\n            return i\n    # No element found where current is less than previous; return -1\n    return -1",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.75
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 135,
+      "trace_idx": 5,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.3010024548526488,
+      "original_correct": false,
+      "pred": "iflen(arr)<2:return-1",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 4,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.75,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 136,
+      "trace_idx": 0,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.28740524743482765,
+      "original_correct": false,
+      "pred": "negatives=[xforxinlstifx<0]positives=[xforxinlstifx>0]max(negatives)ifnegativeselseNone(positives)ifpositiveselseNonereturn(,b)",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.8125
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 136,
+      "trace_idx": 14,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.3374103587485996,
+      "original_correct": false,
+      "pred": "negatives=[xforxinlstifx<0]positives=[xforxinlstifx>0]max(negatives)ifnegativeselseNone(positives)ifpositiveselseNonereturn(,b)",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.75
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 136,
+      "trace_idx": 15,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.2884354211536108,
+      "original_correct": false,
+      "pred": "ifnegative:thenupdatemax_negtobethelargest(sothehighestvalue,meaningtheleastnegative)ifwehaven'foundanyorifthisnegativeislarger(closertozero)thanthecurrentmax_neg.ifpositive:thenupdatemin_postobethesmallestpositivewe'veseensofar.Aftertheloop,return(max_neg,min_pos)",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.75
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 138,
+      "trace_idx": 2,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.2719836478413205,
+      "original_correct": false,
+      "pred": "#Checkifnisevenatleast8(minimumsumof4positiveevenis8)returnn2==0n>=8",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 138,
+      "trace_idx": 10,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.2803295060773106,
+      "original_correct": false,
+      "pred": "returnn>=8n2==0Letmetestwiththeexamples:",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.75
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 138,
+      "trace_idx": 11,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.27595986299874153,
+      "original_correct": false,
+      "pred": "    return n >= 8 and n % 2 == 0",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 138,
+      "trace_idx": 15,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.2730594658858928,
+      "original_correct": false,
+      "pred": "returnn>=8n2==0Butwait:whataboutn=0?n=0:0>=8->false->returnFalse->correct(becauseweneed4positiveeven,whichatleast2each,so0istoosmall).n=2:2>=8->false->False->correct.n=10:True->correct.Sothisconditioncoversall.Butletmethink:isthereanyeven>=8thatcannotbewritten?Weargued:foranyevenn>=8,wecanwriten=2+2+2+(n-6).Butnote:werequirethat(n-6)isatleast2?Wait:themustbepositiveeven.Son-6mustbeatleast2?Actually,therepresentation:Wecando:2,2,2,n-6Butwerequirethatn-6ispositiveeven0Sinceniseven,n-6iseven.Andwer",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 139,
+      "trace_idx": 14,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.27039318438619375,
+      "original_correct": false,
+      "pred": "    # your commented implementation here",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 140,
+      "trace_idx": 1,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.27089164344886063,
+      "original_correct": false,
+      "pred": "Wetraverseeachcharintext:ifcharisspace:count+=1",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.25,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 140,
+      "trace_idx": 3,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.27590262951950234,
+      "original_correct": false,
+      "pred": "result=[]#listofcharacterstobuildthestringi=0n=len(text)count=0#countconsecutivespaceswhilei<n:iftext[i]=='':count+=1i+=1",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 142,
+      "trace_idx": 6,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.27621133559766936,
+      "original_correct": false,
+      "pred": "sum=16+5+6=27Butifwedon'changethelist,thenwereturn4+5+6=15",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 142,
+      "trace_idx": 15,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.2786808695242393,
+      "original_correct": false,
+      "pred": "total=0fori,numinenumerate(lst):ifi3==0:total+=num**2",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 143,
+      "trace_idx": 0,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.2834645457127515,
+      "original_correct": false,
+      "pred": "2",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 143,
+      "trace_idx": 10,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.29244236005287544,
+      "original_correct": false,
+      "pred": "ifn<2:returnFalseforiinrange(2,int(n**0.5)+1):ifni==0:returnFalsereturnTrueWait,butforn=2,thelooprunsfrom2toint(sqrt(2))+1,whichis2to1+1=2?Wait,sqrt(2)isabout1.414,soint(1.414)is1,sotherangeisfrom2to1+1=2?Wait,no:range(2,int(n**0.5)+1)forn=2:int(2**0.5)is1,soint(n**0.5)+1is2Sotherangeisrange(2,2),whichisempty.SoitreturnTrue.Good.Letmetestthisfunctionwithsome:is_prime(1)->False(correct)is_prime(2)->True(correct)is_prime(3)->True(correct)is_prime(4)->False(correct)is_prime(5)->True(correct)is_prim",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 144,
+      "trace_idx": 8,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.29670345488314825,
+      "original_correct": false,
+      "pred": "x_parts=x.split('/')n_parts=n.split('/')x_num=int(x_parts[0])x_den=int(x_parts[1])n_num=int(n_parts[0])n_den=int(n_parts[1])total_num=x_num*n_numtotal_den=x_den*n_denreturntotal_numtotal_den==0Butwait:isthatalwayscorrect?Consider:",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 145,
+      "trace_idx": 1,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.28957904679883345,
+      "original_correct": false,
+      "pred": "-1:digitsum=1?-11:digitsum=1+1=2?-12:digitsum=1+2=3",
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 2,
+        "factuality": 3
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.25,
+        "coherence": 0.25,
+        "factuality": 0.5,
+        "overall": 0.3125
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 145,
+      "trace_idx": 6,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.3035642107875616,
+      "original_correct": false,
+      "pred": "Sotheordersumofdigits(ignoringsign)wouldbe:-1:11:1-11:211:2-12:3",
+      "judge_scores": {
+        "faithfulness": 2,
+        "utility": 2,
+        "coherence": 3,
+        "factuality": 3
+      },
+      "fused_scores": {
+        "faithfulness": 0.25,
+        "utility": 0.25,
+        "coherence": 0.5,
+        "factuality": 0.5,
+        "overall": 0.375
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 145,
+      "trace_idx": 14,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.2703369254721146,
+      "original_correct": false,
+      "pred": "elementatindex0:1->digitsum=1elementatindex2:-1->digitsum=1",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 146,
+      "trace_idx": 1,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.2910889040076119,
+      "original_correct": false,
+      "pred": "ifnum<=10:continueelse:=str(num)first_digit=[0]last_digit=[-1]ifint(first_digit)2==1int(last_digit)2==1:count+=1",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 146,
+      "trace_idx": 7,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.31527388455601885,
+      "original_correct": false,
+      "pred": "count=0fornuminnums:#Skipthatnotgreaterthan10ifnum<=10:continue#Convertthetostringtogetdigits=str(num)#Extractfirstlastdigitsintegersfirst_digit=int([0])last_digit=int([-1])",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 147,
+      "trace_idx": 0,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.27767476446780504,
+      "original_correct": false,
+      "pred": "total=(count0*(count0-1)*(count0-2)//6)+\\(count1*(count1-1)*(count1-2)//6)+\\(count2*(count2-1)*(count2-2)//6)+\\(count0*count1*count2)returntotal",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 147,
+      "trace_idx": 2,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.3066825458378184,
+      "original_correct": false,
+      "pred": "i=2,5,8,...\u2192thesequenceis3k+2fork\u22650,3k+2\u2264n.Similarly,forresidue1([i]mod3=1):thishappenswhenimod3=0or1Theifrom1tonthat\u22610mod3:3,6,9,...\u22611mod3:1,4,7,",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.25,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 147,
+      "trace_idx": 3,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.3110240141075908,
+      "original_correct": false,
+      "pred": "i=2:4-2+1=3i=3:9-3+1=7i=4:16-4+1=13i=5:25-5+1=21Sothearrayis[1,3,7,13,21]forn=5",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 147,
+      "trace_idx": 4,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.3718456640364785,
+      "original_correct": false,
+      "pred": "i=1:1mod3=1\u2192remainder1(correct)i=2:2mod3=2\u2192remainder0(correct)i=3:3mod3=0\u2192remainder1(correct)i=4:4mod3=1\u2192remainder1(correct)i=5:5mod3=2\u2192remainder0(correct)i=6:6mod3=0\u2192remainder1(correct)Yes,thispatternholds.Sowehave:-Type0:where[i]mod3=0(thesecorrespondtoi\u22612mod3)-Type1:where[i]mod3=1(thesecorrespondtoi\u22610or1mod3)Wait,actually,let'beprecise:Let'define:-count0=ofindicesi(1\u2264i\u2264n)suchthat[i]mod3=0-count1=ofindicesi(1\u2264i\u2264n)suchthat[i]mod3=1Fromouranalysis:-[i]mod3=0whenimod3=2-[i]mod3=1whenimod3=0or1Sof",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.25,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 147,
+      "trace_idx": 5,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.3028546089269951,
+      "original_correct": false,
+      "pred": "[1,3,7,13,21]Computemod3:13=133=073=1133=1(since12isdivisible3,13mod3=1)213=0Soremainders:[1,0,1,1,0]r0=2(the0s:3,21)r1=3(the1s:1,7,13)r2=0Then:C(r0,3)=C(2,3)=0C(r1,3)=C(3,3)=1C(r2,3)=0r0*r1*r2=2*3*0=0Total=1,whichmatches.Sotheapproachis:1Precomputetheremainderforeachelementinthearray(forifrom1ton,butincodewedoforindex0ton-1).2Counthowmanyhaveremainder0,1,23Computetheofvalidtriples:total=C(r0,3)+C(r1,3)+C(r2,3)+r0*r1*r2",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.25,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 147,
+      "trace_idx": 6,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.297988301407838,
+      "original_correct": false,
+      "pred": "r=(i*i-i+1)3ifr==0:count0+=1else:count1+=1",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 147,
+      "trace_idx": 7,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.2962340694286075,
+      "original_correct": false,
+      "pred": "residue=(i*i-i+1)3ifresidue==0:count0+=1elifresidue==1:count1+=1else:count2+=1",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.25,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 147,
+      "trace_idx": 8,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.2777492054783757,
+      "original_correct": false,
+      "pred": "i=2:residue=0i=3:residue=1i=4:residue=1i=5:residue=0Sothepatternforresidueof[i]mod3:imod3|residue1|12|00|1",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.25,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 147,
+      "trace_idx": 9,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.3051115056025047,
+      "original_correct": false,
+      "pred": "Fori(0-based):ifi3==1:residue=0else:residue=1",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 147,
+      "trace_idx": 11,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.29983168568316043,
+      "original_correct": false,
+      "pred": "residue=0ifi3==1residue=1ifi3==0or2",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 147,
+      "trace_idx": 13,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.2704404736412506,
+      "original_correct": false,
+      "pred": "13",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 147,
+      "trace_idx": 14,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.3465544844374937,
+      "original_correct": false,
+      "pred": "count0=ofelementswithresidue0count1=ofelementswithresidue1Then,the",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.25,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 147,
+      "trace_idx": 15,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.33902224807032183,
+      "original_correct": false,
+      "pred": "i=2:2*2-2+1=4-2+1=3\u2192[1]=3i=3:9-3+1=7\u2192[2]=7i=4:16-4+1=13\u2192[3]=13i=5:25-5+1=21\u2192[4]=21Soyes,forindexi(0-indexed),[i]=(i+1)**2-(i+1)+1=i**2+i+1So[i]=i*i+i+1(for0-indexedi)",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 148,
+      "trace_idx": 0,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.314321291687734,
+      "original_correct": false,
+      "pred": "planets=['Mercury','Venus','Earth','Mars','Jupiter','Saturn','Uranus','Neptune']ifplanet1notinplanetsorplanet2notinplanets:return()",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.6875
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 148,
+      "trace_idx": 14,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.28254792828331976,
+      "original_correct": false,
+      "pred": "planets=['Mercury','Venus','Earth','Mars','Jupiter','Saturn','Uranus','Neptune']ifplanet1notinplanetsorplanet2notinplanets:return()",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 150,
+      "trace_idx": 6,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.3028482860867299,
+      "original_correct": false,
+      "pred": "    # your commented implementation here",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.8125
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 150,
+      "trace_idx": 13,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.27718340424711213,
+      "original_correct": false,
+      "pred": "ifn<=1:returnFalseifn==2:returnTrueifn2==0:returnFalse#Checkoddfactorsuptosqrt(n)i=3whilei*i<=n:ifni==0:returnFalsei+=2Butwait,theproblemsays\"simpleprogram\",somaybewedon'needthemostefficientcode.Butweshouldhleallcasescorrectly.Letmetesttheexamplesgiven:Example1:x_or_y(7,34,12)==347is,soreturnx(34).Correct.Example2:x_or_y(15,8,5)==515isnot(divisible35),soreturny(5).Correct.So,thecodeforthefunctionwouldbe:",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 4,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.75,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 152,
+      "trace_idx": 2,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.27697062748027784,
+      "original_correct": false,
+      "pred": "#Returntheresultslistreturnresults",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 4,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.75,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 153,
+      "trace_idx": 5,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.2712657103570653,
+      "original_correct": false,
+      "pred": "First, I need to understand the problem:\n\n1. We have a class name and a list of extensions.\n2. For each extension, we calculate its strength = (number of uppercase letters) - (number of lowercase letters)\n3. We need to find the extension with the highest strength. If there's a tie, choose the one that appears first in the list.\n\nWait, the example says for \"Slices\" and ['SErviNGSliCes', 'Cheese', 'StuFfed'] -> 'Slices.SErviNGSliCes' because 'SErviNGSliCes' has strength -1? Wait, that seems odd be",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 153,
+      "trace_idx": 15,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.2742923072484486,
+      "original_correct": false,
+      "pred": "best_extension=Noneforextinextensions:strength=",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 155,
+      "trace_idx": 12,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.2703955490324719,
+      "original_correct": false,
+      "pred": "    # code here",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 156,
+      "trace_idx": 1,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.3032751333004996,
+      "original_correct": false,
+      "pred": "result=[]forvalue,symbolinroman_numerals:while>=value:-=valueresult.append(symbol)",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 156,
+      "trace_idx": 4,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.30127577931054084,
+      "original_correct": false,
+      "pred": "roman_map=[(1000,''),(900,''),(500,''),(400,'cd'),(100,''),(90,'xc'),(50,''),(40,'xl'),(10,'x'),(9,'ix'),(5,'v'),(4,'iv'),(1,'i')]",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.25,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 156,
+      "trace_idx": 9,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.28388260670152365,
+      "original_correct": false,
+      "pred": "roman_numerals=[(1000,''),(900,''),(500,''),(400,'cd'),(100,''),(90,'xc'),(50,''),(40,'xl'),(10,'x'),(9,'ix'),(5,'v'),(4,'iv'),(1,'i')]Then,foreach(value,symbol)inroman_numerals:while>=value:result+=symbol-=value",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.625
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 156,
+      "trace_idx": 10,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.29526326602653546,
+      "original_correct": false,
+      "pred": "#DefinethelistofRomannumeralvaluessymbolsindescendingorderroman_numerals=[(1000,''),(900,''),(500,''),(400,'cd'),(100,''),(90,'xc'),(50,''),(40,'xl'),(10,'x'),(9,'ix'),(5,'v'),(4,'iv'),(1,'i')]result=''forvalue,symbolinroman_numerals:while>=value:-=valueresult+=symbolreturnresultWait,buttheproblemsays\"returnitinlowercase\",butthesymbolsweusealreadylowercase,sothat'fine.Let'testwiththeexamples:Example1:19Startwith1000,900,500,400,100,90,50,40,10:19>=10->subtract10,add'x'->result='x',=9Then9:9>=9->",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 3,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.5,
+        "factuality": 1.0,
+        "overall": 0.6875
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 156,
+      "trace_idx": 12,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.3276027601358353,
+      "original_correct": false,
+      "pred": "whilen>=value:n-=valueresult+=symbol",
+      "judge_scores": {
+        "faithfulness": 3,
+        "utility": 2,
+        "coherence": 3,
+        "factuality": 4
+      },
+      "fused_scores": {
+        "faithfulness": 0.5,
+        "utility": 0.25,
+        "coherence": 0.5,
+        "factuality": 0.75,
+        "overall": 0.5
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 159,
+      "trace_idx": 2,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.27636390099568026,
+      "original_correct": false,
+      "pred": "#Calculatehowmanycarrotstherabbitcaneat(minimumofwhatitneedswhat'available)amount_to_eat=(need,remaining)#Calculatetotalcarrotseatenafterthismealtotal_eaten=+amount_to_eat#Calculateremainingcarrotsaftereatingremaining_after=remaining-amount_to_eat#Returntheresultlistreturn[total_eaten,remaining_after]",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 3,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.5,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.75
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 159,
+      "trace_idx": 3,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.28840202206818316,
+      "original_correct": false,
+      "pred": "#Calculatetheofcarrotswecanactuallyeat(theminimumofwhatweneedwhat'available)total_eat=(need,remaining)#Calculatethetotalcarrotseatenafterthemealtotal_eaten=+total_eat#Calculatetheremainingcarrotsaftereatingremaining_after=remaining-total_eat#Returntheresultlist[totaleaten,remainingafter]return[total_eaten,remaining_after]",
+      "judge_scores": {
+        "faithfulness": 4,
+        "utility": 4,
+        "coherence": 4,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 0.75,
+        "utility": 0.75,
+        "coherence": 0.75,
+        "factuality": 1.0,
+        "overall": 0.8125
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 159,
+      "trace_idx": 5,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.2754568674638137,
+      "original_correct": false,
+      "pred": "    # Calculate the total eaten and remaining after eating the minimum of needed and available carrots\n    return [number + min(need, remaining), remaining - min(need, remaining)]",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 159,
+      "trace_idx": 11,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.28762396354760444,
+      "original_correct": false,
+      "pred": "#Calculatetheofcarrotseatenfromthestock(theminimumofwhatweneedwhat'available)eaten_from_stock=(need,remaining)#Calculatethetotalofcarrotseatenaftermealstotal_eaten=+eaten_from_stock#Calculatetheremainingcarrotsaftereatingfromthestockremaining_after=remaining-eaten_from_stock#Returntheresultlistcontainingtotaleatenremainingaftermealsreturn[total_eaten,remaining_after]",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    },
+    {
+      "idx": 159,
+      "trace_idx": 12,
+      "model": "Qwen3-4B-Thinking-2507",
+      "confidence": 0.2748052762540359,
+      "original_correct": false,
+      "pred": "#yourcommentedimplementationhere",
+      "judge_scores": {
+        "faithfulness": 5,
+        "utility": 5,
+        "coherence": 5,
+        "factuality": 5
+      },
+      "fused_scores": {
+        "faithfulness": 1.0,
+        "utility": 1.0,
+        "coherence": 1.0,
+        "factuality": 1.0,
+        "overall": 1.0
+      },
+      "status": "ok"
+    }
+  ]
+}

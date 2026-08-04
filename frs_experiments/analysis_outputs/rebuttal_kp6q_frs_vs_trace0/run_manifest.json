@@ -1,0 +1,65 @@
+{
+  "generated_at": "2026-05-23T01:22:18.980277+00:00",
+  "inputs": {
+    "frs_pass1": {
+      "path": "/Users/manaspathak11/Desktop/Everything/research paper/threshold/global_pass1_frs_analysis/merged_pass1_frs_per_benchmark.csv",
+      "exists": true,
+      "size": 2289,
+      "mtime": 1774462732.0133526
+    },
+    "trace0": {
+      "path": "/Users/manaspathak11/Desktop/Everything/research paper/threshold/analysis_outputs/trace0_k1_judging/trace0_k1_vs_frs_comparison.csv",
+      "exists": true,
+      "size": 28843,
+      "mtime": 1779472418.5469425
+    },
+    "unfiltered": {
+      "path": "/Users/manaspathak11/Desktop/Everything/research paper/threshold/analysis_outputs/unfiltered_reasoning/per_pair_scores.csv",
+      "exists": true,
+      "size": 36859,
+      "mtime": 1774934781.5627263
+    }
+  },
+  "params": {
+    "pass1_thresholds": [
+      2.0,
+      3.0,
+      5.0
+    ],
+    "reversal_min_gap_pp": 2.0,
+    "bootstrap_n": 2000,
+    "bootstrap_seed": 123
+  },
+  "inputs_hash": "10bfd9eda5c05d3f",
+  "sanity": {
+    "n_pairs": 54,
+    "expected_pairs": 54,
+    "n_models": 9,
+    "n_benchmarks": 6,
+    "models_found": [
+      "DS-R1-1.5B",
+      "DS-R1-7B",
+      "Gemma-7B",
+      "LLaMA-3.1-8B",
+      "Phi-4",
+      "Phi-4-Reas.",
+      "Qwen2.5-7B",
+      "Qwen2.5-Math",
+      "Qwen3-4B"
+    ],
+    "benchmarks_found": [
+      "AQuA",
+      "CSQA",
+      "GPQA",
+      "GSM8K",
+      "MATH500",
+      "SVAMP"
+    ],
+    "missing_pairs": [],
+    "extra_pairs": [],
+    "n_missing_frs_pct": 0,
+    "n_missing_pass1_pct": 0,
+    "n_missing_trace0_pct": 0,
+    "n_missing_unfiltered_pct": 0
+  }
+}

@@ -1,0 +1,483 @@
+{
+  "seed_base": 42,
+  "sample_size_target": 50,
+  "top_pool_fraction": 0.5,
+  "n_bins": 5,
+  "bin_definitions": [
+    [
+      "0-10",
+      0.0,
+      10.0
+    ],
+    [
+      "10-20",
+      10.0,
+      20.0
+    ],
+    [
+      "20-30",
+      20.0,
+      30.0
+    ],
+    [
+      "30-40",
+      30.0,
+      40.0
+    ],
+    [
+      "40-50",
+      40.0,
+      50.0
+    ]
+  ],
+  "timestamp_utc": "2026-03-25T03:41:31.137996+00:00",
+  "data_root": "/Users/manaspathak11/Desktop/Everything/research paper/threshold",
+  "git_commit_at_data_root": "62193f24acb8d41b6b69b8886654a456355fc2c3",
+  "judge_model_default": "@irom-ll37364-op-b37b3e/gpt-4o-mini",
+  "paths": {
+    "checkpoints_dir": "./reasoning_confidence_bins_results/judging_checkpoints",
+    "reasoning_by_confidence_bin_csv": "reasoning_by_confidence_bin.csv",
+    "reasoning_cumulative_topk_csv": "reasoning_cumulative_topk.csv"
+  },
+  "pairs": [
+    {
+      "model": "DS-R1-1.5B",
+      "dataset": "AQuA",
+      "n_pooled_traces": 4064,
+      "n_top_pool_kept": 2032,
+      "checkpoint": "./reasoning_confidence_bins_results/judging_checkpoints/judged_DS-R1-1.5B__AQuA.json",
+      "error": null
+    },
+    {
+      "model": "DS-R1-1.5B",
+      "dataset": "CommonsenseQA",
+      "n_pooled_traces": 19536,
+      "n_top_pool_kept": 9768,
+      "checkpoint": "./reasoning_confidence_bins_results/judging_checkpoints/judged_DS-R1-1.5B__CommonsenseQA.json",
+      "error": null
+    },
+    {
+      "model": "DS-R1-1.5B",
+      "dataset": "GPQA",
+      "n_pooled_traces": 7168,
+      "n_top_pool_kept": 3584,
+      "checkpoint": "./reasoning_confidence_bins_results/judging_checkpoints/judged_DS-R1-1.5B__GPQA.json",
+      "error": null
+    },
+    {
+      "model": "DS-R1-1.5B",
+      "dataset": "GSM8K",
+      "n_pooled_traces": 21104,
+      "n_top_pool_kept": 10552,
+      "checkpoint": "./reasoning_confidence_bins_results/judging_checkpoints/judged_DS-R1-1.5B__GSM8K.json",
+      "error": null
+    },
+    {
+      "model": "DS-R1-1.5B",
+      "dataset": "MATH500",
+      "n_pooled_traces": 8000,
+      "n_top_pool_kept": 4000,
+      "checkpoint": "./reasoning_confidence_bins_results/judging_checkpoints/judged_DS-R1-1.5B__MATH500.json",
+      "error": null
+    },
+    {
+      "model": "DS-R1-1.5B",
+      "dataset": "SVAMP",
+      "n_pooled_traces": 16000,
+      "n_top_pool_kept": 8000,
+      "checkpoint": "./reasoning_confidence_bins_results/judging_checkpoints/judged_DS-R1-1.5B__SVAMP.json",
+      "error": null
+    },
+    {
+      "model": "DS-R1-7B",
+      "dataset": "AQuA",
+      "n_pooled_traces": 4064,
+      "n_top_pool_kept": 2032,
+      "checkpoint": "./reasoning_confidence_bins_results/judging_checkpoints/judged_DS-R1-7B__AQuA.json",
+      "error": null
+    },
+    {
+      "model": "DS-R1-7B",
+      "dataset": "CommonsenseQA",
+      "n_pooled_traces": 19536,
+      "n_top_pool_kept": 9768,
+      "checkpoint": "./reasoning_confidence_bins_results/judging_checkpoints/judged_DS-R1-7B__CommonsenseQA.json",
+      "error": null
+    },
+    {
+      "model": "DS-R1-7B",
+      "dataset": "GPQA",
+      "n_pooled_traces": 7168,
+      "n_top_pool_kept": 3584,
+      "checkpoint": "./reasoning_confidence_bins_results/judging_checkpoints/judged_DS-R1-7B__GPQA.json",
+      "error": null
+    },
+    {
+      "model": "DS-R1-7B",
+      "dataset": "GSM8K",
+      "n_pooled_traces": 21104,
+      "n_top_pool_kept": 10552,
+      "checkpoint": "./reasoning_confidence_bins_results/judging_checkpoints/judged_DS-R1-7B__GSM8K.json",
+      "error": null
+    },
+    {
+      "model": "DS-R1-7B",
+      "dataset": "MATH500",
+      "n_pooled_traces": 8000,
+      "n_top_pool_kept": 4000,
+      "checkpoint": "./reasoning_confidence_bins_results/judging_checkpoints/judged_DS-R1-7B__MATH500.json",
+      "error": null
+    },
+    {
+      "model": "DS-R1-7B",
+      "dataset": "SVAMP",
+      "n_pooled_traces": 16000,
+      "n_top_pool_kept": 8000,
+      "checkpoint": "./reasoning_confidence_bins_results/judging_checkpoints/judged_DS-R1-7B__SVAMP.json",
+      "error": null
+    },
+    {
+      "model": "Gemma-7B",
+      "dataset": "AQuA",
+      "n_pooled_traces": 4064,
+      "n_top_pool_kept": 2032,
+      "checkpoint": "./reasoning_confidence_bins_results/judging_checkpoints/judged_Gemma-7B__AQuA.json",
+      "error": null
+    },
+    {
+      "model": "Gemma-7B",
+      "dataset": "CommonsenseQA",
+      "n_pooled_traces": 19536,
+      "n_top_pool_kept": 9768,
+      "checkpoint": "./reasoning_confidence_bins_results/judging_checkpoints/judged_Gemma-7B__CommonsenseQA.json",
+      "error": null
+    },
+    {
+      "model": "Gemma-7B",
+      "dataset": "GPQA",
+      "n_pooled_traces": 7168,
+      "n_top_pool_kept": 3584,
+      "checkpoint": "./reasoning_confidence_bins_results/judging_checkpoints/judged_Gemma-7B__GPQA.json",
+      "error": null
+    },
+    {
+      "model": "Gemma-7B",
+      "dataset": "GSM8K",
+      "n_pooled_traces": 21104,
+      "n_top_pool_kept": 10552,
+      "checkpoint": "./reasoning_confidence_bins_results/judging_checkpoints/judged_Gemma-7B__GSM8K.json",
+      "error": null
+    },
+    {
+      "model": "Gemma-7B",
+      "dataset": "MATH500",
+      "n_pooled_traces": 8000,
+      "n_top_pool_kept": 4000,
+      "checkpoint": "./reasoning_confidence_bins_results/judging_checkpoints/judged_Gemma-7B__MATH500.json",
+      "error": null
+    },
+    {
+      "model": "Gemma-7B",
+      "dataset": "SVAMP",
+      "n_pooled_traces": 16000,
+      "n_top_pool_kept": 8000,
+      "checkpoint": "./reasoning_confidence_bins_results/judging_checkpoints/judged_Gemma-7B__SVAMP.json",
+      "error": null
+    },
+    {
+      "model": "LLaMA-3.1-8B",
+      "dataset": "AQuA",
+      "n_pooled_traces": 4064,
+      "n_top_pool_kept": 2032,
+      "checkpoint": "./reasoning_confidence_bins_results/judging_checkpoints/judged_LLaMA-3.1-8B__AQuA.json",
+      "error": null
+    },
+    {
+      "model": "LLaMA-3.1-8B",
+      "dataset": "CommonsenseQA",
+      "n_pooled_traces": 19536,
+      "n_top_pool_kept": 9768,
+      "checkpoint": "./reasoning_confidence_bins_results/judging_checkpoints/judged_LLaMA-3.1-8B__CommonsenseQA.json",
+      "error": null
+    },
+    {
+      "model": "LLaMA-3.1-8B",
+      "dataset": "GPQA",
+      "n_pooled_traces": 7168,
+      "n_top_pool_kept": 3584,
+      "checkpoint": "./reasoning_confidence_bins_results/judging_checkpoints/judged_LLaMA-3.1-8B__GPQA.json",
+      "error": null
+    },
+    {
+      "model": "LLaMA-3.1-8B",
+      "dataset": "GSM8K",
+      "n_pooled_traces": 21104,
+      "n_top_pool_kept": 10552,
+      "checkpoint": "./reasoning_confidence_bins_results/judging_checkpoints/judged_LLaMA-3.1-8B__GSM8K.json",
+      "error": null
+    },
+    {
+      "model": "LLaMA-3.1-8B",
+      "dataset": "MATH500",
+      "n_pooled_traces": 8000,
+      "n_top_pool_kept": 4000,
+      "checkpoint": "./reasoning_confidence_bins_results/judging_checkpoints/judged_LLaMA-3.1-8B__MATH500.json",
+      "error": null
+    },
+    {
+      "model": "LLaMA-3.1-8B",
+      "dataset": "SVAMP",
+      "n_pooled_traces": 16000,
+      "n_top_pool_kept": 8000,
+      "checkpoint": "./reasoning_confidence_bins_results/judging_checkpoints/judged_LLaMA-3.1-8B__SVAMP.json",
+      "error": null
+    },
+    {
+      "model": "Phi-4",
+      "dataset": "AQuA",
+      "n_pooled_traces": 4064,
+      "n_top_pool_kept": 2032,
+      "checkpoint": "./reasoning_confidence_bins_results/judging_checkpoints/judged_Phi-4__AQuA.json",
+      "error": null
+    },
+    {
+      "model": "Phi-4",
+      "dataset": "CommonsenseQA",
+      "n_pooled_traces": 19536,
+      "n_top_pool_kept": 9768,
+      "checkpoint": "./reasoning_confidence_bins_results/judging_checkpoints/judged_Phi-4__CommonsenseQA.json",
+      "error": null
+    },
+    {
+      "model": "Phi-4",
+      "dataset": "GPQA",
+      "n_pooled_traces": 7168,
+      "n_top_pool_kept": 3584,
+      "checkpoint": "./reasoning_confidence_bins_results/judging_checkpoints/judged_Phi-4__GPQA.json",
+      "error": null
+    },
+    {
+      "model": "Phi-4",
+      "dataset": "GSM8K",
+      "n_pooled_traces": 21104,
+      "n_top_pool_kept": 10552,
+      "checkpoint": "./reasoning_confidence_bins_results/judging_checkpoints/judged_Phi-4__GSM8K.json",
+      "error": null
+    },
+    {
+      "model": "Phi-4",
+      "dataset": "MATH500",
+      "n_pooled_traces": 8000,
+      "n_top_pool_kept": 4000,
+      "checkpoint": "./reasoning_confidence_bins_results/judging_checkpoints/judged_Phi-4__MATH500.json",
+      "error": null
+    },
+    {
+      "model": "Phi-4",
+      "dataset": "SVAMP",
+      "n_pooled_traces": 16000,
+      "n_top_pool_kept": 8000,
+      "checkpoint": "./reasoning_confidence_bins_results/judging_checkpoints/judged_Phi-4__SVAMP.json",
+      "error": null
+    },
+    {
+      "model": "Phi-4-Reas.",
+      "dataset": "AQuA",
+      "n_pooled_traces": 4064,
+      "n_top_pool_kept": 2032,
+      "checkpoint": "./reasoning_confidence_bins_results/judging_checkpoints/judged_Phi-4-Reas.__AQuA.json",
+      "error": null
+    },
+    {
+      "model": "Phi-4-Reas.",
+      "dataset": "CommonsenseQA",
+      "n_pooled_traces": 19536,
+      "n_top_pool_kept": 9768,
+      "checkpoint": "./reasoning_confidence_bins_results/judging_checkpoints/judged_Phi-4-Reas.__CommonsenseQA.json",
+      "error": null
+    },
+    {
+      "model": "Phi-4-Reas.",
+      "dataset": "GPQA",
+      "n_pooled_traces": 7168,
+      "n_top_pool_kept": 3584,
+      "checkpoint": "./reasoning_confidence_bins_results/judging_checkpoints/judged_Phi-4-Reas.__GPQA.json",
+      "error": null
+    },
+    {
+      "model": "Phi-4-Reas.",
+      "dataset": "GSM8K",
+      "n_pooled_traces": 21104,
+      "n_top_pool_kept": 10552,
+      "checkpoint": "./reasoning_confidence_bins_results/judging_checkpoints/judged_Phi-4-Reas.__GSM8K.json",
+      "error": null
+    },
+    {
+      "model": "Phi-4-Reas.",
+      "dataset": "MATH500",
+      "n_pooled_traces": 8000,
+      "n_top_pool_kept": 4000,
+      "checkpoint": "./reasoning_confidence_bins_results/judging_checkpoints/judged_Phi-4-Reas.__MATH500.json",
+      "error": null
+    },
+    {
+      "model": "Phi-4-Reas.",
+      "dataset": "SVAMP",
+      "n_pooled_traces": 16000,
+      "n_top_pool_kept": 8000,
+      "checkpoint": "./reasoning_confidence_bins_results/judging_checkpoints/judged_Phi-4-Reas.__SVAMP.json",
+      "error": null
+    },
+    {
+      "model": "Qwen2.5-7B",
+      "dataset": "AQuA",
+      "n_pooled_traces": 4064,
+      "n_top_pool_kept": 2032,
+      "checkpoint": "./reasoning_confidence_bins_results/judging_checkpoints/judged_Qwen2.5-7B__AQuA.json",
+      "error": null
+    },
+    {
+      "model": "Qwen2.5-7B",
+      "dataset": "CommonsenseQA",
+      "n_pooled_traces": 19536,
+      "n_top_pool_kept": 9768,
+      "checkpoint": "./reasoning_confidence_bins_results/judging_checkpoints/judged_Qwen2.5-7B__CommonsenseQA.json",
+      "error": null
+    },
+    {
+      "model": "Qwen2.5-7B",
+      "dataset": "GPQA",
+      "n_pooled_traces": 7168,
+      "n_top_pool_kept": 3584,
+      "checkpoint": "./reasoning_confidence_bins_results/judging_checkpoints/judged_Qwen2.5-7B__GPQA.json",
+      "error": null
+    },
+    {
+      "model": "Qwen2.5-7B",
+      "dataset": "GSM8K",
+      "n_pooled_traces": 21104,
+      "n_top_pool_kept": 10552,
+      "checkpoint": "./reasoning_confidence_bins_results/judging_checkpoints/judged_Qwen2.5-7B__GSM8K.json",
+      "error": null
+    },
+    {
+      "model": "Qwen2.5-7B",
+      "dataset": "MATH500",
+      "n_pooled_traces": 8000,
+      "n_top_pool_kept": 4000,
+      "checkpoint": "./reasoning_confidence_bins_results/judging_checkpoints/judged_Qwen2.5-7B__MATH500.json",
+      "error": null
+    },
+    {
+      "model": "Qwen2.5-7B",
+      "dataset": "SVAMP",
+      "n_pooled_traces": 16000,
+      "n_top_pool_kept": 8000,
+      "checkpoint": "./reasoning_confidence_bins_results/judging_checkpoints/judged_Qwen2.5-7B__SVAMP.json",
+      "error": null
+    },
+    {
+      "model": "Qwen2.5-Math",
+      "dataset": "AQuA",
+      "n_pooled_traces": 4064,
+      "n_top_pool_kept": 2032,
+      "checkpoint": "./reasoning_confidence_bins_results/judging_checkpoints/judged_Qwen2.5-Math__AQuA.json",
+      "error": null
+    },
+    {
+      "model": "Qwen2.5-Math",
+      "dataset": "CommonsenseQA",
+      "n_pooled_traces": 19536,
+      "n_top_pool_kept": 9768,
+      "checkpoint": "./reasoning_confidence_bins_results/judging_checkpoints/judged_Qwen2.5-Math__CommonsenseQA.json",
+      "error": null
+    },
+    {
+      "model": "Qwen2.5-Math",
+      "dataset": "GPQA",
+      "n_pooled_traces": 7168,
+      "n_top_pool_kept": 3584,
+      "checkpoint": "./reasoning_confidence_bins_results/judging_checkpoints/judged_Qwen2.5-Math__GPQA.json",
+      "error": null
+    },
+    {
+      "model": "Qwen2.5-Math",
+      "dataset": "GSM8K",
+      "n_pooled_traces": 21104,
+      "n_top_pool_kept": 10552,
+      "checkpoint": "./reasoning_confidence_bins_results/judging_checkpoints/judged_Qwen2.5-Math__GSM8K.json",
+      "error": null
+    },
+    {
+      "model": "Qwen2.5-Math",
+      "dataset": "MATH500",
+      "n_pooled_traces": 8000,
+      "n_top_pool_kept": 4000,
+      "checkpoint": "./reasoning_confidence_bins_results/judging_checkpoints/judged_Qwen2.5-Math__MATH500.json",
+      "error": null
+    },
+    {
+      "model": "Qwen2.5-Math",
+      "dataset": "SVAMP",
+      "n_pooled_traces": 16000,
+      "n_top_pool_kept": 8000,
+      "checkpoint": "./reasoning_confidence_bins_results/judging_checkpoints/judged_Qwen2.5-Math__SVAMP.json",
+      "error": null
+    },
+    {
+      "model": "Qwen3-4B",
+      "dataset": "AQuA",
+      "n_pooled_traces": 4064,
+      "n_top_pool_kept": 2032,
+      "checkpoint": "./reasoning_confidence_bins_results/judging_checkpoints/judged_Qwen3-4B__AQuA.json",
+      "error": null
+    },
+    {
+      "model": "Qwen3-4B",
+      "dataset": "CommonsenseQA",
+      "n_pooled_traces": 19536,
+      "n_top_pool_kept": 9768,
+      "checkpoint": "./reasoning_confidence_bins_results/judging_checkpoints/judged_Qwen3-4B__CommonsenseQA.json",
+      "error": null
+    },
+    {
+      "model": "Qwen3-4B",
+      "dataset": "GPQA",
+      "n_pooled_traces": 7168,
+      "n_top_pool_kept": 3584,
+      "checkpoint": "./reasoning_confidence_bins_results/judging_checkpoints/judged_Qwen3-4B__GPQA.json",
+      "error": null
+    },
+    {
+      "model": "Qwen3-4B",
+      "dataset": "GSM8K",
+      "n_pooled_traces": 21104,
+      "n_top_pool_kept": 10552,
+      "checkpoint": "./reasoning_confidence_bins_results/judging_checkpoints/judged_Qwen3-4B__GSM8K.json",
+      "error": null
+    },
+    {
+      "model": "Qwen3-4B",
+      "dataset": "MATH500",
+      "n_pooled_traces": 8000,
+      "n_top_pool_kept": 4000,
+      "checkpoint": "./reasoning_confidence_bins_results/judging_checkpoints/judged_Qwen3-4B__MATH500.json",
+      "error": null
+    },
+    {
+      "model": "Qwen3-4B",
+      "dataset": "SVAMP",
+      "n_pooled_traces": 16000,
+      "n_top_pool_kept": 8000,
+      "checkpoint": "./reasoning_confidence_bins_results/judging_checkpoints/judged_Qwen3-4B__SVAMP.json",
+      "error": null
+    }
+  ],
+  "failures": [],
+  "caveats": [
+    "Bins are disjoint deciles of the pooled trace list AFTER restricting to the top 50% by confidence.",
+    "Reasoning scores use the same GPT-4o-mini 4-dimension rubric as topk_judge_eval.py (normalized to 0\u20131).",
+    "Cumulative rows weight bin means by the number of successfully judged traces in each bin.",
+    "Global accuracy overlay uses topk_ablation_results.csv (full pooled top-K%), a different slice than the within-top-50% bins."
+  ]
+}
