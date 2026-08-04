@@ -5,11 +5,11 @@ This guide separates results by what they cost to reproduce. Start with tier 1 �
 ## Tier 1 — no API key, no GPU (minutes)
 
 Everything here recomputes from the 54 judge checkpoints shipped in
-`frs_experiments/reasoning_confidence_bins_results/judging_checkpoints/`
+`experiments/outputs/reasoning_confidence_bins_results/judging_checkpoints/`
 (one JSON per model × benchmark pair, ~250 judged traces each).
 
 ```bash
-cd frs_experiments
+cd experiments
 
 # Table 1: FRS at K=10% with bootstrap SDs. Prints the table and LaTeX.
 python bootstrap_table2_std.py
@@ -28,7 +28,7 @@ python global_pass1_frs_pairwise_analysis.py
 ±values. It is the fastest way to confirm your checkout is intact.
 
 Selection-gain results (Appendix U) recompute from the frozen judge outputs in
-`selection-gain/appendix_s/` — `selection_gain_predictor_results.csv` already
+`results/selection_gain/appendix_s/` — `selection_gain_predictor_results.csv` already
 contains the Pearson r ≈ 0.491 reported in the paper.
 
 ## Tier 2 — API key, no GPU (hours, ~$12)
@@ -37,14 +37,14 @@ Re-judging traces requires `OPENAI_API_KEY` and raw traces (see tier 3).
 
 ```bash
 # The full FRS estimator: 5 confidence bins x 50 traces per model-benchmark pair
-cd frs_experiments
+cd experiments
 python reasoning_confidence_bins.py run \
   --data-root /path/to/pass16_traces \
   --output-dir my_run \
   --samples-per-bin 50 --top-pool-frac 0.5 --n-bins 5 --seed 42
 
 # Or the single-command pipeline on one model's outputs
-python ../frs_pipeline.py --input /path/to/model.jsonl --output-dir runs/demo
+python ../frs/frs_pipeline.py --input /path/to/model.jsonl --output-dir runs/demo
 ```
 
 Judging is checkpointed by `(idx, trace_idx, bin_label)` and resumable — re-run
@@ -81,16 +81,16 @@ sampling budget is a reasonable cost saving.
 
 Once generated, arrange traces as `<Model>__<Benchmark>.jsonl` and point the
 tier-1/tier-2 scripts at that directory with `--data-root`.
-`frs_experiments/analysis/export_pass16_canonical_zip.py` builds this layout.
+`experiments/robustness/export_pass16_canonical_zip.py` builds this layout.
 
 ## Verifying a checkout
 
 ```bash
 # Should print 54
-ls frs_experiments/reasoning_confidence_bins_results/judging_checkpoints/judged_*.json | wc -l
+ls experiments/outputs/reasoning_confidence_bins_results/judging_checkpoints/judged_*.json | wc -l
 
 # Should reproduce Table 1 (DS-R1-7B 88.5, Gemma-7B 26.3)
-cd frs_experiments && python bootstrap_table2_std.py | head -15
+cd experiments && python bootstrap_table2_std.py | head -15
 ```
 
 ## Notes on exactness
@@ -99,6 +99,6 @@ cd frs_experiments && python bootstrap_table2_std.py | head -15
   model versions. Tier-1 results are deterministic because they reuse stored
   scores; tier-2 re-judging may shift values slightly.
 - Some published figures were assembled outside this repository from hardcoded
-  arrays. `export_reasoning_convergence_data.py` labels its Figure 3 outputs
+  arrays. `experiments/export_reasoning_convergence_data.py` labels its Figure 3 outputs
   `_RECONSTRUCTED` to make this explicit.
-- `temp0_confidence_analysis.py` needs T=0 traces that are not in this release.
+- `experiments/temp0_confidence_analysis.py` needs T=0 traces that are not in this release.

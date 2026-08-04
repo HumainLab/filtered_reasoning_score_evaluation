@@ -3,7 +3,7 @@
 This document lists **every in-repo component** of the Filtered Reasoning Score (FRS) pipeline and how to adapt it for **HumanEval**. Share it with collaborators together with:
 
 - `humaneval_extract_answer.py` — extract executable code from a model response
-- `build_filtered_cot.py` — build `*_filtered_p1_only.jsonl` from pass@k generation outputs (missing for math today; provided here)
+- `frs/build_filtered_cot.py` — build `*_filtered_p1_only.jsonl` from pass@k generation outputs (missing for math today; provided here)
 
 ---
 
@@ -57,12 +57,12 @@ python math_eval.py \
 
 ## Stage 2 — Confidence filtering → `*_filtered_p1_only.jsonl`
 
-**Producer (was missing in-repo):** `build_filtered_cot.py` (repo root)
+**Producer (was missing in-repo):** `frs/build_filtered_cot.py` (repo root)
 
 ```bash
 python build_filtered_cot.py \
   --input-jsonl evaluation/outputs/<MODEL>_humaneval.jsonl \
-  --output-dir filtered-cot-humaneval \
+  --output-dir results/filtered_cot/humaneval \
   --model-stem Llama_3.1_8B_Instruct \
   --top-frac 0.10 \
   --humaneval-split-reasoning
@@ -93,7 +93,7 @@ Input probs: `chosen_token_probs_per_path["epoch_0"][trace_idx]` from generation
 | `answer_confidence` | Scalar from bottom-10% mean prob |
 | `chosen_token_probs_per_path` | Optional; kept if present in input |
 
-**Existing filtered math dirs** (for reference): `filtered-cot-gsm8k`, `filtered-cot-math500`, etc. (symlinks under repo root).
+**Existing filtered math dirs** (for reference): `results/filtered_cot/gsm8k`, `results/filtered_cot/math500`, etc. (under results/filtered_cot/).
 
 ---
 
@@ -104,7 +104,7 @@ Input probs: `chosen_token_probs_per_path["epoch_0"][trace_idx]` from generation
 ```bash
 # Set OPENAI_API_KEY or backend/path_config.json openai_api_key
 python run_filtered_cot_eval.py \
-  --input-dir filtered-cot-humaneval \
+  --input-dir results/filtered_cot/humaneval \
   --files-parallel 3 \
   --samples-parallel 5
 ```
@@ -114,10 +114,10 @@ python run_filtered_cot_eval.py \
 | File | Purpose |
 |------|---------|
 | `run_filtered_cot_eval.py` | Batch runner; reads `code[0]` as CoT, calls judge |
-| `backend/app/cot_eval_v2/judge.py` | GPT-4o-mini rubric (4 pillars, 1–5), `build_prompt` |
-| `backend/app/cot_eval_v2/evaluator.py` | `PillarsEvaluator.analyze(problem, cot_text, gold)` |
-| `backend/app/cot_eval_v2/scoring.py` | Rule scores + `fuse_with_judge` → `fused_scores` |
-| `backend/app/cot_eval_v2/flag_implementations.py` | Deterministic flags (math-oriented heuristics) |
+| `frs/cot_eval_v2/judge.py` | GPT-4o-mini rubric (4 pillars, 1–5), `build_prompt` |
+| `frs/cot_eval_v2/evaluator.py` | `PillarsEvaluator.analyze(problem, cot_text, gold)` |
+| `frs/cot_eval_v2/scoring.py` | Rule scores + `fuse_with_judge` → `fused_scores` |
+| `frs/cot_eval_v2/flag_implementations.py` | Deterministic flags (math-oriented heuristics) |
 
 **Important:** `evaluate_sample` in `run_filtered_cot_eval.py:161–166` sets:
 
@@ -128,7 +128,7 @@ gold = record.get("gt", ...)  # must be a string for the judge prompt
 
 For HumanEval, **do not** pass the raw `gt` dict (tests + `entry_point`). `build_filtered_cot.py --humaneval-split-reasoning` sets `gt` to the problem prompt string.
 
-**Output:** `filtered-cot-humaneval/results/<stem>_filtered_p1_only_results.json`
+**Output:** `results/filtered_cot/humaneval/results/<stem>_filtered_p1_only_results.json`
 
 Per-sample fields include `fused_scores.overall` (0–1), `judge_scores`, `original_correct`.
 
@@ -142,7 +142,7 @@ Per-sample fields include `fused_scores.overall` (0–1), `judge_scores`, `origi
 import json
 from pathlib import Path
 
-p = Path("filtered-cot-humaneval/results/MODEL_filtered_p1_only_results.json")
+p = Path("results/filtered_cot/humaneval/results/MODEL_filtered_p1_only_results.json")
 data = json.loads(p.read_text())
 scores = [r["fused_scores"]["overall"] for r in data["results"] if r.get("fused_scores")]
 frs_pct = 100 * sum(scores) / len(scores)
@@ -153,9 +153,9 @@ print(f"FRS = {frs_pct:.1f}%  (n={len(scores)})")
 
 | Script | Purpose |
 |--------|---------|
-| `analysis/generate_frs_coverage_analysis.py` | FRS vs confidence threshold sweeps |
-| `analysis/generate_postfiltered_validation_manifest.py` | Stratified judge validation samples |
-| `analysis/aggregate_prm_baseline.py` | Join filtered JSONL + judge results |
+| `experiments/paper_figures/generate_frs_coverage_analysis.py` | FRS vs confidence threshold sweeps |
+| `experiments/paper_figures/generate_postfiltered_validation_manifest.py` | Stratified judge validation samples |
+| `experiments/paper_figures/aggregate_prm_baseline.py` | Join filtered JSONL + judge results |
 
 **Published FRS table:** `experiments/all-result-pdf-data/filtered_reasoning_table.csv` — add a HumanEval column after recomputing.
 
@@ -167,8 +167,8 @@ print(f"FRS = {frs_pct:.1f}%  (n={len(scores)})")
 2. **Grade correctness** — automatic in `math_eval.py` via `evaluate()` → `humaneval_check`.
 3. **Extract code** — `humaneval_extract_answer.py` on each trace.
 4. **Split reasoning vs code** — `build_filtered_cot.py --humaneval-split-reasoning`.
-5. **Filter** — `build_filtered_cot.py` → `filtered-cot-humaneval/<model>_filtered_p1_only.jsonl`.
-6. **Judge** — `run_filtered_cot_eval.py --input-dir filtered-cot-humaneval`.
+5. **Filter** — `frs/build_filtered_cot.py` → `results/filtered_cot/humaneval/<model>_filtered_p1_only.jsonl`.
+6. **Judge** — `frs/run_filtered_cot_eval.py --input-dir results/filtered_cot/humaneval`.
 7. **Aggregate** — mean `fused_scores.overall` × 100.
 
 ---
@@ -177,7 +177,7 @@ print(f"FRS = {frs_pct:.1f}%  (n={len(scores)})")
 
 | Path | Purpose |
 |------|---------|
-| `selection-gain/appendix_s/` | Selection-gain experiment CSVs (50 questions × 2 policies) |
+| `results/selection_gain/appendix_s/` | Selection-gain experiment CSVs (50 questions × 2 policies) |
 | `analysis_outputs/rebuttal_prm/` | PRM vs FRS correlation analyses |
 | `run_postfiltered_judge_validation.py` | Human validation of judge on filtered samples |
 | `REPO_INTERFACE_REPORT.md` | Full repo interface report |
@@ -189,4 +189,4 @@ print(f"FRS = {frs_pct:.1f}%  (n={len(scores)})")
 1. **Judge rubric is math-oriented** (`judge.py` — “mathematical and logical reasoning”). Factuality checks assume numeric grounding; expect weaker signal on code tasks.
 2. **Rule-based flags** in `PillarsEvaluator` target math steps, not Python AST structure.
 3. **No `humaneval` in `filtered_reasoning_table.csv`** yet — column must be added after Stage 4.
-4. **Filter builder was offline** for math; use `build_filtered_cot.py` and verify subset sizes against your pass@k pool.
+4. **Filter builder was offline** for math; use `frs/build_filtered_cot.py` and verify subset sizes against your pass@k pool.

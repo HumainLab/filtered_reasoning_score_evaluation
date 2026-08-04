@@ -8,16 +8,16 @@ venv/
 # Secrets and machine-specific config.
 # path_config.json holds API keys and cluster paths -- copy the template and
 # fill it in locally. It must never be committed.
-backend/path_config.json
-backend/job_db.json
-frontend/config.js
+webui/backend/path_config.json
+webui/backend/job_db.json
+webui/frontend/config.js
 .env
 
 # Generation outputs and judge run artifacts (large; regenerate or download)
 evaluation/outputs/
 evaluation/exports/
-backend/logs/
-backend/scripts/
+webui/backend/logs/
+webui/backend/scripts/
 *.log
 *.pid
 logs/

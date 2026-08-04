@@ -29,13 +29,13 @@ pip install -r requirements-frs.txt
 export OPENAI_API_KEY=sk-...           # judge model access
 
 # Filter to the top 10% most-confident traces, judge them, and report FRS
-python frs_pipeline.py \
+python frs/frs_pipeline.py \
   --input  path/to/generation_outputs/ \
   --output-dir runs/my_frs_run \
   --top-frac 0.10
 ```
 
-`frs_pipeline.py` is the canonical end-to-end entry point: it takes generation outputs, computes per-trace confidence, applies the top-K% filter, runs the judge, and writes FRS.
+`frs/frs_pipeline.py` is the canonical end-to-end entry point: it takes generation outputs, computes per-trace confidence, applies the top-K% filter, runs the judge, and writes FRS.
 
 **Outputs**
 
@@ -61,7 +61,7 @@ One JSON object per line, one file per model. Required fields:
 | `score` | list[bool] | Correctness per trace |
 | `chosen_token_probs_per_path` | `{"epoch_0": [[float, ...], ...]}` | Per-token probabilities, one list per trace — **this is what confidence is computed from** |
 
-This is exactly what `evaluation/math_eval.py` emits with `--save_outputs --enable_prob_tracking`. `frs_pipeline.py` also accepts `probability_log_per_path`, `chosen_token_probs`, and `probability_log`.
+This is exactly what `evaluation/math_eval.py` emits with `--save_outputs --enable_prob_tracking`. `frs/frs_pipeline.py` also accepts `probability_log_per_path`, `chosen_token_probs`, and `probability_log`.
 
 ### Generating traces from scratch
 
@@ -77,7 +77,7 @@ python math_eval.py \
   --output_dir outputs/DS-R1-7B
 ```
 
-Benchmark data for the paper's six benchmarks ships in `evaluation/data/` (GSM8K, MATH500, SVAMP, AQuA, GPQA, CommonsenseQA), plus HumanEval. AQuA, GPQA, and CommonsenseQA load **only** from these local files — `data_loader.py` has no HuggingFace branch for them.
+Benchmark data for the paper's six benchmarks ships in `evaluation/data/` (GSM8K, MATH500, SVAMP, AQuA, GPQA, CommonsenseQA), plus HumanEval. AQuA, GPQA, and CommonsenseQA load **only** from these local files — `evaluation/data_loader.py` has no HuggingFace branch for them.
 
 ## Configuration
 
@@ -88,47 +88,74 @@ Benchmark data for the paper's six benchmarks ships in `evaluation/data/` (GSM8K
 | `PORTKEY_MODEL_PREFIX` | Gateway model prefix, e.g. `@your-org-gateway`. Empty by default; leave unset for the direct OpenAI API |
 | `FRS_REPO_ROOT` | Overrides the repo root that the PRM scripts resolve data against |
 
-The web UI backend additionally reads `backend/path_config.json` — copy `backend/path_config.template.json` and fill it in. That file holds API keys and is gitignored.
+The web UI backend additionally reads `webui/backend/path_config.json` — copy `webui/backend/path_config.template.json` and fill it in. That file holds API keys and is gitignored.
 
 ## Repository layout
 
+Seven directories, each with one job.
+
 ```
-frs_pipeline.py              Canonical end-to-end FRS (filter -> judge -> score)
-build_filtered_cot.py        Top-K% confidence filter only (no judging)
-run_filtered_cot_eval.py     Batch judge over a filtered-cot directory
-humaneval_extract_answer.py  HumanEval function-body extraction
+frs/            ⭐ The metric. Start here.
+evaluation/        Generate traces (vendored Qwen2.5-Math fork)
+experiments/       Everything that produces a number in the paper
+results/           Judge outputs and frozen data artifacts
+webui/             Optional FastAPI job-runner UI
+cluster/           SLURM submission scripts
+docs/              Extended guides
+```
 
-evaluation/                  Generation + grading harness (Qwen2.5-Math fork)
-  math_eval.py               Sampling with per-token probability tracking
-  parser.py, grader.py       Answer extraction and correctness
-  data/                      The paper's 6 benchmarks + HumanEval
+**`frs/` — the metric itself**
 
-backend/app/cot_eval_v2/     The judge itself
-  judge.py                   4-pillar rubric prompt (Appendix A) + GPT judge
-  scoring.py                 fuse_with_judge -> 0-1 per pillar, plus overall
-  evaluator.py               Deterministic pre-judge flag collection
+```
+frs/
+  frs_pipeline.py            Canonical end-to-end FRS (filter -> judge -> score)
+  build_filtered_cot.py      Top-K% confidence filter only, no judging
+  run_filtered_cot_eval.py   Batch judge over an already-filtered directory
+  humaneval_extract_answer.py  HumanEval function-body extraction
+  cot_eval_v2/               The judge
+    judge.py                   4-pillar rubric prompt (Appendix A) + GPT judge
+    scoring.py                 fuse_with_judge -> 0-1 per pillar, plus overall
+    evaluator.py               Deterministic pre-judge flag collection
+  cot_analysis/              Batch judge runners for specific benchmarks
+```
 
-frs_experiments/             Main-paper experiments and appendix analyses
+**`experiments/` — paper results**
+
+```
+experiments/
+  bootstrap_table2_std.py       Table 1 (start here; needs no API key)
   reasoning_confidence_bins.py  The 5-bin x 50-trace FRS estimator (Sec 3.3)
   topk_ablation.py              Confidence estimator + top-K% machinery
   topk_judge_eval.py            Standalone judge engine
-  analysis/                     Robustness and rebuttal analyses
-  reasoning_confidence_bins_results/judging_checkpoints/
+  k_sensitivity_*.py            Sampling-budget ablations (Appendix R)
+  robustness/                   Confidence proxies, selection gain, PRM, ablations
+  paper_figures/                Figure generators + judge validation study
+  metrics/                      Convergence, ranking stability, correlations
+  judge_validation_runners/     Re-judging with GPT-4o / Claude (Appendix D)
+  outputs/                      All generated results, including:
+    reasoning_confidence_bins_results/judging_checkpoints/
                                 54 judged model-benchmark files (see below)
-
-analysis/                    Figure generation and judge validation
-experiments/                 Convergence, ranking stability, correlations
-selection-gain/appendix_s/   Frozen selection-gain judge outputs (Appendix U)
-filtered-cot-*/results/      Judge outputs per benchmark
-docs/                        Extended documentation
+  data/pass16_sample/           One intact raw trace file, as a format reference
 ```
+
+**`results/` — data artifacts**
+
+```
+results/
+  filtered_cot/<benchmark>/results/   Judge outputs per benchmark
+  selection_gain/appendix_s/          Frozen selection-gain outputs (Appendix U)
+```
+
+Scripts in `experiments/` use paths relative to that directory, so run them
+from there (`cd experiments && python bootstrap_table2_std.py`). Everything in
+`frs/` resolves paths relative to the repository, so it can be run from anywhere.
 
 ## Reproducing the paper
 
-The 54 judge checkpoints in `frs_experiments/reasoning_confidence_bins_results/judging_checkpoints/` (one per model × benchmark pair) are the key artifact: **most tables and appendices can be recomputed from them with no API calls and no GPU.** For example, Table 1's bootstrap intervals:
+The 54 judge checkpoints in `experiments/outputs/reasoning_confidence_bins_results/judging_checkpoints/` (one per model × benchmark pair) are the key artifact: **most tables and appendices can be recomputed from them with no API calls and no GPU.** For example, Table 1's bootstrap intervals:
 
 ```bash
-cd frs_experiments
+cd experiments
 python bootstrap_table2_std.py     # prints the table plus pasteable LaTeX
 ```
 
@@ -136,42 +163,42 @@ python bootstrap_table2_std.py     # prints the table plus pasteable LaTeX
 
 | Paper element | Script |
 | --- | --- |
-| **Table 1** — FRS at K=10%, bootstrap CIs | `frs_experiments/bootstrap_table2_std.py` |
-| **Figure 2** — pass@1 vs FRS ranking reversals | `analysis/generate_ranking_shift.py` |
-| **Figure 3** — reasoning score converges faster | `frs_experiments/export_reasoning_convergence_data.py`, `experiments/convergence_analysis.py` |
-| **Figure 4** — quality vs filter threshold K | `frs_experiments/reasoning_confidence_bins.py plot` |
-| **Figure 5** — close-accuracy amplification | `frs_experiments/global_pass1_frs_pairwise_analysis.py` |
-| **§3.3** — the FRS estimator itself | `frs_experiments/reasoning_confidence_bins.py run` |
-| **App. A** — the 4-pillar rubric | `backend/app/cot_eval_v2/judge.py` |
-| **App. B** — dimension correlations, leave-one-out | `frs_experiments/dimension_correlation_analysis.py`, `frs_experiments/analysis/run_rebuttal_dim_ablation.py` |
-| **App. C** — percentile cutoff / SNR sweep | `frs_experiments/topk_ablation.py` |
-| **App. D** — judge validation (GPT-4o, Claude, human) | `run_gpt4o_judge_validation.py`, `run_postfiltered_judge_validation.py`, `analysis/generate_judge_agreement_final.py` |
-| **App. F** — ranking stability across conditions | `experiments/ranking_stability_graph.py` |
-| **App. G** — FRS across K ∈ {10..50} | `frs_experiments/reasoning_confidence_bins.py` |
-| **App. H** — composition of the filtered set | `frs_experiments/analysis/verify_difficulty_distribution_claims.py`, `math500_level_original_vs_selected.py` |
-| **App. R** — sampling budget k ∈ {4, 8, 16} | `frs_experiments/k_sensitivity_analysis.py`, `sample_count_ablation.py` |
-| **App. T** — alternative confidence estimators | `frs_experiments/analysis/run_confidence_proxy_robustness.py`, `run_self_consistency_frs_proxy.py` |
-| **App. U** — selection gain | `frs_experiments/analysis/run_selection_gain_judging.py`; frozen outputs in `selection-gain/appendix_s/` |
-| **App. U.5** — held-out Claude Haiku judge | `frs_experiments/analysis/run_selection_gain_haiku_with_progress.py` |
-| **App. U.6** — controlling for response style | `frs_experiments/analysis/run_exp_a_style_partial_corr.py` |
-| **App. V** — PRM comparison | `analysis/run_prm_math_shepherd.py`, `analysis/aggregate_prm_baseline.py` |
-| **App. W** — evaluation cost | `frs_experiments/analysis/run_exp_f_cost_accounting.py` |
+| **Table 1** — FRS at K=10%, bootstrap CIs | `experiments/bootstrap_table2_std.py` |
+| **Figure 2** — pass@1 vs FRS ranking reversals | `experiments/paper_figures/generate_ranking_shift.py` |
+| **Figure 3** — reasoning score converges faster | `experiments/export_reasoning_convergence_data.py`, `experiments/metrics/convergence_analysis.py` |
+| **Figure 4** — quality vs filter threshold K | `experiments/reasoning_confidence_bins.py plot` |
+| **Figure 5** — close-accuracy amplification | `experiments/global_pass1_frs_pairwise_analysis.py` |
+| **§3.3** — the FRS estimator itself | `experiments/reasoning_confidence_bins.py run` |
+| **App. A** — the 4-pillar rubric | `frs/cot_eval_v2/judge.py` |
+| **App. B** — dimension correlations, leave-one-out | `experiments/dimension_correlation_analysis.py`, `experiments/robustness/run_rebuttal_dim_ablation.py` |
+| **App. C** — percentile cutoff / SNR sweep | `experiments/topk_ablation.py` |
+| **App. D** — judge validation (GPT-4o, Claude, human) | `experiments/judge_validation_runners/`, `experiments/paper_figures/generate_judge_agreement_final.py` |
+| **App. F** — ranking stability across conditions | `experiments/metrics/ranking_stability_graph.py` |
+| **App. G** — FRS across K ∈ {10..50} | `experiments/reasoning_confidence_bins.py` |
+| **App. H** — composition of the filtered set | `experiments/robustness/verify_difficulty_distribution_claims.py`, `.../math500_level_original_vs_selected.py` |
+| **App. R** — sampling budget k ∈ {4, 8, 16} | `experiments/k_sensitivity_analysis.py`, `experiments/sample_count_ablation.py` |
+| **App. T** — alternative confidence estimators | `experiments/robustness/run_confidence_proxy_robustness.py`, `.../run_self_consistency_frs_proxy.py` |
+| **App. U** — selection gain | `experiments/robustness/run_selection_gain_judging.py`; frozen outputs in `results/selection_gain/appendix_s/` |
+| **App. U.5** — held-out Claude Haiku judge | `experiments/robustness/run_selection_gain_haiku_with_progress.py` |
+| **App. U.6** — controlling for response style | `experiments/robustness/run_exp_a_style_partial_corr.py` |
+| **App. V** — PRM comparison | `experiments/paper_figures/run_prm_math_shepherd.py`, `.../aggregate_prm_baseline.py` |
+| **App. W** — evaluation cost | `experiments/robustness/run_exp_f_cost_accounting.py` |
 
 See `docs/REPRODUCING.md` for a tiered guide (what runs with no API key, what needs one, what needs a GPU).
 
-`frs_experiments/FRS_experiment_results.md` and `MASTER_EXPERIMENT_RESULTS.md` contain the recorded numeric results; `frs_experiments/reasoning_confidence_bins_methods.md` is the detailed methods spec for the binning estimator.
+`experiments/FRS_experiment_results.md` and `experiments/MASTER_EXPERIMENT_RESULTS.md` contain the recorded numeric results; `experiments/reasoning_confidence_bins_methods.md` is the detailed methods spec for the binning estimator.
 
 ## Data availability
 
-This repository ships **code, judge outputs, and derived tables**. The raw pass@16 generation traces — 9 models × 6 benchmarks × 16 samples, with per-token probabilities — are hundreds of GB and are **not** included. One sample trace file is provided under `frs_experiments/source_pass16_jsonl_by_model/` so you can inspect the expected format.
+This repository ships **code, judge outputs, and derived tables**. The raw pass@16 generation traces — 9 models × 6 benchmarks × 16 samples, with per-token probabilities — are hundreds of GB and are **not** included. One sample trace file is provided under `experiments/data/pass16_sample/` so you can inspect the expected format.
 
-Scripts that read raw traces (`topk_ablation.py`, `correctness_conditioned.py`, `sample_count_ablation.py`, `k_sensitivity_*.py`, `build_downstream_parquets.py`) will produce empty results without them. Everything that reads the judge checkpoints works out of the box. To regenerate the raw traces, run the generation command above for each model–benchmark pair; `frs_experiments/analysis/export_pass16_canonical_zip.py` packages them into the canonical layout.
+Scripts that read raw traces (`experiments/topk_ablation.py`, `correctness_conditioned.py`, `sample_count_ablation.py`, `k_sensitivity_*.py`, and `build_downstream_parquets.py`) will produce empty results without them. Everything that reads the judge checkpoints works out of the box. To regenerate the raw traces, run the generation command above for each model–benchmark pair; `experiments/robustness/export_pass16_canonical_zip.py` packages them into the canonical layout.
 
 ## Known limitations
 
-- **`temp0_confidence_analysis.py` needs T=0 traces** that are not in this release; it is unrunnable until you generate them.
-- **Published figure files are not reproduced byte-for-byte.** Several paper figures were assembled outside this repo from hardcoded arrays; `export_reasoning_convergence_data.py` marks its Figure 3 outputs `_RECONSTRUCTED` for this reason.
-- **HumanEval FRS is exploratory** and not part of the paper. Phi-4-reasoning's score in `filtered-cot-humaneval/frs_summary.json` (5.53) is an artifact of reasoning/code split failure on its `<think>` format, not a real result. See `docs/FRS_HUMANEVAL_PIPELINE.md`.
+- **`experiments/temp0_confidence_analysis.py` needs T=0 traces** that are not in this release; it is unrunnable until you generate them.
+- **Published figure files are not reproduced byte-for-byte.** Several paper figures were assembled outside this repo from hardcoded arrays; `experiments/export_reasoning_convergence_data.py` marks its Figure 3 outputs `_RECONSTRUCTED` for this reason.
+- **HumanEval FRS is exploratory** and not part of the paper. Phi-4-reasoning's score in `results/filtered_cot/humaneval/frs_summary.json` (5.53) is an artifact of reasoning/code split failure on its `<think>` format, not a real result. See `docs/FRS_HUMANEVAL_PIPELINE.md`.
 - **The rubric is math/QA-oriented.** Applying it to code or agentic traces likely needs prompt changes.
 - **Judge non-determinism.** Calls run at `temperature=0`, but exact score reproduction across API versions is not guaranteed.
 
